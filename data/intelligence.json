@@ -1,27 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T09:07:52.831264+00:00",
+    "generated_at": "2026-08-30T09:10:30.562306+00:00",
     "status": "warming_up",
     "history_days": 1,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
-    "method": "deterministic_frequency_change_v1"
+    "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 40,
-      "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "fdi_industrial",
       "recent_7d": 4,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -29,18 +18,29 @@
       "trend": "warming_up",
       "confidence": 16,
       "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 2,
+      "recent_7d": 1,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 12,
+      "confidence": 10,
       "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 0,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 1,
+      "source_diversity_7d": 0,
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
       "category": "data_ai",
@@ -51,7 +51,7 @@
       "trend": "warming_up",
       "confidence": 1,
       "source_diversity_7d": 0,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
       "category": "energy",
@@ -62,7 +62,7 @@
       "trend": "warming_up",
       "confidence": 1,
       "source_diversity_7d": 0,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
       "category": "logistics",
@@ -73,115 +73,10 @@
       "trend": "warming_up",
       "confidence": 1,
       "source_diversity_7d": 0,
-      "explanation": "Đang học baseline: mới có 1/14 ngày lịch sử. Chưa kết luận xu hướng."
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     }
   ],
   "top_new_events": [
-    {
-      "id": "a5eeeb0ec31e10e5",
-      "source_id": "fia-fdi",
-      "publisher": "Cục Đầu tư nước ngoài - Bộ Tài chính",
-      "title": "Quyết định công bố công khai dự toán ngân sách năm 2025 của Cục Đầu tư nước ngoài",
-      "url": "https://fia.mof.gov.vn/Detail/CatID/6d662978-2830-47eb-a1b7-2d6fb1f29abf/NewsID/3d57ba5a-68da-43b6-a9fb-68358d990448",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T09:03:17.991295+00:00",
-      "collected_at": "2026-08-30T09:03:17.991295+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "c458680c6640a37f",
-      "source_id": "fia-fdi",
-      "publisher": "Cục Đầu tư nước ngoài - Bộ Tài chính",
-      "title": "Cục Đầu tư nước ngoài công khai dự toán ngân sách nhà nước Qúy 3 năm 2024",
-      "url": "https://fia.mof.gov.vn/Detail/CatID/6d662978-2830-47eb-a1b7-2d6fb1f29abf/NewsID/69389285-dbb6-418f-b3f1-f79b99814746",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T09:03:17.991295+00:00",
-      "collected_at": "2026-08-30T09:03:17.991295+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "4183a32877dd67df",
-      "source_id": "fia-fdi",
-      "publisher": "Cục Đầu tư nước ngoài - Bộ Tài chính",
-      "title": "Công khai quyết toán ngân sách năm 2023 của Cục Đầu tư nước ngoài",
-      "url": "https://fia.mof.gov.vn/Detail/CatID/6d662978-2830-47eb-a1b7-2d6fb1f29abf/NewsID/ba611989-41e3-4a61-8961-52cc12d91c8b",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T09:03:17.991295+00:00",
-      "collected_at": "2026-08-30T09:03:17.991295+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f10add10d4ddbef0",
-      "source_id": "fia-fdi",
-      "publisher": "Cục Đầu tư nước ngoài - Bộ Tài chính",
-      "title": "Quyết định về việc công bố công khai quyết toán ngân sách năm 2022 của Cục Đầu tư nước ngoài",
-      "url": "https://fia.mof.gov.vn/Detail/CatID/6d662978-2830-47eb-a1b7-2d6fb1f29abf/NewsID/e62aa62e-0bcd-4125-b4d5-48f6b4718c80",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T09:03:17.991295+00:00",
-      "collected_at": "2026-08-30T09:03:17.991295+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3f8e3aa646b8dd79",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Cổng thông tin quốc gia về đăng ký doanh nghiệp",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/gioi-thieu/215/Cong-thong-tin-dang-ky-doanh-nghiep-quoc-gia.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "dccc8cbf57cd8339",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Phí, lệ phí đăng ký doanh nghiệp",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/ho-tro/221/Phi-le-phi-dang-ky-doanh-nghiep.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "5559a1a1c7a82e7b",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Tình hình đăng ký doanh nghiệp",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/chuyen-muc/598/Tinh-hinh-dang-ky-doanh-nghiep.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
     {
       "id": "38427c6e516fa4f3",
       "source_id": "business-registry",
@@ -193,51 +88,13 @@
       ],
       "authority": 1.0,
       "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "db1b15cb9512c696",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê tháng 5/2025 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
       ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "0e993e19cf030f42",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê tháng 6/2025 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3c23f5672a00203b",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê tháng 7/2025 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
       "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
       "collected_at": "2026-08-30T08:57:55.730622+00:00",
       "last_seen_at": null
@@ -253,21 +110,11 @@
       ],
       "authority": 1.0,
       "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
-      "collected_at": "2026-08-30T08:57:55.730622+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "6e28c9ac3c7a021f",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "TÌNH HÌNH ĐĂNG KÝ DOANH NGHIỆP",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/chuyen-muc/598/tinh-hinh-dang-ky-doanh-nghiep.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
       "first_seen_at": "2026-08-30T08:57:55.730622+00:00",
       "collected_at": "2026-08-30T08:57:55.730622+00:00",
       "last_seen_at": null
@@ -283,68 +130,13 @@
       ],
       "authority": 1.0,
       "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
       "first_seen_at": "2026-08-30T08:47:29.259361+00:00",
       "collected_at": "2026-08-30T08:47:29.259361+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "872fba84ac4d3ea9",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thông báo về việc ngắt kết nối đến Hệ thống thông tin quốc gia về đăng ký doanh nghiệp, hợp tác xã, hộ kinh doanh",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6893/thong-bao-ve-viec-ngat-ket-noi-den-he-thong-thong-tin-quoc-gia-ve-dang-ky-doanh-nghiep--hop-tac-xa--ho-kinh-doanh.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:47:29.259325+00:00",
-      "collected_at": "2026-08-30T08:47:29.259325+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "86760b89a4f5985b",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Tập huấn, hướng dẫn nghiệp vụ xử lý các doanh nghiệp, hợp tác xã và hộ kinh doanh không hoạt động tại địa chỉ đăng ký hoặc chưa hoàn thành thủ tục giải thể",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6899/tap-huan--huong-dan-nghiep-vu-xu-ly-cac-doanh-nghiep--hop-tac-xa-va-ho-kinh-doanh-khong-hoat-dong-tai-dia-chi-dang-ky-hoac-chua-ho.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:47:29.259251+00:00",
-      "collected_at": "2026-08-30T08:47:29.259251+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "6991ece90ef9a2a7",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Hướng dẫn đăng ký hộ kinh doanh qua mạng điện tử",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/ho-tro/6558/huong-dan-su-dung-he-thong-thong-tin-dang-ky-ho-kinh-doanh-tren-moi-truong-dien-tu.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:47:29.258798+00:00",
-      "collected_at": "2026-08-30T08:47:29.258798+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "891b3236206c7e71",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Hướng dẫn đăng ký doanh nghiệp qua mạng điện tử",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/611/6827/huong-dan-dang-ky-doanh-nghiep-qua-mang-dien-tu.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:47:29.258770+00:00",
-      "collected_at": "2026-08-30T08:47:29.258770+00:00",
       "last_seen_at": null
     },
     {
@@ -358,34 +150,51 @@
       ],
       "authority": 1.0,
       "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
       "first_seen_at": "2026-08-30T08:47:29.258742+00:00",
       "collected_at": "2026-08-30T08:47:29.258742+00:00",
       "last_seen_at": null
     },
     {
-      "id": "5f833005645cba9d",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Trung tâm Thông tin doanh nghiệp, kinh tế tập thể, hộ kinh doanh",
-      "url": "http://dangkykinhdoanh.gov.vn/vn/gioi-thieu/217/Trung-tam-ho-tro-dang-ky-kinh-doanh.aspx",
+      "id": "279fc7dc42fc0d47",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Bảo đảm tiến độ, phấn đấu sớm thông xe toàn tuyến Vành đai 1",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-bao-dam-tien-do-phan-dau-som-thong-xe-toan-tuyen-vanh-dai-1-102260829174507669.htm",
       "categories": [
-        "sme"
+        "infrastructure"
       ],
       "authority": 1.0,
       "status": "unverified-headline",
-      "first_seen_at": "2026-08-30T08:47:29.258605+00:00",
-      "collected_at": "2026-08-30T08:47:29.258605+00:00",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-08-30T08:47:27.032183+00:00",
+      "collected_at": "2026-08-30T08:47:27.032183+00:00",
       "last_seen_at": null
     }
   ],
+  "event_types_7d": {
+    "business_formation": 3,
+    "policy_regulation": 1,
+    "infrastructure_delivery": 1
+  },
+  "geographies_7d": {},
   "coverage": {
     "historical_events": 27,
-    "machine_collected_events": 22,
-    "unique_sources": 4,
+    "candidate_events": 5,
+    "reference_events": 17,
+    "unique_candidate_sources": 2,
     "source_errors_last_run": 1
   },
   "warnings": [
-    "Change Detector đang học baseline (1/14 ngày). Không coi các chênh lệch hiện tại là trend.",
+    "Change Detector đang học baseline (1/14 ngày). Chỉ candidate events mới được tính; chưa coi chênh lệch hiện tại là trend.",
     "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
