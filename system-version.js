@@ -9,6 +9,16 @@
     if (footer) footer.textContent = `Opportunity Intelligence OS · V${version}`;
   };
 
+  const loadSourceCoverage = () => {
+    if (document.querySelector('script[data-source-coverage]')) return;
+    const script = document.createElement('script');
+    script.src = 'source-coverage.js';
+    script.dataset.sourceCoverage = '1';
+    document.body.appendChild(script);
+  };
+
+  loadSourceCoverage();
+
   fetch('data/system_meta.json', {cache: 'no-store'})
     .then(r => r.ok ? r.json() : null)
     .then(meta => {
