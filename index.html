@@ -60,10 +60,12 @@
       <section class="panel compact">
         <h2>Chất lượng tín hiệu</h2>
         <div class="metric-row"><span>Nguồn chính thức</span><strong id="officialCount">—</strong></div>
-        <div class="metric-row"><span>Tín hiệu đang theo dõi</span><strong id="signalCount">—</strong></div>
+        <div class="metric-row"><span>Tín hiệu curated</span><strong id="signalCount">—</strong></div>
         <div class="metric-row"><span>Cơ hội hành động</span><strong id="oppCount">—</strong></div>
         <div class="metric-row"><span>Buyer archetypes</span><strong id="buyerCount">—</strong></div>
-        <div class="metric-row"><span>Headline mới tự động</span><strong id="rawFeedCount">—</strong></div>
+        <div class="metric-row"><span>Headline đã thu</span><strong id="rawFeedCount">—</strong></div>
+        <div class="metric-row"><span>Sự kiện lịch sử</span><strong id="historicalEventCount">—</strong></div>
+        <div class="metric-row"><span>Baseline đã học</span><strong id="historyDays">—</strong></div>
       </section>
 
       <section class="panel compact warning-panel">
@@ -71,7 +73,7 @@
         <ul class="plain-list">
           <li>Không coi tin tức = nhu cầu.</li>
           <li>Không coi ngành tăng = cơ hội của mình.</li>
-          <li>Không chấm điểm nếu thiếu bằng chứng.</li>
+          <li>Không gọi biến động là trend khi chưa đủ baseline.</li>
           <li>Không mở rộng trước khi có tín hiệu trả tiền.</li>
         </ul>
       </section>
@@ -101,10 +103,19 @@
 
         <div class="section-head">
           <div>
-            <div class="eyebrow">EARLY SIGNALS</div>
+            <div class="eyebrow">MACHINE CHANGE DETECTOR · V1.1</div>
+            <h2>Thay đổi được phát hiện từ lịch sử</h2>
+          </div>
+          <span id="changeDetectorNote" class="muted">Đang tải baseline…</span>
+        </div>
+        <div id="changeDetector" class="signal-grid"></div>
+
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">CURATED SIGNALS</div>
             <h2>Tín hiệu cần chú ý</h2>
           </div>
-          <span class="muted">Ưu tiên thay đổi có bằng chứng, không ưu tiên độ ồn truyền thông.</span>
+          <span class="muted">Curated evidence dùng để hình thành giả thuyết; không thay thế Change Detector.</span>
         </div>
         <div id="topSignals" class="signal-grid"></div>
 
@@ -172,8 +183,8 @@
   </main>
 
   <footer>
-    <span>Opportunity Intelligence OS · V1</span>
-    <span>Không phải khuyến nghị đầu tư. Mọi opportunity là giả thuyết cần kiểm chứng.</span>
+    <span>Opportunity Intelligence OS · V1.1</span>
+    <span>Không phải khuyến nghị đầu tư. Change Detector chỉ kết luận sau khi có đủ baseline; mọi opportunity vẫn phải kiểm chứng.</span>
   </footer>
 
   <script src="app.js"></script>
