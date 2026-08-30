@@ -49,10 +49,54 @@
     capital_acceleration_sector_unconfirmed: 'Vốn tăng, ngành chưa xác nhận'
   };
 
+  const MACRO_EXPLAIN = {
+    production: 'Sản xuất công nghiệp đang mở rộng; cần kiểm tra xem tăng trưởng có lan sang việc làm, điện, logistics và supplier không.',
+    labor: 'Việc làm công nghiệp tăng là bằng chứng vận hành tốt hơn headline CAPEX đơn thuần.',
+    trade: 'Thương mại tăng mạnh, nhưng nhập khẩu tăng nhanh có thể vừa là đầu vào sản xuất vừa là áp lực cán cân/biên lợi nhuận.',
+    consumption: 'Sức mua thực tăng nhưng chậm hơn doanh thu danh nghĩa; tránh đọc quá mạnh câu chuyện tiêu dùng.',
+    capital: 'FDI đăng ký tăng nhanh là tín hiệu vốn tương lai; phải đối chiếu FDI thực hiện và thời điểm nhà máy vận hành.',
+    public_capital: 'Đầu tư công tạo cầu trực tiếp và vòng 2, nhưng cơ hội cá nhân thường nằm ở dịch vụ/hậu cần chứ không phải gói thầu chính.',
+    energy: 'Mức điện là proxy hoạt động kinh tế nhưng một ngày đơn lẻ không phải trend.'
+  };
+
   function fmtPct(v){ return v === null || v === undefined ? '—' : `${v > 0 ? '+' : ''}${Number(v).toLocaleString('vi-VN')}%`; }
+  function fmtMacro(o){
+    const v = Number(o.value);
+    if(o.unit === 'percent_yoy' || o.unit === 'percent_yoy_real') return `${v > 0 ? '+' : ''}${v.toLocaleString('vi-VN')}%`;
+    if(o.unit === 'billion_vnd') return `${Math.round(v).toLocaleString('vi-VN')} tỷ`;
+    if(o.unit === 'million_kwh_day') return `${v.toLocaleString('vi-VN')} triệu kWh`;
+    return Number.isFinite(v) ? v.toLocaleString('vi-VN') : '—';
+  }
   function switchTab(id){
     const btn = document.querySelector(`.tab[data-tab="${id}"]`);
     if(btn) btn.click();
+  }
+
+  function ensureMacroSection(){
+    if(document.getElementById('macroOverview')) return;
+    const overview = document.getElementById('overview');
+    const firstSection = overview?.querySelector('.section-head.overview-section');
+    if(!overview || !firstSection) return;
+    firstSection.insertAdjacentHTML('beforebegin', `
+      <div class="section-head overview-section">
+        <div class="overview-section-copy">
+          <div class="eyebrow">0 · MACRO PULSE</div>
+          <h2>Nền kinh tế thực tế đang chạy ra sao?</h2>
+          <p class="muted">Số liệu chính thức trước khi qua bất kỳ lớp diễn giải hay scoring nào.</p>
+        </div>
+      </div>
+      <div id="macroOverview" class="overview-grid"></div>`);
+  }
+
+  function macroCard(o){
+    return `<article class="panel overview-card">
+      <div class="overview-kicker">MACRO · ${esc(o.family || 'evidence')}</div>
+      <div class="overview-path">
+        <div><div class="big-number">${esc(fmtMacro(o))}</div><div class="muted small">${esc(o.period || '')}</div></div>
+        <div><h3>${esc(o.title)}</h3><p class="muted">${esc(MACRO_EXPLAIN[o.family] || o.notes || '')}</p></div>
+      </div>
+      <div class="card-footer"><a href="${esc(safe(o.source_url))}" target="_blank" rel="noopener noreferrer">Nguồn chính thức</a></div>
+    </article>`;
   }
 
   function policyCard(p){
@@ -126,13 +170,18 @@
     </article>`;
   }
 
+  ensureMacroSection();
+  document.querySelectorAll('[data-overview-tab]').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.overviewTab)));
+
   Promise.all([
+    fetch('data/macro_observations.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/policy_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/money_flow_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/regional_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/contradiction_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/thesis_lifecycle.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
-  ]).then(([policy, money, regional, contradiction, lifecycle]) => {
+  ]).then(([macro, policy, money, regional, contradiction, lifecycle]) => {
+    const macroRows = macro?.observations || [];
     const pRows = policy?.structural_policies || [];
     const themes = (money?.themes || []).slice().sort((a,b)=>b.score-a.score);
     const regions = (regional?.regions || []).slice(0,6);
@@ -147,10 +196,14 @@
 
     const pulse = document.getElementById('overviewPulse');
     if(pulse) pulse.innerHTML = `
+      <div class="overview-pulse-item"><span class="muted small">Macro verified</span><strong>${esc(macroRows.length)} số liệu gốc</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Policy structural</span><strong>${esc(pRows.length)} thay đổi lớn</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Money-flow themes</span><strong>${esc(themes.length)} theme đang theo dõi</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Regional radar</span><strong>${esc(regions.length)} địa bàn nổi bật</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Lifecycle</span><strong>${lCov.directional_lifecycle_active ? 'Đã đủ lịch sử xu hướng' : `${esc(lCov.max_observation_days ?? 0)}/3 ngày học`}</strong></div>`;
+
+    const macroGrid = document.getElementById('macroOverview');
+    if(macroGrid) macroGrid.innerHTML = macroRows.slice(0,6).map(macroCard).join('') || '<div class="panel muted">Chưa có macro observations.</div>';
 
     const policyGrid = document.getElementById('policyOverview');
     if(policyGrid) policyGrid.innerHTML = pRows.slice(0,4).map(policyCard).join('') || '<div class="panel muted">Chưa có Policy Radar.</div>';
@@ -178,7 +231,5 @@
 
     const lifecycleNote = document.getElementById('overviewLifecycleNote');
     if(lifecycleNote) lifecycleNote.textContent = lifecycle?.thesis || 'Lifecycle chưa có dữ liệu.';
-
-    document.querySelectorAll('[data-overview-tab]').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.overviewTab)));
   });
 })();
