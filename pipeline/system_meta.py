@@ -16,6 +16,7 @@ MODULES = {
     "change_detector": "intelligence.json",
     "money_flow": "money_flow_intelligence.json",
     "supply_side": "supply_side_intelligence.json",
+    "regional": "regional_intelligence.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
@@ -23,7 +24,7 @@ MODULES = {
     "counterparty": "counterparty_intelligence.json",
     "outreach": "outreach_intelligence.json",
     "personal_edge": "personal_edge_schema.json",
-    "corporate": "corporate_intelligence.json",
+    "corporate": "corporate_intelligence.json"
 }
 
 
@@ -65,13 +66,7 @@ def main() -> None:
         generated = meta.get("generated_at") or meta.get("updated_at") or payload.get("updated_at")
         mode = meta.get("mode")
         status = meta.get("status")
-
-        components[name] = {
-            "version": version,
-            "mode": mode,
-            "status": status,
-            "generated_at": generated,
-        }
+        components[name] = {"version": version, "mode": mode, "status": status, "generated_at": generated}
         if version:
             versions.append(version)
         if name == "change_detector" and status:
@@ -92,14 +87,13 @@ def main() -> None:
     else:
         status_label = "SYSTEM ONLINE"
 
-    now = datetime.now(timezone.utc)
     payload = {
         "system_version": system_version,
         "status_label": status_label,
-        "generated_at": now.isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "latest_component_update": newest.isoformat() if newest else None,
         "components": components,
-        "principle": "system_version_is_derived_from_module_versions_not_hardcoded_in_frontend",
+        "principle": "system_version_is_derived_from_module_versions_not_hardcoded_in_frontend"
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"system-meta version={system_version} status={status_label}")
