@@ -16,6 +16,8 @@ MODULES = {
     "radar": "radar.json",
     "change_detector": "intelligence.json",
     "policy": "policy_intelligence.json",
+    "freshness": "freshness_state.json",
+    "methodology": "methodology_state.json",
     "money_flow": "money_flow_intelligence.json",
     "supply_side": "supply_side_intelligence.json",
     "regional": "regional_intelligence.json",
@@ -25,6 +27,7 @@ MODULES = {
     "entity_convergence": "entity_convergence_intelligence.json",
     "source_coverage": "source_coverage_intelligence.json",
     "reports": "intelligence_reports.json",
+    "trust_audit": "trust_audit.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
@@ -71,11 +74,23 @@ def main() -> None:
     for name, filename in MODULES.items():
         payload = load(DATA / filename)
         meta = first_meta(payload)
-        version = version_text(meta.get("version") or payload.get("version"))
-        generated = meta.get("generated_at") or meta.get("updated_at") or payload.get("updated_at")
+        version = version_text(meta.get("version") or payload.get("version") or payload.get("methodology_version"))
+        generated = meta.get("generated_at") or meta.get("updated_at") or payload.get("updated_at") or payload.get("rebased_at")
         mode = meta.get("mode")
         status = meta.get("status")
         components[name] = {"version": version, "mode": mode, "status": status, "generated_at": generated}
+        if name == "freshness":
+            components[name]["datasets"] = {
+                key: {
+                    "status": row.get("status"),
+                    "age_days": row.get("age_days"),
+                    "updated_at": row.get("updated_at"),
+                }
+                for key, row in (payload.get("datasets") or {}).items()
+                if isinstance(row, dict)
+            }
+        if name == "methodology":
+            components[name]["methodology_version"] = payload.get("methodology_version")
         if version:
             versions.append(version)
         if name == "change_detector" and status:
@@ -99,16 +114,19 @@ def main() -> None:
         baseline_label = "SYSTEM ONLINE"
 
     release_label = "OFFICIAL" if release_status == "official" else "RC" if release_status == "release_candidate" else None
-    status_label = f"{release_label} · {baseline_label}" if release_label else baseline_label
+    trust_status = components.get("trust_audit", {}).get("status")
+    trust_label = "TRUST PASS" if trust_status == "pass" else "TRUST UNKNOWN"
+    status_label = f"{release_label} · {trust_label} · {baseline_label}" if release_label else f"{trust_label} · {baseline_label}"
 
     payload = {
         "system_version": system_version,
         "status_label": status_label,
         "release_status": release_status,
+        "trust_status": trust_status,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "latest_component_update": newest.isoformat() if newest else None,
         "components": components,
-        "principle": "stable_product_release_plus_independent_module_versions"
+        "principle": "stable_release_plus_explicit_trust_freshness_and_methodology_boundaries"
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"system-meta version={system_version} status={status_label}")
