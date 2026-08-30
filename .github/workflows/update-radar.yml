@@ -48,6 +48,9 @@ jobs:
       - name: Normalize procurement taxonomy
         run: python pipeline/normalize_taxonomy.py
 
+      - name: Build buyer-vendor relationship intelligence
+        run: python pipeline/relationship_intel.py
+
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
@@ -65,6 +68,7 @@ jobs:
             action_intelligence.json
             partner_history.json
             partner_intelligence.json
+            relationship_intelligence.json
             corporate_history.json
             corporate_intelligence.json
           )
