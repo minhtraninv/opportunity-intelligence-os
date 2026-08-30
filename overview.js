@@ -49,6 +49,23 @@
     capital_acceleration_sector_unconfirmed: 'Vốn tăng, ngành chưa xác nhận'
   };
 
+  const CONVERGENCE_STATE = {
+    high_convergence: 'HỘI TỤ CAO · ĐÁNG ĐIỀU TRA',
+    converging: 'ĐANG HỘI TỤ · THEO DÕI SÂU',
+    watch: 'ĐÃ XUẤT HIỆN · CHƯA ĐỦ BẰNG CHỨNG'
+  };
+
+  const FAMILY_LABEL = {
+    policy: 'Chính sách',
+    capital: 'Dòng vốn',
+    project_execution: 'Dự án / thực thi',
+    strategy: 'Chiến lược',
+    operating: 'Vận hành',
+    labor: 'Lao động',
+    business_formation: 'Hình thành DN',
+    procurement: 'Mua sắm công'
+  };
+
   const MACRO_EXPLAIN = {
     production: 'Sản xuất công nghiệp đang mở rộng; cần kiểm tra xem tăng trưởng có lan sang việc làm, điện, logistics và supplier không.',
     labor: 'Việc làm công nghiệp tăng là bằng chứng vận hành tốt hơn headline CAPEX đơn thuần.',
@@ -86,6 +103,21 @@
         </div>
       </div>
       <div id="macroOverview" class="overview-grid"></div>`);
+  }
+
+  function ensureConvergenceSection(){
+    if(document.getElementById('entityConvergenceOverview')) return;
+    const regionGrid = document.getElementById('regionalOverview');
+    if(!regionGrid) return;
+    regionGrid.insertAdjacentHTML('afterend', `
+      <div class="section-head overview-section">
+        <div class="overview-section-copy">
+          <div class="eyebrow">4 · CONVERGENCE RADAR</div>
+          <h2>Nhiều thay đổi đang cùng hội tụ quanh ai hoặc cái gì?</h2>
+          <p class="muted">Đây là lớp tạo “cơ duyên thông tin”: nếu chính sách, vốn, dự án, vận hành hoặc lao động cùng chạm vào một entity, hệ thống buộc nó nổi lên để bạn không vô tình bỏ qua. Không phải khuyến nghị đầu tư hay kinh doanh.</p>
+        </div>
+      </div>
+      <div id="entityConvergenceOverview" class="overview-grid"></div>`);
   }
 
   function macroCard(o){
@@ -144,6 +176,23 @@
     </article>`;
   }
 
+  function entityCard(e){
+    const families = (e.evidence_families || []).map(x=>FAMILY_LABEL[x] || x);
+    const themes = (e.theme_context || []).map(x=>x.label).slice(0,3);
+    const regions = (e.regional_context || []).map(x=>x.region).slice(0,3);
+    const evidence = (e.evidence || []).slice(0,3);
+    return `<article class="panel overview-card ${e.status === 'high_convergence' ? 'overview-policy' : ''}">
+      <div class="overview-kicker">${esc(CONVERGENCE_STATE[e.status] || e.status)} · SCORE ${esc(e.convergence_score)}</div>
+      <h3>${esc(e.label)}</h3>
+      <p>${esc(e.why_now)}</p>
+      <div class="overview-path-metrics">
+        ${families.map(x=>`<span class="pill">${esc(x)}</span>`).join('')}
+      </div>
+      ${(themes.length || regions.length) ? `<p class="muted small">Bối cảnh: ${esc([...themes, ...regions].join(' · '))}</p>` : ''}
+      ${evidence.length ? `<div class="card-footer"><strong>Bằng chứng gần nhất</strong><ul class="overview-list">${evidence.map(x=>`<li>${esc(x.title)}${x.source_url ? ` · <a href="${esc(safe(x.source_url))}" target="_blank" rel="noopener noreferrer">nguồn</a>` : ''}</li>`).join('')}</ul><div class="muted small"><strong>Đọc đúng:</strong> đáng điều tra ≠ đáng mua/làm.</div></div>` : ''}
+    </article>`;
+  }
+
   function opportunityCard(t){
     const g = GUIDE[t.theme_id];
     if(!g) return '';
@@ -171,6 +220,7 @@
   }
 
   ensureMacroSection();
+  ensureConvergenceSection();
   document.querySelectorAll('[data-overview-tab]').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.overviewTab)));
 
   Promise.all([
@@ -178,16 +228,19 @@
     fetch('data/policy_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/money_flow_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/regional_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('data/entity_convergence_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/contradiction_intelligence.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
     fetch('data/thesis_lifecycle.json', {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
-  ]).then(([macro, policy, money, regional, contradiction, lifecycle]) => {
+  ]).then(([macro, policy, money, regional, convergence, contradiction, lifecycle]) => {
     const macroRows = macro?.observations || [];
     const pRows = policy?.structural_policies || [];
     const themes = (money?.themes || []).slice().sort((a,b)=>b.score-a.score);
     const regions = (regional?.regions || []).slice(0,6);
+    const entities = (convergence?.entities || []).slice();
     const cRows = contradiction?.themes || [];
     const cMap = Object.fromEntries(cRows.map(x=>[x.theme_id,x]));
     const lCov = lifecycle?.coverage || {};
+    const eCov = convergence?.coverage || {};
 
     const heroTitle = document.getElementById('overviewHeroTitle');
     const heroText = document.getElementById('overviewHeroText');
@@ -200,6 +253,7 @@
       <div class="overview-pulse-item"><span class="muted small">Policy structural</span><strong>${esc(pRows.length)} thay đổi lớn</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Money-flow themes</span><strong>${esc(themes.length)} theme đang theo dõi</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Regional radar</span><strong>${esc(regions.length)} địa bàn nổi bật</strong></div>
+      <div class="overview-pulse-item"><span class="muted small">Convergence radar</span><strong>${esc((eCov.high_convergence || 0) + (eCov.converging || 0))} điểm hội tụ</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Lifecycle</span><strong>${lCov.directional_lifecycle_active ? 'Đã đủ lịch sử xu hướng' : `${esc(lCov.max_observation_days ?? 0)}/3 ngày học`}</strong></div>`;
 
     const macroGrid = document.getElementById('macroOverview');
@@ -213,6 +267,12 @@
 
     const regionGrid = document.getElementById('regionalOverview');
     if(regionGrid) regionGrid.innerHTML = regions.slice(0,4).map(regionCard).join('') || '<div class="panel muted">Chưa có Regional Radar.</div>';
+
+    const entityGrid = document.getElementById('entityConvergenceOverview');
+    if(entityGrid){
+      const visible = entities.filter(x=>x.status !== 'not_observed').slice(0,6);
+      entityGrid.innerHTML = visible.map(entityCard).join('') || '<div class="panel muted">Chưa có entity nào đủ nhiều bằng chứng độc lập để nổi lên. Đây là kết quả hợp lệ: hệ thống không ép phải có “câu chuyện”.</div>';
+    }
 
     const opportunityGrid = document.getElementById('normalPersonOverview');
     if(opportunityGrid){
