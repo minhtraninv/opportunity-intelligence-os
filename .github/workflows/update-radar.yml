@@ -54,6 +54,9 @@ jobs:
       - name: Build buyer-vendor relationship intelligence
         run: python pipeline/relationship_intel.py
 
+      - name: Probe official contractor schema
+        run: python pipeline/contractor_schema_probe.py
+
       - name: Build counterparty execution dossiers
         run: python pipeline/counterparty_intel.py
 
@@ -79,6 +82,7 @@ jobs:
             partner_intelligence.json
             partner_backfill_state.json
             relationship_intelligence.json
+            contractor_schema_probe.json
             counterparty_intelligence.json
             corporate_history.json
             corporate_intelligence.json
