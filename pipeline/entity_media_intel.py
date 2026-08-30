@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Entity discovery from public economic RSS feeds.
+"""Open-world entity discovery from public economic RSS feeds.
 
-Media headlines are discovery evidence, not primary proof. This module exists to
-reduce blind spots: it asks which registered entities repeatedly appear around real
-economic actions. Entity Convergence decides whether those sightings deserve deeper
-investigation and keeps media-only convergence below primary-evidence status.
+Media headlines are discovery evidence, not primary proof. Known aliases are
+normalized through entity_registry.json, while previously unknown organizations can
+enter as conservative auto-discovered candidates. Registry membership contributes no
+importance; auto-discovery contributes no importance either. Entity Convergence
+later decides whether independent evidence deserves investigation.
 """
 from __future__ import annotations
 
@@ -30,7 +31,7 @@ OUTPUT = DATA / "entity_media_intelligence.json"
 WINDOW_DAYS = 120
 RECENT_DAYS = 30
 MAX_HISTORY = 2000
-UA = "Mozilla/5.0 (compatible; OpportunityIntelligenceOS/2.6; +https://github.com/)"
+UA = "Mozilla/5.0 (compatible; OpportunityIntelligenceOS/2.7; +https://github.com/)"
 
 SOURCES = [
     {"id": "vnexpress-business", "name": "VnExpress Kinh doanh", "url": "https://vnexpress.net/rss/kinh-doanh.rss"},
@@ -66,6 +67,19 @@ STOPWORDS = {
     "của", "và", "cho", "với", "tại", "trong", "trên", "được", "sẽ", "đang", "vừa", "mới",
     "một", "các", "những", "từ", "đến", "về", "theo", "sau", "trước", "khi", "này", "đó",
     "tỷ", "triệu", "đồng", "usd", "việt", "nam", "công", "ty", "tập", "đoàn",
+}
+
+GENERIC_TITLE_STARTS = {
+    "doanh nghiệp", "công ty", "tập đoàn", "ngân hàng", "nhà đầu tư", "chính phủ", "bộ",
+    "quốc hội", "thị trường", "giá", "cổ phiếu", "chứng khoán", "vàng", "usd", "tỷ giá",
+    "việt nam", "hà nội", "tp hcm", "tp.hcm", "thành phố", "mỹ", "trung quốc", "nhật bản",
+    "hàn quốc", "eu", "asean", "người", "khách", "chuyên gia", "đề xuất", "dự án",
+}
+
+BRAND_SUFFIXES = {
+    "group", "holdings", "holding", "bank", "airlines", "airways", "auto", "energy", "power",
+    "telecom", "retail", "land", "homes", "motor", "motors", "steel", "tech", "technology",
+    "vietnam", "vina", "global", "foods", "food", "pharma", "logistics",
 }
 
 
@@ -134,8 +148,6 @@ def alias_match(text: str, aliases: list[str]) -> bool:
 def classify(text: str) -> str | None:
     lowered = norm(text).casefold()
 
-    # Observable customer demand should not be mistaken for project execution just
-    # because the product will later be "operated" by a buyer.
     if re.search(r"\bmua\s+[\d\.,]+\s+(?:ô\s*tô|oto|xe|sản phẩm)", lowered, flags=re.UNICODE):
         return "operating"
 
@@ -152,9 +164,95 @@ def signature(entity_id: str, family: str, title: str) -> str:
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
 
-def item_id(source_id: str, link: str, title: str) -> str:
-    raw = f"{source_id}|{link}|{title.casefold()}"
+def item_id(source_id: str, entity_id: str, link: str, title: str) -> str:
+    raw = f"{source_id}|{entity_id}|{link}|{title.casefold()}"
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def auto_entity_id(label: str) -> str:
+    normalized = re.sub(r"\W+", "-", label.casefold(), flags=re.UNICODE).strip("-")
+    digest = hashlib.sha1(label.casefold().encode("utf-8")).hexdigest()[:8]
+    return f"auto-{normalized[:36]}-{digest}"
+
+
+def starts_like_proper_name(token: str) -> bool:
+    clean = token.strip("()[]{}'\"“”‘’,.:;!?+-/")
+    if len(clean) < 2:
+        return False
+    first = clean[0]
+    return first.isupper() or clean.isupper() or any(ch.isupper() for ch in clean[1:])
+
+
+def extract_title_entity(title: str, description: str) -> str | None:
+    """Conservatively infer a previously unknown organization from headline start.
+
+    We only accept a leading proper-name phrase that also occurs in the RSS summary.
+    This intentionally misses many entities; recall can be expanded later without
+    sacrificing precision or turning ordinary sentence starts into fake companies.
+    """
+    clean_title = norm(title)
+    clean_desc = norm(description)
+    if not clean_title or not clean_desc:
+        return None
+
+    folded = clean_title.casefold()
+    if any(folded == x or folded.startswith(x + " ") for x in GENERIC_TITLE_STARTS):
+        return None
+
+    tokens = clean_title.split()
+    candidate_tokens = []
+    for token in tokens[:5]:
+        stripped = token.strip("()[]{}'\"“”‘’,.:;!?+-/")
+        folded_token = stripped.casefold()
+        if not stripped:
+            break
+        if starts_like_proper_name(stripped) or folded_token in BRAND_SUFFIXES:
+            candidate_tokens.append(stripped)
+            continue
+        break
+
+    if not candidate_tokens:
+        return None
+
+    # One-token brands are accepted only when they look brand-like, not like an
+    # ordinary sentence-start word. Multi-token names need at least two proper tokens.
+    candidate = " ".join(candidate_tokens).strip()
+    if len(candidate_tokens) == 1:
+        token = candidate_tokens[0]
+        brand_like = any(ch.isupper() for ch in token[1:]) or token.isupper() or len(token) >= 7
+        if not brand_like:
+            return None
+
+    if candidate.casefold() in GENERIC_TITLE_STARTS:
+        return None
+    if len(candidate) < 3 or len(candidate) > 64:
+        return None
+    if candidate.casefold() not in clean_desc.casefold():
+        return None
+    return candidate
+
+
+def append_event(output: list[dict], source: dict, entity: dict, family: str, title: str,
+                 description: str, link: str, published: datetime, captured_at: datetime,
+                 entity_origin: str) -> None:
+    entity_id = str(entity.get("id"))
+    output.append({
+        "id": item_id(source["id"], entity_id, link, title),
+        "event_signature": signature(entity_id, family, title),
+        "entity_id": entity_id,
+        "entity_label": entity.get("label"),
+        "entity_type": entity.get("entity_type"),
+        "entity_origin": entity_origin,
+        "family": family,
+        "title": title,
+        "summary": description[:360],
+        "publisher": source["name"],
+        "source_url": link or source["url"],
+        "published_at": published.isoformat(),
+        "first_seen_at": captured_at.isoformat(),
+        "last_seen_at": captured_at.isoformat(),
+        "evidence_grade": "media_discovery",
+    })
 
 
 def parse_rss(source: dict, registry: list[dict], captured_at: datetime) -> tuple[list[dict], str | None]:
@@ -175,36 +273,44 @@ def parse_rss(source: dict, registry: list[dict], captured_at: datetime) -> tupl
         if len(title) < 8:
             continue
 
+        family = classify(text)
+        if not family:
+            continue
+
+        matched_known = []
         for entity in registry:
             aliases = entity.get("aliases") or []
-            if not aliases or not alias_match(text, aliases):
-                continue
-            family = classify(text)
-            if not family:
-                continue
-            output.append({
-                "id": item_id(source["id"], link, title),
-                "event_signature": signature(entity.get("id"), family, title),
-                "entity_id": entity.get("id"),
-                "entity_label": entity.get("label"),
-                "entity_type": entity.get("entity_type"),
-                "family": family,
-                "title": title,
-                "summary": description[:360],
-                "publisher": source["name"],
-                "source_url": link or source["url"],
-                "published_at": published.isoformat(),
-                "first_seen_at": captured_at.isoformat(),
-                "last_seen_at": captured_at.isoformat(),
-                "evidence_grade": "media_discovery",
-            })
+            if aliases and alias_match(text, aliases):
+                matched_known.append(entity)
+                append_event(
+                    output, source, entity, family, title, description, link, published,
+                    captured_at, "curated_registry"
+                )
+
+        auto_label = extract_title_entity(title, description)
+        if auto_label and not any(alias_match(auto_label, x.get("aliases") or []) for x in matched_known):
+            already_known = next(
+                (x for x in registry if alias_match(auto_label, x.get("aliases") or [])),
+                None,
+            )
+            if not already_known:
+                auto_entity = {
+                    "id": auto_entity_id(auto_label),
+                    "label": auto_label,
+                    "entity_type": "auto_discovered_organization",
+                }
+                append_event(
+                    output, source, auto_entity, family, title, description, link, published,
+                    captured_at, "auto_discovered"
+                )
+
     return output, None
 
 
 def merge_history(old: dict, fresh: list[dict], captured_at: datetime) -> dict:
     items = {str(x.get("id")): dict(x) for x in old.get("events", []) if isinstance(x, dict) and x.get("id")}
     refresh_fields = (
-        "event_signature", "entity_id", "entity_label", "entity_type", "family", "title",
+        "event_signature", "entity_id", "entity_label", "entity_type", "entity_origin", "family", "title",
         "summary", "publisher", "source_url", "published_at", "evidence_grade",
     )
     for event in fresh:
@@ -226,7 +332,44 @@ def merge_history(old: dict, fresh: list[dict], captured_at: datetime) -> dict:
             continue
         rows.append(event)
     rows.sort(key=lambda x: x.get("published_at") or "", reverse=True)
-    return {"version": 1, "updated_at": captured_at.isoformat(), "events": rows[:MAX_HISTORY]}
+    return {"version": 2, "updated_at": captured_at.isoformat(), "events": rows[:MAX_HISTORY]}
+
+
+def build_auto_entities(recent: list[dict]) -> list[dict]:
+    stats = {}
+    for event in recent:
+        if event.get("entity_origin") != "auto_discovered":
+            continue
+        key = str(event.get("entity_id"))
+        row = stats.setdefault(key, {
+            "id": key,
+            "label": event.get("entity_label"),
+            "entity_type": "auto_discovered_organization",
+            "aliases": [event.get("entity_label")],
+            "recent_events": 0,
+            "families": set(),
+            "publishers": set(),
+        })
+        row["recent_events"] += 1
+        if event.get("family"):
+            row["families"].add(event.get("family"))
+        if event.get("publisher"):
+            row["publishers"].add(event.get("publisher"))
+
+    output = []
+    for row in stats.values():
+        output.append({
+            "id": row["id"],
+            "label": row["label"],
+            "entity_type": row["entity_type"],
+            "aliases": [x for x in row["aliases"] if x],
+            "recent_events": row["recent_events"],
+            "families": sorted(row["families"]),
+            "publishers": sorted(row["publishers"]),
+            "candidate_status": "needs_repeat_or_primary_verification",
+        })
+    output.sort(key=lambda x: (x["recent_events"], len(x["families"]), len(x["publishers"])), reverse=True)
+    return output
 
 
 def main() -> None:
@@ -262,18 +405,20 @@ def main() -> None:
         key = event.get("entity_id")
         counts[key] = counts.get(key, 0) + 1
 
+    auto_entities = build_auto_entities(recent)
     payload = {
         "meta": {
-            "version": "2.6.2",
+            "version": "2.7.0",
             "generated_at": now.isoformat(),
-            "mode": "economic_media_entity_discovery",
-            "principle": "media_creates_investigation_triggers_not_primary_truth"
+            "mode": "open_world_economic_entity_discovery",
+            "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates"
         },
         "coverage": {
             "sources": len(SOURCES),
             "healthy_sources": sum(1 for x in health if x.get("status") == "ok"),
             "recent_events": len(recent),
             "entities_seen_recently": len(counts),
+            "auto_discovered_entities": len(auto_entities),
             "history_events": len(merged.get("events", [])),
         },
         "source_health": health,
@@ -281,9 +426,11 @@ def main() -> None:
             {"entity_id": key, "recent_events": value}
             for key, value in sorted(counts.items(), key=lambda x: x[1], reverse=True)
         ],
-        "events": recent[:400],
+        "auto_entities": auto_entities[:100],
+        "events": recent[:500],
         "warnings": [
             "Media headline chỉ là discovery trigger; không phải bằng chứng cuối cùng.",
+            "Auto-discovered entity chỉ là candidate tên tổ chức; không tự động được coi là quan trọng.",
             "Nhiều báo có thể đưa cùng một sự kiện; Entity Convergence phải ưu tiên evidence family chứ không đếm headline thô.",
             "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
         ]
@@ -291,7 +438,7 @@ def main() -> None:
     write(OUTPUT, payload)
     print(
         f"entity-media healthy={payload['coverage']['healthy_sources']}/{len(SOURCES)} "
-        f"recent={len(recent)} entities={len(counts)}"
+        f"recent={len(recent)} entities={len(counts)} auto={len(auto_entities)}"
     )
 
 
