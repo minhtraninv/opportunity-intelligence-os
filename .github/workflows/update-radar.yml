@@ -13,6 +13,8 @@ on:
       - "data/policy_observations.json"
       - "data/entity_registry.json"
       - "data/source_registry.json"
+      - "*.js"
+      - "*.html"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -41,6 +43,26 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Validate frontend JavaScript
+        run: |
+          set -euo pipefail
+          for file in \
+            app.js \
+            money-flow.js \
+            regional-flow.js \
+            contradiction-flow.js \
+            lifecycle-flow.js \
+            overview.js \
+            action.js \
+            relationship.js \
+            counterparty.js \
+            execution.js \
+            official-release.js \
+            source-coverage.js \
+            system-version.js; do
+            node --check "$file"
+          done
 
       - name: Update opportunity intelligence
         run: python pipeline/update.py
