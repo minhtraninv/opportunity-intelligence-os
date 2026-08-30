@@ -8,6 +8,7 @@ on:
     paths:
       - "pipeline/**"
       - "data/macro_observations.json"
+      - "data/regional_observations.json"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -79,6 +80,9 @@ jobs:
       - name: Attach observed supply evidence to themes
         run: python pipeline/supply_gap_enrich.py
 
+      - name: Build regional money-flow intelligence
+        run: python pipeline/regional_intel.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
@@ -106,6 +110,7 @@ jobs:
             corporate_intelligence.json
             supply_side_intelligence.json
             money_flow_intelligence.json
+            regional_intelligence.json
             system_meta.json
           )
 
