@@ -1,36 +1,35 @@
 {
   "meta": {
-    "version": "1.3",
-    "generated_at": "2026-08-30T16:23:41.401984+00:00",
-    "mode": "corporate_action_intelligence",
-    "principle": "official_disclosure_then_document_verification"
+    "version": "3.0.0",
+    "generated_at": "2026-08-30T16:44:28.218651+00:00",
+    "mode": "official_corporate_action_discovery",
+    "principle": "corporate_disclosure_is_an_execution_trigger_not_a_buy_signal"
   },
   "coverage": {
+    "sources": 2,
+    "healthy_sources": 0,
+    "source_errors": 2,
+    "events_this_run": 0,
     "historical_events": 0,
-    "recent_events": 0,
-    "investigate_now": 0,
-    "source_errors_last_run": 2
+    "recent_events_45d": 0,
+    "event_types_45d": {}
   },
   "source_health": [
     {
       "source_id": "hnx-listed",
-      "name": "HNX - công bố niêm yết",
-      "items_this_run": 0,
+      "source_name": "HNX - công bố niêm yết",
       "status": "error",
-      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='portal.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "items_this_run": 0,
+      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
     },
     {
       "source_id": "hnx-upcom",
-      "name": "HNX - công bố UPCoM",
-      "items_this_run": 0,
+      "source_name": "HNX - công bố UPCoM",
       "status": "error",
-      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='tttt.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "items_this_run": 0,
+      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
     }
   ],
-  "buyer_triggers": [],
-  "warnings": [
-    "HNX là nguồn công bố chính thức, nhưng tiêu đề chỉ là trigger điều tra; phải đọc tài liệu gốc trước khi suy ra nhu cầu mua sắm.",
-    "Capital raise/financing không tự động đồng nghĩa với cơ hội bán hàng; cần bằng chứng vốn được dùng cho hoạt động tạo nhu cầu.",
-    "Có 2 nguồn lỗi ở lần chạy gần nhất."
-  ]
+  "recent_events": [],
+  "reading_rule": "Một disclosure chỉ mở hồ sơ điều tra. Cần đọc tài liệu gốc, quy mô, thời điểm, funding, execution và phản chứng trước khi nối thành thesis."
 }
