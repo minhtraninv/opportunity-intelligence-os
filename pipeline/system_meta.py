@@ -20,6 +20,7 @@ MODULES = {
     "regional": "regional_intelligence.json",
     "contradiction": "contradiction_intelligence.json",
     "lifecycle": "thesis_lifecycle.json",
+    "entity_media": "entity_media_intelligence.json",
     "entity_convergence": "entity_convergence_intelligence.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
