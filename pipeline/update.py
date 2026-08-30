@@ -5,7 +5,7 @@ V1.1 responsibilities:
 1) collect relevant public headlines from configured sources;
 2) preserve first-seen history instead of making old headlines look new every run;
 3) build a conservative change detector from observed event history;
-4) reclassify stored machine-collected data when the taxonomy improves.
+4) reclassify and deduplicate stored machine-collected data when taxonomy improves.
 
 The detector deliberately refuses to claim momentum until it has enough history.
 It does not generate business opportunities automatically; curated hypotheses remain
@@ -78,11 +78,36 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+def clean_href(raw_href: str) -> str:
+    return re.sub(r"[\r\n\t]+", "", raw_href or "").strip()
+
+
+def canonical_url(value: str) -> str:
+    cleaned = clean_href(value)
+    try:
+        parsed = urlparse(cleaned)
+        host = (parsed.netloc or "").lower()
+        path = re.sub(r"/{2,}", "/", parsed.path or "/")
+        if path != "/":
+            path = path.rstrip("/")
+        query = parsed.query or ""
+        # Deliberately ignore scheme and fragment: many Vietnamese public sites expose
+        # the same content through both HTTP/HTTPS or anchor variants.
+        return f"{host}{path}{'?' + query if query else ''}"
+    except Exception:
+        return cleaned.lower()
+
+
+def event_id(title: str, url: str) -> str:
+    identity = f"{norm(title).casefold()}|{canonical_url(url)}"
+    return hashlib.sha1(identity.encode("utf-8")).hexdigest()[:16]
+
+
 def keyword_matches(text: str, keyword: str) -> bool:
     """Match whole words/phrases, not arbitrary substrings.
 
-    This prevents false positives such as 'ai' inside 'triển khai'. Python's Unicode
-    \w handling is used so Vietnamese letters are treated as word characters.
+    Prevents false positives such as 'ai' inside 'triển khai'. Python's Unicode
+    \w handling treats Vietnamese letters as word characters.
     """
     pattern = rf"(?<!\w){re.escape(keyword.lower())}(?!\w)"
     return re.search(pattern, text.lower(), flags=re.UNICODE) is not None
@@ -97,10 +122,6 @@ def classify(text: str) -> list[str]:
             hits.append((sector, score))
     hits.sort(key=lambda x: (-x[1], x[0]))
     return [sector for sector, _ in hits[:3]]
-
-
-def clean_href(raw_href: str) -> str:
-    return re.sub(r"[\r\n\t]+", "", raw_href or "").strip()
 
 
 def fetch_source(src: dict) -> tuple[list[dict], str | None]:
@@ -131,7 +152,7 @@ def fetch_source(src: dict) -> tuple[list[dict], str | None]:
         if not categories:
             continue
 
-        key = hashlib.sha1((title + href).encode("utf-8")).hexdigest()[:16]
+        key = event_id(title, href)
         if key in seen:
             continue
         seen.add(key)
@@ -154,21 +175,56 @@ def clean_stored_item(item: dict) -> dict | None:
     if not item.get("id") or not item.get("title"):
         return None
     cleaned = dict(item)
+    cleaned["url"] = clean_href(cleaned.get("url", ""))
     if cleaned.get("status") == "verified-seed":
         return cleaned
     categories = classify(cleaned.get("title", ""))
     if not categories:
         return None
     cleaned["categories"] = categories
-    cleaned["url"] = clean_href(cleaned.get("url", ""))
+    cleaned["id"] = event_id(cleaned["title"], cleaned["url"])
     return cleaned
+
+
+def earlier_timestamp(a: str | None, b: str | None) -> str | None:
+    pairs = [(parse_dt(a), a), (parse_dt(b), b)]
+    valid = [(dt, raw) for dt, raw in pairs if dt is not None]
+    if not valid:
+        return a or b
+    return min(valid, key=lambda x: x[0])[1]
+
+
+def later_timestamp(a: str | None, b: str | None) -> str | None:
+    pairs = [(parse_dt(a), a), (parse_dt(b), b)]
+    valid = [(dt, raw) for dt, raw in pairs if dt is not None]
+    if not valid:
+        return a or b
+    return max(valid, key=lambda x: x[0])[1]
+
+
+def merge_duplicate(existing: dict, incoming: dict) -> dict:
+    first_a = existing.get("first_seen_at") or existing.get("collected_at")
+    first_b = incoming.get("first_seen_at") or incoming.get("collected_at")
+    first_seen = earlier_timestamp(first_a, first_b)
+    last_seen = later_timestamp(existing.get("last_seen_at"), incoming.get("last_seen_at"))
+    return {
+        **existing,
+        **incoming,
+        "first_seen_at": first_seen,
+        "collected_at": earlier_timestamp(existing.get("collected_at"), incoming.get("collected_at")) or first_seen,
+        "last_seen_at": last_seen,
+    }
 
 
 def merge_feed(old_items: list[dict], fetched_items: list[dict], captured_at: datetime) -> tuple[list[dict], list[dict]]:
     merged = {}
     for old_item in old_items:
         cleaned = clean_stored_item(old_item)
-        if cleaned:
+        if not cleaned:
+            continue
+        if cleaned["id"] in merged:
+            merged[cleaned["id"]] = merge_duplicate(merged[cleaned["id"]], cleaned)
+        else:
             merged[cleaned["id"]] = cleaned
 
     new_items = []
@@ -222,13 +278,14 @@ def clean_history_event(event: dict) -> dict | None:
     if not event.get("id") or not event.get("title"):
         return None
     cleaned = dict(event)
+    cleaned["url"] = clean_href(cleaned.get("url", ""))
     if cleaned.get("status") == "verified-seed":
         return cleaned
     categories = classify(cleaned.get("title", ""))
     if not categories:
         return None
     cleaned["categories"] = categories
-    cleaned["url"] = clean_href(cleaned.get("url", ""))
+    cleaned["id"] = event_id(cleaned["title"], cleaned["url"])
     return cleaned
 
 
@@ -236,12 +293,19 @@ def update_history(history: dict, feed_items: list[dict], new_items: list[dict],
     events_by_id = {}
     for event in history.get("events", []):
         cleaned = clean_history_event(event)
-        if cleaned:
+        if not cleaned:
+            continue
+        if cleaned["id"] in events_by_id:
+            events_by_id[cleaned["id"]] = merge_duplicate(events_by_id[cleaned["id"]], cleaned)
+        else:
             events_by_id[cleaned["id"]] = cleaned
 
-    # Bootstrap or repair history from the current cleaned feed.
     for item in feed_items:
-        events_by_id[item["id"]] = event_from_item(item)
+        current = event_from_item(item)
+        if current["id"] in events_by_id:
+            events_by_id[current["id"]] = merge_duplicate(events_by_id[current["id"]], current)
+        else:
+            events_by_id[current["id"]] = current
 
     events = list(events_by_id.values())
     events.sort(key=lambda x: x.get("first_seen_at") or "", reverse=True)
@@ -320,13 +384,13 @@ def category_change_stats(events: list[dict], captured_at: datetime, history_day
             trend = "warming_up"
             delta_pct = None
         elif expected_7d < 1 and recent_count >= 5:
-            trend = "emerging"
+            trend = "emerging" if source_diversity >= 2 else "single_source_spike"
             delta_pct = None
         elif expected_7d >= 2:
             ratio = recent_count / expected_7d if expected_7d else 0
             absolute_gap = recent_count - expected_7d
             if ratio >= 1.5 and absolute_gap >= 2:
-                trend = "accelerating"
+                trend = "accelerating" if source_diversity >= 2 else "single_source_spike"
             elif ratio <= 0.6 and absolute_gap <= -2:
                 trend = "cooling"
             else:
@@ -340,15 +404,19 @@ def category_change_stats(events: list[dict], captured_at: datetime, history_day
         sample_score = min(40, ((recent_count + baseline_count) / 20) * 40)
         source_score = min(20, (source_diversity / 3) * 20)
         confidence = round(history_score + sample_score + source_score)
+        if recent_count > 0 and source_diversity < 2:
+            confidence = min(confidence, 55)
 
         if history_days < MIN_HISTORY_DAYS:
             explanation = f"Đang học baseline: mới có {history_days}/{MIN_HISTORY_DAYS} ngày lịch sử. Chưa kết luận xu hướng."
         elif trend == "accelerating":
-            explanation = f"7 ngày gần nhất có {recent_count} tín hiệu; baseline quy đổi 7 ngày là {expected_7d:.1f}."
+            explanation = f"7 ngày gần nhất có {recent_count} tín hiệu từ {source_diversity} nguồn; baseline quy đổi 7 ngày là {expected_7d:.1f}."
         elif trend == "cooling":
             explanation = f"Tần suất tín hiệu giảm: {recent_count} trong 7 ngày so với baseline {expected_7d:.1f}."
         elif trend == "emerging":
-            explanation = f"Xuất hiện {recent_count} tín hiệu trong 7 ngày trong khi baseline trước đó gần như trống."
+            explanation = f"Xuất hiện {recent_count} tín hiệu từ {source_diversity} nguồn trong 7 ngày trong khi baseline trước đó gần như trống."
+        elif trend == "single_source_spike":
+            explanation = f"Tần suất tăng nhưng mới tập trung ở {source_diversity} nguồn. Xem đây là cảnh báo cần điều tra, chưa phải trend đa nguồn."
         elif trend == "stable":
             explanation = "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
         else:
@@ -367,8 +435,9 @@ def category_change_stats(events: list[dict], captured_at: datetime, history_day
         })
 
     priority = {
-        "accelerating": 5,
-        "emerging": 4,
+        "accelerating": 6,
+        "emerging": 5,
+        "single_source_spike": 4,
         "stable": 3,
         "cooling": 2,
         "insufficient_sample": 1,
