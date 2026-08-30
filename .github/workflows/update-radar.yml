@@ -56,6 +56,7 @@ jobs:
             contradiction-flow.js \
             lifecycle-flow.js \
             overview.js \
+            freshness-ui.js \
             action.js \
             relationship.js \
             counterparty.js \
@@ -79,6 +80,9 @@ jobs:
 
       - name: Prepare trust semantics
         run: python pipeline/trust_prepare.py
+
+      - name: Measure verified snapshot freshness
+        run: python pipeline/trust_freshness.py
 
       # Advanced / procurement branch is supporting evidence only. These steps may
       # degrade independently without blocking the core radar publication.
@@ -132,7 +136,7 @@ jobs:
         continue-on-error: true
         run: python pipeline/supply_gap_enrich.py
 
-      - name: Harden money-flow evidence gates
+      - name: Harden money-flow evidence and freshness gates
         run: python pipeline/trust_money.py
 
       - name: Rebase comparable history if methodology changed
@@ -143,6 +147,9 @@ jobs:
 
       - name: Build contradiction and falsification intelligence
         run: python pipeline/contradiction_intel.py
+
+      - name: Remove stale snapshots from current-state outputs
+        run: python pipeline/trust_staleness.py
 
       - name: Build thesis lifecycle intelligence
         run: python pipeline/thesis_lifecycle.py
@@ -165,11 +172,11 @@ jobs:
       - name: Enforce report maturity gates
         run: python pipeline/trust_report.py
 
-      - name: Build system metadata
-        run: python pipeline/system_meta.py
-
       - name: Enforce pre-publication trust gate
         run: python pipeline/trust_gate.py
+
+      - name: Build system metadata
+        run: python pipeline/system_meta.py
 
       - name: Publish generated data
         run: |
@@ -197,6 +204,7 @@ jobs:
             corporate_history.json
             corporate_intelligence.json
             supply_side_intelligence.json
+            freshness_state.json
             money_flow_intelligence.json
             methodology_state.json
             regional_intelligence.json
@@ -207,8 +215,8 @@ jobs:
             source_coverage_intelligence.json
             intelligence_reports.json
             report_history.json
-            system_meta.json
             trust_audit.json
+            system_meta.json
           )
 
           snapshot_dir="$(mktemp -d)"
