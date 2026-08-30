@@ -54,6 +54,9 @@ jobs:
       - name: Build buyer-vendor relationship intelligence
         run: python pipeline/relationship_intel.py
 
+      - name: Build counterparty execution dossiers
+        run: python pipeline/counterparty_intel.py
+
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
@@ -76,6 +79,7 @@ jobs:
             partner_intelligence.json
             partner_backfill_state.json
             relationship_intelligence.json
+            counterparty_intelligence.json
             corporate_history.json
             corporate_intelligence.json
             system_meta.json
