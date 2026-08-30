@@ -1,42 +1,42 @@
 {
   "meta": {
-    "version": "2.0.0",
-    "generated_at": "2026-08-30T11:43:15.006742+00:00",
-    "mode": "theme_chain_supply_gap_intelligence",
-    "principle": "detect_where_money_is_moving_before_translating_to_small_capital_opportunities"
+    "version": "2.0.1",
+    "generated_at": "2026-08-30T11:48:10.255010+00:00",
+    "mode": "contextual_theme_chain_supply_gap_intelligence",
+    "principle": "broad_sector_tags_cannot_create_theme_membership_without_context"
   },
-  "thesis": "Theme mạnh nhất hiện tại: Mở rộng năng lực sản xuất (converging, 7 họ bằng chứng độc lập). Đây là nơi nên đào sâu chuỗi kinh tế; chưa được gọi là cơ hội cho tới khi xác minh supply gap và buyer cụ thể.",
+  "thesis": "Theme đáng điều tra nhất hiện tại: Mở rộng năng lực sản xuất (developing, 5 họ bằng chứng, 2 nhóm nguồn). Đây là chuyển động kinh tế cần đào sâu; chưa được gọi là cơ hội cho tới khi xác minh supply gap, buyer và economics.",
   "coverage": {
-    "total_evidence_inputs": 31,
+    "total_evidence_inputs": 24,
     "macro_observations": 7,
-    "historical_candidate_or_curated_events": 12,
-    "procurement_supporting_triggers": 12,
+    "contextual_history_evidence": 9,
+    "contextual_procurement_support": 9,
     "themes": 7,
-    "themes_converging": 3,
+    "themes_converging": 0,
+    "themes_developing": 3,
     "supply_gaps_confirmed": 0
   },
   "themes": [
     {
       "id": "manufacturing_expansion",
       "label": "Mở rộng năng lực sản xuất",
-      "score": 92,
-      "status": "converging",
-      "evidence_count": 13,
+      "score": 82,
+      "status": "developing",
+      "evidence_count": 6,
+      "directional_evidence_count": 5,
       "independent_families": [
         "capital",
-        "energy",
         "labor",
-        "market_data",
         "procurement",
         "production",
         "trade"
       ],
       "independent_publishers": [
-        "Báo Chính phủ",
         "Cục Thống kê",
-        "EVN - Đầu tư xây dựng",
-        "EVN / NSMO",
-        "Hệ thống mạng đấu thầu quốc gia"
+        "MSC"
+      ],
+      "non_procurement_publishers": [
+        "Cục Thống kê"
       ],
       "economic_chain": [
         "FDI/CAPEX và năng lực sản xuất mới",
@@ -46,7 +46,7 @@
         "Nhu cầu dân sinh vòng 3 quanh cụm sản xuất: ăn ở, đi lại, dịch vụ thiết yếu"
       ],
       "small_capital_angles": [
-        "dịch vụ tuyển dụng/nhân sự ngách",
+        "dịch vụ tuyển dụng/nhân sự ngách tại cụm sản xuất",
         "sourcing vật tư tiêu hao/PPE sau khi có đơn thật",
         "đóng gói, vận chuyển, giao nhận địa phương",
         "bảo trì/vệ sinh/facility theo hợp đồng nhỏ",
@@ -58,6 +58,7 @@
           "family": "production",
           "title": "IIP 7 tháng 2026 tăng 11,4%; chế biến chế tạo tăng 12,0%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -74,13 +75,15 @@
           "value": 11.4,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "macro::nso-industrial-employment-jul-2026",
           "family": "labor",
           "title": "Lao động tại doanh nghiệp công nghiệp ngày 01/07/2026 tăng 3,1% so với cùng kỳ",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -96,13 +99,15 @@
           "value": 3.1,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "macro::nso-trade-7m-2026",
           "family": "trade",
           "title": "Tổng kim ngạch XNK 7 tháng 2026 đạt 659,58 tỷ USD, tăng 28,1%; nhập khẩu tăng 34,8%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -118,13 +123,15 @@
           "value": 28.1,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion."
+          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion.",
+          "directional": true
         },
         {
           "id": "macro::fdi-7m-2026",
           "family": "capital",
           "title": "Tổng FDI đăng ký 7 tháng 2026 đạt 38,06 tỷ USD, tăng 58%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -141,13 +148,15 @@
           "value": 58.0,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "macro::evn-system-2026-08-08",
           "family": "energy",
           "title": "Hệ thống điện ngày 08/08/2026 sản xuất và nhập khẩu khoảng 1.041,8 triệu kWh",
           "publisher": "EVN / NSMO",
+          "publisher_group": "EVN/NSMO",
           "source_url": "https://www.evn.com.vn/d/vi-VN/news/Thong-tin-chung-ve-van-hanh-he-thong-dien-Quoc-gia-ngay-08082026-60-2015-509188",
           "quality": "official_verified",
           "category_tags": [],
@@ -164,72 +173,15 @@
           "value": 1041.8,
           "unit": "million_kwh_day",
           "direction": "level_observation",
-          "notes": "Single-day level observation; must not be called a trend without time-series comparison."
-        },
-        {
-          "id": "seed-fdi-7m",
-          "family": "capital",
-          "title": "7 tháng 2026: tổng FDI đăng ký đạt 38,06 tỷ USD, tăng 58%",
-          "publisher": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
-          "quality": "curated",
-          "category_tags": [
-            "fdi_industrial"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "seed-longthanh",
-          "family": "other",
-          "title": "Long Thành dự kiến vận hành thử tháng 9–11 và khai thác thương mại từ 1/12/2026",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/van-hanh-thu-nghiem-san-bay-long-thanh-tu-thang-9-2026-102260728154207159.htm",
-          "quality": "curated",
-          "category_tags": [
-            "infrastructure",
-            "logistics"
-          ],
-          "theme_tags": [],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "30df3e27460502c5",
-          "family": "labor",
-          "title": "Đề xuất chính sách phát triển kinh tế nông thôn, đa dạng hóa sinh kế, việc làm",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/de-xuat-chinh-sach-phat-trien-kinh-te-nong-thon-da-dang-hoa-sinh-ke-viec-lam-102260828180512184.htm",
-          "quality": "candidate",
-          "category_tags": [
-            "labor"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T11:41:47.417240+00:00"
-        },
-        {
-          "id": "a217e71d65206243",
-          "family": "market_data",
-          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
-          "publisher": "EVN - Đầu tư xây dựng",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
-          "quality": "candidate",
-          "category_tags": [
-            "energy"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T11:41:47.417240+00:00"
+          "notes": "Single-day level observation; must not be called a trend without time-series comparison.",
+          "directional": false
         },
         {
           "id": "proc::IB2600497195",
           "family": "procurement",
           "title": "Gói thầu số 06: Mua sắm vật tư tiêu hao định kỳ, vật tư thay thế, bảo trì nâng cấp thiết bị các Trạm quan trắc.",
           "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=9b42b58d-3572-4b9c-90d2-28037df2d9d1&notifyId=9b42b58d-3572-4b9c-90d2-28037df2d9d1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600497195&planNo=PL2600185996&step=tbmt&isInternet=1&bidForm=DTRR",
           "quality": "official_trigger",
           "category_tags": [
@@ -241,43 +193,8 @@
           "geography": [],
           "observed_at": "2026-08-28T13:40:44.805000+00:00",
           "buyer": "CHI NHÁNH TẬP ĐOÀN CÔNG NGHIỆP THAN – KHOÁNG SẢN VIỆT NAM - BAN QUẢN LÝ DỰ ÁN CHUYÊN NGÀNH MỎ THAN - TKV",
-          "package_price_vnd": 4627821000
-        },
-        {
-          "id": "proc::IB2600492880",
-          "family": "procurement",
-          "title": "Kiểm định, hiệu chuẩn, bảo trì, đo lường thiết bị y tế và thiết bị chuyên dụng năm 2026",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=660bc20b-ec70-419d-81d0-0f87a04f2133&notifyId=660bc20b-ec70-419d-81d0-0f87a04f2133&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600492880&planNo=PL2600276274&step=tbmt&isInternet=1&bidForm=CHCT",
-          "quality": "official_trigger",
-          "category_tags": [
-            "maintenance"
-          ],
-          "theme_tags": [
-            "manufacturing_expansion"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T06:57:45.031000+00:00",
-          "buyer": "Trung tâm Kiểm soát bệnh tật Khánh Hòa",
-          "package_price_vnd": 252760000
-        },
-        {
-          "id": "proc::IB2600497898",
-          "family": "procurement",
-          "title": "Đồng phục, trang phục bảo hộ lao động",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=2c2e26bd-8748-4d45-b458-db765e434449&notifyId=2c2e26bd-8748-4d45-b458-db765e434449&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600497898&planNo=PL2600284726&step=tbmt&isInternet=1&bidForm=CGTTRG",
-          "quality": "official_trigger",
-          "category_tags": [
-            "garment_ppe"
-          ],
-          "theme_tags": [
-            "manufacturing_expansion"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-28T10:20:35.880000+00:00",
-          "buyer": "Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh",
-          "package_price_vnd": 331935300.0
+          "package_price_vnd": 4627821000,
+          "directional": true
         }
       ],
       "supply_gap": {
@@ -296,21 +213,23 @@
     {
       "id": "logistics_trade",
       "label": "Gia tốc thương mại & logistics",
-      "score": 92,
-      "status": "converging",
-      "evidence_count": 7,
+      "score": 72,
+      "status": "developing",
+      "evidence_count": 4,
+      "directional_evidence_count": 4,
       "independent_families": [
         "capital",
-        "procurement",
         "production",
         "public_capital",
         "trade"
       ],
       "independent_publishers": [
-        "Báo Chính phủ",
         "Bộ Tài chính",
-        "Cục Thống kê",
-        "Hệ thống mạng đấu thầu quốc gia"
+        "Cục Thống kê"
+      ],
+      "non_procurement_publishers": [
+        "Bộ Tài chính",
+        "Cục Thống kê"
       ],
       "economic_chain": [
         "Xuất nhập khẩu và sản xuất tăng",
@@ -331,6 +250,7 @@
           "family": "production",
           "title": "IIP 7 tháng 2026 tăng 11,4%; chế biến chế tạo tăng 12,0%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -347,13 +267,15 @@
           "value": 11.4,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "macro::nso-trade-7m-2026",
           "family": "trade",
           "title": "Tổng kim ngạch XNK 7 tháng 2026 đạt 659,58 tỷ USD, tăng 28,1%; nhập khẩu tăng 34,8%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -369,13 +291,15 @@
           "value": 28.1,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion."
+          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion.",
+          "directional": true
         },
         {
           "id": "macro::fdi-7m-2026",
           "family": "capital",
           "title": "Tổng FDI đăng ký 7 tháng 2026 đạt 38,06 tỷ USD, tăng 58%",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -392,13 +316,15 @@
           "value": 58.0,
           "unit": "percent_yoy",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "macro::public-investment-7m-2026",
           "family": "public_capital",
           "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
           "publisher": "Bộ Tài chính",
+          "publisher_group": "Bộ Tài chính",
           "source_url": "https://www.mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/cong-tac-quan-ly-no/tang-cuong-giam-sat-danh-gia-hieu-qua-thuc-hien-giai-ngan-von-dau-tu-cong.",
           "quality": "official_verified",
           "category_tags": [],
@@ -415,56 +341,8 @@
           "value": 425312,
           "unit": "billion_vnd",
           "direction": "up",
-          "notes": null
-        },
-        {
-          "id": "seed-fdi-7m",
-          "family": "capital",
-          "title": "7 tháng 2026: tổng FDI đăng ký đạt 38,06 tỷ USD, tăng 58%",
-          "publisher": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
-          "quality": "curated",
-          "category_tags": [
-            "fdi_industrial"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "seed-longthanh",
-          "family": "other",
-          "title": "Long Thành dự kiến vận hành thử tháng 9–11 và khai thác thương mại từ 1/12/2026",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/van-hanh-thu-nghiem-san-bay-long-thanh-tu-thang-9-2026-102260728154207159.htm",
-          "quality": "curated",
-          "category_tags": [
-            "infrastructure",
-            "logistics"
-          ],
-          "theme_tags": [],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "proc::IB2600491465",
-          "family": "procurement",
-          "title": "Thuê xe phục vụ luân chuyển viên chức, người lao động giữa Cơ sở Tràng Thi và Cơ sở Ninh Bình",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9bf08611-0ea1-4b04-a5b4-5b482dd66825&notifyId=9bf08611-0ea1-4b04-a5b4-5b482dd66825&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600491465&planNo=PL2600281191&step=tbmt&isInternet=1&bidForm=CGTTRG",
-          "quality": "official_trigger",
-          "category_tags": [
-            "logistics"
-          ],
-          "theme_tags": [
-            "logistics_trade"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-28T08:29:57.291000+00:00",
-          "buyer": "Bệnh viện Hữu Nghị Việt Đức",
-          "package_price_vnd": 1954791900.0
+          "notes": null,
+          "directional": true
         }
       ],
       "supply_gap": {
@@ -483,19 +361,22 @@
     {
       "id": "public_infrastructure",
       "label": "Đầu tư công & hạ tầng vật lý",
-      "score": 72,
-      "status": "converging",
-      "evidence_count": 5,
+      "score": 56,
+      "status": "developing",
+      "evidence_count": 3,
+      "directional_evidence_count": 3,
       "independent_families": [
         "capital",
         "infrastructure",
-        "procurement",
         "public_capital"
       ],
       "independent_publishers": [
-        "Báo Chính phủ",
         "Bộ Tài chính",
-        "Hệ thống mạng đấu thầu quốc gia"
+        "Chính phủ"
+      ],
+      "non_procurement_publishers": [
+        "Bộ Tài chính",
+        "Chính phủ"
       ],
       "economic_chain": [
         "Giải ngân vốn đầu tư công",
@@ -517,6 +398,7 @@
           "family": "public_capital",
           "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
           "publisher": "Bộ Tài chính",
+          "publisher_group": "Bộ Tài chính",
           "source_url": "https://www.mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/cong-tac-quan-ly-no/tang-cuong-giam-sat-danh-gia-hieu-qua-thuc-hien-giai-ngan-von-dau-tu-cong.",
           "quality": "official_verified",
           "category_tags": [],
@@ -533,70 +415,44 @@
           "value": 425312,
           "unit": "billion_vnd",
           "direction": "up",
-          "notes": null
+          "notes": null,
+          "directional": true
         },
         {
           "id": "seed-public-invest",
           "family": "capital",
           "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
           "publisher": "Báo Chính phủ",
+          "publisher_group": "Chính phủ",
           "source_url": "https://baochinhphu.vn/giai-ngan-von-dau-tu-cong-7-thang-nam-2026-nhieu-bo-nganh-dia-phuong-dat-thap-102260805180417685.htm",
           "quality": "curated",
           "category_tags": [
             "infrastructure"
           ],
-          "theme_tags": [],
+          "theme_tags": [
+            "public_infrastructure"
+          ],
           "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "seed-longthanh",
-          "family": "other",
-          "title": "Long Thành dự kiến vận hành thử tháng 9–11 và khai thác thương mại từ 1/12/2026",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/van-hanh-thu-nghiem-san-bay-long-thanh-tu-thang-9-2026-102260728154207159.htm",
-          "quality": "curated",
-          "category_tags": [
-            "infrastructure",
-            "logistics"
-          ],
-          "theme_tags": [],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "observed_at": "2026-08-30T14:22:00+07:00"
+          "observed_at": "2026-08-30T14:22:00+07:00",
+          "directional": true
         },
         {
           "id": "279fc7dc42fc0d47",
           "family": "infrastructure",
           "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Bảo đảm tiến độ, phấn đấu sớm thông xe toàn tuyến Vành đai 1",
           "publisher": "Báo Chính phủ",
+          "publisher_group": "Chính phủ",
           "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-bao-dam-tien-do-phan-dau-som-thong-xe-toan-tuyen-vanh-dai-1-102260829174507669.htm",
           "quality": "candidate",
           "category_tags": [
             "infrastructure"
           ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:27.032183+00:00"
-        },
-        {
-          "id": "proc::IB2600491465",
-          "family": "procurement",
-          "title": "Thuê xe phục vụ luân chuyển viên chức, người lao động giữa Cơ sở Tràng Thi và Cơ sở Ninh Bình",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9bf08611-0ea1-4b04-a5b4-5b482dd66825&notifyId=9bf08611-0ea1-4b04-a5b4-5b482dd66825&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600491465&planNo=PL2600281191&step=tbmt&isInternet=1&bidForm=CGTTRG",
-          "quality": "official_trigger",
-          "category_tags": [
-            "logistics"
-          ],
           "theme_tags": [
-            "logistics_trade"
+            "public_infrastructure"
           ],
           "geography": [],
-          "observed_at": "2026-08-28T08:29:57.291000+00:00",
-          "buyer": "Bệnh viện Hữu Nghị Việt Đức",
-          "package_price_vnd": 1954791900.0
+          "observed_at": "2026-08-30T08:47:27.032183+00:00",
+          "directional": true
         }
       ],
       "supply_gap": {
@@ -613,289 +469,119 @@
       }
     },
     {
-      "id": "data_infrastructure",
-      "label": "Hạ tầng dữ liệu & số hóa",
-      "score": 63,
-      "status": "developing",
-      "evidence_count": 11,
-      "independent_families": [
-        "energy",
-        "market_data",
-        "procurement"
-      ],
-      "independent_publishers": [
-        "Báo Chính phủ",
-        "EVN - Đầu tư xây dựng",
-        "EVN / NSMO",
-        "Hệ thống mạng đấu thầu quốc gia"
-      ],
-      "economic_chain": [
-        "Chính sách/dòng vốn cho dữ liệu, cloud, AI và số hóa",
-        "Doanh nghiệp/cơ quan mua hạ tầng, phần mềm và dịch vụ triển khai",
-        "Nhu cầu tích hợp, migration, làm sạch dữ liệu, vận hành và bảo mật tăng",
-        "Nhà thầu lớn cần các module/phần việc nhỏ hoặc đối tác chuyên môn"
-      ],
-      "small_capital_angles": [
-        "data cleaning/QC/annotation có quy trình rõ",
-        "tích hợp hoặc automation ngách",
-        "đào tạo/vận hành/support sau triển khai",
-        "sourcing nhân lực kỹ thuật theo dự án",
-        "dịch vụ số hóa tài liệu chỉ khi có năng lực và compliance phù hợp"
-      ],
-      "evidence": [
-        {
-          "id": "macro::evn-system-2026-08-08",
-          "family": "energy",
-          "title": "Hệ thống điện ngày 08/08/2026 sản xuất và nhập khẩu khoảng 1.041,8 triệu kWh",
-          "publisher": "EVN / NSMO",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Thong-tin-chung-ve-van-hanh-he-thong-dien-Quoc-gia-ngay-08082026-60-2015-509188",
-          "quality": "official_verified",
-          "category_tags": [],
-          "theme_tags": [
-            "energy_demand",
-            "manufacturing_expansion",
-            "data_infrastructure"
-          ],
-          "geography": [
-            "Việt Nam"
-          ],
-          "observed_at": "2026-08-08",
-          "metric": "daily_power_output_import",
-          "value": 1041.8,
-          "unit": "million_kwh_day",
-          "direction": "level_observation",
-          "notes": "Single-day level observation; must not be called a trend without time-series comparison."
-        },
-        {
-          "id": "seed-data-ai",
-          "family": "other",
-          "title": "Chiến lược dữ liệu quốc gia đặt mục tiêu 3 trung tâm dữ liệu, HPC và hạ tầng AI",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/chi-dao-dieu-hanh-cua-chinh-phu-thu-tuong-chinh-phu-ngay-19-7-2026-102260720084215001.htm",
-          "quality": "curated",
-          "category_tags": [
-            "data_ai"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "a217e71d65206243",
-          "family": "market_data",
-          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
-          "publisher": "EVN - Đầu tư xây dựng",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
-          "quality": "candidate",
-          "category_tags": [
-            "energy"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T11:41:47.417240+00:00"
-        },
-        {
-          "id": "proc::IB2600499767",
-          "family": "procurement",
-          "title": "Số hóa tài liệu lưu trữ theo Đề án Tạo lập cơ sở dữ liệu, số hoá tài liệu lưu trữ Tại Trung tâm Lưu trữ lịch sử tỉnh Cao Bằng năm 2026",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=d41424e4-3be8-44d7-91a5-3a932f8db79d&notifyId=d41424e4-3be8-44d7-91a5-3a932f8db79d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499767&planNo=PL2600281641&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T14:58:51.745000+00:00",
-          "buyer": "Sở Nội vụ tỉnh Cao Bằng",
-          "package_price_vnd": 9907739000
-        },
-        {
-          "id": "proc::IB2600499429",
-          "family": "procurement",
-          "title": "Gói thầu số 01: Mua sắm trang thiết bị, phần mềm công nghệ thông tin phục vụ phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số xã Yên Trung năm 2026",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=7a3daa78-19f6-4c7e-85a2-032b45e13003&notifyId=7a3daa78-19f6-4c7e-85a2-032b45e13003&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499429&planNo=PL2600269787&step=tbmt&isInternet=1&bidForm=CHCT",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T10:03:34.537000+00:00",
-          "buyer": "Phòng Văn hóa - Xã hội xã Yên Trung",
-          "package_price_vnd": 1062799520
-        },
-        {
-          "id": "proc::IB2600482073",
-          "family": "procurement",
-          "title": "Thuê dịch vụ phần mềm quản lý hệ thống thông tin bệnh viện (HIS-LIS), phần mềm quản lý bệnh án điện tử (EMR) và phần mềm lưu trữ, truyền tải hình ảnh y tế (PACS) tại Bệnh viện Đa khoa khu vực Cẩm Phả giai đoạn 2026 - 2028;",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=589d6f53-10fa-4f84-999e-824c7893d5b1&notifyId=589d6f53-10fa-4f84-999e-824c7893d5b1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482073&planNo=PL2600269682&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T10:00:00.409000+00:00",
-          "buyer": "Bệnh viện Đa khoa Khu vực Cẩm Phả",
-          "package_price_vnd": 3051000000
-        },
-        {
-          "id": "proc::IB2600497389",
-          "family": "procurement",
-          "title": "Gói thầu số 01: Chỉnh lý, số hóa tài liệu lưu trữ của Văn phòng Đảng ủy.",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5f6a8ca4-58cc-4390-9ade-c39a745f7946&notifyId=5f6a8ca4-58cc-4390-9ade-c39a745f7946&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600497389&planNo=PL2600275542&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T06:58:02.246000+00:00",
-          "buyer": "VĂN PHÒNG ĐẢNG ỦY PHƯỜNG THUẬN GIAO",
-          "package_price_vnd": 1271501500
-        },
-        {
-          "id": "proc::IB2600493305",
-          "family": "procurement",
-          "title": "Mua sắm trang thiết bị kỹ thuật, phần mềm",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=570dd25c-5189-41e5-89ca-53503b9ee779&notifyId=570dd25c-5189-41e5-89ca-53503b9ee779&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493305&planNo=PL2600247203&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T06:40:51.961000+00:00",
-          "buyer": "CỤC CƠ YẾU/ BỘ TỔNG THAM MƯU/BỘ QUỐC PHÒNG",
-          "package_price_vnd": 60248663000
-        }
-      ],
-      "supply_gap": {
-        "status": "unconfirmed_supply_gap",
-        "supply_evidence_families": [],
-        "proxies_needed": [
-          "số vendor có năng lực tương ứng",
-          "mức lương/tin tuyển kỹ năng liên quan",
-          "backlog triển khai của integrator",
-          "giá dịch vụ theo unit",
-          "tỷ lệ tender/RFP phải gia hạn hoặc ít bidder"
-        ],
-        "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm."
-      }
-    },
-    {
-      "id": "energy_grid",
-      "label": "Mở rộng điện & lưới điện",
-      "score": 55,
-      "status": "developing",
+      "id": "sme_formalization",
+      "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+      "score": 38,
+      "status": "early",
       "evidence_count": 4,
+      "directional_evidence_count": 4,
       "independent_families": [
-        "capital",
-        "infrastructure",
-        "market_data"
+        "business_formation",
+        "policy"
       ],
       "independent_publishers": [
-        "Báo Chính phủ",
-        "EVN - Đầu tư xây dựng"
+        "ĐKKD"
+      ],
+      "non_procurement_publishers": [
+        "ĐKKD"
       ],
       "economic_chain": [
-        "Phụ tải điện và nhu cầu công nghiệp tăng",
-        "Đầu tư nguồn/lưới/trạm và hiện đại hóa vận hành",
-        "Nhu cầu thiết bị, thi công, kiểm định, bảo trì và tiết kiệm năng lượng",
-        "Dịch vụ phụ trợ quanh dự án điện tăng theo địa bàn"
+        "Quy định thuế/hóa đơn/đăng ký thay đổi",
+        "Hộ kinh doanh và SME phải đổi quy trình",
+        "Nhu cầu kế toán, hóa đơn, POS, inventory và SOP tăng",
+        "Dịch vụ triển khai + hỗ trợ vận hành có thể tạo doanh thu lặp lại"
       ],
       "small_capital_angles": [
-        "dịch vụ kiểm tra/bảo trì qua đối tác đủ chứng chỉ",
-        "PPE và vật tư tiêu hao theo đơn",
-        "đào tạo/ops phần mềm hoặc quản lý hồ sơ",
-        "sourcing thiết bị phụ trợ không tồn kho",
-        "dịch vụ tiết kiệm năng lượng chỉ khi có năng lực chuyên môn"
+        "setup quy trình/hóa đơn/POS theo checklist",
+        "dịch vụ bookkeeping/ops qua partner đủ chuyên môn",
+        "đào tạo ngắn + hỗ trợ 14/30 ngày",
+        "template/SOP và automation đơn giản"
       ],
       "evidence": [
         {
-          "id": "seed-public-invest",
-          "family": "capital",
-          "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/giai-ngan-von-dau-tu-cong-7-thang-nam-2026-nhieu-bo-nganh-dia-phuong-dat-thap-102260805180417685.htm",
+          "id": "seed-sme",
+          "family": "business_formation",
+          "title": "Khung đăng ký doanh nghiệp và hộ kinh doanh tiếp tục được cập nhật trong 2026",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
           "quality": "curated",
           "category_tags": [
-            "infrastructure"
+            "sme"
           ],
-          "theme_tags": [],
+          "theme_tags": [
+            "sme_formalization"
+          ],
           "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
+          "observed_at": "2026-08-30T14:22:00+07:00",
+          "directional": true
         },
         {
-          "id": "seed-longthanh",
-          "family": "other",
-          "title": "Long Thành dự kiến vận hành thử tháng 9–11 và khai thác thương mại từ 1/12/2026",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/van-hanh-thu-nghiem-san-bay-long-thanh-tu-thang-9-2026-102260728154207159.htm",
-          "quality": "curated",
-          "category_tags": [
-            "infrastructure",
-            "logistics"
-          ],
-          "theme_tags": [],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "a217e71d65206243",
-          "family": "market_data",
-          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
-          "publisher": "EVN - Đầu tư xây dựng",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
+          "id": "38427c6e516fa4f3",
+          "family": "business_formation",
+          "title": "Thống kê ngày 30/8/2026 về Đăng ký doanh nghiệp",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
           "quality": "candidate",
           "category_tags": [
-            "energy"
+            "sme"
           ],
-          "theme_tags": [],
+          "theme_tags": [
+            "sme_formalization"
+          ],
           "geography": [],
-          "observed_at": "2026-08-30T11:41:47.417240+00:00"
+          "observed_at": "2026-08-30T08:57:55.730622+00:00",
+          "directional": true
         },
         {
-          "id": "279fc7dc42fc0d47",
-          "family": "infrastructure",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Bảo đảm tiến độ, phấn đấu sớm thông xe toàn tuyến Vành đai 1",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-bao-dam-tien-do-phan-dau-som-thong-xe-toan-tuyen-vanh-dai-1-102260829174507669.htm",
+          "id": "82abc7b06e73a9f0",
+          "family": "policy",
+          "title": "Hoàn thiện khung khổ pháp luật về đăng ký doanh nghiệp, hộ kinh doanh, tổ hợp tác, hợp tác xã và liên hiệp hợp tác xã",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6889/hoan-thien-khung-kho-phap-luat-ve-dang-ky-doanh-nghiep--ho-kinh-doanh--to-hop-tac--hop-tac-xa-va-lien-hiep-hop-tac-xa.aspx",
           "quality": "candidate",
           "category_tags": [
-            "infrastructure"
+            "sme"
           ],
-          "theme_tags": [],
+          "theme_tags": [
+            "sme_formalization"
+          ],
           "geography": [],
-          "observed_at": "2026-08-30T08:47:27.032183+00:00"
+          "observed_at": "2026-08-30T08:47:29.259361+00:00",
+          "directional": true
+        },
+        {
+          "id": "1e7a85e99fc544be",
+          "family": "business_formation",
+          "title": "Hướng dẫn hồ sơ, thủ tục đăng ký doanh nghiệp, hộ kinh doanh, hợp tác xã",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "http://dangkykinhdoanh.gov.vn/vn/Pages/Huongdandangkydoanhnghiep.aspx",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
+          "theme_tags": [
+            "sme_formalization"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T08:47:29.258742+00:00",
+          "directional": true
         }
       ],
       "supply_gap": {
         "status": "unconfirmed_supply_gap",
-        "supply_evidence_families": [],
+        "supply_evidence_families": [
+          "business_formation"
+        ],
         "proxies_needed": [
-          "số nhà thầu đủ chứng chỉ tại địa bàn",
-          "backlog dự án",
-          "lead-time thiết bị",
-          "mức thiếu hụt nhân lực điện",
-          "giá dịch vụ kiểm định/bảo trì"
+          "mật độ nhà cung cấp dịch vụ tại địa phương",
+          "giá dịch vụ kế toán/POS",
+          "thời gian onboarding",
+          "tỷ lệ hộ kinh doanh chưa chuyển đổi",
+          "số câu hỏi/hỗ trợ lặp lại sau triển khai"
         ],
         "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm."
       }
@@ -903,16 +589,17 @@
     {
       "id": "consumer_services",
       "label": "Tiêu dùng & dịch vụ",
-      "score": 55,
-      "status": "developing",
-      "evidence_count": 6,
+      "score": 28,
+      "status": "insufficient",
+      "evidence_count": 1,
+      "directional_evidence_count": 1,
       "independent_families": [
-        "business_formation",
-        "consumption",
-        "policy"
+        "consumption"
       ],
       "independent_publishers": [
-        "Cổng ĐKKD Quốc gia",
+        "Cục Thống kê"
+      ],
+      "non_procurement_publishers": [
         "Cục Thống kê"
       ],
       "economic_chain": [
@@ -933,6 +620,7 @@
           "family": "consumption",
           "title": "Bán lẻ và dịch vụ tiêu dùng 7 tháng tăng 13,1% danh nghĩa nhưng chỉ 7,5% sau loại trừ giá",
           "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
           "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
           "quality": "official_verified",
           "category_tags": [],
@@ -947,84 +635,13 @@
           "value": 7.5,
           "unit": "percent_yoy_real",
           "direction": "moderate_up",
-          "notes": "Real purchasing power has not accelerated as strongly as nominal revenue; prevents over-reading consumer demand."
-        },
-        {
-          "id": "seed-sme",
-          "family": "business_formation",
-          "title": "Khung đăng ký doanh nghiệp và hộ kinh doanh tiếp tục được cập nhật trong 2026",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
-          "quality": "curated",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "38427c6e516fa4f3",
-          "family": "business_formation",
-          "title": "Thống kê ngày 30/8/2026 về Đăng ký doanh nghiệp",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:57:55.730622+00:00"
-        },
-        {
-          "id": "dc627c5d72303a55",
-          "family": "business_formation",
-          "title": "Top 4 ngành nghề kinh doanh ngày 30/8 về Đăng ký doanh nghiệp",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:57:55.730622+00:00"
-        },
-        {
-          "id": "82abc7b06e73a9f0",
-          "family": "policy",
-          "title": "Hoàn thiện khung khổ pháp luật về đăng ký doanh nghiệp, hộ kinh doanh, tổ hợp tác, hợp tác xã và liên hiệp hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6889/hoan-thien-khung-kho-phap-luat-ve-dang-ky-doanh-nghiep--ho-kinh-doanh--to-hop-tac--hop-tac-xa-va-lien-hiep-hop-tac-xa.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.259361+00:00"
-        },
-        {
-          "id": "1e7a85e99fc544be",
-          "family": "business_formation",
-          "title": "Hướng dẫn hồ sơ, thủ tục đăng ký doanh nghiệp, hộ kinh doanh, hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/Pages/Huongdandangkydoanhnghiep.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.258742+00:00"
+          "notes": "Real purchasing power has not accelerated as strongly as nominal revenue; prevents over-reading consumer demand.",
+          "directional": true
         }
       ],
       "supply_gap": {
-        "status": "investigate_gap",
-        "supply_evidence_families": [
-          "business_formation"
-        ],
+        "status": "unconfirmed_supply_gap",
+        "supply_evidence_families": [],
         "proxies_needed": [
           "số cửa hàng mở/đóng",
           "giá thuê mặt bằng",
@@ -1036,108 +653,85 @@
       }
     },
     {
-      "id": "sme_formalization",
-      "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-      "score": 51,
-      "status": "developing",
-      "evidence_count": 13,
+      "id": "data_infrastructure",
+      "label": "Hạ tầng dữ liệu & số hóa",
+      "score": 25,
+      "status": "insufficient",
+      "evidence_count": 10,
+      "directional_evidence_count": 9,
       "independent_families": [
-        "business_formation",
-        "policy",
         "procurement"
       ],
       "independent_publishers": [
-        "Cổng ĐKKD Quốc gia",
-        "Hệ thống mạng đấu thầu quốc gia"
+        "Chính phủ",
+        "MSC"
+      ],
+      "non_procurement_publishers": [
+        "Chính phủ"
       ],
       "economic_chain": [
-        "Quy định thuế/hóa đơn/đăng ký thay đổi",
-        "Hộ kinh doanh và SME phải đổi quy trình",
-        "Nhu cầu kế toán, hóa đơn, POS, inventory và SOP tăng",
-        "Dịch vụ triển khai + hỗ trợ vận hành có thể tạo doanh thu lặp lại"
+        "Chính sách/dòng vốn cho dữ liệu, cloud, AI và số hóa",
+        "Doanh nghiệp/cơ quan mua hạ tầng, phần mềm và dịch vụ triển khai",
+        "Nhu cầu tích hợp, migration, làm sạch dữ liệu, vận hành và bảo mật tăng",
+        "Nhà thầu lớn cần các module/phần việc nhỏ hoặc đối tác chuyên môn"
       ],
       "small_capital_angles": [
-        "setup quy trình/hóa đơn/POS theo checklist",
-        "dịch vụ bookkeeping/ops qua partner đủ chuyên môn",
-        "đào tạo ngắn + hỗ trợ 14/30 ngày",
-        "template/SOP và automation đơn giản"
+        "data cleaning/QC/annotation có quy trình rõ",
+        "tích hợp hoặc automation ngách",
+        "đào tạo/vận hành/support sau triển khai",
+        "sourcing nhân lực kỹ thuật theo dự án",
+        "dịch vụ số hóa tài liệu chỉ khi có năng lực và compliance phù hợp"
       ],
       "evidence": [
         {
-          "id": "seed-sme",
-          "family": "business_formation",
-          "title": "Khung đăng ký doanh nghiệp và hộ kinh doanh tiếp tục được cập nhật trong 2026",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
+          "id": "macro::evn-system-2026-08-08",
+          "family": "energy",
+          "title": "Hệ thống điện ngày 08/08/2026 sản xuất và nhập khẩu khoảng 1.041,8 triệu kWh",
+          "publisher": "EVN / NSMO",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Thong-tin-chung-ve-van-hanh-he-thong-dien-Quoc-gia-ngay-08082026-60-2015-509188",
+          "quality": "official_verified",
+          "category_tags": [],
+          "theme_tags": [
+            "energy_demand",
+            "manufacturing_expansion",
+            "data_infrastructure"
+          ],
+          "geography": [
+            "Việt Nam"
+          ],
+          "observed_at": "2026-08-08",
+          "metric": "daily_power_output_import",
+          "value": 1041.8,
+          "unit": "million_kwh_day",
+          "direction": "level_observation",
+          "notes": "Single-day level observation; must not be called a trend without time-series comparison.",
+          "directional": false
+        },
+        {
+          "id": "seed-data-ai",
+          "family": "other",
+          "title": "Chiến lược dữ liệu quốc gia đặt mục tiêu 3 trung tâm dữ liệu, HPC và hạ tầng AI",
+          "publisher": "Báo Chính phủ",
+          "publisher_group": "Chính phủ",
+          "source_url": "https://baochinhphu.vn/chi-dao-dieu-hanh-cua-chinh-phu-thu-tuong-chinh-phu-ngay-19-7-2026-102260720084215001.htm",
           "quality": "curated",
           "category_tags": [
-            "sme"
+            "data_ai"
           ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00"
-        },
-        {
-          "id": "38427c6e516fa4f3",
-          "family": "business_formation",
-          "title": "Thống kê ngày 30/8/2026 về Đăng ký doanh nghiệp",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
+          "theme_tags": [
+            "data_infrastructure"
           ],
-          "theme_tags": [],
           "geography": [],
-          "observed_at": "2026-08-30T08:57:55.730622+00:00"
-        },
-        {
-          "id": "dc627c5d72303a55",
-          "family": "business_formation",
-          "title": "Top 4 ngành nghề kinh doanh ngày 30/8 về Đăng ký doanh nghiệp",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:57:55.730622+00:00"
-        },
-        {
-          "id": "82abc7b06e73a9f0",
-          "family": "policy",
-          "title": "Hoàn thiện khung khổ pháp luật về đăng ký doanh nghiệp, hộ kinh doanh, tổ hợp tác, hợp tác xã và liên hiệp hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6889/hoan-thien-khung-kho-phap-luat-ve-dang-ky-doanh-nghiep--ho-kinh-doanh--to-hop-tac--hop-tac-xa-va-lien-hiep-hop-tac-xa.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.259361+00:00"
-        },
-        {
-          "id": "1e7a85e99fc544be",
-          "family": "business_formation",
-          "title": "Hướng dẫn hồ sơ, thủ tục đăng ký doanh nghiệp, hộ kinh doanh, hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/Pages/Huongdandangkydoanhnghiep.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.258742+00:00"
+          "observed_at": "2026-08-30T14:22:00+07:00",
+          "directional": true
         },
         {
           "id": "proc::IB2600499767",
           "family": "procurement",
           "title": "Số hóa tài liệu lưu trữ theo Đề án Tạo lập cơ sở dữ liệu, số hoá tài liệu lưu trữ Tại Trung tâm Lưu trữ lịch sử tỉnh Cao Bằng năm 2026",
           "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=d41424e4-3be8-44d7-91a5-3a932f8db79d&notifyId=d41424e4-3be8-44d7-91a5-3a932f8db79d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499767&planNo=PL2600281641&step=tbmt&isInternet=1&bidForm=DTRR",
           "quality": "official_trigger",
           "category_tags": [
@@ -1149,13 +743,15 @@
           "geography": [],
           "observed_at": "2026-08-29T14:58:51.745000+00:00",
           "buyer": "Sở Nội vụ tỉnh Cao Bằng",
-          "package_price_vnd": 9907739000
+          "package_price_vnd": 9907739000,
+          "directional": true
         },
         {
           "id": "proc::IB2600499429",
           "family": "procurement",
           "title": "Gói thầu số 01: Mua sắm trang thiết bị, phần mềm công nghệ thông tin phục vụ phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số xã Yên Trung năm 2026",
           "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=7a3daa78-19f6-4c7e-85a2-032b45e13003&notifyId=7a3daa78-19f6-4c7e-85a2-032b45e13003&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499429&planNo=PL2600269787&step=tbmt&isInternet=1&bidForm=CHCT",
           "quality": "official_trigger",
           "category_tags": [
@@ -1167,13 +763,15 @@
           "geography": [],
           "observed_at": "2026-08-29T10:03:34.537000+00:00",
           "buyer": "Phòng Văn hóa - Xã hội xã Yên Trung",
-          "package_price_vnd": 1062799520
+          "package_price_vnd": 1062799520,
+          "directional": true
         },
         {
           "id": "proc::IB2600482073",
           "family": "procurement",
           "title": "Thuê dịch vụ phần mềm quản lý hệ thống thông tin bệnh viện (HIS-LIS), phần mềm quản lý bệnh án điện tử (EMR) và phần mềm lưu trữ, truyền tải hình ảnh y tế (PACS) tại Bệnh viện Đa khoa khu vực Cẩm Phả giai đoạn 2026 - 2028;",
           "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=589d6f53-10fa-4f84-999e-824c7893d5b1&notifyId=589d6f53-10fa-4f84-999e-824c7893d5b1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482073&planNo=PL2600269682&step=tbmt&isInternet=1&bidForm=DTRR",
           "quality": "official_trigger",
           "category_tags": [
@@ -1185,13 +783,15 @@
           "geography": [],
           "observed_at": "2026-08-29T10:00:00.409000+00:00",
           "buyer": "Bệnh viện Đa khoa Khu vực Cẩm Phả",
-          "package_price_vnd": 3051000000
+          "package_price_vnd": 3051000000,
+          "directional": true
         },
         {
           "id": "proc::IB2600497389",
           "family": "procurement",
           "title": "Gói thầu số 01: Chỉnh lý, số hóa tài liệu lưu trữ của Văn phòng Đảng ủy.",
           "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5f6a8ca4-58cc-4390-9ade-c39a745f7946&notifyId=5f6a8ca4-58cc-4390-9ade-c39a745f7946&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600497389&planNo=PL2600275542&step=tbmt&isInternet=1&bidForm=DTRR",
           "quality": "official_trigger",
           "category_tags": [
@@ -1203,48 +803,93 @@
           "geography": [],
           "observed_at": "2026-08-29T06:58:02.246000+00:00",
           "buyer": "VĂN PHÒNG ĐẢNG ỦY PHƯỜNG THUẬN GIAO",
-          "package_price_vnd": 1271501500
-        },
-        {
-          "id": "proc::IB2600493305",
-          "family": "procurement",
-          "title": "Mua sắm trang thiết bị kỹ thuật, phần mềm",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=570dd25c-5189-41e5-89ca-53503b9ee779&notifyId=570dd25c-5189-41e5-89ca-53503b9ee779&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493305&planNo=PL2600247203&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-29T06:40:51.961000+00:00",
-          "buyer": "CỤC CƠ YẾU/ BỘ TỔNG THAM MƯU/BỘ QUỐC PHÒNG",
-          "package_price_vnd": 60248663000
+          "package_price_vnd": 1271501500,
+          "directional": true
         }
       ],
       "supply_gap": {
-        "status": "investigate_gap",
-        "supply_evidence_families": [
-          "business_formation"
-        ],
+        "status": "unconfirmed_supply_gap",
+        "supply_evidence_families": [],
         "proxies_needed": [
-          "mật độ nhà cung cấp dịch vụ tại địa phương",
-          "giá dịch vụ kế toán/POS",
-          "thời gian onboarding",
-          "tỷ lệ hộ kinh doanh chưa chuyển đổi",
-          "số câu hỏi/hỗ trợ lặp lại sau triển khai"
+          "số vendor có năng lực tương ứng",
+          "mức lương/tin tuyển kỹ năng liên quan",
+          "backlog triển khai của integrator",
+          "giá dịch vụ theo unit",
+          "tỷ lệ tender/RFP phải gia hạn hoặc ít bidder"
+        ],
+        "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm."
+      }
+    },
+    {
+      "id": "energy_grid",
+      "label": "Mở rộng điện & lưới điện",
+      "score": 25,
+      "status": "insufficient",
+      "evidence_count": 1,
+      "directional_evidence_count": 1,
+      "independent_families": [
+        "market_data"
+      ],
+      "independent_publishers": [
+        "EVN/NSMO"
+      ],
+      "non_procurement_publishers": [
+        "EVN/NSMO"
+      ],
+      "economic_chain": [
+        "Phụ tải điện và nhu cầu công nghiệp tăng",
+        "Đầu tư nguồn/lưới/trạm và hiện đại hóa vận hành",
+        "Nhu cầu thiết bị, thi công, kiểm định, bảo trì và tiết kiệm năng lượng",
+        "Dịch vụ phụ trợ quanh dự án điện tăng theo địa bàn"
+      ],
+      "small_capital_angles": [
+        "dịch vụ kiểm tra/bảo trì qua đối tác đủ chứng chỉ",
+        "PPE và vật tư tiêu hao theo đơn",
+        "đào tạo/ops phần mềm hoặc quản lý hồ sơ",
+        "sourcing thiết bị phụ trợ không tồn kho",
+        "dịch vụ tiết kiệm năng lượng chỉ khi có năng lực chuyên môn"
+      ],
+      "evidence": [
+        {
+          "id": "a217e71d65206243",
+          "family": "market_data",
+          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
+          "publisher": "EVN - Đầu tư xây dựng",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
+          "quality": "candidate",
+          "category_tags": [
+            "energy"
+          ],
+          "theme_tags": [
+            "energy_grid"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T11:41:47.417240+00:00",
+          "directional": true
+        }
+      ],
+      "supply_gap": {
+        "status": "unconfirmed_supply_gap",
+        "supply_evidence_families": [],
+        "proxies_needed": [
+          "số nhà thầu đủ chứng chỉ tại địa bàn",
+          "backlog dự án",
+          "lead-time thiết bị",
+          "mức thiếu hụt nhân lực điện",
+          "giá dịch vụ kiểm định/bảo trì"
         ],
         "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm."
       }
     }
   ],
   "guardrails": [
-    "Procurement is supporting evidence, not the center of V2.0.",
+    "A broad sector tag cannot create theme membership without contextual evidence.",
+    "Procurement is corroborating evidence, not the center of V2.0.",
+    "Single-point level observations are context only, not trend families.",
     "No supply evidence != supply shortage.",
     "A theme is not an opportunity until a buyer, offer, economics and small test are identified.",
-    "Independent evidence families matter more than raw headline count.",
+    "Independent evidence families and institutions matter more than raw headline count.",
     "Contradictory evidence must be retained rather than hidden."
   ]
 }
