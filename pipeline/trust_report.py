@@ -46,6 +46,9 @@ def harden(report: dict) -> dict:
             f"Mới có {days}/{need} ngày lịch sử khuyến nghị. Daily hiện là current-state brief, "
             "không phải kết luận xu hướng theo thời gian."
         )
+        # Do not let intra-day/methodology deltas masquerade as daily economic change.
+        report["what_changed"] = []
+        report["period_delta"] = {"available": False, "current_state_only": True, "reason": "insufficient_comparable_daily_history"}
         return report
 
     report["analysis_status"] = "locked_learning_history"
@@ -67,7 +70,7 @@ def main() -> None:
     payload = load(REPORTS, {})
     history = load(HISTORY, [])
     current_keys = set()
-    for key, report in (payload.get("reports") or {}).items():
+    for report in (payload.get("reports") or {}).values():
         if isinstance(report, dict):
             harden(report)
             current_keys.add((report.get("kind"), report.get("period_key")))
