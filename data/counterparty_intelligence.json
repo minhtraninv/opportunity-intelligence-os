@@ -1,16 +1,18 @@
 {
   "meta": {
-    "version": "1.5.0",
-    "generated_at": "2026-08-30T10:36:24.571172+00:00",
-    "mode": "counterparty_execution_dossiers",
-    "principle": "evidence_backed_counterparty_targets_with_no_fabricated_contacts"
+    "version": "1.5.1",
+    "generated_at": "2026-08-30T10:43:04.219048+00:00",
+    "mode": "counterparty_execution_dossiers_with_verified_contact_registry",
+    "principle": "evidence_backed_counterparty_targets_and_dual_proof_contacts_no_fabrication"
   },
   "coverage": {
     "investigate_now_tenders": 14,
     "dossiers_built": 14,
-    "counterparty_targets": 40,
-    "verified_contact_paths": 0,
-    "unresolved_contact_targets": 40
+    "counterparty_targets": 41,
+    "verified_contact_targets": 7,
+    "verified_contact_paths": 21,
+    "unresolved_contact_targets": 34,
+    "contact_registry_entities": 2
   },
   "dossiers": [
     {
@@ -26,6 +28,50 @@
       "recommended_path": "subcontract_or_sourcing",
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=d41424e4-3be8-44d7-91a5-3a932f8db79d&notifyId=d41424e4-3be8-44d7-91a5-3a932f8db79d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499767&planNo=PL2600281641&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
+        {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
         {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
@@ -62,7 +108,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -100,49 +147,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -166,6 +205,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=7a3daa78-19f6-4c7e-85a2-032b45e13003&notifyId=7a3daa78-19f6-4c7e-85a2-032b45e13003&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499429&planNo=PL2600269787&step=tbmt&isInternet=1&bidForm=CHCT",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -201,7 +284,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -239,49 +323,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -305,6 +381,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=589d6f53-10fa-4f84-999e-824c7893d5b1&notifyId=589d6f53-10fa-4f84-999e-824c7893d5b1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482073&planNo=PL2600269682&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -340,7 +460,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -378,49 +499,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -444,6 +557,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5f6a8ca4-58cc-4390-9ade-c39a745f7946&notifyId=5f6a8ca4-58cc-4390-9ade-c39a745f7946&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600497389&planNo=PL2600275542&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -479,7 +636,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -517,49 +675,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -583,6 +733,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=570dd25c-5189-41e5-89ca-53503b9ee779&notifyId=570dd25c-5189-41e5-89ca-53503b9ee779&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493305&planNo=PL2600247203&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -618,7 +812,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -656,49 +851,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -722,6 +909,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&notifyId=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493339&planNo=PL2600275637&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -757,7 +988,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -795,49 +1027,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -861,6 +1085,50 @@
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f2b115b8-2334-4616-a91a-ad1ad2cc479a&notifyId=f2b115b8-2334-4616-a91a-ad1ad2cc479a&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493697&planNo=PL2600278183&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
         {
+          "partner_id": "vn0100684378",
+          "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+          "contractor_code": "vn0100684378",
+          "tax_code": "0100684378",
+          "counterparty_score": 80,
+          "partner_evidence_score": 92,
+          "observed_wins": 4,
+          "observed_wins_same_category": 3,
+          "observed_winning_value_vnd": 1158244900,
+          "buyers_observed": [
+            "PHÒNG VĂN HÓA XÃ HỘI XÃ YÊN XUÂN",
+            "Văn phòng HĐND - UBND phường Vĩnh Hưng",
+            "Trạm Y tế Quế Võ",
+            "Phòng văn hoá xã hội xã Bình An"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T08:33:49+00:00",
+          "latest_tender_title": "Triển khai lắp đặt đường truyền, thiết bị và phần mềm phục vụ hội nghị truyền hình cho nhà văn hóa các thôn trên địa bàn xã Yên Xuân.",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600496538&notifyId=IB2600496538&inputResultId=0748bc00-46c3-428a-8914-bafe94570ea5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600496538&planNo=PL2600283797&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 80/100.",
+            "Đã quan sát 3 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0311991064",
           "contractor_name": "CÔNG TY TNHH DỊCH VỤ TƯ VẤN NGHIỆP VỤ VĂN PHÒNG LƯU TRỮ HOÀNG PHÁT",
           "contractor_code": "vn0311991064",
@@ -896,7 +1164,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -934,49 +1203,41 @@
             "nhân sự triển khai/module ngách",
             "hỗ trợ vận hành sau triển khai"
           ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0400392263",
-          "contractor_name": "Công ty cổ phần SOFTECH",
-          "contractor_code": "vn0400392263",
-          "tax_code": "0400392263",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 427000000,
-          "buyers_observed": [
-            "Trường Đại học Xây dựng Hà Nội"
+          "contact_status": "verified",
+          "verified_contact_paths": [
+            {
+              "type": "website",
+              "value": "https://solutions.mobifone.vn/lien-he",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "email",
+              "value": "contact-itc@mobifone.vn",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            },
+            {
+              "type": "phone",
+              "value": "18001290",
+              "scope": "MobiFone Solutions / general inquiry",
+              "source_url": "https://solutions.mobifone.vn/lien-he",
+              "source_type": "official_company_website",
+              "verified_at": "2026-08-30T17:35:00+07:00"
+            }
           ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-29T14:47:03+00:00",
-          "latest_tender_title": "Xây dựng phần mềm HUCA",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500013&notifyId=IB2600500013&inputResultId=ae4a60b8-8d8f-42fe-a9b3-8370ac33cc81&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500013&planNo=PL2600286037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": {
+            "identity_status": "verified",
+            "identity_source_url": "https://solutions.mobifone.vn/lien-he",
+            "identity_source_type": "official_company_website",
+            "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
+            "last_verified_at": "2026-08-30T17:35:00+07:00"
+          },
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1034,7 +1295,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1074,7 +1336,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1114,7 +1377,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1137,6 +1401,48 @@
       "recommended_path": "subcontract_or_sourcing",
       "official_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f10fffdd-9311-45ae-b09f-30dde12c6671&notifyId=f10fffdd-9311-45ae-b09f-30dde12c6671&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600492572&planNo=PL2600281678&step=tbmt&isInternet=1&bidForm=DTRR",
       "counterparties": [
+        {
+          "partner_id": "vnz000043763",
+          "contractor_name": "Nhà xuất bản Kinh tế - Tài chính",
+          "contractor_code": "vnz000043763",
+          "tax_code": "0111245277",
+          "counterparty_score": 72,
+          "partner_evidence_score": 75,
+          "observed_wins": 2,
+          "observed_wins_same_category": 2,
+          "observed_winning_value_vnd": 379400000,
+          "buyers_observed": [
+            "THỐNG KÊ TỈNH ĐẮK LẮK",
+            "Thống kê tỉnh Tuyên Quang"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-25T09:30:53+00:00",
+          "latest_tender_title": "in ấn phẩm: “Kết quả Tổng điều tra nông thôn nông nghiệp năm 2025 tỉnh Đắk Lắk”",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600485024&notifyId=IB2600485024&inputResultId=bdf65ae2-252c-4e93-8e61-d70a2828b377&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600485024&planNo=PL2600270904&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 72/100.",
+            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Sales dự án",
+            "Account / Production",
+            "Điều phối sản xuất"
+          ],
+          "offers_to_test": [
+            "thiết kế/prepress/in hạng mục tách được",
+            "QC/đóng gói",
+            "giao nhận theo đơn"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm printing_media; kiểm tra xem họ có nhu cầu thuê ngoài thiết kế/prepress/in hạng mục tách được hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
         {
           "partner_id": "vn3400346801",
           "contractor_name": "CÔNG TY TNHH QUẢNG CÁO THÁI BÌNH DƯƠNG",
@@ -1172,7 +1478,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm printing_media; kiểm tra xem họ có nhu cầu thuê ngoài thiết kế/prepress/in hạng mục tách được hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1230,7 +1537,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1270,7 +1578,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1310,7 +1619,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1368,7 +1678,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1408,7 +1719,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1448,7 +1760,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm consulting; kiểm tra xem họ có nhu cầu thuê ngoài khảo sát/thu thập dữ liệu hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1506,7 +1819,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1546,7 +1860,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1586,7 +1901,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1644,7 +1960,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1684,7 +2001,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1724,7 +2042,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm office_goods; kiểm tra xem họ có nhu cầu thuê ngoài sourcing đúng SKU/cấu hình hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1782,7 +2101,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1822,7 +2142,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1862,7 +2183,8 @@
           ],
           "contact_status": "unresolved",
           "verified_contact_paths": [],
-          "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
@@ -1875,7 +2197,8 @@
   ],
   "warnings": [
     "Historical winner không đồng nghĩa bidder hiện tại.",
-    "Contact unresolved là trạng thái hợp lệ; không sinh email/phone/person bằng suy đoán.",
+    "Contact unresolved là trạng thái hợp lệ; không sinh email/phone/person/domain bằng suy đoán.",
+    "Contact verified chỉ có nghĩa identity + public contact source đã được kiểm chứng; không có nghĩa đúng người phụ trách gói hiện tại.",
     "Outreach chỉ nhằm kiểm chứng nhu cầu phần việc; không mua hàng hoặc cam kết vốn trước phản hồi thương mại thật."
   ]
 }
