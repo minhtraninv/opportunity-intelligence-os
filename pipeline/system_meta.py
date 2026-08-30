@@ -12,6 +12,7 @@ DATA = ROOT / "data"
 OUTPUT = DATA / "system_meta.json"
 
 MODULES = {
+    "product_release": "product_release.json",
     "radar": "radar.json",
     "change_detector": "intelligence.json",
     "policy": "policy_intelligence.json",
@@ -64,6 +65,7 @@ def main() -> None:
     versions = []
     newest = None
     baseline_status = "unknown"
+    release_status = None
 
     for name, filename in MODULES.items():
         payload = load(DATA / filename)
@@ -77,6 +79,8 @@ def main() -> None:
             versions.append(version)
         if name == "change_detector" and status:
             baseline_status = status
+        if name == "product_release":
+            release_status = status
         if generated:
             try:
                 dt = datetime.fromisoformat(str(generated).replace("Z", "+00:00"))
@@ -87,19 +91,23 @@ def main() -> None:
 
     system_version = max(versions, key=version_tuple) if versions else "0.0.0"
     if baseline_status == "active":
-        status_label = "INTELLIGENCE ACTIVE"
+        baseline_label = "INTELLIGENCE ACTIVE"
     elif baseline_status == "warming_up":
-        status_label = "LEARNING BASELINE"
+        baseline_label = "LEARNING BASELINE"
     else:
-        status_label = "SYSTEM ONLINE"
+        baseline_label = "SYSTEM ONLINE"
+
+    release_label = "OFFICIAL" if release_status == "official" else "RC" if release_status == "release_candidate" else None
+    status_label = f"{release_label} · {baseline_label}" if release_label else baseline_label
 
     payload = {
         "system_version": system_version,
         "status_label": status_label,
+        "release_status": release_status,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "latest_component_update": newest.isoformat() if newest else None,
         "components": components,
-        "principle": "system_version_is_derived_from_module_versions_not_hardcoded_in_frontend"
+        "principle": "stable_product_release_plus_independent_module_versions"
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"system-meta version={system_version} status={status_label}")
