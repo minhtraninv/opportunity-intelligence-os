@@ -1,11 +1,19 @@
 {
   "meta": {
-    "version": "3.0.0",
-    "mode": "official_stable_information_first_release",
+    "version": "3.0.1",
+    "mode": "official_trust_hardened_observation_release",
     "status": "official",
-    "generated_at": "2026-08-30T16:59:30+00:00"
+    "generated_at": "2026-08-31T01:45:00+07:00"
   },
   "product_promise": "Giúp người dùng nhìn thấy những thay đổi đáng chú ý trong chính sách, dòng tiền, kinh tế thực, địa bàn và entity đủ sớm để mở hồ sơ nghiên cứu; không thay người dùng ra quyết định đầu tư hay kinh doanh.",
+  "maturity": {
+    "product_architecture": "stable",
+    "discovery_mode": "active",
+    "verified_intelligence_mode": "evidence_gated",
+    "trend_mode": "learning_baseline",
+    "weekly_monthly_reporting": "locked_until_history_ready",
+    "decision_use": "research_radar_not_decision_engine"
+  },
   "core_chain": [
     "Macro / Policy",
     "Money Flow",
@@ -22,9 +30,19 @@
     "Không phải stock screener hoặc hệ thống khuyến nghị mua bán chứng khoán.",
     "Không phải công cụ săn đấu thầu; procurement chỉ là một nguồn evidence và một execution branch.",
     "Không ép mọi signal phải biến thành opportunity.",
-    "Không coi media discovery là primary truth.",
+    "Không coi media discovery hoặc headline trên trang chính thức là primary truth khi chưa đọc/xác minh nội dung gốc.",
     "Không hard-filter bức tranh theo vốn, địa lý hoặc nghề nghiệp cá nhân.",
-    "Không giả vờ dữ liệu đầy đủ khi Source Coverage đang chỉ ra blind spot."
+    "Không giả vờ dữ liệu đầy đủ khi Source Coverage đang chỉ ra blind spot.",
+    "Không tạo Weekly/Monthly pseudo-analysis khi chưa đủ lịch sử kỳ tương ứng."
+  ],
+  "trust_contract": [
+    "Discovery rộng, kết luận hẹp.",
+    "Official-site headline discovery không đồng nghĩa primary verified evidence.",
+    "Money Flow developing/converging phải có verified evidence families và institutions độc lập.",
+    "Public Entity Convergence phải có ít nhất một primary verified evidence; media-only nằm ở discovery layer.",
+    "Địa danh và cơ quan công không được giả dạng auto-discovered organization.",
+    "Primary-domain Source Coverage chỉ được nâng bằng verified evidence; discovery coverage được đo riêng.",
+    "Mọi publication phải vượt pre-publication trust gate."
   ],
   "release_gate": {
     "information_first_frontend": true,
@@ -36,14 +54,20 @@
     "personal_action_layer_non_blinding": true,
     "advanced_procurement_demoted": true,
     "frontend_javascript_validated": true,
-    "corporate_primary_source_tls_verified": true
+    "corporate_primary_source_tls_verified": true,
+    "headline_primary_boundary_enforced": true,
+    "entity_type_boundary_enforced": true,
+    "period_report_maturity_gate": true,
+    "prepublication_trust_gate": true
   },
   "known_non_blocking_blind_spots": [
-    "Corporate disclosures đã truy cập HNX bằng TLS verification đầy đủ nhưng lớp qualified-event extraction còn mỏng; HOSE vẫn cần bổ sung.",
-    "NSO có lúc connection-reset nên macro, labor và consumption cần nguồn dự phòng.",
+    "Corporate disclosures truy cập được HNX nhưng lớp qualified-event extraction còn mỏng; HOSE vẫn cần bổ sung.",
+    "NSO có lúc connection-reset nên macro, labor và consumption cần nguồn dự phòng; một số macro observations hiện vẫn là snapshot verified thủ công.",
     "Regional real economy và đất đai/BĐS vẫn thiếu collector active đủ rộng.",
-    "Capital markets/bonds và FDI cần thêm nguồn độc lập và parser dữ liệu sâu hơn.",
-    "V3 Official chốt kiến trúc sản phẩm; độ phủ nguồn tiếp tục được mở rộng sau release."
+    "Capital markets/bonds, institutional capital allocation và FDI cần thêm nguồn độc lập và parser dữ liệu sâu hơn.",
+    "Open-world media extraction vẫn là discovery system; entity resolution sẽ tiếp tục được đánh giá bằng Miss Log và false-positive log.",
+    "V3.0.1 chốt trust contract; độ phủ nguồn tiếp tục được mở rộng mà không thay kiến trúc lõi."
   ],
-  "release_rule": "Sau V3.0, ưu tiên tăng source coverage, evidence depth, entity resolution, history và precision. Không thay kiến trúc lõi nếu không có bằng chứng rằng thay đổi đó làm tăng khả năng nhìn thấy chuyển động quan trọng."
+  "release_rule": "Sau V3.0.1, production chỉ thay đổi vì bug/performance, source blind spot đã chứng minh hoặc lỗi trust/precision. Ý tưởng mới đi vào backlog cho tới khi có bằng chứng lặp lại rằng nó cải thiện khả năng nhìn thấy chuyển động quan trọng.",
+  "operating_rule": "Use it now as a research radar. Do not promote it to a decision engine merely because the interface shows a score."
 }
