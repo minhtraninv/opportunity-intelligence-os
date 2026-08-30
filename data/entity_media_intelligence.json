@@ -1,62 +1,552 @@
 {
   "meta": {
-    "version": "2.6.2",
-    "generated_at": "2026-08-30T15:37:28.383304+00:00",
-    "mode": "economic_media_entity_discovery",
-    "principle": "media_creates_investigation_triggers_not_primary_truth"
+    "version": "2.7.0",
+    "generated_at": "2026-08-30T15:44:47.726233+00:00",
+    "mode": "open_world_economic_entity_discovery",
+    "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates"
   },
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 5,
-    "entities_seen_recently": 3,
-    "history_events": 5
+    "recent_events": 34,
+    "entities_seen_recently": 23,
+    "auto_discovered_entities": 20,
+    "history_events": 34
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 3,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 0,
+      "items_this_run": 4,
       "error": null
     },
     {
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 2,
+      "items_this_run": 11,
       "error": null
     },
     {
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 0,
+      "items_this_run": 8,
       "error": null
     }
   ],
   "entity_counts": [
     {
       "entity_id": "sun_group",
-      "recent_events": 2
+      "recent_events": 4
     },
     {
       "entity_id": "vingroup_ecosystem",
+      "recent_events": 4
+    },
+    {
+      "entity_id": "auto-cà-mau-5be786d4",
+      "recent_events": 4
+    },
+    {
+      "entity_id": "auto-flc-667362c1",
       "recent_events": 2
     },
     {
       "entity_id": "samsung_vietnam",
+      "recent_events": 2
+    },
+    {
+      "entity_id": "auto-cục-đường-68b6468d",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-điện-máy-xanh-756f96d7",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-techcombank-8fecbacf",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-việt-nam-brazil-0a2267e2",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-leipzig-b4f3b12b",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-tp-hồ-chí-minh-de1ccb37",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-bidv-0925568a",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-cục-dự-08934e1e",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-chợ-đồng-xuân-900023b3",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-saigon-co-op-3c00f6e6",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-sri-lanka-c5cbd6be",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-tây-ninh-02d05047",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-uob-việt-nam-868a4d3b",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-novaland-eaa8c17a",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-texhong-hải-hà-bb5b4199",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-qualcomm-77bc8e74",
       "recent_events": 1
     }
   ],
+  "auto_entities": [
+    {
+      "id": "auto-cà-mau-5be786d4",
+      "label": "Cà Mau",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Cà Mau"
+      ],
+      "recent_events": 4,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-flc-667362c1",
+      "label": "FLC",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "FLC"
+      ],
+      "recent_events": 2,
+      "families": [
+        "capital"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-cục-đường-68b6468d",
+      "label": "Cục Đường",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Cục Đường"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-điện-máy-xanh-756f96d7",
+      "label": "Điện Máy Xanh",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Điện Máy Xanh"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-techcombank-8fecbacf",
+      "label": "Techcombank",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Techcombank"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-việt-nam-brazil-0a2267e2",
+      "label": "Việt Nam-Brazil",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Việt Nam-Brazil"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-leipzig-b4f3b12b",
+      "label": "Leipzig",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Leipzig"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-tp-hồ-chí-minh-de1ccb37",
+      "label": "TP Hồ Chí Minh",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "TP Hồ Chí Minh"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-bidv-0925568a",
+      "label": "BIDV",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "BIDV"
+      ],
+      "recent_events": 1,
+      "families": [
+        "capital"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-cục-dự-08934e1e",
+      "label": "Cục Dự",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Cục Dự"
+      ],
+      "recent_events": 1,
+      "families": [
+        "capital"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-chợ-đồng-xuân-900023b3",
+      "label": "Chợ Đồng Xuân",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Chợ Đồng Xuân"
+      ],
+      "recent_events": 1,
+      "families": [
+        "operating"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-saigon-co-op-3c00f6e6",
+      "label": "Saigon Co.op",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Saigon Co.op"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-hải-phòng-48a73a83",
+      "label": "Hải Phòng",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Hải Phòng"
+      ],
+      "recent_events": 1,
+      "families": [
+        "operating"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-sri-lanka-c5cbd6be",
+      "label": "Sri Lanka",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Sri Lanka"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Tây Ninh"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-uob-việt-nam-868a4d3b",
+      "label": "UOB Việt Nam",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "UOB Việt Nam"
+      ],
+      "recent_events": 1,
+      "families": [
+        "operating"
+      ],
+      "publishers": [
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-novaland-eaa8c17a",
+      "label": "Novaland",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Novaland"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-texhong-hải-hà-bb5b4199",
+      "label": "Texhong Hải Hà",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Texhong Hải Hà"
+      ],
+      "recent_events": 1,
+      "families": [
+        "capital"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-khánh-hòa-b1f03cd2",
+      "label": "Khánh Hòa",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Khánh Hòa"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    },
+    {
+      "id": "auto-qualcomm-77bc8e74",
+      "label": "Qualcomm",
+      "entity_type": "auto_discovered_organization",
+      "aliases": [
+        "Qualcomm"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification"
+    }
+  ],
   "events": [
+    {
+      "id": "aab4687cc29a705f",
+      "event_signature": "75930afb599f8552",
+      "entity_id": "auto-cục-đường-68b6468d",
+      "entity_label": "Cục Đường",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cục Đường bộ: Cao tốc Bắc - Nam vận hành thông suốt dù lưu lượng xe tăng tới 60%",
+      "summary": "Thông tin từ Cục Đường bộ Việt Nam (Bộ Xây dựng), dù lưu lượng phương tiện trên 15 tuyến cao tốc tăng gần 60% nhưng hệ thống giao thông vẫn vận hành thông suốt trong ngày đầu nghỉ lễ.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/cuc-duong-bo-cao-toc-bac-nam-van-hanh-thong-suot-du-luu-luong-xe-tang-toi-60-100260830141958301.htm",
+      "published_at": "2026-08-30T15:44:47.726233+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "f9647e518dc0073c",
+      "event_signature": "4ce2c78c135dcb56",
+      "entity_id": "auto-điện-máy-xanh-756f96d7",
+      "entity_label": "Điện Máy Xanh",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Điện Máy Xanh chính thức khép lại dự án tại Campuchia sau 9 năm",
+      "summary": "Cục Đầu tư nước ngoài đã chấm dứt hiệu lực giấy chứng nhận đầu tư ra nước ngoài mà Điện Máy Xanh được cấp từ đầu năm 2017. Công ty con của doanh nghiệp này tại Campuchia thực tế đã giải thể xong từ tháng 1-2025.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/dien-may-xanh-chinh-thuc-khep-lai-du-an-tai-campuchia-sau-9-nam-100260829201952295.htm",
+      "published_at": "2026-08-30T15:44:47.726233+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "bbcf35f6a0a134b2",
+      "event_signature": "bf75896bc2c3b8de",
+      "entity_id": "auto-flc-667362c1",
+      "entity_label": "FLC",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "FLC của ông Trịnh Văn Quyết tăng vốn lên gần 13.000 tỉ đồng",
+      "summary": "Vốn điều lệ Tập đoàn FLC được nâng từ 8.600 tỉ lên 12.926 tỉ đồng, tương ứng phát hành thêm 432,6 triệu cổ phiếu. Đây là lần tăng vốn thứ hai của doanh nghiệp kể từ khi bị hủy tư cách công ty đại chúng cuối năm 2025.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/flc-cua-ong-trinh-van-quyet-tang-von-len-gan-13000-ti-dong-100260829191507618.htm",
+      "published_at": "2026-08-30T15:44:47.726233+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "28814e27b55e91ba",
+      "event_signature": "dae9bc6d482cbbe0",
+      "entity_id": "auto-techcombank-8fecbacf",
+      "entity_label": "Techcombank",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Techcombank triển khai Mega Deal nhân dịp Quốc khánh 2-9",
+      "summary": "Nhân dịp Quốc khánh 2-9, Chương trình Khách hàng thân thiết Techcombank OneU triển khai Mega Deal “Tuần lễ Tự hào” trên Techcombank Mobile.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/techcombank-trien-khai-mega-deal-nhan-dip-quoc-khanh-2-9-100260829184036714.htm",
+      "published_at": "2026-08-30T15:44:47.726233+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "b56198a6b5609b7a",
+      "event_signature": "3a10ee3e8d8ba241",
+      "entity_id": "auto-flc-667362c1",
+      "entity_label": "FLC",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "FLC tăng vốn lên gần 13.000 tỷ đồng",
+      "summary": "Công ty cổ phần Tập đoàn FLC vừa tăng vốn điều lệ hơn 4.300 tỷ đồng lên mức 13.000 tỷ.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/flc-tang-von-len-gan-13-000-ty-dong-5115107.html",
+      "published_at": "2026-08-30T11:05:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
     {
       "id": "9d0834f67aa129d1",
       "event_signature": "06a4226f1c9312bb",
@@ -71,6 +561,23 @@
       "published_at": "2026-08-30T07:52:00+00:00",
       "first_seen_at": "2026-08-30T15:31:57.600489+00:00",
       "last_seen_at": "2026-08-30T15:37:28.383304+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "6ad2e24e554cac68",
+      "event_signature": "06a4226f1c9312bb",
+      "entity_id": "sun_group",
+      "entity_label": "Sun Group",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Với dự án 33.000 tỉ đồng, Sun Group sẽ 'biến hóa' khu vực Hồ Tây thế nào?",
+      "summary": "UBND TP.Hà Nội vừa tổ chức lễ khởi công và khánh thành các dự án hạ tầng trọng điểm, trong đó tiêu điểm là Dự án đầu tư, cải tạo, phát huy giá trị khu vực Hồ Tây và tuyến đường giao thông cảnh quan ven hồ do Tập đoàn Sun Group làm chủ đầu tư.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/voi-du-an-33000-ti-dong-sun-group-se-bien-hoa-khu-vuc-ho-tay-the-nao-185260830144013714.htm",
+      "published_at": "2026-08-30T07:52:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -90,6 +597,210 @@
       "evidence_grade": "media_discovery"
     },
     {
+      "id": "97752720a7e95b5c",
+      "event_signature": "b7962a68a9db27e5",
+      "entity_id": "vingroup_ecosystem",
+      "entity_label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "strategy",
+      "title": "Vingroup lãi hơn 12.500 tỷ đồng từ bán mảng sản xuất của VinFast ở Việt Nam",
+      "summary": "Vingroup lãi 12.542 tỷ đồng sau khi thoái vốn khỏi VinFast Trading & Production, doanh nghiệp sở hữu mảng sản xuất ở Việt Nam của hãng xe VinFast.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/vingroup-lai-hon-12-500-ty-dong-tu-ban-mang-san-xuat-cua-vinfast-o-viet-nam-5115157.html",
+      "published_at": "2026-08-30T07:05:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "0276d18ab17cb3c6",
+      "event_signature": "de73bfba19889016",
+      "entity_id": "auto-việt-nam-brazil-0a2267e2",
+      "entity_label": "Việt Nam-Brazil",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Việt Nam-Brazil mở rộng hợp tác, hướng tới mục tiêu thương mại 15 tỷ USD",
+      "summary": "Lễ kỷ niệm Quốc khánh Việt Nam tại Brasilia là dịp ôn lại chặng đường phát triển của Việt Nam, đồng thời khẳng định quyết tâm Việt Nam và Brazil tiếp tục củng cố quan hệ Đối tác chiến lược. Đảng Cộng sản Việt Nam tăng cường hợp tác với các lực lượng chính trị Brazil Thúc đẩy trao đổi kinh tế, thương mại và đầu tư Việt Nam-Brazil Việt Nam và Brazil tăng cường",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/viet-nam-brazil-mo-rong-hop-tac-huong-toi-muc-tieu-thuong-mai-15-ty-usd-post1133355.vnp",
+      "published_at": "2026-08-29T22:14:14+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "0386a46a1d6e02a1",
+      "event_signature": "21faed88c8ab535b",
+      "entity_id": "auto-leipzig-b4f3b12b",
+      "entity_label": "Leipzig",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Leipzig thúc đẩy kết nối doanh nghiệp Đức-Việt qua German-Vietnam Hub",
+      "summary": "Thành phố Leipzig lập German-Vietnam Hub nhằm tạo đầu mối hỗ trợ, kết nối doanh nghiệp hai nước, thúc đẩy đầu tư, thương mại, khoa học-công nghệ, đào tạo nghề và hợp tác nguồn nhân lực Việt Nam-Đức. Việt Nam sẵn sàng tạo điều kiện để doanh nghiệp Đức mở rộng đầu tư, kinh doanh Việt Nam luôn coi Đức là đối tác quan trọng hàng đầu tại châu Âu Quan hệ hữu nghị ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/leipzig-thuc-day-ket-noi-doanh-nghiep-duc-viet-qua-german-vietnam-hub-post1133337.vnp",
+      "published_at": "2026-08-29T19:24:56+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "772a01890ed4c9c2",
+      "event_signature": "21653b5a7cfa20c3",
+      "entity_id": "auto-cà-mau-5be786d4",
+      "entity_label": "Cà Mau",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cà Mau chấp thuận chủ trương đầu tư Khu công nghiệp Tắc Thủ gần 4.000 tỷ đồng",
+      "summary": "Với vị trí và hạ tầng kết nối dự kiến, Khu công nghiệp Tắc Thủ được định hướng khai thác lợi thế về nguyên liệu, năng lượng và logistics, hỗ trợ phát triển các ngành chế biến và sản xuất tại chỗ. Cà Mau ký kết, trao quyết định đầu tư với tổng vốn hơn 479.000 tỷ đồng Cà Mau khởi động 3 dự án điện gió với tổng vốn đầu tư 6.300 tỷ đồng Cà Mau khởi công, khánh t",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/ca-mau-chap-thuan-chu-truong-dau-tu-khu-cong-nghiep-tac-thu-gan-4000-ty-dong-post1133316.vnp",
+      "published_at": "2026-08-29T15:56:46+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "dd546ffe0b2e2994",
+      "event_signature": "2ef2dba6b255ef35",
+      "entity_id": "auto-tp-hồ-chí-minh-de1ccb37",
+      "entity_label": "TP Hồ Chí Minh",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "TP Hồ Chí Minh chỉnh trang đô thị, Đà Nẵng khởi công hạ tầng khu công nghiệp",
+      "summary": "Chào mừng Quốc khánh 2/9, TP Hồ Chí Minh khởi công loạt công trình chỉnh trang đô thị và nhà ở xã hội nghìn tỷ, trong khi Đà Nẵng khởi công xây dựng loạt dự án tại Khu công nghiệp Nam Thăng Bình. Cà Mau khởi công, khánh thành nhiều công trình, dự án dịp Quốc khánh 2/9 TP Hồ Chí Minh dự kiến khởi công, khánh thành 16 công trình, dự án dịp lễ 2/9 Cà Mau khởi c",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/tp-ho-chi-minh-chinh-trang-do-thi-da-nang-khoi-cong-ha-tang-khu-cong-nghiep-post1133289.vnp",
+      "published_at": "2026-08-29T14:01:39+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "3d4f525959d7c8a6",
+      "event_signature": "6c58a52e3129f3c5",
+      "entity_id": "auto-cà-mau-5be786d4",
+      "entity_label": "Cà Mau",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cà Mau dành hơn 480 tỉ đồng xây dựng kè chống sạt lở bờ sông Gành Hào",
+      "summary": "Tỉnh Cà Mau khởi công xây dựng Dự án kè bảo vệ bờ sông Gành Hào với tổng vốn đầu tư hơn 480 tỉ đồng. Đây là công trình trọng điểm về phòng, chống thiên tai cấp thiết đối với đời sống nhân dân vùng ven biển.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/ca-mau-danh-hon-480-ti-dong-xay-dung-ke-chong-sat-lo-bo-song-ganh-hao-18526082916443487.htm",
+      "published_at": "2026-08-29T11:22:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "886d066c068ad719",
+      "event_signature": "21e69dbee41f9645",
+      "entity_id": "auto-bidv-0925568a",
+      "entity_label": "BIDV",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "BIDV dành 30.000 tỉ đồng cho vay lãi suất ưu đãi mua bất động sản",
+      "summary": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV) dành 30.000 tỉ đồng gói tín dụng ưu đãi lãi suất vay đối với gói tín dụng \"Ngôi nhà đầu tiên\".",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/bidv-danh-30000-ti-dong-cho-vay-lai-suat-uu-dai-mua-bat-dong-san-185260829145837672.htm",
+      "published_at": "2026-08-29T08:23:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "5222af568697162c",
+      "event_signature": "4835ce00a4b842eb",
+      "entity_id": "auto-cục-dự-08934e1e",
+      "entity_label": "Cục Dự",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Cục Dự trữ Liên bang Mỹ phát tín hiệu tăng lãi suất nếu lạm phát không hạ nhiệt",
+      "summary": "Trong bài diễn văn đầu tiên trên cương vị Chủ tịch Cục Dự trữ Liên bang Mỹ (Fed), ông Kevin Warsh nhấn mạnh ưu tiên hàng đầu của Fed hiện nay phải là đưa lạm phát trở lại mục tiêu 2%. Fed thận trọng trước động thái can thiệp thị trường trái phiếu của Bộ Tài chính Fed có thể chưa thay đổi lãi suất trong cuộc họp vào tháng 9 Thống đốc Fed khuyến nghị tăng lãi ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/cuc-du-tru-lien-bang-my-phat-tin-hieu-tang-lai-suat-neu-lam-phat-khong-ha-nhiet-post1133231.vnp",
+      "published_at": "2026-08-29T07:05:15+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "7c4c282a82c50c6c",
+      "event_signature": "4acae179ba741229",
+      "entity_id": "auto-chợ-đồng-xuân-900023b3",
+      "entity_label": "Chợ Đồng Xuân",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Chợ Đồng Xuân bước vào không gian số, livestream hỗ trợ tiểu thương quảng bá sản phẩm",
+      "summary": "Chợ Đồng Xuân vừa ra mắt mô hình “Chợ chuyển đổi số”, đưa livestream và các giải pháp số vào hỗ trợ tiểu thương kinh doanh, quảng bá sản phẩm, kết nối khách hàng. \"Chợ chuyển đổi số\": Bản sắc và câu chuyện của chợ Đồng Xuân cùng bước vào môi trường số Hà Nội: Sôi động không gian nghệ thuật cộng đồng bên Hồ Hoàn Kiếm",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/cho-dong-xuan-buoc-vao-khong-gian-so-livestream-ho-tro-tieu-thuong-quang-ba-san-pham-post1133181.vnp",
+      "published_at": "2026-08-29T05:05:16+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "18006000e69d41ae",
+      "event_signature": "b8bff67af8761816",
+      "entity_id": "auto-saigon-co-op-3c00f6e6",
+      "entity_label": "Saigon Co.op",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Saigon Co.op khuyến mãi mừng Quốc khánh 2.9: Kích cầu tiêu dùng - Tiếp sức hàng Việt",
+      "summary": "Liên hiệp Hợp tác xã Thương mại TP.HCM (Saigon Co.op) tiếp tục tăng nhiệt chương trình khuyến mãi '30 năm tự hào siêu thị Việt\" phục vụ dịp lễ Quốc khánh 2.9.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/saigon-coop-khuyen-mai-mung-quoc-khanh-29-kich-cau-tieu-dung-tiep-suc-hang-viet-185260828170725155.htm",
+      "published_at": "2026-08-29T01:00:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "edf3af8b83a4a8d0",
+      "event_signature": "a303a4990383fbad",
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "entity_label": "Hải Phòng",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Hải Phòng có 9/10 chỉ tiêu kinh tế-xã hội vượt kịch bản",
+      "summary": "Thành phố có 1 chỉ tiêu không đạt kịch bản tăng trưởng là tốc độ tăng chỉ số sản xuất công nghiệp (IIP) khi tháng Tám ước tăng hơn 14%, thấp hơn kịch bản đặt ra là hơn 17%. Hải Phòng khẳng định vị thế Thành phố đổi mới sáng tạo Hải Phòng mở không gian tăng trưởng mới bằng thể chế đột phá Hải Phòng thúc đẩy lắp đặt, sử dụng điện mặt trời mái nhà trước nhu cầu",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/hai-phong-co-910-chi-tieu-kinh-te-xa-hoi-vuot-kich-ban-post1133187.vnp",
+      "published_at": "2026-08-28T19:50:12+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "0dc0e28f64a42306",
+      "event_signature": "efa4056a651caa53",
+      "entity_id": "auto-sri-lanka-c5cbd6be",
+      "entity_label": "Sri Lanka",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Sri Lanka trước cơ hội trở thành trung tâm chiến lược Ấn Độ Dương",
+      "summary": "Những biến động tại Trung Đông và nguy cơ gián đoạn các tuyến hàng hải quốc tế đang đặt Sri Lanka trước một cơ hội mới: biến vị trí địa lý đặc biệt của mình thành lợi thế kinh tế và chiến lược. Trà sen đưa văn hóa Việt Nam đến gần hơn với Sri Lanka Từ dấu mốc lịch sử đến Đối tác Toàn diện Việt Nam-Sri Lanka Rực rỡ lễ hội Diều quốc tế Colombo ở Sri Lanka",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/sri-lanka-truoc-co-hoi-tro-thanh-trung-tam-chien-luoc-an-do-duong-post1133154.vnp",
+      "published_at": "2026-08-28T17:31:38+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
       "id": "89aef76d364da649",
       "event_signature": "0f0c2caff49cbc24",
       "entity_id": "sun_group",
@@ -103,6 +814,23 @@
       "published_at": "2026-08-28T14:04:00+00:00",
       "first_seen_at": "2026-08-30T15:31:57.600489+00:00",
       "last_seen_at": "2026-08-30T15:37:28.383304+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "cd03587b8c0fa724",
+      "event_signature": "0f0c2caff49cbc24",
+      "entity_id": "sun_group",
+      "entity_label": "Sun Group",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Sun Group khởi công dự án tái thiết đô thị 447 ha tại trung tâm Hà Nội",
+      "summary": "Hôm nay (28.8), UBND TP.Hà Nội tổ chức Lễ khởi công và khánh thành các dự án trọng điểm, tiêu biểu là dự án cải tạo, chỉnh trang và tái thiết đô thị Vĩnh Hưng, được kỳ vọng tạo đột phá về hạ tầng, diện mạo đô thị cho phường trung tâm của Hà Nội.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/sun-group-khoi-cong-du-an-tai-thiet-do-thi-447-ha-tai-trung-tam-ha-noi-185260828205548327.htm",
+      "published_at": "2026-08-28T14:04:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -122,6 +850,159 @@
       "evidence_grade": "media_discovery"
     },
     {
+      "id": "07260d4c2e485f90",
+      "event_signature": "d356e7cc86db05bf",
+      "entity_id": "vingroup_ecosystem",
+      "entity_label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "operating",
+      "title": "Doanh nghiệp mua 3.000 ôtô VinFast vận hành taxi điện",
+      "summary": "Công ty TNHH Xe Nhanh Việt Nam ký hợp tác kinh doanh, sẽ mua 3.000 ôtô điện VinFast để vận doanh trên nền tảng Green SM Platform, hôm 28/8.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/doanh-nghiep-mua-3-000-oto-vinfast-van-hanh-taxi-dien-5114715.html",
+      "published_at": "2026-08-28T13:00:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "e773cb94b927daa7",
+      "event_signature": "3ccaaf3749a30d76",
+      "entity_id": "auto-tây-ninh-02d05047",
+      "entity_label": "Tây Ninh",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Tây Ninh thu hút 28 tỉ USD, hướng ra cảng biển",
+      "summary": "Hơn 90 công trình, dự án được khởi công, cam kết và công bố với tổng giá trị khoảng 28 tỉ USD tại Hội nghị xúc tiến đầu tư tỉnh Tây Ninh năm 2026.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/tay-ninh-thu-hut-28-ti-usd-huong-ra-cang-bien-185260828162530417.htm",
+      "published_at": "2026-08-28T10:06:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "3f57840ca5ce894d",
+      "event_signature": "16747f4affffad9d",
+      "entity_id": "auto-uob-việt-nam-868a4d3b",
+      "entity_label": "UOB Việt Nam",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "UOB Việt Nam hợp tác Oxalis, tài trợ chuyến thám hiểm Sơn Đoòng",
+      "summary": "UOB Việt Nam hợp tác cùng Oxalis và Vườn quốc gia Phong Nha - Kẻ Bàng, tài trợ chuyến thám hiểm Sơn Đoòng 4 ngày 3 đêm cho 10 khách hàng có điểm tích lũy cao nhất.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/uob-viet-nam-hop-tac-oxalis-tai-tro-chuyen-tham-hiem-son-doong-5114569.html",
+      "published_at": "2026-08-28T10:00:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "304d15af617ffa32",
+      "event_signature": "b0f330da12fedcc4",
+      "entity_id": "auto-novaland-eaa8c17a",
+      "entity_label": "Novaland",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Novaland cùng đối tác quốc tế xây hơn 500 căn nhà ở thấp tầng tại Aqua City",
+      "summary": "Novaland cùng Liên danh nhà thầu Tập đoàn Quốc tế Phương Bắc (Northern International Group - NIG) và Bsquare vừa tổ chức Lễ khởi công xây dựng hơn 500 căn nhà ở thấp tầng tại phân khu Phoenix North thuộc Đảo Phượng Hoàng, Aqua City.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/novaland-cung-doi-tac-quoc-te-xay-hon-500-can-nha-o-thap-tang-tai-aqua-city-185260828164725235.htm",
+      "published_at": "2026-08-28T09:53:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "a69224aa94fc8218",
+      "event_signature": "e57b1a134873b561",
+      "entity_id": "auto-cà-mau-5be786d4",
+      "entity_label": "Cà Mau",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cà Mau trao quyết định đầu tư cho 19 dự án hơn 40.000 tỉ đồng",
+      "summary": "Tại Hội nghị Xúc tiến đầu tư năm 2026, Cà Mau trao 19 quyết định chấp thuận chủ trương đầu tư, giấy chứng nhận đăng ký đầu tư cho các dự án trọng điểm, tổng vốn hơn 40.000 tỉ đồng.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/ca-mau-trao-quyet-dinh-dau-tu-cho-19-du-an-hon-40000-ti-dong-185260828161414321.htm",
+      "published_at": "2026-08-28T09:43:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "21a23f820035df03",
+      "event_signature": "91c37e1f07ec3c66",
+      "entity_id": "auto-texhong-hải-hà-bb5b4199",
+      "entity_label": "Texhong Hải Hà",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Texhong Hải Hà: 20 năm đồng hành, mở rộng hệ sinh thái công nghiệp 2,5 tỉ USD",
+      "summary": "Sau 20 năm đầu tư tại Việt Nam, Tập đoàn Texhong đang bước vào giai đoạn phát triển mới tại Quảng Ninh với kế hoạch mở rộng KCN Texhong Hải Hà thêm khoảng 500 ha, tổng vốn đầu tư hạ tầng dự kiến 250 triệu USD, hướng tới hình thành hệ sinh thái công nghiệp - năng lượng - số hóa với tổng quy mô khoảng 2,5 tỉ USD.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/texhong-hai-ha-20-nam-dong-hanh-mo-rong-he-sinh-thai-cong-nghiep-25-ti-usd-18526082816274792.htm",
+      "published_at": "2026-08-28T09:16:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "ba08514ca3eef31d",
+      "event_signature": "c49827d5cd66a2c4",
+      "entity_id": "auto-cà-mau-5be786d4",
+      "entity_label": "Cà Mau",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cà Mau xây dựng 3 dự án nhà máy điện gió hơn 6.300 tỉ đồng",
+      "summary": "Tại xã Đông Hải (tỉnh Cà Mau), các nhà đầu tư khởi động xây dựng cụm 3 dự án nhà máy điện gió tổng vốn đầu tư hơn 6.300 tỉ đồng.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/ca-mau-xay-dung-3-du-an-nha-may-dien-gio-hon-6300-ti-dong-185260828150940605.htm",
+      "published_at": "2026-08-28T09:03:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "c56d044544987fb7",
+      "event_signature": "3807296bdaacbf14",
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_label": "Khánh Hòa",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Khánh Hòa thông qua 2 dự án phải thu hồi hơn 403 ha đất",
+      "summary": "HĐND tỉnh Khánh Hòa vừa thông qua 2 trong số 10 dự án phải thu hồi đất để phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng, với hơn 403 ha.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/khanh-hoa-thu-hoi-hon-823-ha-dat-de-thuc-hien-10-du-an-185260828084326049.htm",
+      "published_at": "2026-08-28T02:47:00+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "4087bab0764442e4",
+      "event_signature": "5ff214a85e958e7b",
+      "entity_id": "auto-qualcomm-77bc8e74",
+      "entity_label": "Qualcomm",
+      "entity_type": "auto_discovered_organization",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Qualcomm muốn đưa Việt Nam thành trung tâm R&D AI lớn thứ ba của tập đoàn trên toàn cầu",
+      "summary": "Qualcomm đang hướng đến mục tiêu đưa Việt Nam thành trung tâm nghiên cứu và phát triển AI lớn thứ ba của tập đoàn trên toàn cầu.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/qualcomm-muon-dua-viet-nam-thanh-trung-tam-r-d-ai-lon-thu-ba-cua-tap-doan-tren-toan-cau-5114298.html",
+      "published_at": "2026-08-27T16:11:28+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
       "id": "e65b50c2b8ad256f",
       "event_signature": "38b4ce6fe1dcbcf8",
       "entity_id": "samsung_vietnam",
@@ -136,10 +1017,28 @@
       "first_seen_at": "2026-08-30T15:31:57.600489+00:00",
       "last_seen_at": "2026-08-30T15:37:28.383304+00:00",
       "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "7715d8c5bc4bf865",
+      "event_signature": "38b4ce6fe1dcbcf8",
+      "entity_id": "samsung_vietnam",
+      "entity_label": "Hệ sinh thái Samsung tại Việt Nam",
+      "entity_type": "foreign_business_group",
+      "entity_origin": "curated_registry",
+      "family": "operating",
+      "title": "Samsung xuất khẩu 500 tỷ USD điện thoại từ Việt Nam sau 17 năm",
+      "summary": "Hai pháp nhân sản xuất điện thoại Samsung tại Bắc Ninh và Thái Nguyên đạt kim ngạch xuất khẩu lũy kế 500 tỷ USD vào cuối tháng 6, sau 17 năm hoạt động tại Việt Nam.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/samsung-xuat-khau-500-ty-usd-dien-thoai-tu-viet-nam-sau-17-nam-5114286.html",
+      "published_at": "2026-08-27T15:58:59+00:00",
+      "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "last_seen_at": "2026-08-30T15:44:47.726233+00:00",
+      "evidence_grade": "media_discovery"
     }
   ],
   "warnings": [
     "Media headline chỉ là discovery trigger; không phải bằng chứng cuối cùng.",
+    "Auto-discovered entity chỉ là candidate tên tổ chức; không tự động được coi là quan trọng.",
     "Nhiều báo có thể đưa cùng một sự kiện; Entity Convergence phải ưu tiên evidence family chứ không đếm headline thô.",
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ]
