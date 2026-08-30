@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "version": "3.0.1",
+    "generated_at": "2026-08-30T19:14:01.095414+00:00",
+    "mode": "prepublication_trust_gate",
+    "status": "pass"
+  },
+  "checks": [
+    {
+      "name": "money_flow_verified_gate",
+      "passed": true,
+      "detail": "all directional theme states have verified family + institution support"
+    },
+    {
+      "name": "entity_publication_gate",
+      "passed": true,
+      "detail": "public convergence contains only primary-verified organization rows"
+    },
+    {
+      "name": "open_world_entity_type_gate",
+      "passed": true,
+      "detail": "locations/public bodies are excluded from organization convergence"
+    },
+    {
+      "name": "source_coverage_grade_gate",
+      "passed": true,
+      "detail": "STRONG domains meet their required evidence grade"
+    },
+    {
+      "name": "report_maturity_gate",
+      "passed": true,
+      "detail": "period reports respect history readiness and entity verification"
+    },
+    {
+      "name": "release_version_gate",
+      "passed": true,
+      "detail": "product_release=3.0.1"
+    }
+  ],
+  "error_count": 0,
+  "errors": [],
+  "principle": "publish_less_rather_than_publish_unearned_confidence"
+}

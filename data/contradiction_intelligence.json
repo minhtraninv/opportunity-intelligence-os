@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.3.0",
-    "generated_at": "2026-08-30T18:33:15.985233+00:00",
+    "generated_at": "2026-08-30T19:14:00.589419+00:00",
     "mode": "counter_signal_and_falsification_intelligence",
     "principle": "strong_theses_must_survive_counter_evidence"
   },
@@ -14,11 +14,11 @@
     {
       "theme_id": "manufacturing_expansion",
       "theme_label": "Mở rộng năng lực sản xuất",
-      "original_score": 82,
+      "original_score": 70,
       "tension_level": "material",
       "counter_signal_count": 3,
       "confidence_haircut": 10,
-      "tension_adjusted_score": 72,
+      "tension_adjusted_score": 60,
       "counter_signals": [
         {
           "id": "fdi-registration-vs-realized-7m-2026",
@@ -89,11 +89,11 @@
     {
       "theme_id": "logistics_trade",
       "theme_label": "Gia tốc thương mại & logistics",
-      "original_score": 87,
+      "original_score": 79,
       "tension_level": "material",
       "counter_signal_count": 2,
       "confidence_haircut": 6,
-      "tension_adjusted_score": 81,
+      "tension_adjusted_score": 73,
       "counter_signals": [
         {
           "id": "trade-deficit-input-imports-7m-2026",
@@ -144,11 +144,11 @@
     {
       "theme_id": "consumer_services",
       "theme_label": "Tiêu dùng & dịch vụ",
-      "original_score": 28,
+      "original_score": 30,
       "tension_level": "material",
       "counter_signal_count": 2,
       "confidence_haircut": 6,
-      "tension_adjusted_score": 22,
+      "tension_adjusted_score": 24,
       "counter_signals": [
         {
           "id": "consumer-nominal-real-gap-7m-2026",
@@ -196,13 +196,45 @@
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
     },
     {
-      "theme_id": "sme_formalization",
-      "theme_label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-      "original_score": 58,
+      "theme_id": "public_infrastructure",
+      "theme_label": "Đầu tư công & hạ tầng vật lý",
+      "original_score": 53,
       "tension_level": "watch",
       "counter_signal_count": 1,
       "confidence_haircut": 3,
-      "tension_adjusted_score": 55,
+      "tension_adjusted_score": 50,
+      "counter_signals": [
+        {
+          "id": "public-investment-execution-pressure-7m-2026",
+          "themes": [
+            "public_infrastructure"
+          ],
+          "kind": "execution_tension",
+          "severity": "medium",
+          "title": "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối",
+          "facts": {
+            "state_investment_yoy_pct": 18.4,
+            "plan_completion_pct": 39.0
+          },
+          "interpretation": "Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn.",
+          "falsifies_if": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm.",
+          "publisher": "Cục Thống kê",
+          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/"
+        }
+      ],
+      "falsification_conditions": [
+        "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+      ],
+      "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
+    },
+    {
+      "theme_id": "sme_formalization",
+      "theme_label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+      "original_score": 38,
+      "tension_level": "watch",
+      "counter_signal_count": 1,
+      "confidence_haircut": 3,
+      "tension_adjusted_score": 35,
       "counter_signals": [
         {
           "id": "business-entry-exit-7m-2026",
@@ -231,45 +263,13 @@
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
     },
     {
-      "theme_id": "public_infrastructure",
-      "theme_label": "Đầu tư công & hạ tầng vật lý",
-      "original_score": 56,
-      "tension_level": "watch",
-      "counter_signal_count": 1,
-      "confidence_haircut": 3,
-      "tension_adjusted_score": 53,
-      "counter_signals": [
-        {
-          "id": "public-investment-execution-pressure-7m-2026",
-          "themes": [
-            "public_infrastructure"
-          ],
-          "kind": "execution_tension",
-          "severity": "medium",
-          "title": "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối",
-          "facts": {
-            "state_investment_yoy_pct": 18.4,
-            "plan_completion_pct": 39.0
-          },
-          "interpretation": "Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn.",
-          "falsifies_if": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm.",
-          "publisher": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/"
-        }
-      ],
-      "falsification_conditions": [
-        "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
-      ],
-      "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
-    },
-    {
       "theme_id": "data_infrastructure",
       "theme_label": "Hạ tầng dữ liệu & số hóa",
-      "original_score": 43,
+      "original_score": 22,
       "tension_level": "no_verified_counter_signal",
       "counter_signal_count": 0,
       "confidence_haircut": 0,
-      "tension_adjusted_score": 43,
+      "tension_adjusted_score": 22,
       "counter_signals": [],
       "falsification_conditions": [],
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
@@ -277,11 +277,11 @@
     {
       "theme_id": "energy_grid",
       "theme_label": "Mở rộng điện & lưới điện",
-      "original_score": 25,
+      "original_score": 13,
       "tension_level": "no_verified_counter_signal",
       "counter_signal_count": 0,
       "confidence_haircut": 0,
-      "tension_adjusted_score": 25,
+      "tension_adjusted_score": 13,
       "counter_signals": [],
       "falsification_conditions": [],
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
