@@ -25,10 +25,30 @@ const CATEGORY_LABELS = {
 const TREND_LABELS = {
   accelerating: '↑ Tăng tốc',
   emerging: 'NEW · Emerging',
+  single_source_spike: '⚠ Spike một nguồn',
   stable: '→ Chưa bất thường',
   cooling: '↓ Hạ nhiệt',
   insufficient_sample: 'Thiếu mẫu',
   warming_up: 'Đang học baseline',
+};
+
+const EVENT_TYPE_LABELS = {
+  procurement: 'Đấu thầu / mua sắm',
+  hiring: 'Tuyển dụng',
+  capex_expansion: 'CAPEX / mở rộng',
+  infrastructure_delivery: 'Hạ tầng triển khai',
+  capital_flow: 'Dòng vốn',
+  policy_regulation: 'Chính sách / pháp lý',
+  business_formation: 'Doanh nghiệp / hộ KD',
+  market_data: 'Dữ liệu thị trường',
+  other: 'Chưa phân loại',
+};
+
+const QUALITY_LABELS = {
+  curated: 'Curated',
+  candidate: 'Candidate',
+  reference: 'Reference',
+  noise: 'Noise',
 };
 
 const esc = (value) => String(value ?? '')
@@ -148,7 +168,7 @@ function renderChangeDetector(){
   if(!container || !note) return;
 
   if(meta.status === 'warming_up'){
-    note.textContent = `Đang học baseline ${meta.history_days || 0}/${meta.required_history_days || 14} ngày · chưa kết luận trend.`;
+    note.textContent = `Đang học baseline ${meta.history_days || 0}/${meta.required_history_days || 14} ngày · chỉ Candidate events được tính.`;
   } else if(meta.status === 'active'){
     note.textContent = `Baseline hoạt động · recent ${meta.recent_window_days} ngày so với ${meta.baseline_window_days} ngày trước.`;
   } else {
@@ -186,6 +206,24 @@ function oppCard(o){
   </article>`;
 }
 
+function rawFeedRow(x){
+  const quality = x.signal_quality || (x.status === 'verified-seed' ? 'curated' : 'reference');
+  const qualityClass = quality === 'curated' || quality === 'candidate' ? 'official' : 'hypothesis';
+  const eventType = EVENT_TYPE_LABELS[x.event_type] || x.event_type || 'Chưa phân loại';
+  const geo = (x.geography || []).join(' · ') || 'Chưa gắn địa lý';
+  return `<article class="signal-row">
+    <div class="signal-date">${esc(x.publisher)}<br><span class="tag ${qualityClass}">${esc(QUALITY_LABELS[quality] || quality)}</span></div>
+    <div>
+      <h3>${esc(x.title)}</h3>
+      <p>${esc((x.categories||[]).map(c=>CATEGORY_LABELS[c] || c).join(' · '))}</p>
+      <div class="muted small" style="margin-top:6px">${esc(eventType)} · ${esc(geo)}</div>
+      <div class="muted small" style="margin-top:4px">${esc(x.quality_reason || '')}</div>
+      <div class="evidence-links" style="margin-top:8px"><a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">Mở nguồn gốc</a></div>
+    </div>
+    <div class="signal-side"><span class="muted small">First seen<br>${esc(fmtDate(x.first_seen_at || x.collected_at))}</span></div>
+  </article>`;
+}
+
 function render(){
   const d = state.data;
   const intel = state.intelligence || {};
@@ -194,7 +232,7 @@ function render(){
   const newest = latestTimestamp(d.meta.updated_at, state.rawFeed.updated_at, meta.generated_at);
 
   document.getElementById('updatedAt').textContent = `Cập nhật ${fmtDate(newest)}`;
-  document.getElementById('dataStatus').textContent = meta.status === 'active' ? 'V1.1 · INTELLIGENCE ACTIVE' : 'V1.1 · LEARNING BASELINE';
+  document.getElementById('dataStatus').textContent = meta.status === 'active' ? 'V1.2 · INTELLIGENCE ACTIVE' : 'V1.2 · LEARNING BASELINE';
   document.getElementById('officialCount').textContent = d.sources.filter(s=>s.authority==='official').length;
   document.getElementById('signalCount').textContent = d.signals.length;
   document.getElementById('oppCount').textContent = d.opportunities.length;
@@ -202,6 +240,10 @@ function render(){
   document.getElementById('rawFeedCount').textContent = state.rawFeed.items.length;
   document.getElementById('historicalEventCount').textContent = coverage.historical_events ?? 0;
   document.getElementById('historyDays').textContent = `${meta.history_days ?? 0}/${meta.required_history_days ?? 14} ngày`;
+  const candidateEl = document.getElementById('candidateEventCount');
+  const referenceEl = document.getElementById('referenceEventCount');
+  if(candidateEl) candidateEl.textContent = coverage.candidate_events ?? 0;
+  if(referenceEl) referenceEl.textContent = coverage.reference_events ?? 0;
   document.getElementById('thesisText').textContent = d.meta.current_thesis;
 
   renderChangeDetector();
@@ -218,13 +260,13 @@ function render(){
   document.getElementById('topOpportunities').innerHTML = opps.slice(0,5).map(oppCard).join('') || '<div class="panel muted">Không có cơ hội nào qua bộ lọc hiện tại.</div>';
   document.getElementById('allOpportunities').innerHTML = opps.map(oppCard).join('') || '<div class="panel muted">Không có cơ hội nào qua bộ lọc hiện tại.</div>';
 
-  const raw = state.rawFeed.items.slice(0,40);
-  document.getElementById('rawFeed').innerHTML = raw.length ? raw.map(x=>`
-    <article class="signal-row">
-      <div class="signal-date">${esc(x.publisher)}<br><span class="tag ${x.status === 'verified-seed' ? 'official' : 'hypothesis'}">${esc(x.status)}</span></div>
-      <div><h3>${esc(x.title)}</h3><p>${esc((x.categories||[]).map(c=>CATEGORY_LABELS[c] || c).join(' · '))}</p><div class="evidence-links" style="margin-top:8px"><a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">Mở nguồn gốc</a></div></div>
-      <div class="signal-side"><span class="muted small">First seen<br>${esc(fmtDate(x.first_seen_at || x.collected_at))}</span></div>
-    </article>`).join('') : '<div class="panel muted">Chưa có headline mới. Curated signals phía trên vẫn hoạt động bình thường.</div>';
+  const raw = state.rawFeed.items.slice().sort((a,b)=>{
+    const qa = a.signal_quality === 'candidate' ? 2 : a.signal_quality === 'curated' ? 3 : 1;
+    const qb = b.signal_quality === 'candidate' ? 2 : b.signal_quality === 'curated' ? 3 : 1;
+    if(qb !== qa) return qb - qa;
+    return new Date(b.first_seen_at || b.collected_at || 0) - new Date(a.first_seen_at || a.collected_at || 0);
+  }).slice(0,60);
+  document.getElementById('rawFeed').innerHTML = raw.length ? raw.map(rawFeedRow).join('') : '<div class="panel muted">Chưa có headline mới. Curated signals phía trên vẫn hoạt động bình thường.</div>';
 
   document.getElementById('buyerGrid').innerHTML = d.buyers.map(b=>`<article class="buyer-card">
     <div class="eyebrow">${esc(b.sector)}</div><h3>${esc(b.role)}</h3>
