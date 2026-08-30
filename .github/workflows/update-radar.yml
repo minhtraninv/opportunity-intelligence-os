@@ -10,6 +10,7 @@ on:
       - "data/macro_observations.json"
       - "data/regional_observations.json"
       - "data/contradiction_observations.json"
+      - "data/policy_observations.json"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -41,6 +42,9 @@ jobs:
 
       - name: Update opportunity intelligence
         run: python pipeline/update.py
+
+      - name: Build policy intelligence
+        run: python pipeline/policy_intel.py
 
       - name: Update procurement action intelligence
         run: python pipeline/action_intel.py
@@ -103,6 +107,7 @@ jobs:
             raw_feed.json
             history.json
             intelligence.json
+            policy_intelligence.json
             action_history.json
             action_intelligence.json
             partner_history.json
