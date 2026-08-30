@@ -77,6 +77,9 @@ jobs:
       - name: Build entity media discovery feed
         run: python pipeline/entity_media_intel.py
 
+      - name: Prepare trust semantics
+        run: python pipeline/trust_prepare.py
+
       - name: Update procurement action intelligence
         run: python pipeline/action_intel.py
 
@@ -116,6 +119,9 @@ jobs:
       - name: Attach observed supply evidence to themes
         run: python pipeline/supply_gap_enrich.py
 
+      - name: Harden money-flow evidence gates
+        run: python pipeline/trust_money.py
+
       - name: Build regional money-flow intelligence
         run: python pipeline/regional_intel.py
 
@@ -131,14 +137,23 @@ jobs:
       - name: Audit source coverage and blind spots
         run: python pipeline/source_coverage.py
 
+      - name: Finalize public trust boundaries
+        run: python pipeline/trust_finalize.py
+
       - name: Build periodic intelligence reports
         run: python pipeline/report_intel.py
 
       - name: Enforce report falsification quality
         run: python pipeline/report_quality.py
 
+      - name: Enforce report maturity gates
+        run: python pipeline/trust_report.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
+
+      - name: Enforce pre-publication trust gate
+        run: python pipeline/trust_gate.py
 
       - name: Publish generated data
         run: |
@@ -176,6 +191,7 @@ jobs:
             intelligence_reports.json
             report_history.json
             system_meta.json
+            trust_audit.json
           )
 
           snapshot_dir="$(mktemp -d)"
