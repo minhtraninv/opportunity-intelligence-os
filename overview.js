@@ -52,6 +52,7 @@
   const CONVERGENCE_STATE = {
     high_convergence: 'HỘI TỤ CAO · ĐÁNG ĐIỀU TRA',
     converging: 'ĐANG HỘI TỤ · THEO DÕI SÂU',
+    discovery_convergence: 'MEDIA CONVERGENCE · ĐỪNG BỎ QUA, CẦN XÁC MINH',
     watch: 'ĐÃ XUẤT HIỆN · CHƯA ĐỦ BẰNG CHỨNG'
   };
 
@@ -60,7 +61,7 @@
     capital: 'Dòng vốn',
     project_execution: 'Dự án / thực thi',
     strategy: 'Chiến lược',
-    operating: 'Vận hành',
+    operating: 'Vận hành / demand',
     labor: 'Lao động',
     business_formation: 'Hình thành DN',
     procurement: 'Mua sắm công'
@@ -118,6 +119,20 @@
         </div>
       </div>
       <div id="entityConvergenceOverview" class="overview-grid"></div>`);
+  }
+
+  function renumberStaticSections(){
+    const pairs = [
+      ['normalPersonOverview', '5 · NORMAL PERSON ENTRY'],
+      ['wealthMechanismOverview', '6 · HOW VALUE MAY SHIFT'],
+      ['realityOverview', '7 · REALITY CHECK']
+    ];
+    pairs.forEach(([id, text]) => {
+      const grid = document.getElementById(id);
+      const sectionHead = grid?.previousElementSibling;
+      const eyebrow = sectionHead?.querySelector('.eyebrow');
+      if(eyebrow) eyebrow.textContent = text;
+    });
   }
 
   function macroCard(o){
@@ -181,6 +196,9 @@
     const themes = (e.theme_context || []).map(x=>x.label).slice(0,3);
     const regions = (e.regional_context || []).map(x=>x.region).slice(0,3);
     const evidence = (e.evidence || []).slice(0,3);
+    const primary = Number(e.primary_evidence_count || 0);
+    const media = Number(e.media_evidence_count || 0);
+    const discoveryOnly = e.status === 'discovery_convergence' || (primary === 0 && media > 0);
     return `<article class="panel overview-card ${e.status === 'high_convergence' ? 'overview-policy' : ''}">
       <div class="overview-kicker">${esc(CONVERGENCE_STATE[e.status] || e.status)} · SCORE ${esc(e.convergence_score)}</div>
       <h3>${esc(e.label)}</h3>
@@ -188,7 +206,8 @@
       <div class="overview-path-metrics">
         ${families.map(x=>`<span class="pill">${esc(x)}</span>`).join('')}
       </div>
-      ${(themes.length || regions.length) ? `<p class="muted small">Bối cảnh: ${esc([...themes, ...regions].join(' · '))}</p>` : ''}
+      <p class="muted small">Primary evidence: ${esc(primary)} · Media discovery: ${esc(media)}${(themes.length || regions.length) ? ` · Bối cảnh: ${esc([...themes, ...regions].join(' · '))}` : ''}</p>
+      ${discoveryOnly ? '<div class="card-footer"><strong>⚑ Chưa được xác minh ở tầng primary.</strong> <span class="muted">Hãy coi đây là tín hiệu mở hồ sơ, không phải kết luận.</span></div>' : ''}
       ${evidence.length ? `<div class="card-footer"><strong>Bằng chứng gần nhất</strong><ul class="overview-list">${evidence.map(x=>`<li>${esc(x.title)}${x.source_url ? ` · <a href="${esc(safe(x.source_url))}" target="_blank" rel="noopener noreferrer">nguồn</a>` : ''}</li>`).join('')}</ul><div class="muted small"><strong>Đọc đúng:</strong> đáng điều tra ≠ đáng mua/làm.</div></div>` : ''}
     </article>`;
   }
@@ -221,6 +240,7 @@
 
   ensureMacroSection();
   ensureConvergenceSection();
+  renumberStaticSections();
   document.querySelectorAll('[data-overview-tab]').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.overviewTab)));
 
   Promise.all([
@@ -253,7 +273,7 @@
       <div class="overview-pulse-item"><span class="muted small">Policy structural</span><strong>${esc(pRows.length)} thay đổi lớn</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Money-flow themes</span><strong>${esc(themes.length)} theme đang theo dõi</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Regional radar</span><strong>${esc(regions.length)} địa bàn nổi bật</strong></div>
-      <div class="overview-pulse-item"><span class="muted small">Convergence radar</span><strong>${esc((eCov.high_convergence || 0) + (eCov.converging || 0))} điểm hội tụ</strong></div>
+      <div class="overview-pulse-item"><span class="muted small">Convergence radar</span><strong>${esc((eCov.high_convergence || 0) + (eCov.converging || 0) + (eCov.discovery_convergence || 0))} điểm hội tụ</strong></div>
       <div class="overview-pulse-item"><span class="muted small">Lifecycle</span><strong>${lCov.directional_lifecycle_active ? 'Đã đủ lịch sử xu hướng' : `${esc(lCov.max_observation_days ?? 0)}/3 ngày học`}</strong></div>`;
 
     const macroGrid = document.getElementById('macroOverview');
