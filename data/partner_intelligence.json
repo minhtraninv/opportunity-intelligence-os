@@ -1,15 +1,17 @@
 {
   "meta": {
     "version": "1.4.0",
-    "generated_at": "2026-08-30T10:11:54.202257+00:00",
+    "generated_at": "2026-08-30T10:15:42.423589+00:00",
     "mode": "official_award_history_partner_radar",
-    "principle": "historical_winner_is_candidate_not_current_bidder"
+    "principle": "historical_winner_is_candidate_not_current_bidder",
+    "taxonomy_normalized": true,
+    "taxonomy_version": "1.4.0"
   },
   "coverage": {
-    "historical_winner_events": 30,
+    "historical_winner_events": 31,
     "result_details_fetched_last_run": 30,
-    "unique_partner_candidates": 29,
-    "open_tenders_with_partner_candidates": 18,
+    "unique_partner_candidates": 30,
+    "open_tenders_with_partner_candidates": 17,
     "source_errors_last_run": 0
   },
   "source_health": [
@@ -130,6 +132,40 @@
       ]
     },
     {
+      "partner_id": "vn2902177584",
+      "contractor_name": "Công ty cổ phần tư vấn đầu tư và xây dựng Trường Mạnh",
+      "contractor_code": "vn2902177584",
+      "tax_code": "2902177584",
+      "observed_wins": 1,
+      "observed_winning_value_vnd": 11880000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "buyers_observed": [
+        "TRƯỜNG TIỂU HỌC HƯNG DŨNG I"
+      ],
+      "latest_win_at": "2026-08-30T10:15:24+00:00",
+      "latest_tender_code": "IB2600500491",
+      "latest_tender_title": "Gói thầu số 02: Tư vấn lập E-HSMT và đánh giá E-HSDT",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500491&notifyId=IB2600500491&inputResultId=49f97354-fce4-4da1-9ae1-857c71e4d172&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500491&planNo=PL2600285807&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "partner_evidence_score": 68,
+      "evidence_status": "historical_official_winner_observed",
+      "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại.",
+      "examples": [
+        {
+          "tender_code": "IB2600500491",
+          "title": "Gói thầu số 02: Tư vấn lập E-HSMT và đánh giá E-HSDT",
+          "buyer": "TRƯỜNG TIỂU HỌC HƯNG DŨNG I",
+          "winning_price_vnd": 11880000,
+          "award_public_at": "2026-08-30T10:15:24+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500491&notifyId=IB2600500491&inputResultId=49f97354-fce4-4da1-9ae1-857c71e4d172&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500491&planNo=PL2600285807&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
       "partner_id": "vn0314483252",
       "contractor_name": "CÔNG TY TNHH THỰC PHẨM LÊ NGUYỄN",
       "contractor_code": "vn0314483252",
@@ -171,10 +207,10 @@
       "observed_wins": 1,
       "observed_winning_value_vnd": 439533000,
       "categories": [
-        "printing_media"
+        "consulting"
       ],
       "category_counts": {
-        "printing_media": 1
+        "consulting": 1
       },
       "buyers_observed": [
         "BAN QLDA ĐẦU TƯ CÔNG TRÌNH GIAO THÔNG THANH HÓA"
@@ -1319,7 +1355,24 @@
       "tender_code": "IB2600492572",
       "category": "printing_media",
       "recommended_path": "subcontract_or_sourcing",
+      "candidates": []
+    },
+    {
+      "tender_code": "IB2600500375",
+      "category": "consulting",
+      "recommended_path": "subcontract_or_sourcing",
       "candidates": [
+        {
+          "partner_id": "vn2902177584",
+          "contractor_name": "Công ty cổ phần tư vấn đầu tư và xây dựng Trường Mạnh",
+          "contractor_code": "vn2902177584",
+          "match_score": 64,
+          "observed_wins_same_category": 1,
+          "latest_win_at": "2026-08-30T10:15:24+00:00",
+          "latest_tender_title": "Gói thầu số 02: Tư vấn lập E-HSMT và đánh giá E-HSDT",
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500491&notifyId=IB2600500491&inputResultId=49f97354-fce4-4da1-9ae1-857c71e4d172&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500491&planNo=PL2600285807&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
+        },
         {
           "partner_id": "vn2800750238",
           "contractor_name": "TỔNG CÔNG TY CỔ PHẦN TƯ VẤN XÂY DỰNG GIAO THÔNG THANH HÓA",
@@ -1330,14 +1383,7 @@
           "latest_tender_title": "Gói thầu 01: Tư vấn khảo sát, lập báo cáo kinh tế - kỹ thuật; lập hồ sơ thiết kế cắm cọc GPMB và MLG",
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500487&notifyId=IB2600500487&inputResultId=126d633e-fee1-499b-8edd-d997b24999fd&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500487&planNo=PL2600266834&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
-        }
-      ]
-    },
-    {
-      "tender_code": "IB2600500375",
-      "category": "consulting",
-      "recommended_path": "subcontract_or_sourcing",
-      "candidates": [
+        },
         {
           "partner_id": "vn2401017117",
           "contractor_name": "CÔNG TY TNHH TRÚC TRANG",
@@ -1369,28 +1415,6 @@
           "latest_win_at": "2026-08-30T09:52:31+00:00",
           "latest_tender_title": "01.TV: Tư vấn khảo sát, lập báo cáo kinh tế - kỹ thuật",
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500478&notifyId=IB2600500478&inputResultId=494566ad-c9e6-4eac-b83b-0dcba27adf73&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500478&planNo=PL2600286273&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
-        },
-        {
-          "partner_id": "vn3002145091",
-          "contractor_name": "CÔNG TY TNHH XÂY DỰNG VÀ THƯƠNG MẠI SƠN LÂM",
-          "contractor_code": "vn3002145091",
-          "match_score": 64,
-          "observed_wins_same_category": 1,
-          "latest_win_at": "2026-08-30T09:48:52+00:00",
-          "latest_tender_title": "02.TV: Tư vấn quản lý dự án",
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500475&notifyId=IB2600500475&inputResultId=e1716b89-0422-4531-9d85-b207035d78ef&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500475&planNo=PL2600286273&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
-        },
-        {
-          "partner_id": "vn3001677833",
-          "contractor_name": "CÔNG TY TNHH THIÊN PHÚ KỲ ANH",
-          "contractor_code": "vn3001677833",
-          "match_score": 64,
-          "observed_wins_same_category": 1,
-          "latest_win_at": "2026-08-30T09:46:21+00:00",
-          "latest_tender_title": "02-TVGS: Tư vấn giám sát gói thầu số 01-XL",
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500471&notifyId=IB2600500471&inputResultId=d0299604-39a9-47c2-81c2-547c65e0a989&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500471&planNo=PL2600286277&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
         }
       ]
@@ -1401,6 +1425,28 @@
       "recommended_path": "subcontract_or_sourcing",
       "candidates": [
         {
+          "partner_id": "vn2902177584",
+          "contractor_name": "Công ty cổ phần tư vấn đầu tư và xây dựng Trường Mạnh",
+          "contractor_code": "vn2902177584",
+          "match_score": 64,
+          "observed_wins_same_category": 1,
+          "latest_win_at": "2026-08-30T10:15:24+00:00",
+          "latest_tender_title": "Gói thầu số 02: Tư vấn lập E-HSMT và đánh giá E-HSDT",
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500491&notifyId=IB2600500491&inputResultId=49f97354-fce4-4da1-9ae1-857c71e4d172&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500491&planNo=PL2600285807&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
+        },
+        {
+          "partner_id": "vn2800750238",
+          "contractor_name": "TỔNG CÔNG TY CỔ PHẦN TƯ VẤN XÂY DỰNG GIAO THÔNG THANH HÓA",
+          "contractor_code": "vn2800750238",
+          "match_score": 64,
+          "observed_wins_same_category": 1,
+          "latest_win_at": "2026-08-30T10:06:40+00:00",
+          "latest_tender_title": "Gói thầu 01: Tư vấn khảo sát, lập báo cáo kinh tế - kỹ thuật; lập hồ sơ thiết kế cắm cọc GPMB và MLG",
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500487&notifyId=IB2600500487&inputResultId=126d633e-fee1-499b-8edd-d997b24999fd&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500487&planNo=PL2600266834&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
+        },
+        {
           "partner_id": "vn2401017117",
           "contractor_name": "CÔNG TY TNHH TRÚC TRANG",
           "contractor_code": "vn2401017117",
@@ -1431,28 +1477,6 @@
           "latest_win_at": "2026-08-30T09:52:31+00:00",
           "latest_tender_title": "01.TV: Tư vấn khảo sát, lập báo cáo kinh tế - kỹ thuật",
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500478&notifyId=IB2600500478&inputResultId=494566ad-c9e6-4eac-b83b-0dcba27adf73&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500478&planNo=PL2600286273&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
-        },
-        {
-          "partner_id": "vn3002145091",
-          "contractor_name": "CÔNG TY TNHH XÂY DỰNG VÀ THƯƠNG MẠI SƠN LÂM",
-          "contractor_code": "vn3002145091",
-          "match_score": 64,
-          "observed_wins_same_category": 1,
-          "latest_win_at": "2026-08-30T09:48:52+00:00",
-          "latest_tender_title": "02.TV: Tư vấn quản lý dự án",
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500475&notifyId=IB2600500475&inputResultId=e1716b89-0422-4531-9d85-b207035d78ef&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500475&planNo=PL2600286273&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
-        },
-        {
-          "partner_id": "vn3001677833",
-          "contractor_name": "CÔNG TY TNHH THIÊN PHÚ KỲ ANH",
-          "contractor_code": "vn3001677833",
-          "match_score": 64,
-          "observed_wins_same_category": 1,
-          "latest_win_at": "2026-08-30T09:46:21+00:00",
-          "latest_tender_title": "02-TVGS: Tư vấn giám sát gói thầu số 01-XL",
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500471&notifyId=IB2600500471&inputResultId=d0299604-39a9-47c2-81c2-547c65e0a989&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500471&planNo=PL2600286277&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "caveat": "Đã thắng gói tương tự trong mẫu theo dõi; không có nghĩa đang dự thầu gói hiện tại."
         }
       ]
@@ -1963,7 +1987,7 @@
       "category": "printing_media",
       "recommended_path": "subcontract_or_sourcing",
       "route": "Ưu tiên bán phần việc/sourcing cho prime contractor; không đứng tổng gói nếu working capital và năng lực không phù hợp.",
-      "target_counterpart": "Điều tra trước các historical winners: TỔNG CÔNG TY CỔ PHẦN TƯ VẤN XÂY DỰNG GIAO THÔNG THANH HÓA.",
+      "target_counterpart": "Chưa có historical winner đủ bằng chứng trong mẫu; tìm prime contractor từ KQLCNT các gói cùng loại trước khi chào bán.",
       "offers_to_test": [
         "Thiết kế/prepress/in một hạng mục tách được",
         "Kết nối xưởng có công suất và chia phần giao hàng",
@@ -1988,7 +2012,7 @@
       "category": "consulting",
       "recommended_path": "subcontract_or_sourcing",
       "route": "Ưu tiên bán phần việc/sourcing cho prime contractor; không đứng tổng gói nếu working capital và năng lực không phù hợp.",
-      "target_counterpart": "Điều tra trước các historical winners: CÔNG TY TNHH TRÚC TRANG, CÔNG TY TNHH VY KHÁNH NGÂN, Công ty TNHH tư vấn xây dựng và thương mại Anh Phương.",
+      "target_counterpart": "Điều tra trước các historical winners: Công ty cổ phần tư vấn đầu tư và xây dựng Trường Mạnh, TỔNG CÔNG TY CỔ PHẦN TƯ VẤN XÂY DỰNG GIAO THÔNG THANH HÓA, CÔNG TY TNHH TRÚC TRANG.",
       "offers_to_test": [
         "Ghép chuyên gia có hồ sơ năng lực phù hợp",
         "Nhận khảo sát, thu thập dữ liệu hoặc hồ sơ phụ trợ",
@@ -2013,7 +2037,7 @@
       "category": "consulting",
       "recommended_path": "subcontract_or_sourcing",
       "route": "Ưu tiên bán phần việc/sourcing cho prime contractor; không đứng tổng gói nếu working capital và năng lực không phù hợp.",
-      "target_counterpart": "Điều tra trước các historical winners: CÔNG TY TNHH TRÚC TRANG, CÔNG TY TNHH VY KHÁNH NGÂN, Công ty TNHH tư vấn xây dựng và thương mại Anh Phương.",
+      "target_counterpart": "Điều tra trước các historical winners: Công ty cổ phần tư vấn đầu tư và xây dựng Trường Mạnh, TỔNG CÔNG TY CỔ PHẦN TƯ VẤN XÂY DỰNG GIAO THÔNG THANH HÓA, CÔNG TY TNHH TRÚC TRANG.",
       "offers_to_test": [
         "Ghép chuyên gia có hồ sơ năng lực phù hợp",
         "Nhận khảo sát, thu thập dữ liệu hoặc hồ sơ phụ trợ",
