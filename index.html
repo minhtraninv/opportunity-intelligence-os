@@ -7,6 +7,7 @@
   <title>Opportunity Intelligence OS</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="overview.css" />
+  <link rel="stylesheet" href="reports.css" />
 </head>
 <body>
   <header class="topbar">
@@ -61,6 +62,9 @@
         <div class="rule-note">
           <strong>Không phải bộ lọc radar.</strong> Bức tranh luôn nhìn toàn bộ nền kinh tế. Các lựa chọn này chỉ xếp hạng Small Bets theo khả năng hành động của bạn và được lưu cục bộ trên trình duyệt.
         </div>
+        <div id="actionImpact" class="action-impact" aria-live="polite">
+          <div class="muted small">Đang tính tác động lên Small Bets…</div>
+        </div>
       </section>
 
       <section class="panel compact">
@@ -94,6 +98,7 @@
     <section class="content">
       <nav class="tabs" aria-label="Điều hướng chính">
         <button class="tab active" data-tab="overview">Bức tranh</button>
+        <button class="tab" data-tab="reports">Reports</button>
         <button class="tab" data-tab="today">Chi tiết</button>
         <button class="tab" data-tab="signals">Bằng chứng</button>
         <button class="tab" data-tab="opportunities">Small Bets</button>
@@ -198,6 +203,21 @@
           <p class="muted">Procurement, buyer/vendor history, relationship graph và execution chỉ phục vụ xác minh một giả thuyết cụ thể. Chúng không được phép định nghĩa bức tranh kinh tế chung.</p>
           <div class="overview-actions"><button class="btn ghost" data-overview-tab="buyers">Mở Advanced khi cần</button></div>
         </div>
+      </section>
+
+      <section id="reports" class="tab-view">
+        <article class="panel report-hero">
+          <div class="eyebrow">PERIODIC INTELLIGENCE REPORTS · V3 OFFICIAL</div>
+          <h1>Không tóm tắt tin. Theo dõi xem cách hiểu nền kinh tế đang thay đổi thế nào.</h1>
+          <p class="muted">Daily tìm material delta. Weekly là báo cáo chủ lực. Monthly audit regime và thesis. Khi history chưa đủ, report phải nói rõ đang học baseline.</p>
+          <div class="report-controls" role="tablist" aria-label="Kỳ báo cáo">
+            <button class="report-period" data-report-kind="daily">Daily</button>
+            <button class="report-period active" data-report-kind="weekly">Weekly</button>
+            <button class="report-period" data-report-kind="monthly">Monthly</button>
+          </div>
+          <div class="report-status-row"><span id="reportStatus">Đang tải report…</span><span id="reportHistoryCount">— period snapshots</span></div>
+        </article>
+        <div id="reportBody"></div>
       </section>
 
       <section id="today" class="tab-view">
@@ -323,6 +343,9 @@
   <script src="counterparty.js"></script>
   <script src="execution.js"></script>
   <script src="official-release.js"></script>
+  <script src="reports.js"></script>
+  <script src="action-feedback.js"></script>
+  <script src="source-coverage.js"></script>
   <script src="system-version.js"></script>
 </body>
 </html>
