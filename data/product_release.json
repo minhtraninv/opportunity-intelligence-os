@@ -1,18 +1,19 @@
 {
   "meta": {
     "version": "3.0.1",
-    "mode": "official_trust_hardened_observation_release",
+    "mode": "official_long_term_stable_trust_hardened_observation_release",
     "status": "official",
-    "generated_at": "2026-08-31T01:45:00+07:00"
+    "generated_at": "2026-08-31T02:31:00+07:00"
   },
   "product_promise": "Giúp người dùng nhìn thấy những thay đổi đáng chú ý trong chính sách, dòng tiền, kinh tế thực, địa bàn và entity đủ sớm để mở hồ sơ nghiên cứu; không thay người dùng ra quyết định đầu tư hay kinh doanh.",
   "maturity": {
-    "product_architecture": "stable",
+    "product_architecture": "frozen_stable",
     "discovery_mode": "active",
-    "verified_intelligence_mode": "evidence_gated",
-    "trend_mode": "learning_baseline",
+    "verified_intelligence_mode": "evidence_and_freshness_gated",
+    "trend_mode": "learning_comparable_baseline",
     "weekly_monthly_reporting": "locked_until_history_ready",
-    "decision_use": "research_radar_not_decision_engine"
+    "decision_use": "research_radar_not_decision_engine",
+    "future_change_policy": "bugs_performance_proven_blind_spots_or_trust_failures_only"
   },
   "core_chain": [
     "Macro / Policy",
@@ -31,17 +32,23 @@
     "Không phải công cụ săn đấu thầu; procurement chỉ là một nguồn evidence và một execution branch.",
     "Không ép mọi signal phải biến thành opportunity.",
     "Không coi media discovery hoặc headline trên trang chính thức là primary truth khi chưa đọc/xác minh nội dung gốc.",
+    "Không coi verified snapshot là current vô thời hạn.",
     "Không hard-filter bức tranh theo vốn, địa lý hoặc nghề nghiệp cá nhân.",
     "Không giả vờ dữ liệu đầy đủ khi Source Coverage đang chỉ ra blind spot.",
-    "Không tạo Weekly/Monthly pseudo-analysis khi chưa đủ lịch sử kỳ tương ứng."
+    "Không tạo Daily pseudo-delta khi chưa đủ comparable history.",
+    "Không tạo Weekly/Monthly pseudo-analysis khi chưa đủ lịch sử kỳ tương ứng.",
+    "Không coi thay đổi scoring/taxonomy/methodology là thay đổi của nền kinh tế."
   ],
   "trust_contract": [
     "Discovery rộng, kết luận hẹp.",
     "Official-site headline discovery không đồng nghĩa primary verified evidence.",
-    "Money Flow developing/converging phải có verified evidence families và institutions độc lập.",
+    "Money Flow developing/converging phải có fresh verified evidence families và institutions độc lập.",
+    "Verified snapshot stale hoặc không xác định được tuổi sẽ mất quyền tạo current directional conviction.",
     "Public Entity Convergence phải có ít nhất một primary verified evidence; media-only nằm ở discovery layer.",
     "Địa danh và cơ quan công không được giả dạng auto-discovered organization.",
     "Primary-domain Source Coverage chỉ được nâng bằng verified evidence; discovery coverage được đo riêng.",
+    "Mọi thay đổi methodology phải rebase comparable history trước khi tính delta.",
+    "Advanced/procurement là supporting branch và không được phép làm sập core Macro/Policy/Money Flow/Reports.",
     "Mọi publication phải vượt pre-publication trust gate."
   ],
   "release_gate": {
@@ -53,21 +60,24 @@
     "source_coverage_visible": true,
     "personal_action_layer_non_blinding": true,
     "advanced_procurement_demoted": true,
+    "advanced_branch_non_blocking": true,
     "frontend_javascript_validated": true,
     "corporate_primary_source_tls_verified": true,
     "headline_primary_boundary_enforced": true,
     "entity_type_boundary_enforced": true,
+    "snapshot_freshness_gate": true,
+    "methodology_rebase_gate": true,
     "period_report_maturity_gate": true,
     "prepublication_trust_gate": true
   },
   "known_non_blocking_blind_spots": [
-    "Corporate disclosures truy cập được HNX nhưng lớp qualified-event extraction còn mỏng; HOSE vẫn cần bổ sung.",
+    "Corporate disclosures truy cập được HNX nhưng lớp qualified-event extraction còn mỏng; HOSE vẫn cần bổ sung nếu Miss Log chứng minh blind spot này gây bỏ lỡ chuyển động quan trọng.",
     "NSO có lúc connection-reset nên macro, labor và consumption cần nguồn dự phòng; một số macro observations hiện vẫn là snapshot verified thủ công.",
     "Regional real economy và đất đai/BĐS vẫn thiếu collector active đủ rộng.",
     "Capital markets/bonds, institutional capital allocation và FDI cần thêm nguồn độc lập và parser dữ liệu sâu hơn.",
-    "Open-world media extraction vẫn là discovery system; entity resolution sẽ tiếp tục được đánh giá bằng Miss Log và false-positive log.",
-    "V3.0.1 chốt trust contract; độ phủ nguồn tiếp tục được mở rộng mà không thay kiến trúc lõi."
+    "Open-world media extraction vẫn là discovery system; entity resolution phải được đánh giá bằng Hit/Miss/False-positive Log thay vì mở rộng heuristic tùy hứng.",
+    "Độ phủ nguồn được phép tăng dần nhưng không được thay đổi kiến trúc lõi nếu chưa có bằng chứng sử dụng thực tế."
   ],
-  "release_rule": "Sau V3.0.1, production chỉ thay đổi vì bug/performance, source blind spot đã chứng minh hoặc lỗi trust/precision. Ý tưởng mới đi vào backlog cho tới khi có bằng chứng lặp lại rằng nó cải thiện khả năng nhìn thấy chuyển động quan trọng.",
-  "operating_rule": "Use it now as a research radar. Do not promote it to a decision engine merely because the interface shows a score."
+  "release_rule": "Sau V3.0.1 Stable, production chỉ thay đổi vì bug, performance, source blind spot đã được Hit/Miss Log chứng minh hoặc lỗi trust/precision. Ý tưởng mới đi vào backlog; không thay kiến trúc chỉ vì nghe hợp lý.",
+  "operating_rule": "Use it as a long-term research radar. Measure value with Hit Log, Miss Log and False-positive Log. Do not promote it to a decision engine merely because the interface shows a score."
 }
