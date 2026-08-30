@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build cross-domain entity convergence intelligence.
+"""Build open-world cross-domain entity convergence intelligence.
 
-The purpose is discovery, not recommendation. An entity becomes notable only when
-multiple evidence families converge around it. Media can create a discovery-level
-convergence, but high convergence requires at least one primary/official evidence
-item. Registry membership alone contributes zero score.
+The purpose is discovery, not recommendation. Known aliases come from the curated
+registry, but conservative auto-discovered organizations can also enter from the
+media discovery layer. Neither registry membership nor auto-discovery contributes
+importance by itself. Media can create discovery-level attention; high convergence
+still requires at least one primary/official evidence item.
 """
 from __future__ import annotations
 
@@ -371,16 +372,28 @@ def why_now(label: str, status: str, detail: dict, theme_context: list[dict], re
 
 def main() -> None:
     now = datetime.now(timezone.utc)
-    registry = load(REGISTRY_PATH, {}).get("entities", [])
+    registry = [x for x in load(REGISTRY_PATH, {}).get("entities", []) if isinstance(x, dict)]
     history = load(HISTORY_PATH, {})
     corporate = load(CORPORATE_PATH, {})
     media = load(MEDIA_PATH, {})
     money = load(MONEY_PATH, {})
     regional = load(REGIONAL_PATH, {})
 
-    rows = []
-    for entity in registry:
+    registry_ids = {str(x.get("id")) for x in registry if x.get("id")}
+    auto_entities = []
+    for entity in media.get("auto_entities", []):
         if not isinstance(entity, dict) or not entity.get("id") or not entity.get("aliases"):
+            continue
+        if str(entity.get("id")) in registry_ids:
+            continue
+        auto_entities.append(entity)
+
+    entities = [(x, "curated_registry") for x in registry]
+    entities.extend((x, "auto_discovered") for x in auto_entities)
+
+    rows = []
+    for entity, entity_origin in entities:
+        if not entity.get("id") or not entity.get("aliases"):
             continue
         evidence = add_history_evidence(entity, history, now)
         evidence.extend(add_corporate_evidence(entity, corporate, now))
@@ -391,10 +404,18 @@ def main() -> None:
         status = status_for(score, detail)
         if status == "not_observed":
             continue
+
+        # Unknown names must repeat across independent publishers before a weak WATCH
+        # can reach the public radar. Stronger convergence states keep their own gates.
+        if entity_origin == "auto_discovered" and status == "watch":
+            if int(detail.get("event_count") or 0) < 2 or len(detail.get("publishers") or []) < 2:
+                continue
+
         rows.append({
             "entity_id": entity.get("id"),
             "label": entity.get("label"),
             "entity_type": entity.get("entity_type"),
+            "entity_origin": entity_origin,
             "status": status,
             "convergence_score": score,
             "why_now": why_now(entity.get("label"), status, detail, theme_context, region_context),
@@ -420,6 +441,7 @@ def main() -> None:
                 "convergence không đồng nghĩa cơ hội đầu tư",
                 "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
                 "media discovery không phải bằng chứng primary",
+                "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
                 "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
                 "procurement được giới hạn trọng số và không thể tự tạo high convergence"
             ]
@@ -428,7 +450,10 @@ def main() -> None:
     rows.sort(key=lambda x: (x.get("convergence_score", 0), x.get("primary_evidence_count", 0), x.get("event_count", 0)), reverse=True)
     coverage = {
         "registry_entities": len(registry),
+        "auto_discovered_entities": len(auto_entities),
+        "candidate_entities_total": len(registry) + len(auto_entities),
         "observed_entities": len(rows),
+        "observed_auto_entities": sum(1 for x in rows if x.get("entity_origin") == "auto_discovered"),
         "high_convergence": sum(1 for x in rows if x.get("status") == "high_convergence"),
         "converging": sum(1 for x in rows if x.get("status") == "converging"),
         "discovery_convergence": sum(1 for x in rows if x.get("status") == "discovery_convergence"),
@@ -437,25 +462,26 @@ def main() -> None:
     }
     payload = {
         "meta": {
-            "version": "2.6.1",
+            "version": "2.7.0",
             "generated_at": now.isoformat(),
-            "mode": "cross_domain_entity_convergence_with_media_discovery",
-            "principle": "discover_where_independent_changes_meet_without_turning_discovery_into_recommendation"
+            "mode": "open_world_cross_domain_entity_convergence",
+            "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence"
         },
         "thesis": (
-            "Entity Convergence tìm nơi nhiều thay đổi độc lập cùng chạm vào một doanh nghiệp, tổ chức hoặc dự án. "
+            "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. "
             "Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'."
         ),
         "coverage": coverage,
-        "entities": rows[:20],
+        "entities": rows[:30],
         "reading_rule": (
-            "Media có quyền tạo discovery convergence nhưng không có quyền tạo high convergence một mình. "
-            "Một nguồn, một headline hoặc nhiều gói procurement không đủ để tạo kết luận mạnh."
+            "Registry chỉ chuẩn hóa alias. Auto-discovered entity phải lặp lại đủ mạnh mới được hiện. Media có quyền tạo discovery convergence "
+            "nhưng không có quyền tạo high convergence một mình. Một nguồn, một headline hoặc nhiều gói procurement không đủ."
         )
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
-        f"entity-convergence observed={coverage['observed_entities']} discovery={coverage['discovery_convergence']} "
+        f"entity-convergence candidates={coverage['candidate_entities_total']} observed={coverage['observed_entities']} "
+        f"auto={coverage['observed_auto_entities']} discovery={coverage['discovery_convergence']} "
         f"converging={coverage['converging']} high={coverage['high_convergence']}"
     )
 
