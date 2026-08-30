@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "updated_at": "2026-08-30T14:22:00+07:00",
+    "mode": "seeded-live-architecture",
+    "current_thesis": "Dòng vốn lớn đang hội tụ ở sản xuất, hạ tầng vật lý và hạ tầng số. Với cá nhân vốn nhỏ, lợi thế thực dụng nhất là bán dịch vụ, kết nối buyer-supplier và kiểm chứng các supply gap trước khi mua tài sản hay ôm hàng."
+  },
+  "sources": [
+    {
+      "id": "nso-7m-2026",
+      "publisher": "Cục Thống kê / NSO",
+      "authority": "official",
+      "url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
+      "date": "2026-08-06"
+    },
+    {
+      "id": "public-invest-7m",
+      "publisher": "Báo Chính phủ",
+      "authority": "official",
+      "url": "https://baochinhphu.vn/giai-ngan-von-dau-tu-cong-7-thang-nam-2026-nhieu-bo-nganh-dia-phuong-dat-thap-102260805180417685.htm",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "long-thanh-trial",
+      "publisher": "Báo Chính phủ",
+      "authority": "official",
+      "url": "https://baochinhphu.vn/van-hanh-thu-nghiem-san-bay-long-thanh-tu-thang-9-2026-102260728154207159.htm",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "long-thanh-operation",
+      "publisher": "Báo Chính phủ",
+      "authority": "official",
+      "url": "https://baochinhphu.vn/lo-trinh-chuyen-doi-khai-thac-2-san-bay-long-thanh-va-tan-son-nhat-tu-1-12-2026-102260728153635254.htm",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "data-strategy-2026",
+      "publisher": "Báo Chính phủ",
+      "authority": "official",
+      "url": "https://baochinhphu.vn/chi-dao-dieu-hanh-cua-chinh-phu-thu-tuong-chinh-phu-ngay-19-7-2026-102260720084215001.htm",
+      "date": "2026-07-19"
+    },
+    {
+      "id": "resolution-68",
+      "publisher": "Báo Chính phủ",
+      "authority": "official",
+      "url": "https://baochinhphu.vn/toan-van-nghi-quyet-so-68-nq-tw-ve-phat-trien-kinh-te-tu-nhan-102250505122337909.htm",
+      "date": "2025-05-05"
+    },
+    {
+      "id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "authority": "official",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
+      "date": "2026-08-28"
+    }
+  ],
+  "signals": [
+    {
+      "id": "fdi-manufacturing",
+      "title": "FDI đăng ký tăng mạnh; vốn mới tăng nhanh",
+      "date": "2026-08-06",
+      "score": 91,
+      "momentum": "↑↑ tăng mạnh",
+      "region": "Toàn quốc",
+      "stage": "confirmed",
+      "why_now": "7 tháng 2026, tổng FDI đăng ký 38,06 tỷ USD (+58% YoY); vốn đăng ký mới 21,05 tỷ USD, gấp 2,1 lần cùng kỳ. Đây là dấu chân của năng lực sản xuất và chuỗi cung ứng đang được mở rộng.",
+      "evidence_summary": "Dữ liệu vĩ mô chính thức, độ tin cậy cao; cần bóc tiếp theo tỉnh/ngành để tìm buyer thật.",
+      "source_ids": ["nso-7m-2026"]
+    },
+    {
+      "id": "public-investment",
+      "title": "Áp lực giải ngân đầu tư công còn lớn trong phần còn lại của năm",
+      "date": "2026-08-05",
+      "score": 86,
+      "momentum": "↑ triển khai",
+      "region": "Toàn quốc",
+      "stage": "confirmed",
+      "why_now": "Đến 31/7, giải ngân 425.312 tỷ đồng, bằng 41,9% kế hoạch 1.014.234,2 tỷ đồng. Phần vốn chưa giải ngân lớn tạo áp lực tiến độ, nhưng không đồng nghĩa mọi dự án đều chạy đúng kế hoạch.",
+      "evidence_summary": "Signal mạnh ở hạ tầng; cần tránh suy luận đơn giản 'đầu tư công tăng = mua cổ phiếu/đất'.",
+      "source_ids": ["public-invest-7m"]
+    },
+    {
+      "id": "long-thanh-transition",
+      "title": "Long Thành chuyển từ công trường sang giai đoạn vận hành thử và khai thác",
+      "date": "2026-07-28",
+      "score": 88,
+      "momentum": "↑↑ mốc gần",
+      "region": "Đồng Nai / Miền Nam",
+      "stage": "confirmed",
+      "why_now": "Vận hành thử dự kiến tháng 9–11/2026; khai thác thương mại từ 1/12/2026. Giai đoạn này có thể kích hoạt nhu cầu cargo, vận tải, nhân lực, dịch vụ vendor và logistics thay vì chỉ câu chuyện xây dựng.",
+      "evidence_summary": "Mốc thời gian cụ thể và gần; opportunity cấp 2 cần kiểm chứng bằng buyer/vendor thực tế.",
+      "source_ids": ["long-thanh-trial", "long-thanh-operation"]
+    },
+    {
+      "id": "data-ai-infrastructure",
+      "title": "Hạ tầng dữ liệu, HPC và AI được đưa thành năng lực quốc gia",
+      "date": "2026-07-19",
+      "score": 84,
+      "momentum": "↑ nền tảng",
+      "region": "Toàn quốc",
+      "stage": "confirmed",
+      "why_now": "Chiến lược dữ liệu quốc gia đặt mục tiêu vận hành 3 Trung tâm dữ liệu quốc gia, hạ tầng HPC và AI, chuẩn hóa/làm sạch/gắn nhãn dữ liệu và kết nối với hạ tầng năng lượng, an ninh mạng.",
+      "evidence_summary": "Chính sách xác nhận hướng đi; doanh thu tư nhân cụ thể vẫn cần theo dõi qua đấu thầu, CAPEX và tuyển dụng.",
+      "source_ids": ["data-strategy-2026"]
+    },
+    {
+      "id": "sme-formalization",
+      "title": "Hộ kinh doanh bước vào chu kỳ số hóa và tuân thủ mới",
+      "date": "2026-08-28",
+      "score": 79,
+      "momentum": "↑ chuyển đổi",
+      "region": "Toàn quốc",
+      "stage": "policy-to-market",
+      "why_now": "Nghị quyết 68 yêu cầu xóa bỏ thuế khoán chậm nhất trong 2026, đồng thời thúc đẩy số hóa kế toán, thuế và quản trị. Cổng đăng ký kinh doanh tiếp tục cập nhật khung vận hành doanh nghiệp/hộ kinh doanh.",
+      "evidence_summary": "Nhu cầu hỗ trợ triển khai có thể tăng, nhưng phần mềm miễn phí của Nhà nước làm giảm cơ hội bán 'phần mềm thuần túy'.",
+      "source_ids": ["resolution-68", "business-registry"]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "fdi-leadgen",
+      "title": "Lead-generation B2B cho nhà cung cấp Việt Nam muốn bán vào doanh nghiệp FDI",
+      "thesis": "FDI tăng không tạo tiền tự động cho doanh nghiệp nhỏ; khoảng trống có thể nằm ở việc giúp supplier Việt tìm đúng procurement/facility/HR buyer và chuẩn hóa hồ sơ bán hàng.",
+      "capital_min_m": 2,
+      "capital_max_m": 15,
+      "test_budget_m": 3,
+      "time_to_cash_days": 30,
+      "geo": "national",
+      "region": "Toàn quốc / online",
+      "buyer": "Supplier Việt Nam",
+      "evidence_score": 88,
+      "buyer_clarity_score": 84,
+      "competition_score": 48,
+      "primary_risk": "Supplier có thể không trả tiền nếu chỉ nhận danh sách lead; phải bán kết quả/appointment hoặc gói hồ sơ + outreach.",
+      "validation_steps": [
+        "Chọn 1 ngách hẹp: PPE, bao bì, vệ sinh công nghiệp hoặc gia công cơ khí.",
+        "Lập danh sách 30 supplier Việt có năng lực nhưng website/catalogue yếu.",
+        "Phỏng vấn 10 chủ doanh nghiệp về khó khăn khi tiếp cận procurement FDI.",
+        "Tạo thử 1 gói: chuẩn hóa catalogue + 20 buyer lead + 5 outreach có cá nhân hóa.",
+        "Chào giá pilot 2–5 triệu; chỉ tính là tín hiệu nếu có người đặt cọc hoặc ký thử."
+      ],
+      "kill_criteria": "Dừng nếu sau 30 cuộc tiếp cận supplier không có ít nhất 3 cuộc trao đổi nghiêm túc hoặc 1 khách chấp nhận trả tiền pilot.",
+      "source_ids": ["nso-7m-2026"]
+    },
+    {
+      "id": "sme-onboarding",
+      "title": "Dịch vụ triển khai kế toán / hóa đơn / quy trình cho hộ kinh doanh",
+      "thesis": "Cơ hội không nằm ở bán phần mềm bằng mọi giá, vì chính sách còn hướng tới nền tảng miễn phí. Khoảng trống có thể là cài đặt, chuyển dữ liệu, hướng dẫn, SOP và hỗ trợ tuân thủ cho người không rành công nghệ.",
+      "capital_min_m": 3,
+      "capital_max_m": 20,
+      "test_budget_m": 3,
+      "time_to_cash_days": 21,
+      "geo": "national",
+      "region": "Toàn quốc",
+      "buyer": "Hộ kinh doanh / micro-SME",
+      "evidence_score": 80,
+      "buyer_clarity_score": 92,
+      "competition_score": 62,
+      "primary_risk": "Thị trường đông và mức sẵn sàng trả tiền thấp; phải đóng gói theo kết quả cụ thể thay vì 'tư vấn chung'.",
+      "validation_steps": [
+        "Chọn 1 nhóm khách: quán ăn, salon, shop bán lẻ hoặc dịch vụ cá nhân.",
+        "Phỏng vấn 15 chủ hộ về 3 việc họ ngại nhất: hóa đơn, tồn kho, thuế/kế toán, chốt ca.",
+        "Đóng gói dịch vụ 1 buổi setup + checklist + hỗ trợ 14 ngày.",
+        "Chào 5 khách pilot với giá 500k–1,5 triệu tùy phạm vi.",
+        "Đo thời gian triển khai và số câu hỏi lặp lại để biến thành SOP."
+      ],
+      "kill_criteria": "Dừng/ngách lại nếu 15 cuộc phỏng vấn không chỉ ra một nỗi đau lặp lại hoặc khách chỉ chấp nhận dịch vụ miễn phí.",
+      "source_ids": ["resolution-68", "business-registry"]
+    },
+    {
+      "id": "industrial-catalog",
+      "title": "Chuẩn hóa catalogue / hồ sơ năng lực song ngữ cho supplier công nghiệp",
+      "thesis": "Nhiều supplier nhỏ có năng lực sản xuất nhưng hồ sơ bán hàng, tiếng Anh và trình bày buyer-facing yếu. Dòng FDI tăng làm giá trị của việc 'đủ chuẩn để được procurement xem xét' tăng lên.",
+      "capital_min_m": 1,
+      "capital_max_m": 10,
+      "test_budget_m": 2,
+      "time_to_cash_days": 14,
+      "geo": "national",
+      "region": "Toàn quốc / online",
+      "buyer": "SME công nghiệp",
+      "evidence_score": 78,
+      "buyer_clarity_score": 86,
+      "competition_score": 55,
+      "primary_risk": "Dễ biến thành dịch vụ thiết kế giá rẻ. Phải gắn catalogue với buyer requirement, RFQ và lead-gen để giữ giá trị.",
+      "validation_steps": [
+        "Chọn 20 công ty công nghiệp có website/catalogue yếu.",
+        "Làm 2 trang mẫu miễn phí dựa trên thông tin công khai.",
+        "Gửi founder/sales manager với đề nghị audit 15 phút.",
+        "Chào pilot 2–4 triệu cho bản 6–10 trang buyer-facing.",
+        "Theo dõi tỷ lệ reply và lý do từ chối."
+      ],
+      "kill_criteria": "Dừng nếu 30 outreach có cá nhân hóa không có ít nhất 5 phản hồi hoặc 1 đơn trả tiền.",
+      "source_ids": ["nso-7m-2026"]
+    },
+    {
+      "id": "longthanh-vendor-intel",
+      "title": "Lead / market-intelligence cho vendor logistics quanh Long Thành",
+      "thesis": "Mốc vận hành tạo nhu cầu tìm vendor và đối tác mới. Với vốn nhỏ, nên bắt đầu bằng dữ liệu buyer/vendor, lead-gen hoặc dịch vụ kết nối thay vì ôm kho, xe hay đất.",
+      "capital_min_m": 5,
+      "capital_max_m": 30,
+      "test_budget_m": 5,
+      "time_to_cash_days": 45,
+      "geo": "south",
+      "region": "Đồng Nai / TP.HCM",
+      "buyer": "Forwarder / logistics SME",
+      "evidence_score": 86,
+      "buyer_clarity_score": 73,
+      "competition_score": 58,
+      "primary_risk": "Mốc vận hành không đảm bảo ngay lập tức có đủ volume thương mại; buyer có thể dùng mạng lưới vendor sẵn có.",
+      "validation_steps": [
+        "Lập bản đồ 50 forwarder, kho, trucking, customs broker liên quan Long Thành/Đồng Nai.",
+        "Phỏng vấn 10 doanh nghiệp về nhu cầu vendor mới trước 1/12.",
+        "Tìm 3 supply gap lặp lại: trucking, nhân lực, kho, thủ tục, last-mile hoặc dịch vụ phụ trợ.",
+        "Tạo một báo cáo mini + danh sách vendor/buyer xác minh thủ công.",
+        "Chào 5 khách trả tiền cho bản đầy đủ hoặc dịch vụ intro."
+      ],
+      "kill_criteria": "Dừng nếu buyer nói volume chưa đáng kể hoặc không có ít nhất 2 nhu cầu lặp lại sau 10 cuộc phỏng vấn.",
+      "source_ids": ["long-thanh-trial", "long-thanh-operation"]
+    },
+    {
+      "id": "data-service-micro",
+      "title": "Dịch vụ làm sạch / gắn nhãn dữ liệu ngách cho doanh nghiệp nhỏ",
+      "thesis": "Chiến lược quốc gia xác nhận nhu cầu dữ liệu sạch và AI, nhưng cá nhân vốn nhỏ chỉ nên đánh vào ngách có dữ liệu rõ và buyer dễ tiếp cận, không cạnh tranh trực diện với data-center hay hạ tầng AI.",
+      "capital_min_m": 5,
+      "capital_max_m": 50,
+      "test_budget_m": 5,
+      "time_to_cash_days": 60,
+      "geo": "national",
+      "region": "Toàn quốc / remote",
+      "buyer": "AI / software SME",
+      "evidence_score": 72,
+      "buyer_clarity_score": 65,
+      "competition_score": 60,
+      "primary_risk": "Policy signal mạnh nhưng buyer tư nhân trả tiền chưa được chứng minh; dễ bị hấp dẫn bởi câu chuyện AI hơn là nhu cầu thật.",
+      "validation_steps": [
+        "Chọn 1 loại dữ liệu cụ thể: OCR hóa đơn, tiếng Việt chuyên ngành, catalogue sản phẩm hoặc ảnh bán lẻ.",
+        "Phỏng vấn 10 đội AI/software về công việc dữ liệu thủ công đang tốn thời gian.",
+        "Tạo sample 200–500 record với guideline chất lượng rõ.",
+        "Chào pilot nhỏ theo output, không tuyển đội trước.",
+        "Đo lỗi, thời gian/record và mức giá buyer chấp nhận."
+      ],
+      "kill_criteria": "Dừng nếu không tìm được công việc dữ liệu lặp lại có buyer trả tiền hoặc biên lợi nhuận sau kiểm soát chất lượng dưới 25%.",
+      "source_ids": ["data-strategy-2026"]
+    },
+    {
+      "id": "factory-consumables-broker",
+      "title": "Môi giới / sourcing vật tư tiêu hao cho nhà máy trước khi ôm tồn kho",
+      "thesis": "Năng lực sản xuất tăng kéo nhu cầu consumables, nhưng vốn nhỏ không nên nhập hàng trước. Bắt đầu bằng sourcing theo đơn, referral hoặc đại diện bán hàng để học procurement và demand thật.",
+      "capital_min_m": 10,
+      "capital_max_m": 100,
+      "test_budget_m": 8,
+      "time_to_cash_days": 60,
+      "geo": "north",
+      "region": "Cụm KCN miền Bắc",
+      "buyer": "Procurement / facility nhà máy",
+      "evidence_score": 84,
+      "buyer_clarity_score": 77,
+      "competition_score": 70,
+      "primary_risk": "Rào cản quan hệ, tiêu chuẩn vendor và công nợ cao; tuyệt đối tránh ôm tồn kho khi chưa có PO hoặc buyer validation.",
+      "validation_steps": [
+        "Chọn 1 mặt hàng tiêu hao không quá regulated: vật tư đóng gói, MRO đơn giản hoặc vệ sinh công nghiệp.",
+        "Tìm 10 supplier sẵn sàng báo giá theo đơn và 20 buyer target.",
+        "Xin 5 cuộc trao đổi procurement/facility để hiểu vendor criteria.",
+        "Chỉ chào quote sau khi biết specification và điều khoản thanh toán.",
+        "Mục tiêu pilot là 1 RFQ thật hoặc 1 đơn không phải ôm tồn kho."
+      ],
+      "kill_criteria": "Dừng nếu buyer yêu cầu công nợ/chuẩn vendor vượt khả năng hoặc không thu được RFQ thật sau 20 buyer contacts.",
+      "source_ids": ["nso-7m-2026"]
+    }
+  ],
+  "buyers": [
+    {
+      "sector": "FDI / Factory",
+      "role": "Procurement Manager",
+      "trigger": "Nhà máy mở rộng, dây chuyền mới, supplier mới hoặc tăng công suất.",
+      "likely_buys": ["Vật tư tiêu hao", "Bao bì", "PPE", "MRO", "Dịch vụ supplier mới"],
+      "access_path": "Vendor registration, LinkedIn/email, hiệp hội ngành, referral từ supplier hiện hữu."
+    },
+    {
+      "sector": "FDI / Factory",
+      "role": "Facility Manager",
+      "trigger": "Nhà xưởng mới hoặc tăng headcount làm phát sinh nhu cầu vận hành.",
+      "likely_buys": ["Cleaning", "HVAC", "PCCC", "Bảo trì", "Security", "Vệ sinh công nghiệp"],
+      "access_path": "Tìm facility role theo nhà máy/khu công nghiệp; tiếp cận bằng audit/quote cụ thể."
+    },
+    {
+      "sector": "SME formalization",
+      "role": "Chủ hộ kinh doanh",
+      "trigger": "Thay đổi thuế, hóa đơn, kế toán hoặc bắt đầu mở rộng nhân sự/điểm bán.",
+      "likely_buys": ["Setup quy trình", "Đào tạo sử dụng", "Chuyển dữ liệu", "SOP chốt ca", "Hỗ trợ kế toán/hóa đơn"],
+      "access_path": "Cụm ngành địa phương, hội nhóm chủ shop, referral kế toán, cộng đồng bán lẻ/F&B."
+    },
+    {
+      "sector": "Long Thành / Logistics",
+      "role": "Forwarder / Operations Manager",
+      "trigger": "Chuẩn bị khai thác tuyến/cargo mới hoặc mở mạng lưới vendor quanh sân bay.",
+      "likely_buys": ["Vendor data", "Trucking", "Warehouse", "Customs support", "Recruitment", "Local partner"],
+      "access_path": "Danh bạ hiệp hội logistics, doanh nghiệp forwarding, LinkedIn ops manager, sự kiện ngành."
+    },
+    {
+      "sector": "AI / Software",
+      "role": "Product / ML Lead",
+      "trigger": "Có model/product mới nhưng đội kỹ thuật bị nghẽn ở dữ liệu thủ công hoặc chất lượng dataset.",
+      "likely_buys": ["Data cleaning", "Annotation", "QA", "Vietnamese domain data", "Dataset preparation"],
+      "access_path": "Founder/ML lead ở startup/SME; chào sample output nhỏ trước khi chào đội."
+    },
+    {
+      "sector": "Industrial SME",
+      "role": "Founder / Sales Manager",
+      "trigger": "Muốn tiếp cận FDI/export buyer nhưng hồ sơ bán hàng và outreach yếu.",
+      "likely_buys": ["Catalogue song ngữ", "Capability profile", "Lead list", "RFQ support", "Outreach"],
+      "access_path": "Website công ty, cụm KCN, hội doanh nghiệp địa phương, LinkedIn founder/sales."
+    }
+  ]
+}
