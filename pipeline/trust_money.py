@@ -45,7 +45,6 @@ def harden_theme(theme: dict) -> dict:
     discovery_families = sorted({x.get("family") for x in discovery if x.get("family") not in {None, "other"}})
     discovery_publishers = sorted({publisher(x) for x in discovery if publisher(x) != "Unknown"})
 
-    # Discovery can help prioritize research but cannot manufacture directional conviction.
     score = 10
     score += min(4, len(verified_families)) * 13
     score += min(3, len(verified_publishers)) * 7
@@ -64,16 +63,24 @@ def harden_theme(theme: dict) -> dict:
         status = "insufficient"
         score = min(score, 29)
 
+    # Preserve broad discovery metadata, but public/lifecycle family counts are verified-only.
+    theme["all_observed_families"] = list(theme.get("independent_families") or [])
+    theme["all_observed_publishers"] = list(theme.get("independent_publishers") or [])
+    theme["independent_families"] = verified_families
+    theme["independent_publishers"] = verified_publishers
+    theme["non_procurement_publishers"] = verified_publishers
     theme["score"] = score
     theme["status"] = status
     theme["verified_evidence_families"] = verified_families
     theme["verified_evidence_publishers"] = verified_publishers
     theme["discovery_evidence_families"] = discovery_families
+    theme["discovery_evidence_publishers"] = discovery_publishers
     theme["verified_evidence_count"] = len(verified)
     theme["discovery_evidence_count"] = len(discovery)
     theme["procurement_support_count"] = len(procurement)
+    theme["directional_evidence_count"] = len(verified)
     theme["trust_reading"] = (
-        "Directional status is gated by verified/curated non-procurement evidence. "
+        "Directional status and public family/publisher counts are gated by verified/curated non-procurement evidence. "
         "Official landing-page headlines and media remain discovery context only."
     )
 
@@ -116,6 +123,7 @@ def main() -> None:
     payload["guardrails"] = list(dict.fromkeys((payload.get("guardrails") or []) + [
         "Official-site headline discovery is not primary verified evidence.",
         "Developing/converging status requires verified non-procurement evidence families and independent institutions.",
+        "Public family/publisher counts exclude discovery-only evidence so Lifecycle cannot mistake discovery breadth for verified breadth."
     ]))
     save(PATH, payload)
     print(f"trust-money themes={len(themes)} converging={cov['themes_converging']} developing={cov['themes_developing']} verified={cov['themes_with_verified_evidence']}")
