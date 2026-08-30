@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "version": "1.3",
+    "generated_at": "2026-08-30T09:32:18.620611+00:00",
+    "mode": "procurement_action_intelligence",
+    "principle": "discovery_then_official_verification"
+  },
+  "coverage": {
+    "historical_tenders": 0,
+    "active_tenders": 0,
+    "investigate_now": 0,
+    "direct_private_tenders": 0,
+    "source_errors_last_run": 2
+  },
+  "category_summary": {},
+  "source_health": [
+    {
+      "source_id": "dauthau-public",
+      "name": "DauThau.info - Thông báo mời thầu",
+      "items_this_run": 0,
+      "status": "error",
+      "error": "DauThau.info - Thông báo mời thầu: HTTPError: 403 Client Error: Forbidden for url: https://dauthau.asia/thongbao/moithau/",
+      "discovery_only": true
+    },
+    {
+      "source_id": "dauthau-direct",
+      "name": "DauThau.info - Gói thầu trực tiếp",
+      "items_this_run": 0,
+      "status": "error",
+      "error": "DauThau.info - Gói thầu trực tiếp: HTTPError: 403 Client Error: Forbidden for url: https://dauthau.asia/thongbao/moithau/goi-thau-truc-tiep/",
+      "discovery_only": true
+    }
+  ],
+  "buyer_triggers": [],
+  "warnings": [
+    "DauThau.info chỉ được dùng để discovery; phải xác minh mã TBMT trên Hệ thống mạng đấu thầu quốc gia trước khi hành động.",
+    "Small-capital fit chỉ là heuristic theo loại hàng/dịch vụ; chưa biết giá gói, bảo lãnh, doanh thu tối thiểu hay giấy phép thì chưa được coi là phù hợp vốn.",
+    "Có 2 nguồn lỗi ở lần chạy gần nhất."
+  ]
+}
