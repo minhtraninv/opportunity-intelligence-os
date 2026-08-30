@@ -60,6 +60,8 @@ jobs:
             counterparty.js \
             execution.js \
             official-release.js \
+            reports.js \
+            action-feedback.js \
             source-coverage.js \
             system-version.js; do
             node --check "$file"
@@ -128,6 +130,9 @@ jobs:
       - name: Audit source coverage and blind spots
         run: python pipeline/source_coverage.py
 
+      - name: Build periodic intelligence reports
+        run: python pipeline/report_intel.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
@@ -164,6 +169,8 @@ jobs:
             thesis_lifecycle.json
             entity_convergence_intelligence.json
             source_coverage_intelligence.json
+            intelligence_reports.json
+            report_history.json
             system_meta.json
           )
 
