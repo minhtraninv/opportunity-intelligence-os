@@ -20,6 +20,7 @@ MODULES = {
     "official_contact": "official_contact_intelligence.json",
     "counterparty": "counterparty_intelligence.json",
     "outreach": "outreach_intelligence.json",
+    "personal_edge": "personal_edge_schema.json",
     "corporate": "corporate_intelligence.json",
 }
 
