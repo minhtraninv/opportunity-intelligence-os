@@ -2,6 +2,12 @@ name: Update Opportunity Feed
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "pipeline/**"
+      - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
 
