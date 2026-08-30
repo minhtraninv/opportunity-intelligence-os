@@ -12,6 +12,7 @@ on:
       - "data/contradiction_observations.json"
       - "data/policy_observations.json"
       - "data/entity_registry.json"
+      - "data/source_registry.json"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -101,6 +102,9 @@ jobs:
       - name: Build entity convergence intelligence
         run: python pipeline/entity_convergence.py
 
+      - name: Audit source coverage and blind spots
+        run: python pipeline/source_coverage.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
@@ -136,6 +140,7 @@ jobs:
             theme_history.json
             thesis_lifecycle.json
             entity_convergence_intelligence.json
+            source_coverage_intelligence.json
             system_meta.json
           )
 
