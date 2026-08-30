@@ -24,6 +24,7 @@ MODULES = {
     "entity_media": "entity_media_intelligence.json",
     "entity_convergence": "entity_convergence_intelligence.json",
     "source_coverage": "source_coverage_intelligence.json",
+    "reports": "intelligence_reports.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
