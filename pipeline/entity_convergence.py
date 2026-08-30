@@ -2,8 +2,9 @@
 """Build cross-domain entity convergence intelligence.
 
 The purpose is discovery, not recommendation. An entity becomes notable only when
-multiple independent evidence families converge around it. The registry only
-normalizes aliases; registry membership alone contributes zero score.
+multiple evidence families converge around it. Media can create a discovery-level
+convergence, but high convergence requires at least one primary/official evidence
+item. Registry membership alone contributes zero score.
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ DATA = ROOT / "data"
 REGISTRY_PATH = DATA / "entity_registry.json"
 HISTORY_PATH = DATA / "history.json"
 CORPORATE_PATH = DATA / "corporate_intelligence.json"
+MEDIA_PATH = DATA / "entity_media_intelligence.json"
 MONEY_PATH = DATA / "money_flow_intelligence.json"
 REGIONAL_PATH = DATA / "regional_intelligence.json"
 OUTPUT = DATA / "entity_convergence_intelligence.json"
@@ -67,6 +69,8 @@ CATEGORY_THEME = {
     "consumer_services": "consumer_services",
 }
 
+PRIMARY_ORIGINS = {"normalized_public_signal", "official_corporate_disclosure"}
+
 
 def load(path: Path, default):
     try:
@@ -97,7 +101,7 @@ def alias_match(text: str, aliases: list[str]) -> bool:
 
 
 def evidence_age_days(item: dict, now: datetime) -> int | None:
-    dt = parse_dt(item.get("published_at") or item.get("first_seen_at") or item.get("collected_at"))
+    dt = parse_dt(item.get("published_at") or item.get("observed_at") or item.get("first_seen_at") or item.get("collected_at"))
     if not dt:
         return None
     return max(0, (now - dt).days)
@@ -181,14 +185,49 @@ def add_corporate_evidence(entity: dict, corporate: dict, now: datetime) -> list
     return rows
 
 
+def add_media_evidence(entity: dict, media: dict, now: datetime) -> list[dict]:
+    rows = []
+    cutoff = now - timedelta(days=WINDOW_DAYS)
+    for event in media.get("events", []):
+        if not isinstance(event, dict) or event.get("entity_id") != entity.get("id"):
+            continue
+        family = event.get("family")
+        if family not in FAMILY_WEIGHT:
+            continue
+        dt = parse_dt(event.get("published_at") or event.get("first_seen_at"))
+        if dt and dt < cutoff:
+            continue
+        rows.append({
+            "id": event.get("id"),
+            "event_signature": event.get("event_signature"),
+            "family": family,
+            "title": str(event.get("title") or ""),
+            "publisher": event.get("publisher"),
+            "source_url": event.get("source_url"),
+            "observed_at": (dt.isoformat() if dt else None),
+            "categories": [],
+            "geography": [],
+            "quality": "media_discovery",
+            "origin": "media_discovery",
+        })
+    return rows
+
+
 def dedupe_and_cap(rows: list[dict]) -> list[dict]:
     deduped = {}
     for row in rows:
-        key = row.get("id") or (row.get("family"), row.get("title"), row.get("source_url"))
-        deduped[str(key)] = row
+        if row.get("origin") == "media_discovery" and row.get("event_signature"):
+            key = f"media:{row.get('event_signature')}"
+        else:
+            key = row.get("id") or (row.get("family"), row.get("title"), row.get("source_url"))
+        current = deduped.get(str(key))
+        if current is None or (row.get("origin") in PRIMARY_ORIGINS and current.get("origin") not in PRIMARY_ORIGINS):
+            deduped[str(key)] = row
+
     grouped = defaultdict(list)
     for row in deduped.values():
         grouped[row.get("family")].append(row)
+
     output = []
     for family, family_rows in grouped.items():
         family_rows.sort(key=lambda x: x.get("observed_at") or "", reverse=True)
@@ -240,9 +279,20 @@ def convergence_score(evidence: list[dict], theme_context: list[dict], region_co
     families = sorted({x.get("family") for x in evidence if x.get("family") in FAMILY_WEIGHT})
     core_families = [x for x in families if x != "procurement"]
     publishers = sorted({str(x.get("publisher")) for x in evidence if x.get("publisher")})
+    primary_evidence = [x for x in evidence if x.get("origin") in PRIMARY_ORIGINS]
+    media_evidence = [x for x in evidence if x.get("origin") == "media_discovery"]
 
-    family_score = min(70, sum(FAMILY_WEIGHT[x] for x in core_families) + (5 if "procurement" in families else 0))
-    publisher_score = min(12, max(0, len(publishers) - 1) * 4)
+    family_score = 0
+    for family in core_families:
+        family_rows = [x for x in evidence if x.get("family") == family]
+        has_primary = any(x.get("origin") in PRIMARY_ORIGINS for x in family_rows)
+        weight = FAMILY_WEIGHT[family]
+        family_score += weight if has_primary else round(weight * 0.60)
+    if "procurement" in families:
+        family_score += 5
+    family_score = min(70, family_score)
+
+    publisher_score = min(10, max(0, len(publishers) - 1) * 3)
     event_score = min(8, len(evidence) * 2)
 
     newest_age = None
@@ -261,6 +311,8 @@ def convergence_score(evidence: list[dict], theme_context: list[dict], region_co
         "core_families": core_families,
         "publishers": publishers,
         "event_count": len(evidence),
+        "primary_evidence_count": len(primary_evidence),
+        "media_evidence_count": len(media_evidence),
         "newest_evidence_age_days": newest_age,
     }
     return score, detail
@@ -270,10 +322,14 @@ def status_for(score: int, detail: dict) -> str:
     family_count = len(detail.get("core_families") or [])
     publisher_count = len(detail.get("publishers") or [])
     event_count = int(detail.get("event_count") or 0)
-    if score >= 72 and family_count >= 3 and publisher_count >= 2 and event_count >= 3:
+    primary_count = int(detail.get("primary_evidence_count") or 0)
+    media_count = int(detail.get("media_evidence_count") or 0)
+    if score >= 72 and family_count >= 3 and publisher_count >= 2 and event_count >= 3 and primary_count >= 1:
         return "high_convergence"
-    if score >= 52 and family_count >= 2 and event_count >= 2:
+    if score >= 52 and family_count >= 2 and event_count >= 2 and primary_count >= 1:
         return "converging"
+    if score >= 42 and family_count >= 2 and event_count >= 2 and media_count >= 2:
+        return "discovery_convergence"
     if event_count >= 1:
         return "watch"
     return "not_observed"
@@ -292,15 +348,19 @@ def anomaly_flags(detail: dict, evidence: list[dict]) -> list[str]:
     dates = [x for x in dates if x]
     if len(dates) >= 2 and (max(dates) - min(dates)).days >= 30:
         flags.append("persistent_multi_period_attention")
+    if int(detail.get("primary_evidence_count") or 0) == 0 and int(detail.get("media_evidence_count") or 0) >= 2:
+        flags.append("media_only_needs_primary_verification")
     return flags
 
 
 def why_now(label: str, status: str, detail: dict, theme_context: list[dict], region_context: list[dict]) -> str:
     families = detail.get("core_families") or []
     if status == "high_convergence":
-        return f"{label} đang xuất hiện đồng thời trong {len(families)} họ bằng chứng độc lập. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động."
+        return f"{label} đang xuất hiện đồng thời trong {len(families)} họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động."
     if status == "converging":
-        return f"{label} đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới. Cần kiểm tra xem đây là thay đổi cấu trúc hay chỉ là nhiều tin về cùng một sự kiện."
+        return f"{label} đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện."
+    if status == "discovery_convergence":
+        return f"{label} đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận."
     if status == "watch":
         extra = ""
         if theme_context or region_context:
@@ -314,6 +374,7 @@ def main() -> None:
     registry = load(REGISTRY_PATH, {}).get("entities", [])
     history = load(HISTORY_PATH, {})
     corporate = load(CORPORATE_PATH, {})
+    media = load(MEDIA_PATH, {})
     money = load(MONEY_PATH, {})
     regional = load(REGIONAL_PATH, {})
 
@@ -323,6 +384,7 @@ def main() -> None:
             continue
         evidence = add_history_evidence(entity, history, now)
         evidence.extend(add_corporate_evidence(entity, corporate, now))
+        evidence.extend(add_media_evidence(entity, media, now))
         evidence = dedupe_and_cap(evidence)
         theme_context, region_context = linked_context(evidence, money, regional)
         score, detail = convergence_score(evidence, theme_context, region_context, now)
@@ -339,6 +401,8 @@ def main() -> None:
             "evidence_families": detail.get("families"),
             "independent_publishers": detail.get("publishers"),
             "event_count": detail.get("event_count"),
+            "primary_evidence_count": detail.get("primary_evidence_count"),
+            "media_evidence_count": detail.get("media_evidence_count"),
             "newest_evidence_age_days": detail.get("newest_evidence_age_days"),
             "anomaly_flags": anomaly_flags(detail, evidence),
             "theme_context": theme_context,
@@ -348,47 +412,50 @@ def main() -> None:
                 "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
                 "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
                 "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+                "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
                 "Điều gì phải xảy ra để thesis bị hạ cấp?",
                 "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
             ],
             "do_not_infer": [
                 "convergence không đồng nghĩa cơ hội đầu tư",
                 "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+                "media discovery không phải bằng chứng primary",
                 "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
                 "procurement được giới hạn trọng số và không thể tự tạo high convergence"
             ]
         })
 
-    rows.sort(key=lambda x: (x.get("convergence_score", 0), x.get("event_count", 0)), reverse=True)
+    rows.sort(key=lambda x: (x.get("convergence_score", 0), x.get("primary_evidence_count", 0), x.get("event_count", 0)), reverse=True)
     coverage = {
         "registry_entities": len(registry),
         "observed_entities": len(rows),
         "high_convergence": sum(1 for x in rows if x.get("status") == "high_convergence"),
         "converging": sum(1 for x in rows if x.get("status") == "converging"),
+        "discovery_convergence": sum(1 for x in rows if x.get("status") == "discovery_convergence"),
         "watch": sum(1 for x in rows if x.get("status") == "watch"),
         "window_days": WINDOW_DAYS,
     }
     payload = {
         "meta": {
-            "version": "2.6.0",
+            "version": "2.6.1",
             "generated_at": now.isoformat(),
-            "mode": "cross_domain_entity_convergence",
+            "mode": "cross_domain_entity_convergence_with_media_discovery",
             "principle": "discover_where_independent_changes_meet_without_turning_discovery_into_recommendation"
         },
         "thesis": (
             "Entity Convergence tìm nơi nhiều thay đổi độc lập cùng chạm vào một doanh nghiệp, tổ chức hoặc dự án. "
-            "Mục tiêu là tạo cơ duyên nghiên cứu: 'đừng bỏ qua cái này', không phải 'hãy mua/làm cái này'."
+            "Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'."
         ),
         "coverage": coverage,
         "entities": rows[:20],
         "reading_rule": (
-            "Chỉ coi là hội tụ khi có nhiều evidence family độc lập. Một nguồn, một headline hoặc nhiều gói procurement "
-            "không đủ để tạo kết luận mạnh."
+            "Media có quyền tạo discovery convergence nhưng không có quyền tạo high convergence một mình. "
+            "Một nguồn, một headline hoặc nhiều gói procurement không đủ để tạo kết luận mạnh."
         )
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
-        f"entity-convergence observed={coverage['observed_entities']} "
+        f"entity-convergence observed={coverage['observed_entities']} discovery={coverage['discovery_convergence']} "
         f"converging={coverage['converging']} high={coverage['high_convergence']}"
     )
 
