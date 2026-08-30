@@ -122,6 +122,9 @@ jobs:
       - name: Harden money-flow evidence gates
         run: python pipeline/trust_money.py
 
+      - name: Rebase comparable history if methodology changed
+        run: python pipeline/trust_rebase.py
+
       - name: Build regional money-flow intelligence
         run: python pipeline/regional_intel.py
 
@@ -182,6 +185,7 @@ jobs:
             corporate_intelligence.json
             supply_side_intelligence.json
             money_flow_intelligence.json
+            methodology_state.json
             regional_intelligence.json
             contradiction_intelligence.json
             theme_history.json
