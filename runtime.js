@@ -1,6 +1,7 @@
 (() => {
   'use strict';
 
+  const ASSET_VERSION = '20260831-perf2';
   const nativeFetch = window.fetch.bind(window);
   const responseCache = new Map();
   const inflight = new Map();
@@ -27,19 +28,13 @@
     return url.href;
   };
 
-  /* Same JSON, one network request per short session window. */
   window.fetch = function oiFetch(input, init = {}) {
     if(!isDataRequest(input, init)) return nativeFetch(input, init);
-
     const key = dataKey(input);
     const now = Date.now();
     const cached = responseCache.get(key);
-    if(cached && now - cached.at < CACHE_TTL_MS){
-      return Promise.resolve(cached.response.clone());
-    }
-    if(inflight.has(key)){
-      return inflight.get(key).then(response => response.clone());
-    }
+    if(cached && now - cached.at < CACHE_TTL_MS) return Promise.resolve(cached.response.clone());
+    if(inflight.has(key)) return inflight.get(key).then(response => response.clone());
 
     const request = nativeFetch(input, {...init, cache:'no-cache'})
       .then(response => {
@@ -62,7 +57,7 @@
         return;
       }
       const script = document.createElement('script');
-      script.src = src;
+      script.src = `${src}?v=${encodeURIComponent(ASSET_VERSION)}`;
       script.async = false;
       script.dataset.oiLazy = src;
       script.addEventListener('load', () => { script.dataset.loaded = '1'; resolve(); }, {once:true});
@@ -79,12 +74,8 @@
   async function loadReports(){
     if(reportsLoaded) return;
     reportsLoaded = true;
-    try {
-      await loadScript('reports.js');
-    } catch(err){
-      reportsLoaded = false;
-      console.error(err);
-    }
+    try { await loadScript('reports.js'); }
+    catch(err){ reportsLoaded = false; console.error(err); }
   }
 
   async function loadAdvanced(){
@@ -101,14 +92,8 @@
     }
   }
 
-  function activeTab(){
-    return document.querySelector('.tab.active')?.dataset.tab || 'overview';
-  }
-
-  function rememberTab(){
-    try { sessionStorage.setItem(TAB_KEY, activeTab()); } catch {}
-  }
-
+  function activeTab(){ return document.querySelector('.tab.active')?.dataset.tab || 'overview'; }
+  function rememberTab(){ try { sessionStorage.setItem(TAB_KEY, activeTab()); } catch {} }
   function restoreTab(){
     let id = null;
     try { id = sessionStorage.getItem(TAB_KEY); sessionStorage.removeItem(TAB_KEY); } catch {}
@@ -134,9 +119,7 @@
       const response = await nativeFetch(`data/system_meta.json?_oi_ts=${Date.now()}`, {cache:'no-store'});
       if(!response.ok) return null;
       return response.json();
-    } catch {
-      return null;
-    }
+    } catch { return null; }
   }
 
   let currentMetaStamp = null;
@@ -152,7 +135,6 @@
     if(!next) return;
     if(!currentMetaStamp){ currentMetaStamp = next; return; }
     if(next === currentMetaStamp) return;
-
     currentMetaStamp = next;
     responseCache.clear();
     rememberTab();
@@ -160,17 +142,9 @@
     window.setTimeout(() => location.reload(), 350);
   }
 
-  window.OIRuntime = {
-    loadReports,
-    loadAdvanced,
-    clearDataCache: () => responseCache.clear(),
-    checkForUpdate,
-  };
-
+  window.OIRuntime = {loadReports,loadAdvanced,clearDataCache:()=>responseCache.clear(),checkForUpdate};
   restoreTab();
   initializeFreshness();
   window.setInterval(checkForUpdate, META_CHECK_MS);
-  document.addEventListener('visibilitychange', () => {
-    if(!document.hidden) checkForUpdate();
-  });
+  document.addEventListener('visibilitychange', () => { if(!document.hidden) checkForUpdate(); });
 })();
