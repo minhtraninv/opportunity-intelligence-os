@@ -6,7 +6,6 @@
   const inflight = new Map();
   const CACHE_TTL_MS = 60_000;
   const META_CHECK_MS = 5 * 60_000;
-  const META_KEY = 'oi.runtime.latestComponentUpdate';
   const TAB_KEY = 'oi.runtime.activeTab';
 
   const isDataRequest = (input, init) => {
@@ -28,12 +27,7 @@
     return url.href;
   };
 
-  /*
-    Deduplicate JSON requests across independent legacy modules. The old frontend
-    used cache:'no-store' everywhere, so the same large payload could be fetched
-    several times during one page load. We keep freshness via revalidation while
-    allowing one in-memory response to serve all modules for a short window.
-  */
+  /* Same JSON, one network request per short session window. */
   window.fetch = function oiFetch(input, init = {}) {
     if(!isDataRequest(input, init)) return nativeFetch(input, init);
 
@@ -47,8 +41,7 @@
       return inflight.get(key).then(response => response.clone());
     }
 
-    const nextInit = {...init, cache:'no-cache'};
-    const request = nativeFetch(input, nextInit)
+    const request = nativeFetch(input, {...init, cache:'no-cache'})
       .then(response => {
         if(response.ok) responseCache.set(key, {at:Date.now(), response:response.clone()});
         return response;
@@ -80,8 +73,20 @@
     return promise;
   }
 
+  let reportsLoaded = false;
   let actionLoaded = false;
   let advancedLoaded = false;
+
+  async function loadReports(){
+    if(reportsLoaded) return;
+    reportsLoaded = true;
+    try {
+      await loadScript('reports.js');
+    } catch(err){
+      reportsLoaded = false;
+      console.error(err);
+    }
+  }
 
   async function loadActionLayer(){
     if(actionLoaded) return;
@@ -127,6 +132,7 @@
     const tab = event.target.closest('.tab[data-tab]');
     if(!tab) return;
     const id = tab.dataset.tab;
+    if(id === 'reports') loadReports();
     if(id === 'today') loadActionLayer();
     if(id === 'buyers') loadAdvanced();
   });
@@ -136,10 +142,9 @@
     if(target) target.textContent = text;
   }
 
-  async function readMeta(force = false){
+  async function readMeta(){
     try {
-      const suffix = force ? `?_oi_ts=${Date.now()}` : '';
-      const response = await nativeFetch(`data/system_meta.json${suffix}`, {cache:'no-store'});
+      const response = await nativeFetch(`data/system_meta.json?_oi_ts=${Date.now()}`, {cache:'no-store'});
       if(!response.ok) return null;
       return response.json();
     } catch {
@@ -149,18 +154,15 @@
 
   let currentMetaStamp = null;
   async function initializeFreshness(){
-    const meta = await readMeta(true);
+    const meta = await readMeta();
     currentMetaStamp = meta?.latest_component_update || meta?.generated_at || null;
-    if(currentMetaStamp){
-      try { localStorage.setItem(META_KEY, currentMetaStamp); } catch {}
-    }
   }
 
   async function checkForUpdate(){
     if(document.hidden) return;
-    const meta = await readMeta(true);
+    const meta = await readMeta();
     const next = meta?.latest_component_update || meta?.generated_at || null;
-    if(!next){ return; }
+    if(!next) return;
     if(!currentMetaStamp){ currentMetaStamp = next; return; }
     if(next === currentMetaStamp) return;
 
@@ -172,6 +174,7 @@
   }
 
   window.OIRuntime = {
+    loadReports,
     loadActionLayer,
     loadAdvanced,
     clearDataCache: () => responseCache.clear(),
