@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-08-30T16:49:25.218108+00:00",
+    "generated_at": "2026-08-30T16:56:36.921262+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality"
   },
@@ -10,24 +10,24 @@
     "domains": 20,
     "strong": 3,
     "partial": 7,
-    "weak": 4,
-    "broken": 4,
+    "weak": 5,
+    "broken": 3,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 13,
+    "healthy_sources": 15,
     "productive_sources": 10,
-    "source_errors": 5,
+    "source_errors": 3,
     "planned_sources": 8
   },
   "critical_blind_spots": [
     {
       "domain_id": "corporate_disclosures",
       "label": "Công bố doanh nghiệp",
-      "status": "broken",
+      "status": "weak",
       "priority": 1,
       "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
-      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này.",
+      "coverage_note": "Có collector/nguồn nhưng lần chạy hiện tại chưa tạo qualified evidence; dễ bỏ sót thay đổi quan trọng.",
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ]
@@ -109,24 +109,25 @@
       "priority": 1,
       "target_healthy_sources": 3,
       "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
-      "status": "broken",
+      "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 0,
+      "healthy_sources": 2,
       "productive_sources": 0,
-      "broken_sources": 3,
+      "broken_sources": 1,
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "healthy_source_names": [],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Ủy ban Chứng khoán Nhà nước",
+      "healthy_source_names": [
         "HNX - công bố niêm yết",
         "HNX - công bố UPCoM"
+      ],
+      "productive_source_names": [],
+      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước"
       ],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
-      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này."
+      "coverage_note": "Có collector/nguồn nhưng lần chạy hiện tại chưa tạo qualified evidence; dễ bỏ sót thay đổi quan trọng."
     },
     {
       "id": "fdi_investment",
@@ -159,18 +160,18 @@
       "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 1,
+      "healthy_sources": 2,
       "productive_sources": 0,
-      "broken_sources": 2,
+      "broken_sources": 1,
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
-        "Bộ Tài chính - Tin tức tài chính"
+        "Bộ Tài chính - Tin tức tài chính",
+        "HNX - công bố niêm yết"
       ],
       "productive_source_names": [],
       "broken_source_names": [
-        "Ủy ban Chứng khoán Nhà nước",
-        "HNX - công bố niêm yết"
+        "Ủy ban Chứng khoán Nhà nước"
       ],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp",
@@ -852,10 +853,10 @@
         "capital_markets_bonds"
       ],
       "authority": 1.0,
-      "health": "error",
+      "health": "ok",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "error": null
     },
     {
       "id": "hnx-upcom",
@@ -867,10 +868,10 @@
         "corporate_disclosures"
       ],
       "authority": 1.0,
-      "health": "error",
+      "health": "ok",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "error": null
     },
     {
       "id": "msc-official",
