@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Corporate Action Intelligence from official HNX public disclosures.
 
-A disclosure title is only an investigation trigger. The system intentionally ignores
-routine market-status notices and securities-registration formalities unless the title
-contains evidence of real capital deployment, financing, a contract, acquisition, or
-an operating project.
+A disclosure title is only an investigation trigger. Routine market-status notices and
+registration formalities are ignored unless the title contains evidence of capital
+deployment, financing, a contract, acquisition, or an operating project.
 """
 from __future__ import annotations
 
@@ -24,21 +23,21 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "corporate_intelligence.json"
 HISTORY = ROOT / "data" / "corporate_history.json"
 VN_TZ = timezone(timedelta(hours=7))
-UA = "Mozilla/5.0 (compatible; OpportunityIntelligenceOS/1.3; +https://github.com/)"
+UA = "Mozilla/5.0 (compatible; OpportunityIntelligenceOS/3.0; +https://github.com/minhtraninv/opportunity-intelligence-os)"
 
-# Alternate official HNX subdomains are used because the apex HNX certificate chain
-# is not consistently accepted by GitHub-hosted Ubuntu runners.
+# Use the canonical HNX host. The older portal/tttt subdomains have certificate-chain
+# problems on GitHub-hosted runners even though the public HNX pages remain reachable.
 SOURCES = [
     {
         "id": "hnx-listed",
         "name": "HNX - công bố niêm yết",
-        "url": "https://portal.hnx.vn/vi-vn/thong-tin-cong-bo-ny-hnx.html",
+        "url": "https://hnx.vn/vi-vn/thong-tin-cong-bo-ny-hnx.html",
         "authority": 1.0,
     },
     {
         "id": "hnx-upcom",
         "name": "HNX - công bố UPCoM",
-        "url": "https://tttt.hnx.vn/vi-vn/thong-tin-cong-bo-up-hnx.html",
+        "url": "https://hnx.vn/vi-vn/thong-tin-cong-bo-up-hnx.html",
         "authority": 1.0,
     },
 ]
@@ -46,7 +45,7 @@ SOURCES = [
 RULES = (
     ("contract_award", (
         "trúng thầu", "trúng gói thầu", "ký hợp đồng", "ký kết hợp đồng",
-        "hợp đồng EPC", "hợp đồng xây dựng", "hợp đồng cung cấp",
+        "hợp đồng epc", "hợp đồng xây dựng", "hợp đồng cung cấp",
     )),
     ("capex_project", (
         "khởi công dự án", "triển khai dự án", "đầu tư dự án", "phê duyệt dự án",
@@ -74,35 +73,19 @@ NEGATIVE = (
 )
 
 LIKELY_NEEDS = {
-    "capex_project": [
-        "nhà thầu phụ", "facility/cleaning", "PPE & vật tư", "logistics",
-        "tuyển dụng", "IT/office setup",
-    ],
+    "capex_project": ["nhà thầu phụ", "facility/cleaning", "PPE & vật tư", "logistics", "tuyển dụng", "IT/office setup"],
     "contract_award": ["nhà thầu phụ", "vật tư", "logistics", "nhân công", "bảo trì"],
-    "capital_raise": [
-        "theo dõi mục đích sử dụng vốn", "xác minh dự án nhận vốn",
-        "tìm procurement/facility trigger tiếp theo",
-    ],
-    "acquisition_investment": [
-        "dịch vụ tích hợp vận hành", "IT/kế toán", "branding/website", "tuyển dụng", "facility",
-    ],
-    "financing": [
-        "theo dõi CAPEX hoặc mua sắm sau giải ngân",
-        "không coi vay vốn tự thân là nhu cầu mua",
-    ],
+    "capital_raise": ["theo dõi mục đích sử dụng vốn", "xác minh dự án nhận vốn", "tìm trigger triển khai tiếp theo"],
+    "acquisition_investment": ["dịch vụ tích hợp vận hành", "IT/kế toán", "branding/website", "tuyển dụng", "facility"],
+    "financing": ["theo dõi CAPEX hoặc mua sắm sau giải ngân", "không coi vay vốn tự thân là nhu cầu mua"],
 }
 
 
 def build_session() -> requests.Session:
     retry = Retry(
-        total=2,
-        connect=2,
-        read=2,
-        status=2,
-        backoff_factor=0.8,
+        total=2, connect=2, read=2, status=2, backoff_factor=0.8,
         status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET"}),
-        raise_on_status=False,
+        allowed_methods=frozenset({"GET"}), raise_on_status=False,
     )
     session = requests.Session()
     adapter = HTTPAdapter(max_retries=retry)
@@ -183,15 +166,12 @@ def parse_source(src: dict, captured_at: datetime) -> tuple[list[dict], str | No
         cells = tr.find_all("td")
         if len(cells) < 4:
             continue
-
         values = [norm(cell.get_text(" ", strip=True)) for cell in cells]
 
-        # HNX disclosure table is normally STT | date | ticker | title | attachment.
         published_at = parse_dt(values[1]) if len(values) > 1 else None
         ticker = values[2].upper() if len(values) > 2 else ""
         title = values[3] if len(values) > 3 else ""
 
-        # Fallback for mirrors whose markup contains an extra leading column.
         if not published_at:
             date_index = next((i for i, value in enumerate(values) if parse_dt(value)), None)
             if date_index is None:
@@ -220,157 +200,82 @@ def parse_source(src: dict, captured_at: datetime) -> tuple[list[dict], str | No
 
         output.append({
             "id": key,
-            "source_id": src["id"],
-            "source_name": src["name"],
-            "source_url": source_url,
-            "authority": src["authority"],
             "ticker": ticker,
             "title": title,
             "event_type": event_type,
             "published_at": iso(published_at),
-            "first_seen_at": iso(captured_at),
-            "last_seen_at": iso(captured_at),
+            "captured_at": iso(captured_at),
+            "source_id": src["id"],
+            "publisher": src["name"],
+            "source_url": source_url,
+            "authority": src["authority"],
+            "likely_downstream_needs_hypothesis": LIKELY_NEEDS.get(event_type, []),
+            "interpretation_rule": "disclosure_trigger_not_investment_recommendation",
         })
 
-    return output[:80], None
-
-
-def merge_history(old: dict, fresh: list[dict], captured_at: datetime) -> dict:
-    merged = {
-        (item.get("source_id"), item.get("ticker"), item.get("title")): dict(item)
-        for item in old.get("items", [])
-        if item.get("title")
-    }
-
-    for item in fresh:
-        key = (item.get("source_id"), item.get("ticker"), item.get("title"))
-        previous = merged.get(key)
-        if previous:
-            merged[key] = {
-                **previous,
-                **item,
-                "id": event_id(item["source_id"], item["ticker"], item["title"]),
-                "first_seen_at": previous.get("first_seen_at") or item["first_seen_at"],
-                "last_seen_at": iso(captured_at),
-            }
-        else:
-            merged[key] = item
-
-    items = list(merged.values())
-    items.sort(key=lambda x: x.get("published_at") or "", reverse=True)
-    return {"version": 2, "updated_at": iso(captured_at), "items": items[:1500]}
-
-
-def score_trigger(item: dict, captured_at: datetime) -> dict:
-    base = {
-        "capex_project": 88,
-        "contract_award": 86,
-        "acquisition_investment": 72,
-        "capital_raise": 58,
-        "financing": 45,
-    }.get(item["event_type"], 40)
-
-    try:
-        age_days = (captured_at - datetime.fromisoformat(item["published_at"])).total_seconds() / 86400
-    except Exception:
-        age_days = 30
-
-    freshness = max(0, 20 - min(20, age_days * 1.5))
-    score = min(95, round(base * 0.78 + freshness))
-
-    if item["event_type"] in {"capex_project", "contract_award"} and score >= 72:
-        action_level = "investigate_now"
-    elif score >= 60:
-        action_level = "watch"
-    else:
-        action_level = "context"
-
-    return {
-        **item,
-        "buyer_trigger_score": score,
-        "action_level": action_level,
-        "likely_needs": LIKELY_NEEDS[item["event_type"]],
-        "next_action": (
-            "Mở công bố gốc và tài liệu đính kèm; xác định dự án/hợp đồng/mục đích vốn cụ thể. "
-            "Chỉ sau khi xác nhận có hoạt động kinh tế thực mới tìm buyer role và nhà cung cấp phụ trợ."
-        ),
-        "kill_criteria": (
-            "Loại nếu công bố chỉ là thủ tục chứng khoán, không dẫn tới CAPEX/hợp đồng/nhu cầu vận hành, "
-            "hoặc không xác định được doanh nghiệp và hoạt động tạo nhu cầu thực."
-        ),
-    }
+    return output, None
 
 
 def main() -> None:
-    captured_at = now_utc()
-    fresh = []
-    errors = []
-    source_health = []
-
+    now = now_utc()
+    all_events = []
+    health = []
     for src in SOURCES:
-        items, error = parse_source(src, captured_at)
-        fresh.extend(items)
-        source_health.append({
-            "source_id": src["id"],
-            "name": src["name"],
-            "items_this_run": len(items),
+        rows, error = parse_source(src, now)
+        all_events.extend(rows)
+        health.append({
+            "source_id": src["id"], "source_name": src["name"],
             "status": "error" if error else "ok",
-            "error": error,
+            "items_this_run": len(rows), "error": error,
         })
-        if error:
-            errors.append(error)
 
-    history = merge_history(
-        load_json(HISTORY, {"version": 2, "items": []}),
-        fresh,
-        captured_at,
-    )
-    write_json(HISTORY, history)
+    history = load_json(HISTORY, {"events": []})
+    existing = {x.get("id"): x for x in history.get("events", []) if isinstance(x, dict) and x.get("id")}
+    for event in all_events:
+        existing[event["id"]] = event
+    history_rows = sorted(existing.values(), key=lambda x: x.get("published_at") or "", reverse=True)[:2500]
+    write_json(HISTORY, {"updated_at": now.isoformat(), "events": history_rows})
 
-    scored = [score_trigger(item, captured_at) for item in history["items"]]
+    cutoff = now - timedelta(days=45)
     recent = []
-    for item in scored:
+    for event in history_rows:
         try:
-            published_at = datetime.fromisoformat(item["published_at"])
+            if datetime.fromisoformat(str(event.get("published_at", "")).replace("Z", "+00:00")) >= cutoff:
+                recent.append(event)
         except Exception:
-            continue
-        if (captured_at - published_at).total_seconds() <= 30 * 86400:
-            recent.append(item)
+            pass
 
-    recent.sort(
-        key=lambda x: (x["buyer_trigger_score"], x["published_at"]),
-        reverse=True,
-    )
+    counts = {}
+    for event in recent:
+        counts[event["event_type"]] = counts.get(event["event_type"], 0) + 1
 
-    output = {
+    payload = {
         "meta": {
-            "version": "1.3",
-            "generated_at": iso(captured_at),
-            "mode": "corporate_action_intelligence",
-            "principle": "official_disclosure_then_document_verification",
+            "version": "3.0.0",
+            "generated_at": now.isoformat(),
+            "mode": "official_corporate_action_discovery",
+            "principle": "corporate_disclosure_is_an_execution_trigger_not_a_buy_signal",
         },
         "coverage": {
-            "historical_events": len(history["items"]),
-            "recent_events": len(recent),
-            "investigate_now": sum(item["action_level"] == "investigate_now" for item in recent),
-            "source_errors_last_run": len(errors),
+            "sources": len(SOURCES),
+            "healthy_sources": sum(1 for x in health if x["status"] == "ok"),
+            "source_errors": sum(1 for x in health if x["status"] == "error"),
+            "events_this_run": len(all_events),
+            "historical_events": len(history_rows),
+            "recent_events_45d": len(recent),
+            "event_types_45d": counts,
         },
-        "source_health": source_health,
-        "buyer_triggers": recent[:60],
-        "warnings": [
-            "HNX là nguồn công bố chính thức, nhưng tiêu đề chỉ là trigger điều tra; phải đọc tài liệu gốc trước khi suy ra nhu cầu mua sắm.",
-            "Capital raise/financing không tự động đồng nghĩa với cơ hội bán hàng; cần bằng chứng vốn được dùng cho hoạt động tạo nhu cầu.",
-            *([f"Có {len(errors)} nguồn lỗi ở lần chạy gần nhất."] if errors else []),
-        ],
+        "source_health": health,
+        "recent_events": recent[:120],
+        "reading_rule": (
+            "Một disclosure chỉ mở hồ sơ điều tra. Cần đọc tài liệu gốc, quy mô, thời điểm, funding, execution và phản chứng trước khi nối thành thesis."
+        ),
     }
-    write_json(OUT, output)
-
+    write_json(OUT, payload)
     print(
-        f"corporate-intel history={len(history['items'])} recent={len(recent)} "
-        f"investigate={output['coverage']['investigate_now']} errors={len(errors)}"
+        f"corporate sources={len(SOURCES)} healthy={payload['coverage']['healthy_sources']} "
+        f"run={len(all_events)} history={len(history_rows)} recent={len(recent)}"
     )
-    for error in errors:
-        print(error)
 
 
 if __name__ == "__main__":
