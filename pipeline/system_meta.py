@@ -19,6 +19,7 @@ MODULES = {
     "relationship": "relationship_intelligence.json",
     "official_contact": "official_contact_intelligence.json",
     "counterparty": "counterparty_intelligence.json",
+    "outreach": "outreach_intelligence.json",
     "corporate": "corporate_intelligence.json",
 }
 
