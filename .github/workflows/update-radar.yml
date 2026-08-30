@@ -57,6 +57,9 @@ jobs:
       - name: Probe official contractor schema
         run: python pipeline/contractor_schema_probe.py
 
+      - name: Build official MSC contact intelligence
+        run: python pipeline/official_contact_intel.py
+
       - name: Build counterparty execution dossiers
         run: python pipeline/counterparty_intel.py
 
@@ -83,6 +86,7 @@ jobs:
             partner_backfill_state.json
             relationship_intelligence.json
             contractor_schema_probe.json
+            official_contact_intelligence.json
             counterparty_intelligence.json
             corporate_history.json
             corporate_intelligence.json
