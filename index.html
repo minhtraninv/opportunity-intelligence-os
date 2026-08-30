@@ -63,6 +63,7 @@
         <div class="metric-row"><span>Tín hiệu curated</span><strong id="signalCount">—</strong></div>
         <div class="metric-row"><span>Cơ hội hành động</span><strong id="oppCount">—</strong></div>
         <div class="metric-row"><span>Buyer archetypes</span><strong id="buyerCount">—</strong></div>
+        <div class="metric-row"><span>Buyer trigger live</span><strong id="liveBuyerCount">—</strong></div>
         <div class="metric-row"><span>Headline đã thu</span><strong id="rawFeedCount">—</strong></div>
         <div class="metric-row"><span>Sự kiện lịch sử</span><strong id="historicalEventCount">—</strong></div>
         <div class="metric-row"><span>Baseline đã học</span><strong id="historyDays">—</strong></div>
@@ -74,6 +75,7 @@
           <li>Không coi tin tức = nhu cầu.</li>
           <li>Không coi ngành tăng = cơ hội của mình.</li>
           <li>Không gọi biến động là trend khi chưa đủ baseline.</li>
+          <li>Không coi listing đấu thầu = gói phù hợp vốn trước khi đọc yêu cầu thật.</li>
           <li>Không mở rộng trước khi có tín hiệu trả tiền.</li>
         </ul>
       </section>
@@ -153,8 +155,17 @@
 
       <section id="buyers" class="tab-view">
         <div class="section-head">
-          <div><div class="eyebrow">WHO IS BUYING?</div><h2>Buyer Radar</h2></div>
-          <span class="muted">Tìm người đang có ngân sách trước khi tìm “ngành hot”.</span>
+          <div><div class="eyebrow">ACTION INTELLIGENCE · V1.3</div><h2>Live procurement buyer triggers</h2></div>
+          <span id="buyerRadarStatus" class="muted">Đang tải dữ liệu mua sắm…</span>
+        </div>
+        <div class="panel" style="margin-bottom:16px">
+          <strong>Quy tắc xác minh:</strong> dữ liệu procurement tự động chỉ dùng để discovery. Mở mã TBMT trên Hệ thống mạng đấu thầu quốc gia, đọc giá gói, bảo lãnh, doanh thu tối thiểu, giấy phép và phạm vi trước khi coi là cơ hội.
+        </div>
+        <div id="liveBuyerGrid" class="buyer-grid"></div>
+
+        <div class="section-head" style="margin-top:28px">
+          <div><div class="eyebrow">BUYER ARCHETYPES</div><h2>Buyer Radar nền</h2></div>
+          <span class="muted">Archetype giúp biết nên tìm vai trò nào; live triggers phía trên cho biết ai đang có nhu cầu công khai.</span>
         </div>
         <div id="buyerGrid" class="buyer-grid"></div>
       </section>
@@ -183,10 +194,11 @@
   </main>
 
   <footer>
-    <span>Opportunity Intelligence OS · V1.2</span>
-    <span>Không phải khuyến nghị đầu tư. Chỉ candidate events đã chuẩn hóa mới được tính vào Change Detector; mọi opportunity vẫn phải kiểm chứng.</span>
+    <span>Opportunity Intelligence OS · V1.3</span>
+    <span>Không phải khuyến nghị đầu tư/đấu thầu. Mọi buyer trigger tự động là manh mối điều tra và phải xác minh ở nguồn chính thức.</span>
   </footer>
 
   <script src="app.js"></script>
+  <script src="action.js"></script>
 </body>
 </html>
