@@ -24,6 +24,8 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "pipeline" / "config.json"
@@ -39,6 +41,28 @@ RAW_FEED_LIMIT = 1000
 MIN_HISTORY_DAYS = 14
 RECENT_DAYS = 7
 BASELINE_DAYS = 21
+
+
+def build_session() -> requests.Session:
+    retry = Retry(
+        total=2,
+        connect=2,
+        read=2,
+        status=2,
+        backoff_factor=0.8,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session = requests.Session()
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    session.headers.update({"User-Agent": UA})
+    return session
+
+
+SESSION = build_session()
 
 
 def now_utc() -> datetime:
@@ -91,8 +115,8 @@ def canonical_url(value: str) -> str:
         if path != "/":
             path = path.rstrip("/")
         query = parsed.query or ""
-        # Deliberately ignore scheme and fragment: many Vietnamese public sites expose
-        # the same content through both HTTP/HTTPS or anchor variants.
+        # Ignore scheme and fragment: many public sites expose the same page through
+        # both HTTP/HTTPS or anchor variants.
         return f"{host}{path}{'?' + query if query else ''}"
     except Exception:
         return cleaned.lower()
@@ -104,11 +128,7 @@ def event_id(title: str, url: str) -> str:
 
 
 def keyword_matches(text: str, keyword: str) -> bool:
-    """Match whole words/phrases, not arbitrary substrings.
-
-    Prevents false positives such as 'ai' inside 'triển khai'. Python's Unicode
-    \w handling treats Vietnamese letters as word characters.
-    """
+    """Match whole words or phrases instead of arbitrary substrings."""
     pattern = rf"(?<!\w){re.escape(keyword.lower())}(?!\w)"
     return re.search(pattern, text.lower(), flags=re.UNICODE) is not None
 
@@ -126,7 +146,7 @@ def classify(text: str) -> list[str]:
 
 def fetch_source(src: dict) -> tuple[list[dict], str | None]:
     try:
-        response = requests.get(src["url"], timeout=20, headers={"User-Agent": UA})
+        response = SESSION.get(src["url"], timeout=(10, 30))
         response.raise_for_status()
     except Exception as exc:
         return [], f"{src['name']}: {type(exc).__name__}: {exc}"
