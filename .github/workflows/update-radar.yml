@@ -76,6 +76,9 @@ jobs:
       - name: Build V2 money-flow intelligence
         run: python pipeline/money_flow_intel.py
 
+      - name: Attach observed supply evidence to themes
+        run: python pipeline/supply_gap_enrich.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
