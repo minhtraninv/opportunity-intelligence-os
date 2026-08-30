@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Opportunity Intelligence OS — bối cảnh, chính sách, dòng tiền và cơ hội cho người bình thường tại Việt Nam." />
+  <meta name="description" content="Opportunity Intelligence OS — radar bối cảnh, chính sách, dòng tiền, điểm hội tụ và cơ hội tại Việt Nam." />
   <title>Opportunity Intelligence OS</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="overview.css" />
@@ -14,7 +14,7 @@
       <div class="brand-mark">OI</div>
       <div>
         <div class="brand">Opportunity Intelligence OS</div>
-        <div class="subbrand">Việt Nam · Chính sách → Dòng tiền → Cơ hội</div>
+        <div class="subbrand">Việt Nam · Thay đổi → Dòng tiền → Hội tụ → Cơ duyên</div>
       </div>
     </div>
     <div class="top-meta">
@@ -26,59 +26,67 @@
 
   <main class="layout">
     <aside class="sidebar">
-      <section class="panel compact">
-        <h2>Bộ lọc cá nhân</h2>
-        <label>Vốn tối đa</label>
+      <section class="panel compact action-layer-panel">
+        <div class="eyebrow">PERSONAL ACTION LAYER</div>
+        <h2>Khả năng hành động</h2>
+        <label>Ngân sách tối đa cho một phép thử</label>
         <select id="capitalFilter">
-          <option value="10">≤ 10 triệu</option>
-          <option value="30">≤ 30 triệu</option>
-          <option value="50" selected>≤ 50 triệu</option>
+          <option value="1">≤ 1 triệu</option>
+          <option value="3">≤ 3 triệu</option>
+          <option value="5">≤ 5 triệu</option>
+          <option value="10" selected>≤ 10 triệu</option>
+          <option value="20">≤ 20 triệu</option>
+          <option value="50">≤ 50 triệu</option>
           <option value="100">≤ 100 triệu</option>
           <option value="500">≤ 500 triệu</option>
         </select>
 
-        <label>Thời gian có doanh thu</label>
+        <label>Mục tiêu có tín hiệu thương mại</label>
         <select id="cashFilter">
-          <option value="999" selected>Tất cả</option>
+          <option value="999" selected>Không giới hạn</option>
           <option value="14">≤ 2 tuần</option>
           <option value="30">≤ 1 tháng</option>
           <option value="90">≤ 3 tháng</option>
+          <option value="180">≤ 6 tháng</option>
         </select>
 
-        <label>Khu vực</label>
+        <label>Khả năng triển khai</label>
         <select id="geoFilter">
-          <option value="all" selected>Toàn quốc</option>
+          <option value="all" selected>Không giới hạn địa lý</option>
           <option value="north">Miền Bắc</option>
           <option value="south">Miền Nam</option>
-          <option value="national">Quốc gia / online</option>
+          <option value="national">Toàn quốc / online</option>
         </select>
 
         <div class="rule-note">
-          <strong>Cách dùng:</strong> dùng Bức tranh để biết nên nhìn đâu; chỉ dùng bộ lọc và Advanced khi đã có một giả thuyết cần điều tra.
+          <strong>Không phải bộ lọc radar.</strong> Bức tranh luôn nhìn toàn bộ nền kinh tế. Các lựa chọn này chỉ xếp hạng Small Bets theo khả năng hành động của bạn và được lưu cục bộ trên trình duyệt.
         </div>
       </section>
 
       <section class="panel compact">
-        <h2>Độ sâu dữ liệu</h2>
-        <div class="metric-row"><span>Nguồn chính thức</span><strong id="officialCount">—</strong></div>
-        <div class="metric-row"><span>Tín hiệu curated</span><strong id="signalCount">—</strong></div>
-        <div class="metric-row"><span>Giả thuyết cơ hội</span><strong id="oppCount">—</strong></div>
-        <div class="metric-row"><span>Buyer archetypes</span><strong id="buyerCount">—</strong></div>
-        <div class="metric-row"><span>Buyer trigger live</span><strong id="liveBuyerCount">—</strong></div>
+        <div class="eyebrow">SYSTEM SIGHT</div>
+        <h2>Độ phủ quan sát</h2>
+        <div class="metric-row"><span>Domain STRONG</span><strong id="coverageStrongSidebar">—</strong></div>
+        <div class="metric-row"><span>Blind spot</span><strong id="coverageBlindSidebar">—</strong></div>
+        <div class="metric-row"><span>Nguồn tạo evidence</span><strong id="coverageProductiveSidebar">—</strong></div>
+        <div class="metric-row"><span>Nguồn đang lỗi</span><strong id="coverageErrorsSidebar">—</strong></div>
         <div class="metric-row"><span>Headline đã thu</span><strong id="rawFeedCount">—</strong></div>
-        <div class="metric-row"><span>Sự kiện lịch sử</span><strong id="historicalEventCount">—</strong></div>
+        <div class="metric-row"><span>Tín hiệu curated</span><strong id="signalCount">—</strong></div>
         <div class="metric-row"><span>Baseline đã học</span><strong id="historyDays">—</strong></div>
+        <div class="metric-row metric-secondary"><span>Seed hypotheses</span><strong id="oppCount">—</strong></div>
+        <span id="officialCount" hidden>—</span><span id="buyerCount" hidden>—</span><span id="liveBuyerCount" hidden>—</span><span id="historicalEventCount" hidden>—</span>
       </section>
 
       <section class="panel compact warning-panel">
-        <h2>Chống tự lừa mình</h2>
+        <h2>Nguyên tắc đọc</h2>
         <ul class="plain-list">
           <li>Chính sách ≠ tiền chảy ngay.</li>
-          <li>Tin tức ≠ nhu cầu.</li>
-          <li>Ngành tăng ≠ cơ hội của mình.</li>
+          <li>Headline ≠ sự thật đã xác minh.</li>
+          <li>Giá tăng ≠ thesis đúng.</li>
           <li>FDI đăng ký ≠ vốn đã giải ngân.</li>
-          <li>Không gọi biến động là trend khi chưa đủ lịch sử.</li>
-          <li>Không mở rộng trước khi có tín hiệu trả tiền.</li>
+          <li>Hội tụ ≠ khuyến nghị mua/làm.</li>
+          <li>Không gọi trend khi lịch sử chưa đủ.</li>
+          <li>Không biết phải hiển thị là không biết.</li>
         </ul>
       </section>
     </aside>
@@ -87,8 +95,8 @@
       <nav class="tabs" aria-label="Điều hướng chính">
         <button class="tab active" data-tab="overview">Bức tranh</button>
         <button class="tab" data-tab="today">Chi tiết</button>
-        <button class="tab" data-tab="signals">Signals</button>
-        <button class="tab" data-tab="opportunities">Cơ hội</button>
+        <button class="tab" data-tab="signals">Bằng chứng</button>
+        <button class="tab" data-tab="opportunities">Small Bets</button>
         <button class="tab advanced-tab-label" data-tab="buyers">Advanced</button>
         <button class="tab advanced-tab-label" data-tab="validate">Lab</button>
       </nav>
@@ -98,7 +106,7 @@
           <article class="hero panel">
             <div class="eyebrow">THE BIG PICTURE</div>
             <h1 id="overviewHeroTitle">Đang dựng bức tranh kinh tế…</h1>
-            <p id="overviewHeroText">Hệ thống đang nối chính sách, dòng vốn, sản xuất, tiêu dùng và phản chứng.</p>
+            <p id="overviewHeroText">Hệ thống đang nối chính sách, dòng vốn, kinh tế thực, entity và phản chứng.</p>
             <div class="overview-actions">
               <button class="btn secondary" data-overview-tab="moneyflow">Mở Dòng tiền</button>
               <button class="btn ghost" data-overview-tab="signals">Xem bằng chứng</button>
@@ -108,14 +116,25 @@
         </div>
 
         <div class="overview-radar-note">
-          <strong>Mục tiêu của trang:</strong> không bảo bạn phải mua gì hay mở business gì. Nó giúp nhìn thấy luật chơi đang đổi, tiền đang đi đâu, nơi nào đang nóng lên và những cửa vào nào đáng kiểm chứng với nguồn lực bình thường.
+          <strong>Lời hứa của sản phẩm:</strong> không săn “kèo” thay bạn. Nó cố tăng xác suất để bạn gặp được một thay đổi, ngành, địa bàn, doanh nghiệp, dự án hoặc cơ chế tạo giá trị mà bạn chưa biết rằng mình nên quan tâm — đủ sớm để mở hồ sơ nghiên cứu.
         </div>
+
+        <div id="attentionAnchor"></div>
+
+        <div class="section-head overview-section">
+          <div class="overview-section-copy">
+            <div class="eyebrow">0 · MACRO PULSE</div>
+            <h2>Nền kinh tế thực tế đang chạy ra sao?</h2>
+            <p class="muted">Số liệu gốc trước khi qua lớp diễn giải và scoring. Luôn đọc kèm kỳ quan sát.</p>
+          </div>
+        </div>
+        <div id="macroOverview" class="overview-grid"></div>
 
         <div class="section-head overview-section">
           <div class="overview-section-copy">
             <div class="eyebrow">1 · POLICY RADAR</div>
             <h2>Luật chơi đang thay đổi thế nào?</h2>
-            <p class="muted">Chính sách là tín hiệu dẫn đường. Chỉ khi cơ chế thực thi tạo ra dòng vốn, hành vi và buyer thật thì mới được nâng thành cơ hội.</p>
+            <p class="muted">Policy là tín hiệu dẫn đường. Chỉ khi cơ chế thực thi đi vào vốn, dự án, hành vi và hoạt động thật mới được nâng mức tin cậy.</p>
           </div>
         </div>
         <div id="policyOverview" class="overview-grid"></div>
@@ -124,7 +143,7 @@
           <div class="overview-section-copy">
             <div class="eyebrow">2 · MONEY FLOW</div>
             <h2>Tiền và hoạt động kinh tế đang hội tụ ở đâu?</h2>
-            <p class="muted">Điểm đã trừ phản chứng. Không phải xác suất lợi nhuận.</p>
+            <p class="muted">Điểm đã được đối chiếu phản chứng. Không phải xác suất lợi nhuận.</p>
           </div>
         </div>
         <div id="moneyFlowOverview" class="overview-grid"></div>
@@ -133,32 +152,41 @@
           <div class="overview-section-copy">
             <div class="eyebrow">3 · REGIONAL RADAR</div>
             <h2>Địa bàn nào đang có chuyển động khác thường?</h2>
-            <p class="muted">Tách tăng sản xuất khỏi câu chuyện vốn mới để tránh nhìn một con số rồi kể quá nhiều.</p>
+            <p class="muted">Tách tăng sản xuất khỏi vốn mới để tránh kể quá nhiều từ một con số.</p>
           </div>
         </div>
         <div id="regionalOverview" class="overview-grid"></div>
 
         <div class="section-head overview-section">
           <div class="overview-section-copy">
-            <div class="eyebrow">4 · NORMAL PERSON ENTRY</div>
-            <h2>Người bình thường có thể chen vào bằng cách nào?</h2>
-            <p class="muted">Ưu tiên service, information, distribution, sourcing theo đơn và AI leverage trước inventory/CAPEX/network-heavy bets.</p>
+            <div class="eyebrow">4 · CONVERGENCE RADAR</div>
+            <h2>Nhiều thay đổi đang cùng hội tụ quanh ai hoặc cái gì?</h2>
+            <p class="muted">Entity có thể là doanh nghiệp, dự án, địa phương, ngành hoặc tổ chức. “Đáng điều tra” không đồng nghĩa “đáng mua/làm”.</p>
+          </div>
+        </div>
+        <div id="entityConvergenceOverview" class="overview-grid"></div>
+
+        <div class="section-head overview-section">
+          <div class="overview-section-copy">
+            <div class="eyebrow">5 · NORMAL PERSON ENTRY</div>
+            <h2>Nếu muốn tham gia, cửa vào vốn nhỏ nằm ở đâu?</h2>
+            <p class="muted">Đây là hypothesis layer: information, service, distribution, sourcing theo đơn và AI leverage được ưu tiên trước CAPEX lớn.</p>
           </div>
         </div>
         <div id="normalPersonOverview" class="overview-grid"></div>
 
         <div class="section-head overview-section">
           <div class="overview-section-copy">
-            <div class="eyebrow">5 · HOW VALUE MAY SHIFT</div>
-            <h2>Cơ chế tạo tài sản nào có thể đang mở ra?</h2>
-            <p class="muted">Không phải “nghề hot”. Đây là cách thay đổi chính sách và cấu trúc kinh tế có thể dịch chuyển giá trị sang lớp doanh nghiệp/người chơi mới.</p>
+            <div class="eyebrow">6 · HOW VALUE MAY SHIFT</div>
+            <h2>Cơ chế tạo giá trị/tài sản nào có thể đang mở ra?</h2>
+            <p class="muted">Không phải “nghề hot”. Đây là câu hỏi ai có thể bắt được giá trị khi luật chơi và cấu trúc kinh tế thay đổi.</p>
           </div>
         </div>
         <div id="wealthMechanismOverview" class="overview-grid"></div>
 
         <div class="section-head overview-section">
           <div class="overview-section-copy">
-            <div class="eyebrow">6 · REALITY CHECK</div>
+            <div class="eyebrow">7 · REALITY CHECK</div>
             <h2>Điều gì có thể khiến câu chuyện này sai?</h2>
           </div>
         </div>
@@ -166,11 +194,9 @@
         <div id="overviewLifecycleNote" class="panel overview-advanced-note muted">Đang tải Thesis Lifecycle…</div>
 
         <div class="panel overview-advanced-note">
-          <strong>Advanced Intelligence vẫn còn nguyên.</strong>
-          <p class="muted">Buyer Radar, đấu thầu, historical vendor, relationship graph và execution chỉ là phòng máy để xác minh một giả thuyết cụ thể. Không cần hiểu hoặc dùng chúng trong việc đọc bức tranh hàng ngày.</p>
-          <div class="overview-actions">
-            <button class="btn ghost" data-overview-tab="buyers">Mở Advanced khi cần</button>
-          </div>
+          <strong>Advanced Intelligence là phòng máy, không phải mặt tiền.</strong>
+          <p class="muted">Procurement, buyer/vendor history, relationship graph và execution chỉ phục vụ xác minh một giả thuyết cụ thể. Chúng không được phép định nghĩa bức tranh kinh tế chung.</p>
+          <div class="overview-actions"><button class="btn ghost" data-overview-tab="buyers">Mở Advanced khi cần</button></div>
         </div>
       </section>
 
@@ -179,7 +205,7 @@
           <article class="hero panel">
             <div class="eyebrow">DETAIL VIEW</div>
             <h1>Tín hiệu, baseline và giả thuyết phía sau Bức tranh.</h1>
-            <p>Đây là tầng kỹ thuật hơn: Change Detector, curated signals và opportunity cards. Dùng để kiểm tra vì sao hệ thống đưa ra một góc nhìn.</p>
+            <p>Tầng kỹ thuật để kiểm tra vì sao hệ thống đưa ra một góc nhìn. Không cần đọc hàng ngày nếu Bức tranh chưa xuất hiện điều đáng điều tra.</p>
           </article>
           <article class="panel thesis-card">
             <div class="eyebrow">CURRENT THESIS</div>
@@ -188,29 +214,20 @@
         </div>
 
         <div class="section-head">
-          <div>
-            <div class="eyebrow">MACHINE CHANGE DETECTOR · V1.2</div>
-            <h2>Thay đổi được phát hiện từ lịch sử đã chuẩn hóa</h2>
-          </div>
+          <div><div class="eyebrow">MACHINE CHANGE DETECTOR</div><h2>Thay đổi được phát hiện từ lịch sử đã chuẩn hóa</h2></div>
           <span id="changeDetectorNote" class="muted">Đang tải baseline…</span>
         </div>
         <div id="changeDetector" class="signal-grid"></div>
 
         <div class="section-head">
-          <div>
-            <div class="eyebrow">CURATED SIGNALS</div>
-            <h2>Tín hiệu cần chú ý</h2>
-          </div>
-          <span class="muted">Curated evidence dùng để hình thành giả thuyết; không thay thế Change Detector.</span>
+          <div><div class="eyebrow">CURATED SIGNALS</div><h2>Tín hiệu cần chú ý</h2></div>
+          <span class="muted">Curated evidence hình thành giả thuyết; không thay thế change detection.</span>
         </div>
         <div id="topSignals" class="signal-grid"></div>
 
         <div class="section-head">
-          <div>
-            <div class="eyebrow">TOP FOR YOUR CAPITAL</div>
-            <h2>Giả thuyết phù hợp bộ lọc hiện tại</h2>
-          </div>
-          <span class="muted">Điểm được tính lại theo vốn bạn chọn.</span>
+          <div><div class="eyebrow">PERSONAL ACTION LAYER</div><h2>Small Bets được ưu tiên theo khả năng hành động</h2></div>
+          <span class="muted">Không ẩn cơ hội chỉ vì chưa fit. Điểm chỉ dùng để quyết định điều tra cái nào trước.</span>
         </div>
         <div id="topOpportunities" class="opportunity-list"></div>
       </section>
@@ -223,17 +240,18 @@
         <div id="allSignals" class="signal-list"></div>
 
         <div class="section-head">
-          <div><div class="eyebrow">AUTO-COLLECTED</div><h2>Fresh official feed</h2></div>
-          <span class="muted">Headline mới chỉ là manh mối; Event Normalizer quyết định cái nào được phép vào baseline.</span>
+          <div><div class="eyebrow">AUTO-COLLECTED</div><h2>Fresh source feed</h2></div>
+          <span class="muted">Headline là manh mối. Event Normalizer quyết định thứ gì được phép vào baseline.</span>
         </div>
         <div id="rawFeed" class="signal-list"></div>
       </section>
 
       <section id="opportunities" class="tab-view">
         <div class="section-head">
-          <div><div class="eyebrow">OPPORTUNITY HYPOTHESES</div><h2>Thứ có thể thử bằng tiền thật</h2></div>
-          <span class="muted">Mỗi card phải có buyer, test nhỏ và điều kiện loại bỏ. Đây là giả thuyết, không phải lời khuyên làm giàu.</span>
+          <div><div class="eyebrow">SMALL-BET HYPOTHESES</div><h2>Thứ có thể kiểm chứng bằng tiền và thời gian nhỏ</h2></div>
+          <span class="muted">Đây không phải toàn bộ “cơ hội” của nền kinh tế. Chỉ là các giả thuyết đã được dịch thành buyer + test + kill criteria.</span>
         </div>
+        <div class="panel" style="margin-bottom:14px"><strong>Quan trọng:</strong> Action Layer chỉ xếp hạng; nó không loại card khỏi danh sách. Một cơ hội chưa phù hợp hôm nay vẫn được giữ để bạn biết nó tồn tại.</div>
         <div id="allOpportunities" class="opportunity-list"></div>
       </section>
 
@@ -241,29 +259,27 @@
         <div class="panel" style="margin-bottom:18px">
           <div class="eyebrow">ADVANCED INTELLIGENCE</div>
           <h2>Phòng máy xác minh buyer / vendor / procurement</h2>
-          <p class="muted">Không cần dùng tầng này để đọc bức tranh vĩ mô. Chỉ mở khi đã có một giả thuyết cụ thể và cần kiểm tra demand/buyer/partner thực tế.</p>
+          <p class="muted">Chỉ mở khi một thesis cần buyer evidence, partner history hoặc procurement proof. Đây là một nhánh của nền kinh tế, không phải trung tâm Opportunity Intelligence OS.</p>
         </div>
         <div class="section-head">
-          <div><div class="eyebrow">ACTION INTELLIGENCE · V1.3</div><h2>Live procurement buyer triggers</h2></div>
+          <div><div class="eyebrow">ACTION INTELLIGENCE</div><h2>Live procurement buyer triggers</h2></div>
           <span id="buyerRadarStatus" class="muted">Đang tải dữ liệu mua sắm…</span>
         </div>
         <div class="panel" style="margin-bottom:16px">
-          <strong>Quy tắc xác minh:</strong> Buyer trigger là nhu cầu mua thật công khai, nhưng Prime fit/Subcontract fit vẫn chỉ là prior. Phải mở HSMT để đọc bảo lãnh, hợp đồng tương tự, nhân sự, pháp lý và lịch thanh toán trước khi bỏ tiền.
+          <strong>Quy tắc xác minh:</strong> Buyer trigger là nhu cầu mua công khai, nhưng Prime/Subcontract fit vẫn chỉ là prior. Phải đọc hồ sơ gốc trước khi bỏ tiền.
         </div>
         <div id="liveBuyerGrid" class="buyer-grid"></div>
 
         <div class="section-head" style="margin-top:30px">
-          <div><div class="eyebrow">PARTNER / PRIME RADAR · V1.4</div><h2>Doanh nghiệp đã thắng các gói tương tự</h2></div>
+          <div><div class="eyebrow">PARTNER / PRIME RADAR</div><h2>Doanh nghiệp đã thắng các gói tương tự</h2></div>
           <span id="partnerRadarStatus" class="muted">Đang tích lũy KQLCNT…</span>
         </div>
-        <div class="panel" style="margin-bottom:16px">
-          <strong>Cách đọc:</strong> historical winners chỉ giúp ưu tiên điều tra đối tác. Một doanh nghiệp từng thắng cùng nhóm không đồng nghĩa họ đang tham gia gói hiện tại.
-        </div>
+        <div class="panel" style="margin-bottom:16px"><strong>Cách đọc:</strong> historical winners chỉ giúp ưu tiên điều tra đối tác; không hàm ý họ đang tham gia hay sẽ thắng gói hiện tại.</div>
         <div id="partnerGrid" class="buyer-grid"></div>
 
         <div class="section-head" style="margin-top:28px">
           <div><div class="eyebrow">BUYER ARCHETYPES</div><h2>Buyer Radar nền</h2></div>
-          <span class="muted">Archetype giúp biết nên tìm vai trò nào; live triggers cho biết ai đang mua, historical winners cho biết ai từng bán được.</span>
+          <span class="muted">Archetype giúp biết nên tìm vai trò nào; live trigger cho biết nhu cầu nào đã xuất hiện công khai.</span>
         </div>
         <div id="buyerGrid" class="buyer-grid"></div>
       </section>
@@ -272,8 +288,8 @@
         <div class="validation-layout">
           <article class="panel">
             <div class="eyebrow">VALIDATION LAB</div>
-            <h2 id="validateTitle">Chọn một cơ hội để điều tra</h2>
-            <p id="validateIntro" class="muted">Từ tab Cơ hội, bấm “Điều tra”. Hệ thống sẽ tạo kế hoạch test nhỏ và kill criteria.</p>
+            <h2 id="validateTitle">Chọn một Small Bet để điều tra</h2>
+            <p id="validateIntro" class="muted">Từ tab Small Bets, bấm “Điều tra”. Hệ thống sẽ mở test nhỏ và kill criteria.</p>
             <div id="validationBody"></div>
           </article>
           <article class="panel notebook">
@@ -293,7 +309,7 @@
 
   <footer>
     <span>Opportunity Intelligence OS</span>
-    <span>Radar bối cảnh và cơ hội; không phải khuyến nghị đầu tư hay kinh doanh. Luôn xác minh evidence, buyer, economics và downside trước khi bỏ tiền.</span>
+    <span>Evidence-first radar. Không phải khuyến nghị đầu tư hay kinh doanh. Mục tiêu là giúp bạn biết điều gì đáng mở hồ sơ nghiên cứu — không thay bạn ra quyết định.</span>
   </footer>
 
   <script src="app.js"></script>
@@ -306,6 +322,7 @@
   <script src="relationship.js"></script>
   <script src="counterparty.js"></script>
   <script src="execution.js"></script>
+  <script src="official-release.js"></script>
   <script src="system-version.js"></script>
 </body>
 </html>
