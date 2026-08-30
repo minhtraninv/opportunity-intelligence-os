@@ -69,6 +69,8 @@ jobs:
             node --check "$file"
           done
 
+      # Core radar. Nothing in the Advanced/procurement branch is allowed to delay
+      # or block publication of this path.
       - name: Update opportunity intelligence
         run: python pipeline/update.py
 
@@ -84,55 +86,13 @@ jobs:
       - name: Measure verified snapshot freshness
         run: python pipeline/trust_freshness.py
 
-      # Advanced / procurement branch is supporting evidence only. These steps may
-      # degrade independently without blocking the core radar publication.
-      - name: Update procurement action intelligence
-        continue-on-error: true
-        run: python pipeline/action_intel.py
-
-      - name: Update partner and prime intelligence
-        continue-on-error: true
-        run: python pipeline/partner_intel.py
-
-      - name: Backfill historical award results
-        continue-on-error: true
-        run: python pipeline/partner_backfill.py
-
-      - name: Normalize procurement taxonomy
-        continue-on-error: true
-        run: python pipeline/normalize_taxonomy.py
-
-      - name: Build buyer-vendor relationship intelligence
-        continue-on-error: true
-        run: python pipeline/relationship_intel.py
-
-      - name: Probe official contractor schema
-        continue-on-error: true
-        run: python pipeline/contractor_schema_probe.py
-
-      - name: Build official MSC contact intelligence
-        continue-on-error: true
-        run: python pipeline/official_contact_intel.py
-
-      - name: Build counterparty execution dossiers
-        continue-on-error: true
-        run: python pipeline/counterparty_intel.py
-
-      - name: Build outreach execution packs
-        continue-on-error: true
-        run: python pipeline/outreach_intel.py
-
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
-
-      - name: Build observed supply-side intelligence
-        continue-on-error: true
-        run: python pipeline/supply_side_intel.py
 
       - name: Build V2 money-flow intelligence
         run: python pipeline/money_flow_intel.py
 
-      - name: Attach observed supply evidence to themes
+      - name: Attach last-known observed supply evidence to themes
         continue-on-error: true
         run: python pipeline/supply_gap_enrich.py
 
@@ -178,7 +138,7 @@ jobs:
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
-      - name: Publish generated data
+      - name: Publish core radar data
         run: |
           set -euo pipefail
           git config user.name "opportunity-intel-bot"
@@ -191,19 +151,8 @@ jobs:
             policy_intelligence.json
             entity_media_history.json
             entity_media_intelligence.json
-            action_history.json
-            action_intelligence.json
-            partner_history.json
-            partner_intelligence.json
-            partner_backfill_state.json
-            relationship_intelligence.json
-            contractor_schema_probe.json
-            official_contact_intelligence.json
-            counterparty_intelligence.json
-            outreach_intelligence.json
             corporate_history.json
             corporate_intelligence.json
-            supply_side_intelligence.json
             freshness_state.json
             money_flow_intelligence.json
             methodology_state.json
@@ -233,9 +182,91 @@ jobs:
 
           git add "${generated_files[@]/#/data/}"
           if git diff --cached --quiet; then
-            echo "No generated data changes to publish."
-            exit 0
+            echo "No core radar data changes to publish."
+          else
+            git commit -m "data: refresh core opportunity intelligence"
+            git push origin HEAD:main
           fi
 
-          git commit -m "data: refresh opportunity intelligence"
-          git push origin HEAD:main
+      # Advanced branch runs only after the trusted core has already been published.
+      # Failures here are local to Advanced and do not invalidate the core release.
+      - name: Update procurement action intelligence
+        continue-on-error: true
+        run: python pipeline/action_intel.py
+
+      - name: Update partner and prime intelligence
+        continue-on-error: true
+        run: python pipeline/partner_intel.py
+
+      - name: Backfill historical award results
+        continue-on-error: true
+        run: python pipeline/partner_backfill.py
+
+      - name: Normalize procurement taxonomy
+        continue-on-error: true
+        run: python pipeline/normalize_taxonomy.py
+
+      - name: Build buyer-vendor relationship intelligence
+        continue-on-error: true
+        run: python pipeline/relationship_intel.py
+
+      - name: Probe official contractor schema
+        continue-on-error: true
+        run: python pipeline/contractor_schema_probe.py
+
+      - name: Build official MSC contact intelligence
+        continue-on-error: true
+        run: python pipeline/official_contact_intel.py
+
+      - name: Build counterparty execution dossiers
+        continue-on-error: true
+        run: python pipeline/counterparty_intel.py
+
+      - name: Build outreach execution packs
+        continue-on-error: true
+        run: python pipeline/outreach_intel.py
+
+      - name: Build observed supply-side intelligence
+        continue-on-error: true
+        run: python pipeline/supply_side_intel.py
+
+      - name: Publish Advanced data
+        run: |
+          set -euo pipefail
+          generated_files=(
+            action_history.json
+            action_intelligence.json
+            partner_history.json
+            partner_intelligence.json
+            partner_backfill_state.json
+            relationship_intelligence.json
+            contractor_schema_probe.json
+            official_contact_intelligence.json
+            counterparty_intelligence.json
+            outreach_intelligence.json
+            supply_side_intelligence.json
+          )
+
+          snapshot_dir="$(mktemp -d)"
+          for file in "${generated_files[@]}"; do
+            if [[ -f "data/$file" ]]; then
+              cp "data/$file" "$snapshot_dir/$file"
+            fi
+          done
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          for file in "${generated_files[@]}"; do
+            if [[ -f "$snapshot_dir/$file" ]]; then
+              cp "$snapshot_dir/$file" "data/$file"
+            fi
+          done
+
+          git add "${generated_files[@]/#/data/}"
+          if git diff --cached --quiet; then
+            echo "No Advanced data changes to publish."
+          else
+            git commit -m "data: refresh Advanced intelligence"
+            git push origin HEAD:main
+          fi
