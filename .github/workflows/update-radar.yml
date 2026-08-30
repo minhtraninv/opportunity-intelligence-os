@@ -80,43 +80,56 @@ jobs:
       - name: Prepare trust semantics
         run: python pipeline/trust_prepare.py
 
+      # Advanced / procurement branch is supporting evidence only. These steps may
+      # degrade independently without blocking the core radar publication.
       - name: Update procurement action intelligence
+        continue-on-error: true
         run: python pipeline/action_intel.py
 
       - name: Update partner and prime intelligence
+        continue-on-error: true
         run: python pipeline/partner_intel.py
 
       - name: Backfill historical award results
+        continue-on-error: true
         run: python pipeline/partner_backfill.py
 
       - name: Normalize procurement taxonomy
+        continue-on-error: true
         run: python pipeline/normalize_taxonomy.py
 
       - name: Build buyer-vendor relationship intelligence
+        continue-on-error: true
         run: python pipeline/relationship_intel.py
 
       - name: Probe official contractor schema
+        continue-on-error: true
         run: python pipeline/contractor_schema_probe.py
 
       - name: Build official MSC contact intelligence
+        continue-on-error: true
         run: python pipeline/official_contact_intel.py
 
       - name: Build counterparty execution dossiers
+        continue-on-error: true
         run: python pipeline/counterparty_intel.py
 
       - name: Build outreach execution packs
+        continue-on-error: true
         run: python pipeline/outreach_intel.py
 
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
       - name: Build observed supply-side intelligence
+        continue-on-error: true
         run: python pipeline/supply_side_intel.py
 
       - name: Build V2 money-flow intelligence
         run: python pipeline/money_flow_intel.py
 
       - name: Attach observed supply evidence to themes
+        continue-on-error: true
         run: python pipeline/supply_gap_enrich.py
 
       - name: Harden money-flow evidence gates
