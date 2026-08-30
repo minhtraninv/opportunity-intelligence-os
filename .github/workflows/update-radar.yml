@@ -57,6 +57,9 @@ jobs:
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
+      - name: Build system metadata
+        run: python pipeline/system_meta.py
+
       - name: Publish generated data
         run: |
           set -euo pipefail
@@ -75,6 +78,7 @@ jobs:
             relationship_intelligence.json
             corporate_history.json
             corporate_intelligence.json
+            system_meta.json
           )
 
           snapshot_dir="$(mktemp -d)"
