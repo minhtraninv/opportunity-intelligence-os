@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Quality gate for periodic intelligence reports.
 
-Keeps report prose tied to the actual Contradiction Engine schema. This runs after
-report_intel.py so an empty/mis-mapped counter-signal can never be published silently.
+Keeps report prose tied to the actual Contradiction Engine schema. Readable current
+counter-signals are required when the contradiction snapshot is current; a snapshot
+that was explicitly aged out is a valid empty state, not a pipeline failure.
 """
 from __future__ import annotations
 
@@ -67,15 +68,24 @@ def main():
     reports = load(REPORTS, {})
     history = load(HISTORY, [])
     source = load(CONTRADICTION, {})
+    freshness = str((source.get("meta") or {}).get("freshness_status") or "unknown")
     fixed = normalized_contradictions(source)
-    if not fixed:
-        raise RuntimeError("Report quality gate: Contradiction Engine has no readable counter-signals")
+
+    if not fixed and freshness != "stale":
+        raise RuntimeError(
+            f"Report quality gate: Contradiction Engine has no readable current counter-signals (freshness={freshness})"
+        )
 
     current_keys = set()
     for report in (reports.get("reports") or {}).values():
         if not isinstance(report, dict):
             continue
         report["contradictions"] = fixed
+        if freshness == "stale":
+            report["counter_signal_notice"] = (
+                "Counter-signal snapshot đã stale và được chủ động loại khỏi current report; "
+                "dữ liệu cũ chỉ còn là historical context."
+            )
         current_keys.add((report.get("kind"), report.get("period_key")))
 
     if isinstance(history, list):
@@ -84,11 +94,20 @@ def main():
                 continue
             if (report.get("kind"), report.get("period_key")) in current_keys:
                 report["contradictions"] = fixed
+                if freshness == "stale":
+                    report["counter_signal_notice"] = (
+                        "Counter-signal snapshot đã stale và được chủ động loại khỏi current report."
+                    )
 
-    reports.setdefault("meta", {})["quality_gate"] = "falsification_evidence_readable"
+    reports.setdefault("meta", {})["quality_gate"] = (
+        "stale_falsification_snapshot_suppressed" if freshness == "stale"
+        else "falsification_evidence_readable"
+    )
     save(REPORTS, reports)
     save(HISTORY, history)
-    print(f"report-quality contradictions={len(fixed)} current_periods={len(current_keys)}")
+    print(
+        f"report-quality contradictions={len(fixed)} freshness={freshness} current_periods={len(current_keys)}"
+    )
 
 
 if __name__ == "__main__":
