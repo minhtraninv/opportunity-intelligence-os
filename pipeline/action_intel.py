@@ -5,16 +5,15 @@ The endpoint is used by the official National E-Procurement website, but it is n
 published/stable developer API. Therefore the collector treats schema changes as a
 source-health problem and never silently invents fields.
 
-Decision rule:
-- search metadata can create a buyer trigger;
-- TBMT detail confirmation upgrades metadata confidence;
-- qualification / bid-security requirements remain UNVERIFIED until the actual tender
-  documents are read, so "small-capital fit" is only an investigation prior.
+TLS note: MSC currently negotiates a legacy DH parameter rejected by OpenSSL 3's
+default security level on GitHub runners. This client lowers cipher security level
+ONLY for this host while keeping certificate and hostname verification enabled.
 """
 from __future__ import annotations
 
 import json
 import re
+import ssl
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -80,6 +79,16 @@ ANGLES = {
 }
 
 
+class LegacyDhAdapter(HTTPAdapter):
+    """Allow MSC's legacy DH while preserving normal CA/hostname verification."""
+
+    def init_poolmanager(self, connections, maxsize, block=False, **pool_kwargs):
+        context = ssl.create_default_context()
+        context.set_ciphers("DEFAULT:@SECLEVEL=1")
+        pool_kwargs["ssl_context"] = context
+        return super().init_poolmanager(connections, maxsize, block=block, **pool_kwargs)
+
+
 def build_session() -> requests.Session:
     retry = Retry(
         total=2, connect=2, read=2, status=2, backoff_factor=0.8,
@@ -87,8 +96,7 @@ def build_session() -> requests.Session:
         allowed_methods=frozenset({"POST"}), raise_on_status=False,
     )
     session = requests.Session()
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("https://", adapter)
+    session.mount("https://muasamcong.mpi.gov.vn/", LegacyDhAdapter(max_retries=retry))
     session.headers.update({
         "User-Agent": "Mozilla/5.0", "Accept": "application/json, text/plain, */*",
         "Content-Type": "application/json; charset=utf-8", "Origin": BASE,
@@ -201,9 +209,8 @@ def number_value(value):
         return None
     if isinstance(value, (int, float)):
         return value
-    text = norm(value).replace(",", "")
     try:
-        return float(text)
+        return float(norm(value).replace(",", ""))
     except ValueError:
         return None
 
@@ -402,12 +409,13 @@ def build_output(history: dict, captured_at: datetime, errors: list[str], source
     categories = Counter(item.get("procurement_category", "other") for item in active)
     confirmed = sum(bool(item.get("tbmt_detail_confirmed")) for item in active)
     return {
-        "meta": {"version": "1.3.1", "generated_at": iso(captured_at), "mode": "official_msc_procurement_action_intelligence", "principle": "official_metadata_then_requirements_verification", "api_stability": "website_endpoint_not_published_developer_api"},
+        "meta": {"version": "1.3.2", "generated_at": iso(captured_at), "mode": "official_msc_procurement_action_intelligence", "principle": "official_metadata_then_requirements_verification", "api_stability": "website_endpoint_not_published_developer_api", "tls_mode": "certificate_verified_legacy_dh_seclevel1"},
         "coverage": {"historical_tenders": len(history.get("items", [])), "active_recent_tenders": len(active), "tbmt_detail_confirmed": confirmed, "investigate_now": len(investigate), "source_errors_last_run": len(errors)},
         "category_summary": dict(categories.most_common()), "source_health": source_health,
         "buyer_triggers": active[:ACTIVE_LIMIT],
         "warnings": [
             "Metadata lấy từ endpoint website của Hệ thống mạng đấu thầu quốc gia; endpoint này có thể đổi schema vì không phải API developer được cam kết ổn định.",
+            "Kết nối MSC dùng SECLEVEL=1 chỉ để tương thích DH cũ; certificate và hostname verification vẫn bật.",
             "Small-capital fit là prior theo loại gói, KHÔNG phải kết luận đủ năng lực. HSMT, bảo lãnh, doanh thu tương tự và điều khoản thanh toán vẫn phải kiểm tra thủ công.",
             "Không dùng giá gói thầu làm đại diện trực tiếp cho vốn cần có; có thể có cơ hội thầu phụ/sourcing, nhưng chỉ sau khi xác định được prime contractor/buyer path.",
             *([f"Có {len(errors)} lỗi request/schema trong lần chạy gần nhất; không suy diễn từ dữ liệu thiếu."] if errors else []),
