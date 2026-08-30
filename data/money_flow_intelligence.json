@@ -1,23 +1,212 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-08-30T15:46:09.524178+00:00",
+    "generated_at": "2026-08-30T16:16:38.211480+00:00",
     "mode": "contextual_theme_chain_with_observed_supply_evidence",
     "principle": "supply_pressure_is_investigation_trigger_not_confirmed_gap"
   },
-  "thesis": "Theme đáng điều tra nhất hiện tại: Mở rộng năng lực sản xuất (developing, 5 họ bằng chứng, 2 nhóm nguồn). Đây là chuyển động kinh tế cần đào sâu; chưa được gọi là cơ hội cho tới khi xác minh supply gap, buyer và economics.",
+  "thesis": "Theme đáng điều tra nhất hiện tại: Gia tốc thương mại & logistics (converging, 5 họ bằng chứng, 3 nhóm nguồn). Đây là chuyển động kinh tế cần đào sâu; chưa được gọi là cơ hội cho tới khi xác minh supply gap, buyer và economics.",
   "coverage": {
-    "total_evidence_inputs": 27,
+    "total_evidence_inputs": 30,
     "macro_observations": 7,
-    "contextual_history_evidence": 12,
+    "contextual_history_evidence": 15,
     "contextual_procurement_support": 9,
     "themes": 7,
-    "themes_converging": 0,
+    "themes_converging": 1,
     "themes_developing": 3,
     "supply_gaps_confirmed": 0,
     "themes_with_observed_supply_pressure": 0
   },
   "themes": [
+    {
+      "id": "logistics_trade",
+      "label": "Gia tốc thương mại & logistics",
+      "score": 87,
+      "status": "converging",
+      "evidence_count": 6,
+      "directional_evidence_count": 6,
+      "independent_families": [
+        "capital",
+        "policy",
+        "production",
+        "public_capital",
+        "trade"
+      ],
+      "independent_publishers": [
+        "Bộ Tài chính",
+        "Cục Thống kê",
+        "Ngân hàng Nhà nước Việt Nam"
+      ],
+      "non_procurement_publishers": [
+        "Bộ Tài chính",
+        "Cục Thống kê",
+        "Ngân hàng Nhà nước Việt Nam"
+      ],
+      "economic_chain": [
+        "Xuất nhập khẩu và sản xuất tăng",
+        "Lưu lượng hàng hóa, chứng từ, kho và vận tải tăng",
+        "Forwarder, kho bãi và nhà vận chuyển tăng công suất",
+        "Phát sinh nhu cầu đóng gói, khai báo, gom hàng, giao nhận và phần mềm vận hành"
+      ],
+      "small_capital_angles": [
+        "broker/kết nối vận tải có kiểm soát công nợ",
+        "đóng gói và vật tư logistics theo đơn",
+        "dịch vụ chứng từ/ops cho SME xuất nhập khẩu",
+        "last-mile B2B tại cụm công nghiệp",
+        "micro-fulfillment chỉ sau khi xác minh nhu cầu lặp lại"
+      ],
+      "evidence": [
+        {
+          "id": "macro::nso-iip-7m-2026",
+          "family": "production",
+          "title": "IIP 7 tháng 2026 tăng 11,4%; chế biến chế tạo tăng 12,0%",
+          "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
+          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
+          "quality": "official_verified",
+          "category_tags": [],
+          "theme_tags": [
+            "manufacturing_expansion",
+            "energy_demand",
+            "logistics_trade"
+          ],
+          "geography": [
+            "Việt Nam"
+          ],
+          "observed_at": "2026-01/07",
+          "metric": "industrial_production_yoy_7m",
+          "value": 11.4,
+          "unit": "percent_yoy",
+          "direction": "up",
+          "notes": null,
+          "directional": true
+        },
+        {
+          "id": "macro::nso-trade-7m-2026",
+          "family": "trade",
+          "title": "Tổng kim ngạch XNK 7 tháng 2026 đạt 659,58 tỷ USD, tăng 28,1%; nhập khẩu tăng 34,8%",
+          "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
+          "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
+          "quality": "official_verified",
+          "category_tags": [],
+          "theme_tags": [
+            "logistics_trade",
+            "manufacturing_expansion"
+          ],
+          "geography": [
+            "Việt Nam"
+          ],
+          "observed_at": "2026-01/07",
+          "metric": "total_trade_yoy_7m",
+          "value": 28.1,
+          "unit": "percent_yoy",
+          "direction": "up",
+          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion.",
+          "directional": true
+        },
+        {
+          "id": "macro::fdi-7m-2026",
+          "family": "capital",
+          "title": "Tổng FDI đăng ký 7 tháng 2026 đạt 38,06 tỷ USD, tăng 58%",
+          "publisher": "Cục Thống kê",
+          "publisher_group": "Cục Thống kê",
+          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
+          "quality": "official_verified",
+          "category_tags": [],
+          "theme_tags": [
+            "manufacturing_expansion",
+            "industrial_real_estate",
+            "logistics_trade"
+          ],
+          "geography": [
+            "Việt Nam"
+          ],
+          "observed_at": "2026-01/07",
+          "metric": "registered_fdi_yoy_7m",
+          "value": 58.0,
+          "unit": "percent_yoy",
+          "direction": "up",
+          "notes": null,
+          "directional": true
+        },
+        {
+          "id": "macro::public-investment-7m-2026",
+          "family": "public_capital",
+          "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
+          "publisher": "Bộ Tài chính",
+          "publisher_group": "Bộ Tài chính",
+          "source_url": "https://www.mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/cong-tac-quan-ly-no/tang-cuong-giam-sat-danh-gia-hieu-qua-thuc-hien-giai-ngan-von-dau-tu-cong.",
+          "quality": "official_verified",
+          "category_tags": [],
+          "theme_tags": [
+            "public_infrastructure",
+            "construction_services",
+            "logistics_trade"
+          ],
+          "geography": [
+            "Việt Nam"
+          ],
+          "observed_at": "2026-01/07",
+          "metric": "public_investment_disbursed_7m",
+          "value": 425312,
+          "unit": "billion_vnd",
+          "direction": "up",
+          "notes": null,
+          "directional": true
+        },
+        {
+          "id": "a4f43fc08fda2148",
+          "family": "policy",
+          "title": "Thông cáo báo chí ban hành Thông tư hướng dẫn hoạt động thanh toán và chuyển tiền liên quan đến kinh doanh chuyển khẩu hàng hóa (28/08/2026)",
+          "publisher": "Ngân hàng Nhà nước Việt Nam",
+          "publisher_group": "Ngân hàng Nhà nước Việt Nam",
+          "source_url": "https://sbv.gov.vn/w/th%C3%B4ng-c%C3%A1o-b%C3%A1o-ch%C3%AD-ban-h%C3%A0nh-th%C3%B4ng-t%C6%B0-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-thanh-to%C3%A1n-v%C3%A0-chuy%E1%BB%83n-ti%E1%BB%81n-li%C3%AAn-quan-%C4%91%E1%BA%BFn-kinh-doanh-chuy%E1%BB%83n-kh%E1%BA%A9u",
+          "quality": "candidate",
+          "category_tags": [
+            "logistics"
+          ],
+          "theme_tags": [
+            "logistics_trade"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T16:13:02.502775+00:00",
+          "directional": true
+        },
+        {
+          "id": "53ec5e64820bd462",
+          "family": "policy",
+          "title": "Thông tư số 43/2026/TT-NHNN hướng dẫn hoạt động thanh toán và chuyển tiền liên quan đến kinh doanh chuyển khẩu hàng hóa (28/08/2026)",
+          "publisher": "Ngân hàng Nhà nước Việt Nam",
+          "publisher_group": "Ngân hàng Nhà nước Việt Nam",
+          "source_url": "https://sbv.gov.vn/w/th%C3%B4ng-t%C6%B0-s%E1%BB%91-43/2026/tt-nhnn-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-thanh-to%C3%A1n-v%C3%A0-chuy%E1%BB%83n-ti%E1%BB%81n-li%C3%AAn-quan-%C4%91%E1%BA%BFn-kinh-doanh-chuy%E1%BB%83n-kh%E1%BA%A9u-h%C3%A0ng-h%C3%B3a",
+          "quality": "candidate",
+          "category_tags": [
+            "logistics"
+          ],
+          "theme_tags": [
+            "logistics_trade"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T16:13:02.502775+00:00",
+          "directional": true
+        }
+      ],
+      "supply_gap": {
+        "status": "unconfirmed_supply_gap",
+        "supply_evidence_families": [],
+        "proxies_needed": [
+          "giá cước theo tuyến",
+          "tỷ lệ xe rỗng/chiều về",
+          "giá thuê kho và vacancy",
+          "thời gian xử lý chứng từ",
+          "số forwarder/đơn vị vận tải mới"
+        ],
+        "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm.",
+        "observed_supply_evidence": [],
+        "evidence_scope": "no_qualified_supply_pressure_evidence_yet"
+      }
+    },
     {
       "id": "manufacturing_expansion",
       "label": "Mở rộng năng lực sản xuất",
@@ -214,149 +403,178 @@
       }
     },
     {
-      "id": "logistics_trade",
-      "label": "Gia tốc thương mại & logistics",
-      "score": 72,
+      "id": "sme_formalization",
+      "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+      "score": 58,
       "status": "developing",
-      "evidence_count": 4,
-      "directional_evidence_count": 4,
+      "evidence_count": 7,
+      "directional_evidence_count": 7,
       "independent_families": [
-        "capital",
-        "production",
-        "public_capital",
-        "trade"
+        "business_formation",
+        "market_data",
+        "policy"
       ],
       "independent_publishers": [
-        "Bộ Tài chính",
-        "Cục Thống kê"
+        "Chính phủ",
+        "Ngân hàng Nhà nước Việt Nam",
+        "ĐKKD"
       ],
       "non_procurement_publishers": [
-        "Bộ Tài chính",
-        "Cục Thống kê"
+        "Chính phủ",
+        "Ngân hàng Nhà nước Việt Nam",
+        "ĐKKD"
       ],
       "economic_chain": [
-        "Xuất nhập khẩu và sản xuất tăng",
-        "Lưu lượng hàng hóa, chứng từ, kho và vận tải tăng",
-        "Forwarder, kho bãi và nhà vận chuyển tăng công suất",
-        "Phát sinh nhu cầu đóng gói, khai báo, gom hàng, giao nhận và phần mềm vận hành"
+        "Quy định thuế/hóa đơn/đăng ký thay đổi",
+        "Hộ kinh doanh và SME phải đổi quy trình",
+        "Nhu cầu kế toán, hóa đơn, POS, inventory và SOP tăng",
+        "Dịch vụ triển khai + hỗ trợ vận hành có thể tạo doanh thu lặp lại"
       ],
       "small_capital_angles": [
-        "broker/kết nối vận tải có kiểm soát công nợ",
-        "đóng gói và vật tư logistics theo đơn",
-        "dịch vụ chứng từ/ops cho SME xuất nhập khẩu",
-        "last-mile B2B tại cụm công nghiệp",
-        "micro-fulfillment chỉ sau khi xác minh nhu cầu lặp lại"
+        "setup quy trình/hóa đơn/POS theo checklist",
+        "dịch vụ bookkeeping/ops qua partner đủ chuyên môn",
+        "đào tạo ngắn + hỗ trợ 14/30 ngày",
+        "template/SOP và automation đơn giản"
       ],
       "evidence": [
         {
-          "id": "macro::nso-iip-7m-2026",
-          "family": "production",
-          "title": "IIP 7 tháng 2026 tăng 11,4%; chế biến chế tạo tăng 12,0%",
-          "publisher": "Cục Thống kê",
-          "publisher_group": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
-          "quality": "official_verified",
-          "category_tags": [],
+          "id": "bec011dbb19ba021",
+          "family": "market_data",
+          "title": "408.000 tỷ đồng sẵn sàng “tiếp sức” cho các động lực tăng trưởng kinh tế và doanh nghiệp nhỏ và vừa 26/08/2026",
+          "publisher": "Ngân hàng Nhà nước Việt Nam",
+          "publisher_group": "Ngân hàng Nhà nước Việt Nam",
+          "source_url": "https://sbv.gov.vn/w/408.000-t%E1%BB%B7-%C4%91%E1%BB%93ng-s%E1%BA%B5n-s%C3%A0ng-ti%E1%BA%BFp-s%E1%BB%A9c-cho-c%C3%A1c-%C4%91%E1%BB%99ng-l%E1%BB%B1c-t%C4%83ng-tr%C6%B0%E1%BB%9Fng-kinh-t%E1%BA%BF-v%C3%A0-doanh-nghi%E1%BB%87p-nh%E1%BB%8F-v%C3%A0-v%E1%BB%ABa",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
           "theme_tags": [
-            "manufacturing_expansion",
-            "energy_demand",
-            "logistics_trade"
+            "sme_formalization"
           ],
-          "geography": [
-            "Việt Nam"
-          ],
-          "observed_at": "2026-01/07",
-          "metric": "industrial_production_yoy_7m",
-          "value": 11.4,
-          "unit": "percent_yoy",
-          "direction": "up",
-          "notes": null,
+          "geography": [],
+          "observed_at": "2026-08-30T16:13:02.502775+00:00",
           "directional": true
         },
         {
-          "id": "macro::nso-trade-7m-2026",
-          "family": "trade",
-          "title": "Tổng kim ngạch XNK 7 tháng 2026 đạt 659,58 tỷ USD, tăng 28,1%; nhập khẩu tăng 34,8%",
-          "publisher": "Cục Thống kê",
-          "publisher_group": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
-          "quality": "official_verified",
-          "category_tags": [],
+          "id": "5789f25a3d363028",
+          "family": "policy",
+          "title": "Đề xuất 2 nhóm chính sách hỗ trợ phát triển doanh nghiệp nhỏ và vừa",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "publisher_group": "Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/de-xuat-2-nhom-chinh-sach-ho-tro-phat-trien-doanh-nghiep-nho-va-vua-119260828102327213.htm",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
           "theme_tags": [
-            "logistics_trade",
-            "manufacturing_expansion"
+            "sme_formalization"
           ],
-          "geography": [
-            "Việt Nam"
-          ],
-          "observed_at": "2026-01/07",
-          "metric": "total_trade_yoy_7m",
-          "value": 28.1,
-          "unit": "percent_yoy",
-          "direction": "up",
-          "notes": "Imports rose faster than exports; this is a flow signal, not by itself a positive or negative opportunity conclusion.",
+          "geography": [],
+          "observed_at": "2026-08-30T15:00:57.741347+00:00",
           "directional": true
         },
         {
-          "id": "macro::fdi-7m-2026",
-          "family": "capital",
-          "title": "Tổng FDI đăng ký 7 tháng 2026 đạt 38,06 tỷ USD, tăng 58%",
-          "publisher": "Cục Thống kê",
-          "publisher_group": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2026/08/mot-so-net-chinh-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/",
-          "quality": "official_verified",
-          "category_tags": [],
+          "id": "8d23bd4f2f5ed8d5",
+          "family": "business_formation",
+          "title": "Giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp: Hàng triệu hộ kinh doanh, doanh nghiệp được hưởng lợi",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "publisher_group": "Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/giam-thue-thu-nhap-ca-nhan-thue-thu-nhap-doanh-nghiep-hang-trieu-ho-kinh-doanh-doanh-nghiep-duoc-huong-loi-119260825081513904.htm",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
           "theme_tags": [
-            "manufacturing_expansion",
-            "industrial_real_estate",
-            "logistics_trade"
+            "sme_formalization"
           ],
-          "geography": [
-            "Việt Nam"
-          ],
-          "observed_at": "2026-01/07",
-          "metric": "registered_fdi_yoy_7m",
-          "value": 58.0,
-          "unit": "percent_yoy",
-          "direction": "up",
-          "notes": null,
+          "geography": [],
+          "observed_at": "2026-08-30T15:00:57.741347+00:00",
           "directional": true
         },
         {
-          "id": "macro::public-investment-7m-2026",
-          "family": "public_capital",
-          "title": "Giải ngân đầu tư công 7 tháng đạt 425.312 tỷ đồng, bằng 41,9% kế hoạch",
-          "publisher": "Bộ Tài chính",
-          "publisher_group": "Bộ Tài chính",
-          "source_url": "https://www.mof.gov.vn/quan-ly-no-kinh-te-doi-ngoai-1/cong-tac-quan-ly-no/tang-cuong-giam-sat-danh-gia-hieu-qua-thuc-hien-giai-ngan-von-dau-tu-cong.",
-          "quality": "official_verified",
-          "category_tags": [],
+          "id": "seed-sme",
+          "family": "business_formation",
+          "title": "Khung đăng ký doanh nghiệp và hộ kinh doanh tiếp tục được cập nhật trong 2026",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
+          "quality": "curated",
+          "category_tags": [
+            "sme"
+          ],
           "theme_tags": [
-            "public_infrastructure",
-            "construction_services",
-            "logistics_trade"
+            "sme_formalization"
           ],
-          "geography": [
-            "Việt Nam"
+          "geography": [],
+          "observed_at": "2026-08-30T14:22:00+07:00",
+          "directional": true
+        },
+        {
+          "id": "38427c6e516fa4f3",
+          "family": "business_formation",
+          "title": "Thống kê ngày 30/8/2026 về Đăng ký doanh nghiệp",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
           ],
-          "observed_at": "2026-01/07",
-          "metric": "public_investment_disbursed_7m",
-          "value": 425312,
-          "unit": "billion_vnd",
-          "direction": "up",
-          "notes": null,
+          "theme_tags": [
+            "sme_formalization"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T08:57:55.730622+00:00",
+          "directional": true
+        },
+        {
+          "id": "82abc7b06e73a9f0",
+          "family": "policy",
+          "title": "Hoàn thiện khung khổ pháp luật về đăng ký doanh nghiệp, hộ kinh doanh, tổ hợp tác, hợp tác xã và liên hiệp hợp tác xã",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6889/hoan-thien-khung-kho-phap-luat-ve-dang-ky-doanh-nghiep--ho-kinh-doanh--to-hop-tac--hop-tac-xa-va-lien-hiep-hop-tac-xa.aspx",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
+          "theme_tags": [
+            "sme_formalization"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T08:47:29.259361+00:00",
+          "directional": true
+        },
+        {
+          "id": "1e7a85e99fc544be",
+          "family": "business_formation",
+          "title": "Hướng dẫn hồ sơ, thủ tục đăng ký doanh nghiệp, hộ kinh doanh, hợp tác xã",
+          "publisher": "Cổng ĐKKD Quốc gia",
+          "publisher_group": "ĐKKD",
+          "source_url": "http://dangkykinhdoanh.gov.vn/vn/Pages/Huongdandangkydoanhnghiep.aspx",
+          "quality": "candidate",
+          "category_tags": [
+            "sme"
+          ],
+          "theme_tags": [
+            "sme_formalization"
+          ],
+          "geography": [],
+          "observed_at": "2026-08-30T08:47:29.258742+00:00",
           "directional": true
         }
       ],
       "supply_gap": {
         "status": "unconfirmed_supply_gap",
-        "supply_evidence_families": [],
+        "supply_evidence_families": [
+          "business_formation"
+        ],
         "proxies_needed": [
-          "giá cước theo tuyến",
-          "tỷ lệ xe rỗng/chiều về",
-          "giá thuê kho và vacancy",
-          "thời gian xử lý chứng từ",
-          "số forwarder/đơn vị vận tải mới"
+          "mật độ nhà cung cấp dịch vụ tại địa phương",
+          "giá dịch vụ kế toán/POS",
+          "thời gian onboarding",
+          "tỷ lệ hộ kinh doanh chưa chuyển đổi",
+          "số câu hỏi/hỗ trợ lặp lại sau triển khai"
         ],
         "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm.",
         "observed_supply_evidence": [],
@@ -659,164 +877,6 @@
           "backlog triển khai của integrator",
           "giá dịch vụ theo unit",
           "tỷ lệ tender/RFP phải gia hạn hoặc ít bidder"
-        ],
-        "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm.",
-        "observed_supply_evidence": [],
-        "evidence_scope": "no_qualified_supply_pressure_evidence_yet"
-      }
-    },
-    {
-      "id": "sme_formalization",
-      "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-      "score": 43,
-      "status": "early",
-      "evidence_count": 6,
-      "directional_evidence_count": 6,
-      "independent_families": [
-        "business_formation",
-        "policy"
-      ],
-      "independent_publishers": [
-        "Chính phủ",
-        "ĐKKD"
-      ],
-      "non_procurement_publishers": [
-        "Chính phủ",
-        "ĐKKD"
-      ],
-      "economic_chain": [
-        "Quy định thuế/hóa đơn/đăng ký thay đổi",
-        "Hộ kinh doanh và SME phải đổi quy trình",
-        "Nhu cầu kế toán, hóa đơn, POS, inventory và SOP tăng",
-        "Dịch vụ triển khai + hỗ trợ vận hành có thể tạo doanh thu lặp lại"
-      ],
-      "small_capital_angles": [
-        "setup quy trình/hóa đơn/POS theo checklist",
-        "dịch vụ bookkeeping/ops qua partner đủ chuyên môn",
-        "đào tạo ngắn + hỗ trợ 14/30 ngày",
-        "template/SOP và automation đơn giản"
-      ],
-      "evidence": [
-        {
-          "id": "5789f25a3d363028",
-          "family": "policy",
-          "title": "Đề xuất 2 nhóm chính sách hỗ trợ phát triển doanh nghiệp nhỏ và vừa",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "publisher_group": "Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/de-xuat-2-nhom-chinh-sach-ho-tro-phat-trien-doanh-nghiep-nho-va-vua-119260828102327213.htm",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T15:00:57.741347+00:00",
-          "directional": true
-        },
-        {
-          "id": "8d23bd4f2f5ed8d5",
-          "family": "business_formation",
-          "title": "Giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp: Hàng triệu hộ kinh doanh, doanh nghiệp được hưởng lợi",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "publisher_group": "Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/giam-thue-thu-nhap-ca-nhan-thue-thu-nhap-doanh-nghiep-hang-trieu-ho-kinh-doanh-doanh-nghiep-duoc-huong-loi-119260825081513904.htm",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T15:00:57.741347+00:00",
-          "directional": true
-        },
-        {
-          "id": "seed-sme",
-          "family": "business_formation",
-          "title": "Khung đăng ký doanh nghiệp và hộ kinh doanh tiếp tục được cập nhật trong 2026",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "publisher_group": "ĐKKD",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/Trangchu.aspx",
-          "quality": "curated",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T14:22:00+07:00",
-          "directional": true
-        },
-        {
-          "id": "38427c6e516fa4f3",
-          "family": "business_formation",
-          "title": "Thống kê ngày 30/8/2026 về Đăng ký doanh nghiệp",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "publisher_group": "ĐKKD",
-          "source_url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T08:57:55.730622+00:00",
-          "directional": true
-        },
-        {
-          "id": "82abc7b06e73a9f0",
-          "family": "policy",
-          "title": "Hoàn thiện khung khổ pháp luật về đăng ký doanh nghiệp, hộ kinh doanh, tổ hợp tác, hợp tác xã và liên hiệp hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "publisher_group": "ĐKKD",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6889/hoan-thien-khung-kho-phap-luat-ve-dang-ky-doanh-nghiep--ho-kinh-doanh--to-hop-tac--hop-tac-xa-va-lien-hiep-hop-tac-xa.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.259361+00:00",
-          "directional": true
-        },
-        {
-          "id": "1e7a85e99fc544be",
-          "family": "business_formation",
-          "title": "Hướng dẫn hồ sơ, thủ tục đăng ký doanh nghiệp, hộ kinh doanh, hợp tác xã",
-          "publisher": "Cổng ĐKKD Quốc gia",
-          "publisher_group": "ĐKKD",
-          "source_url": "http://dangkykinhdoanh.gov.vn/vn/Pages/Huongdandangkydoanhnghiep.aspx",
-          "quality": "candidate",
-          "category_tags": [
-            "sme"
-          ],
-          "theme_tags": [
-            "sme_formalization"
-          ],
-          "geography": [],
-          "observed_at": "2026-08-30T08:47:29.258742+00:00",
-          "directional": true
-        }
-      ],
-      "supply_gap": {
-        "status": "unconfirmed_supply_gap",
-        "supply_evidence_families": [
-          "business_formation"
-        ],
-        "proxies_needed": [
-          "mật độ nhà cung cấp dịch vụ tại địa phương",
-          "giá dịch vụ kế toán/POS",
-          "thời gian onboarding",
-          "tỷ lệ hộ kinh doanh chưa chuyển đổi",
-          "số câu hỏi/hỗ trợ lặp lại sau triển khai"
         ],
         "rule": "Không có dữ liệu cung không đồng nghĩa thiếu cung. Chỉ nâng thành gap khi demand tăng và có proxy cung xác nhận phản ứng chậm.",
         "observed_supply_evidence": [],

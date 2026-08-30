@@ -1,0 +1,907 @@
+{
+  "meta": {
+    "version": "2.8.0",
+    "generated_at": "2026-08-30T16:16:38.465847+00:00",
+    "mode": "source_coverage_and_blind_spot_audit",
+    "principle": "intelligence_quality_is_bounded_by_what_the_system_can_observe"
+  },
+  "thesis": "Không tăng độ tự tin của intelligence nếu độ phủ nguồn chưa tăng tương ứng. Nguồn primary dùng để xác minh; media dùng để discovery; một domain thiếu nguồn phải được hiển thị như blind spot.",
+  "coverage": {
+    "domains": 20,
+    "strong": 6,
+    "partial": 7,
+    "weak": 1,
+    "broken": 4,
+    "missing": 2,
+    "registered_sources": 26,
+    "active_primary_sources": 14,
+    "healthy_sources": 13,
+    "source_errors": 5,
+    "planned_sources": 8
+  },
+  "critical_blind_spots": [
+    {
+      "domain_id": "corporate_disclosures",
+      "label": "Công bố doanh nghiệp",
+      "status": "broken",
+      "priority": 1,
+      "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này.",
+      "planned_next_sources": [
+        "HOSE - công bố thông tin doanh nghiệp"
+      ]
+    },
+    {
+      "domain_id": "capital_markets_bonds",
+      "label": "Thị trường vốn & trái phiếu",
+      "status": "weak",
+      "priority": 1,
+      "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
+      "coverage_note": "Có collector/nguồn nhưng lần chạy hiện tại chưa tạo đủ evidence; dễ bỏ sót thay đổi quan trọng.",
+      "planned_next_sources": [
+        "HOSE - công bố thông tin doanh nghiệp",
+        "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
+      ]
+    },
+    {
+      "domain_id": "fdi_investment",
+      "label": "FDI & vốn đầu tư",
+      "status": "partial",
+      "priority": 1,
+      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ.",
+      "planned_next_sources": []
+    },
+    {
+      "domain_id": "monetary_credit",
+      "label": "Tiền tệ · tín dụng · tỷ giá",
+      "status": "partial",
+      "priority": 1,
+      "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ.",
+      "planned_next_sources": []
+    },
+    {
+      "domain_id": "macro_real_economy",
+      "label": "Vĩ mô kinh tế thực",
+      "status": "partial",
+      "priority": 1,
+      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ.",
+      "planned_next_sources": []
+    },
+    {
+      "domain_id": "regional_real_economy",
+      "label": "Kinh tế thực theo địa bàn",
+      "status": "missing",
+      "priority": 2,
+      "why": "Cơ hội thường xuất hiện cục bộ trước khi thể hiện rõ ở số liệu toàn quốc.",
+      "coverage_note": "Domain chưa có collector active; đây là blind spot thực sự.",
+      "planned_next_sources": [
+        "KCN/BQL KKT và dự án công nghiệp địa phương",
+        "Cảng/vận tải hàng hóa/logistics throughput"
+      ]
+    },
+    {
+      "domain_id": "real_estate_land",
+      "label": "Đất đai · BĐS · xây dựng",
+      "status": "missing",
+      "priority": 2,
+      "why": "Quy hoạch, đất và xây dựng liên kết chặt với đầu tư công, đô thị hóa và tài sản.",
+      "coverage_note": "Domain chưa có collector active; đây là blind spot thực sự.",
+      "planned_next_sources": [
+        "Bộ Xây dựng - nhà ở và thị trường BĐS",
+        "Nguồn đất đai/quy hoạch chính thức"
+      ]
+    },
+    {
+      "domain_id": "labor_hiring",
+      "label": "Tuyển dụng & nhu cầu lao động",
+      "status": "broken",
+      "priority": 2,
+      "why": "Hiring là bằng chứng sớm cho ramp-up vận hành và thay đổi nhu cầu kỹ năng.",
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này.",
+      "planned_next_sources": [
+        "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "corporate_disclosures",
+      "label": "Công bố doanh nghiệp",
+      "priority": 1,
+      "target_healthy_sources": 3,
+      "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
+      "status": "broken",
+      "active_sources": 3,
+      "healthy_sources": 0,
+      "broken_sources": 3,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước",
+        "HNX - công bố niêm yết",
+        "HNX - công bố UPCoM"
+      ],
+      "planned_next_sources": [
+        "HOSE - công bố thông tin doanh nghiệp"
+      ],
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này."
+    },
+    {
+      "id": "capital_markets_bonds",
+      "label": "Thị trường vốn & trái phiếu",
+      "priority": 1,
+      "target_healthy_sources": 3,
+      "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
+      "status": "weak",
+      "active_sources": 3,
+      "healthy_sources": 1,
+      "broken_sources": 2,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [
+        "Bộ Tài chính - Tin tức tài chính"
+      ],
+      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước",
+        "HNX - công bố niêm yết"
+      ],
+      "planned_next_sources": [
+        "HOSE - công bố thông tin doanh nghiệp",
+        "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
+      ],
+      "coverage_note": "Có collector/nguồn nhưng lần chạy hiện tại chưa tạo đủ evidence; dễ bỏ sót thay đổi quan trọng."
+    },
+    {
+      "id": "fdi_investment",
+      "label": "FDI & vốn đầu tư",
+      "priority": 1,
+      "target_healthy_sources": 2,
+      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 1,
+      "broken_sources": 1,
+      "evidence_items_this_run": 4,
+      "healthy_source_names": [
+        "Cục Đầu tư nước ngoài - Bộ Tài chính"
+      ],
+      "broken_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "planned_next_sources": [],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "monetary_credit",
+      "label": "Tiền tệ · tín dụng · tỷ giá",
+      "priority": 1,
+      "target_healthy_sources": 2,
+      "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+      "status": "partial",
+      "active_sources": 1,
+      "healthy_sources": 1,
+      "broken_sources": 0,
+      "evidence_items_this_run": 33,
+      "healthy_source_names": [
+        "Ngân hàng Nhà nước Việt Nam"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "macro_real_economy",
+      "label": "Vĩ mô kinh tế thực",
+      "priority": 1,
+      "target_healthy_sources": 3,
+      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+      "status": "partial",
+      "active_sources": 3,
+      "healthy_sources": 1,
+      "broken_sources": 2,
+      "evidence_items_this_run": 19,
+      "healthy_source_names": [
+        "EVN - Vận hành hệ thống điện"
+      ],
+      "broken_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "planned_next_sources": [],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "policy_state",
+      "label": "Chính sách & luật chơi",
+      "priority": 1,
+      "target_healthy_sources": 3,
+      "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+      "status": "strong",
+      "active_sources": 3,
+      "healthy_sources": 3,
+      "broken_sources": 0,
+      "evidence_items_this_run": 15,
+      "healthy_source_names": [
+        "Báo Chính phủ",
+        "Chính sách pháp luật - Chính phủ",
+        "Bộ Tài chính - Tin tức tài chính"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    },
+    {
+      "id": "fiscal_public_capital",
+      "label": "Ngân sách & đầu tư công",
+      "priority": 1,
+      "target_healthy_sources": 2,
+      "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+      "status": "strong",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "broken_sources": 0,
+      "evidence_items_this_run": 10,
+      "healthy_source_names": [
+        "Báo Chính phủ",
+        "Bộ Tài chính - Tin tức tài chính"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    },
+    {
+      "id": "regional_real_economy",
+      "label": "Kinh tế thực theo địa bàn",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Cơ hội thường xuất hiện cục bộ trước khi thể hiện rõ ở số liệu toàn quốc.",
+      "status": "missing",
+      "active_sources": 0,
+      "healthy_sources": 0,
+      "broken_sources": 0,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "KCN/BQL KKT và dự án công nghiệp địa phương",
+        "Cảng/vận tải hàng hóa/logistics throughput"
+      ],
+      "coverage_note": "Domain chưa có collector active; đây là blind spot thực sự."
+    },
+    {
+      "id": "real_estate_land",
+      "label": "Đất đai · BĐS · xây dựng",
+      "priority": 2,
+      "target_healthy_sources": 2,
+      "why": "Quy hoạch, đất và xây dựng liên kết chặt với đầu tư công, đô thị hóa và tài sản.",
+      "status": "missing",
+      "active_sources": 0,
+      "healthy_sources": 0,
+      "broken_sources": 0,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "Bộ Xây dựng - nhà ở và thị trường BĐS",
+        "Nguồn đất đai/quy hoạch chính thức"
+      ],
+      "coverage_note": "Domain chưa có collector active; đây là blind spot thực sự."
+    },
+    {
+      "id": "labor_hiring",
+      "label": "Tuyển dụng & nhu cầu lao động",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Hiring là bằng chứng sớm cho ramp-up vận hành và thay đổi nhu cầu kỹ năng.",
+      "status": "broken",
+      "active_sources": 2,
+      "healthy_sources": 0,
+      "broken_sources": 2,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "planned_next_sources": [
+        "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp"
+      ],
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này."
+    },
+    {
+      "id": "trade_customs",
+      "label": "Xuất nhập khẩu & luồng hàng",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Dữ liệu chi tiết theo nhóm hàng/thị trường có thể phát hiện cầu sản xuất và thương mại trước số liệu tổng hợp.",
+      "status": "broken",
+      "active_sources": 1,
+      "healthy_sources": 0,
+      "broken_sources": 1,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "planned_next_sources": [
+        "Hải quan - dữ liệu XNK chi tiết",
+        "Cảng/vận tải hàng hóa/logistics throughput"
+      ],
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này."
+    },
+    {
+      "id": "infrastructure_projects",
+      "label": "Hạ tầng & dự án lớn",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Dự án lớn tạo chuỗi cầu nhiều tầng và thay đổi kết nối vùng trong nhiều năm.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "broken_sources": 0,
+      "evidence_items_this_run": 16,
+      "healthy_source_names": [
+        "Báo Chính phủ",
+        "EVN - Đầu tư xây dựng"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "Bộ Xây dựng - nhà ở và thị trường BĐS"
+      ],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "industrial_projects",
+      "label": "Nhà máy · KCN · CAPEX",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Đây là cầu nối từ FDI/chính sách sang nhu cầu thực tế, supplier, logistics và lao động.",
+      "status": "partial",
+      "active_sources": 1,
+      "healthy_sources": 1,
+      "broken_sources": 0,
+      "evidence_items_this_run": 4,
+      "healthy_source_names": [
+        "Cục Đầu tư nước ngoài - Bộ Tài chính"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "KCN/BQL KKT và dự án công nghiệp địa phương"
+      ],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "media_discovery",
+      "label": "Media discovery",
+      "priority": 2,
+      "target_healthy_sources": 4,
+      "why": "Dùng để phát hiện thứ hệ thống chưa biết phải tìm; không dùng làm primary truth.",
+      "status": "strong",
+      "active_sources": 4,
+      "healthy_sources": 4,
+      "broken_sources": 0,
+      "evidence_items_this_run": 29,
+      "healthy_source_names": [
+        "VnExpress Kinh doanh",
+        "Tuổi Trẻ Kinh doanh",
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    },
+    {
+      "id": "entity_discovery",
+      "label": "Open-world entity discovery",
+      "priority": 2,
+      "target_healthy_sources": 4,
+      "why": "Phải có khả năng gặp doanh nghiệp/dự án mới mà không cần seed tên trước.",
+      "status": "strong",
+      "active_sources": 4,
+      "healthy_sources": 4,
+      "broken_sources": 0,
+      "evidence_items_this_run": 29,
+      "healthy_source_names": [
+        "VnExpress Kinh doanh",
+        "Tuổi Trẻ Kinh doanh",
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp"
+      ],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    },
+    {
+      "id": "energy_power",
+      "label": "Điện & năng lượng",
+      "priority": 2,
+      "target_healthy_sources": 2,
+      "why": "Điện là proxy quan trọng của công nghiệp và cũng là một bottleneck cấu trúc.",
+      "status": "strong",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "broken_sources": 0,
+      "evidence_items_this_run": 25,
+      "healthy_source_names": [
+        "EVN - Đầu tư xây dựng",
+        "EVN - Vận hành hệ thống điện"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    },
+    {
+      "id": "consumption_behavior",
+      "label": "Tiêu dùng & hành vi",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Số liệu doanh thu cần được đối chiếu với hành vi, volume và sức mua thực.",
+      "status": "broken",
+      "active_sources": 2,
+      "healthy_sources": 0,
+      "broken_sources": 2,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "broken_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "planned_next_sources": [],
+      "coverage_note": "Nguồn đang lỗi và chưa có nguồn khỏe thay thế trong domain này."
+    },
+    {
+      "id": "technology_data",
+      "label": "Công nghệ · dữ liệu · AI",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Thay đổi công nghệ có thể mở mô hình kinh doanh mới trước khi số liệu truyền thống phản ánh.",
+      "status": "partial",
+      "active_sources": 1,
+      "healthy_sources": 1,
+      "broken_sources": 0,
+      "evidence_items_this_run": 10,
+      "healthy_source_names": [
+        "Báo Chính phủ"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "business_formation",
+      "label": "Thành lập & rút lui doanh nghiệp",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 1,
+      "broken_sources": 1,
+      "evidence_items_this_run": 17,
+      "healthy_source_names": [
+        "Cổng ĐKKD Quốc gia"
+      ],
+      "broken_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "planned_next_sources": [],
+      "coverage_note": "Đã nhìn thấy tín hiệu thật nhưng chưa đủ đa nguồn để yên tâm về độ phủ."
+    },
+    {
+      "id": "procurement_demand",
+      "label": "Nhu cầu mua sắm công",
+      "priority": 4,
+      "target_healthy_sources": 1,
+      "why": "Bằng chứng buyer rất rõ nhưng chỉ là một nhánh của nền kinh tế, không được thống trị radar.",
+      "status": "strong",
+      "active_sources": 1,
+      "healthy_sources": 1,
+      "broken_sources": 0,
+      "evidence_items_this_run": 19,
+      "healthy_source_names": [
+        "Hệ thống mạng đấu thầu quốc gia"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Độ phủ hiện tại đủ dùng cho discovery; vẫn cần theo dõi freshness và độc lập nguồn."
+    }
+  ],
+  "source_health": [
+    {
+      "id": "gov",
+      "name": "Báo Chính phủ",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "policy_state",
+        "fiscal_public_capital",
+        "infrastructure_projects",
+        "technology_data"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 10,
+      "error": null
+    },
+    {
+      "id": "gov-policy",
+      "name": "Chính sách pháp luật - Chính phủ",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "policy_state"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 5,
+      "error": null
+    },
+    {
+      "id": "nso",
+      "name": "Cục Thống kê - Doanh nghiệp",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "macro_real_economy",
+        "business_formation",
+        "labor_hiring",
+        "consumption_behavior",
+        "fdi_investment"
+      ],
+      "authority": 1.0,
+      "health": "error",
+      "items_this_run": 0,
+      "error": "Cục Thống kê - Doanh nghiệp: ConnectionError: HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Max retries exceeded with url: /doanh-nghiep/ (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+    },
+    {
+      "id": "nso-data",
+      "name": "Cục Thống kê - Dữ liệu kinh tế",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "macro_real_economy",
+        "trade_customs",
+        "consumption_behavior",
+        "labor_hiring"
+      ],
+      "authority": 1.0,
+      "health": "error",
+      "items_this_run": 0,
+      "error": "Cục Thống kê - Dữ liệu kinh tế: ConnectionError: HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Max retries exceeded with url: /du-lieu-va-so-lieu-thong-ke (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+    },
+    {
+      "id": "business-registry",
+      "name": "Cổng ĐKKD Quốc gia",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "business_formation"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 17,
+      "error": null
+    },
+    {
+      "id": "fia-fdi",
+      "name": "Cục Đầu tư nước ngoài - Bộ Tài chính",
+      "type": "official",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "fdi_investment",
+        "industrial_projects"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 4,
+      "error": null
+    },
+    {
+      "id": "evn-invest",
+      "name": "EVN - Đầu tư xây dựng",
+      "type": "official_operator",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "energy_power",
+        "infrastructure_projects"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 6,
+      "error": null
+    },
+    {
+      "id": "evn-system",
+      "name": "EVN - Vận hành hệ thống điện",
+      "type": "official_operator",
+      "collector": "main",
+      "status": "active",
+      "domains": [
+        "energy_power",
+        "macro_real_economy"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 19,
+      "error": null
+    },
+    {
+      "id": "sbv",
+      "name": "Ngân hàng Nhà nước Việt Nam",
+      "type": "official",
+      "collector": "main",
+      "status": "active_test",
+      "domains": [
+        "monetary_credit"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 33,
+      "error": null
+    },
+    {
+      "id": "mof-finance",
+      "name": "Bộ Tài chính - Tin tức tài chính",
+      "type": "official",
+      "collector": "main",
+      "status": "active_test",
+      "domains": [
+        "fiscal_public_capital",
+        "capital_markets_bonds",
+        "policy_state"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "ssc",
+      "name": "Ủy ban Chứng khoán Nhà nước",
+      "type": "official_regulator",
+      "collector": "main",
+      "status": "active_test",
+      "domains": [
+        "capital_markets_bonds",
+        "corporate_disclosures"
+      ],
+      "authority": 1.0,
+      "health": "error",
+      "items_this_run": 0,
+      "error": "Ủy ban Chứng khoán Nhà nước: ConnectionError: HTTPSConnectionPool(host='ssc.gov.vn', port=443): Max retries exceeded with url: /webcenter/portal/ubck (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='ssc.gov.vn', port=443): Read timed out. (read timeout=30)\"))"
+    },
+    {
+      "id": "vnexpress-business",
+      "name": "VnExpress Kinh doanh",
+      "type": "media_discovery",
+      "collector": "entity_media",
+      "status": "active",
+      "domains": [
+        "media_discovery",
+        "entity_discovery"
+      ],
+      "authority": 0.78,
+      "health": "ok",
+      "items_this_run": 6,
+      "error": null
+    },
+    {
+      "id": "tuoitre-business",
+      "name": "Tuổi Trẻ Kinh doanh",
+      "type": "media_discovery",
+      "collector": "entity_media",
+      "status": "active",
+      "domains": [
+        "media_discovery",
+        "entity_discovery"
+      ],
+      "authority": 0.76,
+      "health": "ok",
+      "items_this_run": 4,
+      "error": null
+    },
+    {
+      "id": "thanhnien-economy",
+      "name": "Thanh Niên Kinh tế",
+      "type": "media_discovery",
+      "collector": "entity_media",
+      "status": "active",
+      "domains": [
+        "media_discovery",
+        "entity_discovery"
+      ],
+      "authority": 0.74,
+      "health": "ok",
+      "items_this_run": 11,
+      "error": null
+    },
+    {
+      "id": "vietnamplus-economy",
+      "name": "VietnamPlus Kinh tế",
+      "type": "media_discovery",
+      "collector": "entity_media",
+      "status": "active",
+      "domains": [
+        "media_discovery",
+        "entity_discovery"
+      ],
+      "authority": 0.82,
+      "health": "ok",
+      "items_this_run": 8,
+      "error": null
+    },
+    {
+      "id": "hnx-listed",
+      "name": "HNX - công bố niêm yết",
+      "type": "official_disclosure",
+      "collector": "corporate",
+      "status": "active_but_unhealthy",
+      "domains": [
+        "corporate_disclosures",
+        "capital_markets_bonds"
+      ],
+      "authority": 1.0,
+      "health": "error",
+      "items_this_run": 0,
+      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='portal.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "id": "hnx-upcom",
+      "name": "HNX - công bố UPCoM",
+      "type": "official_disclosure",
+      "collector": "corporate",
+      "status": "active_but_unhealthy",
+      "domains": [
+        "corporate_disclosures"
+      ],
+      "authority": 1.0,
+      "health": "error",
+      "items_this_run": 0,
+      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='tttt.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "id": "msc-official",
+      "name": "Hệ thống mạng đấu thầu quốc gia",
+      "type": "official_transactional",
+      "collector": "procurement",
+      "status": "active",
+      "domains": [
+        "procurement_demand"
+      ],
+      "authority": 1.0,
+      "health": "ok",
+      "items_this_run": 19,
+      "error": null
+    },
+    {
+      "id": "customs-stats",
+      "name": "Hải quan - dữ liệu XNK chi tiết",
+      "type": "official",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "trade_customs"
+      ],
+      "authority": 1.0,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "hsx-disclosures",
+      "name": "HOSE - công bố thông tin doanh nghiệp",
+      "type": "official_disclosure",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "corporate_disclosures",
+        "capital_markets_bonds"
+      ],
+      "authority": 1.0,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "bond-market-official",
+      "name": "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ",
+      "type": "official_market",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "capital_markets_bonds"
+      ],
+      "authority": 1.0,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "moc-housing",
+      "name": "Bộ Xây dựng - nhà ở và thị trường BĐS",
+      "type": "official",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "real_estate_land",
+        "infrastructure_projects"
+      ],
+      "authority": 1.0,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "land-planning",
+      "name": "Nguồn đất đai/quy hoạch chính thức",
+      "type": "official",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "real_estate_land"
+      ],
+      "authority": 1.0,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "industrial-zones",
+      "name": "KCN/BQL KKT và dự án công nghiệp địa phương",
+      "type": "official_local",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "industrial_projects",
+        "regional_real_economy"
+      ],
+      "authority": 0.95,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "job-market",
+      "name": "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp",
+      "type": "behavioral",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "labor_hiring",
+        "entity_discovery"
+      ],
+      "authority": 0.75,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    },
+    {
+      "id": "freight-ports",
+      "name": "Cảng/vận tải hàng hóa/logistics throughput",
+      "type": "official_operator",
+      "collector": "planned",
+      "status": "planned",
+      "domains": [
+        "trade_customs",
+        "regional_real_economy"
+      ],
+      "authority": 0.9,
+      "health": "planned",
+      "items_this_run": 0,
+      "error": null
+    }
+  ],
+  "reading_rule": "STRONG không có nghĩa dữ liệu hoàn hảo; chỉ nghĩa domain đã có độ phủ đa nguồn đủ để discovery. WEAK/BROKEN/MISSING phải làm giảm độ tự tin của mọi thesis phụ thuộc domain đó."
+}
