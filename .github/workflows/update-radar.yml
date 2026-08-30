@@ -70,6 +70,9 @@ jobs:
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
+      - name: Build observed supply-side intelligence
+        run: python pipeline/supply_side_intel.py
+
       - name: Build V2 money-flow intelligence
         run: python pipeline/money_flow_intel.py
 
@@ -98,6 +101,7 @@ jobs:
             outreach_intelligence.json
             corporate_history.json
             corporate_intelligence.json
+            supply_side_intelligence.json
             money_flow_intelligence.json
             system_meta.json
           )
