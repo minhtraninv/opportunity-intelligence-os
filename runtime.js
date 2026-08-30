@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const ASSET_VERSION = '20260831-perf2';
+  const ASSET_VERSION = '20260831-trust1';
   const nativeFetch = window.fetch.bind(window);
   const responseCache = new Map();
   const inflight = new Map();
@@ -16,9 +16,7 @@
       if(!raw) return false;
       const url = new URL(raw, location.href);
       return url.origin === location.origin && /\/data\/[^/?]+\.json$/.test(url.pathname);
-    } catch {
-      return false;
-    }
+    } catch { return false; }
   };
 
   const dataKey = (input) => {
@@ -35,7 +33,6 @@
     const cached = responseCache.get(key);
     if(cached && now - cached.at < CACHE_TTL_MS) return Promise.resolve(cached.response.clone());
     if(inflight.has(key)) return inflight.get(key).then(response => response.clone());
-
     const request = nativeFetch(input, {...init, cache:'no-cache'})
       .then(response => {
         if(response.ok) responseCache.set(key, {at:Date.now(), response:response.clone()});
@@ -86,10 +83,7 @@
       await loadScript('relationship.js');
       await loadScript('counterparty.js');
       await loadScript('execution.js');
-    } catch(err){
-      advancedLoaded = false;
-      console.error(err);
-    }
+    } catch(err){ advancedLoaded = false; console.error(err); }
   }
 
   function activeTab(){ return document.querySelector('.tab.active')?.dataset.tab || 'overview'; }
@@ -109,11 +103,7 @@
     if(id === 'buyers') loadAdvanced();
   });
 
-  function setFreshnessMessage(text){
-    const target = document.getElementById('updatedAt');
-    if(target) target.textContent = text;
-  }
-
+  function setFreshnessMessage(text){ const target = document.getElementById('updatedAt'); if(target) target.textContent = text; }
   async function readMeta(){
     try {
       const response = await nativeFetch(`data/system_meta.json?_oi_ts=${Date.now()}`, {cache:'no-store'});
@@ -123,11 +113,7 @@
   }
 
   let currentMetaStamp = null;
-  async function initializeFreshness(){
-    const meta = await readMeta();
-    currentMetaStamp = meta?.latest_component_update || meta?.generated_at || null;
-  }
-
+  async function initializeFreshness(){ const meta = await readMeta(); currentMetaStamp = meta?.latest_component_update || meta?.generated_at || null; }
   async function checkForUpdate(){
     if(document.hidden) return;
     const meta = await readMeta();
