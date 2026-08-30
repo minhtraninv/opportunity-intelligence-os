@@ -1,8 +1,9 @@
 {
   "meta": {
     "version": "1.3",
-    "generated_at": "2026-08-30T09:35:55.991729+00:00",
-    "mode": "corporate_action_intelligence"
+    "generated_at": "2026-08-30T09:38:53.033608+00:00",
+    "mode": "corporate_action_intelligence",
+    "principle": "official_disclosure_then_document_verification"
   },
   "coverage": {
     "historical_events": 0,
@@ -16,19 +17,20 @@
       "name": "HNX - công bố niêm yết",
       "items_this_run": 0,
       "status": "error",
-      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "error": "HNX - công bố niêm yết: SSLError: HTTPSConnectionPool(host='portal.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
     },
     {
       "source_id": "hnx-upcom",
       "name": "HNX - công bố UPCoM",
       "items_this_run": 0,
       "status": "error",
-      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='forum.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+      "error": "HNX - công bố UPCoM: SSLError: HTTPSConnectionPool(host='tttt.hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
     }
   ],
   "buyer_triggers": [],
   "warnings": [
-    "HNX là nguồn công bố chính thức, nhưng tiêu đề công bố chỉ là trigger điều tra; phải đọc tài liệu gốc trước khi suy ra nhu cầu mua sắm.",
+    "HNX là nguồn công bố chính thức, nhưng tiêu đề chỉ là trigger điều tra; phải đọc tài liệu gốc trước khi suy ra nhu cầu mua sắm.",
+    "Capital raise/financing không tự động đồng nghĩa với cơ hội bán hàng; cần bằng chứng vốn được dùng cho hoạt động tạo nhu cầu.",
     "Có 2 nguồn lỗi ở lần chạy gần nhất."
   ]
 }
