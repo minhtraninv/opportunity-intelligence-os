@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Opportunity Intelligence OS collector + deterministic Change Detector.
 
-V1.1 has three responsibilities:
+V1.1 responsibilities:
 1) collect relevant public headlines from configured sources;
 2) preserve first-seen history instead of making old headlines look new every run;
-3) build a conservative change detector from observed event history.
+3) build a conservative change detector from observed event history;
+4) reclassify stored machine-collected data when the taxonomy improves.
 
 The detector deliberately refuses to claim momentum until it has enough history.
 It does not generate business opportunities automatically; curated hypotheses remain
@@ -77,15 +78,29 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+def keyword_matches(text: str, keyword: str) -> bool:
+    """Match whole words/phrases, not arbitrary substrings.
+
+    This prevents false positives such as 'ai' inside 'triển khai'. Python's Unicode
+    \w handling is used so Vietnamese letters are treated as word characters.
+    """
+    pattern = rf"(?<!\w){re.escape(keyword.lower())}(?!\w)"
+    return re.search(pattern, text.lower(), flags=re.UNICODE) is not None
+
+
 def classify(text: str) -> list[str]:
-    t = text.lower()
+    normalized = norm(text).lower()
     hits = []
-    for sector, kws in CONFIG["keywords"].items():
-        score = sum(1 for kw in kws if kw.lower() in t)
+    for sector, keywords in CONFIG["keywords"].items():
+        score = sum(1 for keyword in keywords if keyword_matches(normalized, keyword))
         if score:
             hits.append((sector, score))
     hits.sort(key=lambda x: (-x[1], x[0]))
     return [sector for sector, _ in hits[:3]]
+
+
+def clean_href(raw_href: str) -> str:
+    return re.sub(r"[\r\n\t]+", "", raw_href or "").strip()
 
 
 def fetch_source(src: dict) -> tuple[list[dict], str | None]:
@@ -105,7 +120,10 @@ def fetch_source(src: dict) -> tuple[list[dict], str | None]:
         if len(title) < 25 or len(title) > 220:
             continue
 
-        href = urljoin(src["url"], anchor["href"])
+        raw_href = clean_href(anchor["href"])
+        if not raw_href:
+            continue
+        href = urljoin(src["url"], raw_href)
         if urlparse(href).netloc != host:
             continue
 
@@ -132,8 +150,27 @@ def fetch_source(src: dict) -> tuple[list[dict], str | None]:
     return items[:60], None
 
 
+def clean_stored_item(item: dict) -> dict | None:
+    if not item.get("id") or not item.get("title"):
+        return None
+    cleaned = dict(item)
+    if cleaned.get("status") == "verified-seed":
+        return cleaned
+    categories = classify(cleaned.get("title", ""))
+    if not categories:
+        return None
+    cleaned["categories"] = categories
+    cleaned["url"] = clean_href(cleaned.get("url", ""))
+    return cleaned
+
+
 def merge_feed(old_items: list[dict], fetched_items: list[dict], captured_at: datetime) -> tuple[list[dict], list[dict]]:
-    merged = {item["id"]: dict(item) for item in old_items if item.get("id")}
+    merged = {}
+    for old_item in old_items:
+        cleaned = clean_stored_item(old_item)
+        if cleaned:
+            merged[cleaned["id"]] = cleaned
+
     new_items = []
     captured_iso = iso(captured_at)
 
@@ -142,11 +179,7 @@ def merge_feed(old_items: list[dict], fetched_items: list[dict], captured_at: da
         previous = merged.get(item_id)
 
         if previous:
-            first_seen = (
-                previous.get("first_seen_at")
-                or previous.get("collected_at")
-                or captured_iso
-            )
+            first_seen = previous.get("first_seen_at") or previous.get("collected_at") or captured_iso
             status = previous.get("status", item.get("status", "unverified-headline"))
             merged[item_id] = {
                 **previous,
@@ -167,10 +200,7 @@ def merge_feed(old_items: list[dict], fetched_items: list[dict], captured_at: da
             new_items.append(fresh)
 
     rows = list(merged.values())
-    rows.sort(
-        key=lambda x: x.get("first_seen_at") or x.get("collected_at") or "",
-        reverse=True,
-    )
+    rows.sort(key=lambda x: x.get("first_seen_at") or x.get("collected_at") or "", reverse=True)
     return rows[:RAW_FEED_LIMIT], new_items
 
 
@@ -188,17 +218,30 @@ def event_from_item(item: dict) -> dict:
     }
 
 
-def update_history(history: dict, feed_items: list[dict], new_items: list[dict], captured_at: datetime, errors: list[str]) -> dict:
-    events_by_id = {
-        event["id"]: event
-        for event in history.get("events", [])
-        if event.get("id")
-    }
+def clean_history_event(event: dict) -> dict | None:
+    if not event.get("id") or not event.get("title"):
+        return None
+    cleaned = dict(event)
+    if cleaned.get("status") == "verified-seed":
+        return cleaned
+    categories = classify(cleaned.get("title", ""))
+    if not categories:
+        return None
+    cleaned["categories"] = categories
+    cleaned["url"] = clean_href(cleaned.get("url", ""))
+    return cleaned
 
-    # Bootstrap once from the current feed so V1.1 starts with everything already known.
+
+def update_history(history: dict, feed_items: list[dict], new_items: list[dict], captured_at: datetime, errors: list[str]) -> dict:
+    events_by_id = {}
+    for event in history.get("events", []):
+        cleaned = clean_history_event(event)
+        if cleaned:
+            events_by_id[cleaned["id"]] = cleaned
+
+    # Bootstrap or repair history from the current cleaned feed.
     for item in feed_items:
-        if item.get("id") not in events_by_id:
-            events_by_id[item["id"]] = event_from_item(item)
+        events_by_id[item["id"]] = event_from_item(item)
 
     events = list(events_by_id.values())
     events.sort(key=lambda x: x.get("first_seen_at") or "", reverse=True)
@@ -231,7 +274,11 @@ def update_history(history: dict, feed_items: list[dict], new_items: list[dict],
 
 
 def history_span_days(events: list[dict], captured_at: datetime) -> int:
-    dates = [parse_dt(event.get("first_seen_at")) for event in events]
+    dates = [
+        parse_dt(event.get("first_seen_at"))
+        for event in events
+        if event.get("status") != "verified-seed"
+    ]
     dates = [dt for dt in dates if dt is not None]
     if not dates:
         return 0
@@ -303,7 +350,7 @@ def category_change_stats(events: list[dict], captured_at: datetime, history_day
         elif trend == "emerging":
             explanation = f"Xuất hiện {recent_count} tín hiệu trong 7 ngày trong khi baseline trước đó gần như trống."
         elif trend == "stable":
-            explanation = f"Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+            explanation = "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
         else:
             explanation = "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
 
