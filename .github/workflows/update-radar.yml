@@ -14,6 +14,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: opportunity-intelligence-data
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -48,4 +52,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/raw_feed.json data/history.json data/intelligence.json data/action_history.json data/action_intelligence.json data/partner_history.json data/partner_intelligence.json data/corporate_history.json data/corporate_intelligence.json
           git diff --cached --quiet || git commit -m "data: refresh opportunity intelligence"
+          git pull --rebase origin main
           git push
