@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "2.8.0",
+    "version": "3.0.0",
     "principle": "coverage_quality_over_raw_source_count",
-    "note": "Registry describes what the system should be able to see. A listed source is not assumed healthy until a collector confirms it."
+    "note": "Official source-domain contract for the stable release. A registered source is never assumed useful until collector health and qualified evidence prove it."
   },
   "sources": [
     {"id":"gov","name":"Báo Chính phủ","type":"official","collector":"main","status":"active","domains":["policy_state","fiscal_public_capital","infrastructure_projects","technology_data"],"authority":1.0},
@@ -22,8 +22,8 @@
     {"id":"thanhnien-economy","name":"Thanh Niên Kinh tế","type":"media_discovery","collector":"entity_media","status":"active","domains":["media_discovery","entity_discovery"],"authority":0.74},
     {"id":"vietnamplus-economy","name":"VietnamPlus Kinh tế","type":"media_discovery","collector":"entity_media","status":"active","domains":["media_discovery","entity_discovery"],"authority":0.82},
 
-    {"id":"hnx-listed","name":"HNX - công bố niêm yết","type":"official_disclosure","collector":"corporate","status":"active_but_unhealthy","domains":["corporate_disclosures","capital_markets_bonds"],"authority":1.0},
-    {"id":"hnx-upcom","name":"HNX - công bố UPCoM","type":"official_disclosure","collector":"corporate","status":"active_but_unhealthy","domains":["corporate_disclosures"],"authority":1.0},
+    {"id":"hnx-listed","name":"HNX - công bố niêm yết","type":"official_disclosure","collector":"corporate","status":"active","domains":["corporate_disclosures","capital_markets_bonds"],"authority":1.0},
+    {"id":"hnx-upcom","name":"HNX - công bố UPCoM","type":"official_disclosure","collector":"corporate","status":"active","domains":["corporate_disclosures"],"authority":1.0},
     {"id":"msc-official","name":"Hệ thống mạng đấu thầu quốc gia","type":"official_transactional","collector":"procurement","status":"active","domains":["procurement_demand"],"authority":1.0},
 
     {"id":"customs-stats","name":"Hải quan - dữ liệu XNK chi tiết","type":"official","collector":"planned","status":"planned","domains":["trade_customs"],"authority":1.0},
