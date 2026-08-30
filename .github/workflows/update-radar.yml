@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "pipeline/**"
+      - "data/macro_observations.json"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -69,6 +70,9 @@ jobs:
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
+      - name: Build V2 money-flow intelligence
+        run: python pipeline/money_flow_intel.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
@@ -94,6 +98,7 @@ jobs:
             outreach_intelligence.json
             corporate_history.json
             corporate_intelligence.json
+            money_flow_intelligence.json
             system_meta.json
           )
 
