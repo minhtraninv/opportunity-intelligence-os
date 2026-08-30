@@ -27,6 +27,9 @@ def main() -> None:
     media = load("entity_media_intelligence.json", {})
     release = load("product_release.json", {})
     methodology = load("methodology_state.json", {})
+    freshness = load("freshness_state.json", {})
+    regional = load("regional_intelligence.json", {})
+    contradiction = load("contradiction_intelligence.json", {})
 
     errors = []
     checks = []
@@ -78,6 +81,38 @@ def main() -> None:
     method_ok = methodology.get("methodology_version") == METHODOLOGY
     check("methodology_comparability_gate", method_ok, f"methodology={methodology.get('methodology_version') or 'missing'} expected={METHODOLOGY}")
 
+    fresh_rows = freshness.get("datasets", {}) if isinstance(freshness.get("datasets"), dict) else {}
+    freshness_errors = []
+    for key in ("macro", "regional", "contradiction"):
+        state = str((fresh_rows.get(key) or {}).get("status") or "unknown")
+        if state == "unknown":
+            freshness_errors.append(f"{key}:unknown")
+
+    macro_state = str((fresh_rows.get("macro") or {}).get("status") or "unknown")
+    if macro_state == "stale":
+        for theme in money.get("themes", []):
+            for ev in theme.get("evidence", []):
+                if str(ev.get("id") or "").startswith("macro::") and ev.get("directional", True):
+                    freshness_errors.append(f"macro_stale_but_directional:{theme.get('id')}:{ev.get('id')}")
+                    break
+
+    regional_state = str((fresh_rows.get("regional") or {}).get("status") or "unknown")
+    if regional_state == "stale" and regional.get("regions"):
+        freshness_errors.append("regional_stale_but_current_regions_present")
+
+    contradiction_state = str((fresh_rows.get("contradiction") or {}).get("status") or "unknown")
+    if contradiction_state == "stale":
+        for theme in contradiction.get("themes", []):
+            if theme.get("counter_signals") or int(theme.get("counter_signal_count") or 0) > 0:
+                freshness_errors.append(f"contradiction_stale_but_counter_signal_active:{theme.get('theme_id')}")
+                break
+
+    check(
+        "snapshot_freshness_gate",
+        not freshness_errors,
+        "; ".join(freshness_errors) or "verified snapshots have known age and stale datasets cannot drive current-state intelligence",
+    )
+
     bad_reports = []
     for kind in ("weekly", "monthly"):
         report = (reports.get("reports") or {}).get(kind, {})
@@ -100,7 +135,12 @@ def main() -> None:
     check("release_version_gate", release_version == "3.0.1", f"product_release={release_version or 'missing'}")
 
     payload = {
-        "meta": {"version": "3.0.1", "generated_at": datetime.now(timezone.utc).isoformat(), "mode": "prepublication_trust_gate", "status": "pass" if not errors else "fail"},
+        "meta": {
+            "version": "3.0.1",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "mode": "prepublication_trust_gate",
+            "status": "pass" if not errors else "fail",
+        },
         "checks": checks,
         "error_count": len(errors),
         "errors": errors,
