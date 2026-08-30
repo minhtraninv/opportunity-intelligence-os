@@ -63,6 +63,9 @@ jobs:
       - name: Build counterparty execution dossiers
         run: python pipeline/counterparty_intel.py
 
+      - name: Build outreach execution packs
+        run: python pipeline/outreach_intel.py
+
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
@@ -88,6 +91,7 @@ jobs:
             contractor_schema_probe.json
             official_contact_intelligence.json
             counterparty_intelligence.json
+            outreach_intelligence.json
             corporate_history.json
             corporate_intelligence.json
             system_meta.json
