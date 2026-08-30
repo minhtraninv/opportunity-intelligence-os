@@ -10,10 +10,12 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import ssl
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
+import certifi
 import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
@@ -22,11 +24,10 @@ from urllib3.util.retry import Retry
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "corporate_intelligence.json"
 HISTORY = ROOT / "data" / "corporate_history.json"
+HNX_CA_BUNDLE = ROOT / "pipeline" / "certs" / "globalsign_hnx_intermediates.pem"
 VN_TZ = timezone(timedelta(hours=7))
 UA = "Mozilla/5.0 (compatible; OpportunityIntelligenceOS/3.0; +https://github.com/minhtraninv/opportunity-intelligence-os)"
 
-# Use the canonical HNX host. The older portal/tttt subdomains have certificate-chain
-# problems on GitHub-hosted runners even though the public HNX pages remain reachable.
 SOURCES = [
     {
         "id": "hnx-listed",
@@ -81,17 +82,36 @@ LIKELY_NEEDS = {
 }
 
 
+class VerifiedHnxAdapter(HTTPAdapter):
+    """Keep TLS verification enabled while supplying HNX's omitted intermediates."""
+
+    def init_poolmanager(self, connections, maxsize, block=False, **pool_kwargs):
+        context = ssl.create_default_context(cafile=certifi.where())
+        if HNX_CA_BUNDLE.exists():
+            context.load_verify_locations(cafile=str(HNX_CA_BUNDLE))
+        pool_kwargs["ssl_context"] = context
+        return super().init_poolmanager(connections, maxsize, block=block, **pool_kwargs)
+
+
 def build_session() -> requests.Session:
     retry = Retry(
-        total=2, connect=2, read=2, status=2, backoff_factor=0.8,
+        total=2,
+        connect=2,
+        read=2,
+        status=2,
+        backoff_factor=0.8,
         status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET"}), raise_on_status=False,
+        allowed_methods=frozenset({"GET"}),
+        raise_on_status=False,
     )
     session = requests.Session()
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
-    session.headers.update({"User-Agent": UA, "Accept-Language": "vi-VN,vi;q=0.9"})
+    session.mount("https://", VerifiedHnxAdapter(max_retries=retry))
+    session.mount("http://", HTTPAdapter(max_retries=retry))
+    session.headers.update({
+        "User-Agent": UA,
+        "Accept-Language": "vi-VN,vi;q=0.9",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    })
     return session
 
 
@@ -116,8 +136,12 @@ def parse_dt(text: str) -> datetime | None:
         return None
     try:
         return datetime(
-            int(match.group(3)), int(match.group(2)), int(match.group(1)),
-            int(match.group(4)), int(match.group(5)), tzinfo=VN_TZ,
+            int(match.group(3)),
+            int(match.group(2)),
+            int(match.group(1)),
+            int(match.group(4)),
+            int(match.group(5)),
+            tzinfo=VN_TZ,
         ).astimezone(timezone.utc)
     except ValueError:
         return None
@@ -220,20 +244,32 @@ def main() -> None:
     now = now_utc()
     all_events = []
     health = []
+
     for src in SOURCES:
         rows, error = parse_source(src, now)
         all_events.extend(rows)
         health.append({
-            "source_id": src["id"], "source_name": src["name"],
+            "source_id": src["id"],
+            "source_name": src["name"],
             "status": "error" if error else "ok",
-            "items_this_run": len(rows), "error": error,
+            "items_this_run": len(rows),
+            "error": error,
         })
 
     history = load_json(HISTORY, {"events": []})
-    existing = {x.get("id"): x for x in history.get("events", []) if isinstance(x, dict) and x.get("id")}
+    existing = {
+        x.get("id"): x
+        for x in history.get("events", [])
+        if isinstance(x, dict) and x.get("id")
+    }
     for event in all_events:
         existing[event["id"]] = event
-    history_rows = sorted(existing.values(), key=lambda x: x.get("published_at") or "", reverse=True)[:2500]
+
+    history_rows = sorted(
+        existing.values(),
+        key=lambda x: x.get("published_at") or "",
+        reverse=True,
+    )[:2500]
     write_json(HISTORY, {"updated_at": now.isoformat(), "events": history_rows})
 
     cutoff = now - timedelta(days=45)
@@ -268,7 +304,8 @@ def main() -> None:
         "source_health": health,
         "recent_events": recent[:120],
         "reading_rule": (
-            "Một disclosure chỉ mở hồ sơ điều tra. Cần đọc tài liệu gốc, quy mô, thời điểm, funding, execution và phản chứng trước khi nối thành thesis."
+            "Một disclosure chỉ mở hồ sơ điều tra. Cần đọc tài liệu gốc, quy mô, thời điểm, "
+            "funding, execution và phản chứng trước khi nối thành thesis."
         ),
     }
     write_json(OUT, payload)
