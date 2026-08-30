@@ -2,8 +2,8 @@
   "meta": {
     "version": "3.0.0",
     "mode": "official_stable_information_first_release",
-    "status": "release_candidate",
-    "generated_at": "2026-08-30T16:30:00+00:00"
+    "status": "official",
+    "generated_at": "2026-08-30T16:59:30+00:00"
   },
   "product_promise": "Giúp người dùng nhìn thấy những thay đổi đáng chú ý trong chính sách, dòng tiền, kinh tế thực, địa bàn và entity đủ sớm để mở hồ sơ nghiên cứu; không thay người dùng ra quyết định đầu tư hay kinh doanh.",
   "core_chain": [
@@ -14,6 +14,7 @@
     "Cross-domain Convergence",
     "Contradiction / Falsification",
     "Thesis Lifecycle",
+    "Source Coverage / Blind Spots",
     "Personal Action Layer",
     "Small Bet / Advanced Validation"
   ],
@@ -22,15 +23,27 @@
     "Không phải công cụ săn đấu thầu; procurement chỉ là một nguồn evidence và một execution branch.",
     "Không ép mọi signal phải biến thành opportunity.",
     "Không coi media discovery là primary truth.",
-    "Không hard-filter bức tranh theo vốn, địa lý hoặc nghề nghiệp cá nhân."
+    "Không hard-filter bức tranh theo vốn, địa lý hoặc nghề nghiệp cá nhân.",
+    "Không giả vờ dữ liệu đầy đủ khi Source Coverage đang chỉ ra blind spot."
   ],
   "release_gate": {
     "information_first_frontend": true,
+    "attention_queue": true,
     "open_world_entity_discovery": true,
     "contradiction_layer": true,
+    "thesis_lifecycle": true,
     "source_coverage_visible": true,
     "personal_action_layer_non_blinding": true,
     "advanced_procurement_demoted": true,
-    "corporate_primary_source_required": true
-  }
+    "frontend_javascript_validated": true,
+    "corporate_primary_source_tls_verified": true
+  },
+  "known_non_blocking_blind_spots": [
+    "Corporate disclosures đã truy cập HNX bằng TLS verification đầy đủ nhưng lớp qualified-event extraction còn mỏng; HOSE vẫn cần bổ sung.",
+    "NSO có lúc connection-reset nên macro, labor và consumption cần nguồn dự phòng.",
+    "Regional real economy và đất đai/BĐS vẫn thiếu collector active đủ rộng.",
+    "Capital markets/bonds và FDI cần thêm nguồn độc lập và parser dữ liệu sâu hơn.",
+    "V3 Official chốt kiến trúc sản phẩm; độ phủ nguồn tiếp tục được mở rộng sau release."
+  ],
+  "release_rule": "Sau V3.0, ưu tiên tăng source coverage, evidence depth, entity resolution, history và precision. Không thay kiến trúc lõi nếu không có bằng chứng rằng thay đổi đó làm tăng khả năng nhìn thấy chuyển động quan trọng."
 }
