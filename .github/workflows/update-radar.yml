@@ -133,6 +133,9 @@ jobs:
       - name: Build periodic intelligence reports
         run: python pipeline/report_intel.py
 
+      - name: Enforce report falsification quality
+        run: python pipeline/report_quality.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
