@@ -14,6 +14,7 @@ OUTPUT = DATA / "system_meta.json"
 MODULES = {
     "radar": "radar.json",
     "change_detector": "intelligence.json",
+    "money_flow": "money_flow_intelligence.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
