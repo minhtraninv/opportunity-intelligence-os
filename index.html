@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Opportunity Intelligence OS — hệ thống săn tín hiệu và cơ hội vốn nhỏ tại Việt Nam." />
+  <title>Opportunity Intelligence OS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand-mark">OI</div>
+      <div>
+        <div class="brand">Opportunity Intelligence OS</div>
+        <div class="subbrand">Vietnam · Small-capital opportunity intelligence</div>
+      </div>
+    </div>
+    <div class="top-meta">
+      <span id="updatedAt">Đang tải dữ liệu…</span>
+      <span class="status-dot"></span>
+      <span id="dataStatus">DATA</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel compact">
+        <h2>Bộ lọc cá nhân</h2>
+        <label>Vốn tối đa</label>
+        <select id="capitalFilter">
+          <option value="10">≤ 10 triệu</option>
+          <option value="30">≤ 30 triệu</option>
+          <option value="50" selected>≤ 50 triệu</option>
+          <option value="100">≤ 100 triệu</option>
+          <option value="500">≤ 500 triệu</option>
+        </select>
+
+        <label>Thời gian có doanh thu</label>
+        <select id="cashFilter">
+          <option value="999" selected>Tất cả</option>
+          <option value="14">≤ 2 tuần</option>
+          <option value="30">≤ 1 tháng</option>
+          <option value="90">≤ 3 tháng</option>
+        </select>
+
+        <label>Khu vực</label>
+        <select id="geoFilter">
+          <option value="all" selected>Toàn quốc</option>
+          <option value="north">Miền Bắc</option>
+          <option value="south">Miền Nam</option>
+          <option value="national">Quốc gia / online</option>
+        </select>
+
+        <div class="rule-note">
+          <strong>Nguyên tắc:</strong> ưu tiên cơ hội có người mua rõ, vốn thấp, kiểm chứng nhanh và có kill criteria.
+        </div>
+      </section>
+
+      <section class="panel compact">
+        <h2>Chất lượng tín hiệu</h2>
+        <div class="metric-row"><span>Nguồn chính thức</span><strong id="officialCount">—</strong></div>
+        <div class="metric-row"><span>Tín hiệu đang theo dõi</span><strong id="signalCount">—</strong></div>
+        <div class="metric-row"><span>Cơ hội hành động</span><strong id="oppCount">—</strong></div>
+        <div class="metric-row"><span>Buyer archetypes</span><strong id="buyerCount">—</strong></div>
+        <div class="metric-row"><span>Headline mới tự động</span><strong id="rawFeedCount">—</strong></div>
+      </section>
+
+      <section class="panel compact warning-panel">
+        <h2>Chống tự lừa mình</h2>
+        <ul class="plain-list">
+          <li>Không coi tin tức = nhu cầu.</li>
+          <li>Không coi ngành tăng = cơ hội của mình.</li>
+          <li>Không chấm điểm nếu thiếu bằng chứng.</li>
+          <li>Không mở rộng trước khi có tín hiệu trả tiền.</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="content">
+      <nav class="tabs" aria-label="Điều hướng chính">
+        <button class="tab active" data-tab="today">Hôm nay</button>
+        <button class="tab" data-tab="signals">Signals</button>
+        <button class="tab" data-tab="opportunities">Opportunities</button>
+        <button class="tab" data-tab="buyers">Buyer Radar</button>
+        <button class="tab" data-tab="validate">Validate</button>
+      </nav>
+
+      <section id="today" class="tab-view active">
+        <div class="hero-grid">
+          <article class="hero panel">
+            <div class="eyebrow">WHAT CHANGED?</div>
+            <h1>Những thay đổi đáng điều tra trước khi thành câu chuyện đại chúng.</h1>
+            <p>Hệ thống không cố dự đoán tương lai. Nó tìm nơi <strong>dòng tiền + chính sách + nhu cầu</strong> bắt đầu hội tụ, rồi ép mọi giả thuyết phải qua bài kiểm chứng vốn nhỏ.</p>
+          </article>
+          <article class="panel thesis-card">
+            <div class="eyebrow">CURRENT THESIS</div>
+            <div id="thesisText" class="thesis-text">Đang tải…</div>
+          </article>
+        </div>
+
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">EARLY SIGNALS</div>
+            <h2>Tín hiệu cần chú ý</h2>
+          </div>
+          <span class="muted">Ưu tiên thay đổi có bằng chứng, không ưu tiên độ ồn truyền thông.</span>
+        </div>
+        <div id="topSignals" class="signal-grid"></div>
+
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">TOP FOR YOUR CAPITAL</div>
+            <h2>Cơ hội phù hợp bộ lọc hiện tại</h2>
+          </div>
+          <span class="muted">Điểm được tính lại theo vốn bạn chọn.</span>
+        </div>
+        <div id="topOpportunities" class="opportunity-list"></div>
+      </section>
+
+      <section id="signals" class="tab-view">
+        <div class="section-head">
+          <div><div class="eyebrow">SIGNAL FEED</div><h2>Dấu chân tiền & nhu cầu</h2></div>
+          <div class="legend"><span class="tag official">Official</span><span class="tag hypothesis">Hypothesis</span></div>
+        </div>
+        <div id="allSignals" class="signal-list"></div>
+
+        <div class="section-head">
+          <div><div class="eyebrow">AUTO-COLLECTED</div><h2>Fresh official feed</h2></div>
+          <span class="muted">Headline mới chỉ là manh mối; chưa được phép tự động biến thành opportunity.</span>
+        </div>
+        <div id="rawFeed" class="signal-list"></div>
+      </section>
+
+      <section id="opportunities" class="tab-view">
+        <div class="section-head">
+          <div><div class="eyebrow">OPPORTUNITY CARDS</div><h2>Thứ có thể thử bằng tiền thật</h2></div>
+          <span class="muted">Mỗi card phải có buyer, test nhỏ và điều kiện loại bỏ.</span>
+        </div>
+        <div id="allOpportunities" class="opportunity-list"></div>
+      </section>
+
+      <section id="buyers" class="tab-view">
+        <div class="section-head">
+          <div><div class="eyebrow">WHO IS BUYING?</div><h2>Buyer Radar</h2></div>
+          <span class="muted">Tìm người đang có ngân sách trước khi tìm “ngành hot”.</span>
+        </div>
+        <div id="buyerGrid" class="buyer-grid"></div>
+      </section>
+
+      <section id="validate" class="tab-view">
+        <div class="validation-layout">
+          <article class="panel">
+            <div class="eyebrow">VALIDATION WORKSPACE</div>
+            <h2 id="validateTitle">Chọn một cơ hội để điều tra</h2>
+            <p id="validateIntro" class="muted">Từ tab Opportunities, bấm “Điều tra”. Hệ thống sẽ tạo một kế hoạch test nhỏ và kill criteria.</p>
+            <div id="validationBody"></div>
+          </article>
+          <article class="panel notebook">
+            <div class="eyebrow">FIELD NOTES</div>
+            <h2>Nhật ký kiểm chứng</h2>
+            <textarea id="fieldNotes" placeholder="Ghi lại ai đã trả lời, báo giá, phản đối, bằng chứng nhu cầu, lý do từ chối…"></textarea>
+            <div class="button-row">
+              <button id="saveNotes" class="btn secondary">Lưu trên trình duyệt</button>
+              <button id="clearNotes" class="btn ghost">Xóa</button>
+            </div>
+            <p id="noteStatus" class="muted small"></p>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <span>Opportunity Intelligence OS · V1</span>
+    <span>Không phải khuyến nghị đầu tư. Mọi opportunity là giả thuyết cần kiểm chứng.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
