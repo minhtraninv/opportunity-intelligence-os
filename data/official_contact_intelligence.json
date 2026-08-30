@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-08-30T19:13:47.271102+00:00",
+    "generated_at": "2026-08-30T19:23:47.137559+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
@@ -13,9 +13,9 @@
     "email_candidates_seen": 29,
     "verified_contact_entities": 3,
     "verified_contact_paths": 3,
-    "filtered_non_organization": 2,
-    "filtered_personal_like_mailboxes": 24,
-    "errors": 1
+    "filtered_non_organization": 1,
+    "filtered_personal_like_mailboxes": 25,
+    "errors": 0
   },
   "contacts": [
     {
@@ -31,7 +31,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500081&notifyId=IB2600500081&inputResultId=4a8f12a2-edef-4fa4-8a4b-90b3efb8f718&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500081&planNo=PL2600272584&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-08-30T19:13:47.271102+00:00",
+          "verified_at": "2026-08-30T19:23:47.137559+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -53,7 +53,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600461109&notifyId=IB2600461109&inputResultId=06237204-22ff-4978-8a40-2d76a905029b&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600461109&planNo=PL2600263915&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-08-30T19:13:47.271102+00:00",
+          "verified_at": "2026-08-30T19:23:47.137559+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -75,7 +75,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600304737&notifyId=IB2600304737&inputResultId=354f7f6e-8371-403a-b0cf-8e514325da56&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600304737&planNo=PL2600175457&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-08-30T19:13:47.271102+00:00",
+          "verified_at": "2026-08-30T19:23:47.137559+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -85,9 +85,7 @@
       "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
     }
   ],
-  "errors": [
-    "vn0100684378 9dbc6ce5-7a4b-4510-b9ee-fdf8f7ca5ae8: ValueError: non-JSON response"
-  ],
+  "errors": [],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
     "Email có dạng cá nhân không được surface mặc định dù xuất hiện trong nguồn công khai.",

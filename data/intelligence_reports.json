@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-08-30T19:14:00.895479+00:00",
+    "generated_at": "2026-08-30T19:24:00.029815+00:00",
     "local_date": "2026-08-31",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-08-30T19:14:00.993376+00:00"
+    "trust_hardened_at": "2026-08-30T19:24:00.108346+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-08-31",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-08-30T19:14:00.894767+00:00",
-      "local_generated_at": "2026-08-31T02:14:00.892319+07:00",
+      "generated_at": "2026-08-30T19:24:00.029209+00:00",
+      "local_generated_at": "2026-08-31T02:24:00.027727+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 1,
@@ -29,28 +29,7 @@
         "Độ phủ nguồn hiện có 3 domain STRONG, 7 WEAK, 3 BROKEN và 2 MISSING.",
         "Lịch sử mới có 1/2 ngày khuyến nghị cho Daily Intelligence Brief; mọi kết luận về hướng dài hơn vẫn là provisional."
       ],
-      "what_changed": [
-        {
-          "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất -8. Thesis đang mất độ tin cậy: điểm sau phản chứng -8."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất -12. Thesis giảm mạnh và cần theo dõi khả năng đảo trạng thái: điểm sau phản chứng -12."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất -3. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -3."
-        },
-        {
-          "type": "theme",
-          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất -20. Thesis giảm mạnh và cần theo dõi khả năng đảo trạng thái: điểm sau phản chứng -20."
-        }
-      ],
+      "what_changed": [],
       "entity_watch": [],
       "regional_watch": [
         {
@@ -250,9 +229,8 @@
       ],
       "period_delta": {
         "available": false,
-        "theme_changes": [],
-        "new_entities": [],
-        "coverage_change": null
+        "current_state_only": true,
+        "reason": "insufficient_comparable_daily_history"
       },
       "snapshot": {
         "themes": {
@@ -260,14 +238,14 @@
             "label": "Gia tốc thương mại & logistics",
             "score": 73,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 60,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "public_infrastructure": {
@@ -281,28 +259,28 @@
             "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
             "score": 35,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 24,
             "state": "learning_history",
-            "direction": "strengthening",
+            "direction": "stable",
             "observation_days": 1
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 22,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 13,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           }
         },
@@ -406,8 +384,8 @@
       "period_key": "2026-W36",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-08-30T19:14:00.895074+00:00",
-      "local_generated_at": "2026-08-31T02:14:00.892319+07:00",
+      "generated_at": "2026-08-30T19:24:00.029468+00:00",
+      "local_generated_at": "2026-08-31T02:24:00.027727+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 1,
@@ -500,14 +478,14 @@
             "label": "Gia tốc thương mại & logistics",
             "score": 73,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 60,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "public_infrastructure": {
@@ -521,28 +499,28 @@
             "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
             "score": 35,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 24,
             "state": "learning_history",
-            "direction": "strengthening",
+            "direction": "stable",
             "observation_days": 1
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 22,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 13,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           }
         },
@@ -646,8 +624,8 @@
       "period_key": "2026-08",
       "period_state": "final",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-08-30T19:14:00.895293+00:00",
-      "local_generated_at": "2026-08-31T02:14:00.892319+07:00",
+      "generated_at": "2026-08-30T19:24:00.029641+00:00",
+      "local_generated_at": "2026-08-31T02:24:00.027727+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 1,
@@ -740,14 +718,14 @@
             "label": "Gia tốc thương mại & logistics",
             "score": 73,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 60,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "public_infrastructure": {
@@ -761,28 +739,28 @@
             "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
             "score": 35,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 24,
             "state": "learning_history",
-            "direction": "strengthening",
+            "direction": "stable",
             "observation_days": 1
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 22,
             "state": "learning_history",
-            "direction": "reversal_watch",
+            "direction": "stable",
             "observation_days": 1
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 13,
             "state": "learning_history",
-            "direction": "weakening",
+            "direction": "stable",
             "observation_days": 1
           }
         },

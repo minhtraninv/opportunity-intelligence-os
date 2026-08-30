@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "3.0.1",
-    "generated_at": "2026-08-30T19:14:01.095414+00:00",
+    "generated_at": "2026-08-30T19:24:00.207282+00:00",
     "mode": "prepublication_trust_gate",
     "status": "pass"
   },
@@ -9,7 +9,7 @@
     {
       "name": "money_flow_verified_gate",
       "passed": true,
-      "detail": "all directional theme states have verified family + institution support"
+      "detail": "directional states and public family counts use verified evidence only"
     },
     {
       "name": "entity_publication_gate",
@@ -27,9 +27,14 @@
       "detail": "STRONG domains meet their required evidence grade"
     },
     {
+      "name": "methodology_comparability_gate",
+      "passed": true,
+      "detail": "methodology=3.0.1-trust-semantics-v1 expected=3.0.1-trust-semantics-v1"
+    },
+    {
       "name": "report_maturity_gate",
       "passed": true,
-      "detail": "period reports respect history readiness and entity verification"
+      "detail": "period reports respect history readiness, methodology comparability and entity verification"
     },
     {
       "name": "release_version_gate",
