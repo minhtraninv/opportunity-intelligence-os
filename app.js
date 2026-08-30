@@ -13,6 +13,8 @@ const state = {
   geo: savedActionPrefs.geo || 'all',
   selectedOpportunity: null,
   rawFeed: {items: [], updated_at: null},
+  rawLoaded: false,
+  intelligenceLoaded: false,
   intelligence: {
     meta: {status: 'warming_up', history_days: 0, required_history_days: 14},
     category_changes: [], coverage: {}, warnings: []
@@ -39,7 +41,9 @@ const esc = (value) => String(value ?? '')
   .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
   .replaceAll('"','&quot;').replaceAll("'",'&#039;');
 const safeUrl = (value) => { try { const u = new URL(value); return ['http:','https:'].includes(u.protocol) ? u.href : '#'; } catch { return '#'; } };
-const fmtDate = (iso) => { try { return new Intl.DateTimeFormat('vi-VN',{dateStyle:'medium',timeStyle:'short'}).format(new Date(iso)); } catch { return iso || '—'; } };
+const dateFmt = new Intl.DateTimeFormat('vi-VN',{dateStyle:'medium',timeStyle:'short'});
+const shortDateFmt = new Intl.DateTimeFormat('vi-VN');
+const fmtDate = (iso) => { try { return dateFmt.format(new Date(iso)); } catch { return iso || '—'; } };
 const money = (m) => m < 1 ? '<1 triệu' : `${m} triệu`;
 const daysText = (d) => d <= 14 ? '≤ 2 tuần' : d <= 30 ? '≤ 1 tháng' : d <= 90 ? '≤ 3 tháng' : d <= 180 ? '≤ 6 tháng' : `${d} ngày`;
 const clamp = (n,min,max) => Math.max(min,Math.min(max,n));
@@ -120,18 +124,6 @@ function changeCard(change){
   const delta = change.delta_pct == null ? 'chưa tính' : `${change.delta_pct>=0?'+':''}${change.delta_pct}%`;
   return `<article class="signal-card"><div class="signal-top"><div><div class="signal-title">${esc(CATEGORY_LABELS[change.category]||change.category)}</div><div class="signal-meta"><span class="pill ${['accelerating','emerging'].includes(trend)?'up':''}">${esc(TREND_LABELS[trend]||trend)}</span><span class="pill">Confidence ${esc(change.confidence)}/100</span></div></div><div><div class="signal-score ${cls}">${esc(change.recent_7d)}</div><div class="muted small" style="text-align:center;margin-top:4px">7 ngày</div></div></div><div class="signal-why">${esc(change.explanation)}</div><div class="signal-evidence">Baseline 21 ngày: ${esc(change.baseline_21d)} · Quy đổi/7 ngày: ${esc(change.baseline_expected_7d)} · Chênh lệch: ${esc(active?delta:'khóa khi chưa đủ lịch sử')} · Nguồn 7 ngày: ${esc(change.source_diversity_7d)}</div></article>`;
 }
-function renderChangeDetector(){
-  const intel = state.intelligence || {};
-  const meta = intel.meta || {};
-  const container = document.getElementById('changeDetector');
-  const note = document.getElementById('changeDetectorNote');
-  if(!container || !note) return;
-  if(meta.status === 'warming_up') note.textContent = `Đang học baseline ${meta.history_days||0}/${meta.required_history_days||14} ngày · chưa gọi biến động là trend.`;
-  else if(meta.status === 'active') note.textContent = `Baseline hoạt động · recent ${meta.recent_window_days} ngày so với ${meta.baseline_window_days} ngày trước.`;
-  else note.textContent = 'Change Detector chưa có dữ liệu.';
-  const rows = (intel.category_changes || []).slice(0,6);
-  container.innerHTML = rows.length ? rows.map(changeCard).join('') : '<div class="panel muted">Chưa có lịch sử đủ để dựng Change Detector.</div>';
-}
 function oppCard(o){
   const score = o.personalized_score ?? personalizedScore(o);
   const cls = score >= 80 ? 'good' : score >= 65 ? 'mid' : 'low';
@@ -154,49 +146,130 @@ function rawFeedRow(x){
 }
 
 function setText(id,value){ const el=document.getElementById(id); if(el) el.textContent=value; }
-function render(){
+function activeTabId(){ return document.querySelector('.tab.active')?.dataset.tab || 'overview'; }
+
+function renderCore(){
   const d = state.data; if(!d) return;
-  const intel = state.intelligence || {};
-  const coverage = intel.coverage || {};
-  const meta = intel.meta || {};
-  const newest = latestTimestamp(d.meta?.updated_at,state.rawFeed.updated_at,meta.generated_at);
+  const meta = state.intelligence?.meta || {};
+  const coverage = state.intelligence?.coverage || {};
+  const newest = latestTimestamp(d.meta?.updated_at, state.rawLoaded ? state.rawFeed.updated_at : null, state.intelligenceLoaded ? meta.generated_at : null);
   setText('updatedAt',`Cập nhật ${fmtDate(newest)}`);
-  setText('dataStatus',meta.status==='active'?'INTELLIGENCE ACTIVE':'LEARNING BASELINE');
   setText('officialCount',(d.sources||[]).filter(s=>s.authority==='official').length);
   setText('signalCount',(d.signals||[]).length);
   setText('oppCount',(d.opportunities||[]).length);
   setText('buyerCount',(d.buyers||[]).length);
-  setText('rawFeedCount',(state.rawFeed.items||[]).length);
-  setText('historicalEventCount',coverage.historical_events ?? 0);
-  setText('historyDays',`${meta.history_days ?? 0}/${meta.required_history_days ?? 14} ngày`);
+  setText('rawFeedCount',state.rawLoaded ? (state.rawFeed.items||[]).length : '—');
+  setText('historicalEventCount',state.intelligenceLoaded ? (coverage.historical_events ?? 0) : '—');
+  setText('historyDays',state.intelligenceLoaded ? `${meta.history_days ?? 0}/${meta.required_history_days ?? 14} ngày` : 'đang tải nền…');
   setText('thesisText',d.meta?.current_thesis || '—');
+}
+
+function renderChangeDetector(){
+  const intel = state.intelligence || {};
+  const meta = intel.meta || {};
+  const container = document.getElementById('changeDetector');
+  const note = document.getElementById('changeDetectorNote');
+  if(!container || !note) return;
+  if(meta.status === 'warming_up') note.textContent = `Đang học baseline ${meta.history_days||0}/${meta.required_history_days||14} ngày · chưa gọi biến động là trend.`;
+  else if(meta.status === 'active') note.textContent = `Baseline hoạt động · recent ${meta.recent_window_days} ngày so với ${meta.baseline_window_days} ngày trước.`;
+  else note.textContent = 'Change Detector chưa có dữ liệu.';
+  const rows = (intel.category_changes || []).slice(0,6);
+  container.innerHTML = rows.length ? rows.map(changeCard).join('') : '<div class="panel muted">Chưa có lịch sử đủ để dựng Change Detector.</div>';
+}
+
+let intelligencePromise = null;
+function ensureIntelligence(){
+  if(state.intelligenceLoaded) return Promise.resolve(state.intelligence);
+  if(intelligencePromise) return intelligencePromise;
+  intelligencePromise = fetch('data/intelligence.json',{cache:'no-store'})
+    .then(r=>r.ok?r.json():state.intelligence)
+    .catch(()=>state.intelligence)
+    .then(data=>{
+      state.intelligence = data || state.intelligence;
+      state.intelligenceLoaded = true;
+      renderCore();
+      return state.intelligence;
+    });
+  return intelligencePromise;
+}
+
+let rawPromise = null;
+function ensureRawFeed(){
+  if(state.rawLoaded) return Promise.resolve(state.rawFeed);
+  if(rawPromise) return rawPromise;
+  rawPromise = fetch('data/raw_feed.json',{cache:'no-store'})
+    .then(r=>r.ok?r.json():({items:[]}))
+    .catch(()=>({items:[]}))
+    .then(data=>{
+      state.rawFeed = data || {items:[]};
+      state.rawLoaded = true;
+      renderCore();
+      return state.rawFeed;
+    });
+  return rawPromise;
+}
+
+async function renderToday(){
+  if(!state.data) return;
+  await ensureIntelligence();
+  if(activeTabId() !== 'today') return;
   renderChangeDetector();
-
   const topSignals = document.getElementById('topSignals');
-  if(topSignals) topSignals.innerHTML = (d.signals||[]).slice().sort((a,b)=>b.score-a.score).slice(0,6).map(signalCard).join('');
-  const allSignals = document.getElementById('allSignals');
-  if(allSignals) allSignals.innerHTML = (d.signals||[]).slice().sort((a,b)=>new Date(b.date)-new Date(a.date)).map(s=>`<article class="signal-row"><div class="signal-date">${esc(new Intl.DateTimeFormat('vi-VN').format(new Date(s.date)))}<br><span class="tag official">Official evidence</span></div><div><h3>${esc(s.title)}</h3><p>${esc(s.why_now)}</p><div class="evidence-links" style="margin-top:8px">${evidenceLinks(s.source_ids)}</div></div><div class="signal-side"><strong>${esc(s.score)}/100</strong><br><span class="muted small">${esc(s.momentum)}</span><br><span class="tag hypothesis">${esc(s.stage)}</span></div></article>`).join('');
-
-  const opps = rankedOpps();
+  if(topSignals) topSignals.innerHTML = (state.data.signals||[]).slice().sort((a,b)=>b.score-a.score).slice(0,6).map(signalCard).join('');
   const topOpps = document.getElementById('topOpportunities');
-  const allOpps = document.getElementById('allOpportunities');
-  if(topOpps) topOpps.innerHTML = opps.slice(0,5).map(oppCard).join('') || '<div class="panel muted">Chưa có Small Bet hypotheses.</div>';
-  if(allOpps) allOpps.innerHTML = opps.map(oppCard).join('') || '<div class="panel muted">Chưa có Small Bet hypotheses.</div>';
+  if(topOpps) topOpps.innerHTML = rankedOpps().slice(0,5).map(oppCard).join('') || '<div class="panel muted">Chưa có Small Bet hypotheses.</div>';
+  bindInvestigate(topOpps);
+}
 
+async function renderSignals(){
+  if(!state.data) return;
+  const allSignals = document.getElementById('allSignals');
+  if(allSignals){
+    allSignals.innerHTML = (state.data.signals||[]).slice().sort((a,b)=>new Date(b.date)-new Date(a.date)).map(s=>`<article class="signal-row"><div class="signal-date">${esc(shortDateFmt.format(new Date(s.date)))}<br><span class="tag official">Official evidence</span></div><div><h3>${esc(s.title)}</h3><p>${esc(s.why_now)}</p><div class="evidence-links" style="margin-top:8px">${evidenceLinks(s.source_ids)}</div></div><div class="signal-side"><strong>${esc(s.score)}/100</strong><br><span class="muted small">${esc(s.momentum)}</span><br><span class="tag hypothesis">${esc(s.stage)}</span></div></article>`).join('');
+  }
+  const rawFeed = document.getElementById('rawFeed');
+  if(rawFeed && !state.rawLoaded) rawFeed.innerHTML = '<div class="panel muted">Đang tải fresh source feed…</div>';
+  await ensureRawFeed();
+  if(activeTabId() !== 'signals') return;
   const raw = (state.rawFeed.items||[]).slice().sort((a,b)=>{
     const q = x => x.signal_quality==='curated'?3:x.signal_quality==='candidate'?2:1;
     return q(b)-q(a) || new Date(b.first_seen_at||b.collected_at||0)-new Date(a.first_seen_at||a.collected_at||0);
-  }).slice(0,60);
-  const rawFeed = document.getElementById('rawFeed');
+  }).slice(0,40);
   if(rawFeed) rawFeed.innerHTML = raw.length ? raw.map(rawFeedRow).join('') : '<div class="panel muted">Chưa có headline mới.</div>';
-
-  const buyerGrid = document.getElementById('buyerGrid');
-  if(buyerGrid) buyerGrid.innerHTML = (d.buyers||[]).map(b=>`<article class="buyer-card"><div class="eyebrow">${esc(b.sector)}</div><h3>${esc(b.role)}</h3><div class="trigger"><strong>Trigger:</strong> ${esc(b.trigger)}</div><ul>${(b.likely_buys||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><div class="muted small"><strong>Cách tiếp cận:</strong> ${esc(b.access_path)}</div></article>`).join('');
-  bindInvestigate();
 }
 
-function bindInvestigate(){
-  document.querySelectorAll('.investigate').forEach(btn=>btn.addEventListener('click',()=>{state.selectedOpportunity=btn.dataset.id;openValidation(btn.dataset.id);}));
+function renderOpportunities(){
+  if(!state.data) return;
+  const allOpps = document.getElementById('allOpportunities');
+  if(allOpps) allOpps.innerHTML = rankedOpps().map(oppCard).join('') || '<div class="panel muted">Chưa có Small Bet hypotheses.</div>';
+  bindInvestigate(allOpps);
+}
+
+function renderBuyerArchetypes(){
+  if(!state.data) return;
+  const buyerGrid = document.getElementById('buyerGrid');
+  if(buyerGrid) buyerGrid.innerHTML = (state.data.buyers||[]).map(b=>`<article class="buyer-card"><div class="eyebrow">${esc(b.sector)}</div><h3>${esc(b.role)}</h3><div class="trigger"><strong>Trigger:</strong> ${esc(b.trigger)}</div><ul>${(b.likely_buys||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><div class="muted small"><strong>Cách tiếp cận:</strong> ${esc(b.access_path)}</div></article>`).join('');
+}
+
+function renderTab(id){
+  if(id === 'today') return renderToday();
+  if(id === 'signals') return renderSignals();
+  if(id === 'opportunities') return renderOpportunities();
+  if(id === 'buyers') return renderBuyerArchetypes();
+}
+
+/* Compatibility entry point: only repaint the visible tab, never hidden views. */
+function render(){
+  renderCore();
+  return renderTab(activeTabId());
+}
+
+function bindInvestigate(root=document){
+  root?.querySelectorAll?.('.investigate').forEach(btn=>{
+    if(btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click',()=>{state.selectedOpportunity=btn.dataset.id;openValidation(btn.dataset.id);});
+  });
 }
 function openValidation(id){
   const o = state.data?.opportunities?.find(x=>x.id===id); if(!o) return;
@@ -210,14 +283,20 @@ function openValidation(id){
 function switchTab(id){
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));
   document.querySelectorAll('.tab-view').forEach(x=>x.classList.toggle('active',x.id===id));
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo(0,0);
+  requestAnimationFrame(()=>renderTab(id));
 }
 
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.tab)));
 syncActionControls();
-document.getElementById('capitalFilter')?.addEventListener('change',e=>{state.capital=Number(e.target.value);saveActionPrefs();render();});
-document.getElementById('cashFilter')?.addEventListener('change',e=>{state.cashDays=Number(e.target.value);saveActionPrefs();render();});
-document.getElementById('geoFilter')?.addEventListener('change',e=>{state.geo=e.target.value;saveActionPrefs();render();});
+function onActionPrefChange(){
+  saveActionPrefs();
+  const tab = activeTabId();
+  if(tab === 'today' || tab === 'opportunities') requestAnimationFrame(()=>renderTab(tab));
+}
+document.getElementById('capitalFilter')?.addEventListener('change',e=>{state.capital=Number(e.target.value);onActionPrefChange();});
+document.getElementById('cashFilter')?.addEventListener('change',e=>{state.cashDays=Number(e.target.value);onActionPrefChange();});
+document.getElementById('geoFilter')?.addEventListener('change',e=>{state.geo=e.target.value;onActionPrefChange();});
 document.getElementById('saveNotes')?.addEventListener('click',()=>{
   if(!state.selectedOpportunity){setText('noteStatus','Chưa chọn Small Bet.');return;}
   localStorage.setItem(`oi-notes-${state.selectedOpportunity}`,document.getElementById('fieldNotes')?.value||''); setText('noteStatus','Đã lưu cục bộ.');
@@ -227,12 +306,15 @@ document.getElementById('clearNotes')?.addEventListener('click',()=>{
   const notes=document.getElementById('fieldNotes'); if(notes) notes.value=''; setText('noteStatus','Đã xóa.');
 });
 
-Promise.all([
-  fetch('data/radar.json',{cache:'no-store'}).then(r=>{if(!r.ok) throw new Error(`radar HTTP ${r.status}`);return r.json();}),
-  fetch('data/raw_feed.json',{cache:'no-store'}).then(r=>r.ok?r.json():({items:[]})).catch(()=>({items:[]})),
-  fetch('data/intelligence.json',{cache:'no-store'}).then(r=>r.ok?r.json():state.intelligence).catch(()=>state.intelligence)
-]).then(([data,raw,intelligence])=>{
-  state.data=data; state.rawFeed=raw||{items:[]}; state.intelligence=intelligence||state.intelligence; render();
-}).catch(err=>{
-  setText('updatedAt','Không tải được dữ liệu lõi'); setText('dataStatus','ERROR'); setText('thesisText',`Lỗi dữ liệu: ${err.message}`);
-});
+fetch('data/radar.json',{cache:'no-store'})
+  .then(r=>{if(!r.ok) throw new Error(`radar HTTP ${r.status}`);return r.json();})
+  .then(data=>{
+    state.data=data;
+    renderCore();
+    renderTab(activeTabId());
+    const idle = window.requestIdleCallback || ((fn)=>setTimeout(fn,1200));
+    idle(()=>ensureIntelligence(), {timeout:2500});
+  })
+  .catch(err=>{
+    setText('updatedAt','Không tải được dữ liệu lõi'); setText('dataStatus','ERROR'); setText('thesisText',`Lỗi dữ liệu: ${err.message}`);
+  });
