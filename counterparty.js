@@ -40,9 +40,20 @@
         <span id="counterpartyStatus" class="muted">Đang dựng dossier…</span>
       </div>
       <div class="panel" style="margin-bottom:16px">
-        <strong>Nguyên tắc:</strong> hệ thống chỉ chọn counterparty từ bằng chứng award history. Email, phone, website hoặc người phụ trách chỉ được hiển thị khi có nguồn công khai xác minh; chưa có thì ghi <strong>UNRESOLVED</strong>.
+        <strong>Nguyên tắc:</strong> hệ thống chỉ chọn counterparty từ bằng chứng award history. Contact từ MSC chỉ lấy field business-email đã whitelist và phải khớp đúng orgCode/taxCode. Website/email/phone ngoài MSC chỉ hiện khi có nguồn công khai xác minh; chưa đủ bằng chứng thì ghi <strong>UNRESOLVED</strong>.
       </div>
       <div id="counterpartyDossierGrid" class="buyer-grid"></div>`);
+  }
+
+  function mergeContacts(base, official){
+    const all = [...(base || []), ...(official || [])];
+    const seen = new Set();
+    return all.filter(x => {
+      const key = `${String(x.type || '').toLowerCase()}|${String(x.value || '').toLowerCase()}`;
+      if(!x.value || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   }
 
   function contactBlock(counterparty){
@@ -55,7 +66,12 @@
     }
     return `<div style="margin-top:8px;padding:8px 10px;border:1px solid var(--line);border-radius:10px">
       <div class="eyebrow">VERIFIED CONTACT PATHS</div>
-      ${contacts.map(x => `<div class="muted small">${esc(x.type || 'contact')}: ${esc(x.value || '')}${x.source_url ? ` · <a href="${esc(safeUrl(x.source_url))}" target="_blank" rel="noopener noreferrer">nguồn</a>` : ''}</div>`).join('')}
+      ${contacts.map(x => `<div class="muted small" style="margin-top:4px">
+        <strong>${esc(x.type || 'contact')}:</strong> ${esc(x.value || '')}
+        ${x.scope ? ` · ${esc(x.scope)}` : ''}
+        ${x.source_url ? ` · <a href="${esc(safeUrl(x.source_url))}" target="_blank" rel="noopener noreferrer">nguồn</a>` : ''}
+      </div>`).join('')}
+      <div class="muted small" style="margin-top:6px">Verified contact chỉ xác nhận kênh công khai của đúng pháp nhân; không có nghĩa người nhận đang phụ trách gói hiện tại.</div>
     </div>`;
   }
 
@@ -100,24 +116,44 @@
     </article>`;
   }
 
-  fetch('data/counterparty_intelligence.json', {cache:'no-store'})
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
+  Promise.all([
+    fetch('data/counterparty_intelligence.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/official_contact_intelligence.json', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([data, officialData]) => {
       if(!data) return;
       ensureSection();
-      const coverage = data.coverage || {};
+
+      const officialByPartner = new Map((officialData?.contacts || []).map(x => [x.partner_id, x]));
+      const dossiers = (data.dossiers || []).map(dossier => ({
+        ...dossier,
+        counterparties: (dossier.counterparties || []).map(counterparty => {
+          const official = officialByPartner.get(counterparty.partner_id);
+          const paths = mergeContacts(counterparty.verified_contact_paths, official?.contact_paths);
+          return {
+            ...counterparty,
+            contact_status: paths.length ? 'verified' : 'unresolved',
+            verified_contact_paths: paths,
+          };
+        }),
+      }));
+
+      const allTargets = dossiers.flatMap(x => x.counterparties || []);
+      const verifiedTargets = allTargets.filter(x => (x.verified_contact_paths || []).length > 0).length;
+      const verifiedPaths = allTargets.reduce((sum,x) => sum + (x.verified_contact_paths || []).length, 0);
+      const unresolved = allTargets.length - verifiedTargets;
+
       const status = document.getElementById('counterpartyStatus');
       if(status){
-        status.textContent = `${coverage.dossiers_built ?? 0} dossier · ${coverage.counterparty_targets ?? 0} targets · ${coverage.verified_contact_paths ?? 0} verified contact paths · ${coverage.unresolved_contact_targets ?? 0} unresolved`;
+        status.textContent = `${dossiers.length} dossier · ${allTargets.length} targets · ${verifiedTargets} targets có contact · ${verifiedPaths} verified paths · ${unresolved} unresolved`;
       }
       const grid = document.getElementById('counterpartyDossierGrid');
       if(!grid) return;
-      const dossiers = (data.dossiers || [])
+      const visible = dossiers
         .slice()
         .sort((a,b) => Number(b.subcontract_fit_score || 0) - Number(a.subcontract_fit_score || 0))
         .slice(0,8);
-      grid.innerHTML = dossiers.length
-        ? dossiers.map(dossierCard).join('')
+      grid.innerHTML = visible.length
+        ? visible.map(dossierCard).join('')
         : '<div class="panel muted">Chưa có dossier vượt ngưỡng điều tra.</div>';
     })
     .catch(() => {});
