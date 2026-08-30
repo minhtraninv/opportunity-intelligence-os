@@ -1,17 +1,17 @@
 {
   "meta": {
     "version": "1.5.1",
-    "generated_at": "2026-08-30T15:25:04.407594+00:00",
+    "generated_at": "2026-08-30T15:29:29.987993+00:00",
     "mode": "counterparty_execution_dossiers_with_verified_contact_registry",
     "principle": "evidence_backed_counterparty_targets_and_dual_proof_contacts_no_fabrication"
   },
   "coverage": {
     "investigate_now_tenders": 14,
     "dossiers_built": 14,
-    "counterparty_targets": 38,
+    "counterparty_targets": 36,
     "verified_contact_targets": 7,
     "verified_contact_paths": 21,
-    "unresolved_contact_targets": 31,
+    "unresolved_contact_targets": 29,
     "contact_registry_entities": 2
   },
   "dossiers": [
@@ -53,6 +53,50 @@
           "why_this_counterparty": [
             "Match lịch sử cùng category: 81/100.",
             "Đã quan sát 7 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
             "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
           ],
           "target_roles_to_find": [
@@ -141,48 +185,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -252,6 +254,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -319,48 +365,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -430,6 +434,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -497,48 +545,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -608,6 +614,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -675,48 +725,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -786,6 +794,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -853,48 +905,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -964,6 +974,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -1031,48 +1085,6 @@
             "identity_note": "Trang liên hệ chính thức hiển thị mã số doanh nghiệp 0100686209 cùng thông tin Tổng công ty Viễn Thông MobiFone.",
             "last_verified_at": "2026-08-30T17:35:00+07:00"
           },
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
           "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
@@ -1142,6 +1154,50 @@
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         },
         {
+          "partner_id": "vn0101243150",
+          "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+          "contractor_code": "vn0101243150",
+          "tax_code": "0101243150",
+          "counterparty_score": 81,
+          "partner_evidence_score": 89,
+          "observed_wins": 4,
+          "observed_wins_same_category": 4,
+          "observed_winning_value_vnd": 422990000,
+          "buyers_observed": [
+            "Văn phòng Đại học Quốc gia Thành phố Hồ Chí Minh",
+            "Phòng Văn Hóa - Xã Hội Xã Hồng Vân",
+            "Phòng Văn hóa - Xã hội xã Tân Trịnh",
+            "Phòng Văn hoá - Xã hội phường Việt yên"
+          ],
+          "same_buyer_observed_awards": 0,
+          "same_buyer_same_category_awards": 0,
+          "latest_win_at": "2026-08-28T02:21:06+00:00",
+          "latest_tender_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "why_this_counterparty": [
+            "Match lịch sử cùng category: 81/100.",
+            "Đã quan sát 4 KQLCNT thắng cùng nhóm.",
+            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
+          ],
+          "target_roles_to_find": [
+            "Business Development / Sales B2G",
+            "Project Manager / Delivery",
+            "Technical Lead / Solution"
+          ],
+          "offers_to_test": [
+            "OCR/scan/QC hoặc migration một phần",
+            "nhân sự triển khai/module ngách",
+            "hỗ trợ vận hành sau triển khai"
+          ],
+          "contact_status": "unresolved",
+          "verified_contact_paths": [],
+          "identity_proof": null,
+          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
+          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
+          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
+        },
+        {
           "partner_id": "vn0100686209",
           "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
           "contractor_code": "vn0100686209",
@@ -1213,48 +1269,6 @@
           "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
           "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
           "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "contractor_code": "vn0109598719",
-          "tax_code": "0109598719",
-          "counterparty_score": 72,
-          "partner_evidence_score": 75,
-          "observed_wins": 2,
-          "observed_wins_same_category": 2,
-          "observed_winning_value_vnd": 823545000,
-          "buyers_observed": [
-            "Trường tiểu học Lê Quý Đôn",
-            "Trường THCS Võ Trường Toản"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-28T10:52:14+00:00",
-          "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 72/100.",
-            "Đã quan sát 2 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Business Development / Sales B2G",
-            "Project Manager / Delivery",
-            "Technical Lead / Solution"
-          ],
-          "offers_to_test": [
-            "OCR/scan/QC hoặc migration một phần",
-            "nhân sự triển khai/module ngách",
-            "hỗ trợ vận hành sau triển khai"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm digital_services; kiểm tra xem họ có nhu cầu thuê ngoài OCR/scan/QC hoặc migration một phần hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
         }
       ],
       "recommended_first_move": "Điều tra tối đa 3 historical prime candidates; tìm đúng vai trò BD/project rồi chào một phần việc nhỏ có phạm vi và đơn vị giá rõ.",
@@ -1292,47 +1306,6 @@
           "latest_win_at": "2026-08-30T08:58:08+00:00",
           "latest_tender_title": "Phê duyệt dự toán và kế hoạch sửa nhà vệ sinh và nhà bảo vệ Agribank CN Thạch Hà Hà Tĩnh II",
           "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600493098&notifyId=IB2600493098&inputResultId=b400f460-49cd-489a-af9e-0980281aa0a8&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493098&planNo=PL2600262593&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Kinh doanh dự án",
-            "Service / Facility Manager",
-            "Điều phối kỹ thuật"
-          ],
-          "offers_to_test": [
-            "tuyến bảo trì theo địa bàn",
-            "nhân công kỹ thuật",
-            "sourcing vật tư thay thế"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0309469439",
-          "contractor_name": "CÔNG TY TNHH KONE VIỆT NAM",
-          "contractor_code": "vn0309469439",
-          "tax_code": "0309469439",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 138718440,
-          "buyers_observed": [
-            "Trường Đại học Kiến trúc Thành phố Hồ Chí Minh"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-30T03:04:42+00:00",
-          "latest_tender_title": "Cung cấp dịch vụ bảo trì thang máy Kone tại hai cơ sở 196 Pasteur, phường Xuân Hòa và 48 Đặng Văn Bi, phường Thủ Đức, Thành phố Hồ Chí Minh",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500240&notifyId=IB2600500240&inputResultId=e7c5f432-e45e-41d2-bf49-7dda5a693fbd&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500240&planNo=PL2600266548&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "why_this_counterparty": [
             "Match lịch sử cùng category: 64/100.",
             "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
@@ -2018,47 +1991,6 @@
           "latest_win_at": "2026-08-30T08:58:08+00:00",
           "latest_tender_title": "Phê duyệt dự toán và kế hoạch sửa nhà vệ sinh và nhà bảo vệ Agribank CN Thạch Hà Hà Tĩnh II",
           "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600493098&notifyId=IB2600493098&inputResultId=b400f460-49cd-489a-af9e-0980281aa0a8&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493098&planNo=PL2600262593&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "why_this_counterparty": [
-            "Match lịch sử cùng category: 64/100.",
-            "Đã quan sát 1 KQLCNT thắng cùng nhóm.",
-            "Chưa có same-buyer history trong sample; chỉ dùng như historical prime candidate cùng nhóm."
-          ],
-          "target_roles_to_find": [
-            "Kinh doanh dự án",
-            "Service / Facility Manager",
-            "Điều phối kỹ thuật"
-          ],
-          "offers_to_test": [
-            "tuyến bảo trì theo địa bàn",
-            "nhân công kỹ thuật",
-            "sourcing vật tư thay thế"
-          ],
-          "contact_status": "unresolved",
-          "verified_contact_paths": [],
-          "identity_proof": null,
-          "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
-          "opening_hypothesis": "Bên này đã có bằng chứng thắng nhóm maintenance; kiểm tra xem họ có nhu cầu thuê ngoài tuyến bảo trì theo địa bàn hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
-          "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
-          "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn."
-        },
-        {
-          "partner_id": "vn0309469439",
-          "contractor_name": "CÔNG TY TNHH KONE VIỆT NAM",
-          "contractor_code": "vn0309469439",
-          "tax_code": "0309469439",
-          "counterparty_score": 64,
-          "partner_evidence_score": 68,
-          "observed_wins": 1,
-          "observed_wins_same_category": 1,
-          "observed_winning_value_vnd": 138718440,
-          "buyers_observed": [
-            "Trường Đại học Kiến trúc Thành phố Hồ Chí Minh"
-          ],
-          "same_buyer_observed_awards": 0,
-          "same_buyer_same_category_awards": 0,
-          "latest_win_at": "2026-08-30T03:04:42+00:00",
-          "latest_tender_title": "Cung cấp dịch vụ bảo trì thang máy Kone tại hai cơ sở 196 Pasteur, phường Xuân Hòa và 48 Đặng Văn Bi, phường Thủ Đức, Thành phố Hồ Chí Minh",
-          "evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500240&notifyId=IB2600500240&inputResultId=e7c5f432-e45e-41d2-bf49-7dda5a693fbd&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500240&planNo=PL2600266548&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "why_this_counterparty": [
             "Match lịch sử cùng category: 64/100.",
             "Đã quan sát 1 KQLCNT thắng cùng nhóm.",

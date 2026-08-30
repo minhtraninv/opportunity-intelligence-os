@@ -1,20 +1,123 @@
 {
   "meta": {
     "version": "1.6.1",
-    "generated_at": "2026-08-30T15:25:04.454836+00:00",
+    "generated_at": "2026-08-30T15:29:30.054122+00:00",
     "mode": "human_in_the_loop_deduplicated_counterparty_campaigns",
     "principle": "one_counterparty_category_campaign_can_absorb_multiple_market_signals_no_fake_lead_multiplication"
   },
   "coverage": {
-    "candidate_target_instances": 38,
-    "campaigns_ready": 2,
-    "unique_counterparties_ready": 2,
-    "related_opportunity_signals_in_campaigns": 9,
-    "unique_verified_contact_paths": 5,
-    "unresolved_target_instances": 29,
-    "unique_unresolved_counterparties": 10
+    "candidate_target_instances": 36,
+    "campaigns_ready": 3,
+    "unique_counterparties_ready": 3,
+    "related_opportunity_signals_in_campaigns": 16,
+    "unique_verified_contact_paths": 6,
+    "unresolved_target_instances": 20,
+    "unique_unresolved_counterparties": 8
   },
   "packs": [
+    {
+      "id": "vn0101243150::digital_services",
+      "campaign_type": "counterparty_category",
+      "partner_id": "vn0101243150",
+      "contractor_name": "CÔNG TY CỔ PHẦN MISA",
+      "tax_code": "0101243150",
+      "category": "digital_services",
+      "category_label": "số hóa / phần mềm / dịch vụ số",
+      "priority_score": 100,
+      "counterparty_score": 81,
+      "verified_contact_paths": [
+        {
+          "type": "email",
+          "value": "dauthaucong@misa.com.vn",
+          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "source_type": "official_msc_kqlcnt_contractor_object",
+          "verified_at": "2026-08-30T15:29:18.602500+00:00",
+          "identity_match": "exact_orgCode_or_taxCode",
+          "mailbox_class": "role_or_generic"
+        }
+      ],
+      "related_opportunity_count": 7,
+      "related_opportunities": [
+        {
+          "tender_code": "IB2600493339",
+          "buyer": "Sở Khoa học và Công nghệ tỉnh Thái Nguyên",
+          "title": "Gói thầu số 06: Thuê dịch vụ công nghệ thông tin phần mềm, nền tảng số, hạ tầng kỹ thuật và tích hợp cơ sở dữ liệu các ngành về kho dữ liệu của tỉnh",
+          "package_price_vnd": 48870884736,
+          "days_to_close": 18.5,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&notifyId=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493339&planNo=PL2600275637&step=tbmt&isInternet=1&bidForm=DTRR"
+        },
+        {
+          "tender_code": "IB2600493305",
+          "buyer": "CỤC CƠ YẾU/ BỘ TỔNG THAM MƯU/BỘ QUỐC PHÒNG",
+          "title": "Mua sắm trang thiết bị kỹ thuật, phần mềm",
+          "package_price_vnd": 60248663000,
+          "days_to_close": 16.4,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=570dd25c-5189-41e5-89ca-53503b9ee779&notifyId=570dd25c-5189-41e5-89ca-53503b9ee779&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493305&planNo=PL2600247203&step=tbmt&isInternet=1&bidForm=DTRR"
+        },
+        {
+          "tender_code": "IB2600499429",
+          "buyer": "Phòng Văn hóa - Xã hội xã Yên Trung",
+          "title": "Gói thầu số 01: Mua sắm trang thiết bị, phần mềm công nghệ thông tin phục vụ phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số xã Yên Trung năm 2026",
+          "package_price_vnd": 1062799520,
+          "days_to_close": 12.4,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=7a3daa78-19f6-4c7e-85a2-032b45e13003&notifyId=7a3daa78-19f6-4c7e-85a2-032b45e13003&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499429&planNo=PL2600269787&step=tbmt&isInternet=1&bidForm=CHCT"
+        },
+        {
+          "tender_code": "IB2600499767",
+          "buyer": "Sở Nội vụ tỉnh Cao Bằng",
+          "title": "Số hóa tài liệu lưu trữ theo Đề án Tạo lập cơ sở dữ liệu, số hoá tài liệu lưu trữ Tại Trung tâm Lưu trữ lịch sử tỉnh Cao Bằng năm 2026",
+          "package_price_vnd": 9907739000,
+          "days_to_close": 8.7,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=d41424e4-3be8-44d7-91a5-3a932f8db79d&notifyId=d41424e4-3be8-44d7-91a5-3a932f8db79d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600499767&planNo=PL2600281641&step=tbmt&isInternet=1&bidForm=DTRR"
+        },
+        {
+          "tender_code": "IB2600482073",
+          "buyer": "Bệnh viện Đa khoa Khu vực Cẩm Phả",
+          "title": "Thuê dịch vụ phần mềm quản lý hệ thống thông tin bệnh viện (HIS-LIS), phần mềm quản lý bệnh án điện tử (EMR) và phần mềm lưu trữ, truyền tải hình ảnh y tế (PACS) tại Bệnh viện Đa khoa khu vực Cẩm Phả giai đoạn 2026 - 2028;",
+          "package_price_vnd": 3051000000,
+          "days_to_close": 8.5,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=589d6f53-10fa-4f84-999e-824c7893d5b1&notifyId=589d6f53-10fa-4f84-999e-824c7893d5b1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482073&planNo=PL2600269682&step=tbmt&isInternet=1&bidForm=DTRR"
+        }
+      ],
+      "primary_tender_code": "IB2600493339",
+      "primary_buyer": "Sở Khoa học và Công nghệ tỉnh Thái Nguyên",
+      "primary_tender_title": "Gói thầu số 06: Thuê dịch vụ công nghệ thông tin phần mềm, nền tảng số, hạ tầng kỹ thuật và tích hợp cơ sở dữ liệu các ngành về kho dữ liệu của tỉnh",
+      "primary_package_price_vnd": 48870884736,
+      "primary_days_to_close": 18.5,
+      "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&notifyId=3a8a45a8-adb2-474d-bc57-e38cb8959cf3&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493339&planNo=PL2600275637&step=tbmt&isInternet=1&bidForm=DTRR",
+      "recommended_path": "subcontract_or_sourcing",
+      "historical_evidence": {
+        "latest_win_title": "Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM",
+        "latest_evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600494193&notifyId=IB2600494193&inputResultId=6c88b02f-6d5b-40cc-8e4f-3630ae8d406f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600494193&planNo=PL2600275541&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+        "observed_wins_same_category": 4,
+        "same_buyer_same_category_awards": 0
+      },
+      "offer_to_validate": "OCR/scan/QC hoặc migration một phần",
+      "target_roles": [
+        "Business Development / Sales B2G",
+        "Project Manager / Delivery",
+        "Technical Lead / Solution"
+      ],
+      "outreach_subject_draft": "Đề xuất hỗ trợ phần việc số hóa / phần mềm / dịch vụ số — cần xác minh nhu cầu",
+      "outreach_body_draft": "Chào anh/chị,\n\nTôi đang tìm hiểu khả năng hợp tác với các đơn vị đã có kinh nghiệm triển khai số hóa / phần mềm / dịch vụ số cho khu vực công. Theo KQLCNT công khai, CÔNG TY CỔ PHẦN MISA từng được ghi nhận thắng gói “Mua sắm hàng hóa- Cung cấp phần mềm kế toán lên phiên bản MISA Mimosa Online tại Văn phòng ĐHQG-HCM”.\n\nTôi muốn kiểm tra xem đội dự án của anh/chị hiện có nhu cầu thuê ngoài / tìm đối tác cho phần việc: OCR/scan/QC hoặc migration một phần. Nếu phù hợp, tôi có thể gửi một phạm vi thử nhỏ và cách tính đơn giá để hai bên đánh giá trước khi cam kết lớn.\n\n[CHỈ GỬI SAU KHI BẠN ĐIỀN BẰNG CHỨNG NĂNG LỰC THẬT CỦA MÌNH Ở ĐÂY]\n\nNếu đây không phải đầu mối phù hợp, nhờ anh/chị chuyển giúp tới người phụ trách BD / dự án / sourcing. Cảm ơn anh/chị.",
+      "send_gates": [
+        "Bạn thực sự có năng lực cung cấp offer đã nêu hoặc có partner thật để thực hiện.",
+        "Có ít nhất một market signal liên quan còn đủ thời gian để kiểm chứng; không dùng tender đã hết hạn làm lý do tạo urgency giả.",
+        "Contact path có nguồn công khai và đúng pháp nhân.",
+        "Nội dung không được nói hoặc ám chỉ rằng counterparty đang tham gia bất kỳ gói hiện tại nào nếu không có bằng chứng.",
+        "Chỉ một outreach cho campaign này; không gửi email riêng cho từng tender signal cùng một counterparty."
+      ],
+      "success_signal": "Counterparty trả lời, chuyển đúng đầu mối, yêu cầu capability/rate card hoặc đồng ý trao đổi phạm vi thử.",
+      "follow_up_rule": "Nếu không phản hồi, tối đa 1 follow-up ngắn sau 48–72 giờ; sau đó chuyển trạng thái Dead/No response thay vì spam.",
+      "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn.",
+      "default_stage": "ready_to_research"
+    },
     {
       "id": "vn0100686209::digital_services",
       "campaign_type": "counterparty_category",
@@ -56,7 +159,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500081&notifyId=IB2600500081&inputResultId=4a8f12a2-edef-4fa4-8a4b-90b3efb8f718&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500081&planNo=PL2600272584&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-08-30T15:24:52.456854+00:00",
+          "verified_at": "2026-08-30T15:29:18.602500+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -159,7 +262,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600493098&notifyId=IB2600493098&inputResultId=b400f460-49cd-489a-af9e-0980281aa0a8&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493098&planNo=PL2600262593&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-08-30T15:24:52.456854+00:00",
+          "verified_at": "2026-08-30T15:29:18.602500+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -228,23 +331,9 @@
       "reason": "no_verified_business_contact_path"
     },
     {
-      "tender_code": "IB2600499767",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
       "tender_code": "IB2600499429",
       "partner_id": "vn0100684378",
       "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600499429",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
       "category": "digital_services",
       "reason": "no_verified_business_contact_path"
     },
@@ -256,23 +345,9 @@
       "reason": "no_verified_business_contact_path"
     },
     {
-      "tender_code": "IB2600482073",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
       "tender_code": "IB2600497389",
       "partner_id": "vn0100684378",
       "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600497389",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
       "category": "digital_services",
       "reason": "no_verified_business_contact_path"
     },
@@ -284,23 +359,9 @@
       "reason": "no_verified_business_contact_path"
     },
     {
-      "tender_code": "IB2600493305",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
       "tender_code": "IB2600493339",
       "partner_id": "vn0100684378",
       "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600493339",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
       "category": "digital_services",
       "reason": "no_verified_business_contact_path"
     },
@@ -309,20 +370,6 @@
       "partner_id": "vn0100684378",
       "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
       "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600493697",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600497195",
-      "partner_id": "vn0309469439",
-      "contractor_name": "CÔNG TY TNHH KONE VIỆT NAM",
-      "category": "maintenance",
       "reason": "no_verified_business_contact_path"
     },
     {
@@ -414,13 +461,6 @@
       "partner_id": "vn2601000223",
       "contractor_name": "CÔNG TY TNHH DỊCH VỤ THƯƠNG MẠI VIỆT HƯƠNG",
       "category": "office_goods",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600492880",
-      "partner_id": "vn0309469439",
-      "contractor_name": "CÔNG TY TNHH KONE VIỆT NAM",
-      "category": "maintenance",
       "reason": "no_verified_business_contact_path"
     }
   ],
