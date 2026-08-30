@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""V1.6 Execution Loop: evidence-backed outreach packs for verified counterparties.
+"""V1.6.1 Execution Loop with campaign-level deduplication.
 
-The module prepares, but never sends, outreach. Every pack must pass three gates:
-1) current opportunity is still actionable;
-2) counterparty has public evidence and a verified business contact path;
-3) the user must confirm they can actually deliver the proposed offer.
+The module prepares, but never sends, outreach. It collapses multiple current tender
+signals into one counterparty+category campaign so the UI does not mistake repeated
+market signals for repeated independent leads or encourage spam.
 """
 from __future__ import annotations
 
 import json
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,7 +18,8 @@ COUNTERPARTY_PATH = DATA / "counterparty_intelligence.json"
 OFFICIAL_CONTACT_PATH = DATA / "official_contact_intelligence.json"
 CONTACT_REGISTRY_PATH = DATA / "contact_registry.json"
 OUTPUT_PATH = DATA / "outreach_intelligence.json"
-MAX_PACKS = 12
+MAX_CAMPAIGNS = 12
+MAX_RELATED_OPPORTUNITIES = 5
 
 CATEGORY_LABELS = {
     "digital_services": "số hóa / phần mềm / dịch vụ số",
@@ -119,6 +120,18 @@ def outreach_draft(dossier: dict, cp: dict):
     return subject, body
 
 
+def opportunity_ref(dossier: dict):
+    return {
+        "tender_code": dossier.get("tender_code"),
+        "buyer": dossier.get("buyer"),
+        "title": dossier.get("title"),
+        "package_price_vnd": dossier.get("package_price_vnd"),
+        "days_to_close": dossier.get("days_to_close"),
+        "recommended_path": dossier.get("recommended_path"),
+        "official_tender_url": dossier.get("official_source_url"),
+    }
+
+
 def build():
     now = datetime.now(timezone.utc)
     counterparty = load(COUNTERPARTY_PATH)
@@ -127,10 +140,13 @@ def build():
     official_map = official_by_partner(official)
     registry_map = verified_registry_by_tax(registry)
 
-    packs = []
+    grouped = defaultdict(list)
     unresolved = []
+    candidate_instances = 0
+
     for dossier in counterparty.get("dossiers", []):
         for cp in dossier.get("counterparties", [])[:3]:
+            candidate_instances += 1
             contacts = merge_paths(
                 cp.get("verified_contact_paths", []),
                 official_map.get(cp.get("partner_id"), []),
@@ -141,66 +157,109 @@ def build():
                     "tender_code": dossier.get("tender_code"),
                     "partner_id": cp.get("partner_id"),
                     "contractor_name": cp.get("contractor_name"),
+                    "category": dossier.get("category"),
                     "reason": "no_verified_business_contact_path",
                 })
                 continue
 
-            subject, body = outreach_draft(dossier, cp)
-            pack = {
-                "id": f"{dossier.get('tender_code')}::{cp.get('partner_id')}",
-                "tender_code": dossier.get("tender_code"),
-                "buyer": dossier.get("buyer"),
-                "current_tender_title": dossier.get("title"),
-                "category": dossier.get("category"),
-                "package_price_vnd": dossier.get("package_price_vnd"),
-                "days_to_close": dossier.get("days_to_close"),
-                "recommended_path": dossier.get("recommended_path"),
-                "official_tender_url": dossier.get("official_source_url"),
-                "partner_id": cp.get("partner_id"),
-                "contractor_name": cp.get("contractor_name"),
-                "tax_code": cp.get("tax_code"),
-                "counterparty_score": cp.get("counterparty_score"),
-                "priority_score": priority_score(dossier, cp, len(contacts)),
-                "verified_contact_paths": contacts,
-                "historical_evidence": {
-                    "latest_win_title": cp.get("latest_tender_title"),
-                    "latest_evidence_url": cp.get("evidence_url"),
-                    "observed_wins_same_category": cp.get("observed_wins_same_category"),
-                    "same_buyer_same_category_awards": cp.get("same_buyer_same_category_awards"),
-                },
-                "offer_to_validate": (cp.get("offers_to_test") or [None])[0],
-                "target_roles": cp.get("target_roles_to_find", []),
-                "outreach_subject_draft": subject,
-                "outreach_body_draft": body,
-                "send_gates": [
-                    "Bạn thực sự có năng lực cung cấp offer đã nêu hoặc có partner thật để thực hiện.",
-                    "Gói/nhu cầu vẫn còn thời gian hợp lý; không tiếp cận nếu đã hết hạn hoặc quá sát hạn.",
-                    "Contact path có nguồn công khai và đúng pháp nhân.",
-                    "Nội dung không được nói hoặc ám chỉ rằng counterparty đang tham gia gói hiện tại nếu không có bằng chứng.",
-                ],
-                "success_signal": "Counterparty trả lời, chuyển đúng đầu mối, yêu cầu capability/rate card hoặc đồng ý trao đổi phạm vi thử.",
-                "follow_up_rule": "Nếu không phản hồi, tối đa 1 follow-up ngắn sau 48–72 giờ; sau đó chuyển trạng thái Dead/No response thay vì spam.",
-                "kill_criteria": cp.get("kill_criteria"),
-                "default_stage": "ready_to_research",
-            }
-            packs.append(pack)
+            category = dossier.get("category") or "other"
+            key = (cp.get("partner_id"), category)
+            grouped[key].append({
+                "dossier": dossier,
+                "counterparty": cp,
+                "contacts": contacts,
+                "priority": priority_score(dossier, cp, len(contacts)),
+            })
 
-    packs.sort(key=lambda x: (x.get("priority_score", 0), x.get("days_to_close") or 0), reverse=True)
-    packs = packs[:MAX_PACKS]
+    campaigns = []
+    for (partner_id, category), instances in grouped.items():
+        instances.sort(key=lambda x: (x["priority"], x["dossier"].get("days_to_close") or 0), reverse=True)
+        best = instances[0]
+        dossier = best["dossier"]
+        cp = best["counterparty"]
+        contacts = merge_paths(*(x["contacts"] for x in instances))
+        subject, body = outreach_draft(dossier, cp)
+
+        related = []
+        seen_tenders = set()
+        for item in instances:
+            ref = opportunity_ref(item["dossier"])
+            code = ref.get("tender_code")
+            if not code or code in seen_tenders:
+                continue
+            seen_tenders.add(code)
+            related.append(ref)
+            if len(related) >= MAX_RELATED_OPPORTUNITIES:
+                break
+
+        campaigns.append({
+            "id": f"{partner_id}::{category}",
+            "campaign_type": "counterparty_category",
+            "partner_id": partner_id,
+            "contractor_name": cp.get("contractor_name"),
+            "tax_code": cp.get("tax_code"),
+            "category": category,
+            "category_label": CATEGORY_LABELS.get(category, category),
+            "priority_score": best["priority"],
+            "counterparty_score": cp.get("counterparty_score"),
+            "verified_contact_paths": contacts,
+            "related_opportunity_count": len({x["dossier"].get("tender_code") for x in instances if x["dossier"].get("tender_code")}),
+            "related_opportunities": related,
+            "primary_tender_code": dossier.get("tender_code"),
+            "primary_buyer": dossier.get("buyer"),
+            "primary_tender_title": dossier.get("title"),
+            "primary_package_price_vnd": dossier.get("package_price_vnd"),
+            "primary_days_to_close": dossier.get("days_to_close"),
+            "primary_official_tender_url": dossier.get("official_source_url"),
+            "recommended_path": dossier.get("recommended_path"),
+            "historical_evidence": {
+                "latest_win_title": cp.get("latest_tender_title"),
+                "latest_evidence_url": cp.get("evidence_url"),
+                "observed_wins_same_category": cp.get("observed_wins_same_category"),
+                "same_buyer_same_category_awards": cp.get("same_buyer_same_category_awards"),
+            },
+            "offer_to_validate": (cp.get("offers_to_test") or [None])[0],
+            "target_roles": cp.get("target_roles_to_find", []),
+            "outreach_subject_draft": subject,
+            "outreach_body_draft": body,
+            "send_gates": [
+                "Bạn thực sự có năng lực cung cấp offer đã nêu hoặc có partner thật để thực hiện.",
+                "Có ít nhất một market signal liên quan còn đủ thời gian để kiểm chứng; không dùng tender đã hết hạn làm lý do tạo urgency giả.",
+                "Contact path có nguồn công khai và đúng pháp nhân.",
+                "Nội dung không được nói hoặc ám chỉ rằng counterparty đang tham gia bất kỳ gói hiện tại nào nếu không có bằng chứng.",
+                "Chỉ một outreach cho campaign này; không gửi email riêng cho từng tender signal cùng một counterparty.",
+            ],
+            "success_signal": "Counterparty trả lời, chuyển đúng đầu mối, yêu cầu capability/rate card hoặc đồng ý trao đổi phạm vi thử.",
+            "follow_up_rule": "Nếu không phản hồi, tối đa 1 follow-up ngắn sau 48–72 giờ; sau đó chuyển trạng thái Dead/No response thay vì spam.",
+            "kill_criteria": cp.get("kill_criteria"),
+            "default_stage": "ready_to_research",
+        })
+
+    campaigns.sort(key=lambda x: (x.get("priority_score", 0), x.get("related_opportunity_count", 0)), reverse=True)
+    campaigns = campaigns[:MAX_CAMPAIGNS]
+    unique_paths = {
+        (str(path.get("type") or "").lower(), str(path.get("value") or "").lower())
+        for campaign in campaigns
+        for path in campaign.get("verified_contact_paths", [])
+        if path.get("value")
+    }
     return {
         "meta": {
-            "version": "1.6.0",
+            "version": "1.6.1",
             "generated_at": now.isoformat(),
-            "mode": "human_in_the_loop_commercial_execution",
-            "principle": "prepare_evidence_backed_outreach_never_auto_send_and_learn_from_real_responses",
+            "mode": "human_in_the_loop_deduplicated_counterparty_campaigns",
+            "principle": "one_counterparty_category_campaign_can_absorb_multiple_market_signals_no_fake_lead_multiplication",
         },
         "coverage": {
-            "outreach_packs_ready": len(packs),
-            "unique_counterparties_ready": len({x.get('partner_id') for x in packs}),
-            "verified_contact_paths_in_ready_packs": sum(len(x.get("verified_contact_paths", [])) for x in packs),
+            "candidate_target_instances": candidate_instances,
+            "campaigns_ready": len(campaigns),
+            "unique_counterparties_ready": len({x.get("partner_id") for x in campaigns}),
+            "related_opportunity_signals_in_campaigns": sum(x.get("related_opportunity_count", 0) for x in campaigns),
+            "unique_verified_contact_paths": len(unique_paths),
             "unresolved_target_instances": len(unresolved),
+            "unique_unresolved_counterparties": len({x.get("partner_id") for x in unresolved if x.get("partner_id")}),
         },
-        "packs": packs,
+        "packs": campaigns,
         "unresolved": unresolved[:50],
         "stage_model": [
             "ready_to_research",
@@ -210,6 +269,7 @@ def build():
             "dead",
         ],
         "warnings": [
+            "Một campaign có thể chứa nhiều tender signals; không diễn giải số signal thành số lead độc lập.",
             "Draft không được gửi nếu placeholder năng lực thật chưa được thay thế.",
             "Historical award evidence không chứng minh counterparty đang dự gói hiện tại.",
             "Không tự động gửi email; hệ thống giữ human-in-the-loop để tránh spam và tuyên bố sai.",
@@ -223,8 +283,9 @@ def main():
     c = payload["coverage"]
     print(
         "outreach-intel "
-        f"ready={c['outreach_packs_ready']} counterparties={c['unique_counterparties_ready']} "
-        f"paths={c['verified_contact_paths_in_ready_packs']} unresolved={c['unresolved_target_instances']}"
+        f"campaigns={c['campaigns_ready']} counterparties={c['unique_counterparties_ready']} "
+        f"signals={c['related_opportunity_signals_in_campaigns']} unique_paths={c['unique_verified_contact_paths']} "
+        f"unresolved={c['unresolved_target_instances']}"
     )
 
 
