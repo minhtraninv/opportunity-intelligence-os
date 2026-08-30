@@ -42,21 +42,22 @@ SOURCES = [
 FAMILY_RULES = (
     ("labor", ("tuyển dụng", "tuyển nhân sự", "tuyển lao động", "việc làm", "nhân sự", "lao động")),
     ("project_execution", (
-        "khởi công", "khánh thành", "vận hành", "khai trương", "triển khai", "xây dựng",
-        "mở rộng nhà máy", "nhà máy mới", "dự án", "công trình", "tăng công suất",
-        "khu công nghiệp", "trung tâm dữ liệu", "đường sắt", "sân bay", "cảng",
+        "khởi công", "khánh thành", "đưa vào vận hành", "vận hành nhà máy", "vận hành dự án",
+        "khai trương", "triển khai", "xây dựng", "mở rộng nhà máy", "nhà máy mới", "dự án",
+        "công trình", "tăng công suất", "khu công nghiệp", "trung tâm dữ liệu", "đường sắt", "sân bay", "cảng",
     )),
     ("capital", (
-        "huy động vốn", "phát hành", "trái phiếu", "vay", "tín dụng", "góp vốn", "mua cổ phần",
-        "tăng vốn", "rót vốn", "đầu tư thêm", "vốn đầu tư", "tỷ usd", "tỷ đồng",
+        "huy động vốn", "phát hành", "trái phiếu", "vay vốn", "khoản vay", "tín dụng", "góp vốn",
+        "mua cổ phần", "tăng vốn", "rót vốn", "đầu tư thêm", "vốn đầu tư",
     )),
     ("operating", (
         "doanh thu", "lợi nhuận", "sản lượng", "doanh số", "bàn giao", "thị phần", "xuất khẩu",
-        "tăng trưởng", "tiêu thụ", "đơn hàng", "khách hàng",
+        "tăng trưởng", "tiêu thụ", "đơn hàng", "khách hàng", "đặt mua", "hợp đồng mua",
     )),
     ("strategy", (
         "chiến lược", "kế hoạch", "đề xuất", "hợp tác", "liên doanh", "mua lại", "thâu tóm",
-        "thành lập", "mở mảng", "tham gia", "định hướng", "mục tiêu",
+        "thành lập", "mở mảng", "tham gia", "định hướng", "mục tiêu", "thoái vốn", "bán mảng",
+        "bán cổ phần", "chuyển nhượng", "tái cấu trúc",
     )),
     ("policy", ("nghị quyết", "nghị định", "chính sách", "cơ chế", "quy hoạch", "phê duyệt", "chấp thuận")),
 )
@@ -132,6 +133,12 @@ def alias_match(text: str, aliases: list[str]) -> bool:
 
 def classify(text: str) -> str | None:
     lowered = norm(text).casefold()
+
+    # Observable customer demand should not be mistaken for project execution just
+    # because the product will later be "operated" by a buyer.
+    if re.search(r"\bmua\s+[\d\.,]+\s+(?:ô\s*tô|oto|xe|sản phẩm)", lowered, flags=re.UNICODE):
+        return "operating"
+
     for family, phrases in FAMILY_RULES:
         if any(phrase.casefold() in lowered for phrase in phrases):
             return family
@@ -196,13 +203,18 @@ def parse_rss(source: dict, registry: list[dict], captured_at: datetime) -> tupl
 
 def merge_history(old: dict, fresh: list[dict], captured_at: datetime) -> dict:
     items = {str(x.get("id")): dict(x) for x in old.get("events", []) if isinstance(x, dict) and x.get("id")}
+    refresh_fields = (
+        "event_signature", "entity_id", "entity_label", "entity_type", "family", "title",
+        "summary", "publisher", "source_url", "published_at", "evidence_grade",
+    )
     for event in fresh:
         key = str(event.get("id"))
         if key in items:
             existing = items[key]
+            for field in refresh_fields:
+                if event.get(field) is not None:
+                    existing[field] = event.get(field)
             existing["last_seen_at"] = captured_at.isoformat()
-            existing["published_at"] = event.get("published_at") or existing.get("published_at")
-            existing["summary"] = event.get("summary") or existing.get("summary")
         else:
             items[key] = event
 
@@ -252,7 +264,7 @@ def main() -> None:
 
     payload = {
         "meta": {
-            "version": "2.6.1",
+            "version": "2.6.2",
             "generated_at": now.isoformat(),
             "mode": "economic_media_entity_discovery",
             "principle": "media_creates_investigation_triggers_not_primary_truth"
