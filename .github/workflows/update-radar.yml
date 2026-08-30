@@ -47,6 +47,9 @@ jobs:
       - name: Build policy intelligence
         run: python pipeline/policy_intel.py
 
+      - name: Build entity media discovery feed
+        run: python pipeline/entity_media_intel.py
+
       - name: Update procurement action intelligence
         run: python pipeline/action_intel.py
 
@@ -112,6 +115,8 @@ jobs:
             history.json
             intelligence.json
             policy_intelligence.json
+            entity_media_history.json
+            entity_media_intelligence.json
             action_history.json
             action_intelligence.json
             partner_history.json
