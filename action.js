@@ -146,6 +146,76 @@
     </article>`;
   }
 
+  function ensureActionQueue(){
+    let queue = document.getElementById('actionQueue');
+    if(queue) return queue;
+    const hero = document.querySelector('#today .hero-grid');
+    if(!hero) return null;
+    hero.insertAdjacentHTML('afterend', `
+      <div class="section-head" style="margin-top:28px">
+        <div><div class="eyebrow">48H ACTION QUEUE · V1.4</div><h2>3 việc đáng điều tra trước</h2></div>
+        <span id="actionQueueStatus" class="muted">Đang ghép buyer + partner + deadline…</span>
+      </div>
+      <div id="actionQueue" class="signal-grid"></div>`);
+    return document.getElementById('actionQueue');
+  }
+
+  function actionPriority(trigger, match){
+    let score = Number(trigger.buyer_trigger_score || 0);
+    score += Number(trigger.subcontract_fit_score || 0) * 0.18;
+    if(trigger.tbmt_detail_confirmed) score += 5;
+    const days = Number(trigger.days_to_close);
+    if(Number.isFinite(days) && days >= 4 && days <= 14) score += 7;
+    const bestPartner = match?.candidates?.[0];
+    if(bestPartner) score += 5 + Number(bestPartner.match_score || 0) * 0.05;
+    if(trigger.recommended_path === 'subcontract_or_sourcing') score += 4;
+    return Math.round(score);
+  }
+
+  function queueCard(trigger, match, brief, rank){
+    const bestPartner = match?.candidates?.[0];
+    const firstOffer = brief?.offers_to_test?.[0] || trigger.small_capital_angles?.[0] || 'Đọc HSMT để tìm phần việc tách được.';
+    const firstAction = brief?.actions_48h?.[0] || trigger.next_action;
+    const path = PATH_LABELS[trigger.recommended_path] || trigger.recommended_path;
+    return `<article class="signal-card">
+      <div class="signal-top">
+        <div>
+          <div class="eyebrow">PRIORITY #${rank}</div>
+          <div class="signal-title">${esc(trigger.buyer)}</div>
+          <div class="signal-meta">
+            <span class="pill up">${esc(path)}</span>
+            <span class="pill">${esc(fmtMoney(trigger.package_price_vnd))}</span>
+            <span class="pill">Còn ${esc(trigger.days_to_close == null ? '—' : `${Math.max(0, trigger.days_to_close).toFixed(1)} ngày`)}</span>
+          </div>
+        </div>
+        <div class="signal-score hot">${esc(actionPriority(trigger, match))}</div>
+      </div>
+      <div class="signal-why"><strong>${esc(trigger.tender_code)}</strong> · ${esc(trigger.title)}</div>
+      <div class="signal-evidence"><strong>Offer test:</strong> ${esc(firstOffer)}</div>
+      <div class="signal-evidence"><strong>Việc đầu tiên:</strong> ${esc(firstAction)}</div>
+      <div class="signal-evidence"><strong>Prime candidate:</strong> ${esc(bestPartner ? `${bestPartner.contractor_name} · match ${bestPartner.match_score}/100` : 'chưa có — cần tìm từ KQLCNT cùng nhóm')}</div>
+      <div class="evidence-links"><a href="${esc(safeUrl(trigger.official_verification_url || trigger.source_url))}" target="_blank" rel="noopener noreferrer">Mở bằng chứng gốc</a></div>
+    </article>`;
+  }
+
+  function renderActionQueue(triggers, matches, briefs){
+    const queue = ensureActionQueue();
+    if(!queue) return;
+    const ranked = triggers
+      .filter(x => x.action_level === 'investigate_now')
+      .map(x => ({trigger:x, match:matches.get(x.tender_code), brief:briefs.get(x.tender_code)}))
+      .sort((a,b) => actionPriority(b.trigger,b.match) - actionPriority(a.trigger,a.match))
+      .slice(0,3);
+    queue.innerHTML = ranked.length
+      ? ranked.map((x,i) => queueCard(x.trigger,x.match,x.brief,i+1)).join('')
+      : '<div class="panel muted">Hôm nay chưa có nhiệm vụ nào vượt ngưỡng điều tra. Không ép hệ thống phải tạo việc giả.</div>';
+    const status = document.getElementById('actionQueueStatus');
+    if(status){
+      const withPartner = ranked.filter(x => x.match?.candidates?.length).length;
+      status.textContent = `${ranked.length} nhiệm vụ · ${withPartner} có historical prime candidate · score là ưu tiên hành động, không phải xác suất thành công`;
+    }
+  }
+
   Promise.all([
     fetch('data/action_intelligence.json', {cache:'no-store'}).then(r => {
       if(!r.ok) throw new Error(`action HTTP ${r.status}`);
@@ -171,6 +241,8 @@
 
       const dataStatus = document.getElementById('dataStatus');
       if(dataStatus && partnerData) dataStatus.textContent = 'V1.4 · ACTION INTELLIGENCE';
+
+      renderActionQueue(triggers, matches, briefs);
 
       const grid = document.getElementById('liveBuyerGrid');
       if(grid){
@@ -204,5 +276,7 @@
       if(status) status.textContent = `Procurement Radar chưa có dữ liệu: ${err.message}`;
       const grid = document.getElementById('liveBuyerGrid');
       if(grid) grid.innerHTML = '<div class="panel muted">Pipeline Action Intelligence chưa sinh dữ liệu hoặc GitHub Pages chưa deploy bản mới.</div>';
+      const queue = ensureActionQueue();
+      if(queue) queue.innerHTML = '<div class="panel muted">Action Queue chưa có dữ liệu.</div>';
     });
 })();
