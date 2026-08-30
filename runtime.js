@@ -74,7 +74,6 @@
   }
 
   let reportsLoaded = false;
-  let actionLoaded = false;
   let advancedLoaded = false;
 
   async function loadReports(){
@@ -88,22 +87,11 @@
     }
   }
 
-  async function loadActionLayer(){
-    if(actionLoaded) return;
-    actionLoaded = true;
-    try {
-      await loadScript('action.js');
-    } catch(err){
-      actionLoaded = false;
-      console.error(err);
-    }
-  }
-
   async function loadAdvanced(){
     if(advancedLoaded) return;
     advancedLoaded = true;
     try {
-      await loadActionLayer();
+      await loadScript('action.js');
       await loadScript('relationship.js');
       await loadScript('counterparty.js');
       await loadScript('execution.js');
@@ -133,7 +121,6 @@
     if(!tab) return;
     const id = tab.dataset.tab;
     if(id === 'reports') loadReports();
-    if(id === 'today') loadActionLayer();
     if(id === 'buyers') loadAdvanced();
   });
 
@@ -175,7 +162,6 @@
 
   window.OIRuntime = {
     loadReports,
-    loadActionLayer,
     loadAdvanced,
     clearDataCache: () => responseCache.clear(),
     checkForUpdate,
