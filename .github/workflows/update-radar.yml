@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update opportunity feed
+      - name: Update opportunity intelligence
         run: python pipeline/update.py
 
       - name: Commit updated data
         run: |
           git config user.name "opportunity-intel-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/raw_feed.json
-          git diff --cached --quiet || git commit -m "data: refresh opportunity feed"
+          git add data/raw_feed.json data/history.json data/intelligence.json
+          git diff --cached --quiet || git commit -m "data: refresh opportunity intelligence"
           git push
