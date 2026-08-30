@@ -15,6 +15,7 @@ MODULES = {
     "radar": "radar.json",
     "change_detector": "intelligence.json",
     "money_flow": "money_flow_intelligence.json",
+    "supply_side": "supply_side_intelligence.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
