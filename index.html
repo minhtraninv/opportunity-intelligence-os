@@ -113,7 +113,7 @@
             <h1 id="overviewHeroTitle">Đang dựng bức tranh kinh tế…</h1>
             <p id="overviewHeroText">Hệ thống đang nối chính sách, dòng vốn, kinh tế thực, entity và phản chứng.</p>
             <div class="overview-actions">
-              <button class="btn secondary" data-overview-tab="moneyflow">Mở Dòng tiền</button>
+              <button class="btn secondary" onclick="document.getElementById('moneyFlowOverview')?.scrollIntoView({block:'start'})">Mở Dòng tiền</button>
               <button class="btn ghost" data-overview-tab="signals">Xem bằng chứng</button>
             </div>
           </article>
@@ -334,10 +334,6 @@
 
   <script src="runtime.js"></script>
   <script src="app.js"></script>
-  <script src="money-flow.js"></script>
-  <script src="regional-flow.js"></script>
-  <script src="contradiction-flow.js"></script>
-  <script src="lifecycle-flow.js"></script>
   <script src="overview.js"></script>
   <script src="official-release.js"></script>
   <script src="action-feedback.js"></script>
