@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T11:29:32.607994+00:00",
+    "generated_at": "2026-08-30T11:41:47.417240+00:00",
     "status": "warming_up",
     "history_days": 1,
     "required_history_days": 14,
@@ -22,6 +22,28 @@
     },
     {
       "category": "infrastructure",
+      "recent_7d": 1,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 10,
+      "source_diversity_7d": 1,
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 1,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 10,
+      "source_diversity_7d": 1,
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "labor",
       "recent_7d": 1,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -54,7 +76,7 @@
       "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
-      "category": "energy",
+      "category": "logistics",
       "recent_7d": 0,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -65,7 +87,29 @@
       "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
-      "category": "logistics",
+      "category": "trade_flow",
+      "recent_7d": 0,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 1,
+      "source_diversity_7d": 0,
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "consumer_services",
+      "recent_7d": 0,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 1,
+      "source_diversity_7d": 0,
+      "explanation": "Đang học baseline: mới có 1/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "construction",
       "recent_7d": 0,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -77,6 +121,42 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "30df3e27460502c5",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Đề xuất chính sách phát triển kinh tế nông thôn, đa dạng hóa sinh kế, việc làm",
+      "url": "https://baochinhphu.vn/de-xuat-chinh-sach-phat-trien-kinh-te-nong-thon-da-dang-hoa-sinh-ke-viec-lam-102260828180512184.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-08-30T11:41:47.417240+00:00"
+    },
+    {
+      "id": "a217e71d65206243",
+      "source_id": "evn-invest",
+      "publisher": "EVN - Đầu tư xây dựng",
+      "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-08-30T11:41:47.417240+00:00"
+    },
     {
       "id": "38427c6e516fa4f3",
       "source_id": "business-registry",
@@ -182,19 +262,21 @@
   ],
   "event_types_7d": {
     "business_formation": 3,
+    "hiring": 1,
+    "market_data": 1,
     "policy_regulation": 1,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 27,
-    "candidate_events": 5,
-    "reference_events": 17,
-    "unique_candidate_sources": 2,
-    "source_errors_last_run": 1
+    "historical_events": 56,
+    "candidate_events": 7,
+    "reference_events": 44,
+    "unique_candidate_sources": 3,
+    "source_errors_last_run": 2
   },
   "warnings": [
     "Change Detector đang học baseline (1/14 ngày). Chỉ candidate events mới được tính; chưa coi chênh lệch hiện tại là trend.",
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
