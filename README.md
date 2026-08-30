@@ -1,41 +1,97 @@
-# Opportunity Intelligence OS — V1
+# Opportunity Intelligence OS — V3 Official
 
-Một hệ thống **evidence-first** để thu hẹp bất cân xứng thông tin cho cá nhân vốn nhỏ tại Việt Nam.
+Một **evidence-first information radar** cho Việt Nam.
 
-## V1 cố tình làm ít nhưng đúng
+Mục tiêu của hệ thống không phải săn cổ phiếu, không phải săn thầu và cũng không phải tự động nói người dùng nên mở business gì. Mục tiêu là:
 
-V1 không tự nhận là “AI biết cơ hội tương lai”. Nó tách rõ:
+> **Tăng xác suất để một người bình thường gặp được những thay đổi đáng chú ý đủ sớm để mở hồ sơ nghiên cứu, trước khi chúng trở thành câu chuyện quá hiển nhiên.**
 
-1. **Evidence** — dữ liệu/tín hiệu từ nguồn chính thức.
-2. **Signal** — thay đổi đáng chú ý có thể kiểm chứng.
-3. **Opportunity hypothesis** — giả thuyết kinh doanh, chưa phải sự thật.
-4. **Validation** — test nhỏ, có ngân sách và kill criteria.
+## Product promise
 
-Điều này tránh lỗi nguy hiểm nhất: AI đọc vài bài báo rồi tạo ra một câu chuyện nghe hợp lý nhưng không có buyer thật.
+Opportunity Intelligence OS cố trả lời theo chuỗi:
 
-## Màn hình
+**Macro / Policy → Money Flow → Regional Divergence → Entities / Projects → Convergence → Counter-evidence → Lifecycle → Possible entry points → Small test**
 
-- **Hôm nay**: thay đổi đáng chú ý + cơ hội phù hợp với mức vốn đã chọn.
-- **Signals**: feed dấu chân tiền/chính sách/nhu cầu kèm nguồn.
-- **Opportunities**: xếp hạng theo vốn, time-to-cash, evidence, buyer clarity và cạnh tranh.
-- **Buyer Radar**: ai có thể đang cầm ngân sách và họ thường mua gì khi trigger xuất hiện.
-- **Validate**: kế hoạch test nhỏ + kill criteria + field notes.
+Một entity có thể là doanh nghiệp, dự án, địa phương, ngành, KCN, công nghệ hoặc tổ chức. `DON'T IGNORE` chỉ có nghĩa **đáng điều tra**, không có nghĩa `BUY` hay `DO THIS`.
 
-## Công thức FIT SCORE
+## Mặt tiền
 
-Điểm được tính lại theo vốn bạn chọn:
+### Bức tranh
+Dùng hàng ngày để biết:
 
-- 30% Evidence strength
-- 25% Capital fit
-- 20% Time-to-cash
-- 15% Buyer clarity
-- 10% Competition inverse
+- nền kinh tế thực đang chạy ra sao;
+- luật chơi/chính sách nào đang đổi;
+- tiền và hoạt động đang hội tụ ở theme nào;
+- địa bàn nào đang phân kỳ;
+- entity nào đang xuất hiện ở nhiều lớp bằng chứng;
+- điều gì có thể khiến thesis sai;
+- hệ thống đang mù ở domain dữ liệu nào.
 
-Đây là **fit score**, không phải xác suất thành công.
+### DON'T IGNORE · Attention Queue
+Hàng đợi ngắn các thay đổi đáng mở hồ sơ nghiên cứu. Đây là lớp tạo **cơ duyên thông tin**, không phải recommendation engine.
+
+### Bằng chứng / Chi tiết
+Dùng để mở source, Change Detector, curated signals, lifecycle và các evidence phía sau Bức tranh.
+
+### Small Bets
+Chỉ chứa những hypothesis đã dịch được thành buyer + test nhỏ + kill criteria. Đây **không phải toàn bộ cơ hội của nền kinh tế**.
+
+### Advanced
+Procurement, buyer/vendor history, relationship graph và execution. Đây là phòng máy xác minh một thesis cụ thể, không phải trung tâm sản phẩm.
+
+## Personal Action Layer
+
+Vốn, thời gian có tín hiệu và địa lý **không được hard-filter radar**.
+
+Personal Action Layer chỉ xếp hạng Small Bets theo khả năng thực thi hiện tại. Một cơ hội chưa phù hợp vẫn phải được nhìn thấy.
+
+Các lựa chọn cá nhân được lưu trên `localStorage`; không upload lên GitHub.
+
+## Source contract
+
+Hệ thống phân biệt rõ:
+
+1. **Source health** — truy cập được nguồn hay không.
+2. **Qualified evidence** — nguồn có tạo candidate/curated evidence đủ chuẩn hay không.
+3. **Source independence** — nhiều bài đăng lại cùng một sự kiện không được tính như nhiều evidence độc lập.
+4. **Coverage blind spot** — domain yếu/broken/missing phải được hiển thị công khai.
+
+Ưu tiên nguồn:
+
+**official / primary disclosure > official operator > reputable media discovery > hypothesis**
+
+Media được dùng để phát hiện thứ hệ thống chưa biết phải tìm. Kết luận mạnh vẫn cần primary evidence.
+
+## Stable architecture
+
+- Macro Pulse
+- Policy Radar
+- Money Flow Intelligence
+- Regional Divergence
+- Open-world Entity Discovery
+- Entity Convergence
+- Contradiction / Falsification
+- Thesis Lifecycle
+- Source Coverage Audit
+- Personal Action Layer
+- Small Bet Validation
+- Advanced Procurement / Partner / Execution
+
+## Non-goals
+
+- Không phải stock screener.
+- Không dự báo giá cổ phiếu.
+- Không coi policy là dòng tiền đã xảy ra.
+- Không coi FDI đăng ký là vốn đã giải ngân.
+- Không coi procurement là toàn bộ nền kinh tế.
+- Không gọi supply gap nếu chưa có supply-side evidence.
+- Không ép hệ thống phải luôn có một “câu chuyện hot”.
+
+## Automation
+
+GitHub Actions cập nhật pipeline nhiều lần mỗi ngày. Dữ liệu lịch sử được dùng để học baseline và lifecycle. Một ngày có nhiều workflow runs vẫn chỉ tính là **một observation day** khi đánh giá xu hướng dài hơn.
 
 ## Chạy local
-
-Do frontend đọc JSON qua `fetch()`, hãy chạy HTTP server thay vì mở file trực tiếp:
 
 ```bash
 python -m http.server 8000
@@ -43,42 +99,15 @@ python -m http.server 8000
 
 Mở `http://localhost:8000`.
 
-## Deploy GitHub Pages
+## Release philosophy
 
-1. Tạo repository mới.
-2. Upload toàn bộ thư mục này vào root repo.
-3. Settings → Pages → Deploy from a branch → `main` / root.
-4. GitHub Actions `Update Opportunity Feed` chạy 4 lần/ngày.
+Từ V3, kiến trúc sản phẩm được coi là **stable**. Việc phát triển tiếp ưu tiên:
 
-## Pipeline tự động hiện tại
+- tăng độ phủ nguồn;
+- sửa precision/recall;
+- giảm blind spot;
+- nâng chất lượng entity resolution;
+- bổ sung evidence lịch sử;
+- sửa bug.
 
-`pipeline/update.py` thu thập headline mới từ một số nguồn chính thức và ghi vào:
-
-`data/raw_feed.json`
-
-Nó chỉ gắn nhãn theo từ khóa và đánh dấu `unverified-headline`; **không tự biến headline thành opportunity**.
-
-Đây là chủ ý. V2 mới nên thêm bộ phân tích AI có schema bắt buộc, citation bắt buộc và cơ chế từ chối tạo opportunity nếu evidence yếu.
-
-## Việc cần làm ở V2
-
-Ưu tiên theo thứ tự:
-
-1. **Change detector theo chuỗi thời gian**: phát hiện tuyển dụng/CAPEX/đấu thầu/FDI tăng bất thường.
-2. **Buyer database**: company + role + trigger + contact path, không chỉ buyer archetype.
-3. **Evidence graph**: một opportunity phải liên kết được nhiều signal độc lập.
-4. **Supply-gap estimator**: demand proxy tăng nhanh hơn supply proxy.
-5. **AI analyst có output schema**: `claim`, `evidence`, `counter_evidence`, `buyer`, `test`, `kill_criteria`, `confidence`.
-6. **Alert delta-only**: chỉ báo khi score hoặc evidence thay đổi đáng kể.
-
-## Nguyên tắc dữ liệu
-
-- Nguồn chính thức > công bố doanh nghiệp > nguồn báo chí uy tín > social chatter.
-- Tin tức chỉ là một evidence type, không phải truth engine.
-- Không dùng score để thay thế kiểm chứng thị trường.
-- Không tạo “cơ hội” nếu không xác định được buyer hoặc cách test nhỏ.
-- Không khuyến khích ôm tồn kho/tài sản khi chưa có demand validation.
-
-## Seed evidence hiện tại
-
-V1 được khởi tạo bằng dữ liệu công khai đến 30/08/2026 từ Cục Thống kê, Báo Chính phủ và Cổng Đăng ký kinh doanh quốc gia. Mỗi card có link nguồn trong UI.
+Không tăng version kiến trúc chỉ để thêm dashboard hoặc feature không làm tăng khả năng nhìn thấy thay đổi quan trọng.
