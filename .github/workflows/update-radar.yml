@@ -9,6 +9,7 @@ on:
       - "pipeline/**"
       - "data/macro_observations.json"
       - "data/regional_observations.json"
+      - "data/contradiction_observations.json"
       - ".github/workflows/update-radar.yml"
   schedule:
     - cron: "15 0,6,12,18 * * *"
@@ -83,6 +84,9 @@ jobs:
       - name: Build regional money-flow intelligence
         run: python pipeline/regional_intel.py
 
+      - name: Build contradiction and falsification intelligence
+        run: python pipeline/contradiction_intel.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
@@ -111,6 +115,7 @@ jobs:
             supply_side_intelligence.json
             money_flow_intelligence.json
             regional_intelligence.json
+            contradiction_intelligence.json
             system_meta.json
           )
 
