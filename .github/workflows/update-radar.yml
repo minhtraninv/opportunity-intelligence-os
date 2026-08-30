@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: opportunity-intelligence-data
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -49,11 +51,41 @@ jobs:
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
-      - name: Commit updated data
+      - name: Publish generated data
         run: |
+          set -euo pipefail
           git config user.name "opportunity-intel-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/raw_feed.json data/history.json data/intelligence.json data/action_history.json data/action_intelligence.json data/partner_history.json data/partner_intelligence.json data/corporate_history.json data/corporate_intelligence.json
-          git diff --cached --quiet || git commit -m "data: refresh opportunity intelligence"
-          git pull --rebase origin main
-          git push
+
+          generated_files=(
+            raw_feed.json
+            history.json
+            intelligence.json
+            action_history.json
+            action_intelligence.json
+            partner_history.json
+            partner_intelligence.json
+            corporate_history.json
+            corporate_intelligence.json
+          )
+
+          snapshot_dir="$(mktemp -d)"
+          for file in "${generated_files[@]}"; do
+            cp "data/$file" "$snapshot_dir/$file"
+          done
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          for file in "${generated_files[@]}"; do
+            cp "$snapshot_dir/$file" "data/$file"
+          done
+
+          git add "${generated_files[@]/#/data/}"
+          if git diff --cached --quiet; then
+            echo "No generated data changes to publish."
+            exit 0
+          fi
+
+          git commit -m "data: refresh opportunity intelligence"
+          git push origin HEAD:main
