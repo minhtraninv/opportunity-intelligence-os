@@ -18,6 +18,7 @@ MODULES = {
     "supply_side": "supply_side_intelligence.json",
     "regional": "regional_intelligence.json",
     "contradiction": "contradiction_intelligence.json",
+    "lifecycle": "thesis_lifecycle.json",
     "procurement": "action_intelligence.json",
     "partner": "partner_intelligence.json",
     "relationship": "relationship_intelligence.json",
