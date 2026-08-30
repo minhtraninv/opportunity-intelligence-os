@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""V1.5 Counterparty Dossiers: turn buyer triggers + award history into outreach research targets.
+"""V1.5.1 Counterparty Dossiers with strict verified-contact registry.
 
-This layer never invents emails, phone numbers, people, or current bidder status.
+This layer never invents emails, phone numbers, people, domains, or current bidder status.
 A counterparty is an investigation target supported by observed public award history.
+A contact path is shown only when identity evidence and contact evidence were explicitly verified.
 """
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,7 +16,9 @@ DATA = ROOT / "data"
 ACTION_PATH = DATA / "action_intelligence.json"
 PARTNER_PATH = DATA / "partner_intelligence.json"
 RELATIONSHIP_PATH = DATA / "relationship_intelligence.json"
+CONTACT_REGISTRY_PATH = DATA / "contact_registry.json"
 OUTPUT_PATH = DATA / "counterparty_intelligence.json"
+CONTACT_FRESH_DAYS = 180
 
 ROLE_MAP = {
     "digital_services": ["Business Development / Sales B2G", "Project Manager / Delivery", "Technical Lead / Solution"],
@@ -60,6 +63,16 @@ def write(payload: dict) -> None:
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def parse_dt(value):
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        return None
+
+
 def rel_map(data: dict):
     return {x.get("tender_code"): x for x in data.get("open_tender_relationships", []) if x.get("tender_code")}
 
@@ -72,6 +85,15 @@ def match_map(data: dict):
     return {x.get("tender_code"): x for x in data.get("matches_by_open_tender", []) if x.get("tender_code")}
 
 
+def contact_map(data: dict):
+    result = {}
+    for entity in data.get("entities", []):
+        tax_code = str(entity.get("tax_code") or "").strip()
+        if tax_code:
+            result[tax_code] = entity
+    return result
+
+
 def relationship_for_partner(match: dict | None, partner_id: str):
     if not match:
         return None
@@ -81,12 +103,51 @@ def relationship_for_partner(match: dict | None, partner_id: str):
     return None
 
 
-def dossier_counterparty(trigger: dict, candidate: dict, partner: dict, relationship: dict | None):
+def verified_contacts_for(tax_code: str | None, contacts: dict, now: datetime):
+    if not tax_code:
+        return [], None
+    entity = contacts.get(str(tax_code).strip())
+    if not entity or entity.get("identity_status") != "verified":
+        return [], None
+
+    verified_at = parse_dt(entity.get("last_verified_at"))
+    if not verified_at or now - verified_at.astimezone(timezone.utc) > timedelta(days=CONTACT_FRESH_DAYS):
+        return [], {
+            "identity_status": "stale",
+            "identity_source_url": entity.get("identity_source_url"),
+            "last_verified_at": entity.get("last_verified_at"),
+        }
+
+    paths = []
+    for item in entity.get("contacts", []):
+        if item.get("status") != "verified" or not item.get("value") or not item.get("source_url"):
+            continue
+        paths.append({
+            "type": item.get("type"),
+            "value": item.get("value"),
+            "scope": item.get("scope"),
+            "source_url": item.get("source_url"),
+            "source_type": item.get("source_type"),
+            "verified_at": entity.get("last_verified_at"),
+        })
+    proof = {
+        "identity_status": "verified",
+        "identity_source_url": entity.get("identity_source_url"),
+        "identity_source_type": entity.get("identity_source_type"),
+        "identity_note": entity.get("identity_note"),
+        "last_verified_at": entity.get("last_verified_at"),
+    }
+    return paths, proof
+
+
+def dossier_counterparty(trigger: dict, candidate: dict, partner: dict, relationship: dict | None, contacts: dict, now: datetime):
     category = trigger.get("procurement_category", "other")
     roles = ROLE_MAP.get(category, ROLE_MAP["other"])
     offers = OFFER_MAP.get(category, OFFER_MAP["other"])
     same_buyer_awards = int((relationship or {}).get("same_buyer_observed_awards") or 0)
     same_category_awards = int((relationship or {}).get("same_buyer_same_category_awards") or 0)
+    tax_code = partner.get("tax_code")
+    verified_paths, identity_proof = verified_contacts_for(tax_code, contacts, now)
 
     why = [
         f"Match lịch sử cùng category: {candidate.get('match_score', 0)}/100.",
@@ -101,7 +162,7 @@ def dossier_counterparty(trigger: dict, candidate: dict, partner: dict, relation
         "partner_id": candidate.get("partner_id"),
         "contractor_name": candidate.get("contractor_name"),
         "contractor_code": candidate.get("contractor_code"),
-        "tax_code": partner.get("tax_code"),
+        "tax_code": tax_code,
         "counterparty_score": min(100, int(candidate.get("match_score") or 0) + (8 if same_category_awards else 0)),
         "partner_evidence_score": partner.get("partner_evidence_score"),
         "observed_wins": partner.get("observed_wins"),
@@ -116,9 +177,10 @@ def dossier_counterparty(trigger: dict, candidate: dict, partner: dict, relation
         "why_this_counterparty": why,
         "target_roles_to_find": roles,
         "offers_to_test": offers,
-        "contact_status": "unresolved",
-        "verified_contact_paths": [],
-        "contact_rule": "Chỉ thêm website/email/phone/person khi có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
+        "contact_status": "verified" if verified_paths else "unresolved",
+        "verified_contact_paths": verified_paths,
+        "identity_proof": identity_proof,
+        "contact_rule": "Chỉ thêm website/email/phone/person khi identity và contact đều có nguồn công khai xác minh được; không suy đoán theo tên công ty hoặc domain.",
         "opening_hypothesis": f"Bên này đã có bằng chứng thắng nhóm {category}; kiểm tra xem họ có nhu cầu thuê ngoài {offers[0]} hoặc phần việc tương tự cho pipeline dự án hiện tại hay không.",
         "first_ask": "Xin trao đổi với người phụ trách dự án/BD phù hợp; chỉ hỏi về nhu cầu phần việc cụ thể, không tuyên bố biết họ đang dự gói hiện tại.",
         "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn.",
@@ -130,10 +192,12 @@ def build():
     action = load(ACTION_PATH)
     partner_data = load(PARTNER_PATH)
     relationship_data = load(RELATIONSHIP_PATH)
+    contact_registry = load(CONTACT_REGISTRY_PATH)
 
     partners = partner_map(partner_data)
     matches = match_map(partner_data)
     relationships = rel_map(relationship_data)
+    contacts = contact_map(contact_registry)
     dossiers = []
 
     triggers = [x for x in action.get("buyer_triggers", []) if x.get("action_level") == "investigate_now"]
@@ -145,7 +209,7 @@ def build():
         for candidate in partner_match.get("candidates", [])[:3]:
             partner = partners.get(candidate.get("partner_id"), {})
             relationship = relationship_for_partner(relationship_match, candidate.get("partner_id"))
-            counterparties.append(dossier_counterparty(trigger, candidate, partner, relationship))
+            counterparties.append(dossier_counterparty(trigger, candidate, partner, relationship, contacts, now))
 
         route = trigger.get("recommended_path", "watch_only")
         if route == "subcontract_or_sourcing":
@@ -173,26 +237,31 @@ def build():
             "kill_signal_48h": "Không xác minh được kênh chính thức, không có phần việc tách được, hoặc 3 counterparty phù hợp đều không cho thấy nhu cầu thương mại.",
         })
 
-    verified = sum(len(c.get("verified_contact_paths", [])) for d in dossiers for c in d.get("counterparties", []))
-    counterparties_total = sum(len(d.get("counterparties", [])) for d in dossiers)
+    all_counterparties = [c for d in dossiers for c in d.get("counterparties", [])]
+    verified_paths = sum(len(c.get("verified_contact_paths", [])) for c in all_counterparties)
+    verified_targets = sum(bool(c.get("verified_contact_paths")) for c in all_counterparties)
+    counterparties_total = len(all_counterparties)
     return {
         "meta": {
-            "version": "1.5.0",
+            "version": "1.5.1",
             "generated_at": now.isoformat(),
-            "mode": "counterparty_execution_dossiers",
-            "principle": "evidence_backed_counterparty_targets_with_no_fabricated_contacts",
+            "mode": "counterparty_execution_dossiers_with_verified_contact_registry",
+            "principle": "evidence_backed_counterparty_targets_and_dual_proof_contacts_no_fabrication",
         },
         "coverage": {
             "investigate_now_tenders": len(triggers),
             "dossiers_built": len(dossiers),
             "counterparty_targets": counterparties_total,
-            "verified_contact_paths": verified,
-            "unresolved_contact_targets": counterparties_total - verified,
+            "verified_contact_targets": verified_targets,
+            "verified_contact_paths": verified_paths,
+            "unresolved_contact_targets": counterparties_total - verified_targets,
+            "contact_registry_entities": len(contacts),
         },
         "dossiers": dossiers,
         "warnings": [
             "Historical winner không đồng nghĩa bidder hiện tại.",
-            "Contact unresolved là trạng thái hợp lệ; không sinh email/phone/person bằng suy đoán.",
+            "Contact unresolved là trạng thái hợp lệ; không sinh email/phone/person/domain bằng suy đoán.",
+            "Contact verified chỉ có nghĩa identity + public contact source đã được kiểm chứng; không có nghĩa đúng người phụ trách gói hiện tại.",
             "Outreach chỉ nhằm kiểm chứng nhu cầu phần việc; không mua hàng hoặc cam kết vốn trước phản hồi thương mại thật.",
         ],
     }
@@ -205,7 +274,8 @@ def main():
     print(
         "counterparty-dossiers "
         f"tenders={c['dossiers_built']} targets={c['counterparty_targets']} "
-        f"verified_contacts={c['verified_contact_paths']} unresolved={c['unresolved_contact_targets']}"
+        f"verified_targets={c['verified_contact_targets']} verified_paths={c['verified_contact_paths']} "
+        f"unresolved={c['unresolved_contact_targets']}"
     )
 
 
