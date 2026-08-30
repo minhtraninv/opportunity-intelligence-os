@@ -17,12 +17,33 @@ OBS_PATH = DATA / "policy_observations.json"
 HISTORY_PATH = DATA / "history.json"
 OUTPUT = DATA / "policy_intelligence.json"
 
+ECON_CONTEXT = (
+    "kinh tế", "doanh nghiệp", "kinh doanh", "đầu tư", "thuế", "tín dụng",
+    "thị trường", "du lịch", "công nghệ", "dữ liệu", "trí tuệ nhân tạo", " ai ",
+    "hạ tầng", "năng lượng", "điện", "bất động sản", "lao động", "việc làm",
+    "xuất khẩu", "nhập khẩu", "thương mại", "tài chính", "ngân hàng", "sản xuất",
+    "khu công nghiệp", "hộ kinh doanh", "logistics", "sandbox", "đất đai",
+    "chuyển đổi số", "tài sản mã hóa", "trung tâm tài chính", "khu thương mại tự do"
+)
+ECON_CATEGORIES = {
+    "policy", "fdi_industrial", "infrastructure", "data_ai", "sme", "energy",
+    "logistics", "trade_flow", "consumer_services", "labor", "construction"
+}
+
 
 def load(path: Path, default):
     try:
         return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
     except Exception:
         return default
+
+
+def is_economic_policy(event: dict) -> bool:
+    title = f" {str(event.get('title') or '').casefold()} "
+    categories = set(event.get("categories") or [])
+    if categories - {"policy"}:
+        return bool(categories & ECON_CATEGORIES)
+    return any(term in title for term in ECON_CONTEXT)
 
 
 def main() -> None:
@@ -43,6 +64,8 @@ def main() -> None:
         if event.get("event_type") != "policy_regulation":
             continue
         if event.get("signal_quality") not in {"curated", "candidate"}:
+            continue
+        if not is_economic_policy(event):
             continue
         key = event.get("url") or event.get("id")
         if not key or key in seen or event.get("url") in curated_urls:
@@ -79,9 +102,9 @@ def main() -> None:
 
     payload = {
         "meta": {
-            "version": "2.5.0",
+            "version": "2.5.1",
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "mode": "policy_context_and_rules_of_the_game",
+            "mode": "economic_policy_context_and_rules_of_the_game",
             "principle": "policy_is_leading_context_not_instant_opportunity",
         },
         "thesis": thesis,
