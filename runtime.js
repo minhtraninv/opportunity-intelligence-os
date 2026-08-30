@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const ASSET_VERSION = '20260831-trust1';
+  const ASSET_VERSION = '20260831-stable1';
   const nativeFetch = window.fetch.bind(window);
   const responseCache = new Map();
   const inflight = new Map();
