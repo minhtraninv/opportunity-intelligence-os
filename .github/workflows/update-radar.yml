@@ -43,6 +43,9 @@ jobs:
       - name: Update partner and prime intelligence
         run: python pipeline/partner_intel.py
 
+      - name: Normalize procurement taxonomy
+        run: python pipeline/normalize_taxonomy.py
+
       - name: Update corporate action intelligence
         run: python pipeline/corporate_intel.py
 
