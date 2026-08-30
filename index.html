@@ -76,6 +76,7 @@
           <li>Không coi ngành tăng = cơ hội của mình.</li>
           <li>Không gọi biến động là trend khi chưa đủ baseline.</li>
           <li>Không coi listing đấu thầu = gói phù hợp vốn trước khi đọc yêu cầu thật.</li>
+          <li>Historical winner ≠ bidder của gói hiện tại.</li>
           <li>Không mở rộng trước khi có tín hiệu trả tiền.</li>
         </ul>
       </section>
@@ -159,13 +160,22 @@
           <span id="buyerRadarStatus" class="muted">Đang tải dữ liệu mua sắm…</span>
         </div>
         <div class="panel" style="margin-bottom:16px">
-          <strong>Quy tắc xác minh:</strong> dữ liệu procurement tự động chỉ dùng để discovery. Mở mã TBMT trên Hệ thống mạng đấu thầu quốc gia, đọc giá gói, bảo lãnh, doanh thu tối thiểu, giấy phép và phạm vi trước khi coi là cơ hội.
+          <strong>Quy tắc xác minh:</strong> Buyer trigger là nhu cầu mua thật công khai, nhưng Prime fit/Subcontract fit vẫn chỉ là prior. Phải mở HSMT để đọc bảo lãnh, hợp đồng tương tự, nhân sự, pháp lý và lịch thanh toán trước khi bỏ tiền.
         </div>
         <div id="liveBuyerGrid" class="buyer-grid"></div>
 
+        <div class="section-head" style="margin-top:30px">
+          <div><div class="eyebrow">PARTNER / PRIME RADAR · V1.4</div><h2>Doanh nghiệp đã thắng các gói tương tự</h2></div>
+          <span id="partnerRadarStatus" class="muted">Đang tích lũy KQLCNT…</span>
+        </div>
+        <div class="panel" style="margin-bottom:16px">
+          <strong>Cách đọc:</strong> đây là historical winners lấy từ KQLCNT chính thức để ưu tiên điều tra đối tác. Một doanh nghiệp từng thắng cùng nhóm <strong>không đồng nghĩa</strong> họ đang tham gia gói hiện tại. Giá trị của lớp này là giúp tìm đúng nhóm prime contractor để chào phần việc nhỏ, sourcing hoặc subcontract.
+        </div>
+        <div id="partnerGrid" class="buyer-grid"></div>
+
         <div class="section-head" style="margin-top:28px">
           <div><div class="eyebrow">BUYER ARCHETYPES</div><h2>Buyer Radar nền</h2></div>
-          <span class="muted">Archetype giúp biết nên tìm vai trò nào; live triggers phía trên cho biết ai đang có nhu cầu công khai.</span>
+          <span class="muted">Archetype giúp biết nên tìm vai trò nào; live triggers cho biết ai đang mua, historical winners cho biết ai từng bán được.</span>
         </div>
         <div id="buyerGrid" class="buyer-grid"></div>
       </section>
@@ -194,8 +204,8 @@
   </main>
 
   <footer>
-    <span>Opportunity Intelligence OS · V1.3</span>
-    <span>Không phải khuyến nghị đầu tư/đấu thầu. Mọi buyer trigger tự động là manh mối điều tra và phải xác minh ở nguồn chính thức.</span>
+    <span>Opportunity Intelligence OS · V1.4</span>
+    <span>Không phải khuyến nghị đầu tư/đấu thầu. Buyer trigger và historical winner đều là dữ liệu điều tra; eligibility và cơ hội thương mại phải được xác minh.</span>
   </footer>
 
   <script src="app.js"></script>
