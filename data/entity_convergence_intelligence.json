@@ -1,32 +1,113 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-08-30T21:07:52.164715+00:00",
+    "generated_at": "2026-08-31T05:34:54.636182+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-08-30T21:07:52.267450+00:00"
+    "trust_hardened_at": "2026-08-31T05:34:54.702747+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
-    "auto_discovered_entities": 20,
-    "candidate_entities_total": 31,
-    "observed_entities": 5,
-    "observed_auto_entities": 2,
+    "auto_discovered_entities": 22,
+    "candidate_entities_total": 33,
+    "observed_entities": 6,
+    "observed_auto_entities": 3,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 0,
-    "watch": 5,
+    "watch": 6,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 0,
+    "discovery_candidates": 1,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 1
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
-  "discovery_candidates": [],
+  "discovery_candidates": [
+    {
+      "entity_id": "auto-saigon-co-op-3c00f6e6",
+      "label": "Saigon Co.op",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Saigon Co.op đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 2,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "d8986083c3f1d551",
+          "event_signature": "d372427d6c0dc6f2",
+          "family": "project_execution",
+          "title": "Saigon Co.op kỳ vọng sức mua tăng hai con số dịp Quốc khánh",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/saigon-co-op-ky-vong-suc-mua-tang-hai-con-so-dip-quoc-khanh-5114934.html",
+          "observed_at": "2026-08-31T02:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "18006000e69d41ae",
+          "event_signature": "b8bff67af8761816",
+          "family": "strategy",
+          "title": "Saigon Co.op khuyến mãi mừng Quốc khánh 2.9: Kích cầu tiêu dùng - Tiếp sức hàng Việt",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/saigon-coop-khuyen-mai-mung-quoc-khanh-29-kich-cau-tieu-dung-tiep-suc-hang-viet-185260828170725155.htm",
+          "observed_at": "2026-08-29T01:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    }
+  ],
   "verified_watchlist": [],
   "suppressed_non_organizations": [
     {
