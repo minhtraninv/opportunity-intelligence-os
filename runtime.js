@@ -67,6 +67,7 @@
 
   let reportsLoaded = false;
   let advancedLoaded = false;
+  let frontierLoaded = false;
 
   async function loadReports(){
     if(reportsLoaded) return;
@@ -84,6 +85,13 @@
       await loadScript('counterparty.js');
       await loadScript('execution.js');
     } catch(err){ advancedLoaded = false; console.error(err); }
+  }
+
+  async function loadFrontier(){
+    if(frontierLoaded) return;
+    frontierLoaded = true;
+    try { await loadScript('frontier.js'); }
+    catch(err){ frontierLoaded = false; console.error(err); }
   }
 
   function activeTab(){ return document.querySelector('.tab.active')?.dataset.tab || 'overview'; }
@@ -128,8 +136,9 @@
     window.setTimeout(() => location.reload(), 350);
   }
 
-  window.OIRuntime = {loadReports,loadAdvanced,clearDataCache:()=>responseCache.clear(),checkForUpdate};
+  window.OIRuntime = {loadReports,loadAdvanced,loadFrontier,clearDataCache:()=>responseCache.clear(),checkForUpdate};
   restoreTab();
+  loadFrontier();
   initializeFreshness();
   window.setInterval(checkForUpdate, META_CHECK_MS);
   document.addEventListener('visibilitychange', () => { if(!document.hidden) checkForUpdate(); });

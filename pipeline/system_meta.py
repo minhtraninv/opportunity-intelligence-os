@@ -25,6 +25,7 @@ MODULES = {
     "lifecycle": "thesis_lifecycle.json",
     "entity_media": "entity_media_intelligence.json",
     "entity_convergence": "entity_convergence_intelligence.json",
+    "frontier": "frontier_intelligence.json",
     "source_coverage": "source_coverage_intelligence.json",
     "reports": "intelligence_reports.json",
     "trust_audit": "trust_audit.json",

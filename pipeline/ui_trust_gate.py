@@ -40,6 +40,7 @@ def main() -> None:
     regional = load("regional_intelligence.json")
     contradiction = load("contradiction_intelligence.json")
     convergence = load("entity_convergence_intelligence.json")
+    frontier = load("frontier_intelligence.json")
 
     # 1) Every public macro/policy observation must be directly traceable.
     for row in macro.get("observations", []):
@@ -106,7 +107,22 @@ def main() -> None:
             if isinstance(c, dict) and not has_http(c.get("source_url")):
                 errors.append(f"counter-signal source missing: {c.get('id') or c.get('title')}")
 
-    # 7) Frontend deploy must not mix asset versions.
+    # 7) Discovery Frontier is allowed to be broad only if it stays explicitly discovery-only
+    # and every surfaced candidate can be drilled back to source evidence.
+    for c in frontier.get("attention_queue", []):
+        cid = c.get("id") or c.get("label")
+        if c.get("discovery_only") is not True:
+            errors.append(f"frontier candidate lost discovery-only boundary: {cid}")
+        evidence = [x for x in (c.get("evidence") or []) if isinstance(x, dict)]
+        if not evidence:
+            errors.append(f"frontier candidate without evidence: {cid}")
+            continue
+        if not any(has_http(x.get("source_url")) for x in evidence):
+            errors.append(f"frontier candidate without auditable source URL: {cid}")
+        if any(x.get("evidence_grade") != "discovery_only" for x in evidence):
+            errors.append(f"frontier evidence grade boundary broken: {cid}")
+
+    # 8) Frontend deploy must not mix asset versions.
     index = (ROOT / "index.html").read_text(encoding="utf-8")
     runtime = (ROOT / "runtime.js").read_text(encoding="utf-8")
     versions = set(re.findall(r"[?&]v=([A-Za-z0-9._-]+)", index))
@@ -118,7 +134,7 @@ def main() -> None:
     elif versions and runtime_match.group(1) not in versions:
         errors.append(f"runtime/index asset version mismatch: runtime={runtime_match.group(1)} index={sorted(versions)}")
 
-    # 8) Protect against the exact theme-id regression that caused wrong adjusted scores.
+    # 9) Protect against the exact theme-id regression that caused wrong adjusted scores.
     overview = (ROOT / "overview.js").read_text(encoding="utf-8")
     official = (ROOT / "official-release.js").read_text(encoding="utf-8")
     forbidden = ["contradiction?.[t.theme_id]", "cMap[t.theme_id]", "GUIDE[t.theme_id]"]
@@ -133,6 +149,7 @@ def main() -> None:
     notes.append(f"themes={len(themes)}")
     notes.append(f"regions={len(regional.get('regions', []))}")
     notes.append(f"entities={len(convergence.get('entities', []))}")
+    notes.append(f"frontier={len(frontier.get('attention_queue', []))}")
 
     if errors:
         print("UI TRUST GATE: FAIL")
