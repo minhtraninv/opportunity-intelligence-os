@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "version": "3.0.0",
+    "principle": "misses_expand_sight_not_hardcode_recommendations",
+    "note": "A miss is a learning benchmark: an important change the system should have had a reasonable chance to surface. It changes coverage/reasoning priorities, never forces a positive thesis."
+  },
+  "misses": [
+    {
+      "id": "threads-vietnam-attention-2026",
+      "reported_at": "2026-09-01",
+      "label": "Threads Việt Nam · attention/distribution shift",
+      "status": "learning_benchmark",
+      "shift_types": ["attention_distribution", "behavior_change"],
+      "detection_terms": ["threads", "người dùng", "creator", "mạng xã hội", "platform", "traffic"],
+      "lesson": "Coverage hiện tại thiên policy/money flow nên có thể bỏ lỡ nơi attention và distribution đang trở nên rẻ để tích lũy. Cần discovery coverage cho platform adoption và creator/user migration; vẫn phải xác minh số liệu trước khi nâng conviction."
+    }
+  ]
+}
