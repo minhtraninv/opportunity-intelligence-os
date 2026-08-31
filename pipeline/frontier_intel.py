@@ -116,7 +116,13 @@ def merge_history(old,fresh,captured):
     cutoff=captured-timedelta(days=WINDOW_DAYS); rows=[]
     for x in items.values():
         d=parse_date(x.get('published_at') or x.get('captured_at'))
-        if d and d>=cutoff:rows.append(x)
+        if not d or d<cutoff:continue
+        # Historical events must be reclassified with today's rules. Otherwise an old
+        # false-positive survives forever even after the detector is fixed.
+        text=f"{x.get('title','')} {x.get('summary','')}"; ss=shifts(text)
+        if not ss:continue
+        x['shift_types']=ss; x['anchors']=anchors(text); x['topic_tokens']=tokens(x.get('title','')); x['magnitude_cues']=magnitude(text)
+        rows.append(x)
     rows.sort(key=lambda x:x.get('published_at') or '',reverse=True)
     return {'meta':{'version':'3.0.0','updated_at':captured.isoformat(),'discovery_only':True},'events':rows[:MAX_HISTORY]}
 
@@ -126,12 +132,14 @@ def sim(a,b):
 def clusters(events,captured):
     recent=[x for x in events if (parse_date(x.get('published_at')) or captured)>=captured-timedelta(days=RECENT_DAYS)]; recent.sort(key=lambda x:x.get('published_at') or '',reverse=True); out=[]
     for row in recent:
-        ra=set(row.get('anchors') or []); rt=set(row.get('topic_tokens') or []); best=None; score=0
+        ra=list(row.get('anchors') or []); rp=ra[0] if ra else None; rt=set(row.get('topic_tokens') or []); best=None; score=0
         for i,c in enumerate(out):
-            ca=set().union(*(set(x.get('anchors') or []) for x in c)); ct=set().union(*(set(x.get('topic_tokens') or []) for x in c)); same_anchor=bool(ra and ca and ra&ca); token_sim=sim(rt,ct)
-            # Named entities with different anchors must not merge just because they share a generic word like chip/AI.
-            if ra and ca and not same_anchor: s=token_sim if token_sim>=.68 else 0
-            else: s=(.75 if same_anchor else 0)+token_sim
+            ca=list(c[0].get('anchors') or []); cp=ca[0] if ca else None; ct=set().union(*(set(x.get('topic_tokens') or []) for x in c)); token_sim=sim(rt,ct)
+            # The first named anchor is the cluster identity. This blocks bridge stories
+            # from accidentally fusing OpenAI, Nvidia and unrelated generic AI/chip news.
+            if rp and cp: s=(.75+token_sim) if rp==cp else 0
+            elif rp or cp: s=token_sim if token_sim>=.72 else 0
+            else: s=token_sim if token_sim>=.62 else 0
             if s>score:best,score=i,s
         if best is not None and score>=.50:out[best].append(row)
         else:out.append([row])
