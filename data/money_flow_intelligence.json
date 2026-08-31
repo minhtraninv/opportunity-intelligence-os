@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-08-31T05:34:54.449896+00:00",
+    "generated_at": "2026-08-31T08:21:27.461738+00:00",
     "mode": "contextual_theme_chain_with_observed_supply_evidence",
     "principle": "discovery_or_stale_verified_context_can_prioritize_research_but_cannot_create_directional_convergence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-08-31T05:34:54.477419+00:00",
+    "trust_hardened_at": "2026-08-31T08:21:27.504399+00:00",
     "snapshot_freshness": {
       "macro": "fresh",
       "regional": "fresh",
@@ -14,9 +14,9 @@
   },
   "thesis": "Theme đáng điều tra nhất có fresh verified convergence hiện tại: Gia tốc thương mại & logistics (converging; 4 họ bằng chứng verified, 2 nhóm nguồn verified). Đây vẫn là research priority, không phải khuyến nghị hành động.",
   "coverage": {
-    "total_evidence_inputs": 35,
+    "total_evidence_inputs": 36,
     "macro_observations": 7,
-    "contextual_history_evidence": 22,
+    "contextual_history_evidence": 23,
     "contextual_procurement_support": 9,
     "themes": 7,
     "themes_converging": 1,
@@ -483,9 +483,9 @@
     {
       "id": "public_infrastructure",
       "label": "Đầu tư công & hạ tầng vật lý",
-      "score": 53,
+      "score": 54,
       "status": "developing",
-      "evidence_count": 3,
+      "evidence_count": 4,
       "directional_evidence_count": 2,
       "independent_families": [
         "capital",
@@ -539,6 +539,28 @@
           "notes": null,
           "directional": true,
           "snapshot_freshness": "fresh"
+        },
+        {
+          "id": "75c3baa7157e1c8d",
+          "family": "infrastructure",
+          "title": "Hoàn thành công trình truyền tải điện 220kV Năm Căn - Cà Mau 2",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/-Hoan-thanh-cong-trinh-truyen-tai-dien-220kV-Nam-Can-Ca-Mau-2-60-13-509460",
+          "quality": "candidate",
+          "category_tags": [
+            "energy",
+            "infrastructure"
+          ],
+          "theme_tags": [
+            "energy_grid",
+            "public_infrastructure"
+          ],
+          "geography": [
+            "Cà Mau"
+          ],
+          "observed_at": "2026-08-31T08:20:40.769837+00:00",
+          "directional": true
         },
         {
           "id": "seed-public-invest",
@@ -598,7 +620,8 @@
       ],
       "all_observed_publishers": [
         "Bộ Tài chính",
-        "Chính phủ"
+        "Chính phủ",
+        "EVN/NSMO"
       ],
       "verified_evidence_families": [
         "capital",
@@ -612,10 +635,11 @@
         "infrastructure"
       ],
       "discovery_evidence_publishers": [
-        "Chính phủ"
+        "Chính phủ",
+        "EVN/NSMO"
       ],
       "verified_evidence_count": 2,
-      "discovery_evidence_count": 1,
+      "discovery_evidence_count": 2,
       "procurement_support_count": 0,
       "snapshot_freshness": {
         "macro": "fresh"
@@ -1223,9 +1247,9 @@
     {
       "id": "energy_grid",
       "label": "Mở rộng điện & lưới điện",
-      "score": 13,
+      "score": 15,
       "status": "insufficient",
-      "evidence_count": 1,
+      "evidence_count": 2,
       "directional_evidence_count": 0,
       "independent_families": [],
       "independent_publishers": [],
@@ -1244,6 +1268,28 @@
         "dịch vụ tiết kiệm năng lượng chỉ khi có năng lực chuyên môn"
       ],
       "evidence": [
+        {
+          "id": "75c3baa7157e1c8d",
+          "family": "infrastructure",
+          "title": "Hoàn thành công trình truyền tải điện 220kV Năm Căn - Cà Mau 2",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/-Hoan-thanh-cong-trinh-truyen-tai-dien-220kV-Nam-Can-Ca-Mau-2-60-13-509460",
+          "quality": "candidate",
+          "category_tags": [
+            "energy",
+            "infrastructure"
+          ],
+          "theme_tags": [
+            "energy_grid",
+            "public_infrastructure"
+          ],
+          "geography": [
+            "Cà Mau"
+          ],
+          "observed_at": "2026-08-31T08:20:40.769837+00:00",
+          "directional": true
+        },
         {
           "id": "a217e71d65206243",
           "family": "market_data",
@@ -1279,6 +1325,7 @@
         "evidence_scope": "no_qualified_supply_pressure_evidence_yet"
       },
       "all_observed_families": [
+        "infrastructure",
         "market_data"
       ],
       "all_observed_publishers": [
@@ -1287,13 +1334,14 @@
       "verified_evidence_families": [],
       "verified_evidence_publishers": [],
       "discovery_evidence_families": [
+        "infrastructure",
         "market_data"
       ],
       "discovery_evidence_publishers": [
         "EVN/NSMO"
       ],
       "verified_evidence_count": 0,
-      "discovery_evidence_count": 1,
+      "discovery_evidence_count": 2,
       "procurement_support_count": 0,
       "snapshot_freshness": {
         "macro": "fresh"
