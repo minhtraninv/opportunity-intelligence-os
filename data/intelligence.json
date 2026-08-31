@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-31T08:54:02.397617+00:00",
+    "generated_at": "2026-08-31T13:49:04.220686+00:00",
     "status": "warming_up",
     "history_days": 2,
     "required_history_days": 14,
@@ -43,6 +43,17 @@
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
+      "category": "infrastructure",
+      "recent_7d": 3,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 22,
+      "source_diversity_7d": 2,
+      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
       "category": "monetary",
       "recent_7d": 5,
       "baseline_21d": 0,
@@ -51,17 +62,6 @@
       "trend": "warming_up",
       "confidence": 20,
       "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 2,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 20,
-      "source_diversity_7d": 2,
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
@@ -109,6 +109,17 @@
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
+      "category": "construction",
+      "recent_7d": 1,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 12,
+      "source_diversity_7d": 1,
+      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
       "category": "capital_market",
       "recent_7d": 0,
       "baseline_21d": 0,
@@ -140,20 +151,28 @@
       "confidence": 3,
       "source_diversity_7d": 0,
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "construction",
-      "recent_7d": 0,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 3,
-      "source_diversity_7d": 0,
-      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     }
   ],
   "top_new_events": [
+    {
+      "id": "479e8d88f1b302a8",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về xây dựng công trình biên giới",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-xay-dung-cong-trinh-bien-gioi-102260831160900013.htm",
+      "categories": [
+        "construction",
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-08-31T13:49:04.220686+00:00"
+    },
     {
       "id": "75c3baa7157e1c8d",
       "source_id": "evn-system",
@@ -557,30 +576,10 @@
       "first_seen_at": "2026-08-30T15:00:57.741347+00:00",
       "collected_at": "2026-08-30T15:00:57.741347+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "8d23bd4f2f5ed8d5",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Giảm thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp: Hàng triệu hộ kinh doanh, doanh nghiệp được hưởng lợi",
-      "url": "https://xaydungchinhsach.chinhphu.vn/giam-thue-thu-nhap-ca-nhan-thue-thu-nhap-doanh-nghiep-hang-trieu-ho-kinh-doanh-doanh-nghiep-duoc-huong-loi-119260825081513904.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-08-30T15:00:57.741347+00:00",
-      "collected_at": "2026-08-30T15:00:57.741347+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 16,
+    "policy_regulation": 17,
     "business_formation": 6,
     "market_data": 3,
     "infrastructure_delivery": 2,
@@ -590,9 +589,9 @@
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 108,
-    "candidate_events": 28,
-    "reference_events": 75,
+    "historical_events": 111,
+    "candidate_events": 29,
+    "reference_events": 77,
     "unique_candidate_sources": 6,
     "source_errors_last_run": 2
   },
