@@ -13,6 +13,7 @@ on:
       - "data/policy_observations.json"
       - "data/entity_registry.json"
       - "data/source_registry.json"
+      - "data/miss_log.json"
       - "data/product_release.json"
       - "*.js"
       - "*.html"
@@ -56,6 +57,7 @@ jobs:
             contradiction-flow.js \
             lifecycle-flow.js \
             overview.js \
+            frontier.js \
             freshness-ui.js \
             action.js \
             relationship.js \
@@ -79,6 +81,9 @@ jobs:
 
       - name: Build entity media discovery feed
         run: python pipeline/entity_media_intel.py
+
+      - name: Build structured-serendipity frontier
+        run: python pipeline/frontier_intel.py
 
       - name: Prepare trust semantics
         run: python pipeline/trust_prepare.py
@@ -154,6 +159,8 @@ jobs:
             policy_intelligence.json
             entity_media_history.json
             entity_media_intelligence.json
+            frontier_history.json
+            frontier_intelligence.json
             corporate_history.json
             corporate_intelligence.json
             freshness_state.json
