@@ -135,6 +135,9 @@ jobs:
       - name: Enforce pre-publication trust gate
         run: python pipeline/trust_gate.py
 
+      - name: Enforce public UI provenance contract
+        run: python pipeline/ui_trust_gate.py
+
       - name: Build system metadata
         run: python pipeline/system_meta.py
 
