@@ -3,6 +3,75 @@
     .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
     .replaceAll('"','&quot;').replaceAll("'",'&#039;');
   const safe = (v) => { try { const u=new URL(v); return ['http:','https:'].includes(u.protocol)?u.href:'#'; } catch { return '#'; } };
+  const VERIFIED_QUALITIES = new Set(['official_verified','curated','primary_verified']);
+  const FAMILY_LABEL = {
+    policy:'Chính sách', capital:'Dòng vốn / FDI', production:'Sản xuất', trade:'Xuất nhập khẩu',
+    public_capital:'Đầu tư công', labor:'Lao động', consumption:'Tiêu dùng', energy:'Điện / năng lượng',
+    project_execution:'Dự án / thực thi', strategy:'Chiến lược', operating:'Vận hành / demand',
+    business_formation:'Hình thành DN', procurement:'Mua sắm công'
+  };
+
+  function themeId(t){ return t?.id || t?.theme_id || ''; }
+
+  function ensureAuditStyles(){
+    if(document.getElementById('oiEvidenceAuditStyles')) return;
+    const style=document.createElement('style');
+    style.id='oiEvidenceAuditStyles';
+    style.textContent=`
+      .evidence-drilldown{margin-top:12px;border-top:1px solid var(--line,#2a394b);padding-top:10px}
+      .evidence-drilldown summary{cursor:pointer;color:#8ec9ff;font-weight:800;font-size:12px;list-style:none}
+      .evidence-drilldown summary::-webkit-details-marker{display:none}
+      .evidence-drilldown summary:before{content:'＋ ';color:var(--green,#37d67a)}
+      .evidence-drilldown[open] summary:before{content:'− '}
+      .evidence-audit-body{margin-top:10px;padding:11px;border-radius:9px;background:#0b141d}
+      .evidence-audit-head{font-size:11px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:#9eb1c5;margin:10px 0 6px}
+      .evidence-audit-head:first-child{margin-top:0}
+      .evidence-row{padding:8px 0;border-top:1px solid rgba(255,255,255,.07);line-height:1.45}
+      .evidence-row:first-of-type{border-top:0}
+      .evidence-row a{color:#8ec9ff;text-decoration:none}
+      .evidence-row a:hover{text-decoration:underline}
+      .evidence-meta{font-size:11px;color:#91a2b4;margin-top:3px}
+      .counter-row{border-left:2px solid #d8a94e;padding-left:9px}
+      .evidence-empty{font-size:12px;color:#91a2b4}
+    `;
+    document.head.appendChild(style);
+  }
+
+  function verifiedEvidence(t){
+    return (t?.evidence || []).filter(e => e && VERIFIED_QUALITIES.has(e.quality) && e.family !== 'procurement' && e.directional !== false);
+  }
+
+  function evidenceDetails(t,c){
+    const verified=verifiedEvidence(t);
+    const counters=(c?.counter_signals || []).filter(Boolean);
+    const families=t?.verified_evidence_families || t?.independent_families || [];
+    const publishers=t?.verified_evidence_publishers || t?.independent_publishers || [];
+    const summary=`${verified.length} bằng chứng verified · ${families.length} họ · ${counters.length} phản chứng · xem nguồn`;
+    const evidenceHtml=verified.length ? verified.map(e=>{
+      const family=FAMILY_LABEL[e.family] || e.family || 'Evidence';
+      const title=esc(e.title || 'Bằng chứng');
+      const link=safe(e.source_url);
+      const titleHtml=link!=='#' ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title;
+      const period=e.observed_at ? ` · Kỳ ${esc(e.observed_at)}` : '';
+      return `<div class="evidence-row">${titleHtml}<div class="evidence-meta">${esc(family)} · ${esc(e.publisher || e.publisher_group || 'Nguồn verified')}${period}</div></div>`;
+    }).join('') : '<div class="evidence-empty">Chưa có evidence verified có thể mở nguồn trực tiếp.</div>';
+    const counterHtml=counters.length ? counters.map(e=>{
+      const title=esc(e.title || e.interpretation || 'Counter-evidence');
+      const link=safe(e.source_url);
+      const titleHtml=link!=='#' ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title;
+      return `<div class="evidence-row counter-row">${titleHtml}${e.interpretation ? `<div class="evidence-meta">${esc(e.interpretation)}</div>` : ''}</div>`;
+    }).join('') : '<div class="evidence-empty">Chưa có phản chứng active cho theme này.</div>';
+    return `<details class="evidence-drilldown" data-theme="${esc(themeId(t))}">
+      <summary>${esc(summary)}</summary>
+      <div class="evidence-audit-body">
+        <div class="evidence-audit-head">Bằng chứng đang tạo conviction</div>
+        ${evidenceHtml}
+        <div class="evidence-audit-head">Phản chứng / điều kiện phải thận trọng</div>
+        ${counterHtml}
+        <div class="evidence-meta" style="margin-top:9px">Verified publishers: ${esc(publishers.join(' · ') || '—')} · Score gốc ${esc(t?.score ?? '—')} · Sau phản chứng ${esc(c?.tension_adjusted_score ?? t?.score ?? '—')}</div>
+      </div>
+    </details>`;
+  }
 
   function ensureAttention(){
     if(document.getElementById('attentionOverview')) return;
@@ -21,12 +90,13 @@
   }
 
   function attentionCard(x){
-    const source = x.url ? `<a href="${esc(safe(x.url))}" target="_blank" rel="noopener noreferrer">mở nguồn</a>` : '';
-    return `<article class="panel attention-card">
+    const source = x.url ? `<a href="${esc(safe(x.url))}" target="_blank" rel="noopener noreferrer">mở nguồn đầu tiên</a>` : '';
+    return `<article class="panel attention-card"${x.themeId ? ` data-money-theme="${esc(x.themeId)}"` : ''}>
       <div class="overview-kicker">${esc(x.kind)} · ${esc(x.level)}</div>
       <h3>${esc(x.title)}</h3>
       <p>${esc(x.why)}</p>
       <div class="attention-question"><strong>Câu hỏi tiếp theo:</strong> ${esc(x.question)}</div>
+      ${x.auditHtml || ''}
       <div class="card-footer muted small">${source}${source && x.evidence ? ' · ' : ''}${esc(x.evidence || '')}</div>
     </article>`;
   }
@@ -54,16 +124,22 @@
       });
 
     (money?.themes || []).slice().sort((a,b)=>{
-      const aa=cMap[a.theme_id]?.tension_adjusted_score ?? a.score ?? 0;
-      const bb=cMap[b.theme_id]?.tension_adjusted_score ?? b.score ?? 0;
+      const aa=cMap[themeId(a)]?.tension_adjusted_score ?? a.score ?? 0;
+      const bb=cMap[themeId(b)]?.tension_adjusted_score ?? b.score ?? 0;
       return bb-aa;
     }).slice(0,2).forEach(t=>{
-      const adjusted = cMap[t.theme_id]?.tension_adjusted_score ?? t.score;
+      const id=themeId(t);
+      const c=cMap[id];
+      const adjusted = c?.tension_adjusted_score ?? t.score;
+      const verified=verifiedEvidence(t);
       out.push({
         kind:'MONEY FLOW', level:t.status==='converging'?'CONVERGING':'WATCH', title:t.label,
         why:(t.economic_chain||[]).slice(0,2).join(' → ') || `Theme score ${adjusted}`,
         question:'Dòng tiền này đã chuyển thành buyer, CAPEX, hiring hoặc economics quan sát được ở đâu?',
-        evidence:`Score sau phản chứng ${adjusted} · ${(t.independent_families||[]).length} evidence families`
+        evidence:`Score sau phản chứng ${adjusted} · ${(t.independent_families||[]).length} evidence families · ${verified.length} verified evidence`,
+        url:verified[0]?.source_url,
+        themeId:id,
+        auditHtml:evidenceDetails(t,c)
       });
     });
 
@@ -97,6 +173,30 @@
     return out.slice(0,6);
   }
 
+  function patchMoneyOverview(money, contradiction){
+    const cMap=Object.fromEntries((contradiction?.themes || []).map(x=>[x.theme_id,x]));
+    const byLabel=Object.fromEntries((money?.themes || []).map(t=>[String(t.label||''),t]));
+    const apply=()=>{
+      document.querySelectorAll('#moneyFlowOverview .overview-card').forEach(card=>{
+        const label=card.querySelector('h3')?.textContent?.trim();
+        const t=byLabel[label];
+        if(!t) return;
+        const c=cMap[themeId(t)];
+        const adjusted=c?.tension_adjusted_score ?? t.score;
+        const big=card.querySelector('.big-number');
+        if(big) big.textContent=String(adjusted ?? '—');
+        if(!card.querySelector('.evidence-drilldown')) card.insertAdjacentHTML('beforeend', evidenceDetails(t,c));
+      });
+    };
+    apply();
+    const target=document.getElementById('moneyFlowOverview');
+    if(target){
+      const obs=new MutationObserver(apply);
+      obs.observe(target,{childList:true,subtree:true});
+      setTimeout(()=>obs.disconnect(),5000);
+    }
+  }
+
   function normalizeExecutionTab(){
     const apply = () => {
       const tab=document.querySelector('.tab[data-tab="edge"]');
@@ -112,6 +212,7 @@
     if(nav){ const obs=new MutationObserver(apply); obs.observe(nav,{childList:true,subtree:true}); setTimeout(()=>obs.disconnect(),6000); }
   }
 
+  ensureAuditStyles();
   ensureAttention();
   normalizeExecutionTab();
 
@@ -124,8 +225,10 @@
     fetch('data/contradiction_intelligence.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
   ]).then(([policy,money,regional,convergence,corporate,contradiction])=>{
     const grid=document.getElementById('attentionOverview');
-    if(!grid) return;
-    const rows=buildQueue({policy,money,regional,convergence,corporate,contradiction});
-    grid.innerHTML=rows.length?rows.map(attentionCard).join(''):'<div class="panel muted">Chưa có thay đổi nào vượt ngưỡng để đưa vào hàng đợi. Không có alert cũng là một kết quả hợp lệ.</div>';
+    if(grid){
+      const rows=buildQueue({policy,money,regional,convergence,corporate,contradiction});
+      grid.innerHTML=rows.length?rows.map(attentionCard).join(''):'<div class="panel muted">Chưa có thay đổi nào vượt ngưỡng để đưa vào hàng đợi. Không có alert cũng là một kết quả hợp lệ.</div>';
+    }
+    patchMoneyOverview(money,contradiction);
   });
 })();
