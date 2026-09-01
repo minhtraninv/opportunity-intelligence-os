@@ -1,19 +1,79 @@
 {
   "meta": {
     "version": "1.4.1",
-    "generated_at": "2026-09-01T11:40:59.127493+00:00",
+    "generated_at": "2026-09-01T16:41:42.106051+00:00",
     "mode": "buyer_vendor_relationship_intelligence",
     "principle": "observed_award_relationship_is_market_channel_evidence_not_wrongdoing"
   },
   "coverage": {
-    "award_events_used": 1334,
+    "award_events_used": 1386,
     "buyer_vendor_edges": 300,
-    "repeated_edges": 60,
+    "repeated_edges": 64,
     "buyer_profiles": 150,
     "open_tenders_with_same_buyer_history": 1,
     "open_tenders_with_same_buyer_same_category_history": 1
   },
   "relationship_edges": [
+    {
+      "relationship_id": "a2071e0e4b5e98f67eae",
+      "buyer_key": "ban quản lý dự án xây dựng tiền phong",
+      "buyer": "Ban Quản lý dự án xây dựng Tiền Phong",
+      "partner_id": "vn0201971957",
+      "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ XÂY DỰNG THỊNH LINH",
+      "contractor_code": "vn0201971957",
+      "tax_code": "0201971957",
+      "observed_awards": 4,
+      "observed_award_value_vnd": 170689000,
+      "categories": [
+        "construction",
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1,
+        "construction": 3
+      },
+      "latest_award_at": "2026-09-01T14:47:17+00:00",
+      "latest_tender_code": "IB2600501693",
+      "latest_tender_title": "Tư vấn lập E-HSMT, đánh giá E-HSDT gói thầu thi công xây dựng công trình",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501693&notifyId=IB2600501693&inputResultId=ee957809-86fe-42c0-8411-2ac206caa1f3&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501693&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 88,
+      "relationship_signal": "repeated_observed_awards",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501693",
+          "title": "Tư vấn lập E-HSMT, đánh giá E-HSDT gói thầu thi công xây dựng công trình",
+          "category": "consulting",
+          "winning_price_vnd": 36591000,
+          "award_public_at": "2026-09-01T14:47:17+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501693&notifyId=IB2600501693&inputResultId=ee957809-86fe-42c0-8411-2ac206caa1f3&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501693&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600501690",
+          "title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
+          "category": "construction",
+          "winning_price_vnd": 36988000,
+          "award_public_at": "2026-09-01T14:42:05+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501690&notifyId=IB2600501690&inputResultId=16d7597d-6486-40e9-8ff8-e30c13d27e5c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501690&planNo=PL2600286907&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600501634",
+          "title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
+          "category": "construction",
+          "winning_price_vnd": 47971000,
+          "award_public_at": "2026-09-01T11:04:23+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501634&notifyId=IB2600501634&inputResultId=e529d8f6-f022-44d5-9aa4-40ab0ab9f4b4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501634&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600501632",
+          "title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
+          "category": "construction",
+          "winning_price_vnd": 49139000,
+          "award_public_at": "2026-09-01T10:59:05+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501632&notifyId=IB2600501632&inputResultId=a5d8ca13-734b-4c43-8d5a-c4877955216d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501632&planNo=PL2600286892&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
     {
       "relationship_id": "1655b9fd8a666d3efde7",
       "buyer_key": "ban quản lý dự án đầu tư xây dựng phường tân thuận",
@@ -479,6 +539,106 @@
       ]
     },
     {
+      "relationship_id": "a9dd47fa6336d8480d9d",
+      "buyer_key": "văn phòng hđnd ubnd xã long phước",
+      "buyer": "Văn Phòng HĐND-UBND xã Long Phước",
+      "partner_id": "vn3603208719",
+      "contractor_name": "CÔNG TY TNHH THIẾT KẾ XÂY DỰNG QUANG KIẾN ANH",
+      "contractor_code": "vn3603208719",
+      "tax_code": "3603208719",
+      "observed_awards": 3,
+      "observed_award_value_vnd": 657834000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 3
+      },
+      "latest_award_at": "2026-09-01T14:54:54+00:00",
+      "latest_tender_code": "IB2600501700",
+      "latest_tender_title": "Gói thầu số 06 (tư vấn): Lập quy hoạch tổng mặt bằng",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501700&notifyId=IB2600501700&inputResultId=8b3e0c57-8508-4d52-a557-c6acea7e2211&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501700&planNo=PL2600278075&step=tbmt&isInternet=undefined&bidForm=CDT",
+      "relationship_evidence_score": 80,
+      "relationship_signal": "repeated_observed_awards",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501700",
+          "title": "Gói thầu số 06 (tư vấn): Lập quy hoạch tổng mặt bằng",
+          "category": "consulting",
+          "winning_price_vnd": 219278000,
+          "award_public_at": "2026-09-01T14:54:54+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501700&notifyId=IB2600501700&inputResultId=8b3e0c57-8508-4d52-a557-c6acea7e2211&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501700&planNo=PL2600278075&step=tbmt&isInternet=undefined&bidForm=CDT"
+        },
+        {
+          "tender_code": "IB2600501699",
+          "title": "Gói thầu số 06 (tư vấn): Lập quy hoạch tổng mặt bằng",
+          "category": "consulting",
+          "winning_price_vnd": 219278000,
+          "award_public_at": "2026-09-01T14:52:20+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501699&notifyId=IB2600501699&inputResultId=d965bddb-3633-4f44-8144-48b5d53a67d4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501699&planNo=PL2600278089&step=tbmt&isInternet=undefined&bidForm=CDT"
+        },
+        {
+          "tender_code": "IB2600501694",
+          "title": "Gói thầu số 06 (tư vấn): Lập quy hoạch tổng mặt bằng",
+          "category": "consulting",
+          "winning_price_vnd": 219278000,
+          "award_public_at": "2026-09-01T14:48:13+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501694&notifyId=IB2600501694&inputResultId=fcf53dc9-1150-4719-859a-7bd25afc2154&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501694&planNo=PL2600278116&step=tbmt&isInternet=undefined&bidForm=CDT"
+        }
+      ]
+    },
+    {
+      "relationship_id": "680601604e350a0f69f4",
+      "buyer_key": "ban quản lý dự án xây dựng tiền phong",
+      "buyer": "Ban Quản lý dự án xây dựng Tiền Phong",
+      "partner_id": "vn0110917222",
+      "contractor_name": "Công ty TNHH Tư vấn Đầu tư Xây dựng TĐK",
+      "contractor_code": "vn0110917222",
+      "tax_code": "0110917222",
+      "observed_awards": 3,
+      "observed_award_value_vnd": 72371000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 3
+      },
+      "latest_award_at": "2026-09-01T14:49:05+00:00",
+      "latest_tender_code": "IB2600501696",
+      "latest_tender_title": "Tư vấn thẩm định E-HSMT, kết quả lựa chọn nhà thầu gói thầu thi công xây dựng công trình",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501696&notifyId=IB2600501696&inputResultId=70eec214-b649-4e48-8c05-1cf124ff8bc5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501696&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 80,
+      "relationship_signal": "repeated_observed_awards",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501696",
+          "title": "Tư vấn thẩm định E-HSMT, kết quả lựa chọn nhà thầu gói thầu thi công xây dựng công trình",
+          "category": "consulting",
+          "winning_price_vnd": 18861000,
+          "award_public_at": "2026-09-01T14:49:05+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501696&notifyId=IB2600501696&inputResultId=70eec214-b649-4e48-8c05-1cf124ff8bc5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501696&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600501691",
+          "title": "Tư vấn thẩm định E-HSMT, kết quả lựa chọn nhà thầu gói thầu thi công xây dựng công trình",
+          "category": "consulting",
+          "winning_price_vnd": 19065000,
+          "award_public_at": "2026-09-01T14:44:51+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501691&notifyId=IB2600501691&inputResultId=1fafd17c-100b-4f9e-be40-23db4e81b3fb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501691&planNo=PL2600286907&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600501663",
+          "title": "Tư vấn thẩm định E-HSMT, kết quả lựa chọn nhà thầu gói thầu thi công xây dựng công trình",
+          "category": "consulting",
+          "winning_price_vnd": 34445000,
+          "award_public_at": "2026-09-01T12:58:50+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501663&notifyId=IB2600501663&inputResultId=558728d0-bd15-4122-a762-c6cc1985336b&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501663&planNo=PL2600286905&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
       "relationship_id": "613170d58b2c9e485b0b",
       "buyer_key": "trung tâm dịch vụ tổng hợp xã tả van",
       "buyer": "Trung tâm dịch vụ tổng hợp xã Tả Van",
@@ -729,6 +889,50 @@
       ]
     },
     {
+      "relationship_id": "d292926a2628415c310b",
+      "buyer_key": "lữ đoàn 101",
+      "buyer": "LỮ ĐOÀN 101",
+      "partner_id": "vn4202038691",
+      "contractor_name": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỂN CAM LÂM",
+      "contractor_code": "vn4202038691",
+      "tax_code": "4202038691",
+      "observed_awards": 2,
+      "observed_award_value_vnd": 393640000,
+      "categories": [
+        "maintenance",
+        "office_goods"
+      ],
+      "category_counts": {
+        "maintenance": 1,
+        "office_goods": 1
+      },
+      "latest_award_at": "2026-08-19T13:16:58+00:00",
+      "latest_tender_code": "IB2600467712",
+      "latest_tender_title": "Mua sắm tạp chi vệ sinh năm 2026",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600467712&notifyId=IB2600467712&inputResultId=53a25ca2-3af6-4a18-8075-f3b6b0ed2085&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467712&planNo=PL2600260455&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 72,
+      "relationship_signal": "repeated_observed_awards",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600467712",
+          "title": "Mua sắm tạp chi vệ sinh năm 2026",
+          "category": "maintenance",
+          "winning_price_vnd": 160850000,
+          "award_public_at": "2026-08-19T13:16:58+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600467712&notifyId=IB2600467712&inputResultId=53a25ca2-3af6-4a18-8075-f3b6b0ed2085&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467712&planNo=PL2600260455&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600467708",
+          "title": "Mua sắm dụng cụ văn phòng phẩm năm 2026",
+          "category": "office_goods",
+          "winning_price_vnd": 232790000,
+          "award_public_at": "2026-08-19T13:13:01+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600467708&notifyId=IB2600467708&inputResultId=36fa27ae-c1f8-4164-b788-fbd36b6d890c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467708&planNo=PL2600260387&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
       "relationship_id": "e7f7ee729d87eb86fff0",
       "buyer_key": "trung tâm xúc tiến du lịch thành phố hồ chí minh",
       "buyer": "Trung tâm Xúc tiến Du lịch Thành phố Hồ Chí Minh",
@@ -811,48 +1015,6 @@
           "winning_price_vnd": 38917000,
           "award_public_at": "2026-09-01T11:01:39+00:00",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501633&notifyId=IB2600501633&inputResultId=04a24f33-2a1a-489d-8728-d9ff3a8da71e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501633&planNo=PL2600286892&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "a2071e0e4b5e98f67eae",
-      "buyer_key": "ban quản lý dự án xây dựng tiền phong",
-      "buyer": "Ban Quản lý dự án xây dựng Tiền Phong",
-      "partner_id": "vn0201971957",
-      "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ XÂY DỰNG THỊNH LINH",
-      "contractor_code": "vn0201971957",
-      "tax_code": "0201971957",
-      "observed_awards": 2,
-      "observed_award_value_vnd": 97110000,
-      "categories": [
-        "construction"
-      ],
-      "category_counts": {
-        "construction": 2
-      },
-      "latest_award_at": "2026-09-01T11:04:23+00:00",
-      "latest_tender_code": "IB2600501634",
-      "latest_tender_title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501634&notifyId=IB2600501634&inputResultId=e529d8f6-f022-44d5-9aa4-40ab0ab9f4b4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501634&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 70,
-      "relationship_signal": "repeated_observed_awards",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600501634",
-          "title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
-          "category": "construction",
-          "winning_price_vnd": 47971000,
-          "award_public_at": "2026-09-01T11:04:23+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501634&notifyId=IB2600501634&inputResultId=e529d8f6-f022-44d5-9aa4-40ab0ab9f4b4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501634&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        },
-        {
-          "tender_code": "IB2600501632",
-          "title": "Tư vấn lập E-HSMT đánh giá E-HSDT gói thầu thi công xây dựng công trình",
-          "category": "construction",
-          "winning_price_vnd": 49139000,
-          "award_public_at": "2026-09-01T10:59:05+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501632&notifyId=IB2600501632&inputResultId=a5d8ca13-734b-4c43-8d5a-c4877955216d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501632&planNo=PL2600286892&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ]
     },
@@ -2579,6 +2741,48 @@
       ]
     },
     {
+      "relationship_id": "ddf8239909f21aedc4bf",
+      "buyer_key": "trung tâm hỗ trợ và tư vấn phát triển công thương nghệ an",
+      "buyer": "Trung tâm Hỗ trợ và Tư vấn phát triển Công Thương Nghệ An",
+      "partner_id": "vn2901431220",
+      "contractor_name": "Công ty TNHH Thương mại Hiệp Sương",
+      "contractor_code": "vn2901431220",
+      "tax_code": "2901431220",
+      "observed_awards": 2,
+      "observed_award_value_vnd": 120000000,
+      "categories": [
+        "logistics"
+      ],
+      "category_counts": {
+        "logistics": 2
+      },
+      "latest_award_at": "2026-07-08T03:18:55+00:00",
+      "latest_tender_code": "IB2600353510",
+      "latest_tender_title": "Gói thầu số 02: Thuê xe chở cán bộ đi thực hiện chương trình",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600353510&notifyId=IB2600353510&inputResultId=90845c76-ca37-44c9-b35f-b884c6efe171&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600353510&planNo=PL2600181875&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 66,
+      "relationship_signal": "repeated_observed_awards",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600353510",
+          "title": "Gói thầu số 02: Thuê xe chở cán bộ đi thực hiện chương trình",
+          "category": "logistics",
+          "winning_price_vnd": 40000000,
+          "award_public_at": "2026-07-08T03:18:55+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600353510&notifyId=IB2600353510&inputResultId=90845c76-ca37-44c9-b35f-b884c6efe171&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600353510&planNo=PL2600181875&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "tender_code": "IB2600327008",
+          "title": "Gói thầu số 02: Thuê xe phục vụ hội chợ",
+          "category": "logistics",
+          "winning_price_vnd": 80000000,
+          "award_public_at": "2026-06-29T02:02:11+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600327008&notifyId=IB2600327008&inputResultId=26cd5bfd-3e81-41cd-a9b4-d6203b442a61&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600327008&planNo=PL2600179876&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
       "relationship_id": "c78e545e9da5fa473fde",
       "buyer_key": "trung tâm y tế krông bông",
       "buyer": "Trung tâm y tế Krông Bông",
@@ -2701,6 +2905,380 @@
           "winning_price_vnd": 81065880,
           "award_public_at": "2026-05-15T09:06:17+00:00",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600213586&notifyId=IB2600213586&inputResultId=522cd02c-9a12-4956-abcc-8f82d97abee7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600213586&planNo=PL2600121977&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "af35fb8f46534097f86d",
+      "buyer_key": "ban quản lý dự án xây dựng bắc giang",
+      "buyer": "Ban Quản lý dự án xây dựng Bắc Giang",
+      "partner_id": "vn0108107735",
+      "contractor_name": "CÔNG TY CỔ PHẦN THẨM ĐỊNH GIÁ SMG",
+      "contractor_code": "vn0108107735",
+      "tax_code": "0108107735",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 75000000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-09-01T16:02:26+00:00",
+      "latest_tender_code": "IB2600501722",
+      "latest_tender_title": "Tư vấn thẩm định giá vật liệu",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501722&notifyId=IB2600501722&inputResultId=812a7acd-e745-4353-ac70-4249bc82423f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501722&planNo=PL2600281546&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501722",
+          "title": "Tư vấn thẩm định giá vật liệu",
+          "category": "consulting",
+          "winning_price_vnd": 75000000,
+          "award_public_at": "2026-09-01T16:02:26+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501722&notifyId=IB2600501722&inputResultId=812a7acd-e745-4353-ac70-4249bc82423f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501722&planNo=PL2600281546&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "becd660c9cea85a9b004",
+      "buyer_key": "ban quản lý dự án đầu tư xây dựng phường yên thắng",
+      "buyer": "Ban Quản lý dự án đầu tư xây dựng phường Yên Thắng",
+      "partner_id": "vn2700662468",
+      "contractor_name": "Công ty TNHH tư vấn xây dựng và đầu tư phát triển Trường Sơn",
+      "contractor_code": "vn2700662468",
+      "tax_code": "2700662468",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 370593000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-09-01T14:42:01+00:00",
+      "latest_tender_code": "IB2600501689",
+      "latest_tender_title": "Gói thầu số 01 - Tư vấn khảo sát, lập Báo cáo kinh tế kỹ thuật",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501689&notifyId=IB2600501689&inputResultId=393656c3-edc2-455c-82be-1326121778bf&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501689&planNo=PL2600281522&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501689",
+          "title": "Gói thầu số 01 - Tư vấn khảo sát, lập Báo cáo kinh tế kỹ thuật",
+          "category": "consulting",
+          "winning_price_vnd": 370593000,
+          "award_public_at": "2026-09-01T14:42:01+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501689&notifyId=IB2600501689&inputResultId=393656c3-edc2-455c-82be-1326121778bf&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501689&planNo=PL2600281522&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "1f17769208136c356caa",
+      "buyer_key": "trường trung học cơ sở đỗ văn dậy",
+      "buyer": "TRƯỜNG TRUNG HỌC CƠ SỞ ĐỖ VĂN DẬY",
+      "partner_id": "vn0316621282",
+      "contractor_name": "CÔNG TY CỔ PHẦN NGỰ PHẨM",
+      "contractor_code": "vn0316621282",
+      "tax_code": "0316621282",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 4816000000,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:56:46+00:00",
+      "latest_tender_code": "IB2600501679",
+      "latest_tender_title": "Cung cấp suất ăn trưa bán trú cho học sinh trường THCS Đỗ Văn Dậy",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501679&notifyId=IB2600501679&inputResultId=eb30752d-acd1-4c31-a72b-e639f3fb9fc6&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501679&planNo=PL2600283988&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501679",
+          "title": "Cung cấp suất ăn trưa bán trú cho học sinh trường THCS Đỗ Văn Dậy",
+          "category": "food_services",
+          "winning_price_vnd": 4816000000,
+          "award_public_at": "2026-09-01T13:56:46+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501679&notifyId=IB2600501679&inputResultId=eb30752d-acd1-4c31-a72b-e639f3fb9fc6&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501679&planNo=PL2600283988&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "81d19f0907d4e9664c8d",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0108538065",
+      "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ PA",
+      "contractor_code": "vn0108538065",
+      "tax_code": "0108538065",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 133200000,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:37:08+00:00",
+      "latest_tender_code": "IB2600501678",
+      "latest_tender_title": "Mua thực phẩm, nguyên liệu đầu vào (Gạo tẻ, gạo nếp) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501678&notifyId=IB2600501678&inputResultId=c70c578b-3e84-4279-957c-05445dffcf01&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501678&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501678",
+          "title": "Mua thực phẩm, nguyên liệu đầu vào (Gạo tẻ, gạo nếp) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+          "category": "food_services",
+          "winning_price_vnd": 133200000,
+          "award_public_at": "2026-09-01T13:37:08+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501678&notifyId=IB2600501678&inputResultId=c70c578b-3e84-4279-957c-05445dffcf01&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501678&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "03cfd04634cd22b02217",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0104706939",
+      "contractor_name": "CÔNG TY TNHH ĐẦU TƯ T&T VIỆT NAM",
+      "contractor_code": "vn0104706939",
+      "tax_code": "0104706939",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 133848000,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:33:22+00:00",
+      "latest_tender_code": "IB2600501676",
+      "latest_tender_title": "Mua thực phẩm, sản phẩm, nguyên liệu đầu vào (chất đốt: Gas) để thực hiện việc chế biến suất ăn cho trẻ ăn bán trú tại trường Mầm non Yên Nghĩai từ ngày 01/9/2026 đến hết ngày 31/8/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501676&notifyId=IB2600501676&inputResultId=465d84cc-0fac-4f0c-bb39-79fcb2ff94bb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501676&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501676",
+          "title": "Mua thực phẩm, sản phẩm, nguyên liệu đầu vào (chất đốt: Gas) để thực hiện việc chế biến suất ăn cho trẻ ăn bán trú tại trường Mầm non Yên Nghĩai từ ngày 01/9/2026 đến hết ngày 31/8/2027",
+          "category": "food_services",
+          "winning_price_vnd": 133848000,
+          "award_public_at": "2026-09-01T13:33:22+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501676&notifyId=IB2600501676&inputResultId=465d84cc-0fac-4f0c-bb39-79fcb2ff94bb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501676&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "30204abbe9081156de53",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0500524192",
+      "contractor_name": "Công ty TNHH thương mại thực phẩm Hoàng Anh",
+      "contractor_code": "vn0500524192",
+      "tax_code": "0500524192",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 3600576000,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:26:25+00:00",
+      "latest_tender_code": "IB2600501675",
+      "latest_tender_title": "Mua thực phẩm, nguyên liệu đầu vào (Các loại thịt: thịt lợn, thịt bò, thịt gà, thịt vịt, thịt ngan, trứng gà, trứng vịt và thực phẩm kho: dầu ăn, bột canh, nước mắm, thủy hải sản: cá trắm, tôm...) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501675&notifyId=IB2600501675&inputResultId=7aeda53e-ff6d-4428-9cab-7010852f413c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501675&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501675",
+          "title": "Mua thực phẩm, nguyên liệu đầu vào (Các loại thịt: thịt lợn, thịt bò, thịt gà, thịt vịt, thịt ngan, trứng gà, trứng vịt và thực phẩm kho: dầu ăn, bột canh, nước mắm, thủy hải sản: cá trắm, tôm...) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+          "category": "food_services",
+          "winning_price_vnd": 3600576000,
+          "award_public_at": "2026-09-01T13:26:25+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501675&notifyId=IB2600501675&inputResultId=7aeda53e-ff6d-4428-9cab-7010852f413c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501675&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "8b0c28c709e7fbb4418d",
+      "buyer_key": "văn phòng hội đồng nhân dân và ủy ban nhân dân xã vu gia",
+      "buyer": "Văn phòng Hội đồng nhân dân và Ủy ban nhân dân xã Vu Gia",
+      "partner_id": "vn4001163212",
+      "contractor_name": "CÔNG TY TNHH GIÁM SÁT & XÂY DỰNG NGÔI SAO VIỆT",
+      "contractor_code": "vn4001163212",
+      "tax_code": "4001163212",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 33345000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-09-01T13:24:20+00:00",
+      "latest_tender_code": "IB2600501673",
+      "latest_tender_title": "Tư vấn quản lý dự án công trình: Nâng cấp tuyến đường số 01 thôn Lâm Yên",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501673&notifyId=IB2600501673&inputResultId=69c07251-da8e-4162-a003-a65e6944bef7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501673&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501673",
+          "title": "Tư vấn quản lý dự án công trình: Nâng cấp tuyến đường số 01 thôn Lâm Yên",
+          "category": "consulting",
+          "winning_price_vnd": 33345000,
+          "award_public_at": "2026-09-01T13:24:20+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501673&notifyId=IB2600501673&inputResultId=69c07251-da8e-4162-a003-a65e6944bef7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501673&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "04b047e4617d61bd5a3e",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0108362446",
+      "contractor_name": "HỢP TÁC XÃ DỊCH VỤ TỔNG HỢP HÒA BÌNH",
+      "contractor_code": "vn0108362446",
+      "tax_code": "0108362446",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 835339050,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:23:16+00:00",
+      "latest_tender_code": "IB2600501672",
+      "latest_tender_title": "Mua thực phẩm, nguyên liệu đầu vào (Các loại rau, củ, quả và quả tươi...) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501672&notifyId=IB2600501672&inputResultId=7b26fe37-38af-4a34-bb39-96020d0e1564&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501672&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501672",
+          "title": "Mua thực phẩm, nguyên liệu đầu vào (Các loại rau, củ, quả và quả tươi...) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+          "category": "food_services",
+          "winning_price_vnd": 835339050,
+          "award_public_at": "2026-09-01T13:23:16+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501672&notifyId=IB2600501672&inputResultId=7b26fe37-38af-4a34-bb39-96020d0e1564&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501672&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "7f19ea2d04b80ed5dd72",
+      "buyer_key": "văn phòng hội đồng nhân dân và ủy ban nhân dân xã vu gia",
+      "buyer": "Văn phòng Hội đồng nhân dân và Ủy ban nhân dân xã Vu Gia",
+      "partner_id": "vn4001124238",
+      "contractor_name": "CÔNG TY TNHH XÂY DỰNG NGHĨA TÍN",
+      "contractor_code": "vn4001124238",
+      "tax_code": "4001124238",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 47681000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-09-01T13:22:51+00:00",
+      "latest_tender_code": "IB2600501671",
+      "latest_tender_title": "Tư vấn giám sát thi công xây dựng công trình: Nâng cấp tuyến đường số 01 thôn Lâm Yên",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501671&notifyId=IB2600501671&inputResultId=72786bc5-4b45-4d51-956d-6083442be39d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501671&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501671",
+          "title": "Tư vấn giám sát thi công xây dựng công trình: Nâng cấp tuyến đường số 01 thôn Lâm Yên",
+          "category": "consulting",
+          "winning_price_vnd": 47681000,
+          "award_public_at": "2026-09-01T13:22:51+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501671&notifyId=IB2600501671&inputResultId=72786bc5-4b45-4d51-956d-6083442be39d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501671&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "8ba812ef1474ab5f6be8",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0110004448",
+      "contractor_name": "Công ty TNHH thương mại và dịch vụ đầu tư Bảo Hưng",
+      "contractor_code": "vn0110004448",
+      "tax_code": "0110004448",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 788721750,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:19:49+00:00",
+      "latest_tender_code": "IB2600501669",
+      "latest_tender_title": "Mua thực phẩm, nguyên liệu đầu vào (sữa bột, sữa chua ăn vinamilk; sữa chua uống probi, sữa tươi ADM) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501669&notifyId=IB2600501669&inputResultId=17fd8f2b-9044-47a1-85c5-30aad3f756a7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501669&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501669",
+          "title": "Mua thực phẩm, nguyên liệu đầu vào (sữa bột, sữa chua ăn vinamilk; sữa chua uống probi, sữa tươi ADM) để thực hiện việc cung cấp suất ăn cho trẻ bán trú Trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/08/2027",
+          "category": "food_services",
+          "winning_price_vnd": 788721750,
+          "award_public_at": "2026-09-01T13:19:49+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501669&notifyId=IB2600501669&inputResultId=17fd8f2b-9044-47a1-85c5-30aad3f756a7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501669&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        }
+      ]
+    },
+    {
+      "relationship_id": "37a8390df4911cb3663e",
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "partner_id": "vn0106108532",
+      "contractor_name": "CÔNG TY CỔ PHẦN DL TÂN HƯỚNG DƯƠNG",
+      "contractor_code": "vn0106108532",
+      "tax_code": "0106108532",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 154368000,
+      "categories": [
+        "food_services"
+      ],
+      "category_counts": {
+        "food_services": 1
+      },
+      "latest_award_at": "2026-09-01T13:14:45+00:00",
+      "latest_tender_code": "IB2600501667",
+      "latest_tender_title": "Mua thực phẩm, sản phẩm, nguyên liệu đầu vào : (Nước uống Lavie) để thực hiện việc chế biến suất ăn cho trẻ ăn bán trú tại trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/8/2027",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501667&notifyId=IB2600501667&inputResultId=bbeb34ec-1bae-4bca-9213-5e332fca222e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501667&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600501667",
+          "title": "Mua thực phẩm, sản phẩm, nguyên liệu đầu vào : (Nước uống Lavie) để thực hiện việc chế biến suất ăn cho trẻ ăn bán trú tại trường Mầm non Yên Nghĩa từ ngày 01/09/2026 đến hết ngày 31/8/2027",
+          "category": "food_services",
+          "winning_price_vnd": 154368000,
+          "award_public_at": "2026-09-01T13:14:45+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501667&notifyId=IB2600501667&inputResultId=bbeb34ec-1bae-4bca-9213-5e332fca222e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501667&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
         }
       ]
     },
@@ -6203,6 +6781,74 @@
           "winning_price_vnd": 325000000,
           "award_public_at": "2026-08-31T03:22:11+00:00",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500753&notifyId=IB2600500753&inputResultId=5c1c7bf1-6dc7-4480-9c23-dcd09eabde56&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500753&planNo=PL2600281369&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "3aae9166705fd04a945b",
+      "buyer_key": "trung tâm cung ứng dịch vụ xã lục hồn",
+      "buyer": "TRUNG TÂM CUNG ỨNG DỊCH VỤ XÃ LỤC HỒN",
+      "partner_id": "vn5701833136",
+      "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ XÂY DỰNG GIA HƯNG",
+      "contractor_code": "vn5701833136",
+      "tax_code": "5701833136",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 482197000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-08-31T03:21:47+00:00",
+      "latest_tender_code": "IB2600500752",
+      "latest_tender_title": "Gói thầu số 01: Gói thầu tư vấn khảo sát địa hình, lập Báo cáo kinh tế - kỹ thuật đầu tư xây dựng dự án: Xây dựng một số tuyến đường giao thông vào các nhóm hộ trện địa bàn thôn Ngàn Vàng Trên, xã Lục Hồn, tỉnh Quảng Ninh",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500752&notifyId=IB2600500752&inputResultId=a81c3356-4889-4e7f-aece-fa81edb92c78&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500752&planNo=PL2600281680&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600500752",
+          "title": "Gói thầu số 01: Gói thầu tư vấn khảo sát địa hình, lập Báo cáo kinh tế - kỹ thuật đầu tư xây dựng dự án: Xây dựng một số tuyến đường giao thông vào các nhóm hộ trện địa bàn thôn Ngàn Vàng Trên, xã Lục Hồn, tỉnh Quảng Ninh",
+          "category": "consulting",
+          "winning_price_vnd": 482197000,
+          "award_public_at": "2026-08-31T03:21:47+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500752&notifyId=IB2600500752&inputResultId=a81c3356-4889-4e7f-aece-fa81edb92c78&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500752&planNo=PL2600281680&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ]
+    },
+    {
+      "relationship_id": "017ec1dd766202ea4cdc",
+      "buyer_key": "ubnd xã đông tiên hưng",
+      "buyer": "UBND xã Đông Tiên Hưng",
+      "partner_id": "vn0109889771",
+      "contractor_name": "CÔNG TY TNHH DỊCH VỤ THƯƠNG MẠI VÀ XÂY DỰNG THIÊN HƯƠNG",
+      "contractor_code": "vn0109889771",
+      "tax_code": "0109889771",
+      "observed_awards": 1,
+      "observed_award_value_vnd": 9126000,
+      "categories": [
+        "consulting"
+      ],
+      "category_counts": {
+        "consulting": 1
+      },
+      "latest_award_at": "2026-08-31T03:19:39+00:00",
+      "latest_tender_code": "IB2600500749",
+      "latest_tender_title": "Gói thầu 06: Tư vấn thẩm định HSMT và đánh giá HSDT Thi công xây dựng công trình",
+      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500749&notifyId=IB2600500749&inputResultId=e05c6a80-80b6-470f-aff6-d91f4921307e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500749&planNo=PL2600279842&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+      "relationship_evidence_score": 60,
+      "relationship_signal": "single_observed_award",
+      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
+      "examples": [
+        {
+          "tender_code": "IB2600500749",
+          "title": "Gói thầu 06: Tư vấn thẩm định HSMT và đánh giá HSDT Thi công xây dựng công trình",
+          "category": "consulting",
+          "winning_price_vnd": 9126000,
+          "award_public_at": "2026-08-31T03:19:39+00:00",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500749&notifyId=IB2600500749&inputResultId=e05c6a80-80b6-470f-aff6-d91f4921307e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500749&planNo=PL2600279842&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ]
     },
@@ -10285,584 +10931,6 @@
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498493&notifyId=IB2600498493&inputResultId=5b0b73f6-0193-4237-a8b6-e3ae28dba520&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498493&planNo=PL2600285209&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
         }
       ]
-    },
-    {
-      "relationship_id": "3d099af25892605597e3",
-      "buyer_key": "trường mầm non vĩnh hòa",
-      "buyer": "Trường Mầm Non Vĩnh Hòa",
-      "partner_id": "vn3702190068",
-      "contractor_name": "CÔNG TY TNHH SẢN XUẤT TMDV HÀ AN",
-      "contractor_code": "vn3702190068",
-      "tax_code": "3702190068",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 2380950000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T13:43:06+00:00",
-      "latest_tender_code": "IB2600498489",
-      "latest_tender_title": "Cung cấp thực phẩm, nguyên liệu phục vụ suất ăn bán trú cho học sinh",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498489&notifyId=IB2600498489&inputResultId=39c43669-1aa2-463b-bc5b-82e41afe5d9a&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498489&planNo=PL2600285164&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498489",
-          "title": "Cung cấp thực phẩm, nguyên liệu phục vụ suất ăn bán trú cho học sinh",
-          "category": "food_services",
-          "winning_price_vnd": 2380950000,
-          "award_public_at": "2026-08-28T13:43:06+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498489&notifyId=IB2600498489&inputResultId=39c43669-1aa2-463b-bc5b-82e41afe5d9a&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498489&planNo=PL2600285164&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "0cb6de0d8820a74075ca",
-      "buyer_key": "trường mầm non vĩnh hòa",
-      "buyer": "Trường Mầm Non Vĩnh Hòa",
-      "partner_id": "vnz000042285",
-      "contractor_name": "HỘ KINH DOANH CỬA HÀNG VĂN PHÒNG PHẨM - NỘI THẤT MẦM NON PHÚC KHANG",
-      "contractor_code": "vnz000042285",
-      "tax_code": "074075000903",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 133200000,
-      "categories": [
-        "maintenance"
-      ],
-      "category_counts": {
-        "maintenance": 1
-      },
-      "latest_award_at": "2026-08-28T13:16:02+00:00",
-      "latest_tender_code": "IB2600498457",
-      "latest_tender_title": "Cung cấp đồ dùng vệ sinh phục vụ học sinh bán trú trường Mầm non Vĩnh Hòa năm học 2026-2027",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498457&notifyId=IB2600498457&inputResultId=e12b7f7b-0338-4cd2-bc8b-c029b1fb4626&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498457&planNo=PL2600285192&step=tbmt&isInternet=undefined&bidForm=CDT",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498457",
-          "title": "Cung cấp đồ dùng vệ sinh phục vụ học sinh bán trú trường Mầm non Vĩnh Hòa năm học 2026-2027",
-          "category": "maintenance",
-          "winning_price_vnd": 133200000,
-          "award_public_at": "2026-08-28T13:16:02+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498457&notifyId=IB2600498457&inputResultId=e12b7f7b-0338-4cd2-bc8b-c029b1fb4626&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498457&planNo=PL2600285192&step=tbmt&isInternet=undefined&bidForm=CDT"
-        }
-      ]
-    },
-    {
-      "relationship_id": "f1defa46035fb5dc67ff",
-      "buyer_key": "trường tiểu học võ thị sáu",
-      "buyer": "TRƯỜNG TIỂU HỌC VÕ THỊ SÁU",
-      "partner_id": "vn0314243130",
-      "contractor_name": "CÔNG TY TNHH ẨM THỰC XÍCH LONG",
-      "contractor_code": "vn0314243130",
-      "tax_code": "0314243130",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 12600000000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:53:02+00:00",
-      "latest_tender_code": "IB2600498340",
-      "latest_tender_title": "Cung cấp suất ăn trưa cho học sinh",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498340&notifyId=IB2600498340&inputResultId=9a780c63-4046-40dc-9e1b-e85608537de0&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498340&planNo=PL2600285112&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498340",
-          "title": "Cung cấp suất ăn trưa cho học sinh",
-          "category": "food_services",
-          "winning_price_vnd": 12600000000,
-          "award_public_at": "2026-08-28T11:53:02+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498340&notifyId=IB2600498340&inputResultId=9a780c63-4046-40dc-9e1b-e85608537de0&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498340&planNo=PL2600285112&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "82dcae023a262ffcb00e",
-      "buyer_key": "trường tiểu học tân triều",
-      "buyer": "Trường Tiểu học Tân triều",
-      "partner_id": "vn0109897684",
-      "contractor_name": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ VỆ SINH AN PHÁT",
-      "contractor_code": "vn0109897684",
-      "tax_code": "0109897684",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 231000000,
-      "categories": [
-        "maintenance"
-      ],
-      "category_counts": {
-        "maintenance": 1
-      },
-      "latest_award_at": "2026-08-28T11:45:12+00:00",
-      "latest_tender_code": "IB2600498321",
-      "latest_tender_title": "Cung cấp dịch vụ vệ sinh trường học năm 2026",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498321&notifyId=IB2600498321&inputResultId=c14b6852-4d4c-4e63-9a71-6cc67b5e7ca7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498321&planNo=PL2600282349&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498321",
-          "title": "Cung cấp dịch vụ vệ sinh trường học năm 2026",
-          "category": "maintenance",
-          "winning_price_vnd": 231000000,
-          "award_public_at": "2026-08-28T11:45:12+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498321&notifyId=IB2600498321&inputResultId=c14b6852-4d4c-4e63-9a71-6cc67b5e7ca7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498321&planNo=PL2600282349&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "f1482acc5452dff88b4b",
-      "buyer_key": "bệnh viện sức khỏe tâm thần thái bình",
-      "buyer": "Bệnh viện Sức khỏe tâm thần Thái Bình",
-      "partner_id": "vn0108940873",
-      "contractor_name": "CÔNG TY CỔ PHẦN THƯƠNG MẠI MÁY TÍNH AN PHÁT",
-      "contractor_code": "vn0108940873",
-      "tax_code": "0108940873",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 210000000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:40:44+00:00",
-      "latest_tender_code": "IB2600470939",
-      "latest_tender_title": "Mua sắm phần mềm bảo mật Kaspersky Next EDR Foundation",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=ca901747-8823-4b95-8217-5e17b9e9ea7c&notifyId=ca901747-8823-4b95-8217-5e17b9e9ea7c&inputResultId=408e74e2-3e9b-46cb-a90c-31834ab45715&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600470939&planNo=PL2600268095&step=tbmt&isInternet=1&bidForm=CGTTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600470939",
-          "title": "Mua sắm phần mềm bảo mật Kaspersky Next EDR Foundation",
-          "category": "digital_services",
-          "winning_price_vnd": 210000000,
-          "award_public_at": "2026-08-28T11:40:44+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=ca901747-8823-4b95-8217-5e17b9e9ea7c&notifyId=ca901747-8823-4b95-8217-5e17b9e9ea7c&inputResultId=408e74e2-3e9b-46cb-a90c-31834ab45715&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600470939&planNo=PL2600268095&step=tbmt&isInternet=1&bidForm=CGTTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "48d9265c5f43c916e830",
-      "buyer_key": "trường trung học cơ sở nguyễn huệ",
-      "buyer": "TRƯỜNG TRUNG HỌC CƠ SỞ NGUYỄN HUỆ",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "contractor_code": "vn0109598719",
-      "tax_code": "0109598719",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 173930400,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:16:20+00:00",
-      "latest_tender_code": "IB2600498237",
-      "latest_tender_title": "Gói thầu số 08: Cung cấp dịch vụ phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498237&notifyId=IB2600498237&inputResultId=e38a570f-ac9f-4bc3-836c-1aeb85952234&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498237&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498237",
-          "title": "Gói thầu số 08: Cung cấp dịch vụ phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục",
-          "category": "digital_services",
-          "winning_price_vnd": 173930400,
-          "award_public_at": "2026-08-28T11:16:20+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498237&notifyId=IB2600498237&inputResultId=e38a570f-ac9f-4bc3-836c-1aeb85952234&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498237&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "e754f885bd2aca3d5f1c",
-      "buyer_key": "trường thcs điện biên",
-      "buyer": "TRƯỜNG THCS ĐIỆN BIÊN",
-      "partner_id": "vn0312230217",
-      "contractor_name": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ ĐẠI HÀN KIM VIỆT NAM",
-      "contractor_code": "vn0312230217",
-      "tax_code": "0312230217",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 9480900000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:10:07+00:00",
-      "latest_tender_code": "IB2600498207",
-      "latest_tender_title": "Cung cấp suất ăn cho học sinh bán trú",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498207&notifyId=IB2600498207&inputResultId=8c5cd59a-6881-4b7b-a133-23df76d53228&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498207&planNo=PL2600285020&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498207",
-          "title": "Cung cấp suất ăn cho học sinh bán trú",
-          "category": "food_services",
-          "winning_price_vnd": 9480900000,
-          "award_public_at": "2026-08-28T11:10:07+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498207&notifyId=IB2600498207&inputResultId=8c5cd59a-6881-4b7b-a133-23df76d53228&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498207&planNo=PL2600285020&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "c6afbe47bb4963593fd6",
-      "buyer_key": "trường trung học cơ sở nguyễn huệ",
-      "buyer": "TRƯỜNG TRUNG HỌC CƠ SỞ NGUYỄN HUỆ",
-      "partner_id": "vn0318391958",
-      "contractor_name": "Công ty Cổ phần Tập đoàn Khoa học công nghệ Bách Khoa",
-      "contractor_code": "vn0318391958",
-      "tax_code": "0318391958",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 199920000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:08:33+00:00",
-      "latest_tender_code": "IB2600498199",
-      "latest_tender_title": "Gói thầu số 07: Cung cấp dịch vụ Phần mềm quản lý học tập",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498199&notifyId=IB2600498199&inputResultId=c4476c16-0322-4c74-a396-3c9fb78c3fd2&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498199&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498199",
-          "title": "Gói thầu số 07: Cung cấp dịch vụ Phần mềm quản lý học tập",
-          "category": "digital_services",
-          "winning_price_vnd": 199920000,
-          "award_public_at": "2026-08-28T11:08:33+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498199&notifyId=IB2600498199&inputResultId=c4476c16-0322-4c74-a396-3c9fb78c3fd2&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498199&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "b496c606a44f9c2a90f3",
-      "buyer_key": "phòng văn hóa xã hội xã hạ bằng",
-      "buyer": "Phòng Văn hóa - Xã hội xã Hạ Bằng",
-      "partner_id": "vn0108338115",
-      "contractor_name": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ ÁNH CHÂU",
-      "contractor_code": "vn0108338115",
-      "tax_code": "0108338115",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 9242080000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:03:49+00:00",
-      "latest_tender_code": "IB2600498181",
-      "latest_tender_title": "Cung cấp suất ăn, bữa ăn học đường cho học sinh bán trú tại Trường Tiểu học Hạ Bằng 3 năm học 2026-2027",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498181&notifyId=IB2600498181&inputResultId=67aa9a9f-3e8a-47dd-a7b2-323c5db0c693&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498181&planNo=PL2600281020&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498181",
-          "title": "Cung cấp suất ăn, bữa ăn học đường cho học sinh bán trú tại Trường Tiểu học Hạ Bằng 3 năm học 2026-2027",
-          "category": "food_services",
-          "winning_price_vnd": 9242080000,
-          "award_public_at": "2026-08-28T11:03:49+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498181&notifyId=IB2600498181&inputResultId=67aa9a9f-3e8a-47dd-a7b2-323c5db0c693&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498181&planNo=PL2600281020&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "8bb25ce68e5023e61c57",
-      "buyer_key": "trường thcs thông tây hội",
-      "buyer": "Trường THCS Thông Tây Hội",
-      "partner_id": "vn0312230217",
-      "contractor_name": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ ĐẠI HÀN KIM VIỆT NAM",
-      "contractor_code": "vn0312230217",
-      "tax_code": "0312230217",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 6358000000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T11:02:26+00:00",
-      "latest_tender_code": "IB2600498176",
-      "latest_tender_title": "Cung cấp suất ăn cho học sinh bán trú",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498176&notifyId=IB2600498176&inputResultId=4ace61da-12c7-461c-b560-333ecb0455c4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498176&planNo=PL2600284999&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498176",
-          "title": "Cung cấp suất ăn cho học sinh bán trú",
-          "category": "food_services",
-          "winning_price_vnd": 6358000000,
-          "award_public_at": "2026-08-28T11:02:26+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498176&notifyId=IB2600498176&inputResultId=4ace61da-12c7-461c-b560-333ecb0455c4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498176&planNo=PL2600284999&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "01f1f7be35317c692233",
-      "buyer_key": "trường tiểu học lê quý đôn",
-      "buyer": "Trường tiểu học Lê Quý Đôn",
-      "partner_id": "vn0109598719",
-      "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-      "contractor_code": "vn0109598719",
-      "tax_code": "0109598719",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 495000000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:52:14+00:00",
-      "latest_tender_code": "IB2600498128",
-      "latest_tender_title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498128",
-          "title": "Cung cấp quyền sử dụng phần mềm Ứng dụng quản lý điều hành, truyền thông giáo dục eNetViet năm học 2026 2027",
-          "category": "digital_services",
-          "winning_price_vnd": 495000000,
-          "award_public_at": "2026-08-28T10:52:14+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498128&notifyId=IB2600498128&inputResultId=85a069ed-853b-4d65-97e3-853c1a19f04c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498128&planNo=PL2600279037&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "770da6c17d3cef4739fa",
-      "buyer_key": "bệnh viện đa khoa quỳnh lưu",
-      "buyer": "Bệnh viện Đa khoa Quỳnh Lưu",
-      "partner_id": "vn2902261067",
-      "contractor_name": "Công ty TNHH Tư vấn Trung Đức",
-      "contractor_code": "vn2902261067",
-      "tax_code": "2902261067",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 19500000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:51:17+00:00",
-      "latest_tender_code": "IB2600498122",
-      "latest_tender_title": "Gói thầu 03: Thuê dịch vụ tư vấn thẩm định E-HSMT, thẩm định KQLCNT cho gói thầu 01: Thuê dịch vụ phần mềm quản lý bệnh viện thông minh (HIS, LIS, EMR, RIS, PACS) phục vụ công tác chuyên môn tại Bệnh viện Đa khoa Quỳnh lưu",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498122&notifyId=IB2600498122&inputResultId=135610f6-2788-4d71-81ef-92f204bdb1b7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498122&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498122",
-          "title": "Gói thầu 03: Thuê dịch vụ tư vấn thẩm định E-HSMT, thẩm định KQLCNT cho gói thầu 01: Thuê dịch vụ phần mềm quản lý bệnh viện thông minh (HIS, LIS, EMR, RIS, PACS) phục vụ công tác chuyên môn tại Bệnh viện Đa khoa Quỳnh lưu",
-          "category": "digital_services",
-          "winning_price_vnd": 19500000,
-          "award_public_at": "2026-08-28T10:51:17+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498122&notifyId=IB2600498122&inputResultId=135610f6-2788-4d71-81ef-92f204bdb1b7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498122&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "b02913af134a365c608a",
-      "buyer_key": "bệnh viện đa khoa quỳnh lưu",
-      "buyer": "Bệnh viện Đa khoa Quỳnh Lưu",
-      "partner_id": "vn2902277758",
-      "contractor_name": "CÔNG TY TNHH THƯƠNG MẠI VÀ TƯ VẤN HƯNG QUÂN",
-      "contractor_code": "vn2902277758",
-      "tax_code": "2902277758",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 34500000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:49:12+00:00",
-      "latest_tender_code": "IB2600498113",
-      "latest_tender_title": "Gói thầu 02: Thuê dịch vụ tư vấn lập E-HSMT, đánh giá E-HSDT cho gói thầu 01: Thuê dịch vụ phần mềm quản lý bệnh viện thông minh (HIS, LIS, EMR, RIS, PACS) phục vụ công tác chuyên môn tại Bệnh viện Đa khoa Quỳnh lưu",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498113&notifyId=IB2600498113&inputResultId=dee5aa1e-7e37-48fd-80de-5cead097b58f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498113&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498113",
-          "title": "Gói thầu 02: Thuê dịch vụ tư vấn lập E-HSMT, đánh giá E-HSDT cho gói thầu 01: Thuê dịch vụ phần mềm quản lý bệnh viện thông minh (HIS, LIS, EMR, RIS, PACS) phục vụ công tác chuyên môn tại Bệnh viện Đa khoa Quỳnh lưu",
-          "category": "digital_services",
-          "winning_price_vnd": 34500000,
-          "award_public_at": "2026-08-28T10:49:12+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498113&notifyId=IB2600498113&inputResultId=dee5aa1e-7e37-48fd-80de-5cead097b58f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498113&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "b79304bb8f97cd87d219",
-      "buyer_key": "trạm y tế kinh bắc",
-      "buyer": "TRẠM Y TẾ KINH BẮC",
-      "partner_id": "35aee233-0af7-4429-8eb8-cc254a289222",
-      "contractor_name": "Công ty thương mại và dịch vụ Thọ Vinh TNHH",
-      "contractor_code": "35aee233-0af7-4429-8eb8-cc254a289222",
-      "tax_code": "2300300008",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 485665000,
-      "categories": [
-        "office_goods"
-      ],
-      "category_counts": {
-        "office_goods": 1
-      },
-      "latest_award_at": "2026-08-28T10:44:51+00:00",
-      "latest_tender_code": "IB2600498080",
-      "latest_tender_title": "Mua sắm máy tính, máy in năm 2026",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498080&notifyId=IB2600498080&inputResultId=ce0ec276-50fc-478d-9ffe-e7febb076d0f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498080&planNo=PL2600271412&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498080",
-          "title": "Mua sắm máy tính, máy in năm 2026",
-          "category": "office_goods",
-          "winning_price_vnd": 485665000,
-          "award_public_at": "2026-08-28T10:44:51+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498080&notifyId=IB2600498080&inputResultId=ce0ec276-50fc-478d-9ffe-e7febb076d0f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498080&planNo=PL2600271412&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ]
-    },
-    {
-      "relationship_id": "118b83ec786391d52944",
-      "buyer_key": "trường thcs chu văn an",
-      "buyer": "Trường THCS Chu Văn An",
-      "partner_id": "vn0102356171",
-      "contractor_name": "CÔNG TY CỔ PHẦN SẢN XUẤT VÀ THƯƠNG MẠI AN VIỆT",
-      "contractor_code": "vn0102356171",
-      "tax_code": "0102356171",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 9373000000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:39:47+00:00",
-      "latest_tender_code": "IB2600498033",
-      "latest_tender_title": "Cung cấp suất ăn nấu tại trường cho học sinh bán trú trường THCS Chu Văn An năm học 2026-2027",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498033&notifyId=IB2600498033&inputResultId=0fed3507-11b2-4a12-a37a-28669da7f2e6&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498033&planNo=PL2600284429&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498033",
-          "title": "Cung cấp suất ăn nấu tại trường cho học sinh bán trú trường THCS Chu Văn An năm học 2026-2027",
-          "category": "food_services",
-          "winning_price_vnd": 9373000000,
-          "award_public_at": "2026-08-28T10:39:47+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498033&notifyId=IB2600498033&inputResultId=0fed3507-11b2-4a12-a37a-28669da7f2e6&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498033&planNo=PL2600284429&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "33198213015368c2502b",
-      "buyer_key": "phòng văn hóa xã hội phường phú thượng",
-      "buyer": "Phòng Văn hóa Xã hội phường Phú Thượng",
-      "partner_id": "vn0105811189",
-      "contractor_name": "CÔNG TY TNHH HƯƠNG VIỆT SINH",
-      "contractor_code": "vn0105811189",
-      "tax_code": "0105811189",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 6191460000,
-      "categories": [
-        "food_services"
-      ],
-      "category_counts": {
-        "food_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:38:57+00:00",
-      "latest_tender_code": "IB2600498043",
-      "latest_tender_title": "Gói thầu số 7: Cung cấp thực phẩm, nguyên liệu, nhiên liệu đầu vào và nhà thầu tổ chức nấu, cung cấp suất ăn cho học sinh bán trú và suất ăn sẵn từ bên ngoài đưa vào trường tại trường Tiểu học và THCS Phú Thượng năm học 2026-2027",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498043&notifyId=IB2600498043&inputResultId=5d47f1b6-a30e-4688-ae2f-34e67bbd8781&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498043&planNo=PL2600279784&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600498043",
-          "title": "Gói thầu số 7: Cung cấp thực phẩm, nguyên liệu, nhiên liệu đầu vào và nhà thầu tổ chức nấu, cung cấp suất ăn cho học sinh bán trú và suất ăn sẵn từ bên ngoài đưa vào trường tại trường Tiểu học và THCS Phú Thượng năm học 2026-2027",
-          "category": "food_services",
-          "winning_price_vnd": 6191460000,
-          "award_public_at": "2026-08-28T10:38:57+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498043&notifyId=IB2600498043&inputResultId=5d47f1b6-a30e-4688-ae2f-34e67bbd8781&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498043&planNo=PL2600279784&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        }
-      ]
-    },
-    {
-      "relationship_id": "cf842595fd868aaec965",
-      "buyer_key": "văn phòng đảng ủy phường hòa bình",
-      "buyer": "Văn phòng Đảng ủy phường Hòa Bình",
-      "partner_id": "vn0102169943",
-      "contractor_name": "Trung Tâm Đào Tạo - Nghiên Cứu Khoa học Tổ chức và Quản lý",
-      "contractor_code": "vn0102169943",
-      "tax_code": "0102169943",
-      "observed_awards": 1,
-      "observed_award_value_vnd": 1555650000,
-      "categories": [
-        "digital_services"
-      ],
-      "category_counts": {
-        "digital_services": 1
-      },
-      "latest_award_at": "2026-08-28T10:37:38+00:00",
-      "latest_tender_code": "IB2600445401",
-      "latest_tender_title": "Chỉnh lý và số hóa hồ sơ, tài liệu lưu trữ của Đảng ủy phường Hòa Bình",
-      "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=ac146499-35fa-4f61-9561-2461ba7659f1&notifyId=ac146499-35fa-4f61-9561-2461ba7659f1&inputResultId=d906a45a-68ce-4af9-ba1a-ec6ec5d5e5af&bidOpenId=5d5bf0b9-29d1-4a27-9abb-9b0febe06566&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600445401&planNo=PL2600252436&step=tbmt&isInternet=1&bidForm=DTRR",
-      "relationship_evidence_score": 60,
-      "relationship_signal": "single_observed_award",
-      "caveat": "Chỉ phản ánh KQLCNT quan sát được trong mẫu; không chứng minh ưu ái, bidder hiện tại hoặc khả năng thắng tương lai.",
-      "examples": [
-        {
-          "tender_code": "IB2600445401",
-          "title": "Chỉnh lý và số hóa hồ sơ, tài liệu lưu trữ của Đảng ủy phường Hòa Bình",
-          "category": "digital_services",
-          "winning_price_vnd": 1555650000,
-          "award_public_at": "2026-08-28T10:37:38+00:00",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=ac146499-35fa-4f61-9561-2461ba7659f1&notifyId=ac146499-35fa-4f61-9561-2461ba7659f1&inputResultId=d906a45a-68ce-4af9-ba1a-ec6ec5d5e5af&bidOpenId=5d5bf0b9-29d1-4a27-9abb-9b0febe06566&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600445401&planNo=PL2600252436&step=tbmt&isInternet=1&bidForm=DTRR"
-        }
-      ]
     }
   ],
   "buyer_profiles": [
@@ -10986,6 +11054,58 @@
           "latest_award_at": "2026-08-31T15:58:36+00:00",
           "relationship_evidence_score": 60,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501238&notifyId=IB2600501238&inputResultId=186fc2ce-db0a-43cb-b0a7-136ada84ee7f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501238&planNo=PL2600286060&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "ban quản lý dự án xây dựng tiền phong",
+      "buyer": "Ban Quản lý dự án xây dựng Tiền Phong",
+      "observed_awards": 9,
+      "unique_observed_partners": 3,
+      "top_partner_award_share": 0.444,
+      "repeated_partner_relationships": 3,
+      "category_counts": {
+        "consulting": 6,
+        "construction": 3
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn0201971957",
+          "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ XÂY DỰNG THỊNH LINH",
+          "observed_awards": 4,
+          "observed_award_value_vnd": 170689000,
+          "categories": [
+            "construction",
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T14:47:17+00:00",
+          "relationship_evidence_score": 88,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501693&notifyId=IB2600501693&inputResultId=ee957809-86fe-42c0-8411-2ac206caa1f3&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501693&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn0110917222",
+          "contractor_name": "Công ty TNHH Tư vấn Đầu tư Xây dựng TĐK",
+          "observed_awards": 3,
+          "observed_award_value_vnd": 72371000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T14:49:05+00:00",
+          "relationship_evidence_score": 80,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501696&notifyId=IB2600501696&inputResultId=70eec214-b649-4e48-8c05-1cf124ff8bc5&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501696&planNo=PL2600286902&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn0109393711",
+          "contractor_name": "CÔNG TY TNHH TƯ VẤN VÀ XÂY DỰNG DƯƠNG HOÀNG",
+          "observed_awards": 2,
+          "observed_award_value_vnd": 71311000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T11:06:20+00:00",
+          "relationship_evidence_score": 70,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501636&notifyId=IB2600501636&inputResultId=cdf92d89-0354-488a-a69b-117e021b0fc1&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501636&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -11174,6 +11294,80 @@
           "latest_award_at": "2026-08-27T03:26:26+00:00",
           "relationship_evidence_score": 70,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600490639&notifyId=IB2600490639&inputResultId=c4a180a3-099e-45f3-9796-a8e00cc0feb2&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600490639&planNo=PL2600280724&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "trường mầm non yên nghĩa",
+      "buyer": "Trường mầm non Yên Nghĩa",
+      "observed_awards": 6,
+      "unique_observed_partners": 6,
+      "top_partner_award_share": 0.167,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "food_services": 6
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn0108538065",
+          "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ PA",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 133200000,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:37:08+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501678&notifyId=IB2600501678&inputResultId=c70c578b-3e84-4279-957c-05445dffcf01&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501678&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        },
+        {
+          "partner_id": "vn0104706939",
+          "contractor_name": "CÔNG TY TNHH ĐẦU TƯ T&T VIỆT NAM",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 133848000,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:33:22+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501676&notifyId=IB2600501676&inputResultId=465d84cc-0fac-4f0c-bb39-79fcb2ff94bb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501676&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        },
+        {
+          "partner_id": "vn0500524192",
+          "contractor_name": "Công ty TNHH thương mại thực phẩm Hoàng Anh",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 3600576000,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:26:25+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501675&notifyId=IB2600501675&inputResultId=7aeda53e-ff6d-4428-9cab-7010852f413c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501675&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        },
+        {
+          "partner_id": "vn0108362446",
+          "contractor_name": "HỢP TÁC XÃ DỊCH VỤ TỔNG HỢP HÒA BÌNH",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 835339050,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:23:16+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501672&notifyId=IB2600501672&inputResultId=7b26fe37-38af-4a34-bb39-96020d0e1564&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501672&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
+        },
+        {
+          "partner_id": "vn0110004448",
+          "contractor_name": "Công ty TNHH thương mại và dịch vụ đầu tư Bảo Hưng",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 788721750,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:19:49+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501669&notifyId=IB2600501669&inputResultId=17fd8f2b-9044-47a1-85c5-30aad3f756a7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501669&planNo=PL2600286598&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -11911,45 +12105,6 @@
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     },
     {
-      "buyer_key": "ban quản lý dự án xây dựng tiền phong",
-      "buyer": "Ban Quản lý dự án xây dựng Tiền Phong",
-      "observed_awards": 4,
-      "unique_observed_partners": 2,
-      "top_partner_award_share": 0.5,
-      "repeated_partner_relationships": 2,
-      "category_counts": {
-        "consulting": 2,
-        "construction": 2
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn0109393711",
-          "contractor_name": "CÔNG TY TNHH TƯ VẤN VÀ XÂY DỰNG DƯƠNG HOÀNG",
-          "observed_awards": 2,
-          "observed_award_value_vnd": 71311000,
-          "categories": [
-            "consulting"
-          ],
-          "latest_award_at": "2026-09-01T11:06:20+00:00",
-          "relationship_evidence_score": 70,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501636&notifyId=IB2600501636&inputResultId=cdf92d89-0354-488a-a69b-117e021b0fc1&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501636&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        },
-        {
-          "partner_id": "vn0201971957",
-          "contractor_name": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ XÂY DỰNG THỊNH LINH",
-          "observed_awards": 2,
-          "observed_award_value_vnd": 97110000,
-          "categories": [
-            "construction"
-          ],
-          "latest_award_at": "2026-09-01T11:04:23+00:00",
-          "relationship_evidence_score": 70,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501634&notifyId=IB2600501634&inputResultId=e529d8f6-f022-44d5-9aa4-40ab0ab9f4b4&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501634&planNo=PL2600286894&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
       "buyer_key": "ubnd xã hải an",
       "buyer": "UBND XÃ HẢI AN",
       "observed_awards": 4,
@@ -12048,6 +12203,56 @@
           "latest_award_at": "2026-08-19T09:45:47+00:00",
           "relationship_evidence_score": 86,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600467174&notifyId=IB2600467174&inputResultId=f910a246-9358-4706-81ca-df632a6e8d4e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467174&planNo=PL2600267371&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "văn phòng hội đồng nhân dân và ủy ban nhân dân xã vu gia",
+      "buyer": "Văn phòng Hội đồng nhân dân và Ủy ban nhân dân xã Vu Gia",
+      "observed_awards": 3,
+      "unique_observed_partners": 3,
+      "top_partner_award_share": 0.333,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "consulting": 3
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn4001163212",
+          "contractor_name": "CÔNG TY TNHH GIÁM SÁT & XÂY DỰNG NGÔI SAO VIỆT",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 33345000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T13:24:20+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501673&notifyId=IB2600501673&inputResultId=69c07251-da8e-4162-a003-a65e6944bef7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501673&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn4001124238",
+          "contractor_name": "CÔNG TY TNHH XÂY DỰNG NGHĨA TÍN",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 47681000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T13:22:51+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501671&notifyId=IB2600501671&inputResultId=72786bc5-4b45-4d51-956d-6083442be39d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501671&planNo=PL2600286909&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn4001264563",
+          "contractor_name": "Công ty TNHH tư vấn xây dựng và thương mại Minh Thành Phát",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 4504000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-08-29T15:11:50+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500043&notifyId=IB2600500043&inputResultId=98005c28-081e-4703-b800-a2ba5a739708&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500043&planNo=PL2600286045&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -12617,6 +12822,32 @@
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     },
     {
+      "buyer_key": "văn phòng hđnd ubnd xã long phước",
+      "buyer": "Văn Phòng HĐND-UBND xã Long Phước",
+      "observed_awards": 3,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 1,
+      "category_counts": {
+        "consulting": 3
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn3603208719",
+          "contractor_name": "CÔNG TY TNHH THIẾT KẾ XÂY DỰNG QUANG KIẾN ANH",
+          "observed_awards": 3,
+          "observed_award_value_vnd": 657834000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T14:54:54+00:00",
+          "relationship_evidence_score": 80,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501700&notifyId=IB2600501700&inputResultId=8b3e0c57-8508-4d52-a557-c6acea7e2211&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501700&planNo=PL2600278075&step=tbmt&isInternet=undefined&bidForm=CDT"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
       "buyer_key": "ban quản lý dự án đầu tư hạ tầng xã tiến thắng",
       "buyer": "Ban Quản lý dự án Đầu tư - Hạ tầng xã Tiến Thắng",
       "observed_awards": 2,
@@ -12916,6 +13147,82 @@
           "latest_award_at": "2026-08-31T03:34:42+00:00",
           "relationship_evidence_score": 60,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500766&notifyId=IB2600500766&inputResultId=421f1ea7-0dd6-44a5-98ff-bc39a88012ea&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500766&planNo=PL2600286460&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "trung tâm cung ứng dịch vụ xã lục hồn",
+      "buyer": "TRUNG TÂM CUNG ỨNG DỊCH VỤ XÃ LỤC HỒN",
+      "observed_awards": 2,
+      "unique_observed_partners": 2,
+      "top_partner_award_share": 0.5,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "consulting": 2
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn5701804985",
+          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ XÂY DỰNG AUC VIỆT NAM",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 32194000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-08-31T03:24:51+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500754&notifyId=IB2600500754&inputResultId=80a04e77-584e-4312-83ec-3e66a21d00fb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500754&planNo=PL2600281680&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn5701833136",
+          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ XÂY DỰNG GIA HƯNG",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 482197000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-08-31T03:21:47+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500752&notifyId=IB2600500752&inputResultId=a81c3356-4889-4e7f-aece-fa81edb92c78&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500752&planNo=PL2600281680&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "ubnd xã đông tiên hưng",
+      "buyer": "UBND xã Đông Tiên Hưng",
+      "observed_awards": 2,
+      "unique_observed_partners": 2,
+      "top_partner_award_share": 0.5,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "consulting": 2
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn0109889771",
+          "contractor_name": "CÔNG TY TNHH DỊCH VỤ THƯƠNG MẠI VÀ XÂY DỰNG THIÊN HƯƠNG",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 9126000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-08-31T03:19:39+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500749&notifyId=IB2600500749&inputResultId=e05c6a80-80b6-470f-aff6-d91f4921307e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500749&planNo=PL2600279842&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        },
+        {
+          "partner_id": "vn1001071485",
+          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI MINH TRÍ",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 15788000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-08-31T03:17:16+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500744&notifyId=IB2600500744&inputResultId=846b151c-b2e0-4b64-b91c-ee740ecc9b13&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500744&planNo=PL2600279842&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -13454,116 +13761,29 @@
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     },
     {
-      "buyer_key": "trường mầm non vĩnh hòa",
-      "buyer": "Trường Mầm Non Vĩnh Hòa",
+      "buyer_key": "lữ đoàn 101",
+      "buyer": "LỮ ĐOÀN 101",
       "observed_awards": 2,
-      "unique_observed_partners": 2,
-      "top_partner_award_share": 0.5,
-      "repeated_partner_relationships": 0,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 1,
       "category_counts": {
-        "food_services": 1,
-        "maintenance": 1
+        "maintenance": 1,
+        "office_goods": 1
       },
       "top_partners": [
         {
-          "partner_id": "vn3702190068",
-          "contractor_name": "CÔNG TY TNHH SẢN XUẤT TMDV HÀ AN",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 2380950000,
+          "partner_id": "vn4202038691",
+          "contractor_name": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỂN CAM LÂM",
+          "observed_awards": 2,
+          "observed_award_value_vnd": 393640000,
           "categories": [
-            "food_services"
+            "maintenance",
+            "office_goods"
           ],
-          "latest_award_at": "2026-08-28T13:43:06+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498489&notifyId=IB2600498489&inputResultId=39c43669-1aa2-463b-bc5b-82e41afe5d9a&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498489&planNo=PL2600285164&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
-        },
-        {
-          "partner_id": "vnz000042285",
-          "contractor_name": "HỘ KINH DOANH CỬA HÀNG VĂN PHÒNG PHẨM - NỘI THẤT MẦM NON PHÚC KHANG",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 133200000,
-          "categories": [
-            "maintenance"
-          ],
-          "latest_award_at": "2026-08-28T13:16:02+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498457&notifyId=IB2600498457&inputResultId=e12b7f7b-0338-4cd2-bc8b-c029b1fb4626&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498457&planNo=PL2600285192&step=tbmt&isInternet=undefined&bidForm=CDT"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "trường trung học cơ sở nguyễn huệ",
-      "buyer": "TRƯỜNG TRUNG HỌC CƠ SỞ NGUYỄN HUỆ",
-      "observed_awards": 2,
-      "unique_observed_partners": 2,
-      "top_partner_award_share": 0.5,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "digital_services": 2
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn0109598719",
-          "contractor_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN CÔNG NGHỆ QUẢNG ÍCH",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 173930400,
-          "categories": [
-            "digital_services"
-          ],
-          "latest_award_at": "2026-08-28T11:16:20+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498237&notifyId=IB2600498237&inputResultId=e38a570f-ac9f-4bc3-836c-1aeb85952234&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498237&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        },
-        {
-          "partner_id": "vn0318391958",
-          "contractor_name": "Công ty Cổ phần Tập đoàn Khoa học công nghệ Bách Khoa",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 199920000,
-          "categories": [
-            "digital_services"
-          ],
-          "latest_award_at": "2026-08-28T11:08:33+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498199&notifyId=IB2600498199&inputResultId=c4476c16-0322-4c74-a396-3c9fb78c3fd2&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498199&planNo=PL2600279032&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "bệnh viện đa khoa quỳnh lưu",
-      "buyer": "Bệnh viện Đa khoa Quỳnh Lưu",
-      "observed_awards": 2,
-      "unique_observed_partners": 2,
-      "top_partner_award_share": 0.5,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "digital_services": 2
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn2902261067",
-          "contractor_name": "Công ty TNHH Tư vấn Trung Đức",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 19500000,
-          "categories": [
-            "digital_services"
-          ],
-          "latest_award_at": "2026-08-28T10:51:17+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498122&notifyId=IB2600498122&inputResultId=135610f6-2788-4d71-81ef-92f204bdb1b7&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498122&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        },
-        {
-          "partner_id": "vn2902277758",
-          "contractor_name": "CÔNG TY TNHH THƯƠNG MẠI VÀ TƯ VẤN HƯNG QUÂN",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 34500000,
-          "categories": [
-            "digital_services"
-          ],
-          "latest_award_at": "2026-08-28T10:49:12+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600498113&notifyId=IB2600498113&inputResultId=dee5aa1e-7e37-48fd-80de-5cead097b58f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498113&planNo=PL2600284933&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+          "latest_award_at": "2026-08-19T13:16:58+00:00",
+          "relationship_evidence_score": 72,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600467712&notifyId=IB2600467712&inputResultId=53a25ca2-3af6-4a18-8075-f3b6b0ed2085&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467712&planNo=PL2600260455&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -14273,6 +14493,32 @@
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     },
     {
+      "buyer_key": "trung tâm hỗ trợ và tư vấn phát triển công thương nghệ an",
+      "buyer": "Trung tâm Hỗ trợ và Tư vấn phát triển Công Thương Nghệ An",
+      "observed_awards": 2,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 1,
+      "category_counts": {
+        "logistics": 2
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn2901431220",
+          "contractor_name": "Công ty TNHH Thương mại Hiệp Sương",
+          "observed_awards": 2,
+          "observed_award_value_vnd": 120000000,
+          "categories": [
+            "logistics"
+          ],
+          "latest_award_at": "2026-07-08T03:18:55+00:00",
+          "relationship_evidence_score": 66,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600353510&notifyId=IB2600353510&inputResultId=90845c76-ca37-44c9-b35f-b884c6efe171&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600353510&planNo=PL2600181875&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
       "buyer_key": "trung tâm y tế krông bông",
       "buyer": "Trung tâm y tế Krông Bông",
       "observed_awards": 2,
@@ -14346,6 +14592,84 @@
           "latest_award_at": "2026-05-26T08:03:36+00:00",
           "relationship_evidence_score": 62,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600239273&notifyId=IB2600239273&inputResultId=e4249946-56f8-4766-baf2-a7bdbee86426&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600239273&planNo=PL2600140064&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "ban quản lý dự án xây dựng bắc giang",
+      "buyer": "Ban Quản lý dự án xây dựng Bắc Giang",
+      "observed_awards": 1,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "consulting": 1
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn0108107735",
+          "contractor_name": "CÔNG TY CỔ PHẦN THẨM ĐỊNH GIÁ SMG",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 75000000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T16:02:26+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501722&notifyId=IB2600501722&inputResultId=812a7acd-e745-4353-ac70-4249bc82423f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501722&planNo=PL2600281546&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "ban quản lý dự án đầu tư xây dựng phường yên thắng",
+      "buyer": "Ban Quản lý dự án đầu tư xây dựng phường Yên Thắng",
+      "observed_awards": 1,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "consulting": 1
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn2700662468",
+          "contractor_name": "Công ty TNHH tư vấn xây dựng và đầu tư phát triển Trường Sơn",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 370593000,
+          "categories": [
+            "consulting"
+          ],
+          "latest_award_at": "2026-09-01T14:42:01+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501689&notifyId=IB2600501689&inputResultId=393656c3-edc2-455c-82be-1326121778bf&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501689&planNo=PL2600281522&step=tbmt&isInternet=undefined&bidForm=CDTRG"
+        }
+      ],
+      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
+    },
+    {
+      "buyer_key": "trường trung học cơ sở đỗ văn dậy",
+      "buyer": "TRƯỜNG TRUNG HỌC CƠ SỞ ĐỖ VĂN DẬY",
+      "observed_awards": 1,
+      "unique_observed_partners": 1,
+      "top_partner_award_share": 1.0,
+      "repeated_partner_relationships": 0,
+      "category_counts": {
+        "food_services": 1
+      },
+      "top_partners": [
+        {
+          "partner_id": "vn0316621282",
+          "contractor_name": "CÔNG TY CỔ PHẦN NGỰ PHẨM",
+          "observed_awards": 1,
+          "observed_award_value_vnd": 4816000000,
+          "categories": [
+            "food_services"
+          ],
+          "latest_award_at": "2026-09-01T13:56:46+00:00",
+          "relationship_evidence_score": 60,
+          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600501679&notifyId=IB2600501679&inputResultId=eb30752d-acd1-4c31-a72b-e639f3fb9fc6&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501679&planNo=PL2600283988&step=tbmt&isInternet=undefined&bidForm=LCNT_DB"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -15391,32 +15715,6 @@
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     },
     {
-      "buyer_key": "trung tâm cung ứng dịch vụ xã lục hồn",
-      "buyer": "TRUNG TÂM CUNG ỨNG DỊCH VỤ XÃ LỤC HỒN",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "consulting": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn5701804985",
-          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ XÂY DỰNG AUC VIỆT NAM",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 32194000,
-          "categories": [
-            "consulting"
-          ],
-          "latest_award_at": "2026-08-31T03:24:51+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500754&notifyId=IB2600500754&inputResultId=80a04e77-584e-4312-83ec-3e66a21d00fb&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500754&planNo=PL2600281680&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
       "buyer_key": "ủy ban nhân dân xã ninh giang",
       "buyer": "ỦY BAN NHÂN DÂN XÃ NINH GIANG",
       "observed_awards": 1,
@@ -15438,32 +15736,6 @@
           "latest_award_at": "2026-08-31T03:22:11+00:00",
           "relationship_evidence_score": 60,
           "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500753&notifyId=IB2600500753&inputResultId=5c1c7bf1-6dc7-4480-9c23-dcd09eabde56&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500753&planNo=PL2600281369&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "ubnd xã đông tiên hưng",
-      "buyer": "UBND xã Đông Tiên Hưng",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "consulting": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn1001071485",
-          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI MINH TRÍ",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 15788000,
-          "categories": [
-            "consulting"
-          ],
-          "latest_award_at": "2026-08-31T03:17:16+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500744&notifyId=IB2600500744&inputResultId=846b151c-b2e0-4b64-b91c-ee740ecc9b13&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500744&planNo=PL2600279842&step=tbmt&isInternet=undefined&bidForm=CDTRG"
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
@@ -15805,151 +16077,12 @@
         }
       ],
       "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "đảng ủy ủy ban nhân dân tỉnh thái nguyên",
-      "buyer": "Đảng ủy Ủy ban nhân dân tỉnh Thái Nguyên",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "office_goods": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn4601285325",
-          "contractor_name": "Doanh nghiệp TN thương mại dịch vụ và sản xuất Đô Anh",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 89400000,
-          "categories": [
-            "office_goods"
-          ],
-          "latest_award_at": "2026-08-30T09:29:21+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500442&notifyId=IB2600500442&inputResultId=3f97276c-46dc-44f9-ac6d-083a1c5821b1&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500442&planNo=PL2600283971&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "ngân hàng nông nghiệp và phát triển nông thôn việt nam chi nhánh huyện thạch hà hà tĩnh ii",
-      "buyer": "Ngân hàng nông nghiệp và phát triển nông thôn Việt Nam - Chi nhánh huyện Thạch Hà Hà Tĩnh II",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "maintenance": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn0111031677",
-          "contractor_name": "CÔNG TY TNHH XÂY DỰNG MÔI TRƯỜNG TIẾN HÀ",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 308484296,
-          "categories": [
-            "maintenance"
-          ],
-          "latest_award_at": "2026-08-30T08:58:08+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600493098&notifyId=IB2600493098&inputResultId=b400f460-49cd-489a-af9e-0980281aa0a8&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600493098&planNo=PL2600262593&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "trường phổ thông dân tộc nội trú thcs và thpt cư jút",
-      "buyer": "Trường phổ thông dân tộc nội trú THCS và THPT Cư Jút",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "garment_ppe": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vnz000052265",
-          "contractor_name": "HỘ KINH DOANH OMERI BOX",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 144460000,
-          "categories": [
-            "garment_ppe"
-          ],
-          "latest_award_at": "2026-08-30T08:47:19+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500367&notifyId=IB2600500367&inputResultId=f4a18594-3184-4b96-9717-9cd5b08c16ba&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500367&planNo=PL2600285669&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "trường trung cấp kỹ thuật tăng thiết giáp",
-      "buyer": "Trường Trung cấp Kỹ thuật Tăng thiết giáp",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "office_goods": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vnz000051194",
-          "contractor_name": "HỘ KINH DOANH NGUYỄN THỊ THU THẢO",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 493435000,
-          "categories": [
-            "office_goods"
-          ],
-          "latest_award_at": "2026-08-30T06:53:26+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500338&notifyId=IB2600500338&inputResultId=dc06e1b7-ea54-42f4-82ca-ea6ada5f275e&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500338&planNo=PL2600284302&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
-    },
-    {
-      "buyer_key": "bệnh viện y học cổ truyền tỉnh lạng sơn",
-      "buyer": "BỆNH VIỆN Y HỌC CỔ TRUYỀN TỈNH LẠNG SƠN",
-      "observed_awards": 1,
-      "unique_observed_partners": 1,
-      "top_partner_award_share": 1.0,
-      "repeated_partner_relationships": 0,
-      "category_counts": {
-        "consulting": 1
-      },
-      "top_partners": [
-        {
-          "partner_id": "vn4900765351",
-          "contractor_name": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ XÂY DỰNG 36",
-          "observed_awards": 1,
-          "observed_award_value_vnd": 4207573,
-          "categories": [
-            "consulting"
-          ],
-          "latest_award_at": "2026-08-30T05:33:17+00:00",
-          "relationship_evidence_score": 60,
-          "latest_source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600500313&notifyId=IB2600500313&inputResultId=f5bece33-997e-4ff4-96b3-a3f5309cd04f&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600500313&planNo=PL2600282483&step=tbmt&isInternet=undefined&bidForm=CDTRG"
-        }
-      ],
-      "sample_warning": "Vendor concentration chỉ tính trên award sample đã thu được, không phải toàn bộ lịch sử mua sắm của buyer."
     }
   ],
   "open_tender_relationships": [
     {
       "tender_code": "IB2600500859",
       "buyer": "VĂN PHÒNG HĐND VÀ UBND XÃ NHUẬN ĐỨC",
-      "category": "digital_services",
-      "recommended_path": "subcontract_or_sourcing",
-      "relationship_route": "no_same_buyer_history_in_sample",
-      "relationship_note": "Chưa thấy lịch sử buyer-vendor trong sample; đây là thiếu dữ liệu, không phải bằng chứng buyer chưa có incumbent.",
-      "same_buyer_candidates": []
-    },
-    {
-      "tender_code": "IB2600499767",
-      "buyer": "Sở Nội vụ tỉnh Cao Bằng",
       "category": "digital_services",
       "recommended_path": "subcontract_or_sourcing",
       "relationship_route": "no_same_buyer_history_in_sample",
@@ -16053,9 +16186,9 @@
       ]
     },
     {
-      "tender_code": "IB2600490020",
-      "buyer": "TRUNG TÂM CHĂM SÓC KHÁCH HÀNG - CHI NHÁNH TỔNG CÔNG TY ĐIỆN LỰC THÀNH PHỐ HÀ NỘI",
-      "category": "office_goods",
+      "tender_code": "IB2600499767",
+      "buyer": "Sở Nội vụ tỉnh Cao Bằng",
+      "category": "digital_services",
       "recommended_path": "subcontract_or_sourcing",
       "relationship_route": "no_same_buyer_history_in_sample",
       "relationship_note": "Chưa thấy lịch sử buyer-vendor trong sample; đây là thiếu dữ liệu, không phải bằng chứng buyer chưa có incumbent.",
@@ -16128,6 +16261,15 @@
       "tender_code": "IB2600492572",
       "buyer": "NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN VIỆT NAM",
       "category": "printing_media",
+      "recommended_path": "subcontract_or_sourcing",
+      "relationship_route": "no_same_buyer_history_in_sample",
+      "relationship_note": "Chưa thấy lịch sử buyer-vendor trong sample; đây là thiếu dữ liệu, không phải bằng chứng buyer chưa có incumbent.",
+      "same_buyer_candidates": []
+    },
+    {
+      "tender_code": "IB2600490020",
+      "buyer": "TRUNG TÂM CHĂM SÓC KHÁCH HÀNG - CHI NHÁNH TỔNG CÔNG TY ĐIỆN LỰC THÀNH PHỐ HÀ NỘI",
+      "category": "office_goods",
       "recommended_path": "subcontract_or_sourcing",
       "relationship_route": "no_same_buyer_history_in_sample",
       "relationship_note": "Chưa thấy lịch sử buyer-vendor trong sample; đây là thiếu dữ liệu, không phải bằng chứng buyer chưa có incumbent.",
