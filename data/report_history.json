@@ -634,16 +634,16 @@
     "period_key": "2026-09",
     "period_state": "month_to_date",
     "title": "Monthly Regime Review",
-    "generated_at": "2026-08-31T22:50:53.358401+00:00",
-    "local_generated_at": "2026-09-01T05:50:53.352854+07:00",
+    "generated_at": "2026-09-01T05:08:39.242040+00:00",
+    "local_generated_at": "2026-09-01T12:08:39.238800+07:00",
     "history_status": "learning_history",
     "history_readiness": {
-      "observation_days": 2,
+      "observation_days": 3,
       "recommended_days": 21,
       "history_ready": false
     },
     "executive_summary": [
-      "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 2. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
+      "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 3. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
       "Trong thời gian chờ, dùng Daily để đọc trạng thái hiện tại và Source Coverage để biết các blind spot."
     ],
     "what_changed": [],
@@ -727,51 +727,51 @@
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 73,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 24,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         }
       },
       "entities": {},
@@ -867,18 +867,18 @@
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
     "analysis_status": "locked_learning_history",
-    "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 2. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
+    "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 3. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
   },
   {
     "kind": "daily",
     "period_key": "2026-09-01",
     "period_state": "live_today",
     "title": "Daily Intelligence Brief",
-    "generated_at": "2026-08-31T22:50:53.357451+00:00",
-    "local_generated_at": "2026-09-01T05:50:53.352854+07:00",
+    "generated_at": "2026-09-01T05:08:39.241495+00:00",
+    "local_generated_at": "2026-09-01T12:08:39.238800+07:00",
     "history_status": "ready",
     "history_readiness": {
-      "observation_days": 2,
+      "observation_days": 3,
       "recommended_days": 2,
       "history_ready": true
     },
@@ -901,7 +901,7 @@
       {
         "type": "theme",
         "title": "Đầu tư công & hạ tầng vật lý",
-        "assessment": "Delta snapshot gần nhất +3. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng +3."
+        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
       },
       {
         "type": "theme",
@@ -1121,51 +1121,51 @@
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 73,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 24,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         }
       },
       "entities": {},
@@ -1268,16 +1268,16 @@
     "period_key": "2026-W36",
     "period_state": "week_to_date",
     "title": "Weekly Intelligence Report",
-    "generated_at": "2026-08-31T22:50:53.357981+00:00",
-    "local_generated_at": "2026-09-01T05:50:53.352854+07:00",
+    "generated_at": "2026-09-01T05:08:39.241812+00:00",
+    "local_generated_at": "2026-09-01T12:08:39.238800+07:00",
     "history_status": "learning_history",
     "history_readiness": {
-      "observation_days": 2,
+      "observation_days": 3,
       "recommended_days": 7,
       "history_ready": false
     },
     "executive_summary": [
-      "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 2. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
+      "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 3. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
       "Trong thời gian chờ, dùng Daily để đọc trạng thái hiện tại và Source Coverage để biết các blind spot."
     ],
     "what_changed": [],
@@ -1361,51 +1361,51 @@
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 73,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 24,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
-          "state": "learning_history",
+          "state": "stable",
           "direction": "stable",
-          "observation_days": 2
+          "observation_days": 3
         }
       },
       "entities": {},
@@ -1501,6 +1501,6 @@
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
     "analysis_status": "locked_learning_history",
-    "trust_notice": "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 2. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
+    "trust_notice": "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 3. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
   }
 ]

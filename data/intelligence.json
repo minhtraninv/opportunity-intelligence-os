@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-31T22:50:04.900409+00:00",
+    "generated_at": "2026-09-01T05:07:15.569526+00:00",
     "status": "warming_up",
     "history_days": 2,
     "required_history_days": 14,
@@ -17,6 +17,17 @@
       "delta_pct": null,
       "trend": "warming_up",
       "confidence": 45,
+      "source_diversity_7d": 3,
+      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 6,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 35,
       "source_diversity_7d": 3,
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -43,17 +54,6 @@
       "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
-      "category": "infrastructure",
-      "recent_7d": 3,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 22,
-      "source_diversity_7d": 2,
-      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
       "category": "monetary",
       "recent_7d": 5,
       "baseline_21d": 0,
@@ -66,6 +66,17 @@
     },
     {
       "category": "energy",
+      "recent_7d": 2,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 20,
+      "source_diversity_7d": 2,
+      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "construction",
       "recent_7d": 2,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -99,17 +110,6 @@
     },
     {
       "category": "labor",
-      "recent_7d": 1,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 12,
-      "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 2/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "construction",
       "recent_7d": 1,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -154,6 +154,65 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "788762de9f4bd24b",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Rà soát, đánh giá kỹ quy định về khoảng cách an toàn trên cao tốc",
+      "url": "https://baochinhphu.vn/ra-soat-danh-gia-ky-quy-dinh-ve-khoang-cach-an-toan-tren-cao-toc-102260901114642547.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-01T05:07:15.569526+00:00"
+    },
+    {
+      "id": "394472b81d2af697",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Các cơ chế, chính sách đặc thù, đặc biệt được áp dụng để xây dựng đường vành đai 5",
+      "url": "https://xaydungchinhsach.chinhphu.vn/cac-co-che-chinh-sach-dac-thu-dac-biet-duoc-ap-dung-de-xay-dung-duong-vanh-dai-5-119260901102606836.htm",
+      "categories": [
+        "construction",
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-01T05:07:15.569526+00:00"
+    },
+    {
+      "id": "399fad2ec624df69",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nghị quyết số 38/2026/QH16 đầu tư Dự án đường Vành đai 5 - Vùng Thủ đô Hà Nội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-so-38-2026-qh16-dau-tu-du-an-duong-vanh-dai-5-vung-thu-do-ha-noi-119260901095018312.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Hà Nội"
+      ],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-01T05:07:15.569526+00:00"
+    },
     {
       "id": "cd5372543e3d2a1c",
       "source_id": "business-registry",
@@ -344,19 +403,20 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 17,
+    "policy_regulation": 20,
     "business_formation": 8,
     "market_data": 3,
     "infrastructure_delivery": 2,
     "hiring": 1
   },
   "geographies_7d": {
+    "Hà Nội": 1,
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 113,
-    "candidate_events": 31,
-    "reference_events": 77,
+    "historical_events": 118,
+    "candidate_events": 34,
+    "reference_events": 79,
     "unique_candidate_sources": 6,
     "source_errors_last_run": 2
   },
