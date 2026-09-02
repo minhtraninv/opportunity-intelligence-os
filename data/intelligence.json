@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-02T16:34:38.511735+00:00",
+    "generated_at": "2026-09-02T21:02:46.208446+00:00",
     "status": "warming_up",
     "history_days": 4,
     "required_history_days": 14,
@@ -11,12 +11,12 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 13,
+      "recent_7d": 15,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 52,
+      "confidence": 56,
       "source_diversity_7d": 3,
       "explanation": "Đang học baseline: mới có 4/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "d5a02592caec68f5",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 3/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-02T21:02:46.208446+00:00"
+    },
+    {
+      "id": "37a552ba6df2dd6a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 3/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-02T21:02:46.208446+00:00"
+    },
+    {
       "id": "7d9bc57b2854f579",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -173,53 +211,11 @@
       "first_seen_at": "2026-09-02T04:32:59.016669+00:00",
       "collected_at": "2026-09-02T04:32:59.016669+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "2c563e33e990e4d0",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 2/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-01T21:02:07.836932+00:00",
-      "collected_at": "2026-09-01T21:02:07.836932+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "76efcd5c401e8eb4",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 2/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-01T21:02:07.836932+00:00",
-      "collected_at": "2026-09-01T21:02:07.836932+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 20,
-    "business_formation": 10,
+    "business_formation": 12,
     "market_data": 3,
     "hiring": 2,
     "infrastructure_delivery": 2
@@ -229,8 +225,8 @@
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 126,
-    "candidate_events": 37,
+    "historical_events": 128,
+    "candidate_events": 39,
     "reference_events": 84,
     "unique_candidate_sources": 6,
     "source_errors_last_run": 2

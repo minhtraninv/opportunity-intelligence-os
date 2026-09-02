@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-02T16:35:14.872771+00:00",
+    "generated_at": "2026-09-02T21:03:26.071187+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,17 +9,17 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 56,
-    "entities_seen_recently": 38,
-    "auto_discovered_entities": 33,
-    "history_events": 56
+    "recent_events": 57,
+    "entities_seen_recently": 39,
+    "auto_discovered_entities": 34,
+    "history_events": 57
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 5,
       "error": null
     },
     {
@@ -87,6 +87,10 @@
     },
     {
       "entity_id": "auto-pyn-elite-22eb1af2",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-chevron-fdac4593",
       "recent_events": 1
     },
     {
@@ -328,6 +332,24 @@
       ],
       "publishers": [
         "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-chevron-fdac4593",
+      "label": "Chevron",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Chevron"
+      ],
+      "recent_events": 1,
+      "families": [
+        "operating"
+      ],
+      "publishers": [
+        "VnExpress Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
@@ -804,25 +826,6 @@
   ],
   "events": [
     {
-      "id": "cdbd11d5bea5b14b",
-      "event_signature": "bc1bbd3528b5013c",
-      "entity_id": "auto-thái-lan-1ebf1586",
-      "entity_label": "Thái Lan",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Thái Lan cảnh báo xuất khẩu gạo và đường sang Trung Quốc đối mặt rủi ro",
-      "summary": "Việc Trung Quốc giảm lượng gạo nhập khẩu đồng thời có xu hướng tăng xuất khẩu gạo được cho là sẽ làm gia tăng sức ép cạnh tranh đối với các nhà xuất khẩu gạo Thái Lan trên thị trường thế giới. Thái Lan hướng tới mục tiêu xuất khẩu 7 triệu tấn gạo Xuất khẩu gạo Thái Lan giảm mạnh, có thể sẽ chạm mức thấp nhất 5 năm Thái Lan khởi động dự án 1 triệu tấn gạo cao",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/thai-lan-canh-bao-xuat-khau-gao-va-duong-sang-trung-quoc-doi-mat-rui-ro-post1133886.vnp",
-      "published_at": "2026-09-02T20:18:06+00:00",
-      "first_seen_at": "2026-09-02T16:35:14.872771+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "a7a915d073a94153",
       "event_signature": "e4f5769f5959939c",
       "entity_id": "thaco_group",
@@ -834,9 +837,9 @@
       "summary": "Công ty CP Đầu tư Địa ốc Đại Quang Minh dự kiến huy động 1.000 tỉ đồng thông qua phát hành trái phiếu với lãi suất cố định 11%/năm. Gần 165 triệu cổ phần Thaco Agri, được định giá 2.000 tỉ đồng, sẽ được dùng làm tài sản bảo đảm.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/cong-ty-dai-gia-khoa-khan-muon-huy-dong-1000-ti-dong-trai-phieu-the-chap-165-trieu-co-phan-thaco-agri-100260902120324761.htm",
-      "published_at": "2026-09-02T16:35:14.872771+00:00",
+      "published_at": "2026-09-02T21:03:26.071187+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -851,9 +854,47 @@
       "summary": "PYN Elite cho rằng thanh khoản đang hạn chế đà tăng của giá cổ phiếu dù lợi nhuận doanh nghiệp Việt Nam vẫn tăng trưởng.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/pyn-elite-ly-giai-vi-sao-loi-nhuan-doanh-nghiep-tang-nhung-gia-co-phieu-chua-but-pha-100260902113529785.htm",
-      "published_at": "2026-09-02T16:35:14.872771+00:00",
+      "published_at": "2026-09-02T21:03:26.071187+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "cdbd11d5bea5b14b",
+      "event_signature": "bc1bbd3528b5013c",
+      "entity_id": "auto-thái-lan-1ebf1586",
+      "entity_label": "Thái Lan",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Thái Lan cảnh báo xuất khẩu gạo và đường sang Trung Quốc đối mặt rủi ro",
+      "summary": "Việc Trung Quốc giảm lượng gạo nhập khẩu đồng thời có xu hướng tăng xuất khẩu gạo được cho là sẽ làm gia tăng sức ép cạnh tranh đối với các nhà xuất khẩu gạo Thái Lan trên thị trường thế giới. Thái Lan hướng tới mục tiêu xuất khẩu 7 triệu tấn gạo Xuất khẩu gạo Thái Lan giảm mạnh, có thể sẽ chạm mức thấp nhất 5 năm Thái Lan khởi động dự án 1 triệu tấn gạo cao",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/thai-lan-canh-bao-xuat-khau-gao-va-duong-sang-trung-quoc-doi-mat-rui-ro-post1133886.vnp",
+      "published_at": "2026-09-02T20:18:06+00:00",
+      "first_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "fb57f028092afb9c",
+      "event_signature": "3e19f009a48dd97a",
+      "entity_id": "auto-chevron-fdac4593",
+      "entity_label": "Chevron",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Chevron sẽ chi 7 tỷ USD để tăng gấp đôi sản lượng dầu tại Venezuela",
+      "summary": "Tập đoàn dầu khí hàng đầu Mỹ Chevron sẽ tăng gấp đôi sản lượng dầu tại Venezuela 5 năm tới với khoản đầu tư 7 tỷ USD.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/chevron-se-chi-7-ty-usd-de-tang-gap-doi-san-luong-dau-tai-venezuela-5115871.html",
+      "published_at": "2026-09-02T19:00:00+00:00",
+      "first_seen_at": "2026-09-02T21:03:26.071187+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -872,7 +913,7 @@
       "source_url": "https://www.vietnamplus.vn/thai-lan-ho-tro-tieu-thu-trai-cay-qua-mang-luoi-hang-khong-post1133835.vnp",
       "published_at": "2026-09-02T16:09:50+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -891,7 +932,7 @@
       "source_url": "https://www.vietnamplus.vn/vifa-asean-2026-cau-noi-dua-noi-ngoai-that-viet-nam-vao-chuoi-gia-tri-toan-cau-post1133837.vnp",
       "published_at": "2026-09-02T15:37:00+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -910,7 +951,7 @@
       "source_url": "https://www.vietnamplus.vn/vn-index-co-the-thu-suc-vung-1850-diem-sau-ky-nghi-quoc-khanh-post1133818.vnp",
       "published_at": "2026-09-02T12:41:26+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -929,7 +970,7 @@
       "source_url": "https://www.vietnamplus.vn/microsoft-dieu-chinh-chien-luoc-tai-thi-truong-ty-dan-post1133794.vnp",
       "published_at": "2026-09-02T11:28:31+00:00",
       "first_seen_at": "2026-09-02T04:33:55.146246+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -984,7 +1025,7 @@
       "source_url": "https://thanhnien.vn/rox-group-30-nam-kien-tao-noi-luc-tao-nen-hanh-trinh-vuon-xa-185260828160842202.htm",
       "published_at": "2026-09-02T01:00:00+00:00",
       "first_seen_at": "2026-09-02T04:33:55.146246+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1003,7 +1044,7 @@
       "source_url": "https://thanhnien.vn/tu-bac-vao-nam-loat-dai-cong-truong-van-thi-cong-ram-rap-xuyen-le-185260901201908953.htm",
       "published_at": "2026-09-01T23:48:00+00:00",
       "first_seen_at": "2026-09-02T04:33:55.146246+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1039,7 +1080,7 @@
       "source_url": "https://www.vietnamplus.vn/tuyen-quang-don-luc-khoi-thong-thuc-day-giai-ngan-dong-von-dau-tu-cong-post1133713.vnp",
       "published_at": "2026-09-01T17:46:21+00:00",
       "first_seen_at": "2026-09-01T11:39:46.698115+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -1170,7 +1211,7 @@
       "source_url": "https://vnexpress.net/mien-bac-tang-dau-tu-pin-luu-tru-ho-tro-luoi-dien-5115352.html",
       "published_at": "2026-08-31T22:58:42+00:00",
       "first_seen_at": "2026-09-01T05:07:58.938499+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1284,7 +1325,7 @@
       "source_url": "https://vnexpress.net/saigon-co-op-ky-vong-suc-mua-tang-hai-con-so-dip-quoc-khanh-5114934.html",
       "published_at": "2026-08-31T02:00:00+00:00",
       "first_seen_at": "2026-08-31T05:34:45.089170+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1303,7 +1344,7 @@
       "source_url": "https://vnexpress.net/flc-tang-von-len-gan-13-000-ty-dong-5115107.html",
       "published_at": "2026-08-30T11:05:00+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1338,7 +1379,7 @@
       "source_url": "https://thanhnien.vn/voi-du-an-33000-ti-dong-sun-group-se-bien-hoa-khu-vuc-ho-tay-the-nao-185260830144013714.htm",
       "published_at": "2026-08-30T07:52:00+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1371,7 +1412,7 @@
       "source_url": "https://vnexpress.net/vingroup-lai-hon-12-500-ty-dong-tu-ban-mang-san-xuat-cua-vinfast-o-viet-nam-5115157.html",
       "published_at": "2026-08-30T07:05:00+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
-      "last_seen_at": "2026-09-02T16:35:14.872771+00:00",
+      "last_seen_at": "2026-09-02T21:03:26.071187+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1842,8 +1883,8 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-02T16:35:29.092204+00:00",
-    "auto_entities_typed": 33,
+    "prepared_at": "2026-09-02T21:03:37.066400+00:00",
+    "auto_entities_typed": 34,
     "auto_entities_suppressed_from_entity_convergence": 14,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
   }
