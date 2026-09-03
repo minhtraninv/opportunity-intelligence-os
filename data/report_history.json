@@ -634,16 +634,16 @@
     "period_key": "2026-09",
     "period_state": "month_to_date",
     "title": "Monthly Regime Review",
-    "generated_at": "2026-09-02T21:03:40.087427+00:00",
-    "local_generated_at": "2026-09-03T04:03:40.084151+07:00",
+    "generated_at": "2026-09-03T04:34:09.895790+00:00",
+    "local_generated_at": "2026-09-03T11:34:09.892155+07:00",
     "history_status": "learning_history",
     "history_readiness": {
-      "observation_days": 4,
+      "observation_days": 5,
       "recommended_days": 21,
       "history_ready": false
     },
     "executive_summary": [
-      "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 4. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
+      "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 5. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
       "Trong thời gian chờ, dùng Daily để đọc trạng thái hiện tại và Source Coverage để biết các blind spot."
     ],
     "what_changed": [],
@@ -729,49 +729,49 @@
           "score": 73,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
-          "score": 24,
+          "score": 27,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         }
       },
       "entities": {},
@@ -867,7 +867,7 @@
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
     "analysis_status": "locked_learning_history",
-    "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 4. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
+    "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 5. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
   },
   {
     "kind": "daily",
@@ -1662,39 +1662,24 @@
     "period_key": "2026-09-03",
     "period_state": "live_today",
     "title": "Daily Intelligence Brief",
-    "generated_at": "2026-09-02T21:03:40.086881+00:00",
-    "local_generated_at": "2026-09-03T04:03:40.084151+07:00",
+    "generated_at": "2026-09-03T04:34:09.895194+00:00",
+    "local_generated_at": "2026-09-03T11:34:09.892155+07:00",
     "history_status": "ready",
     "history_readiness": {
-      "observation_days": 4,
+      "observation_days": 5,
       "recommended_days": 2,
       "history_ready": true
     },
     "executive_summary": [
-      "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+      "Thay đổi lớn nhất so với kỳ trước nằm ở Tiêu dùng & dịch vụ: +3.0 điểm.",
       "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
       "Độ phủ nguồn hiện có 3 domain STRONG, 7 WEAK, 3 BROKEN và 2 MISSING."
     ],
     "what_changed": [
       {
         "type": "theme",
-        "title": "Gia tốc thương mại & logistics",
-        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-      },
-      {
-        "type": "theme",
-        "title": "Mở rộng năng lực sản xuất",
-        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-      },
-      {
-        "type": "theme",
-        "title": "Đầu tư công & hạ tầng vật lý",
-        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-      },
-      {
-        "type": "theme",
-        "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+        "title": "Tiêu dùng & dịch vụ",
+        "assessment": "mạnh lên 3 điểm so với kỳ trước."
       }
     ],
     "entity_watch": [],
@@ -1765,7 +1750,7 @@
       {
         "theme": "Tiêu dùng & dịch vụ",
         "tension": "material",
-        "adjusted_score": 24,
+        "adjusted_score": 27,
         "counter_signals": [
           "Bán lẻ & dịch vụ tăng 13,1% danh nghĩa nhưng chỉ 7,5% sau loại trừ giá — Doanh thu danh nghĩa nhìn rất mạnh nhưng sức mua thực tăng chậm hơn đáng kể, trong bối cảnh CPI bình quân 7 tháng tăng 4,39%. Mở thêm tài sản/mặt bằng chỉ vì doanh thu nominal tăng là quá sớm.",
           "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
@@ -1896,7 +1881,14 @@
     ],
     "period_delta": {
       "available": true,
-      "theme_changes": [],
+      "theme_changes": [
+        {
+          "theme_id": "consumer_services",
+          "label": "Tiêu dùng & dịch vụ",
+          "delta": 3.0,
+          "change": "strengthened"
+        }
+      ],
       "new_entities": [],
       "coverage_change": {
         "strong": 0.0,
@@ -1911,49 +1903,49 @@
           "score": 73,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
-          "score": 24,
+          "score": 27,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         }
       },
       "entities": {},
@@ -2056,16 +2048,16 @@
     "period_key": "2026-W36",
     "period_state": "week_to_date",
     "title": "Weekly Intelligence Report",
-    "generated_at": "2026-09-02T21:03:40.087191+00:00",
-    "local_generated_at": "2026-09-03T04:03:40.084151+07:00",
+    "generated_at": "2026-09-03T04:34:09.895500+00:00",
+    "local_generated_at": "2026-09-03T11:34:09.892155+07:00",
     "history_status": "learning_history",
     "history_readiness": {
-      "observation_days": 4,
+      "observation_days": 5,
       "recommended_days": 7,
       "history_ready": false
     },
     "executive_summary": [
-      "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 4. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
+      "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 5. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend.",
       "Trong thời gian chờ, dùng Daily để đọc trạng thái hiện tại và Source Coverage để biết các blind spot."
     ],
     "what_changed": [],
@@ -2151,49 +2143,49 @@
           "score": 73,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 60,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 53,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 35,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
-          "score": 24,
+          "score": 27,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "data_infrastructure": {
           "label": "Hạ tầng dữ liệu & số hóa",
           "score": 22,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 4
+          "observation_days": 5
         }
       },
       "entities": {},
@@ -2289,6 +2281,6 @@
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
     "analysis_status": "locked_learning_history",
-    "trust_notice": "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 4. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
+    "trust_notice": "Weekly cần tối thiểu 7 ngày lịch sử; hiện mới có 5. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
   }
 ]
