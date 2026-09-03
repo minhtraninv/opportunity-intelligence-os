@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-09-03T04:35:22.523900+00:00",
+    "generated_at": "2026-09-03T11:16:22.077331+00:00",
     "mode": "observed_public_procurement_supply_depth",
     "principle": "thin_history_is_unknown_not_scarcity"
   },
   "coverage": {
     "categories": 10,
-    "award_observations": 1615,
-    "open_tenders": 32,
+    "award_observations": 1669,
+    "open_tenders": 50,
     "categories_with_moderate_or_better_confidence": 8,
     "capacity_pressure_candidates": 0
   },
@@ -17,18 +17,62 @@
       "category": "digital_services",
       "theme_id": "data_infrastructure",
       "current_demand": {
-        "open_tenders": 10,
-        "unique_buyers": 10,
-        "package_value_sum_vnd": 135977656672.0,
+        "open_tenders": 16,
+        "unique_buyers": 16,
+        "package_value_sum_vnd": 189173032533.0,
         "median_package_value_vnd": 3468451958.0
       },
       "observed_supply_history": {
-        "award_observations": 225,
-        "unique_vendors": 158,
-        "unique_buyers": 211,
-        "top_vendor_win_share": 0.098,
-        "winner_hhi": 0.0178,
+        "award_observations": 229,
+        "unique_vendors": 160,
+        "unique_buyers": 214,
+        "top_vendor_win_share": 0.096,
+        "winner_hhi": 0.0176,
         "current_buyers_seen_in_history": 0
+      },
+      "sample_confidence": "moderate",
+      "confidence_score": 70,
+      "pressure_status": "observed_supply_depth_present",
+      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
+    },
+    {
+      "category": "maintenance",
+      "theme_id": null,
+      "current_demand": {
+        "open_tenders": 11,
+        "unique_buyers": 11,
+        "package_value_sum_vnd": 24567696214.0,
+        "median_package_value_vnd": 1401243620.0
+      },
+      "observed_supply_history": {
+        "award_observations": 189,
+        "unique_vendors": 182,
+        "unique_buyers": 164,
+        "top_vendor_win_share": 0.016,
+        "winner_hhi": 0.0057,
+        "current_buyers_seen_in_history": 0
+      },
+      "sample_confidence": "moderate",
+      "confidence_score": 70,
+      "pressure_status": "observed_supply_depth_present",
+      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
+    },
+    {
+      "category": "office_goods",
+      "theme_id": null,
+      "current_demand": {
+        "open_tenders": 11,
+        "unique_buyers": 11,
+        "package_value_sum_vnd": 30582108327.0,
+        "median_package_value_vnd": 979344000.0
+      },
+      "observed_supply_history": {
+        "award_observations": 253,
+        "unique_vendors": 221,
+        "unique_buyers": 226,
+        "top_vendor_win_share": 0.016,
+        "winner_hhi": 0.0052,
+        "current_buyers_seen_in_history": 1
       },
       "sample_confidence": "moderate",
       "confidence_score": 70,
@@ -45,56 +89,12 @@
         "median_package_value_vnd": 2128622000.0
       },
       "observed_supply_history": {
-        "award_observations": 365,
-        "unique_vendors": 282,
-        "unique_buyers": 165,
-        "top_vendor_win_share": 0.014,
-        "winner_hhi": 0.0047,
+        "award_observations": 381,
+        "unique_vendors": 295,
+        "unique_buyers": 177,
+        "top_vendor_win_share": 0.013,
+        "winner_hhi": 0.0045,
         "current_buyers_seen_in_history": 1
-      },
-      "sample_confidence": "moderate",
-      "confidence_score": 70,
-      "pressure_status": "observed_supply_depth_present",
-      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
-    },
-    {
-      "category": "office_goods",
-      "theme_id": null,
-      "current_demand": {
-        "open_tenders": 6,
-        "unique_buyers": 6,
-        "package_value_sum_vnd": 26486678300.0,
-        "median_package_value_vnd": 1334381750.0
-      },
-      "observed_supply_history": {
-        "award_observations": 248,
-        "unique_vendors": 217,
-        "unique_buyers": 221,
-        "top_vendor_win_share": 0.016,
-        "winner_hhi": 0.0053,
-        "current_buyers_seen_in_history": 1
-      },
-      "sample_confidence": "moderate",
-      "confidence_score": 70,
-      "pressure_status": "observed_supply_depth_present",
-      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
-    },
-    {
-      "category": "maintenance",
-      "theme_id": null,
-      "current_demand": {
-        "open_tenders": 5,
-        "unique_buyers": 5,
-        "package_value_sum_vnd": 12444372168.0,
-        "median_package_value_vnd": 1978137000.0
-      },
-      "observed_supply_history": {
-        "award_observations": 185,
-        "unique_vendors": 178,
-        "unique_buyers": 160,
-        "top_vendor_win_share": 0.016,
-        "winner_hhi": 0.0059,
-        "current_buyers_seen_in_history": 0
       },
       "sample_confidence": "moderate",
       "confidence_score": 70,
@@ -105,17 +105,17 @@
       "category": "garment_ppe",
       "theme_id": null,
       "current_demand": {
-        "open_tenders": 2,
-        "unique_buyers": 2,
-        "package_value_sum_vnd": 749585556.0,
-        "median_package_value_vnd": 374792778.0
+        "open_tenders": 3,
+        "unique_buyers": 3,
+        "package_value_sum_vnd": 3937585556.0,
+        "median_package_value_vnd": 417650256.0
       },
       "observed_supply_history": {
-        "award_observations": 209,
-        "unique_vendors": 171,
-        "unique_buyers": 191,
-        "top_vendor_win_share": 0.024,
-        "winner_hhi": 0.0076,
+        "award_observations": 214,
+        "unique_vendors": 175,
+        "unique_buyers": 196,
+        "top_vendor_win_share": 0.023,
+        "winner_hhi": 0.0074,
         "current_buyers_seen_in_history": 1
       },
       "sample_confidence": "moderate",
@@ -133,11 +133,11 @@
         "median_package_value_vnd": 1954791900.0
       },
       "observed_supply_history": {
-        "award_observations": 100,
-        "unique_vendors": 83,
-        "unique_buyers": 87,
-        "top_vendor_win_share": 0.05,
-        "winner_hhi": 0.0154,
+        "award_observations": 102,
+        "unique_vendors": 84,
+        "unique_buyers": 88,
+        "top_vendor_win_share": 0.049,
+        "winner_hhi": 0.0152,
         "current_buyers_seen_in_history": 0
       },
       "sample_confidence": "moderate",
@@ -155,11 +155,11 @@
         "median_package_value_vnd": 77882420000.0
       },
       "observed_supply_history": {
-        "award_observations": 100,
-        "unique_vendors": 93,
-        "unique_buyers": 92,
-        "top_vendor_win_share": 0.02,
-        "winner_hhi": 0.0114,
+        "award_observations": 104,
+        "unique_vendors": 97,
+        "unique_buyers": 94,
+        "top_vendor_win_share": 0.019,
+        "winner_hhi": 0.0109,
         "current_buyers_seen_in_history": 0
       },
       "sample_confidence": "moderate",
@@ -177,11 +177,11 @@
         "median_package_value_vnd": null
       },
       "observed_supply_history": {
-        "award_observations": 171,
-        "unique_vendors": 113,
-        "unique_buyers": 133,
-        "top_vendor_win_share": 0.047,
-        "winner_hhi": 0.0139,
+        "award_observations": 185,
+        "unique_vendors": 118,
+        "unique_buyers": 142,
+        "top_vendor_win_share": 0.049,
+        "winner_hhi": 0.014,
         "current_buyers_seen_in_history": 0
       },
       "sample_confidence": "moderate",
