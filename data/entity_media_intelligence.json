@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-03T11:14:49.545828+00:00",
+    "generated_at": "2026-09-03T16:25:45.137412+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,10 +9,10 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 67,
-    "entities_seen_recently": 45,
-    "auto_discovered_entities": 38,
-    "history_events": 67
+    "recent_events": 70,
+    "entities_seen_recently": 48,
+    "auto_discovered_entities": 41,
+    "history_events": 70
   },
   "source_health": [
     {
@@ -26,14 +26,14 @@
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 4,
+      "items_this_run": 5,
       "error": null
     },
     {
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
@@ -66,11 +66,11 @@
       "recent_events": 3
     },
     {
-      "entity_id": "auto-microsoft-64814a3b",
+      "entity_id": "auto-novaland-eaa8c17a",
       "recent_events": 2
     },
     {
-      "entity_id": "auto-novaland-eaa8c17a",
+      "entity_id": "auto-microsoft-64814a3b",
       "recent_events": 2
     },
     {
@@ -90,6 +90,10 @@
       "recent_events": 2
     },
     {
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "recent_events": 1
+    },
+    {
       "entity_id": "auto-adb-fa1143de",
       "recent_events": 1
     },
@@ -103,6 +107,14 @@
     },
     {
       "entity_id": "auto-ftse-5cd49131",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-vetc-333039d0",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-cục-thuế-03cfca60",
       "recent_events": 1
     },
     {
@@ -382,6 +394,24 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-bắc-ninh-a1c0d701",
+      "label": "Bắc Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Bắc Ninh"
+      ],
+      "recent_events": 1,
+      "families": [
+        "capital"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "auto-adb-fa1143de",
       "label": "ADB",
       "entity_type": "organization_candidate",
@@ -434,6 +464,42 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "auto-vetc-333039d0",
+      "label": "VETC",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "VETC"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-cục-thuế-03cfca60",
+      "label": "Cục Thuế",
+      "entity_type": "public_body",
+      "aliases": [
+        "Cục Thuế"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "truncated_public_body_name"
     },
     {
       "id": "auto-vng-d0132091",
@@ -924,6 +990,25 @@
   ],
   "events": [
     {
+      "id": "6c1eb4d13b7bae2c",
+      "event_signature": "a4704cc423119975",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "entity_label": "Bắc Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Bắc Ninh không để gián đoạn, khoảng trống pháp lý khi trở thành thành phố",
+      "summary": "Bắc Ninh đã hoàn thành mục tiêu trở thành thành phố trực thuộc trung ương sớm hơn kế hoạch, thúc đẩy phát triển kinh tế và hạ tầng toàn diện. Bắc Ninh dẫn đầu cả nước về tỷ lệ giải ngân vốn đầu tư công Bắc Ninh đẩy mạnh kích cầu tiêu dùng, phấn đấu đạt mức tăng trưởng 8,5% Bắc Ninh - từ cực tăng trưởng đến đô thị trung tâm vùng",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/bac-ninh-khong-de-gian-doan-khoang-trong-phap-ly-khi-tro-thanh-thanh-pho-post1134102.vnp",
+      "published_at": "2026-09-03T20:57:14+00:00",
+      "first_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "b0781f8c4335f6ab",
       "event_signature": "7aa7d8ccb9399bf7",
       "entity_id": "auto-tây-ninh-02d05047",
@@ -937,7 +1022,7 @@
       "source_url": "https://www.vietnamplus.vn/tay-ninh-siet-quan-ly-doi-tau-bit-khoang-trong-chong-khai-thac-iuu-post1134052.vnp",
       "published_at": "2026-09-03T16:37:51+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -956,26 +1041,7 @@
       "source_url": "https://www.vietnamplus.vn/adb-rot-4276-trieu-usd-hien-dai-hoa-he-thong-thuy-loi-viet-nam-post1134048.vnp",
       "published_at": "2026-09-03T16:31:29+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "df758ab7678b442c",
-      "event_signature": "2825c86643c2b4d7",
-      "entity_id": "auto-microsoft-64814a3b",
-      "entity_label": "Microsoft",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "Microsoft lần đầu công bố doanh thu Azure vượt 100 tỷ USD",
-      "summary": "Azure đạt doanh thu 29,4 tỷ USD trong quý gần nhất và 101,9 tỷ USD trong cả năm tài chính 2026, kết thúc ngày 30/6/2026. Mức này xếp sau Amazon (42,2 tỷ USD) nhưng vượt Google (24,8 tỷ USD). Microsoft điều chỉnh chiến lược tại thị trường tỷ dân Microsoft \"chiêu mộ\" lãnh đạo Nvidia điều hành hoạt động tại Israel Doanh thu AI của Microsoft phụ thuộc phần lớn v",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/microsoft-lan-dau-cong-bo-doanh-thu-azure-vuot-100-ty-usd-post1133989.vnp",
-      "published_at": "2026-09-03T12:58:30+00:00",
-      "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -992,9 +1058,9 @@
       "summary": "Công ty CP Đầu tư Địa ốc Đại Quang Minh dự kiến huy động 1.000 tỉ đồng thông qua phát hành trái phiếu với lãi suất cố định 11%/năm. Gần 165 triệu cổ phần Thaco Agri, được định giá 2.000 tỉ đồng, sẽ được dùng làm tài sản bảo đảm.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/cong-ty-dai-gia-khoa-khan-muon-huy-dong-1000-ti-dong-trai-phieu-the-chap-165-trieu-co-phan-thaco-agri-100260902120324761.htm",
-      "published_at": "2026-09-03T11:14:49.545828+00:00",
+      "published_at": "2026-09-03T16:25:45.137412+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1009,9 +1075,9 @@
       "summary": "PYN Elite cho rằng thanh khoản đang hạn chế đà tăng của giá cổ phiếu dù lợi nhuận doanh nghiệp Việt Nam vẫn tăng trưởng.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/pyn-elite-ly-giai-vi-sao-loi-nhuan-doanh-nghiep-tang-nhung-gia-co-phieu-chua-but-pha-100260902113529785.htm",
-      "published_at": "2026-09-03T11:14:49.545828+00:00",
+      "published_at": "2026-09-03T16:25:45.137412+00:00",
       "first_seen_at": "2026-09-02T11:18:20.192038+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1028,9 +1094,9 @@
       "summary": "Kế hoạch bán tài sản của Novaland có tổng giá trị 15.617 tỉ đồng, toàn bộ số tiền dùng để trả nợ. Kiểm toán tiếp tục lưu ý về khả năng hoạt động liên tục của tập đoàn.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/novaland-ban-xong-4-tai-san-thu-gan-11300-ti-de-tra-no-10026090308504016.htm",
-      "published_at": "2026-09-03T11:14:49.545828+00:00",
+      "published_at": "2026-09-03T16:25:45.137412+00:00",
       "first_seen_at": "2026-09-03T04:33:50.312135+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1047,9 +1113,66 @@
       "summary": "Sở Giao dịch chứng khoán Việt Nam lập cơ chế giám sát tăng cường trong các kỳ FTSE Russell cơ cấu danh mục, kéo dài từ trước ngày chốt dữ liệu đến 5 phiên sau.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/ftse-co-cau-danh-muc-giam-sat-dac-biet-giao-dich-co-dau-hieu-thao-tung-noi-gian-100260903103645336.htm",
-      "published_at": "2026-09-03T11:14:49.545828+00:00",
+      "published_at": "2026-09-03T16:25:45.137412+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "7f2301a1b20435c5",
+      "event_signature": "272483799edfac70",
+      "entity_id": "auto-vetc-333039d0",
+      "entity_label": "VETC",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "VETC vẫn còn lỗ lũy kế hơn 420 tỉ đồng",
+      "summary": "Sau hơn một thập kỷ triển khai thu phí không dừng, Công ty CP VETC đã có lãi trong hai năm gần đây nhưng vẫn còn hơn 420 tỉ đồng lỗ lũy kế.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vetc-van-con-lo-luy-ke-hon-420-ti-dong-100260903201930829.htm",
+      "published_at": "2026-09-03T16:25:45.137412+00:00",
+      "first_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "cfebc8a825dc283c",
+      "event_signature": "98cd37a79e96f20a",
+      "entity_id": "auto-cục-thuế-03cfca60",
+      "entity_label": "Cục Thuế",
+      "entity_type": "public_body",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cục Thuế nghiên cứu cơ chế tháo gỡ trường hợp mã số thuế 03, 06",
+      "summary": "Cục Thuế sẽ nghiên cứu trình Bộ Tài chính, Chính phủ và Quốc hội xây dựng văn bản quy phạm pháp luật quy định về cơ chế tháo gỡ đối với người nộp thuế có mã số thuế ở trạng thái 03 và 06.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/cuc-thue-nghien-cuu-co-che-thao-go-truong-hop-ma-so-thue-03-06-185260903220929818.htm",
+      "published_at": "2026-09-03T16:10:00+00:00",
+      "first_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "truncated_public_body_name"
+    },
+    {
+      "id": "df758ab7678b442c",
+      "event_signature": "2825c86643c2b4d7",
+      "entity_id": "auto-microsoft-64814a3b",
+      "entity_label": "Microsoft",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Microsoft lần đầu công bố doanh thu Azure vượt 100 tỷ USD",
+      "summary": "Azure đạt doanh thu 29,4 tỷ USD trong quý gần nhất và 101,9 tỷ USD trong cả năm tài chính 2026, kết thúc ngày 30/6/2026. Mức này xếp sau Amazon (42,2 tỷ USD) nhưng vượt Google (24,8 tỷ USD). Microsoft điều chỉnh chiến lược tại thị trường tỷ dân Microsoft \"chiêu mộ\" lãnh đạo Nvidia điều hành hoạt động tại Israel Doanh thu AI của Microsoft phụ thuộc phần lớn v",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/microsoft-lan-dau-cong-bo-doanh-thu-azure-vuot-100-ty-usd-post1133989.vnp",
+      "published_at": "2026-09-03T12:58:30+00:00",
+      "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1068,7 +1191,7 @@
       "source_url": "https://thanhnien.vn/vng-dat-loi-nhuan-thuan-nua-dau-nam-937-ti-dong-185260903163603719.htm",
       "published_at": "2026-09-03T09:50:00+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1087,7 +1210,7 @@
       "source_url": "https://vnexpress.net/masan-consumer-mo-rong-mang-xuat-khau-5116133.html",
       "published_at": "2026-09-03T08:00:00+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1104,7 +1227,7 @@
       "source_url": "https://thanhnien.vn/ttc-tai-cau-truc-so-huu-tai-agris-dinh-huong-dai-han-khong-thay-doi-185260903104342142.htm",
       "published_at": "2026-09-03T07:15:00+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1123,7 +1246,7 @@
       "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-lai-sau-kiem-toan-5116013.html",
       "published_at": "2026-09-03T06:13:27+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1140,7 +1263,7 @@
       "source_url": "https://thanhnien.vn/ca-mau-sap-co-khu-cong-nghiep-345-ha-von-dang-ky-3922-ti-dong-185260903111351074.htm",
       "published_at": "2026-09-03T04:47:00+00:00",
       "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -1178,7 +1301,7 @@
       "source_url": "https://vnexpress.net/chevron-se-chi-7-ty-usd-de-tang-gap-doi-san-luong-dau-tai-venezuela-5115871.html",
       "published_at": "2026-09-02T19:00:00+00:00",
       "first_seen_at": "2026-09-02T21:03:26.071187+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1309,7 +1432,7 @@
       "source_url": "https://thanhnien.vn/rox-group-30-nam-kien-tao-noi-luc-tao-nen-hanh-trinh-vuon-xa-185260828160842202.htm",
       "published_at": "2026-09-02T01:00:00+00:00",
       "first_seen_at": "2026-09-02T04:33:55.146246+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1328,7 +1451,7 @@
       "source_url": "https://thanhnien.vn/tu-bac-vao-nam-loat-dai-cong-truong-van-thi-cong-ram-rap-xuyen-le-185260901201908953.htm",
       "published_at": "2026-09-01T23:48:00+00:00",
       "first_seen_at": "2026-09-02T04:33:55.146246+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -1495,7 +1618,7 @@
       "source_url": "https://vnexpress.net/mien-bac-tang-dau-tu-pin-luu-tru-ho-tro-luoi-dien-5115352.html",
       "published_at": "2026-08-31T22:58:42+00:00",
       "first_seen_at": "2026-09-01T05:07:58.938499+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1609,7 +1732,7 @@
       "source_url": "https://vnexpress.net/saigon-co-op-ky-vong-suc-mua-tang-hai-con-so-dip-quoc-khanh-5114934.html",
       "published_at": "2026-08-31T02:00:00+00:00",
       "first_seen_at": "2026-08-31T05:34:45.089170+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1628,7 +1751,7 @@
       "source_url": "https://vnexpress.net/flc-tang-von-len-gan-13-000-ty-dong-5115107.html",
       "published_at": "2026-08-30T11:05:00+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1696,7 +1819,7 @@
       "source_url": "https://vnexpress.net/vingroup-lai-hon-12-500-ty-dong-tu-ban-mang-san-xuat-cua-vinfast-o-viet-nam-5115157.html",
       "published_at": "2026-08-30T07:05:00+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
-      "last_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T16:25:45.137412+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2167,9 +2290,9 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-03T11:15:05.289808+00:00",
-    "auto_entities_typed": 38,
-    "auto_entities_suppressed_from_entity_convergence": 14,
+    "prepared_at": "2026-09-03T16:25:57.477872+00:00",
+    "auto_entities_typed": 41,
+    "auto_entities_suppressed_from_entity_convergence": 16,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
   }
 }
