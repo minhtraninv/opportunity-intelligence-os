@@ -2,21 +2,21 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-03T16:26:00.331553+00:00",
-    "local_date": "2026-09-03",
+    "generated_at": "2026-09-03T21:02:44.744361+00:00",
+    "local_date": "2026-09-04",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-03T16:26:00.409972+00:00"
+    "trust_hardened_at": "2026-09-03T21:02:44.845012+00:00"
   },
   "reports": {
     "daily": {
       "kind": "daily",
-      "period_key": "2026-09-03",
+      "period_key": "2026-09-04",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-03T16:26:00.331010+00:00",
-      "local_generated_at": "2026-09-03T23:26:00.328580+07:00",
+      "generated_at": "2026-09-03T21:02:44.743616+00:00",
+      "local_generated_at": "2026-09-04T04:02:44.740584+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 5,
@@ -24,15 +24,30 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Thay đổi lớn nhất so với kỳ trước nằm ở Tiêu dùng & dịch vụ: +3.0 điểm.",
+        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 3 domain STRONG, 7 WEAK, 3 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Tiêu dùng & dịch vụ",
-          "assessment": "mạnh lên 3 điểm so với kỳ trước."
+          "title": "Gia tốc thương mại & logistics",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+        },
+        {
+          "type": "theme",
+          "title": "Mở rộng năng lực sản xuất",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+        },
+        {
+          "type": "theme",
+          "title": "Đầu tư công & hạ tầng vật lý",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+        },
+        {
+          "type": "theme",
+          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
         }
       ],
       "entity_watch": [],
@@ -234,14 +249,7 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [
-          {
-            "theme_id": "consumer_services",
-            "label": "Tiêu dùng & dịch vụ",
-            "delta": 3.0,
-            "change": "strengthened"
-          }
-        ],
+        "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -401,8 +409,8 @@
       "period_key": "2026-W36",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-03T16:26:00.331240+00:00",
-      "local_generated_at": "2026-09-03T23:26:00.328580+07:00",
+      "generated_at": "2026-09-03T21:02:44.743938+00:00",
+      "local_generated_at": "2026-09-04T04:02:44.740584+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 5,
@@ -641,8 +649,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-03T16:26:00.331420+00:00",
-      "local_generated_at": "2026-09-03T23:26:00.328580+07:00",
+      "generated_at": "2026-09-03T21:02:44.744188+00:00",
+      "local_generated_at": "2026-09-04T04:02:44.740584+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 5,
@@ -877,6 +885,6 @@
       "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 5. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
     }
   },
-  "history_count": 7,
+  "history_count": 8,
   "reporting_rule": "Daily = material delta; Weekly = main intelligence review; Monthly = regime/thesis audit. Insufficient history must remain explicit."
 }
