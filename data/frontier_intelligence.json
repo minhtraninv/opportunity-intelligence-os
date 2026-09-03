@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "3.0.0",
-    "generated_at": "2026-09-03T04:33:56.596298+00:00",
+    "generated_at": "2026-09-03T11:14:55.455968+00:00",
     "mode": "discovery_frontier",
     "principle": "structured_serendipity_broad_discovery_narrow_conclusion",
     "discovery_only": true
@@ -11,57 +11,152 @@
     "configured_frontier_sources": 10,
     "healthy_frontier_sources": 10,
     "source_errors": 0,
-    "inherited_vietnam_media_events": 25,
-    "recent_discovery_events": 294,
+    "inherited_vietnam_media_events": 28,
+    "recent_discovery_events": 321,
     "shift_counts": {
-      "capital_ownership": 128,
-      "attention_distribution": 62,
-      "technology_frontier": 99,
-      "behavior_change": 21,
+      "capital_ownership": 141,
+      "behavior_change": 26,
+      "attention_distribution": 65,
+      "technology_frontier": 105,
       "talent_migration": 10
     }
   },
   "attention_queue": [
     {
-      "id": "f18e86d08a997c0d",
+      "id": "8206db5c3cc8a84f",
       "label": "VN-Index",
       "state": "investigate",
       "score": 98,
       "shift_types": [
-        "technology_frontier",
         "capital_ownership",
-        "talent_migration"
+        "technology_frontier",
+        "behavior_change"
       ],
-      "evidence_count": 18,
-      "source_count": 8,
+      "evidence_count": 9,
+      "source_count": 5,
+      "publishers": [
+        "TechCrunch",
+        "VietnamPlus Kinh tế",
+        "VietnamPlus Kinh tế · Frontier",
+        "VnExpress Kinh doanh · Frontier",
+        "VnExpress Số hóa"
+      ],
+      "vietnam_relevance": true,
+      "surprise": false,
+      "first_seen_at": "2026-08-27T22:00:00+00:00",
+      "last_seen_at": "2026-09-03T16:14:06+00:00",
+      "matched_miss_ids": [],
+      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược. Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm.",
+      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
+      "questions": [
+        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?",
+        "Điều gì vừa trở nên khả thi hoặc rẻ hơn rõ rệt, và bottleneck tiếp theo sẽ chuyển sang đâu?",
+        "Thay đổi này có đủ bền để kéo theo doanh thu/quyền lực thị trường hay chỉ là novelty ngắn hạn?"
+      ],
+      "evidence": [
+        {
+          "title": "Goldman Sachs khuyến cáo giới đầu tư về đà giảm tốc của thị trường chứng khoán",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/goldman-sachs-khuyen-cao-gioi-dau-tu-ve-da-giam-toc-cua-thi-truong-chung-khoan-post1134041.vnp",
+          "published_at": "2026-09-03T16:14:06+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
+          "publisher": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+          "published_at": "2026-09-02T22:24:09+00:00",
+          "shift_types": [
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "VN-Index có thể thử sức vùng 1.850 điểm sau kỳ nghỉ Quốc khánh",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/vn-index-co-the-thu-suc-vung-1850-diem-sau-ky-nghi-quoc-khanh-post1133818.vnp",
+          "published_at": "2026-09-02T12:41:26+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "VN-Index có thể thử sức vùng 1.850 điểm sau kỳ nghỉ Quốc khánh",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vn-index-co-the-thu-suc-vung-1850-diem-sau-ky-nghi-quoc-khanh-post1133818.vnp",
+          "published_at": "2026-09-02T12:41:26+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Mỹ: Amazon đối mặt cáo buộc thao túng quảng cáo trực tuyến",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/my-amazon-doi-mat-cao-buoc-thao-tung-quang-cao-truc-tuyen-post1133672.vnp",
+          "published_at": "2026-09-01T14:59:08+00:00",
+          "shift_types": [
+            "behavior_change",
+            "capital_ownership",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Nvidia xoay chiến lược khi các tập đoàn công nghệ tự phát triển chip AI",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/nvidia-xoay-chien-luoc-khi-cac-tap-doan-cong-nghe-tu-phat-trien-chip-ai-post1133596.vnp",
+          "published_at": "2026-09-01T07:43:15+00:00",
+          "shift_types": [
+            "capital_ownership",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        }
+      ],
+      "discovery_only": true
+    },
+    {
+      "id": "44208ca2c4287d47",
+      "label": "Openai",
+      "state": "investigate",
+      "score": 86,
+      "shift_types": [
+        "technology_frontier",
+        "talent_migration",
+        "attention_distribution"
+      ],
+      "evidence_count": 10,
+      "source_count": 5,
       "publishers": [
         "TechCrunch",
         "The Verge",
         "Tuổi Trẻ Công nghệ",
-        "VietnamPlus Kinh tế",
-        "VietnamPlus Kinh tế · Frontier",
-        "VnExpress Kinh doanh · Frontier",
         "VnExpress Số hóa",
         "WIRED"
       ],
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-08-27T08:00:00+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
-      "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm. Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
+      "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm. Dòng nhân tài và tuyển dụng có thể là tín hiệu sớm cho nơi capability và hoạt động thật đang tích tụ.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
       "questions": [
         "Điều gì vừa trở nên khả thi hoặc rẻ hơn rõ rệt, và bottleneck tiếp theo sẽ chuyển sang đâu?",
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?",
-        "Nhân tài đang dịch chuyển vì hype hay vì workload, vốn và nhu cầu vận hành thực sự đã xuất hiện?"
+        "Nhân tài đang dịch chuyển vì hype hay vì workload, vốn và nhu cầu vận hành thực sự đã xuất hiện?",
+        "Distribution ở đây còn rẻ bất thường không, và ai đang tích lũy audience/reputation trước khi thị trường đông lên?"
       ],
       "evidence": [
         {
           "title": "688 tác nhân AI của OpenAI tự lập nhóm, phối hợp tấn công Hugging Face",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/688-tac-nhan-ai-cua-openai-tu-lap-nhom-phoi-hop-tan-cong-hugging-face-100260827162723036.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -71,7 +166,7 @@
           "title": "OpenAI nhảy vào cuộc đua sản xuất chip?",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/openai-nhay-vao-cuoc-dua-san-xuat-chip-100260827095534803.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -81,17 +176,7 @@
           "title": "Mỹ điều tra OpenAI sau vụ AI 'nổi loạn' tự ý tấn công Hugging Face",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/my-dieu-tra-openai-sau-vu-ai-noi-loan-tu-y-tan-cong-hugging-face-100260825164234515.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
-          "shift_types": [
-            "technology_frontier"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
-          "publisher": "TechCrunch",
-          "source_url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
-          "published_at": "2026-09-02T22:24:09+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -114,6 +199,16 @@
           "published_at": "2026-09-02T16:40:50+00:00",
           "shift_types": [
             "talent_migration",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "OpenAI’s Astra model is on the way — and very good at breaking into computer systems",
+          "publisher": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+          "published_at": "2026-09-01T21:06:24+00:00",
+          "shift_types": [
             "technology_frontier"
           ],
           "evidence_grade": "discovery_only"
@@ -313,65 +408,6 @@
           "published_at": "2026-09-01T12:01:00+00:00",
           "shift_types": [
             "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        }
-      ],
-      "discovery_only": true
-    },
-    {
-      "id": "893a2a77d4db8a09",
-      "label": "Anthropic",
-      "state": "watch",
-      "score": 64,
-      "shift_types": [
-        "technology_frontier"
-      ],
-      "evidence_count": 3,
-      "source_count": 3,
-      "publishers": [
-        "The Verge",
-        "Tuổi Trẻ Công nghệ",
-        "WIRED"
-      ],
-      "vietnam_relevance": true,
-      "surprise": false,
-      "first_seen_at": "2026-08-27T18:06:52+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
-      "matched_miss_ids": [],
-      "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm.",
-      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
-      "questions": [
-        "Điều gì vừa trở nên khả thi hoặc rẻ hơn rõ rệt, và bottleneck tiếp theo sẽ chuyển sang đâu?"
-      ],
-      "evidence": [
-        {
-          "title": "AI của Anthropic bắt đầu tự điều khiển phòng thí nghiệm, tự làm thí nghiệm thay con người",
-          "publisher": "Tuổi Trẻ Công nghệ",
-          "source_url": "https://tuoitre.vn/ai-cua-anthropic-bat-dau-tu-dieu-khien-phong-thi-nghiem-tu-lam-thi-nghiem-thay-con-nguoi-100260829150326811.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
-          "shift_types": [
-            "technology_frontier"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
-          "publisher": "The Verge",
-          "source_url": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-          "published_at": "2026-09-01T22:01:36+00:00",
-          "shift_types": [
-            "technology_frontier"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
-          "publisher": "WIRED",
-          "source_url": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
-          "published_at": "2026-08-27T18:06:52+00:00",
-          "shift_types": [
-            "technology_frontier"
           ],
           "evidence_grade": "discovery_only"
         }
@@ -381,45 +417,140 @@
   ],
   "candidates": [
     {
-      "id": "f18e86d08a997c0d",
+      "id": "8206db5c3cc8a84f",
       "label": "VN-Index",
       "state": "investigate",
       "score": 98,
       "shift_types": [
-        "technology_frontier",
         "capital_ownership",
-        "talent_migration"
+        "technology_frontier",
+        "behavior_change"
       ],
-      "evidence_count": 18,
-      "source_count": 8,
+      "evidence_count": 9,
+      "source_count": 5,
+      "publishers": [
+        "TechCrunch",
+        "VietnamPlus Kinh tế",
+        "VietnamPlus Kinh tế · Frontier",
+        "VnExpress Kinh doanh · Frontier",
+        "VnExpress Số hóa"
+      ],
+      "vietnam_relevance": true,
+      "surprise": false,
+      "first_seen_at": "2026-08-27T22:00:00+00:00",
+      "last_seen_at": "2026-09-03T16:14:06+00:00",
+      "matched_miss_ids": [],
+      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược. Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm.",
+      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
+      "questions": [
+        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?",
+        "Điều gì vừa trở nên khả thi hoặc rẻ hơn rõ rệt, và bottleneck tiếp theo sẽ chuyển sang đâu?",
+        "Thay đổi này có đủ bền để kéo theo doanh thu/quyền lực thị trường hay chỉ là novelty ngắn hạn?"
+      ],
+      "evidence": [
+        {
+          "title": "Goldman Sachs khuyến cáo giới đầu tư về đà giảm tốc của thị trường chứng khoán",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/goldman-sachs-khuyen-cao-gioi-dau-tu-ve-da-giam-toc-cua-thi-truong-chung-khoan-post1134041.vnp",
+          "published_at": "2026-09-03T16:14:06+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
+          "publisher": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+          "published_at": "2026-09-02T22:24:09+00:00",
+          "shift_types": [
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "VN-Index có thể thử sức vùng 1.850 điểm sau kỳ nghỉ Quốc khánh",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/vn-index-co-the-thu-suc-vung-1850-diem-sau-ky-nghi-quoc-khanh-post1133818.vnp",
+          "published_at": "2026-09-02T12:41:26+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "VN-Index có thể thử sức vùng 1.850 điểm sau kỳ nghỉ Quốc khánh",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vn-index-co-the-thu-suc-vung-1850-diem-sau-ky-nghi-quoc-khanh-post1133818.vnp",
+          "published_at": "2026-09-02T12:41:26+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Mỹ: Amazon đối mặt cáo buộc thao túng quảng cáo trực tuyến",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/my-amazon-doi-mat-cao-buoc-thao-tung-quang-cao-truc-tuyen-post1133672.vnp",
+          "published_at": "2026-09-01T14:59:08+00:00",
+          "shift_types": [
+            "behavior_change",
+            "capital_ownership",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Nvidia xoay chiến lược khi các tập đoàn công nghệ tự phát triển chip AI",
+          "publisher": "VietnamPlus Kinh tế · Frontier",
+          "source_url": "https://www.vietnamplus.vn/nvidia-xoay-chien-luoc-khi-cac-tap-doan-cong-nghe-tu-phat-trien-chip-ai-post1133596.vnp",
+          "published_at": "2026-09-01T07:43:15+00:00",
+          "shift_types": [
+            "capital_ownership",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        }
+      ],
+      "discovery_only": true
+    },
+    {
+      "id": "44208ca2c4287d47",
+      "label": "Openai",
+      "state": "investigate",
+      "score": 86,
+      "shift_types": [
+        "technology_frontier",
+        "talent_migration",
+        "attention_distribution"
+      ],
+      "evidence_count": 10,
+      "source_count": 5,
       "publishers": [
         "TechCrunch",
         "The Verge",
         "Tuổi Trẻ Công nghệ",
-        "VietnamPlus Kinh tế",
-        "VietnamPlus Kinh tế · Frontier",
-        "VnExpress Kinh doanh · Frontier",
         "VnExpress Số hóa",
         "WIRED"
       ],
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-08-27T08:00:00+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
-      "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm. Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
+      "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm. Dòng nhân tài và tuyển dụng có thể là tín hiệu sớm cho nơi capability và hoạt động thật đang tích tụ.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
       "questions": [
         "Điều gì vừa trở nên khả thi hoặc rẻ hơn rõ rệt, và bottleneck tiếp theo sẽ chuyển sang đâu?",
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?",
-        "Nhân tài đang dịch chuyển vì hype hay vì workload, vốn và nhu cầu vận hành thực sự đã xuất hiện?"
+        "Nhân tài đang dịch chuyển vì hype hay vì workload, vốn và nhu cầu vận hành thực sự đã xuất hiện?",
+        "Distribution ở đây còn rẻ bất thường không, và ai đang tích lũy audience/reputation trước khi thị trường đông lên?"
       ],
       "evidence": [
         {
           "title": "688 tác nhân AI của OpenAI tự lập nhóm, phối hợp tấn công Hugging Face",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/688-tac-nhan-ai-cua-openai-tu-lap-nhom-phoi-hop-tan-cong-hugging-face-100260827162723036.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -429,7 +560,7 @@
           "title": "OpenAI nhảy vào cuộc đua sản xuất chip?",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/openai-nhay-vao-cuoc-dua-san-xuat-chip-100260827095534803.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -439,17 +570,7 @@
           "title": "Mỹ điều tra OpenAI sau vụ AI 'nổi loạn' tự ý tấn công Hugging Face",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/my-dieu-tra-openai-sau-vu-ai-noi-loan-tu-y-tan-cong-hugging-face-100260825164234515.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
-          "shift_types": [
-            "technology_frontier"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
-          "publisher": "TechCrunch",
-          "source_url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
-          "published_at": "2026-09-02T22:24:09+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -472,6 +593,16 @@
           "published_at": "2026-09-02T16:40:50+00:00",
           "shift_types": [
             "talent_migration",
+            "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "OpenAI’s Astra model is on the way — and very good at breaking into computer systems",
+          "publisher": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+          "published_at": "2026-09-01T21:06:24+00:00",
+          "shift_types": [
             "technology_frontier"
           ],
           "evidence_grade": "discovery_only"
@@ -695,7 +826,7 @@
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-08-27T18:06:52+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
       "why_now": "Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
@@ -707,7 +838,7 @@
           "title": "AI của Anthropic bắt đầu tự điều khiển phòng thí nghiệm, tự làm thí nghiệm thay con người",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/ai-cua-anthropic-bat-dau-tu-dieu-khien-phong-thi-nghiem-tu-lam-thi-nghiem-thay-con-nguoi-100260829150326811.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "technology_frontier"
           ],
@@ -752,8 +883,8 @@
       ],
       "vietnam_relevance": true,
       "surprise": false,
-      "first_seen_at": "2026-09-03T04:33:50.312135+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "first_seen_at": "2026-09-03T11:14:49.545828+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
       "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
@@ -765,7 +896,7 @@
           "title": "Công ty đại gia Khoa 'khàn' muốn huy động 1.000 tỉ đồng trái phiếu, thế chấp 165 triệu cổ phần Thaco Agri?",
           "publisher": "Tuổi Trẻ Kinh doanh · Frontier",
           "source_url": "https://tuoitre.vn/cong-ty-dai-gia-khoa-khan-muon-huy-dong-1000-ti-dong-trai-phieu-the-chap-165-trieu-co-phan-thaco-agri-100260902120324761.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "capital_ownership"
           ],
@@ -775,7 +906,7 @@
           "title": "Công ty đại gia Khoa 'khàn' muốn huy động 1.000 tỉ đồng trái phiếu, thế chấp 165 triệu cổ phần Thaco Agri?",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/cong-ty-dai-gia-khoa-khan-muon-huy-dong-1000-ti-dong-trai-phieu-the-chap-165-trieu-co-phan-thaco-agri-100260902120324761.htm",
-          "published_at": "2026-09-03T04:33:50.312135+00:00",
+          "published_at": "2026-09-03T11:14:49.545828+00:00",
           "shift_types": [
             "capital_ownership"
           ],
@@ -850,7 +981,7 @@
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-09-02T15:51:46+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
       "why_now": "Sự chú ý hoặc quyền phân phối có thể đang dịch chuyển trước khi monetization và creator hierarchy ổn định. Một capability công nghệ mới có thể làm thay đổi chi phí, tốc độ hoặc thứ một cá nhân/doanh nghiệp nhỏ có thể làm.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
@@ -863,7 +994,7 @@
           "title": "ChatGPT 'đọc' câu chữ, đoán được tính cách người dùng?",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/chatgpt-doc-cau-chu-doan-duoc-tinh-cach-nguoi-dung-10026082411570293.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "attention_distribution"
           ],
@@ -886,6 +1017,102 @@
           "published_at": "2026-09-02T15:51:46+00:00",
           "shift_types": [
             "technology_frontier"
+          ],
+          "evidence_grade": "discovery_only"
+        }
+      ],
+      "discovery_only": true
+    },
+    {
+      "id": "df533f3676debaac",
+      "label": "TTC",
+      "state": "watch",
+      "score": 60,
+      "shift_types": [
+        "capital_ownership"
+      ],
+      "evidence_count": 2,
+      "source_count": 2,
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "Thanh Niên Kinh tế · Frontier"
+      ],
+      "vietnam_relevance": true,
+      "surprise": false,
+      "first_seen_at": "2026-09-03T07:15:00+00:00",
+      "last_seen_at": "2026-09-03T07:15:00+00:00",
+      "matched_miss_ids": [],
+      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
+      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
+      "questions": [
+        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
+      ],
+      "evidence": [
+        {
+          "title": "TTC tái cấu trúc sở hữu tại AgriS, định hướng dài hạn không thay đổi",
+          "publisher": "Thanh Niên Kinh tế · Frontier",
+          "source_url": "https://thanhnien.vn/ttc-tai-cau-truc-so-huu-tai-agris-dinh-huong-dai-han-khong-thay-doi-185260903104342142.htm",
+          "published_at": "2026-09-03T07:15:00+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "TTC tái cấu trúc sở hữu tại AgriS, định hướng dài hạn không thay đổi",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/ttc-tai-cau-truc-so-huu-tai-agris-dinh-huong-dai-han-khong-thay-doi-185260903104342142.htm",
+          "published_at": "2026-09-03T07:15:00+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        }
+      ],
+      "discovery_only": true
+    },
+    {
+      "id": "34ab17b70d23320e",
+      "label": "Cảng hàng không quốc tế Long Thành",
+      "state": "watch",
+      "score": 60,
+      "shift_types": [
+        "capital_ownership"
+      ],
+      "evidence_count": 2,
+      "source_count": 2,
+      "publishers": [
+        "VnExpress Kinh doanh",
+        "VnExpress Kinh doanh · Frontier"
+      ],
+      "vietnam_relevance": true,
+      "surprise": false,
+      "first_seen_at": "2026-09-03T06:13:27+00:00",
+      "last_seen_at": "2026-09-03T06:13:27+00:00",
+      "matched_miss_ids": [],
+      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
+      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
+      "questions": [
+        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
+      ],
+      "evidence": [
+        {
+          "title": "Chủ đầu tư sân bay Long Thành giảm lãi sau kiểm toán",
+          "publisher": "VnExpress Kinh doanh · Frontier",
+          "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-lai-sau-kiem-toan-5116013.html",
+          "published_at": "2026-09-03T06:13:27+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Chủ đầu tư sân bay Long Thành giảm lãi sau kiểm toán",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-lai-sau-kiem-toan-5116013.html",
+          "published_at": "2026-09-03T06:13:27+00:00",
+          "shift_types": [
+            "capital_ownership"
           ],
           "evidence_grade": "discovery_only"
         }
@@ -1452,7 +1679,7 @@
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-09-03T04:33:56.596298+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
       "why_now": "Sự chú ý hoặc quyền phân phối có thể đang dịch chuyển trước khi monetization và creator hierarchy ổn định.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
@@ -1464,7 +1691,7 @@
           "title": "Sắp công bố bộ tiêu chuẩn hoạt động cho KOL, KOC",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/sap-cong-bo-bo-tieu-chuan-hoat-dong-cho-kol-koc-100260830224733382.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "attention_distribution"
           ],
@@ -1500,7 +1727,7 @@
       "vietnam_relevance": true,
       "surprise": false,
       "first_seen_at": "2026-08-31T22:50:44.875988+00:00",
-      "last_seen_at": "2026-09-03T04:33:56.596298+00:00",
+      "last_seen_at": "2026-09-03T11:14:55.455968+00:00",
       "matched_miss_ids": [],
       "why_now": "Sự chú ý hoặc quyền phân phối có thể đang dịch chuyển trước khi monetization và creator hierarchy ổn định.",
       "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
@@ -1512,7 +1739,7 @@
           "title": "Bẫy Vertu giá rẻ trên mạng: Tiền mất, rủi ro an ninh rình rập.",
           "publisher": "Tuổi Trẻ Công nghệ",
           "source_url": "https://tuoitre.vn/bay-vertu-gia-re-tren-mang-tien-mat-rui-ro-an-ninh-rinh-rap-100260829110630012.htm",
-          "published_at": "2026-09-03T04:33:56.596298+00:00",
+          "published_at": "2026-09-03T11:14:55.455968+00:00",
           "shift_types": [
             "attention_distribution"
           ],
@@ -1525,6 +1752,54 @@
           "published_at": "2026-08-31T22:50:44.875988+00:00",
           "shift_types": [
             "attention_distribution"
+          ],
+          "evidence_grade": "discovery_only"
+        }
+      ],
+      "discovery_only": true
+    },
+    {
+      "id": "edcbedded2880e0c",
+      "label": "Cà Mau",
+      "state": "background",
+      "score": 52,
+      "shift_types": [
+        "capital_ownership"
+      ],
+      "evidence_count": 2,
+      "source_count": 2,
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "Thanh Niên Kinh tế · Frontier"
+      ],
+      "vietnam_relevance": true,
+      "surprise": false,
+      "first_seen_at": "2026-09-03T04:47:00+00:00",
+      "last_seen_at": "2026-09-03T04:47:00+00:00",
+      "matched_miss_ids": [],
+      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
+      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
+      "questions": [
+        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
+      ],
+      "evidence": [
+        {
+          "title": "Cà Mau sắp có khu công nghiệp 345 ha, vốn đăng ký 3.922 tỉ đồng",
+          "publisher": "Thanh Niên Kinh tế · Frontier",
+          "source_url": "https://thanhnien.vn/ca-mau-sap-co-khu-cong-nghiep-345-ha-von-dang-ky-3922-ti-dong-185260903111351074.htm",
+          "published_at": "2026-09-03T04:47:00+00:00",
+          "shift_types": [
+            "capital_ownership"
+          ],
+          "evidence_grade": "discovery_only"
+        },
+        {
+          "title": "Cà Mau sắp có khu công nghiệp 345 ha, vốn đăng ký 3.922 tỉ đồng",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/ca-mau-sap-co-khu-cong-nghiep-345-ha-von-dang-ky-3922-ti-dong-185260903111351074.htm",
+          "published_at": "2026-09-03T04:47:00+00:00",
+          "shift_types": [
+            "capital_ownership"
           ],
           "evidence_grade": "discovery_only"
         }
@@ -1770,198 +2045,6 @@
         }
       ],
       "discovery_only": true
-    },
-    {
-      "id": "2491607076494ed8",
-      "label": "Leipzig",
-      "state": "background",
-      "score": 52,
-      "shift_types": [
-        "capital_ownership"
-      ],
-      "evidence_count": 2,
-      "source_count": 2,
-      "publishers": [
-        "VietnamPlus Kinh tế",
-        "VietnamPlus Kinh tế · Frontier"
-      ],
-      "vietnam_relevance": true,
-      "surprise": false,
-      "first_seen_at": "2026-08-29T19:24:56+00:00",
-      "last_seen_at": "2026-08-29T19:24:56+00:00",
-      "matched_miss_ids": [],
-      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
-      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
-      "questions": [
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
-      ],
-      "evidence": [
-        {
-          "title": "Leipzig thúc đẩy kết nối doanh nghiệp Đức-Việt qua German-Vietnam Hub",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/leipzig-thuc-day-ket-noi-doanh-nghiep-duc-viet-qua-german-vietnam-hub-post1133337.vnp",
-          "published_at": "2026-08-29T19:24:56+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "Leipzig thúc đẩy kết nối doanh nghiệp Đức-Việt qua German-Vietnam Hub",
-          "publisher": "VietnamPlus Kinh tế · Frontier",
-          "source_url": "https://www.vietnamplus.vn/leipzig-thuc-day-ket-noi-doanh-nghiep-duc-viet-qua-german-vietnam-hub-post1133337.vnp",
-          "published_at": "2026-08-29T19:24:56+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        }
-      ],
-      "discovery_only": true
-    },
-    {
-      "id": "edcbedded2880e0c",
-      "label": "Cà Mau",
-      "state": "background",
-      "score": 52,
-      "shift_types": [
-        "capital_ownership"
-      ],
-      "evidence_count": 2,
-      "source_count": 2,
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "Thanh Niên Kinh tế · Frontier"
-      ],
-      "vietnam_relevance": true,
-      "surprise": false,
-      "first_seen_at": "2026-08-29T11:22:00+00:00",
-      "last_seen_at": "2026-08-29T11:22:00+00:00",
-      "matched_miss_ids": [],
-      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
-      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
-      "questions": [
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
-      ],
-      "evidence": [
-        {
-          "title": "Cà Mau dành hơn 480 tỉ đồng xây dựng kè chống sạt lở bờ sông Gành Hào",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/ca-mau-danh-hon-480-ti-dong-xay-dung-ke-chong-sat-lo-bo-song-ganh-hao-18526082916443487.htm",
-          "published_at": "2026-08-29T11:22:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "Cà Mau dành hơn 480 tỉ đồng xây dựng kè chống sạt lở bờ sông Gành Hào",
-          "publisher": "Thanh Niên Kinh tế · Frontier",
-          "source_url": "https://thanhnien.vn/ca-mau-danh-hon-480-ti-dong-xay-dung-ke-chong-sat-lo-bo-song-ganh-hao-18526082916443487.htm",
-          "published_at": "2026-08-29T11:22:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        }
-      ],
-      "discovery_only": true
-    },
-    {
-      "id": "39900c7311ab8c7d",
-      "label": "BIDV",
-      "state": "background",
-      "score": 52,
-      "shift_types": [
-        "capital_ownership"
-      ],
-      "evidence_count": 2,
-      "source_count": 2,
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "Thanh Niên Kinh tế · Frontier"
-      ],
-      "vietnam_relevance": true,
-      "surprise": false,
-      "first_seen_at": "2026-08-29T08:23:00+00:00",
-      "last_seen_at": "2026-08-29T08:23:00+00:00",
-      "matched_miss_ids": [],
-      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
-      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
-      "questions": [
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
-      ],
-      "evidence": [
-        {
-          "title": "BIDV dành 30.000 tỉ đồng cho vay lãi suất ưu đãi mua bất động sản",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/bidv-danh-30000-ti-dong-cho-vay-lai-suat-uu-dai-mua-bat-dong-san-185260829145837672.htm",
-          "published_at": "2026-08-29T08:23:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "BIDV dành 30.000 tỉ đồng cho vay lãi suất ưu đãi mua bất động sản",
-          "publisher": "Thanh Niên Kinh tế · Frontier",
-          "source_url": "https://thanhnien.vn/bidv-danh-30000-ti-dong-cho-vay-lai-suat-uu-dai-mua-bat-dong-san-185260829145837672.htm",
-          "published_at": "2026-08-29T08:23:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        }
-      ],
-      "discovery_only": true
-    },
-    {
-      "id": "26851e3cde402643",
-      "label": "Tây Ninh",
-      "state": "background",
-      "score": 52,
-      "shift_types": [
-        "capital_ownership"
-      ],
-      "evidence_count": 2,
-      "source_count": 2,
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "Thanh Niên Kinh tế · Frontier"
-      ],
-      "vietnam_relevance": true,
-      "surprise": false,
-      "first_seen_at": "2026-08-28T10:06:00+00:00",
-      "last_seen_at": "2026-08-28T10:06:00+00:00",
-      "matched_miss_ids": [],
-      "why_now": "Hành động bỏ vốn/quyền sở hữu là revealed preference; lặp lại có thể báo hiệu nơi người có nguồn lực đang đặt cược.",
-      "opportunity_surface": "Mở hồ sơ để xác định capability/attention/capital đang dịch chuyển ở đâu, ai capture distribution hoặc ownership, và một cá nhân có thể tiếp cận bằng information, audience, service, small bet hay ownership nào.",
-      "questions": [
-        "Đây là giao dịch đơn lẻ hay một chuỗi revealed preference từ nhiều người/tổ chức độc lập?"
-      ],
-      "evidence": [
-        {
-          "title": "Tây Ninh thu hút 28 tỉ USD, hướng ra cảng biển",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/tay-ninh-thu-hut-28-ti-usd-huong-ra-cang-bien-185260828162530417.htm",
-          "published_at": "2026-08-28T10:06:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        },
-        {
-          "title": "Tây Ninh thu hút 28 tỉ USD, hướng ra cảng biển",
-          "publisher": "Thanh Niên Kinh tế · Frontier",
-          "source_url": "https://thanhnien.vn/tay-ninh-thu-hut-28-ti-usd-huong-ra-cang-bien-185260828162530417.htm",
-          "published_at": "2026-08-28T10:06:00+00:00",
-          "shift_types": [
-            "capital_ownership"
-          ],
-          "evidence_grade": "discovery_only"
-        }
-      ],
-      "discovery_only": true
     }
   ],
   "miss_benchmarks": [
@@ -1996,7 +2079,7 @@
       "name": "Tuổi Trẻ Công nghệ",
       "scope": "vietnam",
       "status": "ok",
-      "items_this_run": 16,
+      "items_this_run": 14,
       "error": null
     },
     {
@@ -2004,7 +2087,7 @@
       "name": "Tuổi Trẻ Nhịp sống trẻ",
       "scope": "vietnam",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
@@ -2020,7 +2103,7 @@
       "name": "Tuổi Trẻ Kinh doanh · Frontier",
       "scope": "vietnam",
       "status": "ok",
-      "items_this_run": 8,
+      "items_this_run": 11,
       "error": null
     },
     {
@@ -2028,7 +2111,7 @@
       "name": "Thanh Niên Kinh tế · Frontier",
       "scope": "vietnam",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 10,
       "error": null
     },
     {
@@ -2036,7 +2119,7 @@
       "name": "VietnamPlus Kinh tế · Frontier",
       "scope": "vietnam",
       "status": "ok",
-      "items_this_run": 11,
+      "items_this_run": 8,
       "error": null
     },
     {
@@ -2052,7 +2135,7 @@
       "name": "The Verge",
       "scope": "global",
       "status": "ok",
-      "items_this_run": 3,
+      "items_this_run": 4,
       "error": null
     },
     {
@@ -2060,7 +2143,7 @@
       "name": "WIRED",
       "scope": "global",
       "status": "ok",
-      "items_this_run": 8,
+      "items_this_run": 7,
       "error": null
     }
   ],
