@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-03T21:01:39.735176+00:00",
+    "generated_at": "2026-09-04T04:32:17.055795+00:00",
     "status": "warming_up",
     "history_days": 5,
     "required_history_days": 14,
@@ -22,12 +22,12 @@
     },
     {
       "category": "infrastructure",
-      "recent_7d": 6,
+      "recent_7d": 7,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 39,
+      "confidence": 41,
       "source_diversity_7d": 3,
       "explanation": "Đang học baseline: mới có 5/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "312761c8e3c0d7c4",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Thủ tướng chỉ đạo tăng tốc, bứt phá; đẩy nhanh giải ngân vốn đầu tư công; sắp xếp cơ sở giáo dục; bảo đảm sách giáo khoa, chính sách với học sinh yếu thế...",
+      "url": "https://xaydungchinhsach.chinhphu.vn/thu-tuong-chi-dao-tang-toc-but-pha-day-nhanh-giai-ngan-von-dau-tu-cong-sap-xep-co-so-giao-duc-bao-dam-sach-giao-khoa-chinh-sach-voi-hoc-sinh-yeu-the-119260904072806785.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-04T04:32:17.055795+00:00"
+    },
+    {
       "id": "a23d40d455b84a68",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-03T21:01:39.735176+00:00"
+      "first_seen_at": "2026-09-03T21:01:39.735176+00:00",
+      "collected_at": "2026-09-03T21:01:39.735176+00:00",
+      "last_seen_at": null
     },
     {
       "id": "48867bcabffd39ad",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-03T21:01:39.735176+00:00"
+      "first_seen_at": "2026-09-03T21:01:39.735176+00:00",
+      "collected_at": "2026-09-03T21:01:39.735176+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a19d0fdd256c5f87",
@@ -251,48 +273,6 @@
       "first_seen_at": "2026-09-03T04:32:48.230003+00:00",
       "collected_at": "2026-09-03T04:32:48.230003+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "d5a02592caec68f5",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 3/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-02T21:02:46.208446+00:00",
-      "collected_at": "2026-09-02T21:02:46.208446+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "37a552ba6df2dd6a",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 3/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-02T21:02:46.208446+00:00",
-      "collected_at": "2026-09-02T21:02:46.208446+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
@@ -300,16 +280,17 @@
     "business_formation": 14,
     "market_data": 3,
     "hiring": 2,
-    "infrastructure_delivery": 2
+    "infrastructure_delivery": 2,
+    "capital_flow": 1
   },
   "geographies_7d": {
     "Hà Nội": 1,
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 142,
-    "candidate_events": 44,
-    "reference_events": 93,
+    "historical_events": 144,
+    "candidate_events": 45,
+    "reference_events": 94,
     "unique_candidate_sources": 6,
     "source_errors_last_run": 2
   },
