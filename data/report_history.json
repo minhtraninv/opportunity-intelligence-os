@@ -634,8 +634,8 @@
     "period_key": "2026-09",
     "period_state": "month_to_date",
     "title": "Monthly Regime Review",
-    "generated_at": "2026-09-04T16:22:26.627814+00:00",
-    "local_generated_at": "2026-09-04T23:22:26.625296+07:00",
+    "generated_at": "2026-09-04T20:46:09.249917+00:00",
+    "local_generated_at": "2026-09-05T03:46:09.245868+07:00",
     "history_status": "learning_history",
     "history_readiness": {
       "observation_days": 6,
@@ -733,7 +733,7 @@
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
-          "score": 62,
+          "score": 63,
           "state": "stable",
           "direction": "stable",
           "observation_days": 6
@@ -2438,12 +2438,406 @@
     "trust_notice": "Kỳ báo cáo đã vượt ngưỡng lịch sử tối thiểu; vẫn phải đọc cùng blind spots và phản chứng."
   },
   {
+    "kind": "daily",
+    "period_key": "2026-09-05",
+    "period_state": "live_today",
+    "title": "Daily Intelligence Brief",
+    "generated_at": "2026-09-04T20:46:09.249353+00:00",
+    "local_generated_at": "2026-09-05T03:46:09.245868+07:00",
+    "history_status": "ready",
+    "history_readiness": {
+      "observation_days": 6,
+      "recommended_days": 2,
+      "history_ready": true
+    },
+    "executive_summary": [
+      "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+      "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
+      "Độ phủ nguồn hiện có 4 domain STRONG, 6 WEAK, 0 BROKEN và 2 MISSING."
+    ],
+    "what_changed": [
+      {
+        "type": "theme",
+        "title": "Gia tốc thương mại & logistics",
+        "assessment": "Delta snapshot gần nhất +1. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng +1."
+      },
+      {
+        "type": "theme",
+        "title": "Mở rộng năng lực sản xuất",
+        "assessment": "Delta snapshot gần nhất +3. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng +3."
+      },
+      {
+        "type": "theme",
+        "title": "Đầu tư công & hạ tầng vật lý",
+        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+      },
+      {
+        "type": "theme",
+        "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
+        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+      }
+    ],
+    "entity_watch": [],
+    "regional_watch": [
+      {
+        "region": "Nghệ An",
+        "state": "dual_acceleration",
+        "interpretation": "Sản lượng công nghiệp và dòng FDI đăng ký cùng tăng mạnh. Đây là cụm ưu tiên điều tra tác động vòng 2, nhưng vẫn cần xác nhận ngành FDI, tuyển dụng và công suất KCN.",
+        "iip_yoy": 21.5,
+        "fdi_yoy": 677.7,
+        "next_proxy": "tuyển dụng công nghiệp theo địa bàn"
+      },
+      {
+        "region": "Thái Nguyên",
+        "state": "dual_acceleration",
+        "interpretation": "Sản lượng công nghiệp và dòng FDI đăng ký cùng tăng mạnh. Đây là cụm ưu tiên điều tra tác động vòng 2, nhưng vẫn cần xác nhận ngành FDI, tuyển dụng và công suất KCN.",
+        "iip_yoy": 21.0,
+        "fdi_yoy": 2263.0,
+        "next_proxy": "tuyển dụng công nghiệp theo địa bàn"
+      },
+      {
+        "region": "Ninh Bình",
+        "state": "production_strong_capital_cooling",
+        "interpretation": "Sản xuất tăng mạnh trong khi FDI đăng ký mới giảm. Có thể là ramp-up công suất sẵn có/đầu tư đã cam kết trước đó; không nên kể câu chuyện 'vốn mới đang đổ vào' mà chưa có bằng chứng khác.",
+        "iip_yoy": 27.0,
+        "fdi_yoy": -13.9,
+        "next_proxy": "tuyển dụng công nghiệp theo địa bàn"
+      },
+      {
+        "region": "Bắc Ninh",
+        "state": "production_strong_capital_cooling",
+        "interpretation": "Sản xuất tăng mạnh trong khi FDI đăng ký mới giảm. Có thể là ramp-up công suất sẵn có/đầu tư đã cam kết trước đó; không nên kể câu chuyện 'vốn mới đang đổ vào' mà chưa có bằng chứng khác.",
+        "iip_yoy": 19.6,
+        "fdi_yoy": -19.6,
+        "next_proxy": "tuyển dụng công nghiệp theo địa bàn"
+      },
+      {
+        "region": "Hưng Yên",
+        "state": "production_strong_capital_cooling",
+        "interpretation": "Sản xuất tăng mạnh trong khi FDI đăng ký mới giảm. Có thể là ramp-up công suất sẵn có/đầu tư đã cam kết trước đó; không nên kể câu chuyện 'vốn mới đang đổ vào' mà chưa có bằng chứng khác.",
+        "iip_yoy": 15.4,
+        "fdi_yoy": -45.9,
+        "next_proxy": "tuyển dụng công nghiệp theo địa bàn"
+      }
+    ],
+    "contradictions": [
+      {
+        "theme": "Mở rộng năng lực sản xuất",
+        "tension": "material",
+        "adjusted_score": 63,
+        "counter_signals": [
+          "FDI đăng ký tăng 58,0% nhưng FDI thực hiện chỉ tăng 11,8% — Dòng vốn cam kết tăng rất nhanh nhưng tốc độ chuyển thành vốn thực hiện chậm hơn nhiều. Không nên đồng nhất FDI đăng ký với nhu cầu vận hành đã phát sinh ngay.",
+          "Nhập khẩu tăng 34,8%, nhanh hơn xuất khẩu 21,7%; nhập siêu 20,52 tỷ USD — Nhập khẩu tư liệu sản xuất cao hỗ trợ câu chuyện tăng công suất, nhưng nhập siêu kéo dài cũng tạo rủi ro tỷ giá, vốn lưu động và biên lợi nhuận cho doanh nghiệp phụ thuộc đầu vào nhập khẩu.",
+          "Khu vực FDI chiếm 80,1% xuất khẩu; xuất khẩu khu vực trong nước chỉ tăng 5,8% — Sản xuất/xuất khẩu tăng mạnh không tự động có nghĩa doanh nghiệp nội địa đang bắt được giá trị tương ứng. Cơ hội vốn nhỏ phải chứng minh được vị trí thật trong supply chain thay vì dựa vào tăng trưởng tổng."
+        ],
+        "reading": "Nếu vốn thực hiện, tuyển dụng, điện công nghiệp và công suất KCN không tăng theo trong các kỳ tới, thesis mở rộng sản xuất cần hạ độ tin cậy."
+      },
+      {
+        "theme": "Gia tốc thương mại & logistics",
+        "tension": "material",
+        "adjusted_score": 74,
+        "counter_signals": [
+          "Nhập khẩu tăng 34,8%, nhanh hơn xuất khẩu 21,7%; nhập siêu 20,52 tỷ USD — Nhập khẩu tư liệu sản xuất cao hỗ trợ câu chuyện tăng công suất, nhưng nhập siêu kéo dài cũng tạo rủi ro tỷ giá, vốn lưu động và biên lợi nhuận cho doanh nghiệp phụ thuộc đầu vào nhập khẩu.",
+          "Khu vực FDI chiếm 80,1% xuất khẩu; xuất khẩu khu vực trong nước chỉ tăng 5,8% — Sản xuất/xuất khẩu tăng mạnh không tự động có nghĩa doanh nghiệp nội địa đang bắt được giá trị tương ứng. Cơ hội vốn nhỏ phải chứng minh được vị trí thật trong supply chain thay vì dựa vào tăng trưởng tổng."
+        ],
+        "reading": "Nếu tăng nhập khẩu không chuyển thành tăng sản lượng/xuất khẩu hoặc tồn kho/chi phí vốn tăng mạnh, không nên coi nhập khẩu cao là demand tốt thuần túy."
+      },
+      {
+        "theme": "Tiêu dùng & dịch vụ",
+        "tension": "material",
+        "adjusted_score": 27,
+        "counter_signals": [
+          "Bán lẻ & dịch vụ tăng 13,1% danh nghĩa nhưng chỉ 7,5% sau loại trừ giá — Doanh thu danh nghĩa nhìn rất mạnh nhưng sức mua thực tăng chậm hơn đáng kể, trong bối cảnh CPI bình quân 7 tháng tăng 4,39%. Mở thêm tài sản/mặt bằng chỉ vì doanh thu nominal tăng là quá sớm.",
+          "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
+        ],
+        "reading": "Nếu traffic, volume, ticket count và biên lợi nhuận thực không tăng, thesis tiêu dùng cần hạ cấp dù doanh thu tiền đồng tiếp tục tăng."
+      },
+      {
+        "theme": "Đầu tư công & hạ tầng vật lý",
+        "tension": "watch",
+        "adjusted_score": 55,
+        "counter_signals": [
+          "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
+        ],
+        "reading": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+      },
+      {
+        "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
+        "tension": "watch",
+        "adjusted_score": 35,
+        "counter_signals": [
+          "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
+        ],
+        "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
+      }
+    ],
+    "blind_spots": [
+      {
+        "domain": "Công bố doanh nghiệp",
+        "status": "weak",
+        "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": [
+          "HOSE - công bố thông tin doanh nghiệp"
+        ]
+      },
+      {
+        "domain": "Thị trường vốn & trái phiếu",
+        "status": "weak",
+        "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": [
+          "HOSE - công bố thông tin doanh nghiệp",
+          "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
+        ]
+      },
+      {
+        "domain": "Tiền tệ · tín dụng · tỷ giá",
+        "status": "weak",
+        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Chính sách & luật chơi",
+        "status": "partial",
+        "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "FDI & vốn đầu tư",
+        "status": "partial",
+        "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Ngân sách & đầu tư công",
+        "status": "partial",
+        "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Vĩ mô kinh tế thực",
+        "status": "partial",
+        "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Kinh tế thực theo địa bàn",
+        "status": "missing",
+        "why": "Cơ hội thường xuất hiện cục bộ trước khi thể hiện rõ ở số liệu toàn quốc.",
+        "coverage_note": "Chưa có collector active; đây là blind spot thực sự.",
+        "planned_next_sources": [
+          "KCN/BQL KKT và dự án công nghiệp địa phương",
+          "Cảng/vận tải hàng hóa/logistics throughput"
+        ]
+      }
+    ],
+    "investigation_queue": [
+      {
+        "priority": "theme",
+        "subject": "Gia tốc thương mại & logistics",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "falsification",
+        "subject": "Gia tốc thương mại & logistics",
+        "question": "Nếu tăng nhập khẩu không chuyển thành tăng sản lượng/xuất khẩu hoặc tồn kho/chi phí vốn tăng mạnh, không nên coi nhập khẩu cao là demand tốt thuần túy."
+      },
+      {
+        "priority": "theme",
+        "subject": "Mở rộng năng lực sản xuất",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "falsification",
+        "subject": "Mở rộng năng lực sản xuất",
+        "question": "Nếu vốn thực hiện, tuyển dụng, điện công nghiệp và công suất KCN không tăng theo trong các kỳ tới, thesis mở rộng sản xuất cần hạ độ tin cậy."
+      },
+      {
+        "priority": "theme",
+        "subject": "Đầu tư công & hạ tầng vật lý",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "falsification",
+        "subject": "Đầu tư công & hạ tầng vật lý",
+        "question": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+      },
+      {
+        "priority": "coverage",
+        "subject": "Công bố doanh nghiệp",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+      }
+    ],
+    "period_delta": {
+      "available": true,
+      "theme_changes": [],
+      "new_entities": [],
+      "coverage_change": {
+        "strong": 0.0,
+        "productive_sources": 0.0,
+        "source_errors": 0.0
+      }
+    },
+    "snapshot": {
+      "themes": {
+        "logistics_trade": {
+          "label": "Gia tốc thương mại & logistics",
+          "score": 74,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "manufacturing_expansion": {
+          "label": "Mở rộng năng lực sản xuất",
+          "score": 63,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "public_infrastructure": {
+          "label": "Đầu tư công & hạ tầng vật lý",
+          "score": 55,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "sme_formalization": {
+          "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "score": 35,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "consumer_services": {
+          "label": "Tiêu dùng & dịch vụ",
+          "score": 27,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "data_infrastructure": {
+          "label": "Hạ tầng dữ liệu & số hóa",
+          "score": 22,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        },
+        "energy_grid": {
+          "label": "Mở rộng điện & lưới điện",
+          "score": 17,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 6
+        }
+      },
+      "entities": {},
+      "regions": {
+        "Nghệ An": {
+          "state": "dual_acceleration",
+          "score": 0,
+          "iip": 21.5,
+          "fdi": 677.7
+        },
+        "Thái Nguyên": {
+          "state": "dual_acceleration",
+          "score": 0,
+          "iip": 21.0,
+          "fdi": 2263.0
+        },
+        "Ninh Bình": {
+          "state": "production_strong_capital_cooling",
+          "score": 0,
+          "iip": 27.0,
+          "fdi": -13.9
+        },
+        "Bắc Ninh": {
+          "state": "production_strong_capital_cooling",
+          "score": 0,
+          "iip": 19.6,
+          "fdi": -19.6
+        },
+        "Hưng Yên": {
+          "state": "production_strong_capital_cooling",
+          "score": 0,
+          "iip": 15.4,
+          "fdi": -45.9
+        },
+        "Hà Tĩnh": {
+          "state": "production_acceleration_capital_unconfirmed",
+          "score": 0,
+          "iip": 36.8,
+          "fdi": null
+        },
+        "Phú Thọ": {
+          "state": "production_acceleration_capital_unconfirmed",
+          "score": 0,
+          "iip": 23.8,
+          "fdi": null
+        },
+        "Quảng Ninh": {
+          "state": "production_acceleration_capital_unconfirmed",
+          "score": 0,
+          "iip": 15.8,
+          "fdi": null
+        },
+        "TP. Hồ Chí Minh": {
+          "state": "capital_acceleration_sector_unconfirmed",
+          "score": 0,
+          "iip": null,
+          "fdi": 157.1
+        },
+        "Hải Phòng": {
+          "state": "capital_acceleration_sector_unconfirmed",
+          "score": 0,
+          "iip": null,
+          "fdi": 31.6
+        },
+        "Tây Ninh": {
+          "state": "capital_positive_production_unconfirmed",
+          "score": 0,
+          "iip": null,
+          "fdi": 23.7
+        },
+        "Hà Nội": {
+          "state": "capital_cooling_production_unconfirmed",
+          "score": 0,
+          "iip": null,
+          "fdi": -3.8
+        },
+        "Đồng Nai": {
+          "state": "capital_cooling_production_unconfirmed",
+          "score": 0,
+          "iip": null,
+          "fdi": -58.9
+        }
+      },
+      "coverage": {
+        "strong": 4,
+        "partial": 8,
+        "weak": 6,
+        "broken": 0,
+        "missing": 2,
+        "productive_sources": 4,
+        "source_errors": 0
+      }
+    },
+    "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
+    "analysis_status": "history_ready",
+    "trust_notice": "Kỳ báo cáo đã vượt ngưỡng lịch sử tối thiểu; vẫn phải đọc cùng blind spots và phản chứng."
+  },
+  {
     "kind": "weekly",
     "period_key": "2026-W36",
     "period_state": "week_to_date",
     "title": "Weekly Intelligence Report",
-    "generated_at": "2026-09-04T16:22:26.627643+00:00",
-    "local_generated_at": "2026-09-04T23:22:26.625296+07:00",
+    "generated_at": "2026-09-04T20:46:09.249673+00:00",
+    "local_generated_at": "2026-09-05T03:46:09.245868+07:00",
     "history_status": "learning_history",
     "history_readiness": {
       "observation_days": 6,
@@ -2541,7 +2935,7 @@
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
-          "score": 62,
+          "score": 63,
           "state": "stable",
           "direction": "stable",
           "observation_days": 6

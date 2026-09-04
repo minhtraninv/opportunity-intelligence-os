@@ -1,7 +1,66 @@
 {
   "version": 2,
-  "updated_at": "2026-09-04T16:21:27.465040+00:00",
+  "updated_at": "2026-09-04T20:45:17.595191+00:00",
   "events": [
+    {
+      "id": "fb9b894f7c0a1e3b",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Vi phạm về trật tự xây dựng bị xử phạt như thế nào?",
+      "url": "https://baochinhphu.vn/vi-pham-ve-trat-tu-xay-dung-bi-xu-phat-nhu-the-nao-102260904154725464.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-04T20:45:17.595191+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "f779839286eccbed",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 5/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-04T20:45:17.595191+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "45cd5e7c57cf3f4e",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 5/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-04T20:45:17.595191+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "b3fce52a66abdff8",
       "source_id": "gov",
@@ -5377,15 +5436,32 @@
       "new_by_source": {},
       "total_events": 202,
       "source_errors": 0
+    },
+    {
+      "captured_at": "2026-09-04T20:45:17.595191+00:00",
+      "new_items": 3,
+      "new_candidates": 2,
+      "new_by_category": {
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "gov": 1
+      },
+      "total_events": 205,
+      "source_errors": 0
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-09-04T16:22:23.604965+00:00",
+    "updated_at": "2026-09-04T20:46:06.137363+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "official_headline_discovery": 50,
-      "reference_only": 147,
+      "reference_only": 148,
+      "official_headline_discovery": 52,
       "primary_verified": 5
     }
   }
