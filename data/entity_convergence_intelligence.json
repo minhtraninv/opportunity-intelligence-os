@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-04T11:18:08.652085+00:00",
+    "generated_at": "2026-09-04T16:22:26.393603+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-04T11:18:08.770433+00:00"
+    "trust_hardened_at": "2026-09-04T16:22:26.477846+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -20,7 +20,7 @@
     "watch": 15,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 3,
+    "discovery_candidates": 4,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 2
   },
@@ -220,7 +220,7 @@
           "title": "VNG cải thiện kết quả kinh doanh sau giai đoạn tái cấu trúc",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vng-cai-thien-ket-qua-kinh-doanh-sau-giai-doan-tai-cau-truc-100260904075916813.htm",
-          "observed_at": "2026-09-04T11:17:53.964178+00:00",
+          "observed_at": "2026-09-04T16:22:08.530922+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -263,6 +263,91 @@
       "discovery_evidence_families": [
         "operating",
         "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "evn_power_system",
+      "label": "EVN / hệ thống điện quốc gia",
+      "entity_type": "strategic_operator",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "EVN / hệ thống điện quốc gia đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ. Bối cảnh ngành/địa bàn liên quan cũng đang có chuyển động, nhưng bằng chứng trực tiếp về entity vẫn còn mỏng.",
+      "evidence_families": [
+        "operating",
+        "policy"
+      ],
+      "independent_publishers": [
+        "EVN - Vận hành hệ thống điện",
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 1,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [],
+      "theme_context": [
+        {
+          "theme_id": "energy_grid",
+          "label": "energy_grid",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "bb4943d995efd0f2",
+          "event_signature": "8b45655d39f7bc6a",
+          "family": "operating",
+          "title": "Cảnh báo giả mạo ứng dụng EVN phát tán mã độc để đọc trộm mã OTP, rút sạch tiền trong tài khoản",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/canh-bao-gia-mao-ung-dung-evn-phat-tan-ma-doc-de-doc-trom-ma-otp-rut-sach-tien-trong-tai-khoan-100260904190922985.htm",
+          "observed_at": "2026-09-04T16:22:08.530922+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a19d0fdd256c5f87",
+          "family": "policy",
+          "title": "Hơn 5.500 đảng viên EVN tham gia nghiên cứu, học tập, quán triệt và triển khai một số Nghị quyết, Chỉ thị của Bộ Chính trị",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-mot-so-Nghi-quyet-Chi-thi-cua-Bo-Chinh-tri-60-183-509479",
+          "observed_at": "2026-09-03T11:14:00.279732+00:00",
+          "categories": [
+            "energy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "policy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }

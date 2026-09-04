@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-04T11:18:08.885331+00:00",
+    "generated_at": "2026-09-04T16:22:26.627935+00:00",
     "local_date": "2026-09-04",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-04T11:18:08.966848+00:00"
+    "trust_hardened_at": "2026-09-04T16:22:26.688483+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-09-04",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-04T11:18:08.884652+00:00",
-      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
+      "generated_at": "2026-09-04T16:22:26.627424+00:00",
+      "local_generated_at": "2026-09-04T23:22:26.625296+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 6,
@@ -24,15 +24,30 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Thay đổi lớn nhất so với kỳ trước nằm ở Mở rộng năng lực sản xuất: +3.0 điểm.",
+        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 6 WEAK, 0 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
+          "title": "Gia tốc thương mại & logistics",
+          "assessment": "Delta snapshot gần nhất +1. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng +1."
+        },
+        {
+          "type": "theme",
           "title": "Mở rộng năng lực sản xuất",
-          "assessment": "mạnh lên 3 điểm so với kỳ trước."
+          "assessment": "Delta snapshot gần nhất -1. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -1."
+        },
+        {
+          "type": "theme",
+          "title": "Đầu tư công & hạ tầng vật lý",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+        },
+        {
+          "type": "theme",
+          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
         }
       ],
       "entity_watch": [],
@@ -82,7 +97,7 @@
         {
           "theme": "Mở rộng năng lực sản xuất",
           "tension": "material",
-          "adjusted_score": 63,
+          "adjusted_score": 62,
           "counter_signals": [
             "FDI đăng ký tăng 58,0% nhưng FDI thực hiện chỉ tăng 11,8% — Dòng vốn cam kết tăng rất nhanh nhưng tốc độ chuyển thành vốn thực hiện chậm hơn nhiều. Không nên đồng nhất FDI đăng ký với nhu cầu vận hành đã phát sinh ngay.",
             "Nhập khẩu tăng 34,8%, nhanh hơn xuất khẩu 21,7%; nhập siêu 20,52 tỷ USD — Nhập khẩu tư liệu sản xuất cao hỗ trợ câu chuyện tăng công suất, nhưng nhập siêu kéo dài cũng tạo rủi ro tỷ giá, vốn lưu động và biên lợi nhuận cho doanh nghiệp phụ thuộc đầu vào nhập khẩu.",
@@ -234,14 +249,7 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [
-          {
-            "theme_id": "manufacturing_expansion",
-            "label": "Mở rộng năng lực sản xuất",
-            "delta": 3.0,
-            "change": "strengthened"
-          }
-        ],
+        "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
           "strong": 1.0,
@@ -260,7 +268,7 @@
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 63,
+            "score": 62,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
@@ -401,8 +409,8 @@
       "period_key": "2026-W36",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-04T11:18:08.884929+00:00",
-      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
+      "generated_at": "2026-09-04T16:22:26.627643+00:00",
+      "local_generated_at": "2026-09-04T23:22:26.625296+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 6,
@@ -500,7 +508,7 @@
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 63,
+            "score": 62,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
@@ -641,8 +649,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-04T11:18:08.885154+00:00",
-      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
+      "generated_at": "2026-09-04T16:22:26.627814+00:00",
+      "local_generated_at": "2026-09-04T23:22:26.625296+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 6,
@@ -740,7 +748,7 @@
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 63,
+            "score": 62,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
