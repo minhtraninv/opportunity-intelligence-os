@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-04T04:33:05.978958+00:00",
+    "generated_at": "2026-09-04T11:18:08.885331+00:00",
     "local_date": "2026-09-04",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-04T04:33:06.062560+00:00"
+    "trust_hardened_at": "2026-09-04T11:18:08.966848+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-09-04",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-04T04:33:05.978375+00:00",
-      "local_generated_at": "2026-09-04T11:33:05.975839+07:00",
+      "generated_at": "2026-09-04T11:18:08.884652+00:00",
+      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 6,
@@ -24,30 +24,15 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở Mở rộng năng lực sản xuất: +3.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
-        "Độ phủ nguồn hiện có 3 domain STRONG, 7 WEAK, 3 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 4 domain STRONG, 6 WEAK, 0 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
           "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +2. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng +2."
-        },
-        {
-          "type": "theme",
-          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "assessment": "mạnh lên 3 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -97,7 +82,7 @@
         {
           "theme": "Mở rộng năng lực sản xuất",
           "tension": "material",
-          "adjusted_score": 60,
+          "adjusted_score": 63,
           "counter_signals": [
             "FDI đăng ký tăng 58,0% nhưng FDI thực hiện chỉ tăng 11,8% — Dòng vốn cam kết tăng rất nhanh nhưng tốc độ chuyển thành vốn thực hiện chậm hơn nhiều. Không nên đồng nhất FDI đăng ký với nhu cầu vận hành đã phát sinh ngay.",
             "Nhập khẩu tăng 34,8%, nhanh hơn xuất khẩu 21,7%; nhập siêu 20,52 tỷ USD — Nhập khẩu tư liệu sản xuất cao hỗ trợ câu chuyện tăng công suất, nhưng nhập siêu kéo dài cũng tạo rủi ro tỷ giá, vốn lưu động và biên lợi nhuận cho doanh nghiệp phụ thuộc đầu vào nhập khẩu.",
@@ -108,7 +93,7 @@
         {
           "theme": "Gia tốc thương mại & logistics",
           "tension": "material",
-          "adjusted_score": 73,
+          "adjusted_score": 74,
           "counter_signals": [
             "Nhập khẩu tăng 34,8%, nhanh hơn xuất khẩu 21,7%; nhập siêu 20,52 tỷ USD — Nhập khẩu tư liệu sản xuất cao hỗ trợ câu chuyện tăng công suất, nhưng nhập siêu kéo dài cũng tạo rủi ro tỷ giá, vốn lưu động và biên lợi nhuận cho doanh nghiệp phụ thuộc đầu vào nhập khẩu.",
             "Khu vực FDI chiếm 80,1% xuất khẩu; xuất khẩu khu vực trong nước chỉ tăng 5,8% — Sản xuất/xuất khẩu tăng mạnh không tự động có nghĩa doanh nghiệp nội địa đang bắt được giá trị tương ứng. Cơ hội vốn nhỏ phải chứng minh được vị trí thật trong supply chain thay vì dựa vào tăng trưởng tổng."
@@ -155,13 +140,6 @@
           ]
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "weak",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -179,13 +157,6 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "weak",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -193,9 +164,23 @@
           "planned_next_sources": []
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "partial",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "partial",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -249,26 +234,33 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "manufacturing_expansion",
+            "label": "Mở rộng năng lực sản xuất",
+            "delta": 3.0,
+            "change": "strengthened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
-          "strong": 0.0,
-          "productive_sources": 0.0,
-          "source_errors": 0.0
+          "strong": 1.0,
+          "productive_sources": 1.0,
+          "source_errors": -2.0
         }
       },
       "snapshot": {
         "themes": {
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
-            "score": 73,
+            "score": 74,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 60,
+            "score": 63,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
@@ -391,13 +383,13 @@
           }
         },
         "coverage": {
-          "strong": 3,
-          "partial": 5,
-          "weak": 7,
-          "broken": 3,
+          "strong": 4,
+          "partial": 8,
+          "weak": 6,
+          "broken": 0,
           "missing": 2,
-          "productive_sources": 3,
-          "source_errors": 2
+          "productive_sources": 4,
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -409,8 +401,8 @@
       "period_key": "2026-W36",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-04T04:33:05.978625+00:00",
-      "local_generated_at": "2026-09-04T11:33:05.975839+07:00",
+      "generated_at": "2026-09-04T11:18:08.884929+00:00",
+      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 6,
@@ -436,13 +428,6 @@
           ]
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "weak",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -460,13 +445,6 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "weak",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -474,9 +452,23 @@
           "planned_next_sources": []
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "partial",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "partial",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -501,14 +493,14 @@
         "themes": {
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
-            "score": 73,
+            "score": 74,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 60,
+            "score": 63,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
@@ -631,13 +623,13 @@
           }
         },
         "coverage": {
-          "strong": 3,
-          "partial": 5,
-          "weak": 7,
-          "broken": 3,
+          "strong": 4,
+          "partial": 8,
+          "weak": 6,
+          "broken": 0,
           "missing": 2,
-          "productive_sources": 3,
-          "source_errors": 2
+          "productive_sources": 4,
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -649,8 +641,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-04T04:33:05.978819+00:00",
-      "local_generated_at": "2026-09-04T11:33:05.975839+07:00",
+      "generated_at": "2026-09-04T11:18:08.885154+00:00",
+      "local_generated_at": "2026-09-04T18:18:08.881632+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 6,
@@ -676,13 +668,6 @@
           ]
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "weak",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -700,13 +685,6 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "weak",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -714,9 +692,23 @@
           "planned_next_sources": []
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "partial",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "partial",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -741,14 +733,14 @@
         "themes": {
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
-            "score": 73,
+            "score": 74,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
-            "score": 60,
+            "score": 63,
             "state": "stable",
             "direction": "stable",
             "observation_days": 6
@@ -871,13 +863,13 @@
           }
         },
         "coverage": {
-          "strong": 3,
-          "partial": 5,
-          "weak": 7,
-          "broken": 3,
+          "strong": 4,
+          "partial": 8,
+          "weak": 6,
+          "broken": 0,
           "missing": 2,
-          "productive_sources": 3,
-          "source_errors": 2
+          "productive_sources": 4,
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
