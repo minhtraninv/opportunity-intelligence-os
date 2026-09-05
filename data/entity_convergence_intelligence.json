@@ -1,26 +1,26 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-04T20:46:08.903887+00:00",
+    "generated_at": "2026-09-05T04:30:16.288788+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-04T20:46:09.051606+00:00"
+    "trust_hardened_at": "2026-09-05T04:30:16.432253+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
-    "auto_discovered_entities": 49,
-    "candidate_entities_total": 60,
-    "observed_entities": 16,
-    "observed_auto_entities": 8,
+    "auto_discovered_entities": 53,
+    "candidate_entities_total": 64,
+    "observed_entities": 17,
+    "observed_auto_entities": 9,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 1,
-    "watch": 15,
+    "watch": 16,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 4,
+    "discovery_candidates": 5,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 2
   },
@@ -126,7 +126,7 @@
       "event_count": 2,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -220,7 +220,7 @@
           "title": "VNG cải thiện kết quả kinh doanh sau giai đoạn tái cấu trúc",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vng-cai-thien-ket-qua-kinh-doanh-sau-giai-doan-tai-cau-truc-100260904075916813.htm",
-          "observed_at": "2026-09-04T20:45:53.309852+00:00",
+          "observed_at": "2026-09-05T04:29:57.432802+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -267,6 +267,92 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-phú-quốc-c360b41a",
+      "label": "Phú Quốc",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Phú Quốc đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ. Bối cảnh ngành/địa bàn liên quan cũng đang có chuyển động, nhưng bằng chứng trực tiếp về entity vẫn còn mỏng.",
+      "evidence_families": [
+        "operating",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "EVN - Đầu tư xây dựng",
+        "Thanh Niên Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 1,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [],
+      "theme_context": [
+        {
+          "theme_id": "energy_grid",
+          "label": "energy_grid",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "8db61793e3cab190",
+          "event_signature": "d79fd6e0e5bdcfe1",
+          "family": "project_execution",
+          "title": "Phú Quốc tăng tốc giải phóng mặt bằng các công trình phục vụ APEC 2027",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/phu-quoc-tang-toc-giai-phong-mat-bang-cac-cong-trinh-phuc-vu-apec-2027-18526090420155833.htm",
+          "observed_at": "2026-09-05T02:13:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a217e71d65206243",
+          "family": "operating",
+          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
+          "publisher": "EVN - Đầu tư xây dựng",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
+          "observed_at": "2026-08-30T11:41:47.417240+00:00",
+          "categories": [
+            "energy",
+            "policy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "evn_power_system",
       "label": "EVN / hệ thống điện quốc gia",
       "entity_type": "strategic_operator",
@@ -304,7 +390,7 @@
           "title": "Cảnh báo giả mạo ứng dụng EVN phát tán mã độc để đọc trộm mã OTP, rút sạch tiền trong tài khoản",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/canh-bao-gia-mao-ung-dung-evn-phat-tan-ma-doc-de-doc-trom-ma-otp-rut-sach-tien-trong-tai-khoan-100260904190922985.htm",
-          "observed_at": "2026-09-04T20:45:53.309852+00:00",
+          "observed_at": "2026-09-05T04:29:57.432802+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",

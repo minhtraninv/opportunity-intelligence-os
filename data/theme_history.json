@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-04T20:46:08.852750+00:00",
+  "updated_at": "2026-09-05T04:30:16.260783+00:00",
   "retention_rule": "one_daily_snapshot_plus_material_intraday_changes_last_400_snapshots",
   "snapshots": [
     {
@@ -766,6 +766,104 @@
           "score": 22,
           "adjusted_score": 22,
           "evidence_count": 28,
+          "family_count": 0,
+          "publisher_count": 1,
+          "counter_signal_count": 0,
+          "tension_level": "no_verified_counter_signal",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "energy_grid",
+          "theme_label": "Mở rộng điện & lưới điện",
+          "status": "insufficient",
+          "score": 17,
+          "adjusted_score": 17,
+          "evidence_count": 4,
+          "family_count": 0,
+          "publisher_count": 0,
+          "counter_signal_count": 0,
+          "tension_level": "no_verified_counter_signal",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-05T04:30:16.260783+00:00",
+      "source_money_flow_generated_at": "2026-09-05T04:30:16.100418+00:00",
+      "source_contradiction_generated_at": "2026-09-05T04:30:16.206876+00:00",
+      "themes": [
+        {
+          "theme_id": "logistics_trade",
+          "theme_label": "Gia tốc thương mại & logistics",
+          "status": "converging",
+          "score": 80,
+          "adjusted_score": 74,
+          "evidence_count": 7,
+          "family_count": 4,
+          "publisher_count": 2,
+          "counter_signal_count": 2,
+          "tension_level": "material",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "manufacturing_expansion",
+          "theme_label": "Mở rộng năng lực sản xuất",
+          "status": "early",
+          "score": 73,
+          "adjusted_score": 63,
+          "evidence_count": 8,
+          "family_count": 4,
+          "publisher_count": 1,
+          "counter_signal_count": 3,
+          "tension_level": "material",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "public_infrastructure",
+          "theme_label": "Đầu tư công & hạ tầng vật lý",
+          "status": "developing",
+          "score": 58,
+          "adjusted_score": 55,
+          "evidence_count": 11,
+          "family_count": 2,
+          "publisher_count": 2,
+          "counter_signal_count": 1,
+          "tension_level": "watch",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "sme_formalization",
+          "theme_label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "status": "early",
+          "score": 38,
+          "adjusted_score": 35,
+          "evidence_count": 7,
+          "family_count": 1,
+          "publisher_count": 1,
+          "counter_signal_count": 1,
+          "tension_level": "watch",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "consumer_services",
+          "theme_label": "Tiêu dùng & dịch vụ",
+          "status": "early",
+          "score": 33,
+          "adjusted_score": 27,
+          "evidence_count": 3,
+          "family_count": 1,
+          "publisher_count": 1,
+          "counter_signal_count": 2,
+          "tension_level": "material",
+          "supply_gap_status": "unconfirmed_supply_gap"
+        },
+        {
+          "theme_id": "data_infrastructure",
+          "theme_label": "Hạ tầng dữ liệu & số hóa",
+          "status": "insufficient",
+          "score": 22,
+          "adjusted_score": 22,
+          "evidence_count": 29,
           "family_count": 0,
           "publisher_count": 1,
           "counter_signal_count": 0,
