@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-09-05T04:30:16.399552+00:00",
+    "generated_at": "2026-09-05T10:35:40.225610+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-05T04:30:16.434216+00:00"
+    "trust_hardened_at": "2026-09-05T10:35:40.282427+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
     "domains": 20,
-    "strong": 3,
-    "partial": 5,
-    "weak": 7,
-    "broken": 3,
+    "strong": 4,
+    "partial": 8,
+    "weak": 6,
+    "broken": 0,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 16,
-    "productive_sources": 3,
-    "source_errors": 2,
+    "healthy_sources": 18,
+    "productive_sources": 4,
+    "source_errors": 0,
     "planned_sources": 8,
-    "verified_productive_sources": 3,
-    "discovery_productive_sources": 10
+    "verified_productive_sources": 4,
+    "discovery_productive_sources": 11
   },
   "critical_blind_spots": [
     {
@@ -35,16 +35,6 @@
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
-      "evidence_standard": "verified_primary"
-    },
-    {
-      "domain_id": "fdi_investment",
-      "label": "FDI & vốn đầu tư",
-      "status": "weak",
-      "priority": 1,
-      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-      "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-      "planned_next_sources": [],
       "evidence_standard": "verified_primary"
     },
     {
@@ -71,16 +61,6 @@
       "evidence_standard": "verified_primary"
     },
     {
-      "domain_id": "macro_real_economy",
-      "label": "Vĩ mô kinh tế thực",
-      "status": "weak",
-      "priority": 1,
-      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-      "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-      "planned_next_sources": [],
-      "evidence_standard": "verified_primary"
-    },
-    {
       "domain_id": "policy_state",
       "label": "Chính sách & luật chơi",
       "status": "partial",
@@ -91,11 +71,31 @@
       "evidence_standard": "verified_primary"
     },
     {
+      "domain_id": "fdi_investment",
+      "label": "FDI & vốn đầu tư",
+      "status": "partial",
+      "priority": 1,
+      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "planned_next_sources": [],
+      "evidence_standard": "verified_primary"
+    },
+    {
       "domain_id": "fiscal_public_capital",
       "label": "Ngân sách & đầu tư công",
       "status": "partial",
       "priority": 1,
       "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "planned_next_sources": [],
+      "evidence_standard": "verified_primary"
+    },
+    {
+      "domain_id": "macro_real_economy",
+      "label": "Vĩ mô kinh tế thực",
+      "status": "partial",
+      "priority": 1,
+      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
       "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
       "planned_next_sources": [],
       "evidence_standard": "verified_primary"
@@ -141,33 +141,6 @@
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
-      "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-      "evidence_standard": "verified_primary"
-    },
-    {
-      "id": "fdi_investment",
-      "label": "FDI & vốn đầu tư",
-      "priority": 1,
-      "target_healthy_sources": 2,
-      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-      "status": "weak",
-      "active_sources": 2,
-      "healthy_sources": 1,
-      "productive_sources": 0,
-      "verified_productive_sources": 0,
-      "discovery_productive_sources": 0,
-      "broken_sources": 1,
-      "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 0,
-      "healthy_source_names": [
-        "Cục Đầu tư nước ngoài - Bộ Tài chính"
-      ],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Cục Thống kê - Doanh nghiệp"
-      ],
-      "planned_next_sources": [],
       "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
       "evidence_standard": "verified_primary"
     },
@@ -227,34 +200,6 @@
       "evidence_standard": "verified_primary"
     },
     {
-      "id": "macro_real_economy",
-      "label": "Vĩ mô kinh tế thực",
-      "priority": 1,
-      "target_healthy_sources": 3,
-      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-      "status": "weak",
-      "active_sources": 3,
-      "healthy_sources": 1,
-      "productive_sources": 0,
-      "verified_productive_sources": 0,
-      "discovery_productive_sources": 1,
-      "broken_sources": 2,
-      "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 2,
-      "evidence_items_this_run": 0,
-      "healthy_source_names": [
-        "EVN - Vận hành hệ thống điện"
-      ],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Cục Thống kê - Doanh nghiệp",
-        "Cục Thống kê - Dữ liệu kinh tế"
-      ],
-      "planned_next_sources": [],
-      "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-      "evidence_standard": "verified_primary"
-    },
-    {
       "id": "policy_state",
       "label": "Chính sách & luật chơi",
       "priority": 1,
@@ -268,7 +213,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 22,
+      "discovery_evidence_items_this_run": 23,
       "evidence_items_this_run": 3,
       "healthy_source_names": [
         "Báo Chính phủ",
@@ -277,6 +222,34 @@
       ],
       "productive_source_names": [
         "Báo Chính phủ"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "evidence_standard": "verified_primary"
+    },
+    {
+      "id": "fdi_investment",
+      "label": "FDI & vốn đầu tư",
+      "priority": 1,
+      "target_healthy_sources": 2,
+      "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "productive_sources": 1,
+      "verified_productive_sources": 1,
+      "discovery_productive_sources": 1,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 1,
+      "discovery_evidence_items_this_run": 2,
+      "evidence_items_this_run": 1,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Đầu tư nước ngoài - Bộ Tài chính"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
       ],
       "broken_source_names": [],
       "planned_next_sources": [],
@@ -297,7 +270,7 @@
       "discovery_productive_sources": 1,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 8,
+      "discovery_evidence_items_this_run": 9,
       "evidence_items_this_run": 3,
       "healthy_source_names": [
         "Báo Chính phủ",
@@ -305,6 +278,35 @@
       ],
       "productive_source_names": [
         "Báo Chính phủ"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "evidence_standard": "verified_primary"
+    },
+    {
+      "id": "macro_real_economy",
+      "label": "Vĩ mô kinh tế thực",
+      "priority": 1,
+      "target_healthy_sources": 3,
+      "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+      "status": "partial",
+      "active_sources": 3,
+      "healthy_sources": 3,
+      "productive_sources": 1,
+      "verified_productive_sources": 1,
+      "discovery_productive_sources": 2,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 1,
+      "discovery_evidence_items_this_run": 4,
+      "evidence_items_this_run": 1,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế",
+        "EVN - Vận hành hệ thống điện"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
       ],
       "broken_source_names": [],
       "planned_next_sources": [],
@@ -364,62 +366,6 @@
       "evidence_standard": "verified_primary"
     },
     {
-      "id": "labor_hiring",
-      "label": "Tuyển dụng & nhu cầu lao động",
-      "priority": 2,
-      "target_healthy_sources": 3,
-      "why": "Hiring là bằng chứng sớm cho ramp-up vận hành và thay đổi nhu cầu kỹ năng.",
-      "status": "broken",
-      "active_sources": 2,
-      "healthy_sources": 0,
-      "productive_sources": 0,
-      "verified_productive_sources": 0,
-      "discovery_productive_sources": 0,
-      "broken_sources": 2,
-      "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 0,
-      "healthy_source_names": [],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Cục Thống kê - Doanh nghiệp",
-        "Cục Thống kê - Dữ liệu kinh tế"
-      ],
-      "planned_next_sources": [
-        "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp"
-      ],
-      "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
-      "evidence_standard": "verified_primary"
-    },
-    {
-      "id": "trade_customs",
-      "label": "Xuất nhập khẩu & luồng hàng",
-      "priority": 2,
-      "target_healthy_sources": 3,
-      "why": "Dữ liệu chi tiết theo nhóm hàng/thị trường có thể phát hiện cầu sản xuất và thương mại trước số liệu tổng hợp.",
-      "status": "broken",
-      "active_sources": 1,
-      "healthy_sources": 0,
-      "productive_sources": 0,
-      "verified_productive_sources": 0,
-      "discovery_productive_sources": 0,
-      "broken_sources": 1,
-      "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 0,
-      "healthy_source_names": [],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Cục Thống kê - Dữ liệu kinh tế"
-      ],
-      "planned_next_sources": [
-        "Hải quan - dữ liệu XNK chi tiết",
-        "Cảng/vận tải hàng hóa/logistics throughput"
-      ],
-      "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
-      "evidence_standard": "verified_primary"
-    },
-    {
       "id": "industrial_projects",
       "label": "Nhà máy · KCN · CAPEX",
       "priority": 2,
@@ -442,6 +388,34 @@
       "broken_source_names": [],
       "planned_next_sources": [
         "KCN/BQL KKT và dự án công nghiệp địa phương"
+      ],
+      "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+      "evidence_standard": "verified_primary"
+    },
+    {
+      "id": "trade_customs",
+      "label": "Xuất nhập khẩu & luồng hàng",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Dữ liệu chi tiết theo nhóm hàng/thị trường có thể phát hiện cầu sản xuất và thương mại trước số liệu tổng hợp.",
+      "status": "weak",
+      "active_sources": 1,
+      "healthy_sources": 1,
+      "productive_sources": 0,
+      "verified_productive_sources": 0,
+      "discovery_productive_sources": 0,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 0,
+      "discovery_evidence_items_this_run": 0,
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "productive_source_names": [],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "Hải quan - dữ liệu XNK chi tiết",
+        "Cảng/vận tải hàng hóa/logistics throughput"
       ],
       "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
       "evidence_standard": "verified_primary"
@@ -486,7 +460,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 10,
+      "discovery_evidence_items_this_run": 11,
       "evidence_items_this_run": 3,
       "healthy_source_names": [
         "Báo Chính phủ",
@@ -498,6 +472,36 @@
       "broken_source_names": [],
       "planned_next_sources": [
         "Bộ Xây dựng - nhà ở và thị trường BĐS"
+      ],
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "evidence_standard": "verified_primary"
+    },
+    {
+      "id": "labor_hiring",
+      "label": "Tuyển dụng & nhu cầu lao động",
+      "priority": 2,
+      "target_healthy_sources": 3,
+      "why": "Hiring là bằng chứng sớm cho ramp-up vận hành và thay đổi nhu cầu kỹ năng.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "productive_sources": 1,
+      "verified_productive_sources": 1,
+      "discovery_productive_sources": 1,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 1,
+      "discovery_evidence_items_this_run": 2,
+      "evidence_items_this_run": 1,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [
+        "Nguồn tuyển dụng và nhu cầu lao động doanh nghiệp"
       ],
       "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
       "evidence_standard": "verified_primary"
@@ -516,8 +520,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 27,
-      "evidence_items_this_run": 27,
+      "discovery_evidence_items_this_run": 24,
+      "evidence_items_this_run": 24,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -549,8 +553,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 27,
-      "evidence_items_this_run": 27,
+      "discovery_evidence_items_this_run": 24,
+      "evidence_items_this_run": 24,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -571,32 +575,6 @@
       "evidence_standard": "discovery"
     },
     {
-      "id": "consumption_behavior",
-      "label": "Tiêu dùng & hành vi",
-      "priority": 3,
-      "target_healthy_sources": 2,
-      "why": "Số liệu doanh thu cần được đối chiếu với hành vi, volume và sức mua thực.",
-      "status": "broken",
-      "active_sources": 2,
-      "healthy_sources": 0,
-      "productive_sources": 0,
-      "verified_productive_sources": 0,
-      "discovery_productive_sources": 0,
-      "broken_sources": 2,
-      "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 0,
-      "healthy_source_names": [],
-      "productive_source_names": [],
-      "broken_source_names": [
-        "Cục Thống kê - Doanh nghiệp",
-        "Cục Thống kê - Dữ liệu kinh tế"
-      ],
-      "planned_next_sources": [],
-      "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
-      "evidence_standard": "verified_primary"
-    },
-    {
       "id": "technology_data",
       "label": "Công nghệ · dữ liệu · AI",
       "priority": 3,
@@ -610,7 +588,7 @@
       "discovery_productive_sources": 1,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 8,
+      "discovery_evidence_items_this_run": 9,
       "evidence_items_this_run": 3,
       "healthy_source_names": [
         "Báo Chính phủ"
@@ -624,32 +602,60 @@
       "evidence_standard": "verified_primary"
     },
     {
+      "id": "consumption_behavior",
+      "label": "Tiêu dùng & hành vi",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Số liệu doanh thu cần được đối chiếu với hành vi, volume và sức mua thực.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "productive_sources": 1,
+      "verified_productive_sources": 1,
+      "discovery_productive_sources": 1,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 1,
+      "discovery_evidence_items_this_run": 2,
+      "evidence_items_this_run": 1,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cục Thống kê - Dữ liệu kinh tế"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "evidence_standard": "verified_primary"
+    },
+    {
       "id": "business_formation",
       "label": "Thành lập & rút lui doanh nghiệp",
       "priority": 3,
       "target_healthy_sources": 2,
       "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
-      "status": "partial",
+      "status": "strong",
       "active_sources": 2,
-      "healthy_sources": 1,
-      "productive_sources": 1,
-      "verified_productive_sources": 1,
-      "discovery_productive_sources": 1,
-      "broken_sources": 1,
-      "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 16,
-      "evidence_items_this_run": 1,
+      "healthy_sources": 2,
+      "productive_sources": 2,
+      "verified_productive_sources": 2,
+      "discovery_productive_sources": 2,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 2,
+      "discovery_evidence_items_this_run": 18,
+      "evidence_items_this_run": 2,
       "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
         "Cổng ĐKKD Quốc gia"
       ],
       "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
         "Cổng ĐKKD Quốc gia"
       ],
-      "broken_source_names": [
-        "Cục Thống kê - Doanh nghiệp"
-      ],
+      "broken_source_names": [],
       "planned_next_sources": [],
-      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "coverage_note": "Đủ số nguồn đang tạo evidence đúng cấp cho mục đích của domain; vẫn phải kiểm tra freshness và độc lập.",
       "evidence_standard": "verified_primary"
     },
     {
@@ -665,9 +671,9 @@
       "verified_productive_sources": 1,
       "discovery_productive_sources": 0,
       "broken_sources": 0,
-      "verified_evidence_items_this_run": 79,
+      "verified_evidence_items_this_run": 82,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 79,
+      "evidence_items_this_run": 82,
       "healthy_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
@@ -695,11 +701,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 20,
+      "discovered_items_this_run": 23,
       "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 8
+      "discovery_evidence_items_this_run": 9
     },
     {
       "id": "gov-policy",
@@ -732,10 +738,10 @@
         "fdi_investment"
       ],
       "authority": 1.0,
-      "health": "error",
-      "discovered_items_this_run": 0,
+      "health": "ok",
+      "discovered_items_this_run": 54,
       "evidence_items_this_run": 1,
-      "error": "Cục Thống kê - Doanh nghiệp: ConnectionError: HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Max retries exceeded with url: /doanh-nghiep/ (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Read timed out. (read timeout=10)\"))",
+      "error": null,
       "verified_evidence_items_this_run": 1,
       "discovery_evidence_items_this_run": 2
     },
@@ -752,10 +758,10 @@
         "labor_hiring"
       ],
       "authority": 1.0,
-      "health": "error",
-      "discovered_items_this_run": 0,
+      "health": "ok",
+      "discovered_items_this_run": 1,
       "evidence_items_this_run": 0,
-      "error": "Cục Thống kê - Dữ liệu kinh tế: ConnectionError: HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Max retries exceeded with url: /du-lieu-va-so-lieu-thong-ke (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.nso.gov.vn', port=443): Read timed out. (read timeout=10)\"))",
+      "error": null,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -914,11 +920,11 @@
       ],
       "authority": 0.76,
       "health": "ok",
-      "discovered_items_this_run": 5,
-      "evidence_items_this_run": 5,
+      "discovered_items_this_run": 2,
+      "evidence_items_this_run": 2,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 5
+      "discovery_evidence_items_this_run": 2
     },
     {
       "id": "thanhnien-economy",
@@ -932,11 +938,11 @@
       ],
       "authority": 0.74,
       "health": "ok",
-      "discovered_items_this_run": 10,
-      "evidence_items_this_run": 10,
+      "discovered_items_this_run": 11,
+      "evidence_items_this_run": 11,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 10
+      "discovery_evidence_items_this_run": 11
     },
     {
       "id": "vietnamplus-economy",
@@ -950,11 +956,11 @@
       ],
       "authority": 0.82,
       "health": "ok",
-      "discovered_items_this_run": 8,
-      "evidence_items_this_run": 8,
+      "discovered_items_this_run": 7,
+      "evidence_items_this_run": 7,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 8
+      "discovery_evidence_items_this_run": 7
     },
     {
       "id": "hnx-listed",
@@ -1002,10 +1008,10 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 79,
-      "evidence_items_this_run": 79,
+      "discovered_items_this_run": 82,
+      "evidence_items_this_run": 82,
       "error": null,
-      "verified_evidence_items_this_run": 79,
+      "verified_evidence_items_this_run": 82,
       "discovery_evidence_items_this_run": 0
     },
     {

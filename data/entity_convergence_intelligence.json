@@ -1,32 +1,112 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-05T04:30:16.288788+00:00",
+    "generated_at": "2026-09-05T10:35:40.136444+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-05T04:30:16.432253+00:00"
+    "trust_hardened_at": "2026-09-05T10:35:40.279290+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 53,
     "candidate_entities_total": 64,
-    "observed_entities": 17,
-    "observed_auto_entities": 9,
+    "observed_entities": 19,
+    "observed_auto_entities": 11,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 1,
-    "watch": 16,
+    "watch": 18,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 5,
+    "discovery_candidates": 6,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 2
+    "suppressed_non_organizations": 3
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
   "discovery_candidates": [
+    {
+      "entity_id": "auto-bidv-0925568a",
+      "label": "BIDV",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "BIDV đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 2,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "891d0feb7f7a15d6",
+          "event_signature": "118d4fba8e384139",
+          "family": "project_execution",
+          "title": "BIDV dành 30.000 tỷ đồng ưu đãi 2% lãi suất cho khách hàng vay mua nhà",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/bidv-danh-30000-ty-dong-uu-dai-2-lai-suat-cho-khach-hang-vay-mua-nha-post1134417.vnp",
+          "observed_at": "2026-09-05T16:54:40+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "886d066c068ad719",
+          "event_signature": "21e69dbee41f9645",
+          "family": "capital",
+          "title": "BIDV dành 30.000 tỉ đồng cho vay lãi suất ưu đãi mua bất động sản",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/bidv-danh-30000-ti-dong-cho-vay-lai-suat-uu-dai-mua-bat-dong-san-185260829145837672.htm",
+          "observed_at": "2026-08-29T08:23:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
     {
       "entity_id": "auto-novaland-eaa8c17a",
       "label": "Novaland",
@@ -46,7 +126,7 @@
       "event_count": 2,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -390,7 +470,7 @@
           "title": "Cảnh báo giả mạo ứng dụng EVN phát tán mã độc để đọc trộm mã OTP, rút sạch tiền trong tài khoản",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/canh-bao-gia-mao-ung-dung-evn-phat-tan-ma-doc-de-doc-trom-ma-otp-rut-sach-tien-trong-tai-khoan-100260904190922985.htm",
-          "observed_at": "2026-09-05T04:29:57.432802+00:00",
+          "observed_at": "2026-09-05T10:35:26.238814+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -443,6 +523,12 @@
     {
       "entity_id": "auto-cà-mau-5be786d4",
       "label": "Cà Mau",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },

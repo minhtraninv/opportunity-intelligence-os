@@ -1,7 +1,66 @@
 {
   "version": 2,
-  "updated_at": "2026-09-05T04:28:16.932693+00:00",
+  "updated_at": "2026-09-05T10:34:53.474329+00:00",
   "events": [
+    {
+      "id": "8bc0801edc952452",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Điện Biên phải đưa ra những bài toán cụ thể để có lời giải về phát triển kinh tế",
+      "url": "https://baochinhphu.vn/dien-bien-phai-dua-ra-nhung-bai-toan-cu-the-de-co-loi-giai-ve-phat-trien-kinh-te-102260905123138618.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [
+        "Điện Biên"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-05T10:34:53.474329+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "ea7864a6e80e1a56",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Gỡ vướng quản lý nhà nước về khu công nghiệp, địa chất, khoáng sản",
+      "url": "https://baochinhphu.vn/go-vuong-quan-ly-nha-nuoc-ve-khu-cong-nghiep-dia-chat-khoang-san-1022609051219324.htm",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-05T10:34:53.474329+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "49bc99efceca4009",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Điều kiện cấp giấy phép kinh doanh cho tổ chức kinh tế có vốn đầu tư nước ngoài",
+      "url": "https://baochinhphu.vn/dieu-kien-cap-giay-phep-kinh-doanh-cho-to-chuc-kinh-te-co-von-dau-tu-nuoc-ngoai-102260905112417488.htm",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-05T10:34:53.474329+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "67b6a4f5d265f2d8",
       "source_id": "gov-policy",
@@ -22,6 +81,8 @@
         2026
       ],
       "first_seen_at": "2026-09-05T04:28:16.932693+00:00",
+      "collected_at": "2026-09-05T04:28:16.932693+00:00",
+      "last_seen_at": null,
       "evidence_grade": "official_headline_discovery"
     },
     {
@@ -5498,15 +5559,31 @@
       },
       "total_events": 206,
       "source_errors": 2
+    },
+    {
+      "captured_at": "2026-09-05T10:34:53.474329+00:00",
+      "new_items": 3,
+      "new_candidates": 1,
+      "new_by_category": {
+        "fdi_industrial": 1
+      },
+      "new_by_event_type": {
+        "capital_flow": 1
+      },
+      "new_by_source": {
+        "gov": 3
+      },
+      "total_events": 209,
+      "source_errors": 0
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-09-05T04:30:10.612930+00:00",
+    "updated_at": "2026-09-05T10:35:37.407379+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "official_headline_discovery": 53,
-      "reference_only": 148,
+      "reference_only": 150,
+      "official_headline_discovery": 54,
       "primary_verified": 5
     }
   }
