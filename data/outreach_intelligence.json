@@ -1,114 +1,20 @@
 {
   "meta": {
     "version": "1.6.1",
-    "generated_at": "2026-09-05T15:17:10.450319+00:00",
+    "generated_at": "2026-09-05T20:22:12.763093+00:00",
     "mode": "human_in_the_loop_deduplicated_counterparty_campaigns",
     "principle": "one_counterparty_category_campaign_can_absorb_multiple_market_signals_no_fake_lead_multiplication"
   },
   "coverage": {
     "candidate_target_instances": 168,
-    "campaigns_ready": 3,
-    "unique_counterparties_ready": 3,
-    "related_opportunity_signals_in_campaigns": 19,
-    "unique_verified_contact_paths": 3,
-    "unresolved_target_instances": 149,
-    "unique_unresolved_counterparties": 15
+    "campaigns_ready": 2,
+    "unique_counterparties_ready": 2,
+    "related_opportunity_signals_in_campaigns": 15,
+    "unique_verified_contact_paths": 2,
+    "unresolved_target_instances": 153,
+    "unique_unresolved_counterparties": 16
   },
   "packs": [
-    {
-      "id": "vn0101771418::garment_ppe",
-      "campaign_type": "counterparty_category",
-      "partner_id": "vn0101771418",
-      "contractor_name": "CÔNG TY CỔ PHẦN BẢO HỘ LAO ĐỘNG VIỆT NAM",
-      "tax_code": "0101771418",
-      "category": "garment_ppe",
-      "category_label": "đồng phục / PPE",
-      "priority_score": 100,
-      "counterparty_score": 81,
-      "verified_contact_paths": [
-        {
-          "type": "email",
-          "value": "vlpdauthau@gmail.com",
-          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600471621&notifyId=IB2600471621&inputResultId=80399147-9d22-423d-ba17-a09315d07ee0&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600471621&planNo=PL2600231052&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-05T15:16:57.705208+00:00",
-          "identity_match": "exact_orgCode_or_taxCode",
-          "mailbox_class": "role_or_generic"
-        }
-      ],
-      "related_opportunity_count": 4,
-      "related_opportunities": [
-        {
-          "tender_code": "IB2600501561",
-          "buyer": "TRƯỜNG PHỔ THÔNG DÂN TỘC NỘI TRÚ BÌNH THUẬN",
-          "title": "Gói thầu số 1: Dự toán mua sắm Quần áo đồng phục và đồ dùng cá nhân năm học 2026-2027 cho học sinh của Trường Phổ thông Dân tộc nội trú",
-          "package_price_vnd": 1001910000,
-          "days_to_close": 9.5,
-          "recommended_path": "subcontract_or_sourcing",
-          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=fa852bd4-3f96-4716-84a5-2ddf7a4420a1&notifyId=fa852bd4-3f96-4716-84a5-2ddf7a4420a1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501561&planNo=PL2600283621&step=tbmt&isInternet=1&bidForm=CHCT"
-        },
-        {
-          "tender_code": "IB2600504621",
-          "buyer": "Trường Hữu Nghị T78",
-          "title": "Mua sắm đồng phục học sinh năm học 2026 -2027",
-          "package_price_vnd": 790014000,
-          "days_to_close": 9.4,
-          "recommended_path": "subcontract_or_sourcing",
-          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=342d38d2-9e05-47df-8575-9878c03e8658&notifyId=342d38d2-9e05-47df-8575-9878c03e8658&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600504621&planNo=PL2600280024&step=tbmt&isInternet=1&bidForm=CHCT"
-        },
-        {
-          "tender_code": "IB2600504608",
-          "buyer": "HỌC VIỆN QUẢN LÝ GIÁO DỤC",
-          "title": "May đồng phục phục vụ hoạt động kỷ niệm 50 năm Ngày Thành lập Học viện",
-          "package_price_vnd": 850000000,
-          "days_to_close": 8.4,
-          "recommended_path": "subcontract_or_sourcing",
-          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=78f93852-1653-47e2-9d61-ea2f9af7e6af&notifyId=78f93852-1653-47e2-9d61-ea2f9af7e6af&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600504608&planNo=PL2600285284&step=tbmt&isInternet=1&bidForm=DTRR"
-        },
-        {
-          "tender_code": "IB2600503295",
-          "buyer": "Công đoàn Công ty TNHH LG Innotek Việt Nam Hải Phòng",
-          "title": "Tặng áo đồng phục kỷ niệm 10 năm thành lập Công ty",
-          "package_price_vnd": 3188000000,
-          "days_to_close": 6.4,
-          "recommended_path": "subcontract_or_sourcing",
-          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f5a7e0d2-0b2c-413f-a76c-de96435300ed&notifyId=f5a7e0d2-0b2c-413f-a76c-de96435300ed&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600503295&planNo=PL2600278498&step=tbmt&isInternet=1&bidForm=CHCT"
-        }
-      ],
-      "primary_tender_code": "IB2600501561",
-      "primary_buyer": "TRƯỜNG PHỔ THÔNG DÂN TỘC NỘI TRÚ BÌNH THUẬN",
-      "primary_tender_title": "Gói thầu số 1: Dự toán mua sắm Quần áo đồng phục và đồ dùng cá nhân năm học 2026-2027 cho học sinh của Trường Phổ thông Dân tộc nội trú",
-      "primary_package_price_vnd": 1001910000,
-      "primary_days_to_close": 9.5,
-      "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=fa852bd4-3f96-4716-84a5-2ddf7a4420a1&notifyId=fa852bd4-3f96-4716-84a5-2ddf7a4420a1&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600501561&planNo=PL2600283621&step=tbmt&isInternet=1&bidForm=CHCT",
-      "recommended_path": "subcontract_or_sourcing",
-      "historical_evidence": {
-        "latest_win_title": "Cung cấp bảo hộ lao động, công cụ dụng cụ, thiết bị phục vụ thi công năm 2026",
-        "latest_evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=fb7369e9-d60e-4443-8a29-fab4de90cd0a&notifyId=fb7369e9-d60e-4443-8a29-fab4de90cd0a&inputResultId=62994a3c-51a9-4913-a4f8-f21773929fa2&bidOpenId=22d8a856-51ab-4edb-96ec-535182fac953&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600360221&planNo=PL2600198899&step=tbmt&isInternet=1&bidForm=DTRR",
-        "observed_wins_same_category": 5,
-        "same_buyer_same_category_awards": 0
-      },
-      "offer_to_validate": "sourcing xưởng/PPE đúng chuẩn",
-      "target_roles": [
-        "Sales dự án",
-        "Sourcing / Production",
-        "Merchandising / Điều phối đơn hàng"
-      ],
-      "outreach_subject_draft": "Đề xuất hỗ trợ phần việc đồng phục / PPE — cần xác minh nhu cầu",
-      "outreach_body_draft": "Chào anh/chị,\n\nTôi đang tìm hiểu khả năng hợp tác với các đơn vị đã có kinh nghiệm triển khai đồng phục / PPE cho khu vực công. Theo KQLCNT công khai, CÔNG TY CỔ PHẦN BẢO HỘ LAO ĐỘNG VIỆT NAM từng được ghi nhận thắng gói “Cung cấp bảo hộ lao động, công cụ dụng cụ, thiết bị phục vụ thi công năm 2026”.\n\nTôi muốn kiểm tra xem đội dự án của anh/chị hiện có nhu cầu thuê ngoài / tìm đối tác cho phần việc: sourcing xưởng/PPE đúng chuẩn. Nếu phù hợp, tôi có thể gửi một phạm vi thử nhỏ và cách tính đơn giá để hai bên đánh giá trước khi cam kết lớn.\n\n[CHỈ GỬI SAU KHI BẠN ĐIỀN BẰNG CHỨNG NĂNG LỰC THẬT CỦA MÌNH Ở ĐÂY]\n\nNếu đây không phải đầu mối phù hợp, nhờ anh/chị chuyển giúp tới người phụ trách BD / dự án / sourcing. Cảm ơn anh/chị.",
-      "send_gates": [
-        "Bạn thực sự có năng lực cung cấp offer đã nêu hoặc có partner thật để thực hiện.",
-        "Có ít nhất một market signal liên quan còn đủ thời gian để kiểm chứng; không dùng tender đã hết hạn làm lý do tạo urgency giả.",
-        "Contact path có nguồn công khai và đúng pháp nhân.",
-        "Nội dung không được nói hoặc ám chỉ rằng counterparty đang tham gia bất kỳ gói hiện tại nào nếu không có bằng chứng.",
-        "Chỉ một outreach cho campaign này; không gửi email riêng cho từng tender signal cùng một counterparty."
-      ],
-      "success_signal": "Counterparty trả lời, chuyển đúng đầu mối, yêu cầu capability/rate card hoặc đồng ý trao đổi phạm vi thử.",
-      "follow_up_rule": "Nếu không phản hồi, tối đa 1 follow-up ngắn sau 48–72 giờ; sau đó chuyển trạng thái Dead/No response thay vì spam.",
-      "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn.",
-      "default_stage": "ready_to_research"
-    },
     {
       "id": "vn0102720141::logistics",
       "campaign_type": "counterparty_category",
@@ -126,7 +32,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600461109&notifyId=IB2600461109&inputResultId=06237204-22ff-4978-8a40-2d76a905029b&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600461109&planNo=PL2600263915&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-05T15:16:57.705208+00:00",
+          "verified_at": "2026-09-05T20:21:57.894667+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -138,7 +44,7 @@
           "buyer": "Trung tâm Huấn luyện và Thi đấu thể thao tỉnh Thái Nguyên",
           "title": "Gói thầu số 02: Thuê xe đưa, đón đoàn cán bộ, huấn luyện viên, vận động viên tham dự tập huấn, thi đấu và khai mạc Đại hội thể dục thể thao toàn quốc lần thứ X, năm 2026",
           "package_price_vnd": 775000000,
-          "days_to_close": 6.7,
+          "days_to_close": 6.5,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=4a9c1cc9-ffe8-44ea-839d-9a94afc07054&notifyId=4a9c1cc9-ffe8-44ea-839d-9a94afc07054&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600505379&planNo=PL2600284967&step=tbmt&isInternet=1&bidForm=CHCT"
         }
@@ -147,7 +53,7 @@
       "primary_buyer": "Trung tâm Huấn luyện và Thi đấu thể thao tỉnh Thái Nguyên",
       "primary_tender_title": "Gói thầu số 02: Thuê xe đưa, đón đoàn cán bộ, huấn luyện viên, vận động viên tham dự tập huấn, thi đấu và khai mạc Đại hội thể dục thể thao toàn quốc lần thứ X, năm 2026",
       "primary_package_price_vnd": 775000000,
-      "primary_days_to_close": 6.7,
+      "primary_days_to_close": 6.5,
       "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=4a9c1cc9-ffe8-44ea-839d-9a94afc07054&notifyId=4a9c1cc9-ffe8-44ea-839d-9a94afc07054&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600505379&planNo=PL2600284967&step=tbmt&isInternet=1&bidForm=CHCT",
       "recommended_path": "subcontract_or_sourcing",
       "historical_evidence": {
@@ -193,7 +99,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600304737&notifyId=IB2600304737&inputResultId=354f7f6e-8371-403a-b0cf-8e514325da56&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600304737&planNo=PL2600175457&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-05T15:16:57.705208+00:00",
+          "verified_at": "2026-09-05T20:21:57.894667+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -205,7 +111,7 @@
           "buyer": "NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN CÔNG THƯƠNG VIỆT NAM",
           "title": "Bảo trì hạ tầng Trung tâm dữ liệu Hòa Lạc 3 năm",
           "package_price_vnd": 6811580000,
-          "days_to_close": 12.5,
+          "days_to_close": 12.3,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=92405493-baee-41d3-b2f3-eef62196e1ab&notifyId=92405493-baee-41d3-b2f3-eef62196e1ab&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600378259&planNo=PL2600207365&step=tbmt&isInternet=1&bidForm=DTRR"
         },
@@ -214,7 +120,7 @@
           "buyer": "CÔNG TY TNHH MỘT THÀNH VIÊN ĐƯỜNG SẮT HÀ NỘI",
           "title": "Thuê dịch vụ vệ sinh tại 08 nhà ga và khu Depot Nhổn tuyến ĐSĐT số 3, Nhổn - ga Hà Nội",
           "package_price_vnd": 22480205417,
-          "days_to_close": 9.5,
+          "days_to_close": 9.3,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=02586b8f-670e-4ea5-b7b1-722ce443c10d&notifyId=02586b8f-670e-4ea5-b7b1-722ce443c10d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600491603&planNo=PL2600164825&step=tbmt&isInternet=1&bidForm=DTRR"
         },
@@ -223,7 +129,7 @@
           "buyer": "TRƯỜNG CAO ĐẲNG CÔNG NGHỆ THỦ ĐỨC",
           "title": "Cung cấp dịch vụ vệ sinh thuộc Trường Cao đẳng Công nghệ Thủ Đức",
           "package_price_vnd": 2449440000,
-          "days_to_close": 9.4,
+          "days_to_close": 9.2,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=8ecb8116-9dcd-4ed2-a4a2-842397d3eecc&notifyId=8ecb8116-9dcd-4ed2-a4a2-842397d3eecc&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600509758&planNo=PL2600283343&step=tbmt&isInternet=1&bidForm=CHCT"
         },
@@ -232,7 +138,7 @@
           "buyer": "Trung tâm Cung ứng dịch vụ phường Hoàng Quế",
           "title": "Gói thầu số 04: Thi công xây dựng + vệ sinh môi trường đô thị",
           "package_price_vnd": 8400824601,
-          "days_to_close": 8.5,
+          "days_to_close": 8.3,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=4ffaf56a-60a0-46d5-8380-e008e3b384a9&notifyId=4ffaf56a-60a0-46d5-8380-e008e3b384a9&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600509185&planNo=PL2600266731&step=tbmt&isInternet=1&bidForm=DTRR"
         },
@@ -241,7 +147,7 @@
           "buyer": "BỆNH VIỆN UNG BƯỚU KIÊN GIANG",
           "title": "Mua sắm dịch vụ bảo trì hệ thống máy Xạ trị gia tốc Clinac IX và CT mô phỏng tại Bệnh viện Ung bướu Kiên Giang năm 2026 (12 tháng)",
           "package_price_vnd": 3905000000,
-          "days_to_close": 8.5,
+          "days_to_close": 8.3,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=91a22007-c9de-4057-b574-9a97927c1261&notifyId=91a22007-c9de-4057-b574-9a97927c1261&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600442969&planNo=PL2600223645&step=tbmt&isInternet=1&bidForm=DTRR"
         }
@@ -250,7 +156,7 @@
       "primary_buyer": "NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN CÔNG THƯƠNG VIỆT NAM",
       "primary_tender_title": "Bảo trì hạ tầng Trung tâm dữ liệu Hòa Lạc 3 năm",
       "primary_package_price_vnd": 6811580000,
-      "primary_days_to_close": 12.5,
+      "primary_days_to_close": 12.3,
       "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=92405493-baee-41d3-b2f3-eef62196e1ab&notifyId=92405493-baee-41d3-b2f3-eef62196e1ab&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600378259&planNo=PL2600207365&step=tbmt&isInternet=1&bidForm=DTRR",
       "recommended_path": "subcontract_or_sourcing",
       "historical_evidence": {
