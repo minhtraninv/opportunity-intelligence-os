@@ -1,7 +1,47 @@
 {
   "version": 2,
-  "updated_at": "2026-09-05T15:13:30.275094+00:00",
+  "updated_at": "2026-09-05T20:20:07.793729+00:00",
   "events": [
+    {
+      "id": "d2fb877021ec0a0a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 6/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-05T20:20:07.793729+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "2235e3a06db92927",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 6/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-05T20:20:07.793729+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "462a33623a439702",
       "source_id": "gov-policy",
@@ -19,6 +59,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-09-05T15:13:30.275094+00:00",
+      "collected_at": "2026-09-05T15:13:30.275094+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -5612,15 +5654,31 @@
       },
       "total_events": 210,
       "source_errors": 1
+    },
+    {
+      "captured_at": "2026-09-05T20:20:07.793729+00:00",
+      "new_items": 2,
+      "new_candidates": 2,
+      "new_by_category": {
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2
+      },
+      "new_by_source": {
+        "business-registry": 2
+      },
+      "total_events": 212,
+      "source_errors": 0
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-09-05T15:15:56.377976+00:00",
+    "updated_at": "2026-09-05T20:20:56.164449+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
+      "official_headline_discovery": 56,
       "reference_only": 151,
-      "official_headline_discovery": 54,
       "primary_verified": 5
     }
   }

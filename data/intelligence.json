@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-05T15:13:30.275094+00:00",
+    "generated_at": "2026-09-05T20:20:07.793729+00:00",
     "status": "warming_up",
     "history_days": 7,
     "required_history_days": 14,
@@ -11,12 +11,12 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 19,
+      "recent_7d": 21,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 68,
+      "confidence": 70,
       "source_diversity_7d": 3,
       "explanation": "Đang học baseline: mới có 7/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "d2fb877021ec0a0a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 6/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-05T20:20:07.793729+00:00"
+    },
+    {
+      "id": "2235e3a06db92927",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 6/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-05T20:20:07.793729+00:00"
+    },
+    {
       "id": "49bc99efceca4009",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -242,7 +280,7 @@
   ],
   "event_types_7d": {
     "policy_regulation": 27,
-    "business_formation": 16,
+    "business_formation": 18,
     "market_data": 5,
     "capital_flow": 2,
     "hiring": 2,
@@ -253,14 +291,13 @@
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 210,
-    "candidate_events": 54,
+    "historical_events": 212,
+    "candidate_events": 56,
     "reference_events": 151,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 0
   },
   "warnings": [
-    "Change Detector đang học baseline (7/14 ngày). Chỉ candidate events mới được tính; chưa coi chênh lệch hiện tại là trend.",
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Change Detector đang học baseline (7/14 ngày). Chỉ candidate events mới được tính; chưa coi chênh lệch hiện tại là trend."
   ]
 }

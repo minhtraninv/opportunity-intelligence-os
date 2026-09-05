@@ -2,21 +2,21 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-05T15:16:00.160069+00:00",
-    "local_date": "2026-09-05",
+    "generated_at": "2026-09-05T20:20:59.596248+00:00",
+    "local_date": "2026-09-06",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-05T15:16:00.261482+00:00"
+    "trust_hardened_at": "2026-09-05T20:20:59.702718+00:00"
   },
   "reports": {
     "daily": {
       "kind": "daily",
-      "period_key": "2026-09-05",
+      "period_key": "2026-09-06",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-05T15:16:00.159265+00:00",
-      "local_generated_at": "2026-09-05T22:16:00.155254+07:00",
+      "generated_at": "2026-09-05T20:20:59.595036+00:00",
+      "local_generated_at": "2026-09-06T03:20:59.590843+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 7,
@@ -254,7 +254,7 @@
         "coverage_change": {
           "strong": 0.0,
           "productive_sources": 0.0,
-          "source_errors": 1.0
+          "source_errors": -1.0
         }
       },
       "snapshot": {
@@ -397,7 +397,7 @@
           "broken": 0,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -407,10 +407,10 @@
     "weekly": {
       "kind": "weekly",
       "period_key": "2026-W36",
-      "period_state": "week_to_date",
+      "period_state": "final",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-05T15:16:00.159597+00:00",
-      "local_generated_at": "2026-09-05T22:16:00.155254+07:00",
+      "generated_at": "2026-09-05T20:20:59.595513+00:00",
+      "local_generated_at": "2026-09-06T03:20:59.590843+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 7,
@@ -787,7 +787,7 @@
           "broken": 0,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -799,8 +799,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-05T15:16:00.159880+00:00",
-      "local_generated_at": "2026-09-05T22:16:00.155254+07:00",
+      "generated_at": "2026-09-05T20:20:59.595914+00:00",
+      "local_generated_at": "2026-09-06T03:20:59.590843+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 7,
@@ -1027,7 +1027,7 @@
           "broken": 0,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 0
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -1035,6 +1035,6 @@
       "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 7. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
     }
   },
-  "history_count": 9,
+  "history_count": 10,
   "reporting_rule": "Daily = material delta; Weekly = main intelligence review; Monthly = regime/thesis audit. Insufficient history must remain explicit."
 }
