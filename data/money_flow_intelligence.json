@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-09-06T04:38:52.355564+00:00",
+    "generated_at": "2026-09-06T10:56:56.012666+00:00",
     "mode": "contextual_theme_chain_with_observed_supply_evidence",
     "principle": "discovery_or_stale_verified_context_can_prioritize_research_but_cannot_create_directional_convergence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-06T04:38:52.392930+00:00",
+    "trust_hardened_at": "2026-09-06T10:56:56.058788+00:00",
     "snapshot_freshness": {
       "macro": "fresh",
       "regional": "fresh",
@@ -14,9 +14,9 @@
   },
   "thesis": "Theme đáng điều tra nhất có fresh verified convergence hiện tại: Gia tốc thương mại & logistics (converging; 4 họ bằng chứng verified, 2 nhóm nguồn verified). Đây vẫn là research priority, không phải khuyến nghị hành động.",
   "coverage": {
-    "total_evidence_inputs": 66,
+    "total_evidence_inputs": 67,
     "macro_observations": 7,
-    "contextual_history_evidence": 49,
+    "contextual_history_evidence": 50,
     "contextual_procurement_support": 25,
     "themes": 7,
     "themes_converging": 1,
@@ -277,9 +277,9 @@
     {
       "id": "manufacturing_expansion",
       "label": "Mở rộng năng lực sản xuất",
-      "score": 73,
+      "score": 76,
       "status": "early",
-      "evidence_count": 8,
+      "evidence_count": 9,
       "directional_evidence_count": 4,
       "independent_families": [
         "capital",
@@ -437,6 +437,26 @@
           "snapshot_freshness": "fresh"
         },
         {
+          "id": "c65f50d195cafdeb",
+          "family": "policy",
+          "title": "Chính sách ưu đãi, hỗ trợ cho công nghiệp chế tạo phục vụ ngành điện lực",
+          "publisher": "Báo Chính phủ",
+          "publisher_group": "Chính phủ",
+          "source_url": "https://baochinhphu.vn/chinh-sach-uu-dai-ho-tro-cho-cong-nghiep-che-tao-phuc-vu-nganh-dien-luc-102260906113149674.htm",
+          "quality": "candidate",
+          "category_tags": [
+            "energy",
+            "fdi_industrial"
+          ],
+          "theme_tags": [
+            "energy_grid",
+            "manufacturing_expansion"
+          ],
+          "geography": [],
+          "observed_at": "2026-09-06T10:55:38.127372+00:00",
+          "directional": true
+        },
+        {
           "id": "e4e48a73983e00c8",
           "family": "market_data",
           "title": "Báo cáo xu hướng sản xuất kinh doanh ngành công nghiệp chế biến, chế tạo và xây dựng quý II và dự báo quý III năm 2026",
@@ -513,11 +533,13 @@
         "capital",
         "labor",
         "market_data",
+        "policy",
         "procurement",
         "production",
         "trade"
       ],
       "all_observed_publishers": [
+        "Chính phủ",
         "Cục Thống kê",
         "MSC"
       ],
@@ -531,13 +553,15 @@
         "Cục Thống kê"
       ],
       "discovery_evidence_families": [
-        "market_data"
+        "market_data",
+        "policy"
       ],
       "discovery_evidence_publishers": [
+        "Chính phủ",
         "Cục Thống kê"
       ],
       "verified_evidence_count": 4,
-      "discovery_evidence_count": 2,
+      "discovery_evidence_count": 3,
       "procurement_support_count": 1,
       "snapshot_freshness": {
         "macro": "fresh"
@@ -1487,9 +1511,9 @@
     {
       "id": "energy_grid",
       "label": "Mở rộng điện & lưới điện",
-      "score": 17,
+      "score": 18,
       "status": "insufficient",
-      "evidence_count": 4,
+      "evidence_count": 5,
       "directional_evidence_count": 0,
       "independent_families": [],
       "independent_publishers": [],
@@ -1508,6 +1532,26 @@
         "dịch vụ tiết kiệm năng lượng chỉ khi có năng lực chuyên môn"
       ],
       "evidence": [
+        {
+          "id": "c65f50d195cafdeb",
+          "family": "policy",
+          "title": "Chính sách ưu đãi, hỗ trợ cho công nghiệp chế tạo phục vụ ngành điện lực",
+          "publisher": "Báo Chính phủ",
+          "publisher_group": "Chính phủ",
+          "source_url": "https://baochinhphu.vn/chinh-sach-uu-dai-ho-tro-cho-cong-nghiep-che-tao-phuc-vu-nganh-dien-luc-102260906113149674.htm",
+          "quality": "candidate",
+          "category_tags": [
+            "energy",
+            "fdi_industrial"
+          ],
+          "theme_tags": [
+            "energy_grid",
+            "manufacturing_expansion"
+          ],
+          "geography": [],
+          "observed_at": "2026-09-06T10:55:38.127372+00:00",
+          "directional": true
+        },
         {
           "id": "094ad2bc10e77f2c",
           "family": "policy",
@@ -1606,6 +1650,7 @@
         "policy"
       ],
       "all_observed_publishers": [
+        "Chính phủ",
         "EVN/NSMO"
       ],
       "verified_evidence_families": [],
@@ -1616,10 +1661,11 @@
         "policy"
       ],
       "discovery_evidence_publishers": [
+        "Chính phủ",
         "EVN/NSMO"
       ],
       "verified_evidence_count": 0,
-      "discovery_evidence_count": 4,
+      "discovery_evidence_count": 5,
       "procurement_support_count": 0,
       "snapshot_freshness": {
         "macro": "fresh"
