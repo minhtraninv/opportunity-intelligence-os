@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T15:28:01.325360+00:00",
+    "generated_at": "2026-09-06T20:24:00.574541+00:00",
     "status": "warming_up",
     "history_days": 8,
     "required_history_days": 14,
@@ -11,13 +11,13 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 15,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
+      "recent_7d": 14,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 65,
-      "source_diversity_7d": 2,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
@@ -28,17 +28,6 @@
       "delta_pct": null,
       "trend": "warming_up",
       "confidence": 49,
-      "source_diversity_7d": 3,
-      "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 5,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 41,
       "source_diversity_7d": 3,
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -76,13 +65,13 @@
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
-      "category": "logistics",
-      "recent_7d": 3,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
+      "category": "fdi_industrial",
+      "recent_7d": 4,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 31,
+      "confidence": 35,
       "source_diversity_7d": 2,
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -98,24 +87,13 @@
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
-      "category": "monetary",
-      "recent_7d": 5,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "warming_up",
-      "confidence": 28,
-      "source_diversity_7d": 1,
-      "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
-    },
-    {
-      "category": "policy",
+      "category": "logistics",
       "recent_7d": 1,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "warming_up",
-      "confidence": 28,
+      "confidence": 24,
       "source_diversity_7d": 1,
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
@@ -128,6 +106,28 @@
       "trend": "warming_up",
       "confidence": 22,
       "source_diversity_7d": 1,
+      "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 0,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 21,
+      "source_diversity_7d": 0,
+      "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 0,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "warming_up",
+      "confidence": 21,
+      "source_diversity_7d": 0,
       "explanation": "Đang học baseline: mới có 8/14 ngày candidate events. Chưa kết luận xu hướng."
     },
     {
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "ebc2938eb560e1c0",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 7/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-06T20:24:00.574541+00:00"
+    },
+    {
+      "id": "26c2c68757a474d7",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 7/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-06T20:24:00.574541+00:00"
+    },
+    {
       "id": "c65f50d195cafdeb",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -174,55 +212,13 @@
       "first_seen_at": "2026-09-06T10:55:38.127372+00:00",
       "collected_at": "2026-09-06T10:55:38.127372+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "d2fb877021ec0a0a",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 6/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-05T20:20:07.793729+00:00",
-      "collected_at": "2026-09-05T20:20:07.793729+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "2235e3a06db92927",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 6/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-05T20:20:07.793729+00:00",
-      "collected_at": "2026-09-05T20:20:07.793729+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 24,
+    "policy_regulation": 17,
     "business_formation": 14,
-    "market_data": 4,
     "capital_flow": 2,
+    "market_data": 2,
     "hiring": 1,
     "infrastructure_delivery": 1
   },
@@ -231,8 +227,8 @@
     "Cà Mau": 1
   },
   "coverage": {
-    "historical_events": 221,
-    "candidate_events": 57,
+    "historical_events": 223,
+    "candidate_events": 59,
     "reference_events": 159,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
