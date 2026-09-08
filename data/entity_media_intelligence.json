@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-08T04:35:52.943127+00:00",
+    "generated_at": "2026-09-08T11:18:56.512620+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,10 +9,10 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 123,
-    "entities_seen_recently": 79,
-    "auto_discovered_entities": 70,
-    "history_events": 123
+    "recent_events": 131,
+    "entities_seen_recently": 82,
+    "auto_discovered_entities": 73,
+    "history_events": 131
   },
   "source_health": [
     {
@@ -26,7 +26,7 @@
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 4,
       "error": null
     },
     {
@@ -40,18 +40,22 @@
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 11,
       "error": null
     }
   ],
   "entity_counts": [
     {
       "entity_id": "auto-tây-ninh-02d05047",
-      "recent_events": 7
+      "recent_events": 9
     },
     {
       "entity_id": "vingroup_ecosystem",
       "recent_events": 6
+    },
+    {
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "recent_events": 5
     },
     {
       "entity_id": "auto-cà-mau-5be786d4",
@@ -62,8 +66,12 @@
       "recent_events": 5
     },
     {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "entity_id": "samsung_vietnam",
       "recent_events": 4
+    },
+    {
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "recent_events": 3
     },
     {
       "entity_id": "auto-pnj-4d3f27cb",
@@ -74,8 +82,12 @@
       "recent_events": 3
     },
     {
-      "entity_id": "samsung_vietnam",
-      "recent_events": 3
+      "entity_id": "thaco_group",
+      "recent_events": 2
+    },
+    {
+      "entity_id": "auto-cần-thơ-4ffa3dff",
+      "recent_events": 2
     },
     {
       "entity_id": "auto-lào-cai-a70f5b43",
@@ -83,14 +95,6 @@
     },
     {
       "entity_id": "auto-hải-phòng-48a73a83",
-      "recent_events": 2
-    },
-    {
-      "entity_id": "thaco_group",
-      "recent_events": 2
-    },
-    {
-      "entity_id": "auto-cần-thơ-4ffa3dff",
       "recent_events": 2
     },
     {
@@ -134,12 +138,20 @@
       "recent_events": 2
     },
     {
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_id": "auto-saigon-co-op-3c00f6e6",
       "recent_events": 2
     },
     {
-      "entity_id": "auto-saigon-co-op-3c00f6e6",
-      "recent_events": 2
+      "entity_id": "auto-đồng-nai-5489d284",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-tỉnh-cà-mau-50dc9d22",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-phân-bón-cà-mau-d25b0a21",
+      "recent_events": 1
     },
     {
       "entity_id": "auto-capitaland-development-0b48a2e9",
@@ -370,13 +382,33 @@
       "aliases": [
         "Tây Ninh"
       ],
-      "recent_events": 7,
+      "recent_events": 9,
       "families": [
         "operating",
         "project_execution"
       ],
       "publishers": [
         "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-bắc-ninh-a1c0d701",
+      "label": "Bắc Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Bắc Ninh"
+      ],
+      "recent_events": 5,
+      "families": [
+        "capital",
+        "operating",
+        "project_execution"
+      ],
+      "publishers": [
         "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
@@ -403,19 +435,19 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-bắc-ninh-a1c0d701",
-      "label": "Bắc Ninh",
+      "id": "auto-khánh-hòa-b1f03cd2",
+      "label": "Khánh Hòa",
       "entity_type": "location",
       "aliases": [
-        "Bắc Ninh"
+        "Khánh Hòa"
       ],
-      "recent_events": 4,
+      "recent_events": 3,
       "families": [
-        "capital",
-        "operating",
-        "project_execution"
+        "project_execution",
+        "strategy"
       ],
       "publishers": [
+        "Thanh Niên Kinh tế",
         "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
@@ -521,26 +553,6 @@
       "suppression_reason": null
     },
     {
-      "id": "auto-khánh-hòa-b1f03cd2",
-      "label": "Khánh Hòa",
-      "entity_type": "location",
-      "aliases": [
-        "Khánh Hòa"
-      ],
-      "recent_events": 2,
-      "families": [
-        "project_execution",
-        "strategy"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "auto-saigon-co-op-3c00f6e6",
       "label": "Saigon Co.op",
       "entity_type": "organization_candidate",
@@ -559,6 +571,25 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "auto-cần-thơ-4ffa3dff",
+      "label": "Cần Thơ",
+      "entity_type": "location",
+      "aliases": [
+        "Cần Thơ"
+      ],
+      "recent_events": 2,
+      "families": [
+        "capital",
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "auto-lào-cai-a70f5b43",
@@ -593,25 +624,6 @@
       ],
       "publishers": [
         "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-cần-thơ-4ffa3dff",
-      "label": "Cần Thơ",
-      "entity_type": "location",
-      "aliases": [
-        "Cần Thơ"
-      ],
-      "recent_events": 2,
-      "families": [
-        "capital",
-        "project_execution"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": false,
@@ -727,6 +739,60 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-đồng-nai-5489d284",
+      "label": "Đồng Nai",
+      "entity_type": "location",
+      "aliases": [
+        "Đồng Nai"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-tỉnh-cà-mau-50dc9d22",
+      "label": "Tỉnh Cà Mau",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Tỉnh Cà Mau"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-phân-bón-cà-mau-d25b0a21",
+      "label": "Phân Bón Cà Mau",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Phân Bón Cà Mau"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
     },
     {
       "id": "auto-capitaland-development-0b48a2e9",
@@ -1649,6 +1715,137 @@
   ],
   "events": [
     {
+      "id": "cac08bbc4c85180e",
+      "event_signature": "9c95db3cd8678fdf",
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_label": "Khánh Hòa",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Khánh Hòa quyết liệt tháo gỡ vướng mắc, đẩy nhanh dự án điện hạt nhân Ninh Thuận",
+      "summary": "Khánh Hòa đang quyết liệt tháo gỡ các vướng mắc về xác minh, quy chủ nguồn gốc đất, đẩy nhanh giải phóng mặt bằng, phấn đấu hoàn thành 100% các dự án thành phần trước ngày 15/10. Tháo gỡ dứt điểm vướng mắc hiện hữu dự án Nhà máy điện hạt nhân Ninh Thuận Gấp rút thi công gói thầu dự án thành phần 1, 2 Nhà máy điện hạt nhân Ninh Thuận Quốc hội họp, thảo luận v",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/khanh-hoa-quyet-liet-thao-go-vuong-mac-day-nhanh-du-an-dien-hat-nhan-ninh-thuan-post1134952.vnp",
+      "published_at": "2026-09-08T17:43:36+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "40402e515a24f53f",
+      "event_signature": "985553d16f7439a8",
+      "entity_id": "auto-đồng-nai-5489d284",
+      "entity_label": "Đồng Nai",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Đồng Nai khơi thông nút thắt hạ tầng từ đồng thuận lòng dân",
+      "summary": "Nhờ dân vận theo phương châm “dân biết, dân bàn, dân làm, dân kiểm tra, dân thụ hưởng”, phường Đồng Phú tạo đồng thuận cao, khơi dậy tinh thần tự nguyện hiến đất làm đường của hàng chục hộ dân. Đồng Nai: Người dân Nha Bích hiến đất trị giá 16 tỷ đồng mở tuyến đường động lực Đồng Nai: Nhiều hộ dân tự nguyện hiến hàng ha đất để mở đường giao thông Gia Lai: Ngư",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/dong-nai-khoi-thong-nut-that-ha-tang-tu-dong-thuan-long-dan-post1134951.vnp",
+      "published_at": "2026-09-08T17:06:13+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "40630049f405dbc0",
+      "event_signature": "784b0585494a3291",
+      "entity_id": "auto-tỉnh-cà-mau-50dc9d22",
+      "entity_label": "Tỉnh Cà Mau",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Tỉnh Cà Mau thu hút dòng vốn đầu tư vào khu công nghiệp, khu kinh tế",
+      "summary": "Lãnh đạo tỉnh Cà Mau đang tập trung hoàn thiện cơ sở hạ tầng và đẩy mạnh cải cách thủ tục hành chính nhằm thu hút các nhà đầu tư chiến lược vào các khu công nghiệp, khu kinh tế trên địa bàn. Thành phố Hồ Chí Minh tiến gần mục tiêu thu hút 11 tỷ USD vốn FDI trong năm 2026 Hoạt động đầu tư của 8 tháng ghi nhận đà tăng trưởng cả vốn ngân sách và FDI Vốn FDI tăn",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/tinh-ca-mau-thu-hut-dong-von-dau-tu-vao-khu-cong-nghiep-khu-kinh-te-post1134949.vnp",
+      "published_at": "2026-09-08T16:49:21+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "86b904445a49a551",
+      "event_signature": "79221200961869db",
+      "entity_id": "auto-tây-ninh-02d05047",
+      "entity_label": "Tây Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Tây Ninh tăng tốc 4 tháng cuối năm, hướng tới tăng trưởng 10-10,5%",
+      "summary": "Với những kết quả đạt được trong 8 tháng, Tây Ninh đang tập trung nguồn lực, tháo gỡ điểm nghẽn và nâng cao hiệu quả điều hành, hướng tới mục tiêu tăng trưởng 10-10,5%. Tây Ninh kết nối đa dạng trải nghiệm để giữ chân du khách dài ngày Tây Ninh mở không gian phát triển logistics, kết nối hàng hóa với ASEAN Tây Ninh khởi công, động thổ 13 dự án với tổng vốn k",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/tay-ninh-tang-toc-4-thang-cuoi-nam-huong-toi-tang-truong-10-105-post1134897.vnp",
+      "published_at": "2026-09-08T15:02:57+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "5c270384d5650d09",
+      "event_signature": "82ab294e0e51d3c3",
+      "entity_id": "samsung_vietnam",
+      "entity_label": "Hệ sinh thái Samsung tại Việt Nam",
+      "entity_type": "foreign_business_group",
+      "entity_origin": "curated_registry",
+      "family": "operating",
+      "title": "Samsung SDS hợp tác với OpenAI và Anthropic để thúc đẩy chuyển đổi AI",
+      "summary": "Samsung SDS công bố kế hoạch mở rộng hợp tác với các tập đoàn OpenAI và Anthropic nhằm hiện thực hóa tham vọng \"chuyển đổi AI\" (được hãng gọi tắt là AX) trên toàn bộ hệ thống doanh nghiệp. OpenAI ra mắt phiên bản ChatGPT dành riêng cho thanh thiếu niên Doanh thu AI của Microsoft phụ thuộc phần lớn vào đối tác OpenAI CEO OpenAI kêu gọi \"hãm phanh\" ngành công ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/samsung-sds-hop-tac-voi-openai-va-anthropic-de-thuc-day-chuyen-doi-ai-post1134885.vnp",
+      "published_at": "2026-09-08T14:05:10+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "f4b026719fd44234",
+      "event_signature": "a4e0879ca7c69bae",
+      "entity_id": "auto-tây-ninh-02d05047",
+      "entity_label": "Tây Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Tây Ninh khởi công, động thổ 13 dự án với tổng vốn khoảng 4,5 tỷ USD",
+      "summary": "Các dự án trải rộng từ giao thông, công nghiệp, nông nghiệp, chế biến thực phẩm, năng lượng, giáo dục, xử lý nước và nhà ở xã hội, tạo thêm động lực cho hạ tầng và các ngành kinh tế quan trọng. Tây Ninh hỗ trợ đến 500 triệu đồng cho doanh nghiệp công nghiệp hỗ trợ Tây Ninh mở không gian phát triển logistics, kết nối hàng hóa với ASEAN Tây Ninh mở rộng dư địa",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/tay-ninh-khoi-cong-dong-tho-13-du-an-voi-tong-von-khoang-45-ty-usd-post1134886.vnp",
+      "published_at": "2026-09-08T14:03:59+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "c8a87b617937a17c",
+      "event_signature": "87ea26100226d312",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "entity_label": "Bắc Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Bắc Ninh thành lập Cụm công nghiệp Quế Tân có quy mô khoảng 45 ha",
+      "summary": "Cụm công nghiệp có tổng mức đầu tư 577,577 tỷ đồng sẽ thu hút các ngành công nghiệp chế biến, chế tạo như sản xuất trang phục; chế biến gỗ và sản xuất sản phẩm từ gỗ, tre, nứa; sản xuất giấy... Bắc Ninh thúc đẩy chuyển đổi số, hướng tới nền nông nghiệp thông minh Bắc Ninh dẫn đầu cả nước về giải ngân vốn đầu tư công Bắc Ninh không để gián đoạn, khoảng trống ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/bac-ninh-thanh-lap-cum-cong-nghiep-que-tan-co-quy-mo-khoang-45-ha-post1134883.vnp",
+      "published_at": "2026-09-08T13:54:49+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "f2dd7aa9beafef07",
       "event_signature": "305d8b3e2af1f0a8",
       "entity_id": "auto-bắc-ninh-a1c0d701",
@@ -1662,10 +1859,82 @@
       "source_url": "https://www.vietnamplus.vn/bac-ninh-tiep-tuc-duy-tri-da-tang-truong-tich-cuc-trong-8-thang-cua-nam-2026-post1134858.vnp",
       "published_at": "2026-09-08T11:32:38+00:00",
       "first_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "22b579369586051a",
+      "event_signature": "3f8eb62e48355380",
+      "entity_id": "thaco_group",
+      "entity_label": "THACO",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Một doanh nghiệp đề xuất dự án 1.200ha trồng sâm Ngọc Linh trên núi cao ở Đà Nẵng",
+      "summary": "Ngày 7-9, Sở Tài chính TP Đà Nẵng cho biết vừa tiếp nhận hồ sơ đề nghị chấp thuận chủ trương đầu tư dự án trồng sâm Ngọc Linh và dược liệu tập trung quy mô lớn - ứng dụng công nghệ cao do Công ty cổ phần Nông nghiệp Trường Hải đề xuất.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/mot-doanh-nghiep-de-xuat-du-an-1200ha-trong-sam-ngoc-linh-tren-nui-cao-o-da-nang-100260907155512431.htm",
+      "published_at": "2026-09-08T11:18:56.512620+00:00",
+      "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "3b0a8c50ff009760",
+      "event_signature": "109615cbac9b6eed",
+      "entity_id": "auto-cần-thơ-4ffa3dff",
+      "entity_label": "Cần Thơ",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Cần Thơ trình đề án lập quỹ đầu tư mạo hiểm 500 tỉ đồng, rót vốn vào AI, bán dẫn",
+      "summary": "Với vốn ban đầu 500 tỉ đồng, Cần Thơ muốn thúc đẩy đầu tư vào AI, bán dẫn, vi mạch và các công nghệ mới.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/can-tho-trinh-de-an-lap-quy-dau-tu-mao-hiem-500-ti-dong-rot-von-vao-ai-ban-dan-100260907145302231.htm",
+      "published_at": "2026-09-08T11:18:56.512620+00:00",
+      "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "f16e089e9d2532d6",
+      "event_signature": "0081c3344b7b7783",
+      "entity_id": "vingroup_ecosystem",
+      "entity_label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "strategy",
+      "title": "VinFast Auto chính thức rút hết vốn khỏi công ty sản xuất tại Việt Nam",
+      "summary": "Sau quá trình tái cấu trúc, VinFast Auto Ltd. không còn nắm vốn tại Công ty CP sản xuất và kinh doanh VinFast (VFTP) - pháp nhân phụ trách hoạt động sản xuất ô tô tại Việt Nam.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vinfast-auto-chinh-thuc-rut-het-von-khoi-cong-ty-san-xuat-tai-viet-nam-100260907190316286.htm",
+      "published_at": "2026-09-08T11:18:56.512620+00:00",
+      "first_seen_at": "2026-09-07T21:31:44.128195+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "c2fd3aa19f8e3eb9",
+      "event_signature": "eb96b80a300c8e77",
+      "entity_id": "auto-phân-bón-cà-mau-d25b0a21",
+      "entity_label": "Phân Bón Cà Mau",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Phân Bón Cà Mau dành gần 2 tỉ đồng tiếp sức học sinh, sinh viên",
+      "summary": "Năm học 2026 - 2027, học bổng “Hạt Ngọc Mùa Vàng” được Tổng công ty Phân bón Dầu khí Cà Mau (PVCFC - Phân bón Cà Mau) tiếp tục triển khai với tổng kinh phí gần 2 tỉ đồng.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/phan-bon-ca-mau-danh-gan-2-ti-dong-tiep-suc-hoc-sinh-sinh-vien-100260908153142831.htm",
+      "published_at": "2026-09-08T11:18:56.512620+00:00",
+      "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
     },
     {
       "id": "68eb02fdc90be394",
@@ -1681,7 +1950,7 @@
       "source_url": "https://www.vietnamplus.vn/capitaland-development-chao-don-nhung-cu-dan-dau-tien-tai-lumi-hanoi-post1134836.vnp",
       "published_at": "2026-09-08T10:25:30+00:00",
       "first_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1700,7 +1969,7 @@
       "source_url": "https://www.vietnamplus.vn/lao-cai-dat-muc-tieu-hoan-thanh-co-so-du-lieu-dat-dai-truoc-ngay-20122026-post1134838.vnp",
       "published_at": "2026-09-08T10:18:08+00:00",
       "first_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -1719,7 +1988,7 @@
       "source_url": "https://www.vietnamplus.vn/hai-phong-tu-thanh-pho-cang-den-trung-tam-nguon-luc-cua-quoc-gia-bien-manh-post1131202.vnp",
       "published_at": "2026-09-08T08:02:14+00:00",
       "first_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -1763,42 +2032,6 @@
       "suppression_reason": null
     },
     {
-      "id": "22b579369586051a",
-      "event_signature": "3f8eb62e48355380",
-      "entity_id": "thaco_group",
-      "entity_label": "THACO",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Một doanh nghiệp đề xuất dự án 1.200ha trồng sâm Ngọc Linh trên núi cao ở Đà Nẵng",
-      "summary": "Ngày 7-9, Sở Tài chính TP Đà Nẵng cho biết vừa tiếp nhận hồ sơ đề nghị chấp thuận chủ trương đầu tư dự án trồng sâm Ngọc Linh và dược liệu tập trung quy mô lớn - ứng dụng công nghệ cao do Công ty cổ phần Nông nghiệp Trường Hải đề xuất.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/mot-doanh-nghiep-de-xuat-du-an-1200ha-trong-sam-ngoc-linh-tren-nui-cao-o-da-nang-100260907155512431.htm",
-      "published_at": "2026-09-08T04:35:52.943127+00:00",
-      "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "3b0a8c50ff009760",
-      "event_signature": "109615cbac9b6eed",
-      "entity_id": "auto-cần-thơ-4ffa3dff",
-      "entity_label": "Cần Thơ",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "capital",
-      "title": "Cần Thơ trình đề án lập quỹ đầu tư mạo hiểm 500 tỉ đồng, rót vốn vào AI, bán dẫn",
-      "summary": "Với vốn ban đầu 500 tỉ đồng, Cần Thơ muốn thúc đẩy đầu tư vào AI, bán dẫn, vi mạch và các công nghệ mới.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/can-tho-trinh-de-an-lap-quy-dau-tu-mao-hiem-500-ti-dong-rot-von-vao-ai-ban-dan-100260907145302231.htm",
-      "published_at": "2026-09-08T04:35:52.943127+00:00",
-      "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "5f340efafcec2862",
       "event_signature": "d0d84ae0b98d70a8",
       "entity_id": "auto-cần-thơ-4ffa3dff",
@@ -1816,23 +2049,6 @@
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "f16e089e9d2532d6",
-      "event_signature": "0081c3344b7b7783",
-      "entity_id": "vingroup_ecosystem",
-      "entity_label": "Hệ sinh thái Vingroup",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "strategy",
-      "title": "VinFast Auto chính thức rút hết vốn khỏi công ty sản xuất tại Việt Nam",
-      "summary": "Sau quá trình tái cấu trúc, VinFast Auto Ltd. không còn nắm vốn tại Công ty CP sản xuất và kinh doanh VinFast (VFTP) - pháp nhân phụ trách hoạt động sản xuất ô tô tại Việt Nam.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/vinfast-auto-chinh-thuc-rut-het-von-khoi-cong-ty-san-xuat-tai-viet-nam-100260907190316286.htm",
-      "published_at": "2026-09-08T04:35:52.943127+00:00",
-      "first_seen_at": "2026-09-07T21:31:44.128195+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
-      "evidence_grade": "media_discovery"
     },
     {
       "id": "c32947d37930faaf",
@@ -1903,7 +2119,7 @@
       "source_url": "https://vnexpress.net/sacombank-sbj-to-chuc-thi-che-tac-ho-tro-benh-nhan-kho-khan-5117494.html",
       "published_at": "2026-09-07T08:45:00+00:00",
       "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1922,7 +2138,7 @@
       "source_url": "https://vnexpress.net/giay-thuong-dinh-danh-25-ty-dong-tro-cap-nhan-vien-thoi-viec-khi-nha-may-di-doi-5117282.html",
       "published_at": "2026-09-07T04:25:21+00:00",
       "first_seen_at": "2026-09-07T04:41:46.062800+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1941,7 +2157,7 @@
       "source_url": "https://vnexpress.net/hd-saison-duoc-chap-thuan-nguyen-tac-chuyen-doi-thanh-cong-ty-co-phan-5117061.html",
       "published_at": "2026-09-07T01:00:00+00:00",
       "first_seen_at": "2026-09-07T04:41:46.062800+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1960,7 +2176,7 @@
       "source_url": "https://thanhnien.vn/cap-toc-dua-cao-toc-ben-luc-long-thanh-ve-dich-185260906180137432.htm",
       "published_at": "2026-09-06T23:00:00+00:00",
       "first_seen_at": "2026-09-07T04:41:46.062800+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2108,7 +2324,7 @@
       "source_url": "https://vnexpress.net/heineken-muon-dau-tu-them-500-trieu-usd-vao-viet-nam-5117021.html",
       "published_at": "2026-09-06T06:28:49+00:00",
       "first_seen_at": "2026-09-06T10:56:11.402519+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2127,7 +2343,7 @@
       "source_url": "https://thanhnien.vn/vietnam-airlines-ha-canh-khan-cap-tai-myanmar-cap-cuu-san-phu-sinh-con-tren-may-bay-185260906111336648.htm",
       "published_at": "2026-09-06T04:21:00+00:00",
       "first_seen_at": "2026-09-06T04:38:35.518596+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2602,7 +2818,7 @@
       "source_url": "https://vnexpress.net/chu-sieu-du-an-lan-bien-can-gio-lai-hon-30-000-ty-dong-nua-dau-nam-5116510.html",
       "published_at": "2026-09-04T07:08:00+00:00",
       "first_seen_at": "2026-09-04T11:17:53.964178+00:00",
-      "last_seen_at": "2026-09-08T04:35:52.943127+00:00",
+      "last_seen_at": "2026-09-08T11:18:56.512620+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3944,9 +4160,9 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-08T04:36:03.152429+00:00",
-    "auto_entities_typed": 70,
-    "auto_entities_suppressed_from_entity_convergence": 20,
+    "prepared_at": "2026-09-08T11:19:09.947814+00:00",
+    "auto_entities_typed": 73,
+    "auto_entities_suppressed_from_entity_convergence": 21,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
   }
 }
