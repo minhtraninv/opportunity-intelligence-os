@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-09T11:23:32.049131+00:00",
+    "generated_at": "2026-09-09T16:40:12.409050+00:00",
     "local_date": "2026-09-09",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-09T11:23:32.158333+00:00"
+    "trust_hardened_at": "2026-09-09T16:40:12.478151+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-09-09",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-09T11:23:32.048336+00:00",
-      "local_generated_at": "2026-09-09T18:23:32.043694+07:00",
+      "generated_at": "2026-09-09T16:40:12.408426+00:00",
+      "local_generated_at": "2026-09-09T23:40:12.404995+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 11,
@@ -26,7 +26,7 @@
       "executive_summary": [
         "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
-        "Độ phủ nguồn hiện có 4 domain STRONG, 6 WEAK, 0 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 2 domain STRONG, 7 WEAK, 4 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
@@ -155,6 +155,13 @@
           ]
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -172,6 +179,13 @@
           "planned_next_sources": []
         },
         {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "weak",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -179,23 +193,9 @@
           "planned_next_sources": []
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -252,9 +252,9 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 1.0,
-          "productive_sources": 1.0,
-          "source_errors": -2.0
+          "strong": -1.0,
+          "productive_sources": -1.0,
+          "source_errors": 1.0
         }
       },
       "snapshot": {
@@ -391,13 +391,13 @@
           }
         },
         "coverage": {
-          "strong": 4,
-          "partial": 8,
-          "weak": 6,
-          "broken": 0,
+          "strong": 2,
+          "partial": 5,
+          "weak": 7,
+          "broken": 4,
           "missing": 2,
-          "productive_sources": 4,
-          "source_errors": 0
+          "productive_sources": 2,
+          "source_errors": 3
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -409,8 +409,8 @@
       "period_key": "2026-W37",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-09T11:23:32.048666+00:00",
-      "local_generated_at": "2026-09-09T18:23:32.043694+07:00",
+      "generated_at": "2026-09-09T16:40:12.408709+00:00",
+      "local_generated_at": "2026-09-09T23:40:12.404995+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 11,
@@ -420,7 +420,7 @@
       "executive_summary": [
         "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
-        "Độ phủ nguồn hiện có 4 domain STRONG, 6 WEAK, 0 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 2 domain STRONG, 7 WEAK, 4 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
@@ -549,6 +549,13 @@
           ]
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -566,6 +573,13 @@
           "planned_next_sources": []
         },
         {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "weak",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -573,23 +587,9 @@
           "planned_next_sources": []
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -646,9 +646,9 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 0.0,
-          "productive_sources": 0.0,
-          "source_errors": 0.0
+          "strong": -2.0,
+          "productive_sources": -2.0,
+          "source_errors": 3.0
         }
       },
       "snapshot": {
@@ -785,13 +785,13 @@
           }
         },
         "coverage": {
-          "strong": 4,
-          "partial": 8,
-          "weak": 6,
-          "broken": 0,
+          "strong": 2,
+          "partial": 5,
+          "weak": 7,
+          "broken": 4,
           "missing": 2,
-          "productive_sources": 4,
-          "source_errors": 0
+          "productive_sources": 2,
+          "source_errors": 3
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -803,8 +803,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-09T11:23:32.048912+00:00",
-      "local_generated_at": "2026-09-09T18:23:32.043694+07:00",
+      "generated_at": "2026-09-09T16:40:12.408913+00:00",
+      "local_generated_at": "2026-09-09T23:40:12.404995+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 11,
@@ -830,6 +830,13 @@
           ]
         },
         {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Thị trường vốn & trái phiếu",
           "status": "weak",
           "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
@@ -847,6 +854,13 @@
           "planned_next_sources": []
         },
         {
+          "domain": "Vĩ mô kinh tế thực",
+          "status": "weak",
+          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Chính sách & luật chơi",
           "status": "partial",
           "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
@@ -854,23 +868,9 @@
           "planned_next_sources": []
         },
         {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Ngân sách & đầu tư công",
           "status": "partial",
           "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
-          "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
           "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
           "planned_next_sources": []
         },
@@ -1025,13 +1025,13 @@
           }
         },
         "coverage": {
-          "strong": 4,
-          "partial": 8,
-          "weak": 6,
-          "broken": 0,
+          "strong": 2,
+          "partial": 5,
+          "weak": 7,
+          "broken": 4,
           "missing": 2,
-          "productive_sources": 4,
-          "source_errors": 0
+          "productive_sources": 2,
+          "source_errors": 3
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
