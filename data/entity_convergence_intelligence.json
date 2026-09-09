@@ -1,26 +1,26 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-09T04:45:05.613770+00:00",
+    "generated_at": "2026-09-09T11:23:31.776437+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-09T04:45:05.775959+00:00"
+    "trust_hardened_at": "2026-09-09T11:23:31.947848+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
-    "auto_discovered_entities": 77,
-    "candidate_entities_total": 88,
-    "observed_entities": 21,
-    "observed_auto_entities": 12,
+    "auto_discovered_entities": 80,
+    "candidate_entities_total": 91,
+    "observed_entities": 22,
+    "observed_auto_entities": 13,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 2,
-    "watch": 19,
+    "watch": 20,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 7,
+    "discovery_candidates": 8,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 4
   },
@@ -33,7 +33,7 @@
       "entity_type": "business_group",
       "entity_origin": "curated_registry",
       "status": "discovery_convergence",
-      "convergence_score": 13,
+      "convergence_score": 17,
       "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
       "evidence_families": [
         "operating",
@@ -42,6 +42,7 @@
       ],
       "independent_publishers": [
         "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
       "event_count": 5,
@@ -56,13 +57,27 @@
       "regional_context": [],
       "evidence": [
         {
+          "id": "c6e1cc78c5f4855f",
+          "event_signature": "463b6422bd84f7db",
+          "family": "strategy",
+          "title": "VITW 2026: Mở rộng cơ hội cho doanh nghiệp công nghiệp Việt Nam",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vitw-2026-mo-rong-co-hoi-cho-doanh-nghiep-cong-nghiep-viet-nam-post1135112.vnp",
+          "observed_at": "2026-09-09T15:19:25+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
           "id": "99a9d35931170ce3",
           "event_signature": "878c0c158bf6d5dc",
           "family": "strategy",
           "title": "Vingroup nhận chuyển nhượng 100% vốn VinFast Úc",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vingroup-nhan-chuyen-nhuong-100-von-vinfast-uc-100260908175406391.htm",
-          "observed_at": "2026-09-09T04:44:47.864316+00:00",
+          "observed_at": "2026-09-09T11:23:10.956171+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -91,20 +106,6 @@
           "publisher": "VnExpress Kinh doanh",
           "source_url": "https://vnexpress.net/chu-sieu-du-an-lan-bien-can-gio-lai-hon-30-000-ty-dong-nua-dau-nam-5116510.html",
           "observed_at": "2026-09-04T07:08:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ad49f10eada95cb3",
-          "event_signature": "b7962a68a9db27e5",
-          "family": "strategy",
-          "title": "Vingroup lãi hơn 12.500 tỷ đồng từ bán mảng sản xuất của VinFast ở Việt Nam",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vingroup-lai-hon-12-500-ty-dong-tu-ban-mang-san-xuat-cua-vinfast-o-viet-nam-5115157.html",
-          "observed_at": "2026-08-30T07:05:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -147,6 +148,114 @@
       "discovery_evidence_families": [
         "operating",
         "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "samsung_vietnam",
+      "label": "Hệ sinh thái Samsung tại Việt Nam",
+      "entity_type": "foreign_business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 14,
+      "why_now": "Hệ sinh thái Samsung tại Việt Nam đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "operating",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "4662315531adf9e0",
+          "event_signature": "087a79c6c25aff99",
+          "family": "strategy",
+          "title": "OpenAI và Samsung tăng cường hợp tác phát triển chip AI thế hệ mới",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/openai-va-samsung-tang-cuong-hop-tac-phat-trien-chip-ai-the-he-moi-post1135161.vnp",
+          "observed_at": "2026-09-09T16:48:03+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "5c270384d5650d09",
+          "event_signature": "82ab294e0e51d3c3",
+          "family": "operating",
+          "title": "Samsung SDS hợp tác với OpenAI và Anthropic để thúc đẩy chuyển đổi AI",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/samsung-sds-hop-tac-voi-openai-va-anthropic-de-thuc-day-chuyen-doi-ai-post1134885.vnp",
+          "observed_at": "2026-09-08T14:05:10+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8799524ae68de699",
+          "event_signature": "acd20d65e25ea010",
+          "family": "operating",
+          "title": "Bốn nhà máy Samsung tại Việt Nam thu 17,3 tỉ USD trong quý 2, lợi nhuận giảm 17%",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/bon-nha-may-samsung-tai-viet-nam-thu-173-ti-usd-trong-quy-2-loi-nhuan-giam-17-10026090109355366.htm",
+          "observed_at": "2026-09-02T11:18:20.192038+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e65b50c2b8ad256f",
+          "event_signature": "38b4ce6fe1dcbcf8",
+          "family": "operating",
+          "title": "Samsung xuất khẩu 500 tỷ USD điện thoại từ Việt Nam sau 17 năm",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/samsung-xuat-khau-500-ty-usd-dien-thoai-tu-viet-nam-sau-17-nam-5114286.html",
+          "observed_at": "2026-08-27T15:58:59+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
