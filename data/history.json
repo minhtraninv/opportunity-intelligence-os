@@ -1,7 +1,66 @@
 {
   "version": 2,
-  "updated_at": "2026-09-09T16:38:17.833228+00:00",
+  "updated_at": "2026-09-09T20:55:38.630871+00:00",
   "events": [
+    {
+      "id": "3e66576cfb430780",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 10/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-09T20:55:38.630871+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "12bdc70b8e15c001",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 10/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-09T20:55:38.630871+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "474800054b3a355a",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Khuyến cáo về an toàn phòng cháy, chữa cháy trong lắp đặt hệ thống điện mặt trời mái nhà",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Khuyen-cao-ve-an-toan-phong-chay-chua-chay-trong-lap-dat-he-thong-dien-mat-troi-mai-nha-60-3570-509168",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-09T20:55:38.630871+00:00",
+      "evidence_grade": "reference_only"
+    },
     {
       "id": "7460eeddaec312cc",
       "source_id": "gov-policy",
@@ -19,6 +78,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-09-09T16:38:17.833228+00:00",
+      "collected_at": "2026-09-09T16:38:17.833228+00:00",
+      "last_seen_at": null,
       "evidence_grade": "official_headline_discovery"
     },
     {
@@ -40,6 +101,8 @@
       ],
       "mentioned_years": [],
       "first_seen_at": "2026-09-09T16:38:17.833228+00:00",
+      "collected_at": "2026-09-09T16:38:17.833228+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -6801,15 +6864,32 @@
       },
       "total_events": 253,
       "source_errors": 2
+    },
+    {
+      "captured_at": "2026-09-09T20:55:38.630871+00:00",
+      "new_items": 3,
+      "new_candidates": 2,
+      "new_by_category": {
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "evn-invest": 1
+      },
+      "total_events": 256,
+      "source_errors": 2
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-09-09T16:40:09.046168+00:00",
+    "updated_at": "2026-09-09T20:57:36.713300+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "official_headline_discovery": 75,
-      "reference_only": 173,
+      "official_headline_discovery": 77,
+      "reference_only": 174,
       "primary_verified": 5
     }
   }

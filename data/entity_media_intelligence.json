@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-09T16:39:55.845783+00:00",
+    "generated_at": "2026-09-09T20:57:21.936782+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,24 +9,24 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 152,
-    "entities_seen_recently": 93,
-    "auto_discovered_entities": 84,
-    "history_events": 152
+    "recent_events": 154,
+    "entities_seen_recently": 95,
+    "auto_discovered_entities": 86,
+    "history_events": 154
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 4,
+      "items_this_run": 5,
       "error": null
     },
     {
@@ -166,10 +166,6 @@
       "recent_events": 2
     },
     {
-      "entity_id": "auto-openai-7d3bbb5c",
-      "recent_events": 1
-    },
-    {
       "entity_id": "auto-ubnd-tp-hcm-cc6b8b7f",
       "recent_events": 1
     },
@@ -179,6 +175,18 @@
     },
     {
       "entity_id": "auto-starmason-4aaeae8e",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-g-dragon-7a0ca695",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-metro-bến-thành-2d071117",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-openai-7d3bbb5c",
       "recent_events": 1
     },
     {
@@ -899,24 +907,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-openai-7d3bbb5c",
-      "label": "OpenAI",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "OpenAI"
-      ],
-      "recent_events": 1,
-      "families": [
-        "strategy"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "auto-ubnd-tp-hcm-cc6b8b7f",
       "label": "UBND TP.HCM",
       "entity_type": "public_body",
@@ -965,6 +955,60 @@
       ],
       "publishers": [
         "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-g-dragon-7a0ca695",
+      "label": "G-Dragon",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "G-Dragon"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-metro-bến-thành-2d071117",
+      "label": "Metro Bến Thành",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Metro Bến Thành"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-openai-7d3bbb5c",
+      "label": "OpenAI",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "OpenAI"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
@@ -1963,6 +2007,101 @@
   ],
   "events": [
     {
+      "id": "9a166f5d32524e0a",
+      "event_signature": "4cab8e950ce0ebb9",
+      "entity_id": "auto-tổng-bí-012dc539",
+      "entity_label": "Tổng Bí",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Cần thay đổi tư duy trong hợp tác khoa học, công nghệ Việt - Nga",
+      "summary": "Tổng Bí thư, Chủ tịch nước Tô Lâm đề nghị hợp tác khoa học và công nghệ Việt - Nga không chỉ dừng ở trao đổi chuyên gia, đào tạo cán bộ, mà phải hướng tới cùng làm chủ công nghệ, cùng tạo ra sản phẩm và cùng tham gia thị trường.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/tong-bi-thu-chu-tich-nuoc-to-lam-can-thay-doi-tu-duy-trong-hop-tac-khoa-hoc-cong-nghe-viet-nga-100260909194533899.htm",
+      "published_at": "2026-09-09T20:57:21.936782+00:00",
+      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "0331c726a2e267fc",
+      "event_signature": "8dd4df3fb65d3ecc",
+      "entity_id": "auto-ubnd-tp-hcm-cc6b8b7f",
+      "entity_label": "UBND TP.HCM",
+      "entity_type": "public_body",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "UBND TP.HCM cho bổ sung 2.141m² tại dự án khu nhà ở phường Tân Phú theo kết luận thanh tra",
+      "summary": "UBND TP.HCM vừa có quyết định cho Công ty cổ phần phát triển bất động sản Phát Đạt chuyển mục đích sử dụng đất và tiếp tục sử dụng với 2.141m² tại dự án khu nhà ở phường Tân Phú (phường Tân Mỹ, TP.HCM) theo kết luận thanh tra.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/ubnd-tphcm-cho-bo-sung-2141m-tai-du-an-khu-nha-o-phuong-tan-phu-theo-ket-luan-thanh-tra-100260909174734675.htm",
+      "published_at": "2026-09-09T20:57:21.936782+00:00",
+      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "public_body_not_open_world_company"
+    },
+    {
+      "id": "066addc0c04c3c4e",
+      "event_signature": "46473ae0d4593fa3",
+      "entity_id": "auto-sun-life-d0db5f16",
+      "entity_label": "Sun Life",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Sun Life ghi nhận tăng trưởng tích cực, doanh thu phí bảo hiểm tại Việt Nam đạt 1.480 tỉ đồng",
+      "summary": "Tập đoàn Sun Life vừa công bố kết quả kinh doanh quý 2-2026 với nhiều tín hiệu tích cực. Tại Việt Nam, Sun Life ghi nhận kết quả khả quan trong nửa đầu năm, đồng thời tiếp tục mở rộng mạng lưới và nâng cao trải nghiệm khách hàng.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/sun-life-ghi-nhan-tang-truong-tich-cuc-doanh-thu-phi-bao-hiem-tai-viet-nam-dat-1480-ti-dong-100260909155103636.htm",
+      "published_at": "2026-09-09T20:57:21.936782+00:00",
+      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "44bc17f80671adbf",
+      "event_signature": "dd9de6109cc23a74",
+      "entity_id": "auto-starmason-4aaeae8e",
+      "entity_label": "Starmason",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Starmason thuê hơn 4,45ha đất ở TP.HCM làm trung tâm dữ liệu siêu lớn",
+      "summary": "UBND TP.HCM quyết định cho Công ty cổ phần Starmason thuê hơn 4,45ha đất tại Khu công nghệ cao để thực hiện dự án 'Tổ hợp trung tâm dữ liệu siêu lớn Starmason', thời hạn sử dụng đất đến năm 2076.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/starmason-thue-hon-445ha-dat-o-tphcm-lam-trung-tam-du-lieu-sieu-lon-100260909163423236.htm",
+      "published_at": "2026-09-09T20:57:21.936782+00:00",
+      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "1904511a8eaa5754",
+      "event_signature": "5e42133b09801292",
+      "entity_id": "auto-g-dragon-7a0ca695",
+      "entity_label": "G-Dragon",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "G-Dragon làm đại sứ trong chiến dịch ẩm thực tại 13 thị trường châu Á của McDonald's",
+      "summary": "McDonald's Việt Nam chính thức công bố khởi động \"Asia Chicken Campaign\" - chiến dịch quy mô khu vực với sự tham gia của nam nghệ sĩ G-Dragon trong vai trò đại sứ tại 13 thị trường châu Á.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/g-dragon-lam-dai-su-trong-chien-dich-am-thuc-tai-13-thi-truong-chau-a-cua-mcdonalds-100260909173211968.htm",
+      "published_at": "2026-09-09T20:57:21.936782+00:00",
+      "first_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "ce9e4ea5fec9e55a",
       "event_signature": "4527a07bdf9587fd",
       "entity_id": "auto-tổng-bí-012dc539",
@@ -1976,7 +2115,7 @@
       "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-tiep-dai-dien-doanh-nghiep-va-truong-dai-hoc-tai-nga-post1135204.vnp",
       "published_at": "2026-09-09T20:16:43+00:00",
       "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -1995,7 +2134,26 @@
       "source_url": "https://www.vietnamplus.vn/dong-usd-giam-gan-muc-thap-nhat-7-thang-dong-yen-tang-manh-post1135169.vnp",
       "published_at": "2026-09-09T17:31:49+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "c2f5beb6c6abbbf9",
+      "event_signature": "b9394ac16aa5ad8c",
+      "entity_id": "auto-metro-bến-thành-2d071117",
+      "entity_label": "Metro Bến Thành",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Metro Bến Thành - Suối Tiên cần lãi bình quân mỗi năm 27 tỷ đồng",
+      "summary": "UBND TP HCM giao công ty vận hành metro Bến Thành - Suối Tiên mục tiêu lãi tổng cộng 133 tỷ đồng trong giai đoạn 2026-2030, tức bình quân mỗi năm 27 tỷ đồng.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/metro-ben-thanh-suoi-tien-can-lai-binh-quan-moi-nam-27-ty-dong-5118571.html",
+      "published_at": "2026-09-09T17:08:00+00:00",
+      "first_seen_at": "2026-09-09T20:57:21.936782+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2014,7 +2172,7 @@
       "source_url": "https://www.vietnamplus.vn/viet-nam-nga-tiep-tuc-thuc-day-hieu-qua-cac-linh-vuc-dau-tu-thue-va-hai-quan-post1135151.vnp",
       "published_at": "2026-09-09T17:04:37+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2033,7 +2191,7 @@
       "source_url": "https://www.vietnamplus.vn/openai-va-samsung-tang-cuong-hop-tac-phat-trien-chip-ai-the-he-moi-post1135161.vnp",
       "published_at": "2026-09-09T16:48:03+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2050,83 +2208,7 @@
       "source_url": "https://www.vietnamplus.vn/openai-va-samsung-tang-cuong-hop-tac-phat-trien-chip-ai-the-he-moi-post1135161.vnp",
       "published_at": "2026-09-09T16:48:03+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "9a166f5d32524e0a",
-      "event_signature": "4cab8e950ce0ebb9",
-      "entity_id": "auto-tổng-bí-012dc539",
-      "entity_label": "Tổng Bí",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "strategy",
-      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Cần thay đổi tư duy trong hợp tác khoa học, công nghệ Việt - Nga",
-      "summary": "Tổng Bí thư, Chủ tịch nước Tô Lâm đề nghị hợp tác khoa học và công nghệ Việt - Nga không chỉ dừng ở trao đổi chuyên gia, đào tạo cán bộ, mà phải hướng tới cùng làm chủ công nghệ, cùng tạo ra sản phẩm và cùng tham gia thị trường.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/tong-bi-thu-chu-tich-nuoc-to-lam-can-thay-doi-tu-duy-trong-hop-tac-khoa-hoc-cong-nghe-viet-nga-100260909194533899.htm",
-      "published_at": "2026-09-09T16:39:55.845783+00:00",
-      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "0331c726a2e267fc",
-      "event_signature": "8dd4df3fb65d3ecc",
-      "entity_id": "auto-ubnd-tp-hcm-cc6b8b7f",
-      "entity_label": "UBND TP.HCM",
-      "entity_type": "public_body",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "UBND TP.HCM cho bổ sung 2.141m² tại dự án khu nhà ở phường Tân Phú theo kết luận thanh tra",
-      "summary": "UBND TP.HCM vừa có quyết định cho Công ty cổ phần phát triển bất động sản Phát Đạt chuyển mục đích sử dụng đất và tiếp tục sử dụng với 2.141m² tại dự án khu nhà ở phường Tân Phú (phường Tân Mỹ, TP.HCM) theo kết luận thanh tra.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/ubnd-tphcm-cho-bo-sung-2141m-tai-du-an-khu-nha-o-phuong-tan-phu-theo-ket-luan-thanh-tra-100260909174734675.htm",
-      "published_at": "2026-09-09T16:39:55.845783+00:00",
-      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "public_body_not_open_world_company"
-    },
-    {
-      "id": "066addc0c04c3c4e",
-      "event_signature": "46473ae0d4593fa3",
-      "entity_id": "auto-sun-life-d0db5f16",
-      "entity_label": "Sun Life",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "Sun Life ghi nhận tăng trưởng tích cực, doanh thu phí bảo hiểm tại Việt Nam đạt 1.480 tỉ đồng",
-      "summary": "Tập đoàn Sun Life vừa công bố kết quả kinh doanh quý 2-2026 với nhiều tín hiệu tích cực. Tại Việt Nam, Sun Life ghi nhận kết quả khả quan trong nửa đầu năm, đồng thời tiếp tục mở rộng mạng lưới và nâng cao trải nghiệm khách hàng.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/sun-life-ghi-nhan-tang-truong-tich-cuc-doanh-thu-phi-bao-hiem-tai-viet-nam-dat-1480-ti-dong-100260909155103636.htm",
-      "published_at": "2026-09-09T16:39:55.845783+00:00",
-      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "44bc17f80671adbf",
-      "event_signature": "dd9de6109cc23a74",
-      "entity_id": "auto-starmason-4aaeae8e",
-      "entity_label": "Starmason",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Starmason thuê hơn 4,45ha đất ở TP.HCM làm trung tâm dữ liệu siêu lớn",
-      "summary": "UBND TP.HCM quyết định cho Công ty cổ phần Starmason thuê hơn 4,45ha đất tại Khu công nghệ cao để thực hiện dự án 'Tổ hợp trung tâm dữ liệu siêu lớn Starmason', thời hạn sử dụng đất đến năm 2076.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/starmason-thue-hon-445ha-dat-o-tphcm-lam-trung-tam-du-lieu-sieu-lon-100260909163423236.htm",
-      "published_at": "2026-09-09T16:39:55.845783+00:00",
-      "first_seen_at": "2026-09-09T16:39:55.845783+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2145,7 +2227,7 @@
       "source_url": "https://www.vietnamplus.vn/lam-dong-co-hon-1000-ma-so-vung-trong-duoc-nuoc-nhap-khau-phe-duyet-post1135147.vnp",
       "published_at": "2026-09-09T16:07:41+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2164,7 +2246,7 @@
       "source_url": "https://www.vietnamplus.vn/vitw-2026-mo-rong-co-hoi-cho-doanh-nghiep-cong-nghiep-viet-nam-post1135112.vnp",
       "published_at": "2026-09-09T15:19:25+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2181,7 +2263,7 @@
       "source_url": "https://www.vietnamplus.vn/vitw-2026-mo-rong-co-hoi-cho-doanh-nghiep-cong-nghiep-viet-nam-post1135112.vnp",
       "published_at": "2026-09-09T15:19:25+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2200,7 +2282,7 @@
       "source_url": "https://www.vietnamplus.vn/tay-ninh-kien-nghi-dieu-chinh-muc-tieu-nha-o-xa-hoi-tang-nguon-cung-nha-cho-thue-post1135120.vnp",
       "published_at": "2026-09-09T14:58:51+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2219,7 +2301,7 @@
       "source_url": "https://www.vietnamplus.vn/qualcomm-chot-thoa-thuan-chip-ai-tri-gia-toi-60-ty-usd-voi-amazon-post1135107.vnp",
       "published_at": "2026-09-09T13:58:43+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2331,7 +2413,7 @@
       "source_url": "https://thanhnien.vn/cuc-thue-luu-y-loat-chinh-sach-moi-ho-kinh-doanh-can-biet-185260909114424759.htm",
       "published_at": "2026-09-09T04:55:00+00:00",
       "first_seen_at": "2026-09-09T11:23:10.956171+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "truncated_public_body_name"
@@ -2350,7 +2432,7 @@
       "source_url": "https://vnexpress.net/ariston-thau-tom-thuong-hieu-may-loc-nuoc-viet-5118217.html",
       "published_at": "2026-09-09T03:39:47+00:00",
       "first_seen_at": "2026-09-09T04:44:47.864316+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2403,7 +2485,7 @@
       "source_url": "https://www.vietnamplus.vn/khanh-hoa-quyet-liet-thao-go-vuong-mac-day-nhanh-du-an-dien-hat-nhan-ninh-thuan-post1134952.vnp",
       "published_at": "2026-09-08T17:43:36+00:00",
       "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2422,7 +2504,7 @@
       "source_url": "https://www.vietnamplus.vn/dong-nai-khoi-thong-nut-that-ha-tang-tu-dong-thuan-long-dan-post1134951.vnp",
       "published_at": "2026-09-08T17:06:13+00:00",
       "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2441,7 +2523,7 @@
       "source_url": "https://www.vietnamplus.vn/tinh-ca-mau-thu-hut-dong-von-dau-tu-vao-khu-cong-nghiep-khu-kinh-te-post1134949.vnp",
       "published_at": "2026-09-08T16:49:21+00:00",
       "first_seen_at": "2026-09-08T11:18:56.512620+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2572,7 +2654,7 @@
       "source_url": "https://thanhnien.vn/apec-2027-cot-moc-tao-dong-luc-cho-cang-hang-khong-quoc-te-gia-binh-185260908181208522.htm",
       "published_at": "2026-09-08T11:04:00+00:00",
       "first_seen_at": "2026-09-08T16:39:31.016093+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2760,7 +2842,7 @@
       "source_url": "https://vnexpress.net/sacombank-sbj-to-chuc-thi-che-tac-ho-tro-benh-nhan-kho-khan-5117494.html",
       "published_at": "2026-09-07T08:45:00+00:00",
       "first_seen_at": "2026-09-07T12:32:23.847113+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2779,7 +2861,7 @@
       "source_url": "https://vnexpress.net/giay-thuong-dinh-danh-25-ty-dong-tro-cap-nhan-vien-thoi-viec-khi-nha-may-di-doi-5117282.html",
       "published_at": "2026-09-07T04:25:21+00:00",
       "first_seen_at": "2026-09-07T04:41:46.062800+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2798,7 +2880,7 @@
       "source_url": "https://vnexpress.net/hd-saison-duoc-chap-thuan-nguyen-tac-chuyen-doi-thanh-cong-ty-co-phan-5117061.html",
       "published_at": "2026-09-07T01:00:00+00:00",
       "first_seen_at": "2026-09-07T04:41:46.062800+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2965,7 +3047,7 @@
       "source_url": "https://vnexpress.net/heineken-muon-dau-tu-them-500-trieu-usd-vao-viet-nam-5117021.html",
       "published_at": "2026-09-06T06:28:49+00:00",
       "first_seen_at": "2026-09-06T10:56:11.402519+00:00",
-      "last_seen_at": "2026-09-09T16:39:55.845783+00:00",
+      "last_seen_at": "2026-09-09T20:57:21.936782+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -4801,8 +4883,8 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-09T16:40:09.046168+00:00",
-    "auto_entities_typed": 84,
+    "prepared_at": "2026-09-09T20:57:36.713300+00:00",
+    "auto_entities_typed": 86,
     "auto_entities_suppressed_from_entity_convergence": 23,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
   }
