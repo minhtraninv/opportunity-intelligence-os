@@ -1,27 +1,27 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-09-11T16:29:21.843603+00:00",
+    "generated_at": "2026-09-11T20:58:28.092861+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-11T16:29:21.888098+00:00"
+    "trust_hardened_at": "2026-09-11T20:58:28.153250+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
     "domains": 20,
-    "strong": 3,
+    "strong": 2,
     "partial": 5,
     "weak": 7,
-    "broken": 3,
+    "broken": 4,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 16,
-    "productive_sources": 3,
-    "source_errors": 2,
+    "healthy_sources": 15,
+    "productive_sources": 2,
+    "source_errors": 3,
     "planned_sources": 8,
-    "verified_productive_sources": 3,
+    "verified_productive_sources": 2,
     "discovery_productive_sources": 10
   },
   "critical_blind_spots": [
@@ -637,7 +637,7 @@
       "discovery_productive_sources": 1,
       "broken_sources": 1,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 29,
+      "discovery_evidence_items_this_run": 31,
       "evidence_items_this_run": 1,
       "healthy_source_names": [
         "Cổng ĐKKD Quốc gia"
@@ -658,25 +658,23 @@
       "priority": 4,
       "target_healthy_sources": 1,
       "why": "Bằng chứng buyer rất rõ nhưng chỉ là một nhánh của nền kinh tế, không được thống trị radar.",
-      "status": "strong",
+      "status": "broken",
       "active_sources": 1,
-      "healthy_sources": 1,
-      "productive_sources": 1,
-      "verified_productive_sources": 1,
+      "healthy_sources": 0,
+      "productive_sources": 0,
+      "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
-      "verified_evidence_items_this_run": 167,
+      "broken_sources": 1,
+      "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 167,
-      "healthy_source_names": [
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "productive_source_names": [],
+      "broken_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
-      "productive_source_names": [
-        "Hệ thống mạng đấu thầu quốc gia"
-      ],
-      "broken_source_names": [],
       "planned_next_sources": [],
-      "coverage_note": "Đủ số nguồn đang tạo evidence đúng cấp cho mục đích của domain; vẫn phải kiểm tra freshness và độc lập.",
+      "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
       "evidence_standard": "verified_primary"
     }
   ],
@@ -770,11 +768,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 42,
+      "discovered_items_this_run": 44,
       "evidence_items_this_run": 1,
       "error": null,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 29
+      "discovery_evidence_items_this_run": 31
     },
     {
       "id": "fia-fdi",
@@ -806,7 +804,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 12,
+      "discovered_items_this_run": 11,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
@@ -824,7 +822,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 55,
+      "discovered_items_this_run": 57,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
@@ -1001,10 +999,10 @@
         "procurement_demand"
       ],
       "authority": 1.0,
-      "health": "ok",
+      "health": "error",
       "discovered_items_this_run": 167,
       "evidence_items_this_run": 167,
-      "error": null,
+      "error": "12 procurement source errors",
       "verified_evidence_items_this_run": 167,
       "discovery_evidence_items_this_run": 0
     },
