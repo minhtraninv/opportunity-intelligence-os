@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-11T11:21:45.767047+00:00",
+    "generated_at": "2026-09-11T16:29:21.737086+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-11T11:21:45.936956+00:00"
+    "trust_hardened_at": "2026-09-11T16:29:21.885081+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 30,
-    "observed_auto_entities": 20,
+    "observed_entities": 31,
+    "observed_auto_entities": 21,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 4,
-    "watch": 25,
+    "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
     "discovery_candidates": 12,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 6
+    "suppressed_non_organizations": 7
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -184,7 +184,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -444,7 +444,7 @@
           "title": "Vietravel Airlines thỏa thuận mua 50 máy bay Airbus, nhận từ năm 2029",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vietravel-airlines-thoa-thuan-mua-50-may-bay-airbus-nhan-tu-nam-2029-100260910234117517.htm",
-          "observed_at": "2026-09-11T11:21:27.174155+00:00",
+          "observed_at": "2026-09-11T16:29:05.349016+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1216,6 +1216,12 @@
     {
       "entity_id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-an-giang-95ec7d95",
+      "label": "An Giang",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
