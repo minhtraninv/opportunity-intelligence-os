@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.3.3",
-    "generated_at": "2026-09-11T16:29:41.101594+00:00",
+    "generated_at": "2026-09-11T20:59:27.352865+00:00",
     "mode": "official_msc_open_tender_intelligence",
     "principle": "official_metadata_then_requirements_verification",
     "api_stability": "website_endpoint_not_published_developer_api",
@@ -10,16 +10,16 @@
     "taxonomy_version": "1.4.0"
   },
   "coverage": {
-    "historical_open_tenders": 201,
-    "active_recent_tenders": 167,
-    "tbmt_detail_confirmed": 141,
-    "investigate_now": 80,
+    "historical_open_tenders": 204,
+    "active_recent_tenders": 170,
+    "tbmt_detail_confirmed": 144,
+    "investigate_now": 83,
     "watch": 87,
-    "source_errors_last_run": 12
+    "source_errors_last_run": 0
   },
   "category_summary": {
-    "digital_services": 63,
-    "maintenance": 36,
+    "digital_services": 65,
+    "maintenance": 37,
     "office_goods": 31,
     "garment_ppe": 15,
     "consulting": 13,
@@ -29,78 +29,171 @@
   "source_health": [
     {
       "keyword": "vệ sinh",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'vệ sinh': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 1,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "bảo trì",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'bảo trì': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 2,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "in ấn",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'in ấn': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 1,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "văn phòng phẩm",
       "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'văn phòng phẩm': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "đồng phục",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'đồng phục': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 2,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "phần mềm",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'phần mềm': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 3,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "số hóa",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'số hóa': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 3,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "thuê xe",
       "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'thuê xe': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "suất ăn",
       "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'suất ăn': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "bảo hộ lao động",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'bảo hộ lao động': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 5,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "máy tính",
-      "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'máy tính': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "open_results": 1,
+      "status": "ok",
+      "error": null
     },
     {
       "keyword": "tư vấn",
       "open_results": 0,
-      "status": "error",
-      "error": "MSC search 'tư vấn': HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/smart/search?token=fake"
+      "status": "ok",
+      "error": null
     }
   ],
   "buyer_triggers": [
+    {
+      "id": "IB2600514578",
+      "record_type": "open_notice",
+      "tender_code": "IB2600514578",
+      "notify_id": "b4db4b7b-0ac1-415c-965c-0f2b9c46c85d",
+      "title": "Xây dựng phần mềm quản lý công cụ dụng cụ tại Tổng công ty Điện lực TP.HCM",
+      "buyer": "CHI NHÁNH TỔNG CÔNG TY ĐIỆN LỰC THÀNH PHỐ HỒ CHÍ MINH TNHH - CÔNG TY CÔNG NGHỆ THÔNG TIN ĐIỆN LỰC THÀNH PHỐ HỒ CHÍ MINH",
+      "posted_at": "2026-09-11T13:31:35.888000+00:00",
+      "closes_at": "2026-09-29T02:00:00+00:00",
+      "opens_at": "2026-09-29T02:00:00+00:00",
+      "days_to_close": 17.2,
+      "package_price_vnd": 1499483740,
+      "procurement_category": "digital_services",
+      "matched_keywords": [
+        "phần mềm"
+      ],
+      "source_id": "msc-official",
+      "source_name": "Hệ thống mạng đấu thầu quốc gia",
+      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=b4db4b7b-0ac1-415c-965c-0f2b9c46c85d&notifyId=b4db4b7b-0ac1-415c-965c-0f2b9c46c85d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2600514578&planNo=PL2600008639&step=tbmt&isInternet=1&bidForm=DTRR",
+      "authority": 1.0,
+      "official_metadata": true,
+      "tbmt_detail_confirmed": true,
+      "requirements_status": "unverified",
+      "first_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "procurement_tags": [
+        "digital_services",
+        "construction"
+      ],
+      "package_price_band": "large",
+      "prime_fit_score": 53,
+      "subcontract_fit_score": 88,
+      "recommended_path": "subcontract_or_sourcing",
+      "small_capital_fit_score": 88,
+      "small_capital_fit_status": "requirements_unverified",
+      "buyer_trigger_score": 88,
+      "action_level": "investigate_now",
+      "small_capital_angles": [
+        "Triển khai/maintain một module ngách",
+        "Làm thầu phụ cho integrator lớn hơn",
+        "Hỗ trợ vận hành sau triển khai"
+      ],
+      "verification_required": true,
+      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=b4db4b7b-0ac1-415c-965c-0f2b9c46c85d&notifyId=b4db4b7b-0ac1-415c-965c-0f2b9c46c85d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2600514578&planNo=PL2600008639&step=tbmt&isInternet=1&bidForm=DTRR",
+      "next_action": "Mở mã IB2600514578 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
+      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
+    },
+    {
+      "id": "IB2600517482",
+      "record_type": "open_notice",
+      "tender_code": "IB2600517482",
+      "notify_id": "0e86a18d-b6de-4a29-bbf1-88fd8de96454",
+      "title": "Trang bị thiết bị Công nghệ thông tin và phần mềm phục vụ Công tác sản xuất kinh doanh, Chuyển đổi số và Vận hành lưới điện của Công ty Điện lực Quảng Ninh năm 2026",
+      "buyer": "CÔNG TY ĐIỆN LỰC QUẢNG NINH - CHI NHÁNH TỔNG CÔNG TY ĐIỆN LỰC MIỀN BẮC",
+      "posted_at": "2026-09-11T11:36:59.867000+00:00",
+      "closes_at": "2026-09-21T01:00:00+00:00",
+      "opens_at": "2026-09-21T01:00:00+00:00",
+      "days_to_close": 9.2,
+      "package_price_vnd": 8045881280,
+      "procurement_category": "digital_services",
+      "matched_keywords": [
+        "phần mềm"
+      ],
+      "source_id": "msc-official",
+      "source_name": "Hệ thống mạng đấu thầu quốc gia",
+      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=0e86a18d-b6de-4a29-bbf1-88fd8de96454&notifyId=0e86a18d-b6de-4a29-bbf1-88fd8de96454&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600517482&planNo=PL2600269990&step=tbmt&isInternet=1&bidForm=DTRR",
+      "authority": 1.0,
+      "official_metadata": true,
+      "tbmt_detail_confirmed": true,
+      "requirements_status": "unverified",
+      "first_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "procurement_tags": [
+        "digital_services"
+      ],
+      "package_price_band": "very_large",
+      "prime_fit_score": 33,
+      "subcontract_fit_score": 88,
+      "recommended_path": "subcontract_or_sourcing",
+      "small_capital_fit_score": 88,
+      "small_capital_fit_status": "requirements_unverified",
+      "buyer_trigger_score": 88,
+      "action_level": "investigate_now",
+      "small_capital_angles": [
+        "Triển khai/maintain một module ngách",
+        "Làm thầu phụ cho integrator lớn hơn",
+        "Hỗ trợ vận hành sau triển khai"
+      ],
+      "verification_required": true,
+      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=0e86a18d-b6de-4a29-bbf1-88fd8de96454&notifyId=0e86a18d-b6de-4a29-bbf1-88fd8de96454&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600517482&planNo=PL2600269990&step=tbmt&isInternet=1&bidForm=DTRR",
+      "next_action": "Mở mã IB2600517482 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
+      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
+    },
     {
       "id": "IB2600530546",
       "record_type": "open_notice",
@@ -111,7 +204,7 @@
       "posted_at": "2026-09-11T10:34:46.070000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 1747304000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -125,7 +218,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "digital_services"
       ],
@@ -157,7 +250,7 @@
       "posted_at": "2026-09-11T10:12:28.804000+00:00",
       "closes_at": "2026-09-17T08:00:00+00:00",
       "opens_at": "2026-09-17T08:00:00+00:00",
-      "days_to_close": 5.6,
+      "days_to_close": 5.5,
       "package_price_vnd": 6215000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -204,7 +297,7 @@
       "posted_at": "2026-09-11T10:08:20.608000+00:00",
       "closes_at": "2026-09-21T02:15:00+00:00",
       "opens_at": "2026-09-21T02:30:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 3943800000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -250,7 +343,7 @@
       "posted_at": "2026-09-11T08:49:32.225000+00:00",
       "closes_at": "2026-09-22T02:00:00+00:00",
       "opens_at": "2026-09-22T02:00:00+00:00",
-      "days_to_close": 10.4,
+      "days_to_close": 10.2,
       "package_price_vnd": 4732000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -264,7 +357,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "digital_services"
       ],
@@ -296,7 +389,7 @@
       "posted_at": "2026-09-11T08:45:08.227000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 705423000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -310,7 +403,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "digital_services"
       ],
@@ -342,7 +435,7 @@
       "posted_at": "2026-09-11T07:40:58.355000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 1266720004,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -356,7 +449,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "digital_services"
       ],
@@ -388,7 +481,7 @@
       "posted_at": "2026-09-11T04:08:43.351000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 5051122675,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -434,7 +527,7 @@
       "posted_at": "2026-09-10T13:12:17.918000+00:00",
       "closes_at": "2026-09-28T02:00:00+00:00",
       "opens_at": "2026-09-28T02:00:00+00:00",
-      "days_to_close": 16.4,
+      "days_to_close": 16.2,
       "package_price_vnd": 10006000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -481,7 +574,7 @@
       "posted_at": "2026-09-10T10:21:33.728000+00:00",
       "closes_at": "2026-09-19T03:00:00+00:00",
       "opens_at": "2026-09-19T03:00:00+00:00",
-      "days_to_close": 7.4,
+      "days_to_close": 7.3,
       "package_price_vnd": 1419997840,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -527,7 +620,7 @@
       "posted_at": "2026-09-10T09:58:18.802000+00:00",
       "closes_at": "2026-09-22T02:00:00+00:00",
       "opens_at": "2026-09-22T02:30:00+00:00",
-      "days_to_close": 10.4,
+      "days_to_close": 10.2,
       "package_price_vnd": 6000000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -573,7 +666,7 @@
       "posted_at": "2026-09-10T09:57:29.535000+00:00",
       "closes_at": "2026-09-29T02:00:00+00:00",
       "opens_at": "2026-09-29T02:00:00+00:00",
-      "days_to_close": 17.4,
+      "days_to_close": 17.2,
       "package_price_vnd": 20827473071,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -619,7 +712,7 @@
       "posted_at": "2026-09-10T03:49:46.782000+00:00",
       "closes_at": "2026-09-19T02:00:00+00:00",
       "opens_at": "2026-09-19T02:00:00+00:00",
-      "days_to_close": 7.4,
+      "days_to_close": 7.2,
       "package_price_vnd": 2130700000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -664,7 +757,7 @@
       "posted_at": "2026-09-10T03:27:58.066000+00:00",
       "closes_at": "2026-09-16T02:00:00+00:00",
       "opens_at": "2026-09-16T02:00:00+00:00",
-      "days_to_close": 4.4,
+      "days_to_close": 4.2,
       "package_price_vnd": 1895365000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -711,7 +804,7 @@
       "posted_at": "2026-09-10T03:25:12.639000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 1651716000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -757,7 +850,7 @@
       "posted_at": "2026-09-10T03:18:21.639000+00:00",
       "closes_at": "2026-09-25T03:00:00+00:00",
       "opens_at": "2026-09-25T03:00:00+00:00",
-      "days_to_close": 13.4,
+      "days_to_close": 13.3,
       "package_price_vnd": 2686032000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -803,7 +896,7 @@
       "posted_at": "2026-09-10T02:36:08.051000+00:00",
       "closes_at": "2026-09-19T01:00:00+00:00",
       "opens_at": "2026-09-19T01:00:00+00:00",
-      "days_to_close": 7.4,
+      "days_to_close": 7.2,
       "package_price_vnd": 4417482900,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -849,7 +942,7 @@
       "posted_at": "2026-09-10T01:52:18.778000+00:00",
       "closes_at": "2026-09-23T02:00:00+00:00",
       "opens_at": "2026-09-23T02:00:00+00:00",
-      "days_to_close": 11.4,
+      "days_to_close": 11.2,
       "package_price_vnd": 781000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -896,7 +989,7 @@
       "posted_at": "2026-09-09T09:50:38.045000+00:00",
       "closes_at": "2026-09-18T01:00:00+00:00",
       "opens_at": "2026-09-18T01:00:00+00:00",
-      "days_to_close": 6.4,
+      "days_to_close": 6.2,
       "package_price_vnd": 1155675000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -942,7 +1035,7 @@
       "posted_at": "2026-09-09T09:09:03.094000+00:00",
       "closes_at": "2026-09-18T01:00:00+00:00",
       "opens_at": "2026-09-18T01:00:00+00:00",
-      "days_to_close": 6.4,
+      "days_to_close": 6.2,
       "package_price_vnd": 2665108000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -989,7 +1082,7 @@
       "posted_at": "2026-09-09T04:24:33.052000+00:00",
       "closes_at": "2026-09-18T08:00:00+00:00",
       "opens_at": "2026-09-18T08:00:00+00:00",
-      "days_to_close": 6.6,
+      "days_to_close": 6.5,
       "package_price_vnd": 7531094382,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -1026,6 +1119,53 @@
       "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
     },
     {
+      "id": "IB2600519339",
+      "record_type": "open_notice",
+      "tender_code": "IB2600519339",
+      "notify_id": "ac514d47-390c-4b7d-a981-f3bc7b09659b",
+      "title": "Sửa chữa, chống xuống cấp Nhà trưng bày, khu vệ sinh ngầm",
+      "buyer": "Bảo tàng văn hoá các dân tộc Việt Nam",
+      "posted_at": "2026-09-11T12:19:06.497000+00:00",
+      "closes_at": "2026-09-21T02:00:00+00:00",
+      "opens_at": "2026-09-21T02:00:00+00:00",
+      "days_to_close": 9.2,
+      "package_price_vnd": 11981120000,
+      "procurement_category": "maintenance",
+      "matched_keywords": [
+        "vệ sinh"
+      ],
+      "source_id": "msc-official",
+      "source_name": "Hệ thống mạng đấu thầu quốc gia",
+      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=ac514d47-390c-4b7d-a981-f3bc7b09659b&notifyId=ac514d47-390c-4b7d-a981-f3bc7b09659b&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600519339&planNo=PL2600292199&step=tbmt&isInternet=1&bidForm=DTRR",
+      "authority": 1.0,
+      "official_metadata": true,
+      "tbmt_detail_confirmed": true,
+      "requirements_status": "unverified",
+      "first_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
+      "procurement_tags": [
+        "maintenance"
+      ],
+      "package_price_band": "very_large",
+      "prime_fit_score": 25,
+      "subcontract_fit_score": 80,
+      "recommended_path": "subcontract_or_sourcing",
+      "small_capital_fit_score": 80,
+      "small_capital_fit_status": "requirements_unverified",
+      "buyer_trigger_score": 87,
+      "action_level": "investigate_now",
+      "small_capital_angles": [
+        "Bảo trì định kỳ",
+        "Vệ sinh/facility",
+        "Sourcing vật tư thay thế",
+        "Thầu phụ theo địa bàn"
+      ],
+      "verification_required": true,
+      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=ac514d47-390c-4b7d-a981-f3bc7b09659b&notifyId=ac514d47-390c-4b7d-a981-f3bc7b09659b&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600519339&planNo=PL2600292199&step=tbmt&isInternet=1&bidForm=DTRR",
+      "next_action": "Mở mã IB2600519339 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
+      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
+    },
+    {
       "id": "IB2600529652",
       "record_type": "open_notice",
       "tender_code": "IB2600529652",
@@ -1035,7 +1175,7 @@
       "posted_at": "2026-09-11T09:59:27.357000+00:00",
       "closes_at": "2026-09-21T01:30:00+00:00",
       "opens_at": "2026-09-21T01:30:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 1962792000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1082,7 +1222,7 @@
       "posted_at": "2026-09-11T09:55:23.298000+00:00",
       "closes_at": "2026-09-21T04:00:00+00:00",
       "opens_at": "2026-09-21T04:00:00+00:00",
-      "days_to_close": 9.5,
+      "days_to_close": 9.3,
       "package_price_vnd": 7419900000,
       "procurement_category": "printing_media",
       "matched_keywords": [
@@ -1096,7 +1236,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "printing_media",
         "maintenance"
@@ -1129,7 +1269,7 @@
       "posted_at": "2026-09-11T09:28:29.475000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 1573648000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1177,7 +1317,7 @@
       "posted_at": "2026-09-11T03:06:51.881000+00:00",
       "closes_at": "2026-09-21T07:00:00+00:00",
       "opens_at": "2026-09-21T07:00:00+00:00",
-      "days_to_close": 9.6,
+      "days_to_close": 9.4,
       "package_price_vnd": 1003467152,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1224,7 +1364,7 @@
       "posted_at": "2026-09-10T11:14:08.584000+00:00",
       "closes_at": "2026-09-16T02:00:00+00:00",
       "opens_at": "2026-09-16T02:00:00+00:00",
-      "days_to_close": 4.4,
+      "days_to_close": 4.2,
       "package_price_vnd": 8633640000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1271,7 +1411,7 @@
       "posted_at": "2026-09-10T10:55:34.263000+00:00",
       "closes_at": "2026-09-21T01:30:00+00:00",
       "opens_at": "2026-09-21T01:30:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 8752911334,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1319,7 +1459,7 @@
       "posted_at": "2026-09-10T07:30:47.329000+00:00",
       "closes_at": "2026-09-21T03:00:00+00:00",
       "opens_at": "2026-09-21T03:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.3,
       "package_price_vnd": 866814480,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1366,7 +1506,7 @@
       "posted_at": "2026-09-10T02:52:51.654000+00:00",
       "closes_at": "2026-09-28T02:00:00+00:00",
       "opens_at": "2026-09-28T02:00:00+00:00",
-      "days_to_close": 16.4,
+      "days_to_close": 16.2,
       "package_price_vnd": 10208160000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1413,7 +1553,7 @@
       "posted_at": "2026-09-09T04:14:19.267000+00:00",
       "closes_at": "2026-09-18T02:00:00+00:00",
       "opens_at": "2026-09-18T02:00:00+00:00",
-      "days_to_close": 6.4,
+      "days_to_close": 6.2,
       "package_price_vnd": 14277312000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1461,7 +1601,7 @@
       "posted_at": "2026-09-09T03:15:01.781000+00:00",
       "closes_at": "2026-09-21T03:30:00+00:00",
       "opens_at": "2026-09-21T03:30:00+00:00",
-      "days_to_close": 9.5,
+      "days_to_close": 9.3,
       "package_price_vnd": 2991195000,
       "procurement_category": "maintenance",
       "matched_keywords": [
@@ -1508,7 +1648,7 @@
       "posted_at": "2026-09-11T11:13:13.997000+00:00",
       "closes_at": "2026-09-25T10:30:00+00:00",
       "opens_at": "2026-09-25T10:30:00+00:00",
-      "days_to_close": 13.8,
+      "days_to_close": 13.6,
       "package_price_vnd": 1989836000,
       "procurement_category": "consulting",
       "matched_keywords": [
@@ -1555,7 +1695,7 @@
       "posted_at": "2026-09-11T10:38:56.331000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 4198068000,
       "procurement_category": "garment_ppe",
       "matched_keywords": [
@@ -1569,7 +1709,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "garment_ppe"
       ],
@@ -1601,7 +1741,7 @@
       "posted_at": "2026-09-11T10:24:32.972000+00:00",
       "closes_at": "2026-09-22T07:30:00+00:00",
       "opens_at": "2026-09-22T07:30:00+00:00",
-      "days_to_close": 10.6,
+      "days_to_close": 10.4,
       "package_price_vnd": 6348230000,
       "procurement_category": "garment_ppe",
       "matched_keywords": [
@@ -1615,7 +1755,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "garment_ppe"
       ],
@@ -1647,7 +1787,7 @@
       "posted_at": "2026-09-11T10:22:05.435000+00:00",
       "closes_at": "2026-09-21T02:00:00+00:00",
       "opens_at": "2026-09-21T02:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 555271520,
       "procurement_category": "garment_ppe",
       "matched_keywords": [
@@ -1661,7 +1801,7 @@
       "tbmt_detail_confirmed": true,
       "requirements_status": "unverified",
       "first_seen_at": "2026-09-11T11:21:48.610269+00:00",
-      "last_seen_at": "2026-09-11T11:21:48.610269+00:00",
+      "last_seen_at": "2026-09-11T20:58:30.544084+00:00",
       "procurement_tags": [
         "garment_ppe"
       ],
@@ -1693,7 +1833,7 @@
       "posted_at": "2026-09-10T10:51:40.522000+00:00",
       "closes_at": "2026-09-21T01:00:00+00:00",
       "opens_at": "2026-09-21T01:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.2,
       "package_price_vnd": 700000000,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -1739,7 +1879,7 @@
       "posted_at": "2026-09-10T10:09:41.938000+00:00",
       "closes_at": "2026-09-29T03:00:00+00:00",
       "opens_at": "2026-09-29T03:00:00+00:00",
-      "days_to_close": 17.4,
+      "days_to_close": 17.3,
       "package_price_vnd": 50145470000,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -1787,7 +1927,7 @@
       "posted_at": "2026-09-10T03:21:40.194000+00:00",
       "closes_at": "2026-09-21T03:00:00+00:00",
       "opens_at": "2026-09-21T03:00:00+00:00",
-      "days_to_close": 9.4,
+      "days_to_close": 9.3,
       "package_price_vnd": 3926160000,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -1835,7 +1975,7 @@
       "posted_at": "2026-09-10T01:46:57.371000+00:00",
       "closes_at": "2026-09-21T08:00:00+00:00",
       "opens_at": "2026-09-21T08:00:00+00:00",
-      "days_to_close": 9.6,
+      "days_to_close": 9.5,
       "package_price_vnd": 872478000,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -1881,7 +2021,7 @@
       "posted_at": "2026-09-09T09:17:11.513000+00:00",
       "closes_at": "2026-09-18T09:30:00+00:00",
       "opens_at": "2026-09-18T09:30:00+00:00",
-      "days_to_close": 6.7,
+      "days_to_close": 6.5,
       "package_price_vnd": 780839000,
       "procurement_category": "garment_ppe",
       "matched_keywords": [
@@ -1927,7 +2067,7 @@
       "posted_at": "2026-09-09T09:09:47.937000+00:00",
       "closes_at": "2026-09-28T02:00:00+00:00",
       "opens_at": "2026-09-28T02:00:00+00:00",
-      "days_to_close": 16.4,
+      "days_to_close": 16.2,
       "package_price_vnd": 10111250079,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -1973,7 +2113,7 @@
       "posted_at": "2026-09-09T04:18:25.463000+00:00",
       "closes_at": "2026-09-18T07:00:00+00:00",
       "opens_at": "2026-09-18T07:00:00+00:00",
-      "days_to_close": 6.6,
+      "days_to_close": 6.4,
       "package_price_vnd": 4526000000,
       "procurement_category": "office_goods",
       "matched_keywords": [
@@ -2020,7 +2160,7 @@
       "posted_at": "2026-09-08T11:08:50.327000+00:00",
       "closes_at": "2026-09-18T02:00:00+00:00",
       "opens_at": "2026-09-18T02:30:00+00:00",
-      "days_to_close": 6.4,
+      "days_to_close": 6.2,
       "package_price_vnd": 6600000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2066,7 +2206,7 @@
       "posted_at": "2026-09-08T10:35:11.575000+00:00",
       "closes_at": "2026-09-17T08:00:00+00:00",
       "opens_at": "2026-09-17T08:00:00+00:00",
-      "days_to_close": 5.6,
+      "days_to_close": 5.5,
       "package_price_vnd": 3473779174,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2112,7 +2252,7 @@
       "posted_at": "2026-09-08T10:33:03.553000+00:00",
       "closes_at": "2026-09-28T04:00:00+00:00",
       "opens_at": "2026-09-28T04:00:00+00:00",
-      "days_to_close": 16.5,
+      "days_to_close": 16.3,
       "package_price_vnd": 17027325000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2158,7 +2298,7 @@
       "posted_at": "2026-09-08T10:10:52.630000+00:00",
       "closes_at": "2026-09-17T02:00:00+00:00",
       "opens_at": "2026-09-17T02:00:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.2,
       "package_price_vnd": 3319875853,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2204,7 +2344,7 @@
       "posted_at": "2026-09-08T09:59:48.965000+00:00",
       "closes_at": "2026-09-17T03:00:00+00:00",
       "opens_at": "2026-09-17T03:00:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.3,
       "package_price_vnd": 1047735000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2250,7 +2390,7 @@
       "posted_at": "2026-09-08T09:47:01.454000+00:00",
       "closes_at": "2026-09-17T03:00:00+00:00",
       "opens_at": "2026-09-17T03:00:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.3,
       "package_price_vnd": 810174600,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2296,7 +2436,7 @@
       "posted_at": "2026-09-08T09:41:01.055000+00:00",
       "closes_at": "2026-09-17T09:45:00+00:00",
       "opens_at": "2026-09-17T09:45:00+00:00",
-      "days_to_close": 5.7,
+      "days_to_close": 5.5,
       "package_price_vnd": 3145282000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2342,7 +2482,7 @@
       "posted_at": "2026-09-08T09:32:43.857000+00:00",
       "closes_at": "2026-09-26T02:00:00+00:00",
       "opens_at": "2026-09-26T02:00:00+00:00",
-      "days_to_close": 14.4,
+      "days_to_close": 14.2,
       "package_price_vnd": 2523319656,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2390,7 +2530,7 @@
       "posted_at": "2026-09-08T09:27:38.381000+00:00",
       "closes_at": "2026-09-17T02:30:00+00:00",
       "opens_at": "2026-09-17T02:30:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.2,
       "package_price_vnd": 1478025695,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2436,7 +2576,7 @@
       "posted_at": "2026-09-08T08:51:22.473000+00:00",
       "closes_at": "2026-09-17T02:00:00+00:00",
       "opens_at": "2026-09-17T02:00:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.2,
       "package_price_vnd": 2758614000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2482,7 +2622,7 @@
       "posted_at": "2026-09-08T04:20:32.672000+00:00",
       "closes_at": "2026-09-17T03:00:00+00:00",
       "opens_at": "2026-09-17T03:00:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.3,
       "package_price_vnd": 4313631357,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2528,7 +2668,7 @@
       "posted_at": "2026-09-08T04:17:38.253000+00:00",
       "closes_at": "2026-09-17T02:00:00+00:00",
       "opens_at": "2026-09-17T02:30:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.2,
       "package_price_vnd": 6600000000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2574,7 +2714,7 @@
       "posted_at": "2026-09-08T03:41:28.373000+00:00",
       "closes_at": "2026-09-17T02:30:00+00:00",
       "opens_at": "2026-09-17T02:30:00+00:00",
-      "days_to_close": 5.4,
+      "days_to_close": 5.2,
       "package_price_vnd": 854387800,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2620,7 +2760,7 @@
       "posted_at": "2026-09-07T11:22:44.730000+00:00",
       "closes_at": "2026-09-16T02:00:00+00:00",
       "opens_at": "2026-09-16T02:00:00+00:00",
-      "days_to_close": 4.4,
+      "days_to_close": 4.2,
       "package_price_vnd": 1957945000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2666,7 +2806,7 @@
       "posted_at": "2026-09-07T08:56:42.499000+00:00",
       "closes_at": "2026-09-16T02:00:00+00:00",
       "opens_at": "2026-09-16T02:00:00+00:00",
-      "days_to_close": 4.4,
+      "days_to_close": 4.2,
       "package_price_vnd": 1097039000,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2712,7 +2852,7 @@
       "posted_at": "2026-09-07T08:22:34.472000+00:00",
       "closes_at": "2026-09-16T01:00:00+00:00",
       "opens_at": "2026-09-16T01:00:00+00:00",
-      "days_to_close": 4.4,
+      "days_to_close": 4.2,
       "package_price_vnd": 2216333341,
       "procurement_category": "digital_services",
       "matched_keywords": [
@@ -2747,151 +2887,12 @@
       "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=fa3ff2e6-6665-4a92-942b-1b1dde1a771e&notifyId=fa3ff2e6-6665-4a92-942b-1b1dde1a771e&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600510906&planNo=PL2600289520&step=tbmt&isInternet=1&bidForm=DTRR",
       "next_action": "Mở mã IB2600510906 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
       "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
-    },
-    {
-      "id": "IB2600503468",
-      "record_type": "open_notice",
-      "tender_code": "IB2600503468",
-      "notify_id": "5a262487-0545-413c-afaa-d1dc75bb899b",
-      "title": "Chỉnh lý, số hóa tài liệu năm 2026 của Ủy ban Mặt trận Tổ quốc Việt Nam phường Xóm Chiếu",
-      "buyer": "Ủy ban Mặt trận Tổ quốc Việt Nam phường Xóm Chiếu",
-      "posted_at": "2026-09-07T08:01:48.111000+00:00",
-      "closes_at": "2026-09-16T02:00:00+00:00",
-      "opens_at": "2026-09-16T02:00:00+00:00",
-      "days_to_close": 4.4,
-      "package_price_vnd": 1829381809,
-      "procurement_category": "digital_services",
-      "matched_keywords": [
-        "số hóa"
-      ],
-      "source_id": "msc-official",
-      "source_name": "Hệ thống mạng đấu thầu quốc gia",
-      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5a262487-0545-413c-afaa-d1dc75bb899b&notifyId=5a262487-0545-413c-afaa-d1dc75bb899b&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600503468&planNo=PL2600281239&step=tbmt&isInternet=1&bidForm=DTRR",
-      "authority": 1.0,
-      "official_metadata": true,
-      "tbmt_detail_confirmed": true,
-      "requirements_status": "unverified",
-      "first_seen_at": "2026-09-07T12:32:43.798198+00:00",
-      "last_seen_at": "2026-09-07T21:32:02.550143+00:00",
-      "procurement_tags": [
-        "digital_services"
-      ],
-      "package_price_band": "large",
-      "prime_fit_score": 53,
-      "subcontract_fit_score": 88,
-      "recommended_path": "subcontract_or_sourcing",
-      "small_capital_fit_score": 88,
-      "small_capital_fit_status": "requirements_unverified",
-      "buyer_trigger_score": 83,
-      "action_level": "investigate_now",
-      "small_capital_angles": [
-        "Triển khai/maintain một module ngách",
-        "Làm thầu phụ cho integrator lớn hơn",
-        "Hỗ trợ vận hành sau triển khai"
-      ],
-      "verification_required": true,
-      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5a262487-0545-413c-afaa-d1dc75bb899b&notifyId=5a262487-0545-413c-afaa-d1dc75bb899b&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600503468&planNo=PL2600281239&step=tbmt&isInternet=1&bidForm=DTRR",
-      "next_action": "Mở mã IB2600503468 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
-      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
-    },
-    {
-      "id": "IB2600506824",
-      "record_type": "open_notice",
-      "tender_code": "IB2600506824",
-      "notify_id": "cdc6b7b9-157f-4058-a611-f635eff1255d",
-      "title": "Chỉnh lý và số hóa hồ sơ khối UBND phường từ tháng 6/2025 trở về trước",
-      "buyer": "PHÒNG VĂN HÓA - XÃ HỘI PHƯỜNG AN THẮNG",
-      "posted_at": "2026-09-07T07:36:45.682000+00:00",
-      "closes_at": "2026-09-17T03:00:00+00:00",
-      "opens_at": "2026-09-17T03:00:00+00:00",
-      "days_to_close": 5.4,
-      "package_price_vnd": 4258040992,
-      "procurement_category": "digital_services",
-      "matched_keywords": [
-        "số hóa"
-      ],
-      "source_id": "msc-official",
-      "source_name": "Hệ thống mạng đấu thầu quốc gia",
-      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=cdc6b7b9-157f-4058-a611-f635eff1255d&notifyId=cdc6b7b9-157f-4058-a611-f635eff1255d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600506824&planNo=PL2600238244&step=tbmt&isInternet=1&bidForm=DTRR",
-      "authority": 1.0,
-      "official_metadata": true,
-      "tbmt_detail_confirmed": true,
-      "requirements_status": "unverified",
-      "first_seen_at": "2026-09-07T12:32:43.798198+00:00",
-      "last_seen_at": "2026-09-07T12:32:43.798198+00:00",
-      "procurement_tags": [
-        "digital_services"
-      ],
-      "package_price_band": "very_large",
-      "prime_fit_score": 33,
-      "subcontract_fit_score": 88,
-      "recommended_path": "subcontract_or_sourcing",
-      "small_capital_fit_score": 88,
-      "small_capital_fit_status": "requirements_unverified",
-      "buyer_trigger_score": 83,
-      "action_level": "investigate_now",
-      "small_capital_angles": [
-        "Triển khai/maintain một module ngách",
-        "Làm thầu phụ cho integrator lớn hơn",
-        "Hỗ trợ vận hành sau triển khai"
-      ],
-      "verification_required": true,
-      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=cdc6b7b9-157f-4058-a611-f635eff1255d&notifyId=cdc6b7b9-157f-4058-a611-f635eff1255d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600506824&planNo=PL2600238244&step=tbmt&isInternet=1&bidForm=DTRR",
-      "next_action": "Mở mã IB2600506824 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
-      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
-    },
-    {
-      "id": "IB2600498288",
-      "record_type": "open_notice",
-      "tender_code": "IB2600498288",
-      "notify_id": "cc6ed772-a6eb-42cd-be46-c0ce108c184d",
-      "title": "Gói số 4: Số hóa tài liệu lưu trữ tại Kho Lưu trữ lịch sử Tỉnh ủy",
-      "buyer": "Văn phòng Tỉnh ủy Thanh Hóa",
-      "posted_at": "2026-09-07T03:06:12.448000+00:00",
-      "closes_at": "2026-09-16T02:30:00+00:00",
-      "opens_at": "2026-09-16T02:30:00+00:00",
-      "days_to_close": 4.4,
-      "package_price_vnd": 7929242000,
-      "procurement_category": "digital_services",
-      "matched_keywords": [
-        "số hóa"
-      ],
-      "source_id": "msc-official",
-      "source_name": "Hệ thống mạng đấu thầu quốc gia",
-      "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=cc6ed772-a6eb-42cd-be46-c0ce108c184d&notifyId=cc6ed772-a6eb-42cd-be46-c0ce108c184d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498288&planNo=PL2600252999&step=tbmt&isInternet=1&bidForm=DTRR",
-      "authority": 1.0,
-      "official_metadata": true,
-      "tbmt_detail_confirmed": true,
-      "requirements_status": "unverified",
-      "first_seen_at": "2026-09-07T04:42:03.972521+00:00",
-      "last_seen_at": "2026-09-07T04:42:03.972521+00:00",
-      "procurement_tags": [
-        "digital_services"
-      ],
-      "package_price_band": "very_large",
-      "prime_fit_score": 33,
-      "subcontract_fit_score": 88,
-      "recommended_path": "subcontract_or_sourcing",
-      "small_capital_fit_score": 88,
-      "small_capital_fit_status": "requirements_unverified",
-      "buyer_trigger_score": 83,
-      "action_level": "investigate_now",
-      "small_capital_angles": [
-        "Triển khai/maintain một module ngách",
-        "Làm thầu phụ cho integrator lớn hơn",
-        "Hỗ trợ vận hành sau triển khai"
-      ],
-      "verification_required": true,
-      "official_verification_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=cc6ed772-a6eb-42cd-be46-c0ce108c184d&notifyId=cc6ed772-a6eb-42cd-be46-c0ce108c184d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600498288&planNo=PL2600252999&step=tbmt&isInternet=1&bidForm=DTRR",
-      "next_action": "Mở mã IB2600498288 trên Hệ thống mạng đấu thầu quốc gia. Đọc HSMT: bảo đảm dự thầu, doanh thu/hợp đồng tương tự, nhân sự, giấy phép và điều khoản thanh toán. Nếu prime contract vượt khả năng, tìm nhà thầu phù hợp để đề xuất sourcing/thầu phụ thay vì tự ôm vốn.",
-      "kill_criteria": "Loại nếu thời hạn quá sát, yêu cầu pháp lý/doanh thu/bảo lãnh vượt khả năng, dòng tiền buộc phải vay/ôm hàng quá mức, hoặc không tìm được đường prime/partner/thầu phụ thực tế."
     }
   ],
   "warnings": [
     "Chỉ TBMT còn mở được đưa vào Buyer Radar; KQLCNT/step 4 đã tách khỏi pipeline này.",
     "Prime fit và subcontract fit là hai đường khác nhau. Gói lớn có thể tệ cho prime-bid nhưng vẫn đáng điều tra để bán cho nhà thầu chính.",
     "HSMT, bảo lãnh, doanh thu tương tự, pháp lý và điều khoản thanh toán vẫn phải xác minh trước khi bỏ tiền.",
-    "Endpoint là endpoint website MSC, không phải developer API được cam kết ổn định.",
-    "Có 12 lỗi request/schema ở lần chạy gần nhất; không suy diễn từ dữ liệu thiếu."
+    "Endpoint là endpoint website MSC, không phải developer API được cam kết ổn định."
   ]
 }
