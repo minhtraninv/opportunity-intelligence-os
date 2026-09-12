@@ -1,20 +1,20 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-09-11T20:59:28.263727+00:00",
+    "generated_at": "2026-09-12T04:37:11.429029+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
   "coverage": {
-    "target_partner_ids": 16,
-    "targets_with_history": 16,
+    "target_partner_ids": 17,
+    "targets_with_history": 17,
     "targets_scanned": 16,
     "details_fetched": 30,
-    "email_candidates_seen": 29,
+    "email_candidates_seen": 30,
     "verified_contact_entities": 1,
     "verified_contact_paths": 1,
-    "filtered_non_organization": 6,
-    "filtered_personal_like_mailboxes": 22,
+    "filtered_non_organization": 4,
+    "filtered_personal_like_mailboxes": 25,
     "errors": 1
   },
   "contacts": [
@@ -31,7 +31,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600530750&notifyId=IB2600530750&inputResultId=e88b6049-28a0-48ad-8832-a85e50d4e62d&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600530750&planNo=PL2600300173&step=tbmt&isInternet=undefined&bidForm=CDTRG",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-11T20:59:28.263727+00:00",
+          "verified_at": "2026-09-12T04:37:11.429029+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -42,7 +42,7 @@
     }
   ],
   "errors": [
-    "vn0100684378 8c9923d4-9653-4ac7-b819-b29226e92b67: ValueError: non-JSON response"
+    "vn0101195940 898b5c29-2f9d-4180-8a44-43ad1021897e: ValueError: non-JSON response"
   ],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
