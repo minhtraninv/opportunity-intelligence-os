@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-12T15:33:26.805445+00:00",
+    "generated_at": "2026-09-12T20:35:09.244204+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,31 +9,31 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 205,
-    "entities_seen_recently": 116,
-    "auto_discovered_entities": 106,
-    "history_events": 205
+    "recent_events": 206,
+    "entities_seen_recently": 117,
+    "auto_discovered_entities": 107,
+    "history_events": 206
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 4,
+      "items_this_run": 3,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 8,
       "error": null
     },
     {
@@ -82,15 +82,15 @@
       "recent_events": 4
     },
     {
+      "entity_id": "auto-vietjet-b0c33c77",
+      "recent_events": 3
+    },
+    {
       "entity_id": "long_thanh_airport",
       "recent_events": 3
     },
     {
       "entity_id": "auto-quảng-trị-3b0b65db",
-      "recent_events": 3
-    },
-    {
-      "entity_id": "auto-vietjet-b0c33c77",
       "recent_events": 3
     },
     {
@@ -114,11 +114,11 @@
       "recent_events": 3
     },
     {
-      "entity_id": "auto-quảng-ninh-3ed973db",
+      "entity_id": "auto-đà-nẵng-93ee49dd",
       "recent_events": 2
     },
     {
-      "entity_id": "auto-đà-nẵng-93ee49dd",
+      "entity_id": "auto-quảng-ninh-3ed973db",
       "recent_events": 2
     },
     {
@@ -227,6 +227,10 @@
     },
     {
       "entity_id": "auto-totalenergies-6802e366",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-petrovietnam-43148745",
       "recent_events": 1
     },
     {
@@ -1254,6 +1258,24 @@
       "recent_events": 1,
       "families": [
         "strategy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-petrovietnam-43148745",
+      "label": "Petrovietnam",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Petrovietnam"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
       ],
       "publishers": [
         "Tuổi Trẻ Kinh doanh"
@@ -2341,24 +2363,6 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-việt-nam-brazil-0a2267e2",
-      "label": "Việt Nam-Brazil",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Việt Nam-Brazil"
-      ],
-      "recent_events": 1,
-      "families": [
-        "strategy"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     }
   ],
   "events": [
@@ -2376,7 +2380,121 @@
       "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-lam-viec-ve-cac-du-an-dien-tai-can-tho-post1135817.vnp",
       "published_at": "2026-09-12T21:56:57+00:00",
       "first_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "3f8ba667fd8602d6",
+      "event_signature": "d54cded61023c721",
+      "entity_id": "auto-vietjet-b0c33c77",
+      "entity_label": "Vietjet",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Vietjet và CFM hợp tác phát triển bảo dưỡng động cơ tại Việt Nam",
+      "summary": "Trong khuôn khổ chuyến thăm chính thức Cộng hòa Pháp của Tổng Bí thư, Chủ tịch nước Việt Nam Tô Lâm, CFM International và Vietjet đã ký Ý định thư (LOI) hợp tác nghiên cứu phát triển năng lực bảo dưỡng, sửa chữa và đại tu (MRO) động cơ CFM LEAP tại Việt Nam.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vietjet-va-cfm-hop-tac-phat-trien-bao-duong-dong-co-tai-viet-nam-100260911182633793.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-11T16:29:05.349016+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "c087d7ed62a758ab",
+      "event_signature": "81d5504d0dccad7d",
+      "entity_id": "auto-totalenergies-6802e366",
+      "entity_label": "TotalEnergies",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "TotalEnergies ký biên bản ghi nhớ năng lượng với hai đối tác Việt Nam",
+      "summary": "Ngày 10-9, trong khuôn khổ Diễn đàn Lãnh đạo Việt Nam - Pháp được tổ chức tại Paris, TotalEnergies công bố việc ký kết hai Biên bản ghi nhớ (MoU) nhằm tăng cường hợp tác dài hạn với các doanh nghiệp năng lượng hàng đầu của Việt Nam.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/totalenergies-ky-bien-ban-ghi-nho-nang-luong-voi-hai-doi-tac-viet-nam-100260912104758766.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "61b168343b26fda7",
+      "event_signature": "8a3eb88205d3c02b",
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_label": "Khánh Hòa",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Khánh Hòa đấu thầu 7 khu đất thực hiện các dự án điện gió, điện mặt trời",
+      "summary": "Từ nay đến cuối năm 2026, tỉnh Khánh Hòa sẽ đấu thầu 7 khu đất để thực hiện các dự án điện gió, điện mặt trời.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/khanh-hoa-dau-thau-7-khu-dat-thuc-hien-cac-du-an-dien-gio-dien-mat-troi-100260912112538156.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "c4721a48635a7b80",
+      "event_signature": "7451053f93860477",
+      "entity_id": "auto-đà-nẵng-93ee49dd",
+      "entity_label": "Đà Nẵng",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Đà Nẵng lập hội đồng thẩm định 2 dự án đường sắt, đường bộ tốc độ cao nối Chu Lai",
+      "summary": "Tuyến đường sắt đô thị và tuyến đường bộ tốc độ cao kết nối trung tâm thành phố Đà Nẵng với Chu Lai sẽ mở thêm hai hướng kết nối giao thông chiến lược về phía Nam.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/da-nang-lap-hoi-dong-tham-dinh-2-du-an-duong-sat-duong-bo-toc-do-cao-noi-chu-lai-100260912095538411.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "4cac3b48435fe877",
+      "event_signature": "963e3cd031e65bac",
+      "entity_id": "auto-vietjet-b0c33c77",
+      "entity_label": "Vietjet",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Vietjet tổ chức chuỗi Ngày hội tuyển dụng tiếp viên hàng không năm 2026",
+      "summary": "Vietjet chính thức khởi động chuỗi Ngày hội tuyển dụng tiếp viên hàng không năm 2026 tại TP.HCM ngày 18-9 và Hà Nội ngày 3-10. Đây là đợt tuyển dụng trọng điểm của hãng nhằm bổ sung nhân sự, đáp ứng nhu cầu phát triển mạng bay trong nước và quốc tế.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vietjet-to-chuc-chuoi-ngay-hoi-tuyen-dung-tiep-vien-hang-khong-nam-2026-100260912174506964.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "e9dcd4c85e29269d",
+      "event_signature": "f2ecc91059399644",
+      "entity_id": "auto-petrovietnam-43148745",
+      "entity_label": "Petrovietnam",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Petrovietnam lần đầu xuất khẩu sản phẩm điện gió ngoài khơi sang châu Âu",
+      "summary": "Các đơn vị thành viên của Petrovietnam vừa hoàn thành, hạ thủy và vận chuyển thành công 4 trạm biến áp ngoài khơi thuộc dự án Baltica 2 (ngoài khơi Ba Lan).",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/petrovietnam-lan-dau-xuat-khau-san-pham-dien-gio-ngoai-khoi-sang-chau-au-100260912205426209.htm",
+      "published_at": "2026-09-12T20:35:09.244204+00:00",
+      "first_seen_at": "2026-09-12T20:35:09.244204+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2395,7 +2513,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-tri-lap-to-cong-tac-go-vuong-giai-phong-mat-bang-tai-nhieu-du-an-post1135767.vnp",
       "published_at": "2026-09-12T15:45:29+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2412,7 +2530,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-tri-lap-to-cong-tac-go-vuong-giai-phong-mat-bang-tai-nhieu-du-an-post1135767.vnp",
       "published_at": "2026-09-12T15:45:29+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2431,105 +2549,10 @@
       "source_url": "https://www.vietnamplus.vn/quang-ninh-dat-muc-tieu-giai-ngan-100-von-chuong-trinh-muc-tieu-quoc-gia-2026-post1135764.vnp",
       "published_at": "2026-09-12T15:42:55+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "3f8ba667fd8602d6",
-      "event_signature": "d54cded61023c721",
-      "entity_id": "auto-vietjet-b0c33c77",
-      "entity_label": "Vietjet",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "strategy",
-      "title": "Vietjet và CFM hợp tác phát triển bảo dưỡng động cơ tại Việt Nam",
-      "summary": "Trong khuôn khổ chuyến thăm chính thức Cộng hòa Pháp của Tổng Bí thư, Chủ tịch nước Việt Nam Tô Lâm, CFM International và Vietjet đã ký Ý định thư (LOI) hợp tác nghiên cứu phát triển năng lực bảo dưỡng, sửa chữa và đại tu (MRO) động cơ CFM LEAP tại Việt Nam.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/vietjet-va-cfm-hop-tac-phat-trien-bao-duong-dong-co-tai-viet-nam-100260911182633793.htm",
-      "published_at": "2026-09-12T15:33:26.805445+00:00",
-      "first_seen_at": "2026-09-11T16:29:05.349016+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "c087d7ed62a758ab",
-      "event_signature": "81d5504d0dccad7d",
-      "entity_id": "auto-totalenergies-6802e366",
-      "entity_label": "TotalEnergies",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "strategy",
-      "title": "TotalEnergies ký biên bản ghi nhớ năng lượng với hai đối tác Việt Nam",
-      "summary": "Ngày 10-9, trong khuôn khổ Diễn đàn Lãnh đạo Việt Nam - Pháp được tổ chức tại Paris, TotalEnergies công bố việc ký kết hai Biên bản ghi nhớ (MoU) nhằm tăng cường hợp tác dài hạn với các doanh nghiệp năng lượng hàng đầu của Việt Nam.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/totalenergies-ky-bien-ban-ghi-nho-nang-luong-voi-hai-doi-tac-viet-nam-100260912104758766.htm",
-      "published_at": "2026-09-12T15:33:26.805445+00:00",
-      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "61b168343b26fda7",
-      "event_signature": "8a3eb88205d3c02b",
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
-      "entity_label": "Khánh Hòa",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Khánh Hòa đấu thầu 7 khu đất thực hiện các dự án điện gió, điện mặt trời",
-      "summary": "Từ nay đến cuối năm 2026, tỉnh Khánh Hòa sẽ đấu thầu 7 khu đất để thực hiện các dự án điện gió, điện mặt trời.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/khanh-hoa-dau-thau-7-khu-dat-thuc-hien-cac-du-an-dien-gio-dien-mat-troi-100260912112538156.htm",
-      "published_at": "2026-09-12T15:33:26.805445+00:00",
-      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "c4721a48635a7b80",
-      "event_signature": "7451053f93860477",
-      "entity_id": "auto-đà-nẵng-93ee49dd",
-      "entity_label": "Đà Nẵng",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Đà Nẵng lập hội đồng thẩm định 2 dự án đường sắt, đường bộ tốc độ cao nối Chu Lai",
-      "summary": "Tuyến đường sắt đô thị và tuyến đường bộ tốc độ cao kết nối trung tâm thành phố Đà Nẵng với Chu Lai sẽ mở thêm hai hướng kết nối giao thông chiến lược về phía Nam.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/da-nang-lap-hoi-dong-tham-dinh-2-du-an-duong-sat-duong-bo-toc-do-cao-noi-chu-lai-100260912095538411.htm",
-      "published_at": "2026-09-12T15:33:26.805445+00:00",
-      "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "4cac3b48435fe877",
-      "event_signature": "963e3cd031e65bac",
-      "entity_id": "auto-vietjet-b0c33c77",
-      "entity_label": "Vietjet",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "labor",
-      "title": "Vietjet tổ chức chuỗi Ngày hội tuyển dụng tiếp viên hàng không năm 2026",
-      "summary": "Vietjet chính thức khởi động chuỗi Ngày hội tuyển dụng tiếp viên hàng không năm 2026 tại TP.HCM ngày 18-9 và Hà Nội ngày 3-10. Đây là đợt tuyển dụng trọng điểm của hãng nhằm bổ sung nhân sự, đáp ứng nhu cầu phát triển mạng bay trong nước và quốc tế.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/vietjet-to-chuc-chuoi-ngay-hoi-tuyen-dung-tiep-vien-hang-khong-nam-2026-100260912174506964.htm",
-      "published_at": "2026-09-12T15:33:26.805445+00:00",
-      "first_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     },
     {
       "id": "e1cf69527efbb62b",
@@ -2545,7 +2568,7 @@
       "source_url": "https://www.vietnamplus.vn/apec-dat-dong-thuan-ve-hop-tac-nang-luong-va-chuyen-doi-xanh-post1135751.vnp",
       "published_at": "2026-09-12T15:07:23+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2564,7 +2587,7 @@
       "source_url": "https://www.vietnamplus.vn/tpbank-duoc-chap-thuan-tang-von-dieu-le-them-hon-4161-ty-dong-post1135733.vnp",
       "published_at": "2026-09-12T13:16:51+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2583,7 +2606,7 @@
       "source_url": "https://www.vietnamplus.vn/vpbank-chot-quyen-tra-co-tuc-bang-co-phieu-tang-von-len-100000-ty-dong-post1135731.vnp",
       "published_at": "2026-09-12T13:16:20+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2602,7 +2625,7 @@
       "source_url": "https://vnexpress.net/topzone-mo-rong-he-thong-nang-cap-chinh-sach-dat-truoc-iphone-18-pro-5119578.html",
       "published_at": "2026-09-12T12:31:00+00:00",
       "first_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2657,7 +2680,7 @@
       "source_url": "https://thanhnien.vn/vietjet-va-cfm-international-phat-trien-nang-luc-bao-duong-dong-co-the-he-moi-nhat-185260912145220697.htm",
       "published_at": "2026-09-12T07:44:00+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2695,7 +2718,7 @@
       "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
       "published_at": "2026-09-12T02:04:00+00:00",
       "first_seen_at": "2026-09-12T04:36:05.138520+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2712,7 +2735,7 @@
       "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
       "published_at": "2026-09-12T02:04:00+00:00",
       "first_seen_at": "2026-09-12T04:36:05.138520+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2731,7 +2754,7 @@
       "source_url": "https://thanhnien.vn/an-giang-dat-muc-tieu-tro-thanh-trung-tam-kinh-te-bien-cua-ca-nuoc-185260911203127879.htm",
       "published_at": "2026-09-11T14:29:00+00:00",
       "first_seen_at": "2026-09-11T16:29:05.349016+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2898,7 +2921,7 @@
       "source_url": "https://thanhnien.vn/khanh-hoa-siet-truy-xuat-nguon-goc-sau-rieng-xuat-khau-sang-trung-quoc-185260911154836607.htm",
       "published_at": "2026-09-11T09:39:00+00:00",
       "first_seen_at": "2026-09-11T11:21:27.174155+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2974,7 +2997,7 @@
       "source_url": "https://thanhnien.vn/tt-group-bat-tay-cung-totalenergies-phat-trien-du-an-dien-khi-lng-long-son-1500-mw-185260911121209096.htm",
       "published_at": "2026-09-11T07:00:00+00:00",
       "first_seen_at": "2026-09-11T11:21:27.174155+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2993,7 +3016,7 @@
       "source_url": "https://thanhnien.vn/vpbank-chot-ngay-phat-hanh-gan-21-ti-co-phieu-tra-co-tuc-18526091111051822.htm",
       "published_at": "2026-09-11T04:31:00+00:00",
       "first_seen_at": "2026-09-11T04:40:33.741172+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3031,7 +3054,7 @@
       "source_url": "https://vnexpress.net/vietravel-airlines-se-mua-50-may-bay-airbus-5119057.html",
       "published_at": "2026-09-11T03:30:10+00:00",
       "first_seen_at": "2026-09-11T11:21:27.174155+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3050,7 +3073,7 @@
       "source_url": "https://thanhnien.vn/vinh-long-phan-dau-thuoc-nhom-10-tinh-thanh-dung-dau-pii-cap-dia-phuong-185260910161949024.htm",
       "published_at": "2026-09-11T00:00:00+00:00",
       "first_seen_at": "2026-09-11T04:40:33.741172+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3464,7 +3487,7 @@
       "source_url": "https://vnexpress.net/metro-ben-thanh-suoi-tien-can-lai-binh-quan-moi-nam-27-ty-dong-5118571.html",
       "published_at": "2026-09-09T17:08:00+00:00",
       "first_seen_at": "2026-09-09T20:57:21.936782+00:00",
-      "last_seen_at": "2026-09-12T15:33:26.805445+00:00",
+      "last_seen_at": "2026-09-12T20:35:09.244204+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -5731,7 +5754,7 @@
       "event_signature": "de73bfba19889016",
       "entity_id": "auto-việt-nam-brazil-0a2267e2",
       "entity_label": "Việt Nam-Brazil",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "strategy",
       "title": "Việt Nam-Brazil mở rộng hợp tác, hướng tới mục tiêu thương mại 15 tỷ USD",
@@ -5741,9 +5764,7 @@
       "published_at": "2026-08-29T22:14:14+00:00",
       "first_seen_at": "2026-08-30T15:44:47.726233+00:00",
       "last_seen_at": "2026-09-01T05:07:58.938499+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "0386a46a1d6e02a1",
@@ -6182,7 +6203,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-12T15:33:41.118838+00:00",
+    "prepared_at": "2026-09-12T20:35:21.863994+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 24,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"

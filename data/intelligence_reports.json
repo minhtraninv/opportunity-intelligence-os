@@ -2,21 +2,21 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-09-12T15:33:44.364169+00:00",
-    "local_date": "2026-09-12",
+    "generated_at": "2026-09-12T20:35:25.200196+00:00",
+    "local_date": "2026-09-13",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-12T15:33:44.478065+00:00"
+    "trust_hardened_at": "2026-09-12T20:35:25.271482+00:00"
   },
   "reports": {
     "daily": {
       "kind": "daily",
-      "period_key": "2026-09-12",
+      "period_key": "2026-09-13",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-09-12T15:33:44.363392+00:00",
-      "local_generated_at": "2026-09-12T22:33:44.357967+07:00",
+      "generated_at": "2026-09-12T20:35:25.199663+00:00",
+      "local_generated_at": "2026-09-13T03:35:25.196078+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 14,
@@ -252,9 +252,9 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 1.0,
-          "productive_sources": 1.0,
-          "source_errors": -1.0
+          "strong": 0.0,
+          "productive_sources": 0.0,
+          "source_errors": 0.0
         }
       },
       "snapshot": {
@@ -407,10 +407,10 @@
     "weekly": {
       "kind": "weekly",
       "period_key": "2026-W37",
-      "period_state": "week_to_date",
+      "period_state": "final",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-09-12T15:33:44.363722+00:00",
-      "local_generated_at": "2026-09-12T22:33:44.357967+07:00",
+      "generated_at": "2026-09-12T20:35:25.199904+00:00",
+      "local_generated_at": "2026-09-13T03:35:25.196078+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 14,
@@ -803,8 +803,8 @@
       "period_key": "2026-09",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-09-12T15:33:44.363974+00:00",
-      "local_generated_at": "2026-09-12T22:33:44.357967+07:00",
+      "generated_at": "2026-09-12T20:35:25.200072+00:00",
+      "local_generated_at": "2026-09-13T03:35:25.196078+07:00",
       "history_status": "learning_history",
       "history_readiness": {
         "observation_days": 14,
@@ -1039,6 +1039,6 @@
       "trust_notice": "Monthly cần tối thiểu 21 ngày lịch sử; hiện mới có 14. Hệ thống chủ động không tạo phân tích kỳ để tránh pseudo-trend."
     }
   },
-  "history_count": 17,
+  "history_count": 18,
   "reporting_rule": "Daily = material delta; Weekly = main intelligence review; Monthly = regime/thesis audit. Insufficient history must remain explicit."
 }
