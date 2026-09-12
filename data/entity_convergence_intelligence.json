@@ -1,26 +1,26 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-12T10:48:07.145069+00:00",
+    "generated_at": "2026-09-12T15:33:44.082176+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-12T10:48:07.353647+00:00"
+    "trust_hardened_at": "2026-09-12T15:33:44.294928+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 34,
-    "observed_auto_entities": 24,
+    "observed_entities": 35,
+    "observed_auto_entities": 25,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 4,
-    "watch": 29,
+    "watch": 30,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 13,
+    "discovery_candidates": 15,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 8
   },
@@ -325,7 +325,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -616,6 +616,99 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-vietjet-b0c33c77",
+      "label": "Vietjet",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Vietjet đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "labor",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "event_count": 3,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 3,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "3f8ba667fd8602d6",
+          "event_signature": "d54cded61023c721",
+          "family": "strategy",
+          "title": "Vietjet và CFM hợp tác phát triển bảo dưỡng động cơ tại Việt Nam",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vietjet-va-cfm-hop-tac-phat-trien-bao-duong-dong-co-tai-viet-nam-100260911182633793.htm",
+          "observed_at": "2026-09-12T15:33:26.805445+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "4cac3b48435fe877",
+          "event_signature": "963e3cd031e65bac",
+          "family": "labor",
+          "title": "Vietjet tổ chức chuỗi Ngày hội tuyển dụng tiếp viên hàng không năm 2026",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vietjet-to-chuc-chuoi-ngay-hoi-tuyen-dung-tiep-vien-hang-khong-nam-2026-100260912174506964.htm",
+          "observed_at": "2026-09-12T15:33:26.805445+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "984f54f3eccc2c3e",
+          "event_signature": "393e6823bbb4e005",
+          "family": "strategy",
+          "title": "Vietjet và CFM International phát triển năng lực bảo dưỡng động cơ thế hệ mới nhất",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vietjet-va-cfm-international-phat-trien-nang-luc-bao-duong-dong-co-the-he-moi-nhat-185260912145220697.htm",
+          "observed_at": "2026-09-12T07:44:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "labor",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "evn_power_system",
       "label": "EVN / hệ thống điện quốc gia",
       "entity_type": "strategic_operator",
@@ -634,7 +727,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [],
       "theme_context": [
         {
@@ -911,7 +1004,7 @@
       "event_count": 2,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1208,6 +1301,93 @@
       "discovery_evidence_families": [
         "operating",
         "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-phó-thủ-041fcc3a",
+      "label": "Phó Thủ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Phó Thủ đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ. Bối cảnh ngành/địa bàn liên quan cũng đang có chuyển động, nhưng bằng chứng trực tiếp về entity vẫn còn mỏng.",
+      "evidence_families": [
+        "policy",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Báo Chính phủ",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 1,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "public_infrastructure",
+          "label": "public_infrastructure",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "6ca50c7ef8a7ecdc",
+          "event_signature": "be9d4c3739b33321",
+          "family": "project_execution",
+          "title": "Phó Thủ tướng Thường trực Phạm Gia Túc làm việc về các dự án điện tại Cần Thơ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-lam-viec-ve-cac-du-an-dien-tai-can-tho-post1135817.vnp",
+          "observed_at": "2026-09-12T21:56:57+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "d53bea29dbad0387",
+          "family": "policy",
+          "title": "Phó Thủ tướng Thường trực Phạm Gia Túc: Rà soát, hoàn thiện quy định về khoảng cách an toàn trên cao tốc, phù hợp thực tế",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-ra-soat-hoan-thien-quy-dinh-ve-khoang-cach-an-toan-tren-cao-toc-phu-hop-thuc-te-102260911182355626.htm",
+          "observed_at": "2026-09-11T16:28:24.393873+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "policy",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
