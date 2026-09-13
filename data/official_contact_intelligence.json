@@ -1,24 +1,26 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-09-13T04:50:09.863924+00:00",
+    "generated_at": "2026-09-13T11:54:35.409347+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
   "coverage": {
     "target_partner_ids": 17,
     "targets_with_history": 17,
-    "targets_scanned": 15,
+    "targets_scanned": 16,
     "details_fetched": 30,
-    "email_candidates_seen": 27,
+    "email_candidates_seen": 29,
     "verified_contact_entities": 0,
     "verified_contact_paths": 0,
-    "filtered_non_organization": 2,
-    "filtered_personal_like_mailboxes": 25,
-    "errors": 0
+    "filtered_non_organization": 3,
+    "filtered_personal_like_mailboxes": 26,
+    "errors": 1
   },
   "contacts": [],
-  "errors": [],
+  "errors": [
+    "vn0100684378 8c9923d4-9653-4ac7-b819-b29226e92b67: ValueError: non-JSON response"
+  ],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
     "Email có dạng cá nhân không được surface mặc định dù xuất hiện trong nguồn công khai.",
