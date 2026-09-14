@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-13T20:49:41.333763+00:00",
+    "generated_at": "2026-09-14T04:55:37.551048+00:00",
     "status": "active",
     "history_days": 15,
     "required_history_days": 14,
@@ -19,6 +19,17 @@
       "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.7."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 5,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "emerging",
+      "confidence": 55,
+      "source_diversity_7d": 3,
+      "explanation": "Xuất hiện 5 candidate events từ 3 nguồn trong 7 ngày trong khi baseline trước đó gần như trống."
     },
     {
       "category": "infrastructure",
@@ -61,17 +72,6 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 57,
-      "source_diversity_7d": 3,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 4,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 53,
       "source_diversity_7d": 3,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,26 @@
   ],
   "top_new_events": [
     {
+      "id": "5a45276947dc23e9",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nghị định 232/2026/NĐ-CP quy định vị trí việc làm của viên chức",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-232-2026-nd-cp-quy-dinh-ve-vi-tri-viec-lam-cua-vien-chuc-119260630113538643.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-14T04:55:37.551048+00:00"
+    },
+    {
       "id": "3d17a349194334c3",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +192,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-13T20:49:41.333763+00:00"
+      "first_seen_at": "2026-09-13T20:49:41.333763+00:00",
+      "collected_at": "2026-09-13T20:49:41.333763+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3e7fda464ef32576",
@@ -190,7 +212,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-13T20:49:41.333763+00:00"
+      "first_seen_at": "2026-09-13T20:49:41.333763+00:00",
+      "collected_at": "2026-09-13T20:49:41.333763+00:00",
+      "last_seen_at": null
     },
     {
       "id": "46bc96f9a1b0b1b2",
@@ -233,33 +257,13 @@
       "first_seen_at": "2026-09-13T11:51:28.733771+00:00",
       "collected_at": "2026-09-13T11:51:28.733771+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "bd95ebb7f14e2868",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Quy định về tham gia BHXH bắt buộc đối với chủ hộ kinh doanh",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-ve-tham-gia-bhxh-bat-buoc-doi-voi-chu-ho-kinh-doanh-11926091307434634.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-13T04:46:45.332035+00:00",
-      "collected_at": "2026-09-13T04:46:45.332035+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 19,
     "business_formation": 16,
+    "hiring": 4,
     "market_data": 4,
-    "hiring": 3,
     "capital_flow": 1
   },
   "geographies_7d": {
@@ -268,13 +272,11 @@
     "Huế": 1
   },
   "coverage": {
-    "historical_events": 299,
-    "candidate_events": 102,
-    "reference_events": 192,
+    "historical_events": 301,
+    "candidate_events": 103,
+    "reference_events": 193,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 0
   },
-  "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
-  ]
+  "warnings": []
 }
