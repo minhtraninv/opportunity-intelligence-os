@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T04:55:37.551048+00:00",
+    "generated_at": "2026-09-14T12:45:56.371650+00:00",
     "status": "active",
-    "history_days": 15,
+    "history_days": 16,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,14 +11,25 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 20,
+      "recent_7d": 21,
       "baseline_21d": 23,
       "baseline_expected_7d": 7.7,
-      "delta_pct": 161,
+      "delta_pct": 174,
       "trend": "accelerating",
-      "confidence": 75,
+      "confidence": 76,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.7."
+      "explanation": "7 ngày gần nhất có 21 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.7."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 5,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 150,
+      "trend": "accelerating",
+      "confidence": 58,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "labor",
@@ -27,7 +38,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "emerging",
-      "confidence": 55,
+      "confidence": 57,
       "source_diversity_7d": 3,
       "explanation": "Xuất hiện 5 candidate events từ 3 nguồn trong 7 ngày trong khi baseline trước đó gần như trống."
     },
@@ -38,7 +49,29 @@
       "baseline_expected_7d": 3.0,
       "delta_pct": -33,
       "trend": "stable",
-      "confidence": 50,
+      "confidence": 52,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 3,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 48,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 2,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 46,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -49,52 +82,19 @@
       "baseline_expected_7d": 2.0,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 33,
+      "confidence": 35,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.0."
     },
     {
-      "category": "construction",
-      "recent_7d": 6,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 57,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "policy",
-      "recent_7d": 3,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 57,
-      "source_diversity_7d": 3,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 3,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 51,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "energy",
       "recent_7d": 4,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 46,
-      "source_diversity_7d": 1,
+      "confidence": 61,
+      "source_diversity_7d": 3,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -104,7 +104,7 @@
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 44,
+      "confidence": 46,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -115,7 +115,7 @@
       "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 36,
+      "confidence": 38,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 32,
+      "confidence": 34,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 25,
+      "confidence": 27,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,12 +148,48 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 21,
+      "confidence": 23,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "63b7006ece23ec86",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Hoàn thiện quy định về đảng viên làm kinh tế tư nhân, phát huy nguồn lực cho phát triển",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoan-thien-quy-dinh-ve-dang-vien-lam-kinh-te-tu-nhan-phat-huy-nguon-luc-cho-phat-trien-102260914190726927.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-14T12:45:56.371650+00:00"
+    },
+    {
+      "id": "78396142708daca4",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Chi tiết 80 biểu mẫu ĐĂNG KÝ DOANH NGHIỆP",
+      "url": "https://xaydungchinhsach.chinhphu.vn/dang-ky-doanh-nghiep-chi-tiet-80-bieu-mau-119260910102204737.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-14T12:45:56.371650+00:00"
+    },
     {
       "id": "5a45276947dc23e9",
       "source_id": "gov-policy",
@@ -172,7 +208,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-14T04:55:37.551048+00:00"
+      "first_seen_at": "2026-09-14T04:55:37.551048+00:00",
+      "collected_at": "2026-09-14T04:55:37.551048+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3d17a349194334c3",
@@ -215,53 +253,11 @@
       "first_seen_at": "2026-09-13T20:49:41.333763+00:00",
       "collected_at": "2026-09-13T20:49:41.333763+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "46bc96f9a1b0b1b2",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Quyết định số 5883/QĐ-UBND: Ủy quyền phê duyệt, điều chỉnh vị trí việc làm và tỷ lệ viên chức bố trí theo bậc nghề nghiệp của vị trí việc làm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quyet-dinh-so-5883-qd-ubnd-uy-quyen-phe-duyet-dieu-chinh-vi-tri-viec-lam-va-ty-le-vien-chuc-bo-tri-theo-bac-nghe-nghiep-cua-vi-tri-viec-lam-119260913162716728.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-13T11:51:28.733771+00:00",
-      "collected_at": "2026-09-13T11:51:28.733771+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3c08921429e0e298",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Nghị định số 354/2026/NĐ-CP: Chức năng, nhiệm vụ, quyền hạn, cơ cấu tổ chức của Bộ Xây dựng",
-      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-354-2026-nd-cp-chuc-nang-nhiem-vu-quyen-han-co-cau-to-chuc-cua-bo-xay-dung-119260913125023003.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-13T11:51:28.733771+00:00",
-      "collected_at": "2026-09-13T11:51:28.733771+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 19,
-    "business_formation": 16,
+    "policy_regulation": 18,
+    "business_formation": 17,
     "hiring": 4,
     "market_data": 4,
     "capital_flow": 1
@@ -272,9 +268,9 @@
     "Huế": 1
   },
   "coverage": {
-    "historical_events": 301,
-    "candidate_events": 103,
-    "reference_events": 193,
+    "historical_events": 304,
+    "candidate_events": 105,
+    "reference_events": 194,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
