@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-14T12:46:28.186916+00:00",
+    "generated_at": "2026-09-14T21:51:03.952377+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,10 +9,10 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 230,
+    "recent_events": 231,
     "entities_seen_recently": 125,
     "auto_discovered_entities": 115,
-    "history_events": 230
+    "history_events": 231
   },
   "source_health": [
     {
@@ -58,11 +58,11 @@
       "recent_events": 7
     },
     {
-      "entity_id": "auto-lào-cai-a70f5b43",
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
       "recent_events": 6
     },
     {
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_id": "auto-lào-cai-a70f5b43",
       "recent_events": 6
     },
     {
@@ -94,15 +94,19 @@
       "recent_events": 4
     },
     {
+      "entity_id": "auto-openai-7d3bbb5c",
+      "recent_events": 3
+    },
+    {
+      "entity_id": "viettel_group",
+      "recent_events": 3
+    },
+    {
       "entity_id": "auto-tổng-bí-012dc539",
       "recent_events": 3
     },
     {
       "entity_id": "auto-hải-phòng-48a73a83",
-      "recent_events": 3
-    },
-    {
-      "entity_id": "auto-openai-7d3bbb5c",
       "recent_events": 3
     },
     {
@@ -151,10 +155,6 @@
     },
     {
       "entity_id": "auto-quảng-ninh-3ed973db",
-      "recent_events": 2
-    },
-    {
-      "entity_id": "viettel_group",
       "recent_events": 2
     },
     {
@@ -731,15 +731,15 @@
       "suppression_reason": null
     },
     {
-      "id": "auto-tổng-bí-012dc539",
-      "label": "Tổng Bí",
+      "id": "auto-openai-7d3bbb5c",
+      "label": "OpenAI",
       "entity_type": "organization_candidate",
       "aliases": [
-        "Tổng Bí"
+        "OpenAI"
       ],
       "recent_events": 3,
       "families": [
-        "operating",
+        "capital",
         "strategy"
       ],
       "publishers": [
@@ -751,15 +751,15 @@
       "suppression_reason": null
     },
     {
-      "id": "auto-openai-7d3bbb5c",
-      "label": "OpenAI",
+      "id": "auto-tổng-bí-012dc539",
+      "label": "Tổng Bí",
       "entity_type": "organization_candidate",
       "aliases": [
-        "OpenAI"
+        "Tổng Bí"
       ],
       "recent_events": 3,
       "families": [
-        "capital",
+        "operating",
         "strategy"
       ],
       "publishers": [
@@ -2408,6 +2408,99 @@
   ],
   "events": [
     {
+      "id": "09ff789be0ae3e85",
+      "event_signature": "6d367465b999a383",
+      "entity_id": "auto-openai-7d3bbb5c",
+      "entity_label": "OpenAI",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "OpenAI đưa hackathon Codex về Việt Nam, giải thưởng 30.000 USD tín dụng API",
+      "summary": "OpenAI đưa chuỗi hackathon Codex đến Việt Nam, mở sân chơi cho lập trình viên, sinh viên và cộng đồng khởi nghiệp phát triển các sản phẩm AI.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/openai-dua-hackathon-codex-ve-viet-nam-giai-thuong-30000-usd-tin-dung-api-1002609141410246.htm",
+      "published_at": "2026-09-14T21:51:03.952377+00:00",
+      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "e85fa0cbb35b2813",
+      "event_signature": "f37e406a90472b08",
+      "entity_id": "auto-châu-âu-34714c63",
+      "entity_label": "Châu Âu",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Châu Âu siết quản lý cho thuê ngắn hạn để tăng nguồn cung nhà ở",
+      "summary": "Tình trạng thiếu nhà ở giá phải chăng đang trở thành vấn đề cấp bách tại nhiều nước châu Âu, đặc biệt với người lao động và sinh viên tại các đô thị lớn.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/chau-au-siet-quan-ly-cho-thue-ngan-han-de-tang-nguon-cung-nha-o-100260914140353862.htm",
+      "published_at": "2026-09-14T21:51:03.952377+00:00",
+      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "64da4759f5786aaf",
+      "event_signature": "6d91680aabf4bcdd",
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_label": "Khánh Hòa",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "policy",
+      "title": "Khánh Hòa chi hỗ trợ hoạt động xúc tiến thương mại tối đa đến 200 triệu đồng/đợt",
+      "summary": "HĐND tỉnh Khánh Hòa ban hành nghị quyết chính sách hỗ trợ cho hoạt động xúc tiến thương mại cho tổ chức, đơn vị khi thực hiện ở trong và ngoài nước.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/khanh-hoa-chi-ho-tro-hoat-dong-xuc-tien-thuong-mai-toi-da-den-200-trieu-dong-dot-100260914114105842.htm",
+      "published_at": "2026-09-14T21:51:03.952377+00:00",
+      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "b959a3e70b18bd04",
+      "event_signature": "34fce7108449f225",
+      "entity_id": "auto-agris-7167a41f",
+      "entity_label": "AgriS",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "AgriS triển khai OneHR cùng EY, xây nền nhân lực cho chiến lược toàn cầu",
+      "summary": "Vận hành tại 30 đơn vị thuộc 5 quốc gia, AgriS triển khai dự án OneHR trên nền tảng Oracle HCM Cloud cùng Ernst & Young (EY), xây dựng hệ thống quản trị nhân lực thống nhất cho chiến lược tăng trưởng toàn cầu giai đoạn 2025-2030.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/agris-trien-khai-onehr-cung-ey-xay-nen-nhan-luc-cho-chien-luoc-toan-cau-100260914120055237.htm",
+      "published_at": "2026-09-14T21:51:03.952377+00:00",
+      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "0e205a75ed7312c8",
+      "event_signature": "2b129de747db5dd9",
+      "entity_id": "viettel_group",
+      "entity_label": "Viettel",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Viettel Construction dự phòng 100% với 3 khoản nợ xấu liên quan FLC, Novaland",
+      "summary": "Viettel Construction ghi nhận gần 97,4 tỉ đồng các khoản phải thu được xếp vào nợ xấu từ FLC Faros và hai doanh nghiệp đứng tên chủ đầu tư các dự án thuộc hệ sinh thái Novaland.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/viettel-construction-du-phong-100-voi-3-khoan-no-xau-lien-quan-flc-novaland-100260914222613969.htm",
+      "published_at": "2026-09-14T21:51:03.952377+00:00",
+      "first_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
       "id": "29ff997eaa4b0787",
       "event_signature": "0f5d45211d4c268c",
       "entity_id": "auto-tổng-bí-012dc539",
@@ -2421,7 +2514,7 @@
       "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoan-thien-quy-dinh-ve-dang-vien-lam-kinh-te-tu-nhan-phat-huy-nguon-luc-cho-phat-trien-post1136127.vnp",
       "published_at": "2026-09-14T18:48:27+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2440,7 +2533,7 @@
       "source_url": "https://www.vietnamplus.vn/lao-cai-trien-khai-chuong-trinh-phat-trien-cong-nghiep-ho-tro-giai-doan-2026-2035-post1136114.vnp",
       "published_at": "2026-09-14T17:30:58+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2459,7 +2552,7 @@
       "source_url": "https://www.vietnamplus.vn/vec-va-dmg-events-hop-tac-chien-luoc-dua-trien-lam-viif-buoc-vao-chuong-moi-post1136109.vnp",
       "published_at": "2026-09-14T17:28:25+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2478,7 +2571,7 @@
       "source_url": "https://www.vietnamplus.vn/hai-phong-thao-diem-nghen-tao-da-tang-truong-13-trong-nam-2026-post1136108.vnp",
       "published_at": "2026-09-14T17:07:10+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2503,82 +2596,6 @@
       "suppression_reason": null
     },
     {
-      "id": "09ff789be0ae3e85",
-      "event_signature": "6d367465b999a383",
-      "entity_id": "auto-openai-7d3bbb5c",
-      "entity_label": "OpenAI",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "capital",
-      "title": "OpenAI đưa hackathon Codex về Việt Nam, giải thưởng 30.000 USD tín dụng API",
-      "summary": "OpenAI đưa chuỗi hackathon Codex đến Việt Nam, mở sân chơi cho lập trình viên, sinh viên và cộng đồng khởi nghiệp phát triển các sản phẩm AI.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/openai-dua-hackathon-codex-ve-viet-nam-giai-thuong-30000-usd-tin-dung-api-1002609141410246.htm",
-      "published_at": "2026-09-14T12:46:28.186916+00:00",
-      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "e85fa0cbb35b2813",
-      "event_signature": "f37e406a90472b08",
-      "entity_id": "auto-châu-âu-34714c63",
-      "entity_label": "Châu Âu",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "labor",
-      "title": "Châu Âu siết quản lý cho thuê ngắn hạn để tăng nguồn cung nhà ở",
-      "summary": "Tình trạng thiếu nhà ở giá phải chăng đang trở thành vấn đề cấp bách tại nhiều nước châu Âu, đặc biệt với người lao động và sinh viên tại các đô thị lớn.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/chau-au-siet-quan-ly-cho-thue-ngan-han-de-tang-nguon-cung-nha-o-100260914140353862.htm",
-      "published_at": "2026-09-14T12:46:28.186916+00:00",
-      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "64da4759f5786aaf",
-      "event_signature": "6d91680aabf4bcdd",
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
-      "entity_label": "Khánh Hòa",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "policy",
-      "title": "Khánh Hòa chi hỗ trợ hoạt động xúc tiến thương mại tối đa đến 200 triệu đồng/đợt",
-      "summary": "HĐND tỉnh Khánh Hòa ban hành nghị quyết chính sách hỗ trợ cho hoạt động xúc tiến thương mại cho tổ chức, đơn vị khi thực hiện ở trong và ngoài nước.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/khanh-hoa-chi-ho-tro-hoat-dong-xuc-tien-thuong-mai-toi-da-den-200-trieu-dong-dot-100260914114105842.htm",
-      "published_at": "2026-09-14T12:46:28.186916+00:00",
-      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "b959a3e70b18bd04",
-      "event_signature": "34fce7108449f225",
-      "entity_id": "auto-agris-7167a41f",
-      "entity_label": "AgriS",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "AgriS triển khai OneHR cùng EY, xây nền nhân lực cho chiến lược toàn cầu",
-      "summary": "Vận hành tại 30 đơn vị thuộc 5 quốc gia, AgriS triển khai dự án OneHR trên nền tảng Oracle HCM Cloud cùng Ernst & Young (EY), xây dựng hệ thống quản trị nhân lực thống nhất cho chiến lược tăng trưởng toàn cầu giai đoạn 2025-2030.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/agris-trien-khai-onehr-cung-ey-xay-nen-nhan-luc-cho-chien-luoc-toan-cau-100260914120055237.htm",
-      "published_at": "2026-09-14T12:46:28.186916+00:00",
-      "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "e46491cd8fe75fbe",
       "event_signature": "60590cde706530ba",
       "entity_id": "auto-new-zealand-3a4c23db",
@@ -2592,7 +2609,7 @@
       "source_url": "https://www.vietnamplus.vn/new-zealand-chon-viet-nam-ra-mat-giong-tao-cao-cap-post1136044.vnp",
       "published_at": "2026-09-14T12:10:55+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2611,7 +2628,7 @@
       "source_url": "https://www.vietnamplus.vn/nghe-an-cam-hop-thuc-hoa-ho-so-de-chay-chi-tieu-giai-ngan-von-dau-tu-cong-post1136027.vnp",
       "published_at": "2026-09-14T11:12:02+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2630,7 +2647,7 @@
       "source_url": "https://www.vietnamplus.vn/lao-cai-ho-tro-khu-vuc-kinh-te-tu-nhan-tang-canh-tranh-mo-rong-xuat-khau-post1136019.vnp",
       "published_at": "2026-09-14T10:52:23+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2649,7 +2666,7 @@
       "source_url": "https://www.vietnamplus.vn/an-giang-chuyen-thu-hut-dau-tu-tu-so-luong-sang-chon-loc-chat-luong-post1135997.vnp",
       "published_at": "2026-09-14T09:58:06+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2668,7 +2685,7 @@
       "source_url": "https://www.vietnamplus.vn/thai-nguyen-chuyen-tu-thu-hut-fdi-sang-kien-tao-he-sinh-thai-cong-nghiep-post1135585.vnp",
       "published_at": "2026-09-14T09:23:57+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2687,7 +2704,7 @@
       "source_url": "https://www.vietnamplus.vn/thai-nguyen-tao-dong-luc-tang-truong-tu-san-pham-cong-nghe-chien-luoc-post1135971.vnp",
       "published_at": "2026-09-14T09:15:46+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2706,7 +2723,7 @@
       "source_url": "https://vnexpress.net/takashimaya-viet-nam-lai-lon-nhat-tu-truoc-den-nay-5120117.html",
       "published_at": "2026-09-14T09:14:59+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2801,7 +2818,7 @@
       "source_url": "https://thanhnien.vn/vietjet-va-thales-mo-rong-hop-tac-hang-khong-cong-nghe-cao-viet-nam-phap-185260914102921417.htm",
       "published_at": "2026-09-14T03:19:00+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2820,7 +2837,7 @@
       "source_url": "https://thanhnien.vn/mm-mega-market-binh-on-thi-truong-dua-thuc-pham-tuoi-ngon-gia-si-den-nguoi-dung-185260913201233638.htm",
       "published_at": "2026-09-14T01:00:00+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2839,7 +2856,7 @@
       "source_url": "https://www.vietnamplus.vn/fujitsu-xuat-khau-chip-ai-cho-cong-nghe-sieu-may-tinh-quy-mo-lon-dau-tien-post1135902.vnp",
       "published_at": "2026-09-13T15:58:59+00:00",
       "first_seen_at": "2026-09-13T11:53:31.486554+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2856,7 +2873,7 @@
       "source_url": "https://www.vietnamplus.vn/fujitsu-xuat-khau-chip-ai-cho-cong-nghe-sieu-may-tinh-quy-mo-lon-dau-tien-post1135902.vnp",
       "published_at": "2026-09-13T15:58:59+00:00",
       "first_seen_at": "2026-09-13T11:53:31.486554+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2875,7 +2892,7 @@
       "source_url": "https://www.vietnamplus.vn/hung-yen-mo-rong-khong-gian-cong-nghiep-huong-toi-tang-truong-hai-con-so-post1135879.vnp",
       "published_at": "2026-09-13T14:06:56+00:00",
       "first_seen_at": "2026-09-13T11:53:31.486554+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2894,7 +2911,7 @@
       "source_url": "https://www.vietnamplus.vn/giai-phong-mat-bang-duong-sat-lao-cai-ha-noi-hai-phong-trong-thang-22027-post1135880.vnp",
       "published_at": "2026-09-13T13:57:11+00:00",
       "first_seen_at": "2026-09-13T11:53:31.486554+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2968,7 +2985,7 @@
       "source_url": "https://vnexpress.net/totalenergies-mo-rong-hop-tac-nang-luong-tai-viet-nam-5119681.html",
       "published_at": "2026-09-13T02:00:00+00:00",
       "first_seen_at": "2026-09-13T04:48:52.901529+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3118,7 +3135,7 @@
       "source_url": "https://vnexpress.net/topzone-mo-rong-he-thong-nang-cap-chinh-sach-dat-truoc-iphone-18-pro-5119578.html",
       "published_at": "2026-09-12T12:31:00+00:00",
       "first_seen_at": "2026-09-12T15:33:26.805445+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3173,7 +3190,7 @@
       "source_url": "https://thanhnien.vn/vietjet-va-cfm-international-phat-trien-nang-luc-bao-duong-dong-co-the-he-moi-nhat-185260912145220697.htm",
       "published_at": "2026-09-12T07:44:00+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3211,7 +3228,7 @@
       "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
       "published_at": "2026-09-12T02:04:00+00:00",
       "first_seen_at": "2026-09-12T04:36:05.138520+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3228,7 +3245,7 @@
       "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
       "published_at": "2026-09-12T02:04:00+00:00",
       "first_seen_at": "2026-09-12T04:36:05.138520+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3247,7 +3264,7 @@
       "source_url": "https://thanhnien.vn/an-giang-dat-muc-tieu-tro-thanh-trung-tam-kinh-te-bien-cua-ca-nuoc-185260911203127879.htm",
       "published_at": "2026-09-11T14:29:00+00:00",
       "first_seen_at": "2026-09-11T16:29:05.349016+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3547,7 +3564,7 @@
       "source_url": "https://vnexpress.net/vietravel-airlines-se-mua-50-may-bay-airbus-5119057.html",
       "published_at": "2026-09-11T03:30:10+00:00",
       "first_seen_at": "2026-09-11T11:21:27.174155+00:00",
-      "last_seen_at": "2026-09-14T12:46:28.186916+00:00",
+      "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -6680,7 +6697,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-14T12:46:39.111796+00:00",
+    "prepared_at": "2026-09-14T21:51:15.687884+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 23,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
