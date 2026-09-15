@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T16:58:46.568340+00:00",
+    "generated_at": "2026-09-15T21:20:32.697203+00:00",
     "status": "active",
     "history_days": 17,
     "required_history_days": 14,
@@ -12,13 +12,13 @@
     {
       "category": "sme",
       "recent_7d": 20,
-      "baseline_21d": 26,
-      "baseline_expected_7d": 8.7,
-      "delta_pct": 131,
+      "baseline_21d": 28,
+      "baseline_expected_7d": 9.3,
+      "delta_pct": 114,
       "trend": "accelerating",
       "confidence": 78,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.7."
+      "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 9.3."
     },
     {
       "category": "labor",
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "b055edc631b9f566",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 16/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-15T21:20:32.697203+00:00"
+    },
+    {
+      "id": "8b4d08f435e12e55",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 16/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-15T21:20:32.697203+00:00"
+    },
+    {
       "id": "b61c4208ee13011f",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +208,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-15T16:58:46.568340+00:00"
+      "first_seen_at": "2026-09-15T16:58:46.568340+00:00",
+      "collected_at": "2026-09-15T16:58:46.568340+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6a5ec99932e9f606",
@@ -188,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-15T16:58:46.568340+00:00"
+      "first_seen_at": "2026-09-15T16:58:46.568340+00:00",
+      "collected_at": "2026-09-15T16:58:46.568340+00:00",
+      "last_seen_at": null
     },
     {
       "id": "af4c13b76f58f2bd",
@@ -338,8 +380,8 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 17,
     "business_formation": 17,
+    "policy_regulation": 17,
     "market_data": 6,
     "hiring": 4
   },
@@ -348,11 +390,13 @@
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 327,
-    "candidate_events": 114,
-    "reference_events": 208,
+    "historical_events": 330,
+    "candidate_events": 116,
+    "reference_events": 209,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 0
+    "source_errors_last_run": 1
   },
-  "warnings": []
+  "warnings": [
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+  ]
 }
