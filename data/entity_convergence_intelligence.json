@@ -1,26 +1,26 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-15T11:45:14.109702+00:00",
+    "generated_at": "2026-09-15T16:59:47.963779+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-15T11:45:14.335157+00:00"
+    "trust_hardened_at": "2026-09-15T16:59:48.193842+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 39,
-    "observed_auto_entities": 29,
+    "observed_entities": 40,
+    "observed_auto_entities": 30,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 4,
-    "watch": 34,
+    "discovery_convergence": 3,
+    "watch": 35,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 17,
+    "discovery_candidates": 18,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 9
   },
@@ -337,6 +337,142 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "evn_power_system",
+      "label": "EVN / hệ thống điện quốc gia",
+      "entity_type": "strategic_operator",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "EVN / hệ thống điện quốc gia đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
+      "evidence_families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "EVN - Vận hành hệ thống điện",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 3,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "energy_grid",
+          "label": "energy_grid",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "3629a05756132755",
+          "event_signature": "3fd2892c7ec8a4c0",
+          "family": "project_execution",
+          "title": "Sản lượng điện tháng 9 tăng hơn 10%, EVN tập trung bảo đảm cung ứng trong mọi tình huống",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/san-luong-dien-thang-9-tang-hon-10-evn-tap-trung-bao-dam-cung-ung-trong-moi-tinh-huong-post1136380.vnp",
+          "observed_at": "2026-09-15T20:31:56+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "85a04cc070cfd889",
+          "event_signature": "c8ac1c423a873c05",
+          "family": "operating",
+          "title": "6 tháng đầu năm EVN lãi sau thuế 8.631 tỉ, gửi ngân hàng 121.835 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/6-thang-dau-nam-evn-lai-sau-thue-8631-ti-gui-ngan-hang-121835-ti-dong-100260910155851742.htm",
+          "observed_at": "2026-09-11T11:21:27.174155+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "5547ce3ac2e27e1f",
+          "family": "policy",
+          "title": "EVN và thành phố Huế thống nhất giải pháp phát triển hệ thống điện theo Quy hoạch điện VIII điều chỉnh",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-va-thanh-pho-Hue-thong-nhat-giai-phap-phat-trien-he-thong-dien-theo-Quy-hoach-dien-VIII-dieu-chinh-60-12-509514",
+          "observed_at": "2026-09-07T21:30:47.132013+00:00",
+          "categories": [
+            "energy",
+            "policy"
+          ],
+          "geography": [
+            "Huế"
+          ],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "bb4943d995efd0f2",
+          "event_signature": "8b45655d39f7bc6a",
+          "family": "operating",
+          "title": "Cảnh báo giả mạo ứng dụng EVN phát tán mã độc để đọc trộm mã OTP, rút sạch tiền trong tài khoản",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/canh-bao-gia-mao-ung-dung-evn-phat-tan-ma-doc-de-doc-trom-ma-otp-rut-sach-tien-trong-tai-khoan-100260904190922985.htm",
+          "observed_at": "2026-09-06T10:56:11.402519+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a19d0fdd256c5f87",
+          "family": "policy",
+          "title": "Hơn 5.500 đảng viên EVN tham gia nghiên cứu, học tập, quán triệt và triển khai một số Nghị quyết, Chỉ thị của Bộ Chính trị",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-mot-so-Nghi-quyet-Chi-thi-cua-Bo-Chinh-tri-60-183-509479",
+          "observed_at": "2026-09-03T11:14:00.279732+00:00",
+          "categories": [
+            "energy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 2,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-vietravel-airlines-422e5334",
       "label": "Vietravel Airlines",
       "entity_type": "organization_candidate",
@@ -449,7 +585,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -771,7 +907,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -940,123 +1076,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "evn_power_system",
-      "label": "EVN / hệ thống điện quốc gia",
-      "entity_type": "strategic_operator",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "EVN / hệ thống điện quốc gia đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "operating",
-        "policy"
-      ],
-      "independent_publishers": [
-        "EVN - Vận hành hệ thống điện",
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 2,
-      "newest_evidence_age_days": 4,
-      "anomaly_flags": [],
-      "theme_context": [
-        {
-          "theme_id": "energy_grid",
-          "label": "energy_grid",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "85a04cc070cfd889",
-          "event_signature": "c8ac1c423a873c05",
-          "family": "operating",
-          "title": "6 tháng đầu năm EVN lãi sau thuế 8.631 tỉ, gửi ngân hàng 121.835 tỉ đồng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/6-thang-dau-nam-evn-lai-sau-thue-8631-ti-gui-ngan-hang-121835-ti-dong-100260910155851742.htm",
-          "observed_at": "2026-09-11T11:21:27.174155+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "5547ce3ac2e27e1f",
-          "family": "policy",
-          "title": "EVN và thành phố Huế thống nhất giải pháp phát triển hệ thống điện theo Quy hoạch điện VIII điều chỉnh",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-va-thanh-pho-Hue-thong-nhat-giai-phap-phat-trien-he-thong-dien-theo-Quy-hoach-dien-VIII-dieu-chinh-60-12-509514",
-          "observed_at": "2026-09-07T21:30:47.132013+00:00",
-          "categories": [
-            "energy",
-            "policy"
-          ],
-          "geography": [
-            "Huế"
-          ],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "bb4943d995efd0f2",
-          "event_signature": "8b45655d39f7bc6a",
-          "family": "operating",
-          "title": "Cảnh báo giả mạo ứng dụng EVN phát tán mã độc để đọc trộm mã OTP, rút sạch tiền trong tài khoản",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/canh-bao-gia-mao-ung-dung-evn-phat-tan-ma-doc-de-doc-trom-ma-otp-rut-sach-tien-trong-tai-khoan-100260904190922985.htm",
-          "observed_at": "2026-09-06T10:56:11.402519+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a19d0fdd256c5f87",
-          "family": "policy",
-          "title": "Hơn 5.500 đảng viên EVN tham gia nghiên cứu, học tập, quán triệt và triển khai một số Nghị quyết, Chỉ thị của Bộ Chính trị",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-mot-so-Nghi-quyet-Chi-thi-cua-Bo-Chinh-tri-60-183-509479",
-          "observed_at": "2026-09-03T11:14:00.279732+00:00",
-          "categories": [
-            "energy"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 2,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "policy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-apec-c4ad10a0",
       "label": "APEC",
       "entity_type": "organization_candidate",
@@ -1075,7 +1094,7 @@
       "event_count": 2,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1213,6 +1232,85 @@
       "discovery_evidence_families": [
         "project_execution",
         "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-abbank-f3e31e22",
+      "label": "ABBank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "ABBank đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 2,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "57097b8b5aa41e95",
+          "event_signature": "5c8b034b2fafc3f9",
+          "family": "capital",
+          "title": "ABBank được Ngân hàng Nhà nước chấp thuận tăng vốn lên gần 27.000 tỷ đồng",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/abbank-duoc-ngan-hang-nha-nuoc-chap-thuan-tang-von-len-gan-27000-ty-dong-post1136365.vnp",
+          "observed_at": "2026-09-15T19:42:48+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "883b61a2d2a89fb4",
+          "event_signature": "be8d718ddab676e6",
+          "family": "operating",
+          "title": "ABBank ra mắt giải pháp tích lũy kết hợp tiết kiệm, đầu tư",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/abbank-ra-mat-giai-phap-tich-luy-ket-hop-tiet-kiem-dau-tu-185260904204855708.htm",
+          "observed_at": "2026-09-05T01:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -1729,12 +1827,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-cà-mau-5be786d4",
-      "label": "Cà Mau",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
       "entity_type": "location",
@@ -1743,6 +1835,12 @@
     {
       "entity_id": "auto-an-giang-95ec7d95",
       "label": "An Giang",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-cà-mau-5be786d4",
+      "label": "Cà Mau",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
