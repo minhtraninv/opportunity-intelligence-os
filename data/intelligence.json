@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T21:49:03.495434+00:00",
+    "generated_at": "2026-09-15T04:53:54.123203+00:00",
     "status": "active",
     "history_days": 16,
     "required_history_days": 14,
@@ -21,17 +21,6 @@
       "explanation": "7 ngày gần nhất có 21 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.3."
     },
     {
-      "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 150,
-      "trend": "accelerating",
-      "confidence": 58,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
-    },
-    {
       "category": "labor",
       "recent_7d": 5,
       "baseline_21d": 2,
@@ -41,6 +30,17 @@
       "confidence": 57,
       "source_diversity_7d": 3,
       "explanation": "Xuất hiện 5 candidate events từ 3 nguồn trong 7 ngày trong khi baseline trước đó gần như trống."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 4,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 71,
+      "trend": "stable",
+      "confidence": 58,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "policy",
@@ -172,7 +172,9 @@
         "Quảng Ngãi"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-14T21:49:03.495434+00:00"
+      "first_seen_at": "2026-09-14T21:49:03.495434+00:00",
+      "collected_at": "2026-09-14T21:49:03.495434+00:00",
+      "last_seen_at": null
     },
     {
       "id": "84f2b685d1c107c0",
@@ -192,7 +194,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-14T21:49:03.495434+00:00"
+      "first_seen_at": "2026-09-14T21:49:03.495434+00:00",
+      "collected_at": "2026-09-14T21:49:03.495434+00:00",
+      "last_seen_at": null
     },
     {
       "id": "e726d8084979403f",
@@ -210,7 +214,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-14T21:49:03.495434+00:00"
+      "first_seen_at": "2026-09-14T21:49:03.495434+00:00",
+      "collected_at": "2026-09-14T21:49:03.495434+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8fe4b2d0bef0053e",
@@ -228,7 +234,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-14T21:49:03.495434+00:00"
+      "first_seen_at": "2026-09-14T21:49:03.495434+00:00",
+      "collected_at": "2026-09-14T21:49:03.495434+00:00",
+      "last_seen_at": null
     },
     {
       "id": "63b7006ece23ec86",
@@ -295,7 +303,7 @@
   ],
   "event_types_7d": {
     "business_formation": 17,
-    "policy_regulation": 17,
+    "policy_regulation": 16,
     "market_data": 6,
     "hiring": 4,
     "capital_flow": 1
@@ -306,13 +314,11 @@
     "Điện Biên": 1
   },
   "coverage": {
-    "historical_events": 309,
+    "historical_events": 312,
     "candidate_events": 109,
-    "reference_events": 195,
+    "reference_events": 198,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 0
   },
-  "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
-  ]
+  "warnings": []
 }
