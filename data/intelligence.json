@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-16T16:54:57.097445+00:00",
+    "generated_at": "2026-09-16T21:17:45.968435+00:00",
     "status": "active",
     "history_days": 18,
     "required_history_days": 14,
@@ -12,13 +12,13 @@
     {
       "category": "sme",
       "recent_7d": 20,
-      "baseline_21d": 28,
-      "baseline_expected_7d": 9.3,
-      "delta_pct": 114,
+      "baseline_21d": 30,
+      "baseline_expected_7d": 10.0,
+      "delta_pct": 100,
       "trend": "accelerating",
       "confidence": 79,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 9.3."
+      "explanation": "7 ngày gần nhất có 20 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 10.0."
     },
     {
       "category": "labor",
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "b5d0d537f3ffee81",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 17/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-16T21:17:45.968435+00:00"
+    },
+    {
+      "id": "aedfe638c1dca022",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 17/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-16T21:17:45.968435+00:00"
+    },
+    {
       "id": "f8fbc0c3d4b31055",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -215,46 +253,6 @@
       "first_seen_at": "2026-09-15T21:20:32.697203+00:00",
       "collected_at": "2026-09-15T21:20:32.697203+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "b61c4208ee13011f",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Đề xuất tăng tự chủ, đẩy mạnh số hóa đối với các trung tâm giáo dục nghề nghiệp, thường xuyên",
-      "url": "https://baochinhphu.vn/de-xuat-tang-tu-chu-day-manh-so-hoa-doi-voi-cac-trung-tam-giao-duc-nghe-nghiep-thuong-xuyen-102260915170844004.htm",
-      "categories": [
-        "data_ai"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-15T16:58:46.568340+00:00",
-      "collected_at": "2026-09-15T16:58:46.568340+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "6a5ec99932e9f606",
-      "source_id": "evn-invest",
-      "publisher": "EVN - Đầu tư xây dựng",
-      "title": "Tăng tốc đầu tư pin lưu trữ, giảm áp lực cho lưới điện miền Bắc giờ cao điểm",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/Tang-toc-dau-tu-pin-luu-tru-giam-ap-luc-cho-luoi-dien-mien-Bac-gio-cao-diem-60-13-509483",
-      "categories": [
-        "energy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-15T16:58:46.568340+00:00",
-      "collected_at": "2026-09-15T16:58:46.568340+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
@@ -268,8 +266,8 @@
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 341,
-    "candidate_events": 117,
+    "historical_events": 343,
+    "candidate_events": 119,
     "reference_events": 219,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
