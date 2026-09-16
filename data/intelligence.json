@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-16T11:32:32.606987+00:00",
+    "generated_at": "2026-09-16T16:54:57.097445+00:00",
     "status": "active",
     "history_days": 18,
     "required_history_days": 14,
@@ -54,17 +54,6 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "policy",
-      "recent_7d": 2,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": -14,
-      "trend": "stable",
-      "confidence": 57,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "infrastructure",
       "recent_7d": 3,
       "baseline_21d": 10,
@@ -72,6 +61,17 @@
       "delta_pct": -10,
       "trend": "stable",
       "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 1,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -62,
+      "trend": "stable",
+      "confidence": 50,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -170,7 +170,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-16T11:32:32.606987+00:00"
+      "first_seen_at": "2026-09-16T11:32:32.606987+00:00",
+      "collected_at": "2026-09-16T11:32:32.606987+00:00",
+      "last_seen_at": null
     },
     {
       "id": "b055edc631b9f566",
@@ -253,73 +255,11 @@
       "first_seen_at": "2026-09-15T16:58:46.568340+00:00",
       "collected_at": "2026-09-15T16:58:46.568340+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "af4c13b76f58f2bd",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định mới về nguyên tắc và thực hiện dự án đường sắt",
-      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-nguyen-tac-va-thuc-hien-du-an-duong-sat-10226091517014388.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-15T11:43:26.883940+00:00",
-      "collected_at": "2026-09-15T11:43:26.883940+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "80a3483fd47b086f",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam và Mastercard tăng cường hợp tác phát triển thanh toán số an toàn, bền vững",
-      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-v%C3%A0-mastercard-t%C4%83ng-c%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-t%C3%A1c-ph%C3%A1t-tri%E1%BB%83n-thanh-to%C3%A1n-s%E1%BB%91-an-to%C3%A0n-b%E1%BB%81n-v%E1%BB%AFng-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-15T11:43:26.883940+00:00",
-      "collected_at": "2026-09-15T11:43:26.883940+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f412909242bc0521",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Công bố Lệnh của Chủ tịch nước về Luật sửa đổi, bổ sung một số điều của Luật Ngân hàng Nhà nước Việt Nam, Luật Phòng, chống rửa tiền và Luật Các tổ chức tín dụng 10/09/2026",
-      "url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-l%E1%BB%87nh-c%E1%BB%A7a-ch%E1%BB%A7-t%E1%BB%8Bch-n%C6%B0%E1%BB%9Bc-v%E1%BB%81-lu%E1%BA%ADt-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-lu%E1%BA%ADt-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-15T11:43:26.883940+00:00",
-      "collected_at": "2026-09-15T11:43:26.883940+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 17,
-    "policy_regulation": 16,
+    "policy_regulation": 15,
     "market_data": 6,
     "hiring": 4
   },

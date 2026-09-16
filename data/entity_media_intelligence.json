@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-16T11:33:14.873708+00:00",
+    "generated_at": "2026-09-16T16:55:39.428494+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -19,14 +19,14 @@
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 3,
+      "items_this_run": 2,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 4,
       "error": null
     },
     {
@@ -40,7 +40,7 @@
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 12,
+      "items_this_run": 10,
       "error": null
     }
   ],
@@ -82,11 +82,11 @@
       "recent_events": 6
     },
     {
-      "entity_id": "auto-quảng-trị-3b0b65db",
+      "entity_id": "auto-an-giang-95ec7d95",
       "recent_events": 5
     },
     {
-      "entity_id": "auto-an-giang-95ec7d95",
+      "entity_id": "auto-quảng-trị-3b0b65db",
       "recent_events": 5
     },
     {
@@ -258,6 +258,14 @@
       "recent_events": 2
     },
     {
+      "entity_id": "auto-luật-phát-080030e6",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-citigym-8b7406af",
+      "recent_events": 1
+    },
+    {
       "entity_id": "auto-meey-global-corp-258eb95a",
       "recent_events": 1
     },
@@ -271,14 +279,6 @@
     },
     {
       "entity_id": "auto-hàng-việt-ef94ce4d",
-      "recent_events": 1
-    },
-    {
-      "entity_id": "auto-luật-phát-080030e6",
-      "recent_events": 1
-    },
-    {
-      "entity_id": "auto-citigym-8b7406af",
       "recent_events": 1
     },
     {
@@ -1485,6 +1485,42 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-luật-phát-080030e6",
+      "label": "Luật Phát",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Luật Phát"
+      ],
+      "recent_events": 1,
+      "families": [
+        "policy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-citigym-8b7406af",
+      "label": "Citigym",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Citigym"
+      ],
+      "recent_events": 1,
+      "families": [
+        "labor"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-meey-global-corp-258eb95a",
       "label": "Meey Global Corp",
       "entity_type": "organization_candidate",
@@ -1551,42 +1587,6 @@
       ],
       "publishers": [
         "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-luật-phát-080030e6",
-      "label": "Luật Phát",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Luật Phát"
-      ],
-      "recent_events": 1,
-      "families": [
-        "policy"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-citigym-8b7406af",
-      "label": "Citigym",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Citigym"
-      ],
-      "recent_events": 1,
-      "families": [
-        "labor"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
@@ -2459,6 +2459,82 @@
   ],
   "events": [
     {
+      "id": "2d41f00b4b29f17b",
+      "event_signature": "a93629624e9378c7",
+      "entity_id": "auto-pnj-4d3f27cb",
+      "entity_label": "PNJ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "PNJ công bố tin bất ngờ, rút ngắn thời gian thanh toán cho khách bán vàng, kim cương",
+      "summary": "Công ty cổ phần Vàng bạc đá quý Phú Nhuận (PNJ) vừa công bố thông tin bất thường về việc rút ngắn thời gian thanh toán cho khách hàng bán vàng, kim cương.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/pnj-cong-bo-tin-bat-ngo-rut-ngan-thoi-gian-thanh-toan-cho-khach-ban-vang-kim-cuong-100260915224906509.htm",
+      "published_at": "2026-09-16T16:55:39.428494+00:00",
+      "first_seen_at": "2026-09-15T21:22:37.059563+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "31f30b5ba44198c7",
+      "event_signature": "5939a9dfc84a5402",
+      "entity_id": "auto-an-giang-95ec7d95",
+      "entity_label": "An Giang",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "An Giang cần gần 7.000 tỉ đồng làm 18 dự án bờ kè chống sạt lở bờ sông",
+      "summary": "Tỉnh An Giang hiện cần gần 7.000 tỉ đồng để thực hiện ưu tiên 18 dự án kè chống sạt lở bờ sông, kênh đảm bảo đời sống người dân.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/an-giang-can-gan-7000-ti-dong-lam-18-du-an-bo-ke-chong-sat-lo-bo-song-100260916095011983.htm",
+      "published_at": "2026-09-16T16:55:39.428494+00:00",
+      "first_seen_at": "2026-09-16T04:49:09.491365+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "fb0f313f82576d05",
+      "event_signature": "3f315565a0410912",
+      "entity_id": "auto-luật-phát-080030e6",
+      "entity_label": "Luật Phát",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "policy",
+      "title": "Luật Phát triển đô thị mở hướng mới cho bãi xe ngầm, cao tầng ở TP.HCM",
+      "summary": "Nhu cầu đậu xe lớn nhưng bãi xe ngầm, cao tầng ở TP.HCM vẫn khó phát triển vì thiếu đất, vốn lớn và thời gian thu hồi vốn dài. Nay Luật Phát triển đô thị mở thêm cơ chế, tạo thêm giải pháp thu hút đầu tư.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/luat-phat-trien-do-thi-mo-huong-moi-cho-bai-xe-ngam-cao-tang-o-tphcm-10026091613430056.htm",
+      "published_at": "2026-09-16T16:55:39.428494+00:00",
+      "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "e30753ccb2e6b17b",
+      "event_signature": "fc6d9bffdf53c489",
+      "entity_id": "auto-citigym-8b7406af",
+      "entity_label": "Citigym",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Citigym phản hồi việc đóng cửa 2 phòng tập: 'Sẽ thực hiện đầy đủ trách nhiệm với người lao động'",
+      "summary": "Trả lời báo Tuổi Trẻ, đại diện phía Citigym cho biết việc đóng cửa nằm trong kế hoạch tái cấu trúc trên toàn hệ thống, đồng thời nhấn mạnh sẽ ưu tiên rà soát và xử lý, đảm bảo thực hiện đầy đủ trách nhiệm với người lao động.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/citigym-phan-hoi-viec-dong-cua-2-phong-tap-se-thuc-hien-day-du-trach-nhiem-voi-nguoi-lao-dong-10026091610262382.htm",
+      "published_at": "2026-09-16T16:55:39.428494+00:00",
+      "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "e47d7e6b59fcafc1",
       "event_signature": "3cf4fa6d99c652e8",
       "entity_id": "auto-meey-global-corp-258eb95a",
@@ -2472,7 +2548,7 @@
       "source_url": "https://www.vietnamplus.vn/meey-global-corp-thong-bao-nop-ho-so-dang-ky-chung-khoan-len-sec-post1136550.vnp",
       "published_at": "2026-09-16T16:35:13+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2491,7 +2567,7 @@
       "source_url": "https://www.vietnamplus.vn/vietnamprintpack-2026-dua-cong-nghe-moi-vao-nganh-in-va-bao-bi-viet-nam-post1136503.vnp",
       "published_at": "2026-09-16T16:33:49+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2510,7 +2586,7 @@
       "source_url": "https://www.vietnamplus.vn/sa-chau-giu-hon-nghe-mam-chat-vi-bien-thanh-san-pham-du-lich-post1135513.vnp",
       "published_at": "2026-09-16T15:48:07+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2529,7 +2605,7 @@
       "source_url": "https://www.vietnamplus.vn/khanh-hoa-tang-toc-cong-nghiep-tao-nen-tang-dat-muc-tieu-grdp-102-post1136474.vnp",
       "published_at": "2026-09-16T14:26:09+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2548,7 +2624,7 @@
       "source_url": "https://www.vietnamplus.vn/da-nang-khoi-cong-du-an-nha-o-xa-hoi-co-von-dau-tu-gan-500-ty-dong-post1136500.vnp",
       "published_at": "2026-09-16T14:19:23+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2567,7 +2643,7 @@
       "source_url": "https://www.vietnamplus.vn/hang-viet-tang-toc-mo-rong-thi-truong-tai-xu-so-bach-duong-post1136501.vnp",
       "published_at": "2026-09-16T14:16:00+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2586,7 +2662,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-tri-don-them-400-mw-dien-gio-von-dau-tu-hon-15000-ty-dong-post1136464.vnp",
       "published_at": "2026-09-16T11:44:58+00:00",
       "first_seen_at": "2026-09-16T04:49:09.491365+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2611,82 +2687,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "2d41f00b4b29f17b",
-      "event_signature": "a93629624e9378c7",
-      "entity_id": "auto-pnj-4d3f27cb",
-      "entity_label": "PNJ",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "PNJ công bố tin bất ngờ, rút ngắn thời gian thanh toán cho khách bán vàng, kim cương",
-      "summary": "Công ty cổ phần Vàng bạc đá quý Phú Nhuận (PNJ) vừa công bố thông tin bất thường về việc rút ngắn thời gian thanh toán cho khách hàng bán vàng, kim cương.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/pnj-cong-bo-tin-bat-ngo-rut-ngan-thoi-gian-thanh-toan-cho-khach-ban-vang-kim-cuong-100260915224906509.htm",
-      "published_at": "2026-09-16T11:33:14.873708+00:00",
-      "first_seen_at": "2026-09-15T21:22:37.059563+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "31f30b5ba44198c7",
-      "event_signature": "5939a9dfc84a5402",
-      "entity_id": "auto-an-giang-95ec7d95",
-      "entity_label": "An Giang",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "An Giang cần gần 7.000 tỉ đồng làm 18 dự án bờ kè chống sạt lở bờ sông",
-      "summary": "Tỉnh An Giang hiện cần gần 7.000 tỉ đồng để thực hiện ưu tiên 18 dự án kè chống sạt lở bờ sông, kênh đảm bảo đời sống người dân.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/an-giang-can-gan-7000-ti-dong-lam-18-du-an-bo-ke-chong-sat-lo-bo-song-100260916095011983.htm",
-      "published_at": "2026-09-16T11:33:14.873708+00:00",
-      "first_seen_at": "2026-09-16T04:49:09.491365+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "fb0f313f82576d05",
-      "event_signature": "3f315565a0410912",
-      "entity_id": "auto-luật-phát-080030e6",
-      "entity_label": "Luật Phát",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "policy",
-      "title": "Luật Phát triển đô thị mở hướng mới cho bãi xe ngầm, cao tầng ở TP.HCM",
-      "summary": "Nhu cầu đậu xe lớn nhưng bãi xe ngầm, cao tầng ở TP.HCM vẫn khó phát triển vì thiếu đất, vốn lớn và thời gian thu hồi vốn dài. Nay Luật Phát triển đô thị mở thêm cơ chế, tạo thêm giải pháp thu hút đầu tư.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/luat-phat-trien-do-thi-mo-huong-moi-cho-bai-xe-ngam-cao-tang-o-tphcm-10026091613430056.htm",
-      "published_at": "2026-09-16T11:33:14.873708+00:00",
-      "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "e30753ccb2e6b17b",
-      "event_signature": "fc6d9bffdf53c489",
-      "entity_id": "auto-citigym-8b7406af",
-      "entity_label": "Citigym",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "labor",
-      "title": "Citigym phản hồi việc đóng cửa 2 phòng tập: 'Sẽ thực hiện đầy đủ trách nhiệm với người lao động'",
-      "summary": "Trả lời báo Tuổi Trẻ, đại diện phía Citigym cho biết việc đóng cửa nằm trong kế hoạch tái cấu trúc trên toàn hệ thống, đồng thời nhấn mạnh sẽ ưu tiên rà soát và xử lý, đảm bảo thực hiện đầy đủ trách nhiệm với người lao động.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/citigym-phan-hoi-viec-dong-cua-2-phong-tap-se-thuc-hien-day-du-trach-nhiem-voi-nguoi-lao-dong-10026091610262382.htm",
-      "published_at": "2026-09-16T11:33:14.873708+00:00",
-      "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "d03933a690b07351",
       "event_signature": "1660e2be3eaab213",
       "entity_id": "auto-tuyên-quang-6a8db616",
@@ -2700,7 +2700,7 @@
       "source_url": "https://www.vietnamplus.vn/tuyen-quang-xay-dung-mo-hinh-phat-trien-moi-tao-dong-luc-tang-truong-dai-han-post1136440.vnp",
       "published_at": "2026-09-16T09:54:30+00:00",
       "first_seen_at": "2026-09-16T04:49:09.491365+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2719,7 +2719,7 @@
       "source_url": "https://thanhnien.vn/bac-ninh-co-them-2-khu-cong-nghiep-tong-von-dau-tu-gan-4200-ti-dong-185260916113823322.htm",
       "published_at": "2026-09-16T05:00:00+00:00",
       "first_seen_at": "2026-09-16T11:33:14.873708+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2793,7 +2793,7 @@
       "source_url": "https://www.vietnamplus.vn/wto-canh-bao-the-gioi-thiet-hai-10-gdp-neu-cac-quy-tac-thuong-mai-bi-suy-yeu-post1136357.vnp",
       "published_at": "2026-09-15T20:46:57+00:00",
       "first_seen_at": "2026-09-15T16:59:29.248498+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2812,7 +2812,7 @@
       "source_url": "https://www.vietnamplus.vn/san-luong-dien-thang-9-tang-hon-10-evn-tap-trung-bao-dam-cung-ung-trong-moi-tinh-huong-post1136380.vnp",
       "published_at": "2026-09-15T20:31:56+00:00",
       "first_seen_at": "2026-09-15T16:59:29.248498+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2998,7 +2998,7 @@
       "source_url": "https://thanhnien.vn/ttc-land-dua-ttc-plaza-da-nang-khach-san-tui-suneo-vao-hoat-dong-185260915180729796.htm",
       "published_at": "2026-09-15T11:33:00+00:00",
       "first_seen_at": "2026-09-15T11:44:53.321518+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3017,7 +3017,7 @@
       "source_url": "https://thanhnien.vn/cap-nhat-moi-nhat-tien-do-sieu-san-bay-long-thanh-185260915171314271.htm",
       "published_at": "2026-09-15T10:26:00+00:00",
       "first_seen_at": "2026-09-15T11:44:53.321518+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3091,7 +3091,7 @@
       "source_url": "https://thanhnien.vn/bidv-tiep-dong-tai-chinh-cung-khach-hang-tiep-noi-thanh-tuu-185260914175144215.htm",
       "published_at": "2026-09-15T01:00:00+00:00",
       "first_seen_at": "2026-09-15T04:54:53.426359+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3319,7 +3319,7 @@
       "source_url": "https://vnexpress.net/takashimaya-viet-nam-lai-lon-nhat-tu-truoc-den-nay-5120117.html",
       "published_at": "2026-09-14T09:14:59+00:00",
       "first_seen_at": "2026-09-14T12:46:28.186916+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3414,7 +3414,7 @@
       "source_url": "https://thanhnien.vn/vietjet-va-thales-mo-rong-hop-tac-hang-khong-cong-nghe-cao-viet-nam-phap-185260914102921417.htm",
       "published_at": "2026-09-14T03:19:00+00:00",
       "first_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3581,7 +3581,7 @@
       "source_url": "https://vnexpress.net/totalenergies-mo-rong-hop-tac-nang-luong-tai-viet-nam-5119681.html",
       "published_at": "2026-09-13T02:00:00+00:00",
       "first_seen_at": "2026-09-13T04:48:52.901529+00:00",
-      "last_seen_at": "2026-09-16T11:33:14.873708+00:00",
+      "last_seen_at": "2026-09-16T16:55:39.428494+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -7271,7 +7271,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-16T11:33:29.147910+00:00",
+    "prepared_at": "2026-09-16T16:55:51.688495+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 26,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
