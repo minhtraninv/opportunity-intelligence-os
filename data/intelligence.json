@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-17T11:40:54.335403+00:00",
+    "generated_at": "2026-09-17T16:59:34.278886+00:00",
     "status": "active",
     "history_days": 19,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "monetary",
-      "recent_7d": 7,
+      "recent_7d": 8,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 250,
+      "delta_pct": 300,
       "trend": "accelerating",
-      "confidence": 66,
+      "confidence": 68,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "sme",
@@ -39,17 +39,6 @@
       "delta_pct": 33,
       "trend": "stable",
       "confidence": 66,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 29,
-      "trend": "stable",
-      "confidence": 60,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -96,6 +85,17 @@
       "confidence": 48,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 1,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -67,
+      "trend": "cooling",
+      "confidence": 54,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.0."
     },
     {
       "category": "labor",
@@ -155,6 +155,26 @@
   ],
   "top_new_events": [
     {
+      "id": "462b1efbc5ea59fb",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Ngân hàng Nhà nước Việt Nam và Mastercard tăng cường hợp tác phát triển thanh toán số an toàn, bền vững 14/09/2026",
+      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-v%C3%A0-mastercard-t%C4%83ng-c%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-t%C3%A1c-ph%C3%A1t-tri%E1%BB%83n-thanh-to%C3%A1n-s%E1%BB%91-an-to%C3%A0n-b%E1%BB%81n-v%E1%BB%AFng-1",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-17T16:59:34.278886+00:00"
+    },
+    {
       "id": "baa42e8ee5fcacf4",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +190,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00",
+      "collected_at": "2026-09-17T11:40:54.335403+00:00",
+      "last_seen_at": null
     },
     {
       "id": "791ead1e9b93d7f9",
@@ -188,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00",
+      "collected_at": "2026-09-17T11:40:54.335403+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ebc55060c8ed8a5a",
@@ -206,7 +230,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00",
+      "collected_at": "2026-09-17T11:40:54.335403+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9338d8d67178d756",
@@ -226,7 +252,9 @@
         "Gia Lai"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00",
+      "collected_at": "2026-09-17T11:40:54.335403+00:00",
+      "last_seen_at": null
     },
     {
       "id": "c938fd79d6e068d4",
@@ -244,7 +272,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00",
+      "collected_at": "2026-09-17T11:40:54.335403+00:00",
+      "last_seen_at": null
     },
     {
       "id": "b5d0d537f3ffee81",
@@ -290,21 +320,20 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 16,
     "business_formation": 15,
-    "market_data": 6,
+    "policy_regulation": 14,
+    "market_data": 7,
     "hiring": 3,
     "capex_expansion": 1
   },
   "geographies_7d": {
-    "TP.HCM": 2,
     "Gia Lai": 1,
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 352,
-    "candidate_events": 124,
-    "reference_events": 223,
+    "historical_events": 358,
+    "candidate_events": 125,
+    "reference_events": 228,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
