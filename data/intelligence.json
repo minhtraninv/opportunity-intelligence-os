@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-17T04:51:54.756886+00:00",
+    "generated_at": "2026-09-17T11:40:54.335403+00:00",
     "status": "active",
-    "history_days": 18,
+    "history_days": 19,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "monetary",
-      "recent_7d": 5,
+      "recent_7d": 7,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 150,
-      "trend": "single_source_spike",
-      "confidence": 54,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
+      "delta_pct": 250,
+      "trend": "accelerating",
+      "confidence": 66,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "sme",
@@ -27,18 +27,18 @@
       "baseline_expected_7d": 11.3,
       "delta_pct": 41,
       "trend": "stable",
-      "confidence": 79,
+      "confidence": 80,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "construction",
       "recent_7d": 4,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 50,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 33,
       "trend": "stable",
-      "confidence": 63,
+      "confidence": 66,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -49,7 +49,7 @@
       "baseline_expected_7d": 2.3,
       "delta_pct": 29,
       "trend": "stable",
-      "confidence": 59,
+      "confidence": 60,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -71,7 +71,18 @@
       "baseline_expected_7d": 2.7,
       "delta_pct": -62,
       "trend": "stable",
-      "confidence": 50,
+      "confidence": 52,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 1,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -62,
+      "trend": "stable",
+      "confidence": 52,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -82,29 +93,18 @@
       "baseline_expected_7d": 2.0,
       "delta_pct": -50,
       "trend": "stable",
-      "confidence": 46,
+      "confidence": 48,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "fdi_industrial",
-      "recent_7d": 0,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -100,
-      "trend": "cooling",
-      "confidence": 42,
-      "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.7."
-    },
-    {
       "category": "labor",
       "recent_7d": 4,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 53,
+      "confidence": 56,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -115,7 +115,7 @@
       "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 40,
+      "confidence": 42,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 30,
+      "confidence": 31,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 30,
+      "confidence": 31,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,12 +148,104 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 26,
+      "confidence": 27,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "baa42e8ee5fcacf4",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Fed tăng lãi suất lần đầu tiên sau 3 năm và định hướng chính sách tiếp theo",
+      "url": "https://baochinhphu.vn/fed-tang-lai-suat-lan-dau-tien-sau-3-nam-va-dinh-huong-chinh-sach-tiep-theo-102260917014111837.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+    },
+    {
+      "id": "791ead1e9b93d7f9",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kế hoạch triển khai thi hành Luật Phát triển đô thị",
+      "url": "https://baochinhphu.vn/ke-hoach-trien-khai-thi-hanh-luat-phat-trien-do-thi-10226091716475403.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+    },
+    {
+      "id": "ebc55060c8ed8a5a",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Chính phủ thông qua dự án Luật sửa đổi, bổ sung một số điều của Luật An toàn, vệ sinh lao động",
+      "url": "https://baochinhphu.vn/chinh-phu-thong-qua-du-an-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-an-toan-ve-sinh-lao-dong-102260917162301927.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+    },
+    {
+      "id": "9338d8d67178d756",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Gia Lai chấp thuận chủ trương đầu tư Nhà máy Thủy điện Sê San 3 mở rộng công suất 130MW",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Gia-Lai-chap-thuan-chu-truong-dau-tu-Nha-may-Thuy-dien-Se-San-3-mo-rong-cong-suat-130MW-60-13-509639",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capex_expansion",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Gia Lai"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+    },
+    {
+      "id": "c938fd79d6e068d4",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Fed tăng lãi suất: Mặt bằng lãi suất cao có thể kéo dài",
+      "url": "https://sbv.gov.vn/w/fed-tang-lai-suat-16.9",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-17T11:40:54.335403+00:00"
+    },
     {
       "id": "b5d0d537f3ffee81",
       "source_id": "business-registry",
@@ -195,42 +287,24 @@
       "first_seen_at": "2026-09-16T21:17:45.968435+00:00",
       "collected_at": "2026-09-16T21:17:45.968435+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "f8fbc0c3d4b31055",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Chủ tịch Quốc hội Trần Thanh Mẫn trao đổi chuyên đề về đổi mới tư duy xây dựng thể chế, pháp luật với các Ủy viên Trung ương Đảng",
-      "url": "https://baochinhphu.vn/chu-tich-quoc-hoi-tran-thanh-man-trao-doi-chuyen-de-ve-doi-moi-tu-duy-xay-dung-the-che-phap-luat-voi-cac-uy-vien-trung-uong-dang-102260916134623777.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-16T11:32:32.606987+00:00",
-      "collected_at": "2026-09-16T11:32:32.606987+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 16,
     "business_formation": 15,
-    "policy_regulation": 13,
     "market_data": 6,
-    "hiring": 3
+    "hiring": 3,
+    "capex_expansion": 1
   },
   "geographies_7d": {
     "TP.HCM": 2,
+    "Gia Lai": 1,
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 345,
-    "candidate_events": 119,
-    "reference_events": 221,
+    "historical_events": 352,
+    "candidate_events": 124,
+    "reference_events": 223,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
