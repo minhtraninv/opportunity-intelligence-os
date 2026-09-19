@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-19T15:52:29.763915+00:00",
+    "generated_at": "2026-09-19T20:39:38.994726+00:00",
     "status": "active",
     "history_days": 21,
     "required_history_days": 14,
@@ -23,9 +23,9 @@
     {
       "category": "sme",
       "recent_7d": 16,
-      "baseline_21d": 38,
-      "baseline_expected_7d": 12.7,
-      "delta_pct": 26,
+      "baseline_21d": 40,
+      "baseline_expected_7d": 13.3,
+      "delta_pct": 20,
       "trend": "stable",
       "confidence": 83,
       "source_diversity_7d": 2,
@@ -33,10 +33,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 4,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 33,
+      "recent_7d": 3,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -10,
       "trend": "stable",
       "confidence": 69,
       "source_diversity_7d": 2,
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "3b087d33c8e750c1",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 20/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-19T20:39:38.994726+00:00"
+    },
+    {
+      "id": "f6547b1c5c5a0b3f",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 20/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-19T20:39:38.994726+00:00"
+    },
+    {
       "id": "dc4c8a7ed76321c6",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -195,33 +233,11 @@
       "first_seen_at": "2026-09-18T20:53:58.228174+00:00",
       "collected_at": "2026-09-18T20:53:58.228174+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "900409f0431ae098",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Lập Hội đồng thẩm định Báo cáo nghiên cứu tiền khả thi cao tốc Bảo Hà - Lai Châu",
-      "url": "https://baochinhphu.vn/lap-hoi-dong-tham-dinh-bao-cao-nghien-cuu-tien-kha-thi-cao-toc-bao-ha-lai-chau-102260918190341374.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "Lai Châu"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-18T16:23:47.828716+00:00",
-      "collected_at": "2026-09-18T16:23:47.828716+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 15,
-    "policy_regulation": 10,
+    "policy_regulation": 9,
     "market_data": 8,
     "hiring": 2,
     "capex_expansion": 1
@@ -232,11 +248,13 @@
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 375,
-    "candidate_events": 130,
+    "historical_events": 377,
+    "candidate_events": 132,
     "reference_events": 240,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 0
+    "source_errors_last_run": 2
   },
-  "warnings": []
+  "warnings": [
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+  ]
 }
