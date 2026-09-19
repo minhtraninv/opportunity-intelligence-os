@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T20:53:58.228174+00:00",
+    "generated_at": "2026-09-19T04:36:49.430048+00:00",
     "status": "active",
     "history_days": 20,
     "required_history_days": 14,
@@ -9,17 +9,6 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "sme",
-      "recent_7d": 18,
-      "baseline_21d": 36,
-      "baseline_expected_7d": 12.0,
-      "delta_pct": 50,
-      "trend": "accelerating",
-      "confidence": 82,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 18 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 12.0."
-    },
     {
       "category": "monetary",
       "recent_7d": 6,
@@ -30,6 +19,17 @@
       "confidence": 70,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
+    },
+    {
+      "category": "sme",
+      "recent_7d": 16,
+      "baseline_21d": 38,
+      "baseline_expected_7d": 12.7,
+      "delta_pct": 26,
+      "trend": "stable",
+      "confidence": 82,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "construction",
@@ -99,9 +99,9 @@
     },
     {
       "category": "labor",
-      "recent_7d": 4,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
+      "recent_7d": 3,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 58,
@@ -172,7 +172,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-18T20:53:58.228174+00:00"
+      "first_seen_at": "2026-09-18T20:53:58.228174+00:00",
+      "collected_at": "2026-09-18T20:53:58.228174+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3e9e05a3123973c6",
@@ -190,7 +192,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-18T20:53:58.228174+00:00"
+      "first_seen_at": "2026-09-18T20:53:58.228174+00:00",
+      "collected_at": "2026-09-18T20:53:58.228174+00:00",
+      "last_seen_at": null
     },
     {
       "id": "900409f0431ae098",
@@ -213,55 +217,13 @@
       "first_seen_at": "2026-09-18T16:23:47.828716+00:00",
       "collected_at": "2026-09-18T16:23:47.828716+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "06d58a6231aec0c3",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 18/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-17T21:21:42.133882+00:00",
-      "collected_at": "2026-09-17T21:21:42.133882+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "4da7271106ba361f",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 18/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-17T21:21:42.133882+00:00",
-      "collected_at": "2026-09-17T21:21:42.133882+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 17,
+    "business_formation": 15,
     "policy_regulation": 10,
     "market_data": 8,
-    "hiring": 3,
+    "hiring": 2,
     "capex_expansion": 1
   },
   "geographies_7d": {
