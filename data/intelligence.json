@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-19T20:39:38.994726+00:00",
+    "generated_at": "2026-09-20T04:53:22.944114+00:00",
     "status": "active",
     "history_days": 21,
     "required_history_days": 14,
@@ -22,10 +22,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 40,
-      "baseline_expected_7d": 13.3,
-      "delta_pct": 20,
+      "recent_7d": 15,
+      "baseline_21d": 41,
+      "baseline_expected_7d": 13.7,
+      "delta_pct": 10,
       "trend": "stable",
       "confidence": 83,
       "source_diversity_7d": 2,
@@ -33,12 +33,23 @@
     },
     {
       "category": "construction",
-      "recent_7d": 3,
+      "recent_7d": 5,
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
-      "delta_pct": -10,
+      "delta_pct": 50,
       "trend": "stable",
-      "confidence": 69,
+      "confidence": 73,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 3,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 12,
+      "trend": "stable",
+      "confidence": 65,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -48,17 +59,6 @@
       "baseline_21d": 11,
       "baseline_expected_7d": 3.7,
       "delta_pct": -18,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 1,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,61 @@
   ],
   "top_new_events": [
     {
+      "id": "0d5763998efa94ed",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Khẩn trương hoàn thiện dự án Luật Đất đai (sửa đổi); xử lý dứt điểm tình trạng thiếu sách giáo khoa",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-hoan-thien-du-an-luat-dat-dai-sua-doi-xu-ly-dut-diem-tinh-trang-thieu-sach-giao-khoa-119260920093837679.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-20T04:53:22.944114+00:00"
+    },
+    {
+      "id": "7a47a6d2428b7b65",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Chương trình hành động tăng cường kỷ cương, xây dựng văn hóa trung thực, liêm chính và thực chất trong các hoạt động giáo dục",
+      "url": "https://xaydungchinhsach.chinhphu.vn/chuong-trinh-hanh-dong-tang-cuong-ky-cuong-xay-dung-van-hoa-trung-thuc-liem-chinh-va-thuc-chat-trong-cac-hoat-dong-giao-duc-119260920105244676.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-20T04:53:22.944114+00:00"
+    },
+    {
+      "id": "19c4fcd73bd21bde",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Chính phủ yêu cầu khẩn trương hoàn thiện các dự án Luật Đất đai, Nhà ở, Kinh doanh bất động sản (sửa đổi)",
+      "url": "https://xaydungchinhsach.chinhphu.vn/chinh-phu-yeu-cau-khan-truong-hoan-thien-cac-du-an-luat-dat-dai-nha-o-kinh-doanh-bat-dong-san-sua-doi-119260920101326422.htm",
+      "categories": [
+        "construction",
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-20T04:53:22.944114+00:00"
+    },
+    {
       "id": "3b087d33c8e750c1",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +227,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-19T20:39:38.994726+00:00"
+      "first_seen_at": "2026-09-19T20:39:38.994726+00:00",
+      "collected_at": "2026-09-19T20:39:38.994726+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f6547b1c5c5a0b3f",
@@ -190,55 +247,15 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-19T20:39:38.994726+00:00"
-    },
-    {
-      "id": "dc4c8a7ed76321c6",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 19/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-18T20:53:58.228174+00:00",
-      "collected_at": "2026-09-18T20:53:58.228174+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3e9e05a3123973c6",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 19/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-18T20:53:58.228174+00:00",
-      "collected_at": "2026-09-18T20:53:58.228174+00:00",
+      "first_seen_at": "2026-09-19T20:39:38.994726+00:00",
+      "collected_at": "2026-09-19T20:39:38.994726+00:00",
       "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 15,
-    "policy_regulation": 9,
-    "market_data": 8,
+    "policy_regulation": 10,
+    "market_data": 9,
     "hiring": 2,
     "capex_expansion": 1
   },
@@ -248,13 +265,11 @@
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 377,
-    "candidate_events": 132,
-    "reference_events": 240,
+    "historical_events": 382,
+    "candidate_events": 135,
+    "reference_events": 242,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 0
   },
-  "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
-  ]
+  "warnings": []
 }
