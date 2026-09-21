@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T04:55:06.247362+00:00",
+    "generated_at": "2026-09-21T12:47:35.187785+00:00",
     "status": "active",
-    "history_days": 22,
+    "history_days": 23,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -16,7 +16,7 @@
       "baseline_expected_7d": 3.7,
       "delta_pct": 64,
       "trend": "accelerating",
-      "confidence": 79,
+      "confidence": 80,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
@@ -27,31 +27,9 @@
       "baseline_expected_7d": 2.7,
       "delta_pct": 125,
       "trend": "accelerating",
-      "confidence": 73,
+      "confidence": 74,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
-    },
-    {
-      "category": "sme",
-      "recent_7d": 15,
-      "baseline_21d": 43,
-      "baseline_expected_7d": 14.3,
-      "delta_pct": 5,
-      "trend": "stable",
-      "confidence": 85,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 4,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 69,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "energy",
@@ -60,19 +38,30 @@
       "baseline_expected_7d": 3.0,
       "delta_pct": -33,
       "trend": "stable",
-      "confidence": 67,
+      "confidence": 68,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "labor",
-      "recent_7d": 2,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
+      "category": "sme",
+      "recent_7d": 14,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": -5,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 3,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
       "delta_pct": 0,
       "trend": "stable",
-      "confidence": 61,
-      "source_diversity_7d": 2,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -98,13 +87,24 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "labor",
+      "recent_7d": 1,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -57,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "data_ai",
       "recent_7d": 1,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
       "delta_pct": -50,
       "trend": "stable",
-      "confidence": 52,
+      "confidence": 54,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -115,7 +115,7 @@
       "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 39,
+      "confidence": 41,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 35,
+      "confidence": 37,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 35,
+      "confidence": 37,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,7 +148,7 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 31,
+      "confidence": 33,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
@@ -170,7 +170,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-21T04:55:06.247362+00:00"
+      "first_seen_at": "2026-09-21T04:55:06.247362+00:00",
+      "collected_at": "2026-09-21T04:55:06.247362+00:00",
+      "last_seen_at": null
     },
     {
       "id": "912632be9037c3c4",
@@ -189,7 +191,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-21T04:55:06.247362+00:00"
+      "first_seen_at": "2026-09-21T04:55:06.247362+00:00",
+      "collected_at": "2026-09-21T04:55:06.247362+00:00",
+      "last_seen_at": null
     },
     {
       "id": "642b23bc444b8597",
@@ -207,7 +211,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-21T04:55:06.247362+00:00"
+      "first_seen_at": "2026-09-21T04:55:06.247362+00:00",
+      "collected_at": "2026-09-21T04:55:06.247362+00:00",
+      "last_seen_at": null
     },
     {
       "id": "fca01e576ead1f73",
@@ -253,11 +259,10 @@
     }
   ],
   "event_types_7d": {
-    "business_formation": 15,
-    "policy_regulation": 11,
+    "business_formation": 14,
+    "policy_regulation": 10,
     "market_data": 10,
-    "capex_expansion": 1,
-    "hiring": 1
+    "capex_expansion": 1
   },
   "geographies_7d": {
     "Lai Châu": 1,
@@ -265,13 +270,11 @@
     "Quảng Ngãi": 1
   },
   "coverage": {
-    "historical_events": 391,
+    "historical_events": 398,
     "candidate_events": 140,
-    "reference_events": 246,
+    "reference_events": 253,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 0
   },
-  "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
-  ]
+  "warnings": []
 }
