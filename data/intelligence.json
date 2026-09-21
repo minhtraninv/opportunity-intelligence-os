@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T12:47:35.187785+00:00",
+    "generated_at": "2026-09-21T21:58:37.034492+00:00",
     "status": "active",
     "history_days": 23,
     "required_history_days": 14,
@@ -22,14 +22,14 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 6,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 125,
+      "recent_7d": 5,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 67,
       "trend": "accelerating",
       "confidence": 74,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "energy",
@@ -44,10 +44,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 14,
-      "baseline_21d": 44,
-      "baseline_expected_7d": 14.7,
-      "delta_pct": -5,
+      "recent_7d": 12,
+      "baseline_21d": 46,
+      "baseline_expected_7d": 15.3,
+      "delta_pct": -22,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -59,17 +59,6 @@
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
       "delta_pct": 0,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 3,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": -18,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -107,6 +96,17 @@
       "confidence": 54,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 2,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -50,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "logistics",
@@ -214,67 +214,26 @@
       "first_seen_at": "2026-09-21T04:55:06.247362+00:00",
       "collected_at": "2026-09-21T04:55:06.247362+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "fca01e576ead1f73",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 21/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-20T20:48:35.908233+00:00",
-      "collected_at": "2026-09-20T20:48:35.908233+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f951917b8a261ca0",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 21/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-20T20:48:35.908233+00:00",
-      "collected_at": "2026-09-20T20:48:35.908233+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 14,
+    "business_formation": 12,
     "policy_regulation": 10,
-    "market_data": 10,
+    "market_data": 8,
     "capex_expansion": 1
   },
   "geographies_7d": {
     "Lai Châu": 1,
-    "Gia Lai": 1,
-    "Quảng Ngãi": 1
+    "Gia Lai": 1
   },
   "coverage": {
     "historical_events": 398,
     "candidate_events": 140,
     "reference_events": 253,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 0
+    "source_errors_last_run": 1
   },
-  "warnings": []
+  "warnings": [
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+  ]
 }

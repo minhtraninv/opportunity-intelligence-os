@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-21T12:48:12.450586+00:00",
+    "generated_at": "2026-09-21T21:59:47.939575+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,24 +9,24 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 330,
-    "entities_seen_recently": 166,
-    "auto_discovered_entities": 156,
-    "history_events": 330
+    "recent_events": 333,
+    "entities_seen_recently": 169,
+    "auto_discovered_entities": 159,
+    "history_events": 333
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 3,
+      "items_this_run": 2,
       "error": null
     },
     {
@@ -294,6 +294,18 @@
       "recent_events": 2
     },
     {
+      "entity_id": "auto-scg-home-việt-nam-5f4ed281",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-co-opmart-23b09037",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-sở-xây-dfde6a12",
+      "recent_events": 1
+    },
+    {
       "entity_id": "auto-amway-việt-nam-0244d21b",
       "recent_events": 1
     },
@@ -302,11 +314,11 @@
       "recent_events": 1
     },
     {
-      "entity_id": "auto-scg-home-việt-nam-5f4ed281",
+      "entity_id": "auto-bitcoin-ed1b8d80",
       "recent_events": 1
     },
     {
-      "entity_id": "auto-co-opmart-23b09037",
+      "entity_id": "auto-sun-phuquoc-airways-8a0c539b",
       "recent_events": 1
     },
     {
@@ -1766,6 +1778,60 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-scg-home-việt-nam-5f4ed281",
+      "label": "SCG Home Việt Nam",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "SCG Home Việt Nam"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-co-opmart-23b09037",
+      "label": "Co.opmart",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Co.opmart"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-sở-xây-dfde6a12",
+      "label": "Sở Xây",
+      "entity_type": "public_body",
+      "aliases": [
+        "Sở Xây"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "public_body_not_open_world_company"
+    },
+    {
       "id": "auto-amway-việt-nam-0244d21b",
       "label": "Amway Việt Nam",
       "entity_type": "organization_candidate",
@@ -1802,36 +1868,36 @@
       "suppression_reason": null
     },
     {
-      "id": "auto-scg-home-việt-nam-5f4ed281",
-      "label": "SCG Home Việt Nam",
+      "id": "auto-bitcoin-ed1b8d80",
+      "label": "Bitcoin",
       "entity_type": "organization_candidate",
       "aliases": [
-        "SCG Home Việt Nam"
+        "Bitcoin"
       ],
       "recent_events": 1,
       "families": [
-        "project_execution"
+        "strategy"
       ],
       "publishers": [
-        "Tuổi Trẻ Kinh doanh"
+        "VnExpress Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
     },
     {
-      "id": "auto-co-opmart-23b09037",
-      "label": "Co.opmart",
+      "id": "auto-sun-phuquoc-airways-8a0c539b",
+      "label": "Sun PhuQuoc Airways",
       "entity_type": "organization_candidate",
       "aliases": [
-        "Co.opmart"
+        "Sun PhuQuoc Airways"
       ],
       "recent_events": 1,
       "families": [
         "project_execution"
       ],
       "publishers": [
-        "Tuổi Trẻ Kinh doanh"
+        "VnExpress Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
@@ -2538,63 +2604,66 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
-    },
-    {
-      "id": "auto-hưng-yên-47c6f15d",
-      "label": "Hưng Yên",
-      "entity_type": "location",
-      "aliases": [
-        "Hưng Yên"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-aiib-1cf0369a",
-      "label": "AIIB",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "AIIB"
-      ],
-      "recent_events": 1,
-      "families": [
-        "project_execution"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-tpbank-b0f300d8",
-      "label": "TPBank",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "TPBank"
-      ],
-      "recent_events": 1,
-      "families": [
-        "project_execution"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     }
   ],
   "events": [
+    {
+      "id": "57afd8f6e801b031",
+      "event_signature": "3a9745ef4c5033c3",
+      "entity_id": "auto-scg-home-việt-nam-5f4ed281",
+      "entity_label": "SCG Home Việt Nam",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "SCG Home Việt Nam khai trương showroom nội thất hơn 5.500m² tại Hà Nội",
+      "summary": "SCG Home Việt Nam khai trương không gian trải nghiệm vật liệu hoàn thiện nhà rộng 5.500m² tại khu vực Long Biên (Hà Nội), quy tụ hơn 60 thương hiệu trong nước và quốc tế.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/scg-home-viet-nam-khai-truong-showroom-noi-that-hon-5500m-tai-ha-noi-100260919130956717.htm",
+      "published_at": "2026-09-21T21:59:47.939575+00:00",
+      "first_seen_at": "2026-09-20T04:54:10.411156+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "7bf2619ed683e92e",
+      "event_signature": "47418b4e50189df6",
+      "entity_id": "auto-co-opmart-23b09037",
+      "entity_label": "Co.opmart",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Co.opmart triển khai bếp suất ăn học đường, kiểm soát từ gốc đến bàn ăn",
+      "summary": "Từ tháng 9-2026, Co.opmart Long Xuyên (tỉnh An Giang) triển khai bếp suất ăn học đường, bước đầu phục vụ khoảng 550 học sinh bán trú mỗi ngày.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/coopmart-trien-khai-bep-suat-an-hoc-duong-kiem-soat-tu-goc-den-ban-an-100260921174442976.htm",
+      "published_at": "2026-09-21T21:59:47.939575+00:00",
+      "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "ced82797c734fcd1",
+      "event_signature": "a9745561ebbe9b62",
+      "entity_id": "auto-sở-xây-dfde6a12",
+      "entity_label": "Sở Xây",
+      "entity_type": "public_body",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Sở Xây dựng phải trả lời trong 15 ngày về nhà ở đủ điều kiện bán",
+      "summary": "Sở Xây dựng kiểm tra điều kiện nhà ở hình thành trong tương lai đưa và phải trả lời bằng văn bản cho chủ đầu tư về việc nhà ở đủ điều kiện bán, cho thuê mua; nếu không đủ điều kiện phải nêu rõ lý do. Từ quy mô nhỏ đến tăng trưởng ổn định: Nhà bán tối ưu vận hành bứt phá doanh thu thương mại điện tử Tây Ninh đề xuất tăng 10.000 căn nhà ở cho thuê giai đoạn 20",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/so-xay-dung-phai-tra-loi-trong-15-ngay-ve-nha-o-du-dieu-kien-ban-post1137543.vnp",
+      "published_at": "2026-09-21T21:21:01+00:00",
+      "first_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "public_body_not_open_world_company"
+    },
     {
       "id": "d795432c0ad703cc",
       "event_signature": "0159924586ddbe90",
@@ -2609,7 +2678,7 @@
       "source_url": "https://www.vietnamplus.vn/dien-bien-chinh-thuc-dua-uav-vao-van-chuyen-hang-hoa-nong-san-post1137501.vnp",
       "published_at": "2026-09-21T17:39:34+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2628,7 +2697,7 @@
       "source_url": "https://www.vietnamplus.vn/amway-viet-nam-duoc-vinh-danh-o-hai-hang-muc-tai-dien-dan-kinh-te-asean-2026-post1137475.vnp",
       "published_at": "2026-09-21T16:07:52+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2647,7 +2716,7 @@
       "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-nguyen-van-thang-tiep-lanh-dao-cong-ty-r3-lithium-post1137470.vnp",
       "published_at": "2026-09-21T15:30:24+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2666,7 +2735,7 @@
       "source_url": "https://www.vietnamplus.vn/leapmotor-vuot-subaru-va-mitsubishi-motors-cua-nhat-ban-ve-doanh-so-toan-cau-post1137460.vnp",
       "published_at": "2026-09-21T14:57:45+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2683,7 +2752,7 @@
       "source_url": "https://www.vietnamplus.vn/leapmotor-vuot-subaru-va-mitsubishi-motors-cua-nhat-ban-ve-doanh-so-toan-cau-post1137460.vnp",
       "published_at": "2026-09-21T14:57:45+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2702,7 +2771,45 @@
       "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-danh-gia-ky-cac-van-de-quy-dinh-trong-luat-dat-dai-sua-doi-post1137452.vnp",
       "published_at": "2026-09-21T14:29:57+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "944072cf75e55dee",
+      "event_signature": "2cd4f78b13d3e2f6",
+      "entity_id": "auto-bitcoin-ed1b8d80",
+      "entity_label": "Bitcoin",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Bitcoin lên mức cao nhất 8 tháng",
+      "summary": "Tiền số lớn nhất thế giới vượt 85.000 USD, mức cao nhất kể từ cuối tháng 1, do nhà đầu tư cược Bitcoin giảm phải mua lại để cắt lỗ.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/bitcoin-len-muc-cao-nhat-8-thang-5123043.html",
+      "published_at": "2026-09-21T13:10:07+00:00",
+      "first_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "326c07b28e516c86",
+      "event_signature": "5a8be461b424e6b8",
+      "entity_id": "auto-sun-phuquoc-airways-8a0c539b",
+      "entity_label": "Sun PhuQuoc Airways",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Sun PhuQuoc Airways đón tàu bay thứ 20",
+      "summary": "Tàu bay thứ 20 của Sun PhuQuoc Airways (SPA) thuộc dòng Airbus A321 Long Range (LR) mang số hiệu VN-A926, hạ cánh tại sân bay Nội Bài chiều 21/9.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/sun-phuquoc-airways-don-tau-bay-thu-20-5123020.html",
+      "published_at": "2026-09-21T13:00:00+00:00",
+      "first_seen_at": "2026-09-21T21:59:47.939575+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2727,44 +2834,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "57afd8f6e801b031",
-      "event_signature": "3a9745ef4c5033c3",
-      "entity_id": "auto-scg-home-việt-nam-5f4ed281",
-      "entity_label": "SCG Home Việt Nam",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "SCG Home Việt Nam khai trương showroom nội thất hơn 5.500m² tại Hà Nội",
-      "summary": "SCG Home Việt Nam khai trương không gian trải nghiệm vật liệu hoàn thiện nhà rộng 5.500m² tại khu vực Long Biên (Hà Nội), quy tụ hơn 60 thương hiệu trong nước và quốc tế.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/scg-home-viet-nam-khai-truong-showroom-noi-that-hon-5500m-tai-ha-noi-100260919130956717.htm",
-      "published_at": "2026-09-21T12:48:12.450586+00:00",
-      "first_seen_at": "2026-09-20T04:54:10.411156+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "7bf2619ed683e92e",
-      "event_signature": "47418b4e50189df6",
-      "entity_id": "auto-co-opmart-23b09037",
-      "entity_label": "Co.opmart",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Co.opmart triển khai bếp suất ăn học đường, kiểm soát từ gốc đến bàn ăn",
-      "summary": "Từ tháng 9-2026, Co.opmart Long Xuyên (tỉnh An Giang) triển khai bếp suất ăn học đường, bước đầu phục vụ khoảng 550 học sinh bán trú mỗi ngày.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/coopmart-trien-khai-bep-suat-an-hoc-duong-kiem-soat-tu-goc-den-ban-an-100260921174442976.htm",
-      "published_at": "2026-09-21T12:48:12.450586+00:00",
-      "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "81258d5d38bf0462",
       "event_signature": "ff5917434cb1be7d",
       "entity_id": "auto-imf-beae787a",
@@ -2778,7 +2847,7 @@
       "source_url": "https://www.vietnamplus.vn/imf-canh-bao-rui-ro-lam-phat-va-dau-tu-ai-doi-voi-kinh-te-the-gioi-post1137396.vnp",
       "published_at": "2026-09-21T10:48:40+00:00",
       "first_seen_at": "2026-09-21T04:56:13.278302+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2797,7 +2866,7 @@
       "source_url": "https://www.vietnamplus.vn/ninh-binh-tang-toc-phat-trien-ha-tang-so-thuc-day-chinh-quyen-so-post1137367.vnp",
       "published_at": "2026-09-21T10:17:19+00:00",
       "first_seen_at": "2026-09-21T04:56:13.278302+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2816,7 +2885,7 @@
       "source_url": "https://thanhnien.vn/sau-8-thang-doanh-thu-masan-tang-manh-dat-hon-77000-ti-dong-185260921141325253.htm",
       "published_at": "2026-09-21T07:29:00+00:00",
       "first_seen_at": "2026-09-21T12:48:12.450586+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2852,7 +2921,7 @@
       "source_url": "https://thanhnien.vn/familymart-khai-truong-tai-ha-noi-mo-ra-nhung-diem-hen-tien-loi-moi-185260921083004058.htm",
       "published_at": "2026-09-21T01:19:00+00:00",
       "first_seen_at": "2026-09-21T04:56:13.278302+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2871,7 +2940,7 @@
       "source_url": "https://www.vietnamplus.vn/asean-han-quoc-thuc-day-quan-he-kinh-te-thuc-chat-va-tang-kha-nang-chong-chiu-post1137335.vnp",
       "published_at": "2026-09-20T22:06:49+00:00",
       "first_seen_at": "2026-09-20T16:06:18.549361+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2926,7 +2995,7 @@
       "source_url": "https://vnexpress.net/green-sm-ap-co-che-chia-se-100-doanh-thu-neu-tai-xe-mua-xe-khong-chay-app-khac-5122339.html",
       "published_at": "2026-09-20T11:03:29+00:00",
       "first_seen_at": "2026-09-20T16:06:18.549361+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2945,7 +3014,7 @@
       "source_url": "https://vnexpress.net/ecopark-hai-duong-de-xuat-lam-du-an-bat-dong-san-o-moc-chau-5122457.html",
       "published_at": "2026-09-20T06:03:18+00:00",
       "first_seen_at": "2026-09-20T16:06:18.549361+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2964,7 +3033,7 @@
       "source_url": "https://thanhnien.vn/techcom-wealth-chuan-muc-moi-ve-quan-tri-gia-san-tai-viet-nam-185260920085143799.htm",
       "published_at": "2026-09-20T01:35:00+00:00",
       "first_seen_at": "2026-09-20T04:54:10.411156+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2983,7 +3052,7 @@
       "source_url": "https://thanhnien.vn/vingroup-khoi-cong-benh-vien-tieu-chuan-hang-dau-the-gioi-tai-can-gio-185260919215915721.htm",
       "published_at": "2026-09-19T23:43:00+00:00",
       "first_seen_at": "2026-09-20T04:54:10.411156+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3133,7 +3202,7 @@
       "source_url": "https://thanhnien.vn/vingroup-trien-khai-chuong-trinh-vi-tuong-lai-xanh-lan-2-185260918214232453.htm",
       "published_at": "2026-09-18T23:32:00+00:00",
       "first_seen_at": "2026-09-19T04:37:45.372845+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3150,7 +3219,7 @@
       "source_url": "https://thanhnien.vn/san-bay-long-thanh-tang-toc-ve-dich-185260918212844724.htm",
       "published_at": "2026-09-18T23:29:00+00:00",
       "first_seen_at": "2026-09-19T04:37:45.372845+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3389,7 +3458,7 @@
       "source_url": "https://vnexpress.net/msr-mo-rong-chuoi-gia-tri-tu-nang-luc-che-bien-sau-5121853.html",
       "published_at": "2026-09-18T08:00:00+00:00",
       "first_seen_at": "2026-09-18T11:14:19.347151+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3406,7 +3475,7 @@
       "source_url": "https://vnexpress.net/msr-mo-rong-chuoi-gia-tri-tu-nang-luc-che-bien-sau-5121853.html",
       "published_at": "2026-09-18T08:00:00+00:00",
       "first_seen_at": "2026-09-18T11:14:19.347151+00:00",
-      "last_seen_at": "2026-09-21T12:48:12.450586+00:00",
+      "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -4916,7 +4985,7 @@
       "event_signature": "840ff38cc443d2e0",
       "entity_id": "auto-hưng-yên-47c6f15d",
       "entity_label": "Hưng Yên",
-      "entity_type": "location",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "Hưng Yên mở rộng không gian công nghiệp, hướng tới tăng trưởng hai con số",
@@ -4926,9 +4995,7 @@
       "published_at": "2026-09-13T14:06:56+00:00",
       "first_seen_at": "2026-09-13T11:53:31.486554+00:00",
       "last_seen_at": "2026-09-14T21:51:03.952377+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "d2e07a1d20e9a8ce",
@@ -4990,7 +5057,7 @@
       "event_signature": "0c6f598ba797847c",
       "entity_id": "auto-aiib-1cf0369a",
       "entity_label": "AIIB",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "project_execution",
       "title": "AIIB cam kết tiếp tục đồng hành cùng Việt Nam phát triển cơ sở hạ tầng bền vững",
@@ -5000,9 +5067,7 @@
       "published_at": "2026-09-13T07:42:49+00:00",
       "first_seen_at": "2026-09-13T04:48:52.901529+00:00",
       "last_seen_at": "2026-09-14T04:56:07.416696+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "ad60edf892ea3ce6",
@@ -5121,7 +5186,7 @@
       "event_signature": "629e2b9f06b26a5f",
       "entity_id": "auto-tpbank-b0f300d8",
       "entity_label": "TPBank",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "project_execution",
       "title": "TPBank được chấp thuận tăng vốn điều lệ thêm hơn 4.161 tỷ đồng",
@@ -5131,9 +5196,7 @@
       "published_at": "2026-09-12T13:16:51+00:00",
       "first_seen_at": "2026-09-12T10:47:50.368302+00:00",
       "last_seen_at": "2026-09-13T20:51:51.049234+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "d78f82101bec92c7",
@@ -8648,7 +8711,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-21T12:48:26.044718+00:00",
+    "prepared_at": "2026-09-21T22:00:00.527136+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 27,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
