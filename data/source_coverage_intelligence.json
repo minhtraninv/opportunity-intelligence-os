@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-09-20T20:49:28.132212+00:00",
+    "generated_at": "2026-09-21T04:56:29.041296+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-20T20:49:28.173096+00:00"
+    "trust_hardened_at": "2026-09-21T04:56:29.102548+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
     "domains": 20,
-    "strong": 4,
-    "partial": 8,
+    "strong": 3,
+    "partial": 9,
     "weak": 6,
     "broken": 0,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 18,
-    "productive_sources": 4,
-    "source_errors": 0,
+    "healthy_sources": 17,
+    "productive_sources": 3,
+    "source_errors": 1,
     "planned_sources": 8,
-    "verified_productive_sources": 4,
-    "discovery_productive_sources": 11
+    "verified_productive_sources": 3,
+    "discovery_productive_sources": 10
   },
   "critical_blind_spots": [
     {
@@ -213,7 +213,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 3,
-      "discovery_evidence_items_this_run": 58,
+      "discovery_evidence_items_this_run": 60,
       "evidence_items_this_run": 3,
       "healthy_source_names": [
         "Báo Chính phủ",
@@ -298,7 +298,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 8,
+      "discovery_evidence_items_this_run": 9,
       "evidence_items_this_run": 1,
       "healthy_source_names": [
         "Cục Thống kê - Doanh nghiệp",
@@ -434,7 +434,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 10,
+      "discovery_evidence_items_this_run": 11,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
         "EVN - Đầu tư xây dựng",
@@ -520,8 +520,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 24,
-      "evidence_items_this_run": 24,
+      "discovery_evidence_items_this_run": 21,
+      "evidence_items_this_run": 21,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -553,8 +553,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 24,
-      "evidence_items_this_run": 24,
+      "discovery_evidence_items_this_run": 21,
+      "evidence_items_this_run": 21,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -602,6 +602,35 @@
       "evidence_standard": "verified_primary"
     },
     {
+      "id": "business_formation",
+      "label": "Thành lập & rút lui doanh nghiệp",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
+      "status": "partial",
+      "active_sources": 2,
+      "healthy_sources": 1,
+      "productive_sources": 1,
+      "verified_productive_sources": 1,
+      "discovery_productive_sources": 1,
+      "broken_sources": 1,
+      "verified_evidence_items_this_run": 1,
+      "discovery_evidence_items_this_run": 2,
+      "evidence_items_this_run": 1,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp"
+      ],
+      "broken_source_names": [
+        "Cổng ĐKKD Quốc gia"
+      ],
+      "planned_next_sources": [],
+      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+      "evidence_standard": "verified_primary"
+    },
+    {
       "id": "consumption_behavior",
       "label": "Tiêu dùng & hành vi",
       "priority": 3,
@@ -627,35 +656,6 @@
       "broken_source_names": [],
       "planned_next_sources": [],
       "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-      "evidence_standard": "verified_primary"
-    },
-    {
-      "id": "business_formation",
-      "label": "Thành lập & rút lui doanh nghiệp",
-      "priority": 3,
-      "target_healthy_sources": 2,
-      "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
-      "status": "strong",
-      "active_sources": 2,
-      "healthy_sources": 2,
-      "productive_sources": 2,
-      "verified_productive_sources": 2,
-      "discovery_productive_sources": 2,
-      "broken_sources": 0,
-      "verified_evidence_items_this_run": 2,
-      "discovery_evidence_items_this_run": 51,
-      "evidence_items_this_run": 2,
-      "healthy_source_names": [
-        "Cục Thống kê - Doanh nghiệp",
-        "Cổng ĐKKD Quốc gia"
-      ],
-      "productive_source_names": [
-        "Cục Thống kê - Doanh nghiệp",
-        "Cổng ĐKKD Quốc gia"
-      ],
-      "broken_source_names": [],
-      "planned_next_sources": [],
-      "coverage_note": "Đủ số nguồn đang tạo evidence đúng cấp cho mục đích của domain; vẫn phải kiểm tra freshness và độc lập.",
       "evidence_standard": "verified_primary"
     },
     {
@@ -701,7 +701,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 58,
+      "discovered_items_this_run": 59,
       "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 3,
@@ -718,11 +718,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 48,
+      "discovered_items_this_run": 50,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 31
+      "discovery_evidence_items_this_run": 33
     },
     {
       "id": "nso",
@@ -775,10 +775,10 @@
         "business_formation"
       ],
       "authority": 1.0,
-      "health": "ok",
-      "discovered_items_this_run": 62,
+      "health": "error",
+      "discovered_items_this_run": 0,
       "evidence_items_this_run": 1,
-      "error": null,
+      "error": "Cổng ĐKKD Quốc gia: ConnectionError: HTTPSConnectionPool(host='dangkykinhdoanh.gov.vn', port=443): Read timed out.",
       "verified_evidence_items_this_run": 1,
       "discovery_evidence_items_this_run": 49
     },
@@ -830,11 +830,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 90,
+      "discovered_items_this_run": 92,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 6
+      "discovery_evidence_items_this_run": 7
     },
     {
       "id": "sbv",
@@ -920,11 +920,11 @@
       ],
       "authority": 0.76,
       "health": "ok",
-      "discovered_items_this_run": 4,
-      "evidence_items_this_run": 4,
+      "discovered_items_this_run": 3,
+      "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 4
+      "discovery_evidence_items_this_run": 3
     },
     {
       "id": "thanhnien-economy",
@@ -938,11 +938,11 @@
       ],
       "authority": 0.74,
       "health": "ok",
-      "discovered_items_this_run": 8,
-      "evidence_items_this_run": 8,
+      "discovered_items_this_run": 6,
+      "evidence_items_this_run": 6,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 8
+      "discovery_evidence_items_this_run": 6
     },
     {
       "id": "vietnamplus-economy",
