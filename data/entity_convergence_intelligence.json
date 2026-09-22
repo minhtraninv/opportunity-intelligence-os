@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-22T04:56:46.004921+00:00",
+    "generated_at": "2026-09-22T11:38:47.278389+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-22T04:56:46.260636+00:00"
+    "trust_hardened_at": "2026-09-22T11:38:47.538024+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -17,12 +17,12 @@
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 12,
-    "watch": 33,
+    "watch": 34,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 18,
+    "discovery_candidates": 17,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 10
+    "suppressed_non_organizations": 11
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -50,7 +50,7 @@
       "event_count": 8,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -581,13 +581,27 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "524cfc9520fc8834",
+          "event_signature": "9e286321e14b4c8f",
+          "family": "project_execution",
+          "title": "Thủ hiến bang Tây Úc ngưỡng mộ quy mô và tiến độ siêu sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/thu-hien-bang-tay-uc-nguong-mo-quy-mo-va-tien-do-sieu-san-bay-long-thanh-185260922153945869.htm",
+          "observed_at": "2026-09-22T08:44:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "725ea875064bf65a",
           "event_signature": "810171641ee6885f",
@@ -624,20 +638,6 @@
           "publisher": "VietnamPlus Kinh tế",
           "source_url": "https://www.vietnamplus.vn/dong-nai-uu-tien-nguon-luc-cho-cac-du-an-lan-toa-ket-noi-san-bay-long-thanh-post1136292.vnp",
           "observed_at": "2026-09-15T15:20:52+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f4efb2f9058e7985",
-          "event_signature": "5b9d63b0cc70a1d1",
-          "family": "project_execution",
-          "title": "Cập nhật mới nhất tiến độ siêu sân bay Long Thành",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/cap-nhat-moi-nhat-tien-do-sieu-san-bay-long-thanh-185260915171314271.htm",
-          "observed_at": "2026-09-15T10:26:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -903,7 +903,7 @@
         "Báo Chính phủ",
         "VietnamPlus Kinh tế"
       ],
-      "event_count": 4,
+      "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
       "newest_evidence_age_days": 0,
@@ -921,6 +921,21 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "083a633d764aa932",
+          "family": "policy",
+          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và BHXH",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bhxh-102260922162556052.htm",
+          "observed_at": "2026-09-22T11:37:30.564679+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
         {
           "id": "14077e0049cfb43a",
           "event_signature": "19de64a97688d138",
@@ -995,7 +1010,7 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 1,
+      "official_headline_discovery_count": 2,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "policy",
@@ -1040,7 +1055,7 @@
           "title": "Novaland chào bán cổ phiếu tỉ lệ 3:1, muốn thu hơn 8.000 tỉ đồng để... trả nợ",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/novaland-chao-ban-co-phieu-ty-le-31-muon-thu-hon-8000-ti-dong-de-tra-no-100260921232124491.htm",
-          "observed_at": "2026-09-22T04:56:29.159163+00:00",
+          "observed_at": "2026-09-22T11:38:29.678245+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1363,7 +1378,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1764,7 +1779,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [],
       "theme_context": [
         {
@@ -2004,85 +2019,6 @@
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-abbank-f3e31e22",
-      "label": "ABBank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "ABBank đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
-      "evidence_families": [
-        "capital",
-        "operating"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 2,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 2,
-      "newest_evidence_age_days": 6,
-      "anomaly_flags": [
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "57097b8b5aa41e95",
-          "event_signature": "5c8b034b2fafc3f9",
-          "family": "capital",
-          "title": "ABBank được Ngân hàng Nhà nước chấp thuận tăng vốn lên gần 27.000 tỷ đồng",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/abbank-duoc-ngan-hang-nha-nuoc-chap-thuan-tang-von-len-gan-27000-ty-dong-post1136365.vnp",
-          "observed_at": "2026-09-15T19:42:48+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "883b61a2d2a89fb4",
-          "event_signature": "be8d718ddab676e6",
-          "family": "operating",
-          "title": "ABBank ra mắt giải pháp tích lũy kết hợp tiết kiệm, đầu tư",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/abbank-ra-mat-giai-phap-tich-luy-ket-hop-tiet-kiem-dau-tu-185260904204855708.htm",
-          "observed_at": "2026-09-05T01:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "operating"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }
   ],
   "verified_watchlist": [],
@@ -2096,12 +2032,6 @@
     {
       "entity_id": "auto-điện-biên-8a6161e5",
       "label": "Điện Biên",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-gia-lai-f5d3ac1a",
-      "label": "Gia Lai",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -2136,6 +2066,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-gia-lai-f5d3ac1a",
+      "label": "Gia Lai",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
       "entity_type": "location",
@@ -2144,6 +2080,12 @@
     {
       "entity_id": "auto-hải-phòng-48a73a83",
       "label": "Hải Phòng",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-đồng-tháp-0bfc24e9",
+      "label": "Đồng Tháp",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
