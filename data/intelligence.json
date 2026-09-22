@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-22T11:37:30.564679+00:00",
+    "generated_at": "2026-09-22T16:57:07.090843+00:00",
     "status": "active",
     "history_days": 24,
     "required_history_days": 14,
@@ -11,17 +11,17 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 7,
+      "recent_7d": 8,
       "baseline_21d": 11,
       "baseline_expected_7d": 3.7,
-      "delta_pct": 91,
+      "delta_pct": 118,
       "trend": "accelerating",
-      "confidence": 84,
+      "confidence": 86,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
-      "category": "monetary",
+      "category": "policy",
       "recent_7d": 5,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
@@ -32,13 +32,13 @@
       "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
-      "category": "policy",
-      "recent_7d": 4,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 33,
+      "category": "monetary",
+      "recent_7d": 3,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": -18,
       "trend": "stable",
-      "confidence": 74,
+      "confidence": 76,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -54,6 +54,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "fdi_industrial",
+      "recent_7d": 2,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 68,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "sme",
       "recent_7d": 14,
       "baseline_21d": 46,
@@ -65,11 +76,11 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "fdi_industrial",
-      "recent_7d": 1,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
+      "category": "infrastructure",
+      "recent_7d": 3,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -31,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -96,17 +107,6 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 2,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": -50,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "logistics",
@@ -155,6 +155,83 @@
   ],
   "top_new_events": [
     {
+      "id": "bcea2a0635750973",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Thủ tướng Lê Minh Hưng: Thúc đẩy các dự án trọng điểm GTVT chậm tiến độ và tỉ lệ giải ngân thấp",
+      "url": "https://baochinhphu.vn/thu-tuong-le-minh-hung-thuc-day-cac-du-an-trong-diem-gtvt-cham-tien-do-va-ti-le-giai-ngan-thap-102260922181440768.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-22T16:57:07.090843+00:00"
+    },
+    {
+      "id": "0090f15204c62952",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Điều chỉnh Nghị quyết 127/NQ-CP về Dự án đường sắt Lào Cai – Hà Nội – Hải Phòng",
+      "url": "https://baochinhphu.vn/dieu-chinh-nghi-quyet-127-nq-cp-ve-du-an-duong-sat-lao-cai-ha-noi-hai-phong-102260922190924331.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Hà Nội",
+        "Hải Phòng",
+        "Lào Cai"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-22T16:57:07.090843+00:00"
+    },
+    {
+      "id": "ecee09d2519effb4",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kế hoạch hành động thực hiện Nghị quyết số 10-NQ/TW về phát triển kinh tế có vốn đầu tư nước ngoài",
+      "url": "https://baochinhphu.vn/ke-hoach-hanh-dong-thuc-hien-nghi-quyet-so-10-nq-tw-ve-phat-trien-kinh-te-co-von-dau-tu-nuoc-ngoai-102260922173730006.htm",
+      "categories": [
+        "fdi_industrial",
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-22T16:57:07.090843+00:00"
+    },
+    {
+      "id": "9a56a73a47ad232f",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và bảo hiểm xã hội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-22T16:57:07.090843+00:00"
+    },
+    {
       "id": "083a633d764aa932",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +247,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-22T11:37:30.564679+00:00"
+      "first_seen_at": "2026-09-22T11:37:30.564679+00:00",
+      "collected_at": "2026-09-22T11:37:30.564679+00:00",
+      "last_seen_at": null
     },
     {
       "id": "fa6b2e8967d863de",
@@ -188,7 +267,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-22T11:37:30.564679+00:00"
+      "first_seen_at": "2026-09-22T11:37:30.564679+00:00",
+      "collected_at": "2026-09-22T11:37:30.564679+00:00",
+      "last_seen_at": null
     },
     {
       "id": "c662c749c5a2d5cf",
@@ -208,7 +289,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-22T11:37:30.564679+00:00"
+      "first_seen_at": "2026-09-22T11:37:30.564679+00:00",
+      "collected_at": "2026-09-22T11:37:30.564679+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2b5fc6e6ac7570e3",
@@ -226,23 +309,29 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-22T11:37:30.564679+00:00"
+      "first_seen_at": "2026-09-22T11:37:30.564679+00:00",
+      "collected_at": "2026-09-22T11:37:30.564679+00:00",
+      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
     "policy_regulation": 11,
-    "market_data": 9,
+    "market_data": 8,
+    "capital_flow": 2,
     "capex_expansion": 1
   },
   "geographies_7d": {
+    "Hà Nội": 1,
+    "Hải Phòng": 1,
+    "Lào Cai": 1,
     "Lai Châu": 1,
     "Gia Lai": 1
   },
   "coverage": {
-    "historical_events": 409,
-    "candidate_events": 144,
-    "reference_events": 260,
+    "historical_events": 414,
+    "candidate_events": 148,
+    "reference_events": 261,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
