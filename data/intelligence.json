@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-23T04:44:38.178455+00:00",
+    "generated_at": "2026-09-23T11:35:30.239204+00:00",
     "status": "active",
-    "history_days": 24,
+    "history_days": 25,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,25 +11,36 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 9,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 145,
+      "recent_7d": 8,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": 100,
       "trend": "accelerating",
-      "confidence": 88,
+      "confidence": 89,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.0."
     },
     {
       "category": "policy",
-      "recent_7d": 5,
+      "recent_7d": 6,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 67,
+      "delta_pct": 100,
       "trend": "accelerating",
-      "confidence": 76,
+      "confidence": 86,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 4,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -8,
+      "trend": "stable",
+      "confidence": 83,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "monetary",
@@ -38,7 +49,7 @@
       "baseline_expected_7d": 3.7,
       "delta_pct": -18,
       "trend": "stable",
-      "confidence": 76,
+      "confidence": 77,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -49,7 +60,7 @@
       "baseline_expected_7d": 2.7,
       "delta_pct": -25,
       "trend": "stable",
-      "confidence": 68,
+      "confidence": 69,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -59,17 +70,6 @@
       "baseline_21d": 48,
       "baseline_expected_7d": 16.0,
       "delta_pct": -12,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 3,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": -31,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -104,7 +104,7 @@
       "baseline_expected_7d": 2.3,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 48,
+      "confidence": 50,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.3."
     },
@@ -115,7 +115,7 @@
       "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 42,
+      "confidence": 44,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 38,
+      "confidence": 40,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 38,
+      "confidence": 40,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,12 +148,52 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 34,
+      "confidence": 36,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "1098f286e7bae0b2",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Khởi công đường dây 220kV Đông Hà - Huế mạch 3",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Khoi-cong-duong-day-220kV-Dong-Ha-Hue-mach-3-60-13-509706",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Huế"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-23T11:35:30.239204+00:00"
+    },
+    {
+      "id": "4e321b9ed6a69876",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Sửa đổi, bổ sung chính sách tín dụng đối với người chấp hành xong án phạt tù Mới 23/09/2026",
+      "url": "https://sbv.gov.vn/w/s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-ch%C3%ADnh-s%C3%A1ch-t%C3%ADn-d%E1%BB%A5ng-%C4%91%E1%BB%91i-v%E1%BB%9Bi-ng%C6%B0%E1%BB%9Di-ch%E1%BA%A5p-h%C3%A0nh-xong-%C3%A1n-ph%E1%BA%A1t-t%C3%B9",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-23T11:35:30.239204+00:00"
+    },
     {
       "id": "91affa151a660edc",
       "source_id": "gov-policy",
@@ -170,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-23T04:44:38.178455+00:00"
+      "first_seen_at": "2026-09-23T04:44:38.178455+00:00",
+      "collected_at": "2026-09-23T04:44:38.178455+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a20cd4c9b4a7eb2c",
@@ -387,9 +429,11 @@
     "policy_regulation": 12,
     "market_data": 6,
     "capital_flow": 2,
+    "infrastructure_delivery": 1,
     "capex_expansion": 1
   },
   "geographies_7d": {
+    "Huế": 1,
     "Hà Nội": 1,
     "Hải Phòng": 1,
     "Lào Cai": 1,
@@ -397,9 +441,9 @@
     "Gia Lai": 1
   },
   "coverage": {
-    "historical_events": 418,
-    "candidate_events": 151,
-    "reference_events": 262,
+    "historical_events": 425,
+    "candidate_events": 153,
+    "reference_events": 267,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },

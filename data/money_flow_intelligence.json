@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-09-23T04:45:25.070643+00:00",
+    "generated_at": "2026-09-23T11:36:18.681855+00:00",
     "mode": "contextual_theme_chain_with_observed_supply_evidence",
     "principle": "discovery_or_stale_verified_context_can_prioritize_research_but_cannot_create_directional_convergence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-23T04:45:25.131715+00:00",
+    "trust_hardened_at": "2026-09-23T11:36:18.789657+00:00",
     "snapshot_freshness": {
       "macro": "fresh",
       "regional": "fresh",
@@ -16,8 +16,8 @@
   "coverage": {
     "total_evidence_inputs": 103,
     "macro_observations": 7,
-    "contextual_history_evidence": 110,
-    "contextual_procurement_support": 37,
+    "contextual_history_evidence": 111,
+    "contextual_procurement_support": 36,
     "themes": 7,
     "themes_converging": 1,
     "themes_developing": 0,
@@ -317,7 +317,7 @@
       "label": "Mở rộng năng lực sản xuất",
       "score": 78,
       "status": "early",
-      "evidence_count": 15,
+      "evidence_count": 14,
       "directional_evidence_count": 4,
       "independent_families": [
         "capital",
@@ -970,9 +970,9 @@
     {
       "id": "public_infrastructure",
       "label": "Đầu tư công & hạ tầng vật lý",
-      "score": 37,
+      "score": 38,
       "status": "early",
-      "evidence_count": 18,
+      "evidence_count": 19,
       "directional_evidence_count": 1,
       "independent_families": [
         "public_capital"
@@ -1023,6 +1023,26 @@
           "notes": null,
           "directional": true,
           "snapshot_freshness": "fresh"
+        },
+        {
+          "id": "1098f286e7bae0b2",
+          "family": "infrastructure",
+          "title": "Khởi công đường dây 220kV Đông Hà - Huế mạch 3",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Khoi-cong-duong-day-220kV-Dong-Ha-Hue-mach-3-60-13-509706",
+          "quality": "candidate",
+          "category_tags": [
+            "infrastructure"
+          ],
+          "theme_tags": [
+            "public_infrastructure"
+          ],
+          "geography": [
+            "Huế"
+          ],
+          "observed_at": "2026-09-23T11:35:30.239204+00:00",
+          "directional": true
         },
         {
           "id": "bcea2a0635750973",
@@ -1214,24 +1234,6 @@
           "geography": [],
           "observed_at": "2026-09-04T04:32:17.055795+00:00",
           "directional": true
-        },
-        {
-          "id": "788762de9f4bd24b",
-          "family": "policy",
-          "title": "Rà soát, đánh giá kỹ quy định về khoảng cách an toàn trên cao tốc",
-          "publisher": "Báo Chính phủ",
-          "publisher_group": "Chính phủ",
-          "source_url": "https://baochinhphu.vn/ra-soat-danh-gia-ky-quy-dinh-ve-khoang-cach-an-toan-tren-cao-toc-102260901114642547.htm",
-          "quality": "candidate",
-          "category_tags": [
-            "infrastructure"
-          ],
-          "theme_tags": [
-            "public_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-09-01T05:07:15.569526+00:00",
-          "directional": true
         }
       ],
       "supply_gap": {
@@ -1268,11 +1270,13 @@
       ],
       "discovery_evidence_families": [
         "capital",
+        "infrastructure",
         "market_data",
         "policy"
       ],
       "discovery_evidence_publishers": [
-        "Chính phủ"
+        "Chính phủ",
+        "EVN/NSMO"
       ],
       "verified_evidence_count": 1,
       "discovery_evidence_count": 11,
@@ -1614,6 +1618,26 @@
           "directional": true
         },
         {
+          "id": "proc::IB2600552075",
+          "family": "procurement",
+          "title": "Mua sắm Phần mềm khám chữa bệnh (HIS), Bệnh án điện tử (EMR) và Hệ thống PACS",
+          "publisher": "Hệ thống mạng đấu thầu quốc gia",
+          "publisher_group": "MSC",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=0ee11c86-3608-4fbd-91c4-dd7779b0fc0d&notifyId=0ee11c86-3608-4fbd-91c4-dd7779b0fc0d&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600552075&planNo=PL2600303633&step=tbmt&isInternet=1&bidForm=CHCT",
+          "quality": "official_trigger",
+          "category_tags": [
+            "digital_services"
+          ],
+          "theme_tags": [
+            "data_infrastructure"
+          ],
+          "geography": [],
+          "observed_at": "2026-09-23T04:41:31.216000+00:00",
+          "buyer": "TRUNG TÂM Y TẾ KHU VỰC DIÊN KHÁNH",
+          "package_price_vnd": 660960000,
+          "directional": true
+        },
+        {
           "id": "proc::IB2600545993",
           "family": "procurement",
           "title": "Phi tư vấn_Chỉnh lý và số hóa tài liệu",
@@ -1651,26 +1675,6 @@
           "observed_at": "2026-09-22T09:16:56.990000+00:00",
           "buyer": "Văn phòng Đảng ủy Phường Bình Hưng Hòa",
           "package_price_vnd": 2684371084,
-          "directional": true
-        },
-        {
-          "id": "proc::IB2600533640",
-          "family": "procurement",
-          "title": "Mua sắm phần mềm RAR EP cho PC06 và Công an cấp xã",
-          "publisher": "Hệ thống mạng đấu thầu quốc gia",
-          "publisher_group": "MSC",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=ab7de04a-afcb-4327-b31e-7dcce13ef7e3&notifyId=ab7de04a-afcb-4327-b31e-7dcce13ef7e3&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600533640&planNo=PL2600268279&step=tbmt&isInternet=1&bidForm=DTRR",
-          "quality": "official_trigger",
-          "category_tags": [
-            "digital_services"
-          ],
-          "theme_tags": [
-            "data_infrastructure"
-          ],
-          "geography": [],
-          "observed_at": "2026-09-21T14:51:34.120000+00:00",
-          "buyer": "Công an Thành phố Hồ Chí Minh",
-          "package_price_vnd": 4372486140,
           "directional": true
         }
       ],
