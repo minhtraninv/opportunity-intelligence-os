@@ -1,7 +1,68 @@
 {
   "version": 2,
-  "updated_at": "2026-09-23T16:57:33.554713+00:00",
+  "updated_at": "2026-09-23T21:30:19.305977+00:00",
   "events": [
+    {
+      "id": "dbf20353efc16349",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 24/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-23T21:30:19.305977+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "31c9128eff236560",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 24/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-23T21:30:19.305977+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "b6458f4ee6be4388",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Sửa đổi, bổ sung chính sách tín dụng đối với người chấp hành xong án phạt tù 23/09/2026",
+      "url": "https://sbv.gov.vn/w/s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-ch%C3%ADnh-s%C3%A1ch-t%C3%ADn-d%E1%BB%A5ng-%C4%91%E1%BB%91i-v%E1%BB%9Bi-ng%C6%B0%E1%BB%9Di-ch%E1%BA%A5p-h%C3%A0nh-xong-%C3%A1n-ph%E1%BA%A1t-t%C3%B9",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-23T21:30:19.305977+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "e2a1ae60f5ad993e",
       "source_id": "gov",
@@ -19,6 +80,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-09-23T16:57:33.554713+00:00",
+      "collected_at": "2026-09-23T16:57:33.554713+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -11439,15 +11502,34 @@
       },
       "total_events": 426,
       "source_errors": 0
+    },
+    {
+      "captured_at": "2026-09-23T21:30:19.305977+00:00",
+      "new_items": 3,
+      "new_candidates": 3,
+      "new_by_category": {
+        "policy": 1,
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2,
+        "policy_regulation": 1
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "sbv": 1
+      },
+      "total_events": 429,
+      "source_errors": 0
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-09-23T16:58:42.112919+00:00",
+    "updated_at": "2026-09-23T21:31:02.808546+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
+      "official_headline_discovery": 156,
       "reference_only": 268,
-      "official_headline_discovery": 153,
       "primary_verified": 5
     }
   }
