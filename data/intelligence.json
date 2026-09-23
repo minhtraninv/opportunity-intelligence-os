@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-22T21:18:12.188579+00:00",
+    "generated_at": "2026-09-23T04:44:38.178455+00:00",
     "status": "active",
     "history_days": 24,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 8,
+      "recent_7d": 9,
       "baseline_21d": 11,
       "baseline_expected_7d": 3.7,
-      "delta_pct": 118,
+      "delta_pct": 145,
       "trend": "accelerating",
-      "confidence": 86,
+      "confidence": 88,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "policy",
@@ -55,10 +55,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 46,
-      "baseline_expected_7d": 15.3,
-      "delta_pct": 4,
+      "recent_7d": 14,
+      "baseline_21d": 48,
+      "baseline_expected_7d": 16.0,
+      "delta_pct": -12,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "91affa151a660edc",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương, bảo hiểm xã hội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-23T04:44:38.178455+00:00"
+    },
+    {
       "id": "a20cd4c9b4a7eb2c",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-22T21:18:12.188579+00:00"
+      "first_seen_at": "2026-09-22T21:18:12.188579+00:00",
+      "collected_at": "2026-09-22T21:18:12.188579+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7b27231ffee0fe97",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-22T21:18:12.188579+00:00"
+      "first_seen_at": "2026-09-22T21:18:12.188579+00:00",
+      "collected_at": "2026-09-22T21:18:12.188579+00:00",
+      "last_seen_at": null
     },
     {
       "id": "bcea2a0635750973",
@@ -361,8 +383,8 @@
     }
   ],
   "event_types_7d": {
-    "business_formation": 16,
-    "policy_regulation": 11,
+    "business_formation": 14,
+    "policy_regulation": 12,
     "market_data": 6,
     "capital_flow": 2,
     "capex_expansion": 1
@@ -375,9 +397,9 @@
     "Gia Lai": 1
   },
   "coverage": {
-    "historical_events": 416,
-    "candidate_events": 150,
-    "reference_events": 261,
+    "historical_events": 418,
+    "candidate_events": 151,
+    "reference_events": 262,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
