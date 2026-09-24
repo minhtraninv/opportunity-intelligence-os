@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-24T04:49:49.937252+00:00",
+    "generated_at": "2026-09-24T11:45:10.865631+00:00",
     "status": "active",
-    "history_days": 25,
+    "history_days": 26,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 8,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": 100,
+      "recent_7d": 9,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": 108,
       "trend": "accelerating",
-      "confidence": 89,
+      "confidence": 90,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.0."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.3."
     },
     {
       "category": "policy",
@@ -27,40 +27,18 @@
       "baseline_expected_7d": 3.0,
       "delta_pct": 133,
       "trend": "accelerating",
-      "confidence": 88,
+      "confidence": 89,
       "source_diversity_7d": 3,
       "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 13,
       "baseline_expected_7d": 4.3,
-      "delta_pct": -8,
+      "delta_pct": 15,
       "trend": "stable",
-      "confidence": 83,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 3,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": -18,
-      "trend": "stable",
-      "confidence": 77,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 2,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -25,
-      "trend": "stable",
-      "confidence": 69,
+      "confidence": 86,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -76,7 +54,7 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "labor",
+      "category": "data_ai",
       "recent_7d": 1,
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
@@ -85,6 +63,28 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 1,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -77,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.3."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 1,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -67,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.0."
     },
     {
       "category": "energy",
@@ -98,25 +98,25 @@
       "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
     },
     {
-      "category": "data_ai",
+      "category": "labor",
       "recent_7d": 0,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 50,
+      "confidence": 53,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.3."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.7."
     },
     {
       "category": "logistics",
-      "recent_7d": 0,
+      "recent_7d": 1,
       "baseline_21d": 4,
       "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 44,
-      "source_diversity_7d": 0,
+      "confidence": 54,
+      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 40,
+      "confidence": 41,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 40,
+      "confidence": 41,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,12 +148,68 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 36,
+      "confidence": 37,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "cdfdae6238308a87",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Thủ tướng: Sửa đồng bộ các luật nhằm không để giá đất tăng cao và bảo đảm chỗ ở cho người dân",
+      "url": "https://baochinhphu.vn/thu-tuong-sua-dong-bo-cac-luat-nham-khong-de-gia-dat-tang-cao-va-bao-dam-cho-o-cho-nguoi-dan-102260924174018426.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-24T11:45:10.865631+00:00"
+    },
+    {
+      "id": "2f522a76e6f3a9b6",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Xây dựng Trung tâm dữ liệu, quản lý và điều hành giao thông thống nhất trên cả nước",
+      "url": "https://baochinhphu.vn/xay-dung-trung-tam-du-lieu-quan-ly-va-dieu-hanh-giao-thong-thong-nhat-tren-ca-nuoc-102260924114209152.htm",
+      "categories": [
+        "construction",
+        "data_ai"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capex_expansion",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-24T11:45:10.865631+00:00"
+    },
+    {
+      "id": "af16423ce5c6d061",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Thúc đẩy tiến độ, giải ngân các công trình trọng điểm ngành giao thông vận tải",
+      "url": "https://baochinhphu.vn/thuc-day-tien-do-giai-ngan-cac-cong-trinh-trong-diem-nganh-giao-thong-van-tai-102260924155334742.htm",
+      "categories": [
+        "infrastructure",
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-24T11:45:10.865631+00:00"
+    },
     {
       "id": "dbf20353efc16349",
       "source_id": "business-registry",
@@ -217,72 +273,27 @@
       "first_seen_at": "2026-09-23T21:30:19.305977+00:00",
       "collected_at": "2026-09-23T21:30:19.305977+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "1098f286e7bae0b2",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
-      "title": "Khởi công đường dây 220kV Đông Hà - Huế mạch 3",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/Khoi-cong-duong-day-220kV-Dong-Ha-Hue-mach-3-60-13-509706",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "Huế"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-23T11:35:30.239204+00:00",
-      "collected_at": "2026-09-23T11:35:30.239204+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "4e321b9ed6a69876",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Sửa đổi, bổ sung chính sách tín dụng đối với người chấp hành xong án phạt tù Mới 23/09/2026",
-      "url": "https://sbv.gov.vn/w/s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-ch%C3%ADnh-s%C3%A1ch-t%C3%ADn-d%E1%BB%A5ng-%C4%91%E1%BB%91i-v%E1%BB%9Bi-ng%C6%B0%E1%BB%9Di-ch%E1%BA%A5p-h%C3%A0nh-xong-%C3%A1n-ph%E1%BA%A1t-t%C3%B9",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-23T11:35:30.239204+00:00",
-      "collected_at": "2026-09-23T11:35:30.239204+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 13,
-    "market_data": 6,
-    "capital_flow": 2,
-    "infrastructure_delivery": 1,
-    "capex_expansion": 1
+    "policy_regulation": 11,
+    "market_data": 5,
+    "capital_flow": 3,
+    "capex_expansion": 1,
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {
     "Huế": 1,
     "Hà Nội": 1,
     "Hải Phòng": 1,
     "Lào Cai": 1,
-    "Lai Châu": 1,
-    "Gia Lai": 1
+    "Lai Châu": 1
   },
   "coverage": {
-    "historical_events": 430,
-    "candidate_events": 156,
-    "reference_events": 269,
+    "historical_events": 438,
+    "candidate_events": 159,
+    "reference_events": 274,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 0
   },
