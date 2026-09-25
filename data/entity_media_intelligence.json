@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-25T04:57:37.438855+00:00",
+    "generated_at": "2026-09-25T11:51:34.223505+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,38 +9,38 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 420,
-    "entities_seen_recently": 186,
-    "auto_discovered_entities": 176,
-    "history_events": 420
+    "recent_events": 432,
+    "entities_seen_recently": 193,
+    "auto_discovered_entities": 183,
+    "history_events": 432
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 10,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 4,
       "error": null
     },
     {
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 10,
       "error": null
     },
     {
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 14,
+      "items_this_run": 16,
       "error": null
     }
   ],
@@ -50,15 +50,15 @@
       "recent_events": 16
     },
     {
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "recent_events": 11
+    },
+    {
       "entity_id": "auto-tây-ninh-02d05047",
       "recent_events": 11
     },
     {
       "entity_id": "auto-tổng-bí-012dc539",
-      "recent_events": 10
-    },
-    {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
       "recent_events": 10
     },
     {
@@ -94,6 +94,10 @@
       "recent_events": 8
     },
     {
+      "entity_id": "auto-pnj-4d3f27cb",
+      "recent_events": 7
+    },
+    {
       "entity_id": "evn_power_system",
       "recent_events": 7
     },
@@ -108,6 +112,10 @@
     {
       "entity_id": "auto-adb-fa1143de",
       "recent_events": 6
+    },
+    {
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "recent_events": 5
     },
     {
       "entity_id": "hoa_phat_group",
@@ -138,15 +146,7 @@
       "recent_events": 4
     },
     {
-      "entity_id": "auto-hải-phòng-48a73a83",
-      "recent_events": 4
-    },
-    {
       "entity_id": "auto-bidv-0925568a",
-      "recent_events": 4
-    },
-    {
-      "entity_id": "auto-pnj-4d3f27cb",
       "recent_events": 4
     },
     {
@@ -356,6 +356,34 @@
     {
       "entity_id": "auto-flc-667362c1",
       "recent_events": 2
+    },
+    {
+      "entity_id": "auto-vĩnh-long-ký-4f2bfec8",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-lạng-sơn-761d1ae9",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-vnpt-c13ec639",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-ông-trần-quí-thanh-714fc536",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-singapore-b599de23",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-vnvc-1ec43aad",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-evnhcmc-bacd71a1",
+      "recent_events": 1
     },
     {
       "entity_id": "auto-việt-nam-singapore-5858c920",
@@ -792,6 +820,28 @@
   ],
   "auto_entities": [
     {
+      "id": "auto-bắc-ninh-a1c0d701",
+      "label": "Bắc Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Bắc Ninh"
+      ],
+      "recent_events": 11,
+      "families": [
+        "capital",
+        "labor",
+        "operating",
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
       "entity_type": "location",
@@ -833,27 +883,6 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
-    },
-    {
-      "id": "auto-bắc-ninh-a1c0d701",
-      "label": "Bắc Ninh",
-      "entity_type": "location",
-      "aliases": [
-        "Bắc Ninh"
-      ],
-      "recent_events": 10,
-      "families": [
-        "capital",
-        "operating",
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "auto-cần-thơ-4ffa3dff",
@@ -940,6 +969,29 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-pnj-4d3f27cb",
+      "label": "PNJ",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "PNJ"
+      ],
+      "recent_events": 7,
+      "families": [
+        "capital",
+        "labor",
+        "operating",
+        "strategy"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-vietjet-b0c33c77",
       "label": "Vietjet",
       "entity_type": "organization_candidate",
@@ -1024,6 +1076,26 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-hải-phòng-48a73a83",
+      "label": "Hải Phòng",
+      "entity_type": "location",
+      "aliases": [
+        "Hải Phòng"
+      ],
+      "recent_events": 5,
+      "families": [
+        "operating",
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "auto-gia-lai-f5d3ac1a",
       "label": "Gia Lai",
       "entity_type": "location",
@@ -1063,27 +1135,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-pnj-4d3f27cb",
-      "label": "PNJ",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "PNJ"
-      ],
-      "recent_events": 4,
-      "families": [
-        "capital",
-        "operating",
-        "strategy"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "auto-vietravel-airlines-422e5334",
       "label": "Vietravel Airlines",
       "entity_type": "organization_candidate",
@@ -1115,26 +1166,6 @@
       "families": [
         "project_execution",
         "strategy"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-hải-phòng-48a73a83",
-      "label": "Hải Phòng",
-      "entity_type": "location",
-      "aliases": [
-        "Hải Phòng"
-      ],
-      "recent_events": 4,
-      "families": [
-        "operating",
-        "project_execution"
       ],
       "publishers": [
         "VietnamPlus Kinh tế",
@@ -2144,6 +2175,132 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-vĩnh-long-ký-4f2bfec8",
+      "label": "Vĩnh Long Ký",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Vĩnh Long Ký"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-lạng-sơn-761d1ae9",
+      "label": "Lạng Sơn",
+      "entity_type": "location",
+      "aliases": [
+        "Lạng Sơn"
+      ],
+      "recent_events": 1,
+      "families": [
+        "labor"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-vnpt-c13ec639",
+      "label": "VNPT",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "VNPT"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-ông-trần-quí-thanh-714fc536",
+      "label": "Ông Trần Quí Thanh",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Ông Trần Quí Thanh"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-singapore-b599de23",
+      "label": "Singapore",
+      "entity_type": "location",
+      "aliases": [
+        "Singapore"
+      ],
+      "recent_events": 1,
+      "families": [
+        "operating"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-vnvc-1ec43aad",
+      "label": "VNVC",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "VNVC"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-evnhcmc-bacd71a1",
+      "label": "EVNHCMC",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "EVNHCMC"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-việt-nam-singapore-5858c920",
       "label": "Việt Nam-Singapore",
       "entity_type": "organization_candidate",
@@ -2574,135 +2731,180 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
-    },
-    {
-      "id": "auto-techcom-wealth-0506d180",
-      "label": "Techcom Wealth",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Techcom Wealth"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-ftse-russell-a87111a5",
-      "label": "FTSE Russell",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "FTSE Russell"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-vpbank-sme-ceo-bootcamp-bf55905c",
-      "label": "VPBank SME CEO Bootcamp",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "VPBank SME CEO Bootcamp"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-brics-0ad2701a",
-      "label": "BRICS",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "BRICS"
-      ],
-      "recent_events": 1,
-      "families": [
-        "strategy"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-tỉnh-an-giang-8fdf2e7f",
-      "label": "Tỉnh An Giang",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Tỉnh An Giang"
-      ],
-      "recent_events": 1,
-      "families": [
-        "strategy"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-c-p-việt-nam-71f84ab1",
-      "label": "C.P Việt Nam",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "C.P Việt Nam"
-      ],
-      "recent_events": 1,
-      "families": [
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-msr-b7cdecd2",
-      "label": "MSR",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "MSR"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     }
   ],
   "events": [
+    {
+      "id": "43e79d606fcea770",
+      "event_signature": "39e37dcf749bccae",
+      "entity_id": "auto-vĩnh-long-ký-4f2bfec8",
+      "entity_label": "Vĩnh Long Ký",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Vĩnh Long: Ký kết hợp tác thúc đẩy các động lực phát triển mới",
+      "summary": "Vĩnh Long ký kết hợp tác với Đại học Quốc gia Thành phố Hồ Chí Minh để đẩy mạnh khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số thúc đẩy phát triển kinh tế xã hội. Vĩnh Long: Thăm, chúc mừng chức sắc, chức việc đạo Cao Đài tiêu biểu Vĩnh Long tăng cường kiểm soát, ngăn ngừa vi phạm khai thác IUU Vĩnh Long: Người đứng đầu đối thoại với người dân, giải ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/vinh-long-ky-ket-hop-tac-thuc-day-cac-dong-luc-phat-trien-moi-post1138398.vnp",
+      "published_at": "2026-09-25T17:46:07+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "aa63621963c9ba92",
+      "event_signature": "4fe7b5262212d738",
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "entity_label": "Hải Phòng",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Hải Phòng thông qua 15 nghị quyết mở đường cho các dự án hạ tầng trọng điểm",
+      "summary": "Ngày 25/9, tại Kỳ họp thứ 5, Hội đồng Nhân dân thành phố Hải Phòng khóa XVII đã biểu quyết thông qua 15 nghị quyết sát thực tiễn, khơi thông nguồn lực, thực hiện mục tiêu tăng trưởng kinh tế đã đề ra. Các luật, nghị quyết quy phạm pháp luật được thông qua tại Kỳ họp không thường lệ thứ Nhất, Quốc hội khóa XVI Quốc hội thông qua nghị quyết đặc thù tháo gỡ khó",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/hai-phong-thong-qua-15-nghi-quyet-mo-duong-cho-cac-du-an-ha-tang-trong-diem-post1138369.vnp",
+      "published_at": "2026-09-25T15:20:21+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "63db264422b8f6a1",
+      "event_signature": "5fd4bb53cbd71e46",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "entity_label": "Bắc Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Bắc Ninh khởi công dự án nhà ở xã hội vốn gần 806 tỷ đồng",
+      "summary": "Thành phố Bắc Ninh xác định việc bảo đảm chỗ ở phù hợp cho người dân, nhất là người lao động có thu nhập thấp là nội dung cần được quan tâm trong quá trình phát triển đô thị. Cần Thơ khởi công Dự án đầu tư xây dựng nhà ở xã hội phường Ninh Kiều Đà Nẵng khởi công dự án nhà ở xã hội có vốn đầu tư gần 500 tỷ đồng Bắc Ninh đối thoại tháo gỡ vướng mắc về tín dụng",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/bac-ninh-khoi-cong-du-an-nha-o-xa-hoi-von-gan-806-ty-dong-post1138370.vnp",
+      "published_at": "2026-09-25T15:18:46+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "2bf35d8ffb9e77ae",
+      "event_signature": "bcd4f5778f63233a",
+      "entity_id": "auto-lạng-sơn-761d1ae9",
+      "entity_label": "Lạng Sơn",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Lạng Sơn khởi động dự án nhà máy găng tay bảo hộ vốn 30 triệu USD tại VSIP",
+      "summary": "Ngày 25/9, tại Khu Công nghiệp VSIP Lạng Sơn (tỉnh Lạng Sơn) đã diễn ra lễ động thổ xây dựng Nhà máy sản xuất găng tay bảo hộ lao động với tổng nguồn vốn đầu tư 30 triệu USD. Tây Ninh khởi công, động thổ 13 dự án với tổng vốn khoảng 4,5 tỷ USD Điện Biên động thổ dự án nhà ở xã hội hơn 300 tỷ đồng Động thổ khu phức hợp logistics khoảng 63 triệu Euro tại Hưng ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/lang-son-khoi-dong-du-an-nha-may-gang-tay-bao-ho-von-30-trieu-usd-tai-vsip-post1138349.vnp",
+      "published_at": "2026-09-25T13:38:31+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "6f81fa3d9815db08",
+      "event_signature": "166b7098720ae654",
+      "entity_id": "auto-vnpt-c13ec639",
+      "entity_label": "VNPT",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "VNPT và Qualcomm mở rộng hợp tác, tham vọng đưa AI Việt vươn ra toàn cầu",
+      "summary": "VNPT và Qualcomm Technologies mở rộng hợp tác, đẩy mạnh phát triển AI biên và kết nối thế hệ mới, kỳ vọng mở ra cơ hội kinh doanh trị giá hơn 200 triệu USD đến năm 2028, trên cơ sở triển khai các sản phẩm, nền tảng và dịch vụ ứng dụng AI. VNPT-VRG và cái “bắt tay” chiến lược của để xây mô hình khu công nghiệp công nghệ số VNPT “lột xác” mô hình quản trị: Tạo",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/vnpt-va-qualcomm-mo-rong-hop-tac-tham-vong-dua-ai-viet-vuon-ra-toan-cau-post1138344.vnp",
+      "published_at": "2026-09-25T13:11:12+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "a44c25d6ffbb854d",
+      "event_signature": "eaffa8d4941e703a",
+      "entity_id": "auto-vinamilk-4fadd564",
+      "entity_label": "Vinamilk",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Vinamilk và hành trình 50 năm không ngừng nâng chuẩn",
+      "summary": "Qua phim tài liệu “50 năm Vinamilk - Không ngừng nâng chuẩn, làm đến tận cùng”, cho thấy hành trình của doanh nghiệp không chỉ đo bằng tăng trưởng, mà còn qua những lần tự nâng chuẩn về công nghệ, chất lượng, dinh dưỡng và trách nhiệm với tương lai.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vinamilk-va-hanh-trinh-50-nam-khong-ngung-nang-chuan-100260924184535042.htm",
+      "published_at": "2026-09-25T11:51:34.223505+00:00",
+      "first_seen_at": "2026-09-24T17:11:14.095491+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "869b6b0adb6431ef",
+      "event_signature": "10a2141e5a4f7978",
+      "entity_id": "auto-ông-trần-quí-thanh-714fc536",
+      "entity_label": "Ông Trần Quí Thanh",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Ông Trần Quí Thanh dự kiến chi 920 tỉ đồng mua cổ phiếu một công ty chứng khoán",
+      "summary": "Ông Trần Quí Thanh là một trong 9 nhà đầu tư chứng khoán chuyên nghiệp dự kiến tham gia đợt chào bán riêng lẻ của Chứng khoán TP.HCM (HSC).",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/ong-tran-qui-thanh-du-kien-chi-920-ti-dong-mua-co-phieu-mot-cong-ty-chung-khoan-100260925174844219.htm",
+      "published_at": "2026-09-25T11:51:34.223505+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "e765671647359ab7",
+      "event_signature": "e188313068608a52",
+      "entity_id": "auto-singapore-b599de23",
+      "entity_label": "Singapore",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Singapore đặt tham vọng trở thành cường quốc ngành công nghiệp bán dẫn toàn cầu",
+      "summary": "Một quốc gia không có tài nguyên khoáng sản, diện tích khiêm tốn, song Singapore từ lâu đã đóng vai trò quan trọng trong chuỗi cung ứng vi mạch toàn cầu khi chiếm khoảng 1/10 sản lượng chip và cung ứng tới 1/5 tổng thiết bị sản xuất bán dẫn trên toàn thế giới.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/singapore-dat-tham-vong-tro-thanh-cuong-quoc-nganh-cong-nghiep-ban-dan-toan-cau-100260925162435135.htm",
+      "published_at": "2026-09-25T11:51:34.223505+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "5ddf653e9c88c930",
+      "event_signature": "bcd0302ee25bde1b",
+      "entity_id": "auto-vnvc-1ec43aad",
+      "entity_label": "VNVC",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "VNVC triển khai tiêm vắc xin tay chân miệng đầu tiên tại Việt Nam",
+      "summary": "Sáng 25-9, Hệ thống Trung tâm tiêm chủng VNVC và Substipharm Biologics (Thụy Sĩ) chính thức ra mắt và triển khai tiêm vắc xin phòng tay chân miệng, đưa Việt Nam trở thành quốc gia đầu tiên tại Đông Nam Á tiếp cận giải pháp dự phòng này.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/vnvc-trien-khai-tiem-vac-xin-tay-chan-mieng-dau-tien-tai-viet-nam-100260925125331986.htm",
+      "published_at": "2026-09-25T11:51:34.223505+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
     {
       "id": "b2995a195f0e8aed",
       "event_signature": "3b7cff66d2f21769",
@@ -2717,10 +2919,86 @@
       "source_url": "https://www.vietnamplus.vn/can-tho-chay-dua-90-ngay-dem-tang-toc-giai-ngan-dau-tu-cong-post1138324.vnp",
       "published_at": "2026-09-25T11:09:11+00:00",
       "first_seen_at": "2026-09-25T04:57:37.438855+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "f1c23910cab3cb9d",
+      "event_signature": "120541987b7fbfc1",
+      "entity_id": "auto-pnj-4d3f27cb",
+      "entity_label": "PNJ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "PNJ dự kiến doanh thu 2026 đạt 39.000 tỷ đồng",
+      "summary": "PNJ xem xét điều chỉnh kế hoạch kinh doanh hợp nhất năm 2026, trong đó, doanh thu dự kiến đạt 39.057 tỷ đồng, tăng 10% so với năm 2025.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/pnj-du-kien-doanh-thu-2026-dat-39-000-ty-dong-5124846.html",
+      "published_at": "2026-09-25T11:00:00+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "2943c965c52a126a",
+      "event_signature": "80179cc3cbb5ef28",
+      "entity_id": "auto-pnj-4d3f27cb",
+      "entity_label": "PNJ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "PNJ điều chỉnh kế hoạch, dự kiến lỗ 6.271 tỉ đồng",
+      "summary": "Ngày 25.9, Công ty cổ phần vàng bạc đá quý Phú Nhuận (PNJ) thông tin Hội đồng quản trị PNJ sẽ trình Đại hội đồng cổ đông bất thường xem xét điều chỉnh kế hoạch kinh doanh hợp nhất năm 2026 theo hướng dự kiến lỗ 6.271 tỉ đồng.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/pnj-dieu-chinh-ke-hoach-du-lo-6271-ti-dong-185260925170848879.htm",
+      "published_at": "2026-09-25T10:24:00+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "d39e295b16497c04",
+      "event_signature": "efd5bb9d4d4281b6",
+      "entity_id": "auto-pnj-4d3f27cb",
+      "entity_label": "PNJ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "PNJ tái thiết toàn diện: Hướng tới quyền lợi cổ đông và khách hàng trong dài hạn",
+      "summary": "Mới đây, PNJ công bố chiến lược tái thiết toàn diện Tập đoàn, minh bạch thông tin tái thiết. Việc chủ động công bố các chỉ số tài chính thiết yếu, kể cả con số chưa thuận lợi, cho thấy PNJ cam kết trách nhiệm ở mức cao nhất với cổ đông, khách hàng, người lao động và thị trường.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/pnj-tai-thiet-toan-dien-huong-toi-quyen-loi-co-dong-va-khach-hang-trong-dai-han-185260925172359656.htm",
+      "published_at": "2026-09-25T10:13:00+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "b9f87f1fc472d5d8",
+      "event_signature": "805252d5c2ba79b2",
+      "entity_id": "auto-evnhcmc-bacd71a1",
+      "entity_label": "EVNHCMC",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "EVNHCMC triển khai phương án bảo đảm an toàn điện mùa mưa bão",
+      "summary": "EVNHCMC kiểm tra, gia cố lưới điện, trực vận hành 24/24 giờ, chuẩn bị \"4 tại chỗ\" và hướng dẫn người dân phòng ngừa tai nạn điện trong mùa mưa bão, triều cường.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/evnhcmc-trien-khai-phuong-an-bao-dam-an-toan-dien-mua-mua-bao-5124731.html",
+      "published_at": "2026-09-25T07:30:00+00:00",
+      "first_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
     },
     {
       "id": "c1fc0c2389694a11",
@@ -2780,25 +3058,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "a44c25d6ffbb854d",
-      "event_signature": "eaffa8d4941e703a",
-      "entity_id": "auto-vinamilk-4fadd564",
-      "entity_label": "Vinamilk",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "Vinamilk và hành trình 50 năm không ngừng nâng chuẩn",
-      "summary": "Qua phim tài liệu “50 năm Vinamilk - Không ngừng nâng chuẩn, làm đến tận cùng”, cho thấy hành trình của doanh nghiệp không chỉ đo bằng tăng trưởng, mà còn qua những lần tự nâng chuẩn về công nghệ, chất lượng, dinh dưỡng và trách nhiệm với tương lai.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/vinamilk-va-hanh-trinh-50-nam-khong-ngung-nang-chuan-100260924184535042.htm",
-      "published_at": "2026-09-25T04:57:37.438855+00:00",
-      "first_seen_at": "2026-09-24T17:11:14.095491+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "f936b35963a281e6",
       "event_signature": "e130e8f64149a6e8",
       "entity_id": "auto-pvcfc-530b5fa1",
@@ -2850,7 +3109,7 @@
       "source_url": "https://www.vietnamplus.vn/can-tho-don-chuyen-tau-container-truc-tiep-tu-nam-ninh-cua-trung-quoc-post1138283.vnp",
       "published_at": "2026-09-25T04:53:56+00:00",
       "first_seen_at": "2026-09-25T04:57:37.438855+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2869,7 +3128,7 @@
       "source_url": "https://thanhnien.vn/saigon-coop-them-gia-tri-cho-gio-hang-viet-tu-hang-nhan-rieng-185260925090630912.htm",
       "published_at": "2026-09-25T01:53:00+00:00",
       "first_seen_at": "2026-09-25T04:57:37.438855+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2888,7 +3147,7 @@
       "source_url": "https://vnexpress.net/thai-nguyen-ho-tro-chi-phi-cho-doanh-nghiep-moi-thanh-lap-5122969.html",
       "published_at": "2026-09-25T01:00:00+00:00",
       "first_seen_at": "2026-09-25T04:57:37.438855+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2926,7 +3185,7 @@
       "source_url": "https://www.vietnamplus.vn/dat-moc-moi-cho-cac-du-an-tai-trung-tam-dien-luc-quang-trach-post1138208.vnp",
       "published_at": "2026-09-24T17:53:28+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2943,7 +3202,7 @@
       "source_url": "https://www.vietnamplus.vn/viet-nam-singapore-thuc-day-hop-tac-dao-tao-nhan-luc-ban-dan-post1138196.vnp",
       "published_at": "2026-09-24T16:20:12+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2962,7 +3221,7 @@
       "source_url": "https://www.vietnamplus.vn/bac-ninh-dat-muc-tieu-vao-nhom-15-dia-phuong-dan-dau-ve-thuc-thi-fta-post1138175.vnp",
       "published_at": "2026-09-24T15:12:53+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2981,7 +3240,7 @@
       "source_url": "https://www.vietnamplus.vn/ca-mau-xac-dinh-9-dong-luc-tang-truong-nong-lam-nghiep-va-thuy-san-post1138182.vnp",
       "published_at": "2026-09-24T15:12:28+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3000,7 +3259,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-ngai-hien-thuc-hoa-muc-tieu-tro-thanh-cuc-tang-truong-mien-trung-post1138180.vnp",
       "published_at": "2026-09-24T15:05:43+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3019,7 +3278,7 @@
       "source_url": "https://www.vietnamplus.vn/ha-noi-can-nhac-gia-dien-theo-gio-tranh-tang-chi-phi-cho-ho-gia-dinh-post1138159.vnp",
       "published_at": "2026-09-24T13:48:41+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3036,7 +3295,7 @@
       "source_url": "https://vnexpress.net/ong-do-quang-vinh-roi-hdqt-vietravel-airlines-5124326.html",
       "published_at": "2026-09-24T13:08:39+00:00",
       "first_seen_at": "2026-09-24T17:11:14.095491+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3055,7 +3314,7 @@
       "source_url": "https://www.vietnamplus.vn/vinamilk-mang-mua-trung-thu-giau-trai-nghiem-den-voi-tre-em-nhieu-vung-mien-post1138138.vnp",
       "published_at": "2026-09-24T11:56:50+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3074,7 +3333,7 @@
       "source_url": "https://www.vietnamplus.vn/malaysia-danh-gia-viet-nam-la-be-phong-quan-trong-trong-nen-kinh-te-halal-post1138147.vnp",
       "published_at": "2026-09-24T11:49:12+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3148,7 +3407,7 @@
       "source_url": "https://thanhnien.vn/dien-may-xanh-va-vietcredit-ra-mat-the-tin-dung-noi-dia-tincard-3-trong-1-185260924180107513.htm",
       "published_at": "2026-09-24T11:10:00+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3167,7 +3426,7 @@
       "source_url": "https://www.vietnamplus.vn/can-tho-thanh-lap-khu-cong-nghe-cao-voi-hon-5000-ty-dong-dau-tu-post1138143.vnp",
       "published_at": "2026-09-24T10:55:15+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3241,7 +3500,7 @@
       "source_url": "https://thanhnien.vn/vietjet-don-tin-vui-hop-tac-voi-starlink-tung-trieu-ve-0-dong-uu-dai-den-40-185260924153702058.htm",
       "published_at": "2026-09-24T08:29:00+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3260,7 +3519,7 @@
       "source_url": "https://thanhnien.vn/sun-group-bat-tay-loat-ong-lon-cua-my-ket-noi-du-lich-viet-voi-the-gioi-185260924150526421.htm",
       "published_at": "2026-09-24T08:23:00+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3277,7 +3536,7 @@
       "source_url": "https://thanhnien.vn/quang-ngai-dat-muc-tieu-vao-top-20-ca-nuoc-ve-chi-so-pci-vao-nam-2030-185260924112130966.htm",
       "published_at": "2026-09-24T08:02:00+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3296,7 +3555,7 @@
       "source_url": "https://vnexpress.net/masan-ban-gan-5-von-msr-cho-doanh-nghiep-my-5124083.html",
       "published_at": "2026-09-24T07:02:42+00:00",
       "first_seen_at": "2026-09-24T11:46:20.332107+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3332,7 +3591,7 @@
       "source_url": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-de-nghi-doanh-nghiep-my-tang-hop-tac-nang-luong-cong-nghe-5124107.html",
       "published_at": "2026-09-24T04:08:49+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3351,7 +3610,7 @@
       "source_url": "https://vnexpress.net/hdbank-nhan-giai-ngan-hang-ban-le-tot-nhat-chau-a-2026-5124131.html",
       "published_at": "2026-09-24T03:30:00+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3370,7 +3629,7 @@
       "source_url": "https://thanhnien.vn/elmet-group-mua-499-co-phan-masan-high-tech-materials-18526092408491726.htm",
       "published_at": "2026-09-24T01:57:00+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3387,7 +3646,7 @@
       "source_url": "https://thanhnien.vn/elmet-group-mua-499-co-phan-masan-high-tech-materials-18526092408491726.htm",
       "published_at": "2026-09-24T01:57:00+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3406,7 +3665,7 @@
       "source_url": "https://thanhnien.vn/equest-va-ngan-hang-standard-chartered-hop-tac-huy-dong-325-trieu-usd-thong-qua-vifc-hcmc-185260924063440066.htm",
       "published_at": "2026-09-23T23:36:00+00:00",
       "first_seen_at": "2026-09-24T04:50:50.583165+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3761,7 +4020,7 @@
       "source_url": "https://vnexpress.net/nhom-thuong-hieu-chu-luc-giup-doanh-thu-mch-vuot-21-000-ty-5123922.html",
       "published_at": "2026-09-23T10:00:00+00:00",
       "first_seen_at": "2026-09-23T11:36:02.351870+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3854,7 +4113,7 @@
       "source_url": "https://vnexpress.net/adb-nang-du-bao-gdp-viet-nam-len-7-8-5123845.html",
       "published_at": "2026-09-23T08:31:37+00:00",
       "first_seen_at": "2026-09-23T11:36:02.351870+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -4040,7 +4299,7 @@
       "source_url": "https://vnexpress.net/vinspeed-ky-hop-dong-hon-1-ty-usd-voi-ong-lon-duong-sat-duc-5123540.html",
       "published_at": "2026-09-22T17:01:00+00:00",
       "first_seen_at": "2026-09-22T21:18:40.799607+00:00",
-      "last_seen_at": "2026-09-25T04:57:37.438855+00:00",
+      "last_seen_at": "2026-09-25T11:51:34.223505+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -4741,7 +5000,7 @@
       "event_signature": "0879b031774f939f",
       "entity_id": "auto-techcom-wealth-0506d180",
       "entity_label": "Techcom Wealth",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "Techcom Wealth - Chuẩn mực mới về quản trị gia sản tại Việt Nam",
@@ -4751,9 +5010,7 @@
       "published_at": "2026-09-20T01:35:00+00:00",
       "first_seen_at": "2026-09-20T04:54:10.411156+00:00",
       "last_seen_at": "2026-09-22T21:18:40.799607+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "831ce3e00c2fec6c",
@@ -4944,7 +5201,7 @@
       "event_signature": "a962cf4283e31433",
       "entity_id": "auto-ftse-russell-a87111a5",
       "entity_label": "FTSE Russell",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "FTSE Russell đề xuất lộ trình hợp tác phát triển sản phẩm và quản trị rủi ro",
@@ -4954,9 +5211,7 @@
       "published_at": "2026-09-18T22:49:23+00:00",
       "first_seen_at": "2026-09-18T16:24:27.417100+00:00",
       "last_seen_at": "2026-09-20T04:54:10.411156+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "2274119ed4af4858",
@@ -4980,7 +5235,7 @@
       "event_signature": "9ca481da993af464",
       "entity_id": "auto-vpbank-sme-ceo-bootcamp-bf55905c",
       "entity_label": "VPBank SME CEO Bootcamp",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "VPBank SME CEO Bootcamp giúp doanh nghiệp tìm chỗ 'rò rỉ' tiền mỗi ngày",
@@ -4990,16 +5245,14 @@
       "published_at": "2026-09-18T20:54:37.353634+00:00",
       "first_seen_at": "2026-09-17T17:00:23.853088+00:00",
       "last_seen_at": "2026-09-18T20:54:37.353634+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "7e8f81723ccb92bb",
       "event_signature": "57141647b97233d1",
       "entity_id": "auto-brics-0ad2701a",
       "entity_label": "BRICS",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "strategy",
       "title": "BRICS và sự phát triển của hệ thống tài chính toàn cầu",
@@ -5009,16 +5262,14 @@
       "published_at": "2026-09-18T19:29:55+00:00",
       "first_seen_at": "2026-09-18T16:24:27.417100+00:00",
       "last_seen_at": "2026-09-19T20:40:35.644517+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "aa9606ab65cb0f8e",
       "event_signature": "899292a98d911db4",
       "entity_id": "auto-tỉnh-an-giang-8fdf2e7f",
       "entity_label": "Tỉnh An Giang",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "strategy",
       "title": "Tỉnh An Giang lọt top 10 “Thành phố quyến rũ” tại CAEXPO",
@@ -5028,9 +5279,7 @@
       "published_at": "2026-09-18T18:28:18+00:00",
       "first_seen_at": "2026-09-18T16:24:27.417100+00:00",
       "last_seen_at": "2026-09-19T20:40:35.644517+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "98563385c2c36441",
@@ -5128,7 +5377,7 @@
       "event_signature": "547c78b16065ae4a",
       "entity_id": "auto-c-p-việt-nam-71f84ab1",
       "entity_label": "C.P Việt Nam",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "project_execution",
       "title": "C.P Việt Nam chi 450 tỉ đồng xây nhà máy tại Lâm Đồng",
@@ -5138,9 +5387,7 @@
       "published_at": "2026-09-18T08:49:00+00:00",
       "first_seen_at": "2026-09-18T11:14:19.347151+00:00",
       "last_seen_at": "2026-09-21T04:56:13.278302+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "6c1f38db41ad6e34",
@@ -5183,7 +5430,7 @@
       "event_signature": "fc02fb4cc3575d31",
       "entity_id": "auto-msr-b7cdecd2",
       "entity_label": "MSR",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "MSR mở rộng chuỗi giá trị từ năng lực chế biến sâu",
@@ -5193,9 +5440,7 @@
       "published_at": "2026-09-18T08:00:00+00:00",
       "first_seen_at": "2026-09-18T11:14:19.347151+00:00",
       "last_seen_at": "2026-09-21T21:59:47.939575+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "8d6bb08c162af989",
@@ -10394,9 +10639,9 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-09-25T04:57:50.894971+00:00",
+    "prepared_at": "2026-09-25T11:51:46.831512+00:00",
     "auto_entities_typed": 100,
-    "auto_entities_suppressed_from_entity_convergence": 30,
+    "auto_entities_suppressed_from_entity_convergence": 32,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
   }
 }
