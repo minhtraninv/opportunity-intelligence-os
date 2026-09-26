@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-09-26T05:00:38.238173+00:00",
+    "generated_at": "2026-09-26T11:25:58.968912+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
@@ -9,62 +9,50 @@
     "target_partner_ids": 17,
     "targets_with_history": 17,
     "targets_scanned": 17,
-    "details_fetched": 30,
-    "email_candidates_seen": 16,
-    "verified_contact_entities": 2,
-    "verified_contact_paths": 2,
+    "details_fetched": 0,
+    "email_candidates_seen": 0,
+    "verified_contact_entities": 0,
+    "verified_contact_paths": 0,
     "filtered_non_organization": 0,
-    "filtered_personal_like_mailboxes": 14,
-    "errors": 1
+    "filtered_personal_like_mailboxes": 0,
+    "errors": 34
   },
-  "contacts": [
-    {
-      "partner_id": "vn0102595740",
-      "contractor_name": "TỔNG CÔNG TY BƯU ĐIỆN VIỆT NAM",
-      "contractor_code": "vn0102595740",
-      "tax_code": "0102595740",
-      "contact_status": "verified_official_msc_role_mailbox",
-      "contact_paths": [
-        {
-          "type": "email",
-          "value": "bid_support@vnpost.vn",
-          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600556609&notifyId=IB2600556609&inputResultId=a51e4575-f2aa-48be-aa19-3db5a796df32&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600556609&planNo=PL2600299523&step=tbmt&isInternet=undefined&bidForm=CDTRG",
-          "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-26T05:00:38.238173+00:00",
-          "identity_match": "exact_orgCode_or_taxCode",
-          "mailbox_class": "role_or_generic"
-        }
-      ],
-      "award_tender_code": "IB2600556609",
-      "award_public_at": "2026-09-26T01:32:39+00:00",
-      "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
-    },
-    {
-      "partner_id": "vn0110073882",
-      "contractor_name": "Công ty cổ phần Tập Đoàn VAS GROUP",
-      "contractor_code": "vn0110073882",
-      "tax_code": "0110073882",
-      "contact_status": "verified_official_msc_role_mailbox",
-      "contact_paths": [
-        {
-          "type": "email",
-          "value": "info.vasgroup2@gmail.com",
-          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600556655&notifyId=IB2600556655&inputResultId=6fa488ac-fbb9-40bc-9637-6115acb6659c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600556655&planNo=PL2600322933&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-          "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-09-26T05:00:38.238173+00:00",
-          "identity_match": "exact_orgCode_or_taxCode",
-          "mailbox_class": "role_or_generic"
-        }
-      ],
-      "award_tender_code": "IB2600556655",
-      "award_public_at": "2026-09-26T02:20:56+00:00",
-      "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
-    }
-  ],
+  "contacts": [],
   "errors": [
-    "vn0100684378 8ad35b7d-a83c-42b7-bb10-d8d42d5beb2f: ValueError: non-JSON response"
+    "vn0100684378 8ad35b7d-a83c-42b7-bb10-d8d42d5beb2f: ValueError: non-JSON response",
+    "vn0100684378 1d08a977-50d4-4efa-8c89-9420844aab9e: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0101195940 d3a824eb-97d0-4a7a-9661-fbd2c2272ac4: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0101195940 a07a848d-a8d4-405b-a2e0-ebfca90fc774: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0101243150 0ce492e5-bda5-420f-b90d-7a77784b4691: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0101243150 7dcc4623-1456-4f8b-bda7-03bfe074e26f: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0102595740 a51e4575-f2aa-48be-aa19-3db5a796df32: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0102595740 a3af45ec-4f1c-4f22-906d-3f88dfa1d3a9: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0107596709 b8c5fa8a-5e74-4290-8c53-d05bd9be6ead: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0107596709 b1b329ac-0baf-4417-8427-405fbb60787c: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0107597029 924f79c6-87e7-418c-bb87-252a67a5ad11: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0107597029 e1bac309-e5d7-48f0-bda5-c750433f8421: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0110073882 6fa488ac-fbb9-40bc-9637-6115acb6659c: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0110073882 669a2b90-c134-4c02-964a-e91a9935a613: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0110513477 b903a01e-c659-4bc6-b079-1d1cab4976f8: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0110513477 6c1747f0-d08f-4f08-a55f-95fda91eb94e: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0201796952 a18fc0be-925c-4ba1-bb9d-f674de0b420a: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0201796952 e0c6dfca-be61-43eb-b872-a37eea2d3fff: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0201857330 01c68673-b6a8-414b-bc3c-0caa2c59678f: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0201857330 7c3a54c6-7955-4a78-a4ea-d7663f73c390: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0315661652 040ffe5d-809b-467a-8b11-0a68df27656e: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0315661652 66e40eb5-52bc-471e-8938-faaf1b67a930: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0601250396 945c19d4-5dc6-4c5f-8b85-990d155897c5: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0601250396 46b9e352-a6f1-4d29-9bc3-ca11d187569c: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0700262949 1e4023ce-79a8-4a0d-85bc-cdbf99cb94b4: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0700262949 7d06c071-b247-4326-8c04-ca71cb46dbe6: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0801335618 79c40609-3b39-4e93-98c2-c68cdee2a033: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn0801335618 c507885d-5a03-48cf-9360-a95b40f73da0: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn1102123482 bc6bf2c0-b92f-4a64-879f-29b563ce4155: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn1102123482 3e50046e-541e-4e90-acc7-6257580d380e: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn5000817538 7c01a8b6-7e71-4c9f-9e21-0a7a5f88dac4: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn5000817538 2839d4ca-12f5-4c2a-b70e-bb73f42804b4: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn5500526311 204e2974-a33f-443f-8832-654ff071e846: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake",
+    "vn5500526311 f2f66a05-ded3-43e7-a63c-7b0dd623bc4d: HTTPError: 404 Client Error:  for url: https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=fake"
   ],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
