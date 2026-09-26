@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-26T04:57:54.198961+00:00",
+    "generated_at": "2026-09-26T11:24:12.110222+00:00",
     "status": "active",
-    "history_days": 27,
+    "history_days": 28,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,25 +11,25 @@
   "category_changes": [
     {
       "category": "policy",
-      "recent_7d": 8,
+      "recent_7d": 9,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 167,
+      "delta_pct": 200,
       "trend": "accelerating",
-      "confidence": 93,
+      "confidence": 96,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "construction",
-      "recent_7d": 11,
+      "recent_7d": 12,
       "baseline_21d": 13,
       "baseline_expected_7d": 4.3,
-      "delta_pct": 154,
+      "delta_pct": 177,
       "trend": "accelerating",
-      "confidence": 92,
+      "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.3."
+      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.3."
     },
     {
       "category": "infrastructure",
@@ -38,7 +38,7 @@
       "baseline_expected_7d": 4.7,
       "delta_pct": -14,
       "trend": "stable",
-      "confidence": 88,
+      "confidence": 89,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -59,6 +59,17 @@
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
       "delta_pct": -14,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 1,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -62,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -98,17 +109,6 @@
       "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
     },
     {
-      "category": "labor",
-      "recent_7d": 0,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -100,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.7."
-    },
-    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 4,
@@ -126,7 +126,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 43,
+      "confidence": 44,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -137,7 +137,7 @@
       "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 43,
+      "confidence": 44,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -148,12 +148,49 @@
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 39,
+      "confidence": 40,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "fcb42e163a7b1c15",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Khẩn trương tuyển dụng, sắp xếp giáo viên; bố trí đội ngũ nhân sự dôi dư; sắp xếp, giảm đầu mối cơ sở đào tạo sư phạm",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-tuyen-dung-sap-xep-giao-vien-bo-tri-doi-ngu-nhan-su-doi-du-sap-xep-giam-dau-moi-co-so-dao-tao-su-pham-119260926141620574.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-26T11:24:12.110222+00:00"
+    },
+    {
+      "id": "020ad8679118cb8b",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Đất đai: Nhà nước sẽ điều tiết, quản lý giá đất",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-doi-luat-dat-dai-nha-nuoc-se-dieu-tiet-va-quan-ly-gia-dat-119260925162445264.htm",
+      "categories": [
+        "construction",
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-26T11:24:12.110222+00:00"
+    },
     {
       "id": "5850066fb1e687a1",
       "source_id": "business-registry",
@@ -281,10 +318,11 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 16,
+    "policy_regulation": 17,
     "business_formation": 14,
     "capital_flow": 3,
     "market_data": 3,
+    "hiring": 1,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
   },
@@ -295,9 +333,9 @@
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 459,
-    "candidate_events": 168,
-    "reference_events": 286,
+    "historical_events": 463,
+    "candidate_events": 170,
+    "reference_events": 288,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
