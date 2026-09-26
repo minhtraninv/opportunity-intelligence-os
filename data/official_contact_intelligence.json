@@ -1,24 +1,71 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-09-25T21:36:50.723469+00:00",
+    "generated_at": "2026-09-26T05:00:38.238173+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
   "coverage": {
-    "target_partner_ids": 16,
-    "targets_with_history": 16,
-    "targets_scanned": 15,
+    "target_partner_ids": 17,
+    "targets_with_history": 17,
+    "targets_scanned": 17,
     "details_fetched": 30,
-    "email_candidates_seen": 14,
-    "verified_contact_entities": 0,
-    "verified_contact_paths": 0,
+    "email_candidates_seen": 16,
+    "verified_contact_entities": 2,
+    "verified_contact_paths": 2,
     "filtered_non_organization": 0,
     "filtered_personal_like_mailboxes": 14,
-    "errors": 0
+    "errors": 1
   },
-  "contacts": [],
-  "errors": [],
+  "contacts": [
+    {
+      "partner_id": "vn0102595740",
+      "contractor_name": "TỔNG CÔNG TY BƯU ĐIỆN VIỆT NAM",
+      "contractor_code": "vn0102595740",
+      "tax_code": "0102595740",
+      "contact_status": "verified_official_msc_role_mailbox",
+      "contact_paths": [
+        {
+          "type": "email",
+          "value": "bid_support@vnpost.vn",
+          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600556609&notifyId=IB2600556609&inputResultId=a51e4575-f2aa-48be-aa19-3db5a796df32&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600556609&planNo=PL2600299523&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+          "source_type": "official_msc_kqlcnt_contractor_object",
+          "verified_at": "2026-09-26T05:00:38.238173+00:00",
+          "identity_match": "exact_orgCode_or_taxCode",
+          "mailbox_class": "role_or_generic"
+        }
+      ],
+      "award_tender_code": "IB2600556609",
+      "award_public_at": "2026-09-26T01:32:39+00:00",
+      "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
+    },
+    {
+      "partner_id": "vn0110073882",
+      "contractor_name": "Công ty cổ phần Tập Đoàn VAS GROUP",
+      "contractor_code": "vn0110073882",
+      "tax_code": "0110073882",
+      "contact_status": "verified_official_msc_role_mailbox",
+      "contact_paths": [
+        {
+          "type": "email",
+          "value": "info.vasgroup2@gmail.com",
+          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600556655&notifyId=IB2600556655&inputResultId=6fa488ac-fbb9-40bc-9637-6115acb6659c&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600556655&planNo=PL2600322933&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
+          "source_type": "official_msc_kqlcnt_contractor_object",
+          "verified_at": "2026-09-26T05:00:38.238173+00:00",
+          "identity_match": "exact_orgCode_or_taxCode",
+          "mailbox_class": "role_or_generic"
+        }
+      ],
+      "award_tender_code": "IB2600556655",
+      "award_public_at": "2026-09-26T02:20:56+00:00",
+      "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
+    }
+  ],
+  "errors": [
+    "vn0100684378 8ad35b7d-a83c-42b7-bb10-d8d42d5beb2f: ValueError: non-JSON response"
+  ],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
     "Email có dạng cá nhân không được surface mặc định dù xuất hiện trong nguồn công khai.",
