@@ -1,23 +1,23 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-27T16:59:24.315639+00:00",
+    "generated_at": "2026-09-27T21:22:04.012737+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-27T16:59:24.488077+00:00"
+    "trust_hardened_at": "2026-09-27T21:22:04.332112+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 57,
-    "observed_auto_entities": 47,
+    "observed_entities": 58,
+    "observed_auto_entities": 48,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 12,
-    "watch": 39,
+    "watch": 40,
     "window_days": 120,
     "public_verified_entities": 0,
     "discovery_candidates": 17,
@@ -401,7 +401,7 @@
       "event_count": 8,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -596,7 +596,21 @@
           "title": "PNJ điều chỉnh kế hoạch năm 2026, dự kiến lỗ 6.271 tỉ đồng",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/pnj-dieu-chinh-ke-hoach-nam-2026-du-kien-lo-6271-ti-dong-100260925180038445.htm",
-          "observed_at": "2026-09-27T16:59:08.203428+00:00",
+          "observed_at": "2026-09-27T21:21:46.740044+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "991be58f7a02c4cb",
+          "event_signature": "3f20f09066e329c3",
+          "family": "strategy",
+          "title": "PNJ tính đóng 25-30 cửa hàng sau khi dự kiến lỗ gần 6.300 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/pnj-tinh-dong-25-30-cua-hang-sau-khi-du-kien-lo-gan-6300-ti-dong-100260927234324492.htm",
+          "observed_at": "2026-09-27T21:21:46.740044+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -667,20 +681,6 @@
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/pnj-tang-cuong-nguon-luc-tai-chinh-chuan-bi-cho-giai-doan-tai-thiet-100260904141415837.htm",
           "observed_at": "2026-09-05T10:35:26.238814+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "44f6bb3a0b43b51d",
-          "event_signature": "bae96ab1179be705",
-          "family": "strategy",
-          "title": "PNJ mua lại gần 5.000 tỉ đồng tiền hàng trong 2 tháng qua, tổn thất 1.446 tỉ đồng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/pnj-mua-lai-gan-5000-ti-dong-tien-hang-trong-2-thang-qua-ton-that-1446-ti-dong-100260904090552226.htm",
-          "observed_at": "2026-09-05T04:29:57.432802+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1131,7 +1131,7 @@
       "event_count": 7,
       "primary_evidence_count": 0,
       "media_evidence_count": 7,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2224,12 +2224,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-hải-phòng-48a73a83",
-      "label": "Hải Phòng",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-khánh-hòa-b1f03cd2",
       "label": "Khánh Hòa",
       "entity_type": "location",
@@ -2238,6 +2232,12 @@
     {
       "entity_id": "auto-điện-biên-8a6161e5",
       "label": "Điện Biên",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "label": "Hải Phòng",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
