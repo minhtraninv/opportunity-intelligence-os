@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-26T21:09:49.727419+00:00",
+    "generated_at": "2026-09-27T05:17:54.653796+00:00",
     "status": "active",
     "history_days": 28,
     "required_history_days": 14,
@@ -11,34 +11,34 @@
   "category_changes": [
     {
       "category": "policy",
-      "recent_7d": 9,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 200,
+      "recent_7d": 7,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 91,
       "trend": "accelerating",
       "confidence": 96,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 9 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "construction",
-      "recent_7d": 12,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 177,
+      "recent_7d": 10,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": 100,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.3."
+      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.0."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 14,
       "baseline_expected_7d": 4.7,
-      "delta_pct": -14,
+      "delta_pct": 7,
       "trend": "stable",
-      "confidence": 89,
+      "confidence": 91,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "e07332b0f88325c3",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Thường trực Phạm Gia Túc đôn đốc tiến độ cao tốc Đồng Đăng - Trà Lĩnh, sớm đưa vào khai thác phục vụ nhân dân",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-don-doc-tien-do-cao-toc-dong-dang-tra-linh-som-dua-vao-khai-thac-phuc-vu-nhan-dan-102260927095340358.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-27T05:17:54.653796+00:00"
+    },
+    {
       "id": "4a646cb8275c0d00",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-26T21:09:49.727419+00:00"
+      "first_seen_at": "2026-09-26T21:09:49.727419+00:00",
+      "collected_at": "2026-09-26T21:09:49.727419+00:00",
+      "last_seen_at": null
     },
     {
       "id": "d3c8d3ab06fdd618",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-26T21:09:49.727419+00:00"
+      "first_seen_at": "2026-09-26T21:09:49.727419+00:00",
+      "collected_at": "2026-09-26T21:09:49.727419+00:00",
+      "last_seen_at": null
     },
     {
       "id": "fcb42e163a7b1c15",
@@ -235,13 +257,13 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 17,
+    "policy_regulation": 15,
     "business_formation": 14,
     "capital_flow": 3,
-    "market_data": 3,
+    "infrastructure_delivery": 2,
+    "market_data": 2,
     "hiring": 1,
-    "capex_expansion": 1,
-    "infrastructure_delivery": 1
+    "capex_expansion": 1
   },
   "geographies_7d": {
     "Huế": 1,
@@ -250,9 +272,9 @@
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 466,
-    "candidate_events": 172,
-    "reference_events": 289,
+    "historical_events": 469,
+    "candidate_events": 173,
+    "reference_events": 291,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
