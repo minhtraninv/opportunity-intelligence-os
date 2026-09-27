@@ -1,25 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-09-27T05:17:54.653796+00:00",
+    "generated_at": "2026-09-27T12:01:21.820242+00:00",
     "status": "active",
-    "history_days": 28,
+    "history_days": 29,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "policy",
-      "recent_7d": 7,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 91,
-      "trend": "accelerating",
-      "confidence": 96,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.7."
-    },
     {
       "category": "construction",
       "recent_7d": 10,
@@ -32,22 +21,33 @@
       "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.0."
     },
     {
+      "category": "policy",
+      "recent_7d": 7,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 133,
+      "trend": "accelerating",
+      "confidence": 92,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 5,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": 7,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": 15,
       "trend": "stable",
-      "confidence": 91,
+      "confidence": 89,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "sme",
       "recent_7d": 14,
-      "baseline_21d": 56,
-      "baseline_expected_7d": 18.7,
-      "delta_pct": -25,
+      "baseline_21d": 52,
+      "baseline_expected_7d": 17.3,
+      "delta_pct": -19,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -66,10 +66,10 @@
     },
     {
       "category": "labor",
-      "recent_7d": 1,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
+      "recent_7d": 2,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -100,13 +100,13 @@
     {
       "category": "energy",
       "recent_7d": 1,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -70,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -67,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.0."
     },
     {
       "category": "logistics",
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "4a32df64c650af55",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Khẩn trương tuyển dụng, sắp xếp giáo viên; bố trí nhân sự dôi dư; sắp xếp, giảm đầu mối cơ sở đào tạo sư phạm",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-tuyen-dung-sap-xep-giao-vien-bo-tri-doi-ngu-nhan-su-doi-du-sap-xep-giam-dau-moi-co-so-dao-tao-su-pham-119260926141620574.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-27T12:01:21.820242+00:00"
+    },
+    {
       "id": "e07332b0f88325c3",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +188,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-27T05:17:54.653796+00:00"
+      "first_seen_at": "2026-09-27T05:17:54.653796+00:00",
+      "collected_at": "2026-09-27T05:17:54.653796+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4a646cb8275c0d00",
@@ -213,56 +233,15 @@
       "first_seen_at": "2026-09-26T21:09:49.727419+00:00",
       "collected_at": "2026-09-26T21:09:49.727419+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "fcb42e163a7b1c15",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Khẩn trương tuyển dụng, sắp xếp giáo viên; bố trí đội ngũ nhân sự dôi dư; sắp xếp, giảm đầu mối cơ sở đào tạo sư phạm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-tuyen-dung-sap-xep-giao-vien-bo-tri-doi-ngu-nhan-su-doi-du-sap-xep-giam-dau-moi-co-so-dao-tao-su-pham-119260926141620574.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-26T11:24:12.110222+00:00",
-      "collected_at": "2026-09-26T11:24:12.110222+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "020ad8679118cb8b",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Sửa Luật Đất đai: Nhà nước sẽ điều tiết, quản lý giá đất",
-      "url": "https://xaydungchinhsach.chinhphu.vn/sua-doi-luat-dat-dai-nha-nuoc-se-dieu-tiet-va-quan-ly-gia-dat-119260925162445264.htm",
-      "categories": [
-        "construction",
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-26T11:24:12.110222+00:00",
-      "collected_at": "2026-09-26T11:24:12.110222+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 15,
     "business_formation": 14,
     "capital_flow": 3,
+    "hiring": 2,
     "infrastructure_delivery": 2,
     "market_data": 2,
-    "hiring": 1,
     "capex_expansion": 1
   },
   "geographies_7d": {
@@ -272,9 +251,9 @@
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 469,
-    "candidate_events": 173,
-    "reference_events": 291,
+    "historical_events": 473,
+    "candidate_events": 174,
+    "reference_events": 294,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
