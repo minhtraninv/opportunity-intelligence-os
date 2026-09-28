@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-27T21:20:35.069161+00:00",
+    "generated_at": "2026-09-28T05:23:08.488322+00:00",
     "status": "active",
     "history_days": 29,
     "required_history_days": 14,
@@ -10,26 +10,26 @@
   },
   "category_changes": [
     {
-      "category": "construction",
-      "recent_7d": 10,
-      "baseline_21d": 15,
-      "baseline_expected_7d": 5.0,
-      "delta_pct": 100,
-      "trend": "accelerating",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.0."
-    },
-    {
       "category": "policy",
-      "recent_7d": 7,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 250,
+      "recent_7d": 6,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 157,
       "trend": "accelerating",
       "confidence": 86,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.0."
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.3."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 8,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
+      "delta_pct": 41,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "infrastructure",
@@ -39,6 +39,17 @@
       "delta_pct": 15,
       "trend": "stable",
       "confidence": 89,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 2,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 73,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -55,10 +66,21 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 3,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 29,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -76,37 +98,15 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "labor",
-      "recent_7d": 2,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": -14,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 1,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "energy",
-      "recent_7d": 1,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -67,
+      "recent_7d": 0,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.0."
+      "confidence": 60,
+      "source_diversity_7d": 0,
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 3.3."
     },
     {
       "category": "logistics",
@@ -155,6 +155,63 @@
   ],
   "top_new_events": [
     {
+      "id": "303ecdf89cc50d9d",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Dự thảo Nghị định quy định mức lương tối thiểu với hợp đồng lao động",
+      "url": "https://xaydungchinhsach.chinhphu.vn/du-thao-nghi-dinh-quy-dinh-muc-luong-toi-thieu-voi-hop-dong-lao-dong-119260928090358876.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+    },
+    {
+      "id": "35552b9e1aebb3cd",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Vụ sản xuất, buôn bán thuốc An Cung giả: Chi tiết mức phạt theo Điều 193 Bộ luật Hình sự",
+      "url": "https://xaydungchinhsach.chinhphu.vn/vu-san-xuat-buon-ban-thuoc-an-cung-gia-chi-tiet-muc-phat-theo-dieu-193-bo-luat-hinh-su-119260928115011699.htm",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+    },
+    {
+      "id": "198ce3f862cf4f17",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Thông tư số 48/2026/TT-NHNN sửa đổi, bổ sung một số điều của Thông tư số 26/2021/TT-NHNN hướng dẫn giao dịch ngoại tệ giữa Ngân hàng Nhà nước Việt Nam và tổ chức tín dụng được phép hoạt động ngoại hối. (25/09/2026)",
+      "url": "https://sbv.gov.vn/w/th%C3%B4ng-t%C6%B0-s%E1%BB%91-48/2026/tt-nhnn-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-th%C3%B4ng-t%C6%B0-s%E1%BB%91-26/2021/tt-nhnn-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-giao-d%E1%BB%8Bch-ngo%E1%BA%A1i-t",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2021,
+        2026
+      ],
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+    },
+    {
       "id": "49501f7fcb353a68",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +229,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-27T21:20:35.069161+00:00"
+      "first_seen_at": "2026-09-27T21:20:35.069161+00:00",
+      "collected_at": "2026-09-27T21:20:35.069161+00:00",
+      "last_seen_at": null
     },
     {
       "id": "02cae5686e5e5cbf",
@@ -190,7 +249,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-27T21:20:35.069161+00:00"
+      "first_seen_at": "2026-09-27T21:20:35.069161+00:00",
+      "collected_at": "2026-09-27T21:20:35.069161+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4a32df64c650af55",
@@ -211,36 +272,16 @@
       "first_seen_at": "2026-09-27T12:01:21.820242+00:00",
       "collected_at": "2026-09-27T12:01:21.820242+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "e07332b0f88325c3",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Phó Thủ tướng Thường trực Phạm Gia Túc đôn đốc tiến độ cao tốc Đồng Đăng - Trà Lĩnh, sớm đưa vào khai thác phục vụ nhân dân",
-      "url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-don-doc-tien-do-cao-toc-dong-dang-tra-linh-som-dua-vao-khai-thac-phuc-vu-nhan-dan-102260927095340358.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-27T05:17:54.653796+00:00",
-      "collected_at": "2026-09-27T05:17:54.653796+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 15,
+    "policy_regulation": 16,
     "business_formation": 14,
     "capital_flow": 3,
     "hiring": 2,
     "infrastructure_delivery": 2,
-    "market_data": 2,
-    "capex_expansion": 1
+    "capex_expansion": 1,
+    "market_data": 1
   },
   "geographies_7d": {
     "Huế": 1,
@@ -249,8 +290,8 @@
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 475,
-    "candidate_events": 176,
+    "historical_events": 478,
+    "candidate_events": 179,
     "reference_events": 294,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
