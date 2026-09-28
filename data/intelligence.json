@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-28T05:23:08.488322+00:00",
+    "generated_at": "2026-09-28T13:53:39.834085+00:00",
     "status": "active",
-    "history_days": 29,
+    "history_days": 30,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,46 +10,57 @@
   },
   "category_changes": [
     {
-      "category": "policy",
+      "category": "infrastructure",
       "recent_7d": 6,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 157,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 64,
       "trend": "accelerating",
-      "confidence": 86,
+      "confidence": 94,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.3."
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "construction",
       "recent_7d": 8,
-      "baseline_21d": 17,
-      "baseline_expected_7d": 5.7,
-      "delta_pct": 41,
-      "trend": "stable",
+      "baseline_21d": 16,
+      "baseline_expected_7d": 5.3,
+      "delta_pct": 50,
+      "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.3."
     },
     {
-      "category": "infrastructure",
-      "recent_7d": 5,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 15,
+      "category": "policy",
+      "recent_7d": 9,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 286,
+      "trend": "accelerating",
+      "confidence": 92,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.3."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 4,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 71,
       "trend": "stable",
-      "confidence": 89,
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 8,
       "baseline_expected_7d": 2.7,
-      "delta_pct": -25,
+      "delta_pct": 12,
       "trend": "stable",
-      "confidence": 73,
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -66,32 +77,10 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 0,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 3,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 29,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "data_ai",
-      "recent_7d": 2,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 0,
+      "delta_pct": 33,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -100,13 +89,24 @@
     {
       "category": "energy",
       "recent_7d": 0,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 60,
+      "confidence": 58,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 3.3."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 3.0."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 2,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 53,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "logistics",
@@ -120,6 +120,28 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
+      "category": "consumer_services",
+      "recent_7d": 1,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 53,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 1,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 49,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "trade_flow",
       "recent_7d": 0,
       "baseline_21d": 2,
@@ -129,31 +151,175 @@
       "confidence": 44,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "consumer_services",
-      "recent_7d": 0,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 44,
-      "source_diversity_7d": 0,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "capital_market",
-      "recent_7d": 0,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 40,
-      "source_diversity_7d": 0,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "f2f554180034953f",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Hoàn thiện cơ chế, chính sách để tạo động lực phát triển kinh tế cửa khẩu",
+      "url": "https://baochinhphu.vn/hoan-thien-co-che-chinh-sach-de-tao-dong-luc-phat-trien-kinh-te-cua-khau-102260928115539529.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "a26aa901c387aa3f",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kích hoạt mạnh mẽ tinh thần Nghị quyết 26-NQ/TW, nghiên cứu cơ chế đặc thù cho du lịch",
+      "url": "https://baochinhphu.vn/kich-hoat-manh-me-tinh-than-nghi-quyet-26-nq-tw-nghien-cuu-co-che-dac-thu-cho-du-lich-102260928133315599.htm",
+      "categories": [
+        "consumer_services"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "dad96a40e0e6a901",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Hoàn thiện dự thảo Luật Đất đai (sửa đổi), bảo đảm thống nhất, chặt chẽ",
+      "url": "https://baochinhphu.vn/hoan-thien-du-thao-luat-dat-dai-sua-doi-bao-dam-thong-nhat-chat-che-10226092813090285.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "09f41cdcd837fa2d",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về tuyển dụng người Việt Nam làm việc cho tổ chức nước ngoài tại Việt Nam",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-tuyen-dung-nguoi-viet-nam-lam-viec-cho-to-chuc-nuoc-ngoai-tai-viet-nam-10226092810363791.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "565ec56091db691b",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về chào bán, giao dịch trái phiếu doanh nghiệp riêng lẻ",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-chao-ban-giao-dich-trai-phieu-doanh-nghiep-rieng-le-102260928180806073.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "8a053bb080dfa70e",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nội dung cơ bản của Luật số 24/2026/QH16 sửa đổi, bổ sung một số điều của Luật Đầu tư",
+      "url": "https://xaydungchinhsach.chinhphu.vn/noi-dung-co-ban-cua-luat-so-24-2026-qh16-sua-doi-bo-sung-mot-so-dieu-cua-luat-dau-tu-119260928153454059.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "96cee9d0eea93938",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Dự thảo Nghị định sửa đổi, bổ sung một số điều phát triển công nghiệp hỗ trợ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/du-thao-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-phat-trien-cong-nghiep-ho-tro-119260928145549873.htm",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "60474f443a9389a9",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Tổng công ty Thiết bị điện Đông Anh khởi công dự án nghiên cứu, thiết kế, chế tạo cuộn kháng bù ngang 500 kV",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Tong-cong-ty-Thiet-bi-dien-Dong-Anh-khoi-cong-du-an-nghien-cuu-thiet-ke-che-tao-cuon-khang-bu-ngang-500-kV-60-12-509759",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
+    {
+      "id": "f5253d34d679a681",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Ngân hàng Nhà nước Việt Nam làm việc với Đoàn kiểm tra về tổng rà soát hệ thống văn bản quy phạm pháp luật 24/09/2026",
+      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-%C4%91o%C3%A0n-ki%E1%BB%83m-tra-v%E1%BB%81-t%E1%BB%95ng-r%C3%A0-so%C3%A1t-h%E1%BB%87-th%E1%BB%91ng-v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-ph%C3%A1p-lu-1",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-28T13:53:39.834085+00:00"
+    },
     {
       "id": "303ecdf89cc50d9d",
       "source_id": "gov-policy",
@@ -170,7 +336,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00",
+      "collected_at": "2026-09-28T05:23:08.488322+00:00",
+      "last_seen_at": null
     },
     {
       "id": "35552b9e1aebb3cd",
@@ -188,7 +356,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00",
+      "collected_at": "2026-09-28T05:23:08.488322+00:00",
+      "last_seen_at": null
     },
     {
       "id": "198ce3f862cf4f17",
@@ -209,7 +379,9 @@
         2021,
         2026
       ],
-      "first_seen_at": "2026-09-28T05:23:08.488322+00:00"
+      "first_seen_at": "2026-09-28T05:23:08.488322+00:00",
+      "collected_at": "2026-09-28T05:23:08.488322+00:00",
+      "last_seen_at": null
     },
     {
       "id": "49501f7fcb353a68",
@@ -252,34 +424,14 @@
       "first_seen_at": "2026-09-27T21:20:35.069161+00:00",
       "collected_at": "2026-09-27T21:20:35.069161+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "4a32df64c650af55",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Khẩn trương tuyển dụng, sắp xếp giáo viên; bố trí nhân sự dôi dư; sắp xếp, giảm đầu mối cơ sở đào tạo sư phạm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-tuyen-dung-sap-xep-giao-vien-bo-tri-doi-ngu-nhan-su-doi-du-sap-xep-giam-dau-moi-co-so-dao-tao-su-pham-119260926141620574.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-27T12:01:21.820242+00:00",
-      "collected_at": "2026-09-27T12:01:21.820242+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 16,
+    "policy_regulation": 23,
     "business_formation": 14,
+    "hiring": 3,
+    "infrastructure_delivery": 3,
     "capital_flow": 3,
-    "hiring": 2,
-    "infrastructure_delivery": 2,
     "capex_expansion": 1,
     "market_data": 1
   },
@@ -290,9 +442,9 @@
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 478,
-    "candidate_events": 179,
-    "reference_events": 294,
+    "historical_events": 494,
+    "candidate_events": 188,
+    "reference_events": 301,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
