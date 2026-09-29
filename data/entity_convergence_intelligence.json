@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-09-29T05:44:51.291300+00:00",
+    "generated_at": "2026-09-29T12:53:07.992433+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-09-29T05:44:51.599895+00:00"
+    "trust_hardened_at": "2026-09-29T12:53:08.303236+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 60,
-    "observed_auto_entities": 50,
+    "observed_entities": 61,
+    "observed_auto_entities": 51,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 13,
-    "watch": 41,
+    "watch": 40,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 16,
+    "discovery_candidates": 15,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 13
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -50,7 +50,7 @@
       "event_count": 9,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -58,6 +58,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "a10ac3dcd73a4387",
+          "event_signature": "877e8734e2d728b1",
+          "family": "project_execution",
+          "title": "Một xã ở Tây Ninh được Vingroup tài trợ 350 tỉ đồng xây quảng trường",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/mot-xa-o-tay-ninh-duoc-vingroup-tai-tro-350-ti-dong-xay-quang-truong-185260929162345084.htm",
+          "observed_at": "2026-09-29T12:23:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "9f3521535b1c4ba5",
           "event_signature": "d355627ddc30c807",
@@ -80,20 +94,6 @@
           "publisher": "VietnamPlus Kinh tế",
           "source_url": "https://www.vietnamplus.vn/ha-noi-can-nhac-gia-dien-theo-gio-tranh-tang-chi-phi-cho-ho-gia-dinh-post1138159.vnp",
           "observed_at": "2026-09-24T13:48:41+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "50734cfae5c5b320",
-          "event_signature": "695ad1e97d614824",
-          "family": "project_execution",
-          "title": "VinSpeed và Siemens Mobility hợp tác phát triển đường sắt tốc độ cao ở Việt Nam",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vinspeed-va-siemens-mobility-hop-tac-phat-trien-duong-sat-toc-do-cao-o-viet-nam-post1137970.vnp",
-          "observed_at": "2026-09-23T16:09:59+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -215,14 +215,14 @@
       "independent_publishers": [
         "Báo Chính phủ",
         "Chính sách pháp luật - Chính phủ",
+        "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
+        "VietnamPlus Kinh tế"
       ],
       "event_count": 11,
       "primary_evidence_count": 0,
-      "media_evidence_count": 7,
-      "newest_evidence_age_days": 4,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -237,6 +237,35 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "ca78de49b49928bd",
+          "family": "project_execution",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-khoi-cong-du-an-dau-tu-bao-quan-tu-bo-phuc-hoi-dien-kinh-thien-102260929140334018.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "33d4dbc47e3b4e6e",
+          "event_signature": "c7cb2a430cb58af2",
+          "family": "project_execution",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự khởi công dự án đầu tư tu bổ Điện Kính Thiên",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-khoi-cong-du-an-dau-tu-tu-bo-dien-kinh-thien-185260929145041971.htm",
+          "observed_at": "2026-09-29T07:56:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "c1fc0c2389694a11",
           "event_signature": "821884e4791d5dff",
@@ -266,20 +295,6 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "b31699146e844934",
-          "event_signature": "6712aa11d74b2974",
-          "family": "project_execution",
-          "title": "Tổng Bí thư, Chủ tịch nước đề nghị doanh nghiệp Mỹ tăng hợp tác năng lượng, công nghệ",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-de-nghi-doanh-nghiep-my-tang-hop-tac-nang-luong-cong-nghe-5124107.html",
-          "observed_at": "2026-09-24T04:08:49+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
           "id": "16318edf5938a698",
           "event_signature": "0df74219af75bffe",
           "family": "strategy",
@@ -287,20 +302,6 @@
           "publisher": "VietnamPlus Kinh tế",
           "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tham-lam-viec-voi-tap-doan-duoc-pham-pfizer-post1137885.vnp",
           "observed_at": "2026-09-23T10:54:53+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "09767fc86f673514",
-          "event_signature": "cb65f8c9053ede12",
-          "family": "project_execution",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Xây dựng Bắc Ninh trở thành đô thị hiện đại nhưng vẫn đậm đà hồn cốt văn hóa Kinh Bắc",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-xay-dung-bac-ninh-tro-thanh-do-thi-hien-dai-nhung-van-dam-da-hon-cot-van-hoa-kinh-bac-post1137140.vnp",
-          "observed_at": "2026-09-19T11:41:38+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -367,7 +368,7 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 1,
+      "official_headline_discovery_count": 2,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "labor",
@@ -920,7 +921,7 @@
           "title": "Đọc nhanh 29-9: Dow Jones mất 347 điểm khi lợi suất Mỹ tăng tiếp, Masan đăng ký bán 10% vốn MSR",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/doc-nhanh-29-9-dow-jones-mat-347-diem-khi-loi-suat-my-tang-tiep-masan-dang-ky-ban-10-von-msr-10026092907301234.htm",
-          "observed_at": "2026-09-29T05:44:31.197754+00:00",
+          "observed_at": "2026-09-29T12:52:52.861449+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1207,27 +1208,73 @@
       "entity_type": "strategic_project",
       "entity_origin": "curated_registry",
       "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "Cảng hàng không quốc tế Long Thành đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "convergence_score": 17,
+      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
       "evidence_families": [
         "labor",
+        "policy",
         "project_execution"
       ],
       "independent_publishers": [
+        "Chính sách pháp luật - Chính phủ",
         "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
+        "Tuổi Trẻ Kinh doanh"
       ],
-      "event_count": 4,
+      "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 6,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
-        "media_only_needs_primary_verification"
+        "policy_execution_alignment"
       ],
-      "theme_context": [],
-      "regional_context": [],
+      "theme_context": [
+        {
+          "theme_id": "logistics_trade",
+          "label": "logistics_trade",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [
+        {
+          "region": "Đồng Nai",
+          "state": "capital_cooling_production_unconfirmed",
+          "iip_7m_yoy_pct": null,
+          "fdi_yoy_pct": -58.9
+        }
+      ],
       "evidence": [
+        {
+          "id": "bfbf7a5afcb827c6",
+          "event_signature": "b684bdd4da8211d2",
+          "family": "project_execution",
+          "title": "Bay quốc tế từ Long Thành trả phí 25 USD, cao hơn Tân Sơn Nhất 5 USD",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/bay-quoc-te-tu-long-thanh-tra-phi-25-usd-cao-hon-tan-son-nhat-5-usd-100260929172804959.htm",
+          "observed_at": "2026-09-29T12:52:52.861449+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e6dcd3748a139401",
+          "family": "policy",
+          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "logistics"
+          ],
+          "geography": [
+            "Đồng Nai"
+          ],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
         {
           "id": "524cfc9520fc8834",
           "event_signature": "9e286321e14b4c8f",
@@ -1269,20 +1316,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "7cc8f0ca83191b71",
-          "event_signature": "e202cb6a8d230f1c",
-          "family": "project_execution",
-          "title": "Đồng Nai ưu tiên nguồn lực cho các dự án lan tỏa, kết nối sân bay Long Thành",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/dong-nai-uu-tien-nguon-luc-cho-cac-du-an-lan-toa-ket-noi-san-bay-long-thanh-post1136292.vnp",
-          "observed_at": "2026-09-15T15:20:52+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -1301,82 +1334,107 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 0,
+      "official_headline_discovery_count": 1,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "labor",
+        "policy",
         "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-vietravel-airlines-422e5334",
-      "label": "Vietravel Airlines",
+      "entity_id": "auto-phú-quốc-c360b41a",
+      "label": "Phú Quốc",
       "entity_type": "organization_candidate",
       "entity_origin": "auto_discovered",
       "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "Vietravel Airlines đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "convergence_score": 17,
+      "why_now": "Phú Quốc đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
       "evidence_families": [
         "operating",
-        "strategy"
+        "policy",
+        "project_execution"
       ],
       "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
+        "EVN - Đầu tư xây dựng",
+        "Thanh Niên Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 3,
+      "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 17,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
-        "media_only_needs_primary_verification"
+        "policy_execution_alignment"
       ],
-      "theme_context": [],
+      "theme_context": [
+        {
+          "theme_id": "energy_grid",
+          "label": "energy_grid",
+          "score": null,
+          "status": null
+        }
+      ],
       "regional_context": [],
       "evidence": [
         {
-          "id": "8fc8bff139a5aa49",
-          "event_signature": "7518244b2e07f172",
-          "family": "strategy",
-          "title": "Vietravel Airlines thỏa thuận mua 50 máy bay Airbus, nhận từ năm 2029",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vietravel-airlines-thoa-thuan-mua-50-may-bay-airbus-nhan-tu-nam-2029-100260910234117517.htm",
-          "observed_at": "2026-09-12T04:36:05.138520+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f917362a2b97a592",
-          "event_signature": "5edc7dc5e138b70b",
-          "family": "operating",
-          "title": "Vietravel Airlines “bắt tay” với Airbus mua thêm 50 máy bay thế hệ mới",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vietravel-airlines-bat-tay-voi-airbus-mua-them-50-may-bay-the-he-moi-post1135503.vnp",
-          "observed_at": "2026-09-11T09:55:26+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "134cd5f1a839e525",
-          "event_signature": "3c76c577c3f1af8f",
-          "family": "operating",
-          "title": "Vietravel Airlines mua 50 máy bay Airbus",
+          "id": "f49e4343985e8a1e",
+          "event_signature": "7aa627dfbe97de1d",
+          "family": "policy",
+          "title": "Phú Quốc quy hoạch hơn 550 ha đô thị du lịch tại Rạch Vẹm, Gành Dầu",
           "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vietravel-airlines-mua-50-may-bay-airbus-5119057.html",
-          "observed_at": "2026-09-11T03:30:10+00:00",
+          "source_url": "https://vnexpress.net/phu-quoc-quy-hoach-hon-550-ha-do-thi-du-lich-tai-rach-vem-ganh-dau-5126196.html",
+          "observed_at": "2026-09-29T07:46:38+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b0ddb2ed5c4add92",
+          "event_signature": "d74c78ff7df941e9",
+          "family": "project_execution",
+          "title": "Phú Quốc phải hướng tới giao thông thông minh, đạt chuẩn quốc tế",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/phu-quoc-phai-huong-toi-giao-thong-thong-minh-dat-chuan-quoc-te-185260917162739974.htm",
+          "observed_at": "2026-09-17T09:44:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8db61793e3cab190",
+          "event_signature": "d79fd6e0e5bdcfe1",
+          "family": "project_execution",
+          "title": "Phú Quốc tăng tốc giải phóng mặt bằng các công trình phục vụ APEC 2027",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/phu-quoc-tang-toc-giai-phong-mat-bang-cac-cong-trinh-phuc-vu-apec-2027-18526090420155833.htm",
+          "observed_at": "2026-09-05T02:13:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a217e71d65206243",
+          "family": "operating",
+          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
+          "publisher": "EVN - Đầu tư xây dựng",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
+          "observed_at": "2026-08-30T11:41:47.417240+00:00",
+          "categories": [
+            "energy",
+            "policy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
         }
       ],
       "investigation_questions": [
@@ -1395,11 +1453,12 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 0,
+      "official_headline_discovery_count": 1,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "operating",
-        "strategy"
+        "policy",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -1552,6 +1611,128 @@
         "operating",
         "project_execution",
         "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-vpbank-0ce5c450",
+      "label": "VPBank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "VPBank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "de9cf56a7bf89fed",
+          "event_signature": "1a6e1c4675f8176f",
+          "family": "project_execution",
+          "title": "VPBank huy động 27 triệu USD từ ngân hàng Nhật Bản cho dự án truyền tải điện",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vpbank-huy-dong-27-trieu-usd-tu-ngan-hang-nhat-ban-cho-du-an-truyen-tai-dien-post1139011.vnp",
+          "observed_at": "2026-09-29T16:46:08+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8bbee414e21b7a44",
+          "event_signature": "5903519056e3cbb6",
+          "family": "project_execution",
+          "title": "VPBank ký kết khoản vay 27 triệu USD với JBIC, tài trợ dự án truyền tải điện",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vpbank-ky-ket-khoan-vay-27-trieu-usd-voi-jbic-tai-tro-du-an-truyen-tai-dien-185260929174347187.htm",
+          "observed_at": "2026-09-29T12:21:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "d78f82101bec92c7",
+          "event_signature": "a13bcc16c2e6c17e",
+          "family": "capital",
+          "title": "VPBank chốt quyền trả cổ tức bằng cổ phiếu, tăng vốn lên 100.000 tỷ đồng",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vpbank-chot-quyen-tra-co-tuc-bang-co-phieu-tang-von-len-100000-ty-dong-post1135731.vnp",
+          "observed_at": "2026-09-12T13:16:20+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "1df6bfb68b213d89",
+          "event_signature": "aea1264e6fdc9281",
+          "family": "capital",
+          "title": "VPBank chốt ngày phát hành gần 2,1 tỉ cổ phiếu trả cổ tức",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vpbank-chot-ngay-phat-hanh-gan-21-ti-co-phieu-tra-co-tuc-18526091111051822.htm",
+          "observed_at": "2026-09-11T04:31:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "334a5258a21c8e42",
+          "event_signature": "36b159c1f32d9272",
+          "family": "project_execution",
+          "title": "VPBank dành 10.000 tỷ đồng cho vay ưu đãi và giảm 1,5% lãi suất cho khách hàng",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vpbank-danh-10000-ty-dong-cho-vay-uu-dai-va-giam-15-lai-suat-cho-khach-hang-post1134346.vnp",
+          "observed_at": "2026-09-05T10:15:50+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -1905,200 +2086,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-vpbank-0ce5c450",
-      "label": "VPBank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "VPBank đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
-      "evidence_families": [
-        "capital",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 3,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 3,
-      "newest_evidence_age_days": 16,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "d78f82101bec92c7",
-          "event_signature": "a13bcc16c2e6c17e",
-          "family": "capital",
-          "title": "VPBank chốt quyền trả cổ tức bằng cổ phiếu, tăng vốn lên 100.000 tỷ đồng",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vpbank-chot-quyen-tra-co-tuc-bang-co-phieu-tang-von-len-100000-ty-dong-post1135731.vnp",
-          "observed_at": "2026-09-12T13:16:20+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "1df6bfb68b213d89",
-          "event_signature": "aea1264e6fdc9281",
-          "family": "capital",
-          "title": "VPBank chốt ngày phát hành gần 2,1 tỉ cổ phiếu trả cổ tức",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vpbank-chot-ngay-phat-hanh-gan-21-ti-co-phieu-tra-co-tuc-18526091111051822.htm",
-          "observed_at": "2026-09-11T04:31:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "334a5258a21c8e42",
-          "event_signature": "36b159c1f32d9272",
-          "family": "project_execution",
-          "title": "VPBank dành 10.000 tỷ đồng cho vay ưu đãi và giảm 1,5% lãi suất cho khách hàng",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vpbank-danh-10000-ty-dong-cho-vay-uu-dai-va-giam-15-lai-suat-cho-khach-hang-post1134346.vnp",
-          "observed_at": "2026-09-05T10:15:50+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-phú-quốc-c360b41a",
-      "label": "Phú Quốc",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "Phú Quốc đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "EVN - Đầu tư xây dựng",
-        "Thanh Niên Kinh tế"
-      ],
-      "event_count": 3,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 2,
-      "newest_evidence_age_days": 11,
-      "anomaly_flags": [],
-      "theme_context": [
-        {
-          "theme_id": "energy_grid",
-          "label": "energy_grid",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "b0ddb2ed5c4add92",
-          "event_signature": "d74c78ff7df941e9",
-          "family": "project_execution",
-          "title": "Phú Quốc phải hướng tới giao thông thông minh, đạt chuẩn quốc tế",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/phu-quoc-phai-huong-toi-giao-thong-thong-minh-dat-chuan-quoc-te-185260917162739974.htm",
-          "observed_at": "2026-09-17T09:44:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8db61793e3cab190",
-          "event_signature": "d79fd6e0e5bdcfe1",
-          "family": "project_execution",
-          "title": "Phú Quốc tăng tốc giải phóng mặt bằng các công trình phục vụ APEC 2027",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/phu-quoc-tang-toc-giai-phong-mat-bang-cac-cong-trinh-phuc-vu-apec-2027-18526090420155833.htm",
-          "observed_at": "2026-09-05T02:13:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a217e71d65206243",
-          "family": "operating",
-          "title": "Đóng điện Trạm biến áp 220kV Phú Quốc: Tăng cường hạ tầng điện phát triển kinh tế đặc khu",
-          "publisher": "EVN - Đầu tư xây dựng",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Phu-Quoc-Tang-cuong-ha-tang-dien-phat-trien-kinh-te-dac-khu-60-13-509330",
-          "observed_at": "2026-08-30T11:41:47.417240+00:00",
-          "categories": [
-            "energy",
-            "policy"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 1,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-điện-máy-xanh-756f96d7",
       "label": "Điện Máy Xanh",
       "entity_type": "organization_candidate",
@@ -2117,7 +2104,7 @@
       "event_count": 2,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2194,6 +2181,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-cà-mau-5be786d4",
+      "label": "Cà Mau",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-điện-biên-8a6161e5",
       "label": "Điện Biên",
       "entity_type": "location",
@@ -2224,14 +2217,14 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-cà-mau-5be786d4",
-      "label": "Cà Mau",
+      "entity_id": "auto-gia-lai-f5d3ac1a",
+      "label": "Gia Lai",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-gia-lai-f5d3ac1a",
-      "label": "Gia Lai",
+      "entity_id": "auto-phú-thọ-d66a434f",
+      "label": "Phú Thọ",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },

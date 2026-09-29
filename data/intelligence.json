@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T05:43:18.679571+00:00",
+    "generated_at": "2026-09-29T12:51:54.496115+00:00",
     "status": "active",
-    "history_days": 30,
+    "history_days": 31,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,37 +10,26 @@
   },
   "category_changes": [
     {
-      "category": "construction",
-      "recent_7d": 8,
-      "baseline_21d": 15,
-      "baseline_expected_7d": 5.0,
-      "delta_pct": 60,
-      "trend": "accelerating",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.0."
-    },
-    {
       "category": "policy",
-      "recent_7d": 9,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 286,
+      "recent_7d": 8,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 200,
       "trend": "accelerating",
       "confidence": 92,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 9 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.3."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.7."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 6,
+      "recent_7d": 8,
       "baseline_21d": 8,
       "baseline_expected_7d": 2.7,
-      "delta_pct": 125,
+      "delta_pct": 200,
       "trend": "accelerating",
-      "confidence": 88,
+      "confidence": 92,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.7."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.7."
     },
     {
       "category": "labor",
@@ -52,6 +41,17 @@
       "confidence": 77,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.3."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 7,
+      "baseline_21d": 16,
+      "baseline_expected_7d": 5.3,
+      "delta_pct": 31,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "fdi_industrial",
@@ -66,10 +66,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 47,
-      "baseline_expected_7d": 15.7,
-      "delta_pct": 2,
+      "recent_7d": 14,
+      "baseline_21d": 49,
+      "baseline_expected_7d": 16.3,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -98,21 +98,21 @@
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 3.0."
     },
     {
+      "category": "logistics",
+      "recent_7d": 3,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 63,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "data_ai",
       "recent_7d": 2,
       "baseline_21d": 1,
       "baseline_expected_7d": 0.3,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 53,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "logistics",
-      "recent_7d": 1,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 53,
@@ -155,6 +155,80 @@
   ],
   "top_new_events": [
     {
+      "id": "ca78de49b49928bd",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-khoi-cong-du-an-dau-tu-bao-quan-tu-bo-phuc-hoi-dien-kinh-thien-102260929140334018.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+    },
+    {
+      "id": "15ea8eb02947e14f",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định về truy xuất nguồn gốc sản phẩm, hàng hóa",
+      "url": "https://baochinhphu.vn/quy-dinh-ve-truy-xuat-nguon-goc-san-pham-hang-hoa-102260929180723388.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+    },
+    {
+      "id": "5cd6f0d6d31a7e73",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Nghiên cứu đưa cao tốc Hữu Nghị - Chi Lăng và Đồng Đăng - Trà Lĩnh vào khai thác tạm miễn phí dịp Tết",
+      "url": "https://baochinhphu.vn/nghien-cuu-dua-cao-toc-huu-nghi-chi-lang-va-dong-dang-tra-linh-vao-khai-thac-tam-mien-phi-dip-tet-102260929161514777.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+    },
+    {
+      "id": "e6dcd3748a139401",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Đồng Nai"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+    },
+    {
       "id": "de8e8c0d45d222f5",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T05:43:18.679571+00:00"
+      "first_seen_at": "2026-09-29T05:43:18.679571+00:00",
+      "collected_at": "2026-09-29T05:43:18.679571+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2e3bdb3f1d9f4cec",
@@ -400,24 +476,24 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 24,
-    "business_formation": 16,
+    "policy_regulation": 25,
+    "business_formation": 14,
+    "infrastructure_delivery": 5,
     "hiring": 3,
-    "infrastructure_delivery": 3,
     "capital_flow": 3,
-    "capex_expansion": 1,
-    "market_data": 1
+    "capex_expansion": 1
   },
   "geographies_7d": {
+    "Đồng Nai": 1,
     "Huế": 1,
     "Hà Nội": 1,
     "Hải Phòng": 1,
     "Lào Cai": 1
   },
   "coverage": {
-    "historical_events": 501,
-    "candidate_events": 191,
-    "reference_events": 305,
+    "historical_events": 511,
+    "candidate_events": 195,
+    "reference_events": 311,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
