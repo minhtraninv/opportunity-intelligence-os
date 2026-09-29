@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T12:51:54.496115+00:00",
+    "generated_at": "2026-09-29T22:14:53.478732+00:00",
     "status": "active",
     "history_days": 31,
     "required_history_days": 14,
@@ -11,25 +11,25 @@
   "category_changes": [
     {
       "category": "policy",
-      "recent_7d": 8,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 200,
+      "recent_7d": 7,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 133,
       "trend": "accelerating",
       "confidence": 92,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.7."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 8,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 200,
+      "recent_7d": 6,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 80,
       "trend": "accelerating",
       "confidence": 92,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.7."
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
       "category": "labor",
@@ -44,23 +44,12 @@
     },
     {
       "category": "construction",
-      "recent_7d": 7,
-      "baseline_21d": 16,
-      "baseline_expected_7d": 5.3,
-      "delta_pct": 31,
+      "recent_7d": 6,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
+      "delta_pct": 6,
       "trend": "stable",
       "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 3,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 12,
-      "trend": "stable",
-      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -81,6 +70,17 @@
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
       "delta_pct": 33,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 2,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "0e48ee83b054e8ac",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 30/9/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-29T22:14:53.478732+00:00"
+    },
+    {
+      "id": "855895dd12897e05",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 30/9 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-29T22:14:53.478732+00:00"
+    },
+    {
       "id": "ca78de49b49928bd",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +208,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
+      "collected_at": "2026-09-29T12:51:54.496115+00:00",
+      "last_seen_at": null
     },
     {
       "id": "15ea8eb02947e14f",
@@ -188,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
+      "collected_at": "2026-09-29T12:51:54.496115+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5cd6f0d6d31a7e73",
@@ -206,7 +248,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
+      "collected_at": "2026-09-29T12:51:54.496115+00:00",
+      "last_seen_at": null
     },
     {
       "id": "e6dcd3748a139401",
@@ -226,7 +270,9 @@
         "Đồng Nai"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00"
+      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
+      "collected_at": "2026-09-29T12:51:54.496115+00:00",
+      "last_seen_at": null
     },
     {
       "id": "de8e8c0d45d222f5",
@@ -289,215 +335,28 @@
       "first_seen_at": "2026-09-28T23:15:43.508140+00:00",
       "collected_at": "2026-09-28T23:15:43.508140+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "f2f554180034953f",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Hoàn thiện cơ chế, chính sách để tạo động lực phát triển kinh tế cửa khẩu",
-      "url": "https://baochinhphu.vn/hoan-thien-co-che-chinh-sach-de-tao-dong-luc-phat-trien-kinh-te-cua-khau-102260928115539529.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "a26aa901c387aa3f",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Kích hoạt mạnh mẽ tinh thần Nghị quyết 26-NQ/TW, nghiên cứu cơ chế đặc thù cho du lịch",
-      "url": "https://baochinhphu.vn/kich-hoat-manh-me-tinh-than-nghi-quyet-26-nq-tw-nghien-cuu-co-che-dac-thu-cho-du-lich-102260928133315599.htm",
-      "categories": [
-        "consumer_services"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "dad96a40e0e6a901",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Hoàn thiện dự thảo Luật Đất đai (sửa đổi), bảo đảm thống nhất, chặt chẽ",
-      "url": "https://baochinhphu.vn/hoan-thien-du-thao-luat-dat-dai-sua-doi-bao-dam-thong-nhat-chat-che-10226092813090285.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "09f41cdcd837fa2d",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định mới về tuyển dụng người Việt Nam làm việc cho tổ chức nước ngoài tại Việt Nam",
-      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-tuyen-dung-nguoi-viet-nam-lam-viec-cho-to-chuc-nuoc-ngoai-tai-viet-nam-10226092810363791.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "565ec56091db691b",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định mới về chào bán, giao dịch trái phiếu doanh nghiệp riêng lẻ",
-      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-chao-ban-giao-dich-trai-phieu-doanh-nghiep-rieng-le-102260928180806073.htm",
-      "categories": [
-        "capital_market"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8a053bb080dfa70e",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Nội dung cơ bản của Luật số 24/2026/QH16 sửa đổi, bổ sung một số điều của Luật Đầu tư",
-      "url": "https://xaydungchinhsach.chinhphu.vn/noi-dung-co-ban-cua-luat-so-24-2026-qh16-sua-doi-bo-sung-mot-so-dieu-cua-luat-dau-tu-119260928153454059.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "96cee9d0eea93938",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Dự thảo Nghị định sửa đổi, bổ sung một số điều phát triển công nghiệp hỗ trợ",
-      "url": "https://xaydungchinhsach.chinhphu.vn/du-thao-nghi-dinh-sua-doi-bo-sung-mot-so-dieu-phat-trien-cong-nghiep-ho-tro-119260928145549873.htm",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "60474f443a9389a9",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
-      "title": "Tổng công ty Thiết bị điện Đông Anh khởi công dự án nghiên cứu, thiết kế, chế tạo cuộn kháng bù ngang 500 kV",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/Tong-cong-ty-Thiet-bi-dien-Dong-Anh-khoi-cong-du-an-nghien-cuu-thiet-ke-che-tao-cuon-khang-bu-ngang-500-kV-60-12-509759",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f5253d34d679a681",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam làm việc với Đoàn kiểm tra về tổng rà soát hệ thống văn bản quy phạm pháp luật 24/09/2026",
-      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-%C4%91o%C3%A0n-ki%E1%BB%83m-tra-v%E1%BB%81-t%E1%BB%95ng-r%C3%A0-so%C3%A1t-h%E1%BB%87-th%E1%BB%91ng-v%C4%83n-b%E1%BA%A3n-quy-ph%E1%BA%A1m-ph%C3%A1p-lu-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-28T13:53:39.834085+00:00",
-      "collected_at": "2026-09-28T13:53:39.834085+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 25,
+    "policy_regulation": 23,
     "business_formation": 14,
     "infrastructure_delivery": 5,
     "hiring": 3,
-    "capital_flow": 3,
-    "capex_expansion": 1
+    "capex_expansion": 1,
+    "capital_flow": 1
   },
   "geographies_7d": {
     "Đồng Nai": 1,
-    "Huế": 1,
-    "Hà Nội": 1,
-    "Hải Phòng": 1,
-    "Lào Cai": 1
+    "Huế": 1
   },
   "coverage": {
-    "historical_events": 511,
-    "candidate_events": 195,
-    "reference_events": 311,
+    "historical_events": 517,
+    "candidate_events": 197,
+    "reference_events": 315,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
