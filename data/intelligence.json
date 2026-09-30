@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T12:34:08.947090+00:00",
+    "generated_at": "2026-09-30T22:15:22.540948+00:00",
     "status": "active",
     "history_days": 32,
     "required_history_days": 14,
@@ -9,17 +9,6 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "policy",
-      "recent_7d": 6,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 80,
-      "trend": "accelerating",
-      "confidence": 92,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
-    },
     {
       "category": "infrastructure",
       "recent_7d": 6,
@@ -50,6 +39,17 @@
       "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 5,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 36,
+      "trend": "stable",
+      "confidence": 85,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -88,14 +88,14 @@
     },
     {
       "category": "energy",
-      "recent_7d": 0,
+      "recent_7d": 2,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": -100,
-      "trend": "cooling",
-      "confidence": 58,
-      "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 3.0."
+      "delta_pct": -33,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "logistics",
@@ -155,6 +155,80 @@
   ],
   "top_new_events": [
     {
+      "id": "a054242d62e7cbb6",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 1/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+    },
+    {
+      "id": "2dbe9a7db53363d3",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 1/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+    },
+    {
+      "id": "819c1a98170f8765",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Lãnh đạo EVN rà soát tình hình triển khai các dự án tại Trung tâm Điện lực Quảng Trạch",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Lanh-dao-EVN-ra-soat-tinh-hinh-trien-khai-cac-du-an-tai-Trung-tam-Dien-luc-Quang-Trach-60-12-509806",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+    },
+    {
+      "id": "9a4c437b841ee70a",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Lãnh đạo EVN rà soát tình hình triển khai các dự án tại Trung tâm Điện lực Quảng Trạch",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Lanh-dao-EVN-ra-soat-tinh-hinh-trien-khai-cac-du-an-tai-Trung-tam-Dien-luc-Quang-Trach-60-13-509806",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+    },
+    {
       "id": "8c27a133e213c2e3",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T12:34:08.947090+00:00"
+      "first_seen_at": "2026-09-30T12:34:08.947090+00:00",
+      "collected_at": "2026-09-30T12:34:08.947090+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ffbdd1f04aae7ea5",
@@ -213,138 +289,14 @@
       "first_seen_at": "2026-09-30T05:31:46.199886+00:00",
       "collected_at": "2026-09-30T05:31:46.199886+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "0e48ee83b054e8ac",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 30/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-29T22:14:53.478732+00:00",
-      "collected_at": "2026-09-29T22:14:53.478732+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "855895dd12897e05",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 30/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T22:14:53.478732+00:00",
-      "collected_at": "2026-09-29T22:14:53.478732+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "ca78de49b49928bd",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
-      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-khoi-cong-du-an-dau-tu-bao-quan-tu-bo-phuc-hoi-dien-kinh-thien-102260929140334018.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
-      "collected_at": "2026-09-29T12:51:54.496115+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "15ea8eb02947e14f",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định về truy xuất nguồn gốc sản phẩm, hàng hóa",
-      "url": "https://baochinhphu.vn/quy-dinh-ve-truy-xuat-nguon-goc-san-pham-hang-hoa-102260929180723388.htm",
-      "categories": [
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
-      "collected_at": "2026-09-29T12:51:54.496115+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "5cd6f0d6d31a7e73",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Nghiên cứu đưa cao tốc Hữu Nghị - Chi Lăng và Đồng Đăng - Trà Lĩnh vào khai thác tạm miễn phí dịp Tết",
-      "url": "https://baochinhphu.vn/nghien-cuu-dua-cao-toc-huu-nghi-chi-lang-va-dong-dang-tra-linh-vao-khai-thac-tam-mien-phi-dip-tet-102260929161514777.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
-      "collected_at": "2026-09-29T12:51:54.496115+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "e6dcd3748a139401",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
-      "categories": [
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "Đồng Nai"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
-      "collected_at": "2026-09-29T12:51:54.496115+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 22,
+    "policy_regulation": 21,
     "business_formation": 14,
     "infrastructure_delivery": 5,
+    "market_data": 3,
     "hiring": 3,
-    "market_data": 1,
     "capex_expansion": 1,
     "capital_flow": 1
   },
@@ -352,9 +304,9 @@
     "Đồng Nai": 2
   },
   "coverage": {
-    "historical_events": 536,
-    "candidate_events": 200,
-    "reference_events": 331,
+    "historical_events": 541,
+    "candidate_events": 204,
+    "reference_events": 332,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
