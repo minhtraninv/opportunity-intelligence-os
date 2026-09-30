@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T05:31:46.199886+00:00",
+    "generated_at": "2026-09-30T12:34:08.947090+00:00",
     "status": "active",
-    "history_days": 31,
+    "history_days": 32,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,26 +10,26 @@
   },
   "category_changes": [
     {
-      "category": "infrastructure",
-      "recent_7d": 7,
+      "category": "policy",
+      "recent_7d": 6,
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
-      "delta_pct": 110,
-      "trend": "accelerating",
-      "confidence": 94,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 7,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 133,
+      "delta_pct": 80,
       "trend": "accelerating",
       "confidence": 92,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 6,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 64,
+      "trend": "accelerating",
+      "confidence": 87,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "labor",
@@ -44,10 +44,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 5,
+      "recent_7d": 6,
       "baseline_21d": 18,
       "baseline_expected_7d": 6.0,
-      "delta_pct": -17,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "8c27a133e213c2e3",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Tăng phụ cấp với cán bộ, công chức cấp xã; tập trung xây dựng Đề án cải cách tiền lương, bảo hiểm xã hội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/tang-phu-cap-voi-can-bo-cong-chuc-cap-xa-tap-trung-xay-dung-de-an-cai-cach-tien-luong-bao-hiem-xa-hoi-119260930125526574.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T12:34:08.947090+00:00"
+    },
+    {
       "id": "ffbdd1f04aae7ea5",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -172,7 +190,9 @@
         "Đồng Nai"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T05:31:46.199886+00:00"
+      "first_seen_at": "2026-09-30T05:31:46.199886+00:00",
+      "collected_at": "2026-09-30T05:31:46.199886+00:00",
+      "last_seen_at": null
     },
     {
       "id": "52023a64eaebeaaa",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T05:31:46.199886+00:00"
+      "first_seen_at": "2026-09-30T05:31:46.199886+00:00",
+      "collected_at": "2026-09-30T05:31:46.199886+00:00",
+      "last_seen_at": null
     },
     {
       "id": "0e48ee83b054e8ac",
@@ -315,46 +337,28 @@
       "first_seen_at": "2026-09-29T12:51:54.496115+00:00",
       "collected_at": "2026-09-29T12:51:54.496115+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "de8e8c0d45d222f5",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Dự thảo Nghị định quy định mức lương tối thiểu đối với người lao động làm việc theo hợp đồng lao động",
-      "url": "https://xaydungchinhsach.chinhphu.vn/du-thao-nghi-dinh-quy-dinh-muc-luong-toi-thieu-voi-hop-dong-lao-dong-119260928090358876.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-29T05:43:18.679571+00:00",
-      "collected_at": "2026-09-29T05:43:18.679571+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 23,
+    "policy_regulation": 22,
     "business_formation": 14,
-    "infrastructure_delivery": 6,
+    "infrastructure_delivery": 5,
     "hiring": 3,
+    "market_data": 1,
     "capex_expansion": 1,
     "capital_flow": 1
   },
   "geographies_7d": {
-    "Đồng Nai": 2,
-    "Huế": 1
+    "Đồng Nai": 2
   },
   "coverage": {
-    "historical_events": 527,
-    "candidate_events": 199,
-    "reference_events": 323,
+    "historical_events": 536,
+    "candidate_events": 200,
+    "reference_events": 331,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 0
+    "source_errors_last_run": 1
   },
-  "warnings": []
+  "warnings": [
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+  ]
 }
