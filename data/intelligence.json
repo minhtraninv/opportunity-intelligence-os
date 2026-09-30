@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T22:14:53.478732+00:00",
+    "generated_at": "2026-09-30T05:31:46.199886+00:00",
     "status": "active",
     "history_days": 31,
     "required_history_days": 14,
@@ -9,6 +9,17 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
+    {
+      "category": "infrastructure",
+      "recent_7d": 7,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 110,
+      "trend": "accelerating",
+      "confidence": 94,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
+    },
     {
       "category": "policy",
       "recent_7d": 7,
@@ -21,33 +32,22 @@
       "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
-      "category": "infrastructure",
-      "recent_7d": 6,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 80,
-      "trend": "accelerating",
-      "confidence": 92,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
-    },
-    {
       "category": "labor",
       "recent_7d": 5,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 114,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 150,
       "trend": "accelerating",
-      "confidence": 77,
+      "confidence": 75,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.3."
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "construction",
-      "recent_7d": 6,
-      "baseline_21d": 17,
-      "baseline_expected_7d": 5.7,
-      "delta_pct": 6,
+      "recent_7d": 5,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -17,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -77,10 +77,10 @@
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "ffbdd1f04aae7ea5",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Cao tốc Bến Lức - Long Thành thông xe toàn tuyến từ ngày 30/9",
+      "url": "https://baochinhphu.vn/cao-toc-ben-luc-long-thanh-thong-xe-toan-tuyen-tu-ngay-30-9-102260929141812748.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Đồng Nai"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T05:31:46.199886+00:00"
+    },
+    {
+      "id": "52023a64eaebeaaa",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Hướng dẫn chính sách cho vay phát triển công nghiệp hỗ trợ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-chinh-sach-cho-vay-phat-trien-cong-nghiep-ho-tro-119260930102242536.htm",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-09-30T05:31:46.199886+00:00"
+    },
+    {
       "id": "0e48ee83b054e8ac",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-29T22:14:53.478732+00:00"
+      "first_seen_at": "2026-09-29T22:14:53.478732+00:00",
+      "collected_at": "2026-09-29T22:14:53.478732+00:00",
+      "last_seen_at": null
     },
     {
       "id": "855895dd12897e05",
@@ -190,7 +230,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-29T22:14:53.478732+00:00"
+      "first_seen_at": "2026-09-29T22:14:53.478732+00:00",
+      "collected_at": "2026-09-29T22:14:53.478732+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ca78de49b49928bd",
@@ -293,70 +335,26 @@
       "first_seen_at": "2026-09-29T05:43:18.679571+00:00",
       "collected_at": "2026-09-29T05:43:18.679571+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "2e3bdb3f1d9f4cec",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 29/9/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-09-28T23:15:43.508140+00:00",
-      "collected_at": "2026-09-28T23:15:43.508140+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "5015292b1070dc64",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 29/9 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-28T23:15:43.508140+00:00",
-      "collected_at": "2026-09-28T23:15:43.508140+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 23,
     "business_formation": 14,
-    "infrastructure_delivery": 5,
+    "infrastructure_delivery": 6,
     "hiring": 3,
     "capex_expansion": 1,
     "capital_flow": 1
   },
   "geographies_7d": {
-    "Đồng Nai": 1,
+    "Đồng Nai": 2,
     "Huế": 1
   },
   "coverage": {
-    "historical_events": 517,
-    "candidate_events": 197,
-    "reference_events": 315,
+    "historical_events": 527,
+    "candidate_events": 199,
+    "reference_events": 323,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 0
   },
-  "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
-  ]
+  "warnings": []
 }
