@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T22:15:22.540948+00:00",
+    "generated_at": "2026-10-01T05:52:25.378093+00:00",
     "status": "active",
     "history_days": 32,
     "required_history_days": 14,
@@ -11,14 +11,25 @@
   "category_changes": [
     {
       "category": "infrastructure",
-      "recent_7d": 6,
+      "recent_7d": 7,
       "baseline_21d": 11,
       "baseline_expected_7d": 3.7,
-      "delta_pct": 64,
+      "delta_pct": 91,
       "trend": "accelerating",
-      "confidence": 87,
+      "confidence": 89,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 5,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 67,
+      "trend": "accelerating",
+      "confidence": 81,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "labor",
@@ -33,10 +44,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 6,
+      "recent_7d": 7,
       "baseline_21d": 18,
       "baseline_expected_7d": 6.0,
-      "delta_pct": 0,
+      "delta_pct": 17,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -50,6 +61,17 @@
       "delta_pct": 36,
       "trend": "stable",
       "confidence": 85,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 2,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -33,
+      "trend": "stable",
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -70,28 +92,6 @@
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
       "delta_pct": 33,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 3,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 0,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 2,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -120,18 +120,18 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "consumer_services",
+      "category": "capital_market",
       "recent_7d": 1,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 53,
+      "confidence": 49,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
+      "category": "consumer_services",
       "recent_7d": 1,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
@@ -155,6 +155,80 @@
   ],
   "top_new_events": [
     {
+      "id": "9091790186f535de",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Cao tốc Bến Lức - Long Thành chính thức thông xe toàn tuyến",
+      "url": "https://baochinhphu.vn/cao-toc-ben-luc-long-thanh-chinh-thuc-thong-xe-toan-tuyen-102261001024813814.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Đồng Nai"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+    },
+    {
+      "id": "7eed39b51f9aeb03",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Tăng phụ cấp với cán bộ, công chức cấp xã; tập trung xây dựng Đề án cải cách chính sách tiền lương và bảo hiểm xã hội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/tang-phu-cap-voi-can-bo-cong-chuc-cap-xa-tap-trung-xay-dung-de-an-cai-cach-tien-luong-bao-hiem-xa-hoi-119260930125526574.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+    },
+    {
+      "id": "1f321f1ab4c2bbb7",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Kiểm tra tình hình thi công Dự án Nhà máy thuỷ điện Trị An mở rộng",
+      "url": "https://www.evn.com.vn/d/vi-VN/news-gallery/Kiem-tra-tinh-hinh-thi-cong-Du-an-Nha-may-thuy-dien-Tri-An-mo-rong-60-43-509808",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+    },
+    {
+      "id": "3f114da5efbe7601",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Kiểm tra tình hình thi công Dự án Nhà máy thuỷ điện Trị An mở rộng",
+      "url": "https://www.evn.com.vn/d/vi-VN/news-gallery/Kiem-tra-tinh-hinh-thi-cong-Du-an-Nha-may-thuy-dien-Tri-An-mo-rong-60-13-509808",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+    },
+    {
       "id": "a054242d62e7cbb6",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +246,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00",
+      "collected_at": "2026-09-30T22:15:22.540948+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2dbe9a7db53363d3",
@@ -190,12 +266,14 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00",
+      "collected_at": "2026-09-30T22:15:22.540948+00:00",
+      "last_seen_at": null
     },
     {
       "id": "819c1a98170f8765",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
+      "source_id": "evn-invest",
+      "publisher": "EVN - Đầu tư xây dựng",
       "title": "Lãnh đạo EVN rà soát tình hình triển khai các dự án tại Trung tâm Điện lực Quảng Trạch",
       "url": "https://www.evn.com.vn/d/vi-VN/news/Lanh-dao-EVN-ra-soat-tinh-hinh-trien-khai-cac-du-an-tai-Trung-tam-Dien-luc-Quang-Trach-60-12-509806",
       "categories": [
@@ -208,7 +286,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00",
+      "collected_at": "2026-09-30T22:15:22.540948+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9a4c437b841ee70a",
@@ -226,7 +306,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-09-30T22:15:22.540948+00:00"
+      "first_seen_at": "2026-09-30T22:15:22.540948+00:00",
+      "collected_at": "2026-09-30T22:15:22.540948+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8c27a133e213c2e3",
@@ -247,66 +329,24 @@
       "first_seen_at": "2026-09-30T12:34:08.947090+00:00",
       "collected_at": "2026-09-30T12:34:08.947090+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "ffbdd1f04aae7ea5",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Cao tốc Bến Lức - Long Thành thông xe toàn tuyến từ ngày 30/9",
-      "url": "https://baochinhphu.vn/cao-toc-ben-luc-long-thanh-thong-xe-toan-tuyen-tu-ngay-30-9-102260929141812748.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "Đồng Nai"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-30T05:31:46.199886+00:00",
-      "collected_at": "2026-09-30T05:31:46.199886+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "52023a64eaebeaaa",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Hướng dẫn chính sách cho vay phát triển công nghiệp hỗ trợ",
-      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-chinh-sach-cho-vay-phat-trien-cong-nghiep-ho-tro-119260930102242536.htm",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-30T05:31:46.199886+00:00",
-      "collected_at": "2026-09-30T05:31:46.199886+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 21,
+    "policy_regulation": 22,
     "business_formation": 14,
-    "infrastructure_delivery": 5,
-    "market_data": 3,
+    "infrastructure_delivery": 6,
+    "market_data": 5,
     "hiring": 3,
     "capex_expansion": 1,
     "capital_flow": 1
   },
   "geographies_7d": {
-    "Đồng Nai": 2
+    "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 541,
-    "candidate_events": 204,
-    "reference_events": 332,
+    "historical_events": 547,
+    "candidate_events": 208,
+    "reference_events": 334,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
