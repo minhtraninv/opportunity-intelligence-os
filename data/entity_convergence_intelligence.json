@@ -1,32 +1,203 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-01T05:53:58.685497+00:00",
+    "generated_at": "2026-10-01T13:14:51.723484+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-01T05:53:58.926139+00:00"
+    "trust_hardened_at": "2026-10-01T13:14:52.066074+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 62,
-    "observed_auto_entities": 52,
+    "observed_entities": 61,
+    "observed_auto_entities": 51,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 16,
-    "watch": 38,
+    "watch": 37,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 16,
+    "discovery_candidates": 15,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 13
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
   "discovery_candidates": [
+    {
+      "entity_id": "vingroup_ecosystem",
+      "label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 21,
+      "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "labor",
+        "operating",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 11,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 8,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "1d0c7f4d1d3cebf2",
+          "event_signature": "af4cdec6194f4a3d",
+          "family": "capital",
+          "title": "Đọc nhanh 1-10: Lợi suất trái phiếu Mỹ lên cao nhất từ 2002 khiến Dow Jones xuống thấp nhất gần 4 tháng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-1-10-loi-suat-trai-phieu-my-len-cao-nhat-tu-2002-khien-dow-jones-xuong-thap-nhat-gan-4-thang-100261001072201959.htm",
+          "observed_at": "2026-10-01T13:14:32.693924+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8f58232304601084",
+          "event_signature": "53ca3f4301855a92",
+          "family": "capital",
+          "title": "VinFast Việt Nam tăng vốn lên hơn 1,3 tỷ USD",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vinfast-viet-nam-tang-von-len-hon-1-3-ty-usd-5127136.html",
+          "observed_at": "2026-10-01T07:29:05+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6e846ccfd70f2537",
+          "event_signature": "737db3b65b841884",
+          "family": "project_execution",
+          "title": "Vinpearl dự kiến khai trương hệ sinh thái 'siêu điểm đến' du lịch, giải trí Cần Giờ từ tháng 7-2027",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vinpearl-du-kien-khai-truong-he-sinh-thai-sieu-diem-den-du-lich-giai-tri-can-gio-tu-thang-7-2027-100260929201923349.htm",
+          "observed_at": "2026-09-30T12:35:18.816138+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "eebbdaabb7172b4d",
+          "event_signature": "26cfd8a66d38726b",
+          "family": "project_execution",
+          "title": "Vinpearl đồng loạt khai trương hệ thống 'siêu điểm đến' tại Cần Giờ",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vinpearl-dong-loat-khai-truong-he-thong-sieu-diem-den-tai-can-gio-185260929224718546.htm",
+          "observed_at": "2026-09-29T23:04:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a10ac3dcd73a4387",
+          "event_signature": "877e8734e2d728b1",
+          "family": "project_execution",
+          "title": "Một xã ở Tây Ninh được Vingroup tài trợ 350 tỉ đồng xây quảng trường",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/mot-xa-o-tay-ninh-duoc-vingroup-tai-tro-350-ti-dong-xay-quang-truong-185260929162345084.htm",
+          "observed_at": "2026-09-29T12:23:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ebe2a15b23a1d356",
+          "event_signature": "20d29b636f863b0a",
+          "family": "operating",
+          "title": "Leapmotor vượt Subaru và Mitsubishi Motors của Nhật Bản về doanh số toàn cầu",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/leapmotor-vuot-subaru-va-mitsubishi-motors-cua-nhat-ban-ve-doanh-so-toan-cau-post1137460.vnp",
+          "observed_at": "2026-09-21T14:57:45+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "651f98e04ca31236",
+          "event_signature": "e751d24345b48ec0",
+          "family": "operating",
+          "title": "Vingroup ưu đãi tới 9% khi đổi xe xăng sang xe điện, tài xế công nghệ hưởng 100% doanh thu",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vingroup-uu-dai-toi-9-khi-doi-xe-xang-sang-xe-dien-tai-xe-cong-nghe-huong-100-doanh-thu-100260919095146287.htm",
+          "observed_at": "2026-09-20T20:49:11.246064+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "50ec9ca66804d528",
+          "event_signature": "dbdc414bf7cfc022",
+          "family": "labor",
+          "title": "Ông Phạm Nhật Vượng và bà Phạm Thu Hương chuyển giao quyền lãnh đạo tại VinFast, GSM",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
+          "observed_at": "2026-09-12T02:04:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "labor",
+        "operating",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
     {
       "entity_id": "auto-tổng-bí-012dc539",
       "label": "Tổng Bí",
@@ -38,7 +209,6 @@
       "evidence_families": [
         "labor",
         "operating",
-        "policy",
         "project_execution",
         "strategy"
       ],
@@ -51,8 +221,8 @@
       ],
       "event_count": 11,
       "primary_evidence_count": 0,
-      "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "media_evidence_count": 7,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -67,6 +237,20 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "2c3f32386a1d776f",
+          "event_signature": "3fd857b3a005777a",
+          "family": "strategy",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm tiếp Chủ tịch Hội đồng quản trị JBIC",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tiep-chu-tich-hoi-dong-quan-tri-jbic-post1139510.vnp",
+          "observed_at": "2026-10-01T19:26:57+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "ca78de49b49928bd",
           "family": "project_execution",
@@ -165,21 +349,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "63b7006ece23ec86",
-          "family": "policy",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Hoàn thiện quy định về đảng viên làm kinh tế tư nhân, phát huy nguồn lực cho phát triển",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoan-thien-quy-dinh-ve-dang-vien-lam-kinh-te-tu-nhan-phat-huy-nguon-luc-cho-phat-trien-102260914190726927.htm",
-          "observed_at": "2026-09-14T12:45:56.371650+00:00",
-          "categories": [
-            "policy"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
         }
       ],
       "investigation_questions": [
@@ -198,12 +367,11 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 2,
+      "official_headline_discovery_count": 1,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "labor",
         "operating",
-        "policy",
         "project_execution",
         "strategy"
       ],
@@ -395,178 +563,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "vingroup_ecosystem",
-      "label": "Hệ sinh thái Vingroup",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "labor",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 10,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 8,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "1d0c7f4d1d3cebf2",
-          "event_signature": "af4cdec6194f4a3d",
-          "family": "capital",
-          "title": "Đọc nhanh 1-10: Lợi suất trái phiếu Mỹ lên cao nhất từ 2002 khiến Dow Jones xuống thấp nhất gần 4 tháng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/doc-nhanh-1-10-loi-suat-trai-phieu-my-len-cao-nhat-tu-2002-khien-dow-jones-xuong-thap-nhat-gan-4-thang-100261001072201959.htm",
-          "observed_at": "2026-10-01T05:53:38.049583+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "6e846ccfd70f2537",
-          "event_signature": "737db3b65b841884",
-          "family": "project_execution",
-          "title": "Vinpearl dự kiến khai trương hệ sinh thái 'siêu điểm đến' du lịch, giải trí Cần Giờ từ tháng 7-2027",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vinpearl-du-kien-khai-truong-he-sinh-thai-sieu-diem-den-du-lich-giai-tri-can-gio-tu-thang-7-2027-100260929201923349.htm",
-          "observed_at": "2026-09-30T12:35:18.816138+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "eebbdaabb7172b4d",
-          "event_signature": "26cfd8a66d38726b",
-          "family": "project_execution",
-          "title": "Vinpearl đồng loạt khai trương hệ thống 'siêu điểm đến' tại Cần Giờ",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vinpearl-dong-loat-khai-truong-he-thong-sieu-diem-den-tai-can-gio-185260929224718546.htm",
-          "observed_at": "2026-09-29T23:04:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a10ac3dcd73a4387",
-          "event_signature": "877e8734e2d728b1",
-          "family": "project_execution",
-          "title": "Một xã ở Tây Ninh được Vingroup tài trợ 350 tỉ đồng xây quảng trường",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/mot-xa-o-tay-ninh-duoc-vingroup-tai-tro-350-ti-dong-xay-quang-truong-185260929162345084.htm",
-          "observed_at": "2026-09-29T12:23:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ebe2a15b23a1d356",
-          "event_signature": "20d29b636f863b0a",
-          "family": "operating",
-          "title": "Leapmotor vượt Subaru và Mitsubishi Motors của Nhật Bản về doanh số toàn cầu",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/leapmotor-vuot-subaru-va-mitsubishi-motors-cua-nhat-ban-ve-doanh-so-toan-cau-post1137460.vnp",
-          "observed_at": "2026-09-21T14:57:45+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "651f98e04ca31236",
-          "event_signature": "e751d24345b48ec0",
-          "family": "operating",
-          "title": "Vingroup ưu đãi tới 9% khi đổi xe xăng sang xe điện, tài xế công nghệ hưởng 100% doanh thu",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vingroup-uu-dai-toi-9-khi-doi-xe-xang-sang-xe-dien-tai-xe-cong-nghe-huong-100-doanh-thu-100260919095146287.htm",
-          "observed_at": "2026-09-20T20:49:11.246064+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "50ec9ca66804d528",
-          "event_signature": "dbdc414bf7cfc022",
-          "family": "labor",
-          "title": "Ông Phạm Nhật Vượng và bà Phạm Thu Hương chuyển giao quyền lãnh đạo tại VinFast, GSM",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/ong-pham-nhat-vuong-va-ba-pham-thu-huong-chuyen-giao-quyen-lanh-dao-tai-vinfast-gsm-185260912085343301.htm",
-          "observed_at": "2026-09-12T02:04:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "c6e1cc78c5f4855f",
-          "event_signature": "463b6422bd84f7db",
-          "family": "strategy",
-          "title": "VITW 2026: Mở rộng cơ hội cho doanh nghiệp công nghiệp Việt Nam",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vitw-2026-mo-rong-co-hoi-cho-doanh-nghiep-cong-nghiep-viet-nam-post1135112.vnp",
-          "observed_at": "2026-09-09T15:19:25+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "labor",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-vietjet-b0c33c77",
       "label": "Vietjet",
       "entity_type": "organization_candidate",
@@ -588,7 +584,7 @@
       "event_count": 8,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1492,7 +1488,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment"
       ],
@@ -2094,113 +2090,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-agribank-190a6f70",
-      "label": "Agribank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "Agribank đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
-      "evidence_families": [
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "721b72550e28ebb2",
-          "event_signature": "3496a0dc020d4165",
-          "family": "project_execution",
-          "title": "Agribank giảm tới 1% lãi suất cho vay, hỗ trợ doanh nghiệp xây dựng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/agribank-giam-toi-1-lai-suat-cho-vay-ho-tro-doanh-nghiep-xay-dung-100260930155108949.htm",
-          "observed_at": "2026-10-01T05:53:38.049583+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "9c881b5f693c9bda",
-          "event_signature": "08685ce3402c301b",
-          "family": "operating",
-          "title": "Agribank miễn loạt phí cho trường học, cơ sở giáo dục mở tài khoản",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/agribank-mien-loat-phi-cho-truong-hoc-co-so-giao-duc-mo-tai-khoan-100260930180326477.htm",
-          "observed_at": "2026-10-01T05:53:38.049583+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "50162189bd14ce09",
-          "event_signature": "2eaabb4a628b40ba",
-          "family": "project_execution",
-          "title": "Agribank phát hành 15.000 tỷ đồng trái phiếu ra công chúng tăng vốn cấp 2",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/agribank-phat-hanh-15000-ty-dong-trai-phieu-ra-cong-chung-tang-von-cap-2-post1138724.vnp",
-          "observed_at": "2026-09-28T11:23:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "679037a730ca5ac4",
-          "event_signature": "8b51885504696f08",
-          "family": "project_execution",
-          "title": "Agribank ký hợp đồng tín dụng với PVEP, tài trợ dự án khí Lô B",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/agribank-ky-hop-dong-tin-dung-voi-pvep-tai-tro-du-an-khi-lo-b-100260924180603065.htm",
-          "observed_at": "2026-09-25T04:57:37.438855+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-mastercard-c19e33e7",
       "label": "Mastercard",
       "entity_type": "organization_candidate",
@@ -2231,7 +2120,7 @@
           "title": "Mastercard tăng hợp tác, thúc đẩy thanh toán số tại Việt Nam",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/mastercard-tang-hop-tac-thuc-day-thanh-toan-so-tai-viet-nam-100260930145912205.htm",
-          "observed_at": "2026-10-01T05:53:38.049583+00:00",
+          "observed_at": "2026-10-01T13:14:32.693924+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -2318,6 +2207,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "label": "Hải Phòng",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-cà-mau-5be786d4",
       "label": "Cà Mau",
       "entity_type": "location",
@@ -2342,12 +2237,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-hải-phòng-48a73a83",
-      "label": "Hải Phòng",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-khánh-hòa-b1f03cd2",
       "label": "Khánh Hòa",
       "entity_type": "location",
@@ -2362,6 +2251,12 @@
     {
       "entity_id": "auto-thái-nguyên-d5b0cb3a",
       "label": "Thái Nguyên",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-gia-lai-f5d3ac1a",
+      "label": "Gia Lai",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },

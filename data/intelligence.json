@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T05:52:25.378093+00:00",
+    "generated_at": "2026-10-01T13:13:21.385771+00:00",
     "status": "active",
-    "history_days": 32,
+    "history_days": 33,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,13 +12,13 @@
     {
       "category": "infrastructure",
       "recent_7d": 7,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 91,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": 75,
       "trend": "accelerating",
-      "confidence": 89,
+      "confidence": 91,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.0."
     },
     {
       "category": "fdi_industrial",
@@ -27,9 +27,9 @@
       "baseline_expected_7d": 3.0,
       "delta_pct": 67,
       "trend": "accelerating",
-      "confidence": 81,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "confidence": 88,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "labor",
@@ -44,13 +44,13 @@
     },
     {
       "category": "construction",
-      "recent_7d": 7,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": 17,
+      "recent_7d": 8,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": 20,
       "trend": "stable",
-      "confidence": 93,
-      "source_diversity_7d": 2,
+      "confidence": 100,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -67,11 +67,11 @@
     {
       "category": "energy",
       "recent_7d": 2,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -25,
       "trend": "stable",
-      "confidence": 75,
+      "confidence": 73,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -99,9 +99,9 @@
     },
     {
       "category": "logistics",
-      "recent_7d": 3,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
+      "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 63,
@@ -110,9 +110,9 @@
     },
     {
       "category": "data_ai",
-      "recent_7d": 2,
-      "baseline_21d": 1,
-      "baseline_expected_7d": 0.3,
+      "recent_7d": 1,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 53,
@@ -155,6 +155,83 @@
   ],
   "top_new_events": [
     {
+      "id": "3b92d094309b6938",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Giải ngân vốn đầu tư công: Một số bộ, cơ quan trung ương đạt thấp",
+      "url": "https://baochinhphu.vn/giai-ngan-von-dau-tu-cong-mot-so-bo-co-quan-trung-uong-dat-thap-10226100115562495.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T13:13:21.385771+00:00"
+    },
+    {
+      "id": "e79912edfc9bc484",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Đề nghị quy định rõ nguyên tắc ban hành bảng giá đất, hệ số điều chỉnh và tỷ lệ thu tiền sử dụng đất",
+      "url": "https://xaydungchinhsach.chinhphu.vn/de-nghi-quy-dinh-ro-nguyen-tac-ban-hanh-bang-gia-dat-he-so-dieu-chinh-va-ty-le-thu-tien-su-dung-dat-119261001165358088.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-01T13:13:21.385771+00:00"
+    },
+    {
+      "id": "ff236c89ab89fabf",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nghị quyết 303/NQ-CP về giao chỉ tiêu phát triển nhà ở xã hội, nhà ở cho thuê ở địa phương giai đoạn 2026-2030",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-303-nq-cp-ve-giao-chi-tieu-phat-trien-nha-o-xa-hoi-nha-o-cho-thue-o-dia-phuong-giai-doan-2026-2030-119261001112614257.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026,
+        2030
+      ],
+      "first_seen_at": "2026-10-01T13:13:21.385771+00:00"
+    },
+    {
+      "id": "d56c4048c223418d",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "EVNNPC: Dồn lực công tác đầu tư xây dựng, tăng tốc về đích các chỉ tiêu năm 2026",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/EVNNPC-Don-luc-cong-tac-dau-tu-xay-dung-tang-toc-ve-dich-cac-chi-tieu-nam-2026-60-3557-509812",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-01T13:13:21.385771+00:00"
+    },
+    {
       "id": "9091790186f535de",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -172,7 +249,9 @@
         "Đồng Nai"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00",
+      "collected_at": "2026-10-01T05:52:25.378093+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7eed39b51f9aeb03",
@@ -190,12 +269,14 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00",
+      "collected_at": "2026-10-01T05:52:25.378093+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1f321f1ab4c2bbb7",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
+      "source_id": "evn-invest",
+      "publisher": "EVN - Đầu tư xây dựng",
       "title": "Kiểm tra tình hình thi công Dự án Nhà máy thuỷ điện Trị An mở rộng",
       "url": "https://www.evn.com.vn/d/vi-VN/news-gallery/Kiem-tra-tinh-hinh-thi-cong-Du-an-Nha-may-thuy-dien-Tri-An-mo-rong-60-43-509808",
       "categories": [
@@ -208,7 +289,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00",
+      "collected_at": "2026-10-01T05:52:25.378093+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3f114da5efbe7601",
@@ -226,7 +309,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-01T05:52:25.378093+00:00"
+      "first_seen_at": "2026-10-01T05:52:25.378093+00:00",
+      "collected_at": "2026-10-01T05:52:25.378093+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a054242d62e7cbb6",
@@ -309,44 +394,23 @@
       "first_seen_at": "2026-09-30T22:15:22.540948+00:00",
       "collected_at": "2026-09-30T22:15:22.540948+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "8c27a133e213c2e3",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Tăng phụ cấp với cán bộ, công chức cấp xã; tập trung xây dựng Đề án cải cách tiền lương, bảo hiểm xã hội",
-      "url": "https://xaydungchinhsach.chinhphu.vn/tang-phu-cap-voi-can-bo-cong-chuc-cap-xa-tap-trung-xay-dung-de-an-cai-cach-tien-luong-bao-hiem-xa-hoi-119260930125526574.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-09-30T12:34:08.947090+00:00",
-      "collected_at": "2026-09-30T12:34:08.947090+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 22,
+    "policy_regulation": 23,
     "business_formation": 14,
+    "market_data": 6,
     "infrastructure_delivery": 6,
-    "market_data": 5,
     "hiring": 3,
-    "capex_expansion": 1,
     "capital_flow": 1
   },
   "geographies_7d": {
     "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 547,
-    "candidate_events": 208,
-    "reference_events": 334,
+    "historical_events": 554,
+    "candidate_events": 212,
+    "reference_events": 337,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
