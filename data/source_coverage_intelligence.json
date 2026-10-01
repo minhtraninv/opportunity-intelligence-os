@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-10-01T13:14:51.981725+00:00",
+    "generated_at": "2026-10-01T22:42:46.984313+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-01T13:14:52.073304+00:00"
+    "trust_hardened_at": "2026-10-01T22:42:47.065538+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
@@ -17,9 +17,9 @@
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 17,
+    "healthy_sources": 16,
     "productive_sources": 4,
-    "source_errors": 1,
+    "source_errors": 2,
     "planned_sources": 8,
     "verified_productive_sources": 4,
     "discovery_productive_sources": 11
@@ -123,21 +123,22 @@
       "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 3,
+      "healthy_sources": 2,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
+      "broken_sources": 1,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
-        "Ủy ban Chứng khoán Nhà nước",
         "HNX - công bố niêm yết",
         "HNX - công bố UPCoM"
       ],
       "productive_source_names": [],
-      "broken_source_names": [],
+      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước"
+      ],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
@@ -152,21 +153,22 @@
       "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 3,
+      "healthy_sources": 2,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
+      "broken_sources": 1,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
         "Bộ Tài chính - Tin tức tài chính",
-        "Ủy ban Chứng khoán Nhà nước",
         "HNX - công bố niêm yết"
       ],
       "productive_source_names": [],
-      "broken_source_names": [],
+      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước"
+      ],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp",
         "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
@@ -644,7 +646,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 2,
-      "discovery_evidence_items_this_run": 71,
+      "discovery_evidence_items_this_run": 73,
       "evidence_items_this_run": 2,
       "healthy_source_names": [
         "Cục Thống kê - Doanh nghiệp",
@@ -672,9 +674,9 @@
       "verified_productive_sources": 1,
       "discovery_productive_sources": 0,
       "broken_sources": 0,
-      "verified_evidence_items_this_run": 136,
+      "verified_evidence_items_this_run": 145,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 136,
+      "evidence_items_this_run": 145,
       "healthy_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
@@ -777,11 +779,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 82,
+      "discovered_items_this_run": 84,
       "evidence_items_this_run": 1,
       "error": null,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 69
+      "discovery_evidence_items_this_run": 71
     },
     {
       "id": "fia-fdi",
@@ -797,7 +799,7 @@
       "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7fe173de66f0>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
+      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7fe1efb4aa20>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -831,7 +833,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 133,
+      "discovered_items_this_run": 134,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
@@ -884,10 +886,10 @@
         "corporate_disclosures"
       ],
       "authority": 1.0,
-      "health": "ok",
+      "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": null,
+      "error": "Ủy ban Chứng khoán Nhà nước: ConnectTimeout: HTTPSConnectionPool(host='ssc.gov.vn', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ssc.gov.vn', port=443) at 0x7fe1efe3fef0>, 'Connection to ssc.gov.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -903,11 +905,11 @@
       ],
       "authority": 0.78,
       "health": "ok",
-      "discovered_items_this_run": 9,
-      "evidence_items_this_run": 9,
+      "discovered_items_this_run": 10,
+      "evidence_items_this_run": 10,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 9
+      "discovery_evidence_items_this_run": 10
     },
     {
       "id": "tuoitre-business",
@@ -921,11 +923,11 @@
       ],
       "authority": 0.76,
       "health": "ok",
-      "discovered_items_this_run": 6,
-      "evidence_items_this_run": 6,
+      "discovered_items_this_run": 3,
+      "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 6
+      "discovery_evidence_items_this_run": 3
     },
     {
       "id": "thanhnien-economy",
@@ -957,11 +959,11 @@
       ],
       "authority": 0.82,
       "health": "ok",
-      "discovered_items_this_run": 10,
-      "evidence_items_this_run": 10,
+      "discovered_items_this_run": 12,
+      "evidence_items_this_run": 12,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 10
+      "discovery_evidence_items_this_run": 12
     },
     {
       "id": "hnx-listed",
@@ -1009,10 +1011,10 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 136,
-      "evidence_items_this_run": 136,
+      "discovered_items_this_run": 145,
+      "evidence_items_this_run": 145,
       "error": null,
-      "verified_evidence_items_this_run": 136,
+      "verified_evidence_items_this_run": 145,
       "discovery_evidence_items_this_run": 0
     },
     {

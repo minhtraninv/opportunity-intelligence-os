@@ -2,21 +2,21 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-10-01T13:14:52.180012+00:00",
-    "local_date": "2026-10-01",
+    "generated_at": "2026-10-01T22:42:47.196056+00:00",
+    "local_date": "2026-10-02",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-01T13:14:52.344358+00:00"
+    "trust_hardened_at": "2026-10-01T22:42:47.349132+00:00"
   },
   "reports": {
     "daily": {
       "kind": "daily",
-      "period_key": "2026-10-01",
+      "period_key": "2026-10-02",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-10-01T13:14:52.179177+00:00",
-      "local_generated_at": "2026-10-01T20:14:52.170141+07:00",
+      "generated_at": "2026-10-01T22:42:47.195220+00:00",
+      "local_generated_at": "2026-10-02T05:42:47.186353+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 33,
@@ -254,7 +254,7 @@
         "coverage_change": {
           "strong": 0.0,
           "productive_sources": 0.0,
-          "source_errors": 0.0
+          "source_errors": 1.0
         }
       },
       "snapshot": {
@@ -397,7 +397,7 @@
           "broken": 1,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 2
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -409,8 +409,8 @@
       "period_key": "2026-W40",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-10-01T13:14:52.179572+00:00",
-      "local_generated_at": "2026-10-01T20:14:52.170141+07:00",
+      "generated_at": "2026-10-01T22:42:47.195587+00:00",
+      "local_generated_at": "2026-10-02T05:42:47.186353+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 33,
@@ -648,7 +648,7 @@
         "coverage_change": {
           "strong": 0.0,
           "productive_sources": 0.0,
-          "source_errors": 0.0
+          "source_errors": 1.0
         }
       },
       "snapshot": {
@@ -791,7 +791,7 @@
           "broken": 1,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 2
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -803,8 +803,8 @@
       "period_key": "2026-10",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-10-01T13:14:52.179816+00:00",
-      "local_generated_at": "2026-10-01T20:14:52.170141+07:00",
+      "generated_at": "2026-10-01T22:42:47.195843+00:00",
+      "local_generated_at": "2026-10-02T05:42:47.186353+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 33,
@@ -1042,7 +1042,7 @@
         "coverage_change": {
           "strong": 0.0,
           "productive_sources": 0.0,
-          "source_errors": 0.0
+          "source_errors": 1.0
         }
       },
       "snapshot": {
@@ -1185,7 +1185,7 @@
           "broken": 1,
           "missing": 2,
           "productive_sources": 4,
-          "source_errors": 1
+          "source_errors": 2
         }
       },
       "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -1193,6 +1193,6 @@
       "trust_notice": "Kỳ báo cáo đã vượt ngưỡng lịch sử tối thiểu; vẫn phải đọc cùng blind spots và phản chứng."
     }
   },
-  "history_count": 40,
+  "history_count": 41,
   "reporting_rule": "Daily = material delta; Weekly = main intelligence review; Monthly = regime/thesis audit. Insufficient history must remain explicit."
 }
