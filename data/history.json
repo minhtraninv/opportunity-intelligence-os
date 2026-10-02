@@ -1,7 +1,66 @@
 {
   "version": 2,
-  "updated_at": "2026-10-02T12:33:47.698526+00:00",
+  "updated_at": "2026-10-02T22:13:40.841341+00:00",
   "events": [
+    {
+      "id": "f765ef4c6f1ca4a4",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Triển khai cơ chế, chính sách đặc thù xử lý vi phạm pháp luật về kinh tế, ứng dụng KHCN, đổi mới sáng tạo, chuyển đổi số",
+      "url": "https://baochinhphu.vn/trien-khai-co-che-chinh-sach-dac-thu-xu-ly-vi-pham-phap-luat-ve-kinh-te-ung-dung-khcn-doi-moi-sang-tao-chuyen-doi-so-102261002193702377.htm",
+      "categories": [
+        "data_ai"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-02T22:13:40.841341+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "fac8b69689f0049b",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 3/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-02T22:13:40.841341+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "6cfbc22a3caff0be",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 3/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-02T22:13:40.841341+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "1c17f286906cc555",
       "source_id": "gov",
@@ -19,6 +78,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-10-02T12:33:47.698526+00:00",
+      "collected_at": "2026-10-02T12:33:47.698526+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -38,6 +99,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-10-02T12:33:47.698526+00:00",
+      "collected_at": "2026-10-02T12:33:47.698526+00:00",
+      "last_seen_at": null,
       "evidence_grade": "official_headline_discovery"
     },
     {
@@ -14901,15 +14964,34 @@
       },
       "total_events": 561,
       "source_errors": 1
+    },
+    {
+      "captured_at": "2026-10-02T22:13:40.841341+00:00",
+      "new_items": 3,
+      "new_candidates": 3,
+      "new_by_category": {
+        "data_ai": 1,
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2,
+        "policy_regulation": 1
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "gov": 1
+      },
+      "total_events": 564,
+      "source_errors": 1
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-10-02T12:35:15.485612+00:00",
+    "updated_at": "2026-10-02T22:15:02.613664+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
+      "official_headline_discovery": 218,
       "reference_only": 341,
-      "official_headline_discovery": 215,
       "primary_verified": 5
     }
   }
