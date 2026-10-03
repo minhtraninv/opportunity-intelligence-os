@@ -1,26 +1,26 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-02T22:15:07.042642+00:00",
+    "generated_at": "2026-10-03T05:19:39.413882+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-02T22:15:07.339025+00:00"
+    "trust_hardened_at": "2026-10-03T05:19:39.746276+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 62,
-    "observed_auto_entities": 52,
+    "observed_entities": 61,
+    "observed_auto_entities": 51,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 19,
-    "watch": 35,
+    "discovery_convergence": 20,
+    "watch": 33,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 15,
+    "discovery_candidates": 16,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 13
   },
@@ -400,7 +400,7 @@
       "event_count": 9,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -918,7 +918,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1235,7 +1235,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment"
       ],
@@ -1703,6 +1703,106 @@
       "discovery_evidence_families": [
         "operating",
         "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-vốn-fdi-7c5c8d1d",
+      "label": "Vốn FDI",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 14,
+      "why_now": "Vốn FDI đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "independent_publishers": [
+        "Báo Chính phủ",
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 3,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 2,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [],
+      "theme_context": [
+        {
+          "theme_id": "manufacturing_expansion",
+          "label": "manufacturing_expansion",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "4a9b1cf95b57037b",
+          "family": "capital",
+          "title": "Vốn FDI thực hiện 9 tháng đạt hơn 21 tỉ USD; cao nhất cùng kỳ 5 năm qua",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/von-fdi-thuc-hien-9-thang-dat-hon-21-ti-usd-cao-nhat-cung-ky-5-nam-qua-102261003103902217.htm",
+          "observed_at": "2026-10-03T05:18:01.201786+00:00",
+          "categories": [
+            "fdi_industrial"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "33e390d8d4a9f9f4",
+          "event_signature": "67d867502eef9258",
+          "family": "capital",
+          "title": "Vốn FDI vào Việt Nam tăng 76,4%, vốn thực hiện cao nhất 5 năm",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/von-fdi-vao-viet-nam-tang-764-von-thuc-hien-cao-nhat-5-nam-185261003101319866.htm",
+          "observed_at": "2026-10-03T03:18:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "29475a2df583a58b",
+          "event_signature": "cb6dace65efafa2a",
+          "family": "operating",
+          "title": "Vốn FDI thực hiện 8 tháng năm 2026 lập đỉnh 5 năm",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/von-fdi-thuc-hien-8-thang-nam-2026-lap-dinh-5-nam-post1134717.vnp",
+          "observed_at": "2026-09-07T16:11:46+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -2246,6 +2346,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-thái-nguyên-d5b0cb3a",
       "label": "Thái Nguyên",
       "entity_type": "location",
@@ -2254,12 +2360,6 @@
     {
       "entity_id": "auto-gia-lai-f5d3ac1a",
       "label": "Gia Lai",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-phú-thọ-d66a434f",
-      "label": "Phú Thọ",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
