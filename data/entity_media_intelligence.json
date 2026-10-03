@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-03T16:18:51.165177+00:00",
+    "generated_at": "2026-10-03T21:15:37.370271+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,9 +9,9 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 522,
-    "entities_seen_recently": 216,
-    "auto_discovered_entities": 206,
+    "recent_events": 517,
+    "entities_seen_recently": 215,
+    "auto_discovered_entities": 205,
     "history_events": 584
   },
   "source_health": [
@@ -19,7 +19,7 @@
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 8,
       "error": null
     },
     {
@@ -50,15 +50,15 @@
       "recent_events": 21
     },
     {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
-      "recent_events": 14
-    },
-    {
       "entity_id": "auto-tổng-bí-012dc539",
       "recent_events": 14
     },
     {
       "entity_id": "auto-quảng-ninh-3ed973db",
+      "recent_events": 13
+    },
+    {
+      "entity_id": "auto-bắc-ninh-a1c0d701",
       "recent_events": 13
     },
     {
@@ -82,12 +82,12 @@
       "recent_events": 10
     },
     {
-      "entity_id": "auto-tây-ninh-02d05047",
+      "entity_id": "auto-hải-phòng-48a73a83",
       "recent_events": 10
     },
     {
-      "entity_id": "auto-hải-phòng-48a73a83",
-      "recent_events": 10
+      "entity_id": "auto-tây-ninh-02d05047",
+      "recent_events": 9
     },
     {
       "entity_id": "masan_group",
@@ -138,10 +138,6 @@
       "recent_events": 6
     },
     {
-      "entity_id": "auto-adb-fa1143de",
-      "recent_events": 6
-    },
-    {
       "entity_id": "auto-đà-nẵng-93ee49dd",
       "recent_events": 5
     },
@@ -163,6 +159,10 @@
     },
     {
       "entity_id": "auto-vietinbank-52208e14",
+      "recent_events": 5
+    },
+    {
+      "entity_id": "auto-adb-fa1143de",
       "recent_events": 5
     },
     {
@@ -359,10 +359,6 @@
     },
     {
       "entity_id": "auto-việt-nam-nga-ef5c0604",
-      "recent_events": 2
-    },
-    {
-      "entity_id": "thaco_group",
       "recent_events": 2
     },
     {
@@ -838,6 +834,10 @@
       "recent_events": 1
     },
     {
+      "entity_id": "thaco_group",
+      "recent_events": 1
+    },
+    {
       "entity_id": "auto-tỉnh-cà-mau-50dc9d22",
       "recent_events": 1
     },
@@ -904,10 +904,6 @@
     {
       "entity_id": "auto-uob-việt-nam-868a4d3b",
       "recent_events": 1
-    },
-    {
-      "entity_id": "auto-pyn-elite-22eb1af2",
-      "recent_events": 1
     }
   ],
   "auto_entities": [
@@ -942,7 +938,7 @@
       "aliases": [
         "Bắc Ninh"
       ],
-      "recent_events": 14,
+      "recent_events": 13,
       "families": [
         "capital",
         "labor",
@@ -1065,27 +1061,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-tây-ninh-02d05047",
-      "label": "Tây Ninh",
-      "entity_type": "location",
-      "aliases": [
-        "Tây Ninh"
-      ],
-      "recent_events": 10,
-      "families": [
-        "operating",
-        "policy",
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "auto-lào-cai-a70f5b43",
       "label": "Lào Cai",
       "entity_type": "location",
@@ -1127,6 +1102,27 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Tây Ninh"
+      ],
+      "recent_events": 9,
+      "families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "auto-khánh-hòa-b1f03cd2",
@@ -1256,27 +1252,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-adb-fa1143de",
-      "label": "ADB",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "ADB"
-      ],
-      "recent_events": 6,
-      "families": [
-        "operating",
-        "project_execution"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "auto-lâm-đồng-2efb3e17",
       "label": "Lâm Đồng",
       "entity_type": "location",
@@ -1318,6 +1293,27 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-adb-fa1143de",
+      "label": "ADB",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "ADB"
+      ],
+      "recent_events": 5,
+      "families": [
+        "operating",
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
     },
     {
       "id": "auto-vpbank-0ce5c450",
@@ -2869,10 +2865,48 @@
       "source_url": "https://www.vietnamplus.vn/iea-325-trieu-thung-dau-da-duoc-giai-phong-tu-kho-du-tru-chien-luoc-post1139886.vnp",
       "published_at": "2026-10-03T21:19:58+00:00",
       "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "258c4e0a1a492954",
+      "event_signature": "e4c2770205fbe182",
+      "entity_id": "auto-quảng-ninh-3ed973db",
+      "entity_label": "Quảng Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "operating",
+      "title": "Quảng Ninh dẫn đầu tăng trưởng 9 tháng, TP.HCM đạt 9,06%",
+      "summary": "Trong 9 tháng năm 2026, có 12/34 địa phương tăng trưởng từ 10% trở lên. Quảng Ninh dẫn đầu 12,54%, tiếp đến Hà Tĩnh 12,36% và Hải Phòng 12,08%.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/quang-ninh-dan-dau-tang-truong-9-thang-tphcm-dat-906-100261003151546333.htm",
+      "published_at": "2026-10-03T21:15:37.370271+00:00",
+      "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "e0a8730ece2c21cb",
+      "event_signature": "b259d48f65ade1c4",
+      "entity_id": "auto-quảng-ngãi-2c2a20e3",
+      "entity_label": "Quảng Ngãi",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Quảng Ngãi đặt mục tiêu hút 139.000 tỉ đồng vốn đầu tư",
+      "summary": "Quảng Ngãi đặt mục tiêu thu hút 140-150 dự án với tổng vốn 113.000-139.000 tỉ đồng trong giai đoạn 2026-2030. Với nền tảng Khu kinh tế Dung Quất, hệ thống khu công nghiệp và danh mục dự án đã được xác định, mục tiêu này đang được tỉnh cụ thể hóa.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/quang-ngai-dat-muc-tieu-hut-139000-ti-dong-von-dau-tu-100261003165429132.htm",
+      "published_at": "2026-10-03T21:15:37.370271+00:00",
+      "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "f1b689846524fa88",
@@ -2888,7 +2922,7 @@
       "source_url": "https://www.vietnamplus.vn/da-nang-tai-khoi-dong-du-an-15500-ty-dong-sau-thoi-gian-dai-vuong-mac-post1139877.vnp",
       "published_at": "2026-10-03T19:57:41+00:00",
       "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2907,45 +2941,7 @@
       "source_url": "https://www.vietnamplus.vn/bac-ninh-thu-hut-hon-187-ty-usd-von-dau-tu-trong-9-thang-post1139871.vnp",
       "published_at": "2026-10-03T19:10:27+00:00",
       "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "258c4e0a1a492954",
-      "event_signature": "e4c2770205fbe182",
-      "entity_id": "auto-quảng-ninh-3ed973db",
-      "entity_label": "Quảng Ninh",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "Quảng Ninh dẫn đầu tăng trưởng 9 tháng, TP.HCM đạt 9,06%",
-      "summary": "Trong 9 tháng năm 2026, có 12/34 địa phương tăng trưởng từ 10% trở lên. Quảng Ninh dẫn đầu 12,54%, tiếp đến Hà Tĩnh 12,36% và Hải Phòng 12,08%.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/quang-ninh-dan-dau-tang-truong-9-thang-tphcm-dat-906-100261003151546333.htm",
-      "published_at": "2026-10-03T16:18:51.165177+00:00",
-      "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "e0a8730ece2c21cb",
-      "event_signature": "b259d48f65ade1c4",
-      "entity_id": "auto-quảng-ngãi-2c2a20e3",
-      "entity_label": "Quảng Ngãi",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Quảng Ngãi đặt mục tiêu hút 139.000 tỉ đồng vốn đầu tư",
-      "summary": "Quảng Ngãi đặt mục tiêu thu hút 140-150 dự án với tổng vốn 113.000-139.000 tỉ đồng trong giai đoạn 2026-2030. Với nền tảng Khu kinh tế Dung Quất, hệ thống khu công nghiệp và danh mục dự án đã được xác định, mục tiêu này đang được tỉnh cụ thể hóa.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/quang-ngai-dat-muc-tieu-hut-139000-ti-dong-von-dau-tu-100261003165429132.htm",
-      "published_at": "2026-10-03T16:18:51.165177+00:00",
-      "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2964,7 +2960,7 @@
       "source_url": "https://www.vietnamplus.vn/can-tho-khoi-cong-chuoi-nha-may-che-bien-lua-gao-ket-hop-nang-luong-sinh-khoi-post1139847.vnp",
       "published_at": "2026-10-03T15:49:32+00:00",
       "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2983,7 +2979,7 @@
       "source_url": "https://www.vietnamplus.vn/lao-cai-tap-trung-nguon-luc-quyet-tam-hoan-thanh-muc-tieu-tang-truong-tren-10-post1139837.vnp",
       "published_at": "2026-10-03T14:59:34+00:00",
       "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3002,7 +2998,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-ninh-go-tung-diem-nghen-de-hoan-thanh-co-so-du-lieu-dat-dai-vao-cuoi-2026-post1139832.vnp",
       "published_at": "2026-10-03T14:33:43+00:00",
       "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3021,7 +3017,7 @@
       "source_url": "https://www.vietnamplus.vn/uae-phong-thanh-cong-ve-tinh-thuong-mai-dau-tien-tu-che-tao-vao-quy-dao-post1139801.vnp",
       "published_at": "2026-10-03T11:40:09+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3040,7 +3036,7 @@
       "source_url": "https://vnexpress.net/hai-tuyen-duong-sat-toc-do-cao-do-vinspeed-dau-tu-bat-dau-duc-dam-5128059.html",
       "published_at": "2026-10-03T11:30:00+00:00",
       "first_seen_at": "2026-10-03T16:18:51.165177+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3057,7 +3053,7 @@
       "source_url": "https://www.vietnamplus.vn/vn-index-mat-moc-1800-diem-nha-dau-tu-cho-doi-tin-hieu-tu-dinh-gia-moi-post1139794.vnp",
       "published_at": "2026-10-03T11:12:06+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3076,7 +3072,7 @@
       "source_url": "https://www.vietnamplus.vn/cao-bang-tuyet-doi-khong-de-lap-lai-nhung-du-an-cho-doi-15-nam-post1139788.vnp",
       "published_at": "2026-10-03T10:52:09+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3095,7 +3091,7 @@
       "source_url": "https://thanhnien.vn/phat-dat-ra-mat-thap-bieu-tuong-moi-ngay-quang-truong-trung-tam-quy-nhon-185261003154056903.htm",
       "published_at": "2026-10-03T09:30:00+00:00",
       "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3114,7 +3110,7 @@
       "source_url": "https://www.vietnamplus.vn/quang-ninh-tang-toc-trong-quy-4-huong-toi-muc-tieu-tang-truong-tren-13-post1139711.vnp",
       "published_at": "2026-10-03T08:19:51+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3133,7 +3129,7 @@
       "source_url": "https://thanhnien.vn/trinh-quoc-hoi-sua-luat-chung-khoan-trong-thang-10-185261003125929858.htm",
       "published_at": "2026-10-03T06:09:00+00:00",
       "first_seen_at": "2026-10-03T11:40:01.971649+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3171,7 +3167,7 @@
       "source_url": "https://thanhnien.vn/von-fdi-vao-viet-nam-tang-764-von-thuc-hien-cao-nhat-5-nam-185261003101319866.htm",
       "published_at": "2026-10-03T03:18:00+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3190,7 +3186,7 @@
       "source_url": "https://thanhnien.vn/gdp-tang-hon-9-12-dia-phuong-tang-truong-2-con-so-185261003100645239.htm",
       "published_at": "2026-10-03T03:15:00+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3209,7 +3205,7 @@
       "source_url": "https://thanhnien.vn/tay-ninh-vao-top-dau-ca-nuoc-ve-phuc-vu-nguoi-dan-185261003083023017.htm",
       "published_at": "2026-10-03T01:19:00+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3228,7 +3224,7 @@
       "source_url": "https://thanhnien.vn/vrg-tang-toc-huong-toi-dinh-moc-tang-truong-moi-185261002170151245.htm",
       "published_at": "2026-10-03T01:00:00+00:00",
       "first_seen_at": "2026-10-03T05:19:17.225555+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3338,7 +3334,7 @@
       "source_url": "https://vnexpress.net/pnj-noi-co-phieu-san-5-phien-mot-phan-do-ap-luc-margin-5127809.html",
       "published_at": "2026-10-02T17:01:00+00:00",
       "first_seen_at": "2026-10-02T22:14:49.239509+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3509,7 +3505,7 @@
       "source_url": "https://thanhnien.vn/lam-dong-tang-toc-quy-4-can-tang-truong-tren-1288-185261002164819471.htm",
       "published_at": "2026-10-02T11:22:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3528,7 +3524,7 @@
       "source_url": "https://thanhnien.vn/vinh-long-gop-nhieu-giai-phap-sang-kien-thuc-day-kinh-te-tu-nhan-phat-trien-185261002160532822.htm",
       "published_at": "2026-10-02T11:21:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3547,7 +3543,7 @@
       "source_url": "https://thanhnien.vn/hai-phong-kien-quyet-khong-lui-muc-tieu-tang-truong-13-185261002144142748.htm",
       "published_at": "2026-10-02T10:48:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3623,7 +3619,7 @@
       "source_url": "https://thanhnien.vn/agribank-va-vietnam-airlines-ket-noi-he-sinh-thai-hang-khong-tai-chinh-ngan-hang-185261002161735791.htm",
       "published_at": "2026-10-02T09:10:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3661,7 +3657,7 @@
       "source_url": "https://thanhnien.vn/daiichi-life-viet-nam-chinh-thuc-ra-mat-nhan-dien-thuong-hieu-moi-185261002155120551.htm",
       "published_at": "2026-10-02T08:32:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3680,7 +3676,7 @@
       "source_url": "https://thanhnien.vn/quang-ninh-chay-nuoc-rut-giai-ngan-100-von-dau-tu-cong-185261002123307902.htm",
       "published_at": "2026-10-02T07:39:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3699,7 +3695,7 @@
       "source_url": "https://thanhnien.vn/fwd-viet-nam-va-bvbank-hop-tac-phan-phoi-bao-hiem-qua-ngan-hang-185261002131248039.htm",
       "published_at": "2026-10-02T06:52:00+00:00",
       "first_seen_at": "2026-10-02T12:35:02.481664+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3754,7 +3750,7 @@
       "source_url": "https://vnexpress.net/lpbank-duoc-vinh-danh-hai-hang-muc-tai-giai-thuong-ngan-hang-viet-nam-5127537.html",
       "published_at": "2026-10-02T04:30:00+00:00",
       "first_seen_at": "2026-10-02T05:37:48.626242+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3811,7 +3807,7 @@
       "source_url": "https://vnexpress.net/sjc-duoc-giao-lai-hon-1-000-ty-dong-trong-5-nam-toi-5127386.html",
       "published_at": "2026-10-01T20:21:53+00:00",
       "first_seen_at": "2026-10-01T22:42:28.965337+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -4096,7 +4092,7 @@
       "source_url": "https://vnexpress.net/lpbank-tang-hang-nghin-phan-qua-tren-ung-dung-lpbank-plus-5127230.html",
       "published_at": "2026-10-01T09:15:00+00:00",
       "first_seen_at": "2026-10-01T13:14:32.693924+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -4115,7 +4111,7 @@
       "source_url": "https://vnexpress.net/vinfast-viet-nam-tang-von-len-hon-1-3-ty-usd-5127136.html",
       "published_at": "2026-10-01T07:29:05+00:00",
       "first_seen_at": "2026-10-01T13:14:32.693924+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -4151,7 +4147,7 @@
       "source_url": "https://vnexpress.net/masan-duy-tri-da-tang-truong-nho-msr-va-mang-tieu-dung-5126807.html",
       "published_at": "2026-10-01T00:00:00+00:00",
       "first_seen_at": "2026-10-01T05:53:38.049583+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -4502,7 +4498,7 @@
       "source_url": "https://vnexpress.net/pnj-rut-thoi-gian-tra-tien-mua-lai-vang-tu-4-thang-xuong-hai-ngay-5126545.html",
       "published_at": "2026-09-30T04:38:09+00:00",
       "first_seen_at": "2026-09-30T05:32:29.955307+00:00",
-      "last_seen_at": "2026-10-03T16:18:51.165177+00:00",
+      "last_seen_at": "2026-10-03T21:15:37.370271+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -12015,7 +12011,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-10-03T16:19:05.582276+00:00",
+    "prepared_at": "2026-10-03T21:15:51.747253+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 30,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
