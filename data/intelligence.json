@@ -1,25 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-10-03T05:18:01.201786+00:00",
+    "generated_at": "2026-10-03T11:38:54.436908+00:00",
     "status": "active",
-    "history_days": 34,
+    "history_days": 35,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 7,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 200,
-      "trend": "accelerating",
-      "confidence": 88,
-      "source_diversity_7d": 5,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.3."
-    },
     {
       "category": "infrastructure",
       "recent_7d": 8,
@@ -32,22 +21,22 @@
       "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
-      "category": "labor",
-      "recent_7d": 5,
+      "category": "fdi_industrial",
+      "recent_7d": 7,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 150,
+      "delta_pct": 250,
       "trend": "accelerating",
-      "confidence": 75,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
+      "confidence": 86,
+      "source_diversity_7d": 5,
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "construction",
-      "recent_7d": 7,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": 11,
+      "recent_7d": 6,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -10,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -55,12 +44,23 @@
     },
     {
       "category": "policy",
-      "recent_7d": 4,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": 0,
+      "recent_7d": 3,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -31,
       "trend": "stable",
       "confidence": 85,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 4,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 71,
+      "trend": "stable",
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -170,7 +170,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-03T05:18:01.201786+00:00"
+      "first_seen_at": "2026-10-03T05:18:01.201786+00:00",
+      "collected_at": "2026-10-03T05:18:01.201786+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1474286127ff3392",
@@ -190,7 +192,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-03T05:18:01.201786+00:00"
+      "first_seen_at": "2026-10-03T05:18:01.201786+00:00",
+      "collected_at": "2026-10-03T05:18:01.201786+00:00",
+      "last_seen_at": null
     },
     {
       "id": "db15bd12bef4a758",
@@ -211,7 +215,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-03T05:18:01.201786+00:00"
+      "first_seen_at": "2026-10-03T05:18:01.201786+00:00",
+      "collected_at": "2026-10-03T05:18:01.201786+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f765ef4c6f1ca4a4",
@@ -297,20 +303,20 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 19,
+    "policy_regulation": 18,
     "business_formation": 14,
     "market_data": 8,
     "infrastructure_delivery": 6,
     "capital_flow": 3,
-    "hiring": 3
+    "hiring": 2
   },
   "geographies_7d": {
     "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 568,
+    "historical_events": 570,
     "candidate_events": 221,
-    "reference_events": 342,
+    "reference_events": 344,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
