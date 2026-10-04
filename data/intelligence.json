@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T05:51:33.271300+00:00",
+    "generated_at": "2026-10-04T12:20:53.677704+00:00",
     "status": "active",
-    "history_days": 35,
+    "history_days": 36,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -19,17 +19,6 @@
       "confidence": 89,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 7,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 250,
-      "trend": "accelerating",
-      "confidence": 86,
-      "source_diversity_7d": 5,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "construction",
@@ -55,10 +44,10 @@
     },
     {
       "category": "labor",
-      "recent_7d": 4,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 71,
+      "recent_7d": 3,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 12,
       "trend": "stable",
       "confidence": 75,
       "source_diversity_7d": 2,
@@ -67,11 +56,11 @@
     {
       "category": "energy",
       "recent_7d": 3,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 29,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 50,
       "trend": "stable",
-      "confidence": 73,
+      "confidence": 71,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -96,6 +85,17 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 7,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 84,
+      "source_diversity_7d": 5,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "logistics",
@@ -172,7 +172,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-04T05:51:33.271300+00:00"
+      "first_seen_at": "2026-10-04T05:51:33.271300+00:00",
+      "collected_at": "2026-10-04T05:51:33.271300+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5c3d196d45babbb3",
@@ -223,15 +225,15 @@
     "market_data": 8,
     "infrastructure_delivery": 6,
     "capital_flow": 3,
-    "hiring": 2
+    "hiring": 1
   },
   "geographies_7d": {
     "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 573,
+    "historical_events": 578,
     "candidate_events": 224,
-    "reference_events": 344,
+    "reference_events": 349,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 2
   },
