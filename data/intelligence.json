@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T21:24:25.528544+00:00",
+    "generated_at": "2026-10-05T05:38:55.429632+00:00",
     "status": "active",
     "history_days": 36,
     "required_history_days": 14,
@@ -19,6 +19,28 @@
       "confidence": 89,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 6,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 200,
+      "trend": "accelerating",
+      "confidence": 84,
+      "source_diversity_7d": 5,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.0."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 4,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 100,
+      "trend": "accelerating",
+      "confidence": 73,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 4 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "construction",
@@ -44,23 +66,12 @@
     },
     {
       "category": "labor",
-      "recent_7d": 3,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 12,
+      "recent_7d": 2,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 75,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 71,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -77,25 +88,14 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 2,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": -45,
-      "trend": "stable",
+      "recent_7d": 1,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -75,
+      "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 7,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 84,
-      "source_diversity_7d": 5,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "logistics",
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "4742441e04f36aed",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Bộ trưởng Bộ Công Thương Lê Mạnh Hùng chỉ đạo tháo gỡ vướng mắc, tăng tốc các dự án điện tại Trung tâm Điện lực Quảng Trạch",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Bo-truong-Bo-Cong-Thuong-Le-Manh-Hung-chi-dao-thao-go-vuong-mac-tang-toc-cac-du-an-dien-tai-Trung-tam-Dien-luc-Quang-Trach-60-12-509856",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-05T05:38:55.429632+00:00"
+    },
+    {
       "id": "ea13e8fe4178f930",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-04T21:24:25.528544+00:00"
+      "first_seen_at": "2026-10-04T21:24:25.528544+00:00",
+      "collected_at": "2026-10-04T21:24:25.528544+00:00",
+      "last_seen_at": null
     },
     {
       "id": "da0a074469ca2312",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-04T21:24:25.528544+00:00"
+      "first_seen_at": "2026-10-04T21:24:25.528544+00:00",
+      "collected_at": "2026-10-04T21:24:25.528544+00:00",
+      "last_seen_at": null
     },
     {
       "id": "90f59985e5e8d86b",
@@ -216,9 +238,9 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 18,
+    "policy_regulation": 15,
     "business_formation": 14,
-    "market_data": 8,
+    "market_data": 9,
     "infrastructure_delivery": 6,
     "capital_flow": 3,
     "hiring": 1
@@ -227,13 +249,13 @@
     "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 580,
-    "candidate_events": 226,
-    "reference_events": 349,
+    "historical_events": 585,
+    "candidate_events": 227,
+    "reference_events": 353,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
