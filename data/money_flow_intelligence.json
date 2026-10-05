@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-10-05T05:40:29.975569+00:00",
+    "generated_at": "2026-10-05T14:38:56.433461+00:00",
     "mode": "contextual_theme_chain_with_observed_supply_evidence",
     "principle": "discovery_or_stale_verified_context_can_prioritize_research_but_cannot_create_directional_convergence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-05T05:40:30.027384+00:00",
+    "trust_hardened_at": "2026-10-05T14:38:56.486338+00:00",
     "snapshot_freshness": {
       "macro": "fresh",
       "regional": "fresh",
@@ -14,10 +14,10 @@
   },
   "thesis": "Theme đáng điều tra nhất có fresh verified convergence hiện tại: Gia tốc thương mại & logistics (converging; 4 họ bằng chứng verified, 2 nhóm nguồn verified). Đây vẫn là research priority, không phải khuyến nghị hành động.",
   "coverage": {
-    "total_evidence_inputs": 128,
+    "total_evidence_inputs": 126,
     "macro_observations": 7,
-    "contextual_history_evidence": 161,
-    "contextual_procurement_support": 35,
+    "contextual_history_evidence": 162,
+    "contextual_procurement_support": 32,
     "themes": 7,
     "themes_converging": 1,
     "themes_developing": 0,
@@ -376,7 +376,7 @@
       "label": "Mở rộng năng lực sản xuất",
       "score": 77,
       "status": "early",
-      "evidence_count": 24,
+      "evidence_count": 23,
       "directional_evidence_count": 4,
       "independent_families": [
         "capital",
@@ -1486,7 +1486,7 @@
       "label": "Hạ tầng dữ liệu & số hóa",
       "score": 24,
       "status": "insufficient",
-      "evidence_count": 40,
+      "evidence_count": 38,
       "directional_evidence_count": 1,
       "independent_families": [],
       "independent_publishers": [
@@ -1783,9 +1783,9 @@
     {
       "id": "energy_grid",
       "label": "Mở rộng điện & lưới điện",
-      "score": 16,
+      "score": 18,
       "status": "insufficient",
-      "evidence_count": 15,
+      "evidence_count": 16,
       "directional_evidence_count": 0,
       "independent_families": [],
       "independent_publishers": [],
@@ -1804,6 +1804,25 @@
         "dịch vụ tiết kiệm năng lượng chỉ khi có năng lực chuyên môn"
       ],
       "evidence": [
+        {
+          "id": "4b39d1faaea14809",
+          "family": "labor",
+          "title": "Thông báo tuyển dụng lao động cho Văn phòng EVN",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "publisher_group": "EVN/NSMO",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Thong-bao-tuyen-dung-lao-dong-cho-Van-phong-EVN-60-124-509859",
+          "quality": "candidate",
+          "category_tags": [
+            "labor",
+            "energy"
+          ],
+          "theme_tags": [
+            "energy_grid"
+          ],
+          "geography": [],
+          "observed_at": "2026-10-05T14:37:05.921539+00:00",
+          "directional": true
+        },
         {
           "id": "4742441e04f36aed",
           "family": "market_data",
@@ -2012,24 +2031,6 @@
           "geography": [],
           "observed_at": "2026-09-06T10:55:38.127372+00:00",
           "directional": true
-        },
-        {
-          "id": "094ad2bc10e77f2c",
-          "family": "policy",
-          "title": "Tổng công ty Điện lực miền Nam tổ chức Tọa đàm Pháp luật năm 2026",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "publisher_group": "EVN/NSMO",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Tong-cong-ty-Dien-luc-mien-Nam-to-chuc-Toa-dam-Phap-luat-nam-2026-60-2005-509492",
-          "quality": "candidate",
-          "category_tags": [
-            "energy"
-          ],
-          "theme_tags": [
-            "energy_grid"
-          ],
-          "geography": [],
-          "observed_at": "2026-09-04T11:17:21.518583+00:00",
-          "directional": true
         }
       ],
       "supply_gap": {
@@ -2048,6 +2049,7 @@
       },
       "all_observed_families": [
         "infrastructure",
+        "labor",
         "market_data",
         "policy"
       ],
@@ -2058,6 +2060,7 @@
       "verified_evidence_families": [],
       "verified_evidence_publishers": [],
       "discovery_evidence_families": [
+        "labor",
         "market_data",
         "policy"
       ],

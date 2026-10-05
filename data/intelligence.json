@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-05T05:38:55.429632+00:00",
+    "generated_at": "2026-10-05T14:37:05.921539+00:00",
     "status": "active",
-    "history_days": 36,
+    "history_days": 37,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,67 +11,45 @@
   "category_changes": [
     {
       "category": "infrastructure",
-      "recent_7d": 8,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 140,
+      "recent_7d": 7,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 91,
       "trend": "accelerating",
       "confidence": 89,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 6,
+      "recent_7d": 5,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 200,
+      "delta_pct": 150,
       "trend": "accelerating",
-      "confidence": 84,
+      "confidence": 82,
       "source_diversity_7d": 5,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.0."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 4,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 100,
-      "trend": "accelerating",
-      "confidence": 73,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 4 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.0."
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 5 nguồn; baseline quy đổi 7 ngày là 2.0."
     },
     {
       "category": "construction",
       "recent_7d": 6,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": -10,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": -5,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "policy",
-      "recent_7d": 3,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": -31,
-      "trend": "stable",
-      "confidence": 85,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "labor",
-      "recent_7d": 2,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "recent_7d": 3,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -10,
       "trend": "stable",
-      "confidence": 75,
+      "confidence": 79,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -87,15 +65,37 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
-      "recent_7d": 1,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": -75,
+      "category": "policy",
+      "recent_7d": 0,
+      "baseline_21d": 16,
+      "baseline_expected_7d": 5.3,
+      "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.0."
+      "confidence": 72,
+      "source_diversity_7d": 0,
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 5.3."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 0,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -100,
+      "trend": "cooling",
+      "confidence": 66,
+      "source_diversity_7d": 0,
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.3."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 5,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 73,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "logistics",
@@ -106,6 +106,17 @@
       "trend": "insufficient_sample",
       "confidence": 61,
       "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 3,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -120,29 +131,18 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
-      "recent_7d": 1,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
+      "category": "trade_flow",
+      "recent_7d": 0,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 49,
-      "source_diversity_7d": 1,
+      "confidence": 42,
+      "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "consumer_services",
-      "recent_7d": 1,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 49,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "trade_flow",
       "recent_7d": 0,
       "baseline_21d": 1,
       "baseline_expected_7d": 0.3,
@@ -154,6 +154,99 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "a3180979470b9787",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Những nội dung cơ bản dự thảo Thông tư hướng dẫn công bố thông tin trên thị trường chứng khoán",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nhung-noi-dung-co-ban-du-thao-thong-tu-huong-dan-cong-bo-thong-tin-tren-thi-truong-chung-khoan-119261005173548137.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-05T14:37:05.921539+00:00"
+    },
+    {
+      "id": "f7a1a1eb7f1b735e",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Một số nội dung chính của Thông tư 145/2026/TT-BTC quy định hoạt động đăng ký, lưu ký, bù trừ và thanh toán giao dịch chứng khoán",
+      "url": "https://xaydungchinhsach.chinhphu.vn/mot-so-noi-dung-chinh-cua-thong-tu-145-2026-tt-btc-quy-dinh-hoat-dong-dang-ky-luu-ky-bu-tru-va-thanh-toan-giao-dich-chung-khoan-119261005165752419.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-05T14:37:05.921539+00:00"
+    },
+    {
+      "id": "105548bdf3826764",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Người lao động tại đơn vị sự nghiệp công lập chuyển đổi được hưởng chính sách gì?",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nguoi-lao-dong-tai-don-vi-su-nghiep-cong-lap-chuyen-doi-duoc-huong-chinh-sach-gi-119261005160903055.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-05T14:37:05.921539+00:00"
+    },
+    {
+      "id": "c3714dd64173d564",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quy định quản lý hoạt động vay và cho vay chứng khoán",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-quan-ly-hoat-dong-vay-va-cho-vay-chung-khoan-119261005164738542.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-05T14:37:05.921539+00:00"
+    },
+    {
+      "id": "4b39d1faaea14809",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Thông báo tuyển dụng lao động cho Văn phòng EVN",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Thong-bao-tuyen-dung-lao-dong-cho-Van-phong-EVN-60-124-509859",
+      "categories": [
+        "labor",
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-05T14:37:05.921539+00:00"
+    },
     {
       "id": "4742441e04f36aed",
       "source_id": "evn-system",
@@ -170,7 +263,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-05T05:38:55.429632+00:00"
+      "first_seen_at": "2026-10-05T05:38:55.429632+00:00",
+      "collected_at": "2026-10-05T05:38:55.429632+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ea13e8fe4178f930",
@@ -213,35 +308,13 @@
       "first_seen_at": "2026-10-04T21:24:25.528544+00:00",
       "collected_at": "2026-10-04T21:24:25.528544+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "90f59985e5e8d86b",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
-      "title": "EPS: Hoàn thành các công trình sửa chữa lớn trọng điểm năm 2026",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/EPS-Hoan-thanh-cac-cong-trinh-sua-chua-lon-trong-diem-nam-2026--60-14-509849",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-04T05:51:33.271300+00:00",
-      "collected_at": "2026-10-04T05:51:33.271300+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 15,
     "business_formation": 14,
+    "policy_regulation": 12,
     "market_data": 9,
-    "infrastructure_delivery": 6,
+    "infrastructure_delivery": 5,
     "capital_flow": 3,
     "hiring": 1
   },
@@ -249,9 +322,9 @@
     "Đồng Nai": 3
   },
   "coverage": {
-    "historical_events": 585,
-    "candidate_events": 227,
-    "reference_events": 353,
+    "historical_events": 593,
+    "candidate_events": 232,
+    "reference_events": 356,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
