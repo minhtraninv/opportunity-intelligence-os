@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-10-07T06:00:21.506075+00:00",
+    "generated_at": "2026-10-07T13:23:49.935988+00:00",
     "local_date": "2026-10-07",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-07T06:00:21.623993+00:00"
+    "trust_hardened_at": "2026-10-07T13:23:50.094842+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-10-07",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-10-07T06:00:21.505566+00:00",
-      "local_generated_at": "2026-10-07T13:00:21.499127+07:00",
+      "generated_at": "2026-10-07T13:23:49.935205+00:00",
+      "local_generated_at": "2026-10-07T20:23:49.924864+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 39,
@@ -24,30 +24,15 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở Hạ tầng dữ liệu & số hóa: -6.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "title": "Hạ tầng dữ liệu & số hóa",
+          "assessment": "yếu đi 6 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -137,7 +122,7 @@
         {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
-          "adjusted_score": 33,
+          "adjusted_score": 35,
           "counter_signals": [
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
@@ -249,7 +234,14 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "data_infrastructure",
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "delta": -6.0,
+            "change": "weakened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -259,6 +251,13 @@
       },
       "snapshot": {
         "themes": {
+          "data_infrastructure": {
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "score": 18,
+            "state": "weakening",
+            "direction": "weakening",
+            "observation_days": 39
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 78,
@@ -282,7 +281,7 @@
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
-            "score": 33,
+            "score": 35,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39
@@ -290,13 +289,6 @@
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 39
-          },
-          "data_infrastructure": {
-            "label": "Hạ tầng dữ liệu & số hóa",
-            "score": 24,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39
@@ -409,8 +401,8 @@
       "period_key": "2026-W41",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-10-07T06:00:21.505822+00:00",
-      "local_generated_at": "2026-10-07T13:00:21.499127+07:00",
+      "generated_at": "2026-10-07T13:23:49.935550+00:00",
+      "local_generated_at": "2026-10-07T20:23:49.924864+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 39,
@@ -418,30 +410,15 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở Hạ tầng dữ liệu & số hóa: -6.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "title": "Hạ tầng dữ liệu & số hóa",
+          "assessment": "yếu đi 6 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -531,7 +508,7 @@
         {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
-          "adjusted_score": 33,
+          "adjusted_score": 35,
           "counter_signals": [
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
@@ -643,7 +620,14 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "data_infrastructure",
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "delta": -6.0,
+            "change": "weakened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -653,6 +637,13 @@
       },
       "snapshot": {
         "themes": {
+          "data_infrastructure": {
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "score": 18,
+            "state": "weakening",
+            "direction": "weakening",
+            "observation_days": 39
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 78,
@@ -676,7 +667,7 @@
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
-            "score": 33,
+            "score": 35,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39
@@ -684,13 +675,6 @@
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 39
-          },
-          "data_infrastructure": {
-            "label": "Hạ tầng dữ liệu & số hóa",
-            "score": 24,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39
@@ -803,8 +787,8 @@
       "period_key": "2026-10",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-10-07T06:00:21.505969+00:00",
-      "local_generated_at": "2026-10-07T13:00:21.499127+07:00",
+      "generated_at": "2026-10-07T13:23:49.935800+00:00",
+      "local_generated_at": "2026-10-07T20:23:49.924864+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 39,
@@ -812,30 +796,15 @@
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở Hạ tầng dữ liệu & số hóa: -7.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "title": "Hạ tầng dữ liệu & số hóa",
+          "assessment": "yếu đi 7 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -925,7 +894,7 @@
         {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
-          "adjusted_score": 33,
+          "adjusted_score": 35,
           "counter_signals": [
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
@@ -1037,7 +1006,14 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "data_infrastructure",
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "delta": -7.0,
+            "change": "weakened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -1047,6 +1023,13 @@
       },
       "snapshot": {
         "themes": {
+          "data_infrastructure": {
+            "label": "Hạ tầng dữ liệu & số hóa",
+            "score": 18,
+            "state": "weakening",
+            "direction": "weakening",
+            "observation_days": 39
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 78,
@@ -1070,7 +1053,7 @@
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
-            "score": 33,
+            "score": 35,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39
@@ -1078,13 +1061,6 @@
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 39
-          },
-          "data_infrastructure": {
-            "label": "Hạ tầng dữ liệu & số hóa",
-            "score": 24,
             "state": "stable",
             "direction": "stable",
             "observation_days": 39

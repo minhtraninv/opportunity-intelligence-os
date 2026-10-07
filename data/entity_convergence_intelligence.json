@@ -1,203 +1,32 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-07T06:00:21.203790+00:00",
+    "generated_at": "2026-10-07T13:23:49.432636+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-07T06:00:21.423589+00:00"
+    "trust_hardened_at": "2026-10-07T13:23:49.778337+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 59,
-    "observed_auto_entities": 49,
+    "observed_entities": 60,
+    "observed_auto_entities": 51,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 23,
-    "watch": 28,
+    "discovery_convergence": 21,
+    "watch": 31,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 13,
+    "discovery_candidates": 14,
     "verified_watchlist": 0,
     "suppressed_non_organizations": 16
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
   "discovery_candidates": [
-    {
-      "entity_id": "vingroup_ecosystem",
-      "label": "Hệ sinh thái Vingroup",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 21,
-      "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 10,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 8,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "668625d3d897333b",
-          "event_signature": "75ce88f456ee884c",
-          "family": "project_execution",
-          "title": "Vingroup hợp tác Alstom cung cấp 200 đoàn tàu metro Hà Nội, sẽ chuyển giao công nghệ để sản xuất tại Việt Nam",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vingroup-hop-tac-alstom-cung-cap-200-doan-tau-metro-ha-noi-se-chuyen-giao-cong-nghe-de-san-xuat-tai-viet-nam-100261006150927425.htm",
-          "observed_at": "2026-10-07T06:00:05.355426+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "42aa8bc76c97cffe",
-          "event_signature": "0bd326a2309417ae",
-          "family": "strategy",
-          "title": "Bus điện VinFast đến Mỹ",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/bus-dien-vinfast-den-my-5129399.html",
-          "observed_at": "2026-10-07T04:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "09b705919428024d",
-          "event_signature": "9577947739b2d5bb",
-          "family": "project_execution",
-          "title": "Vingroup hợp tác với Alstom cung cấp 200 đoàn tàu metro Hà Nội",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vingroup-hop-tac-voi-alstom-cung-cap-200-doan-tau-metro-ha-noi-185261006205056622.htm",
-          "observed_at": "2026-10-06T23:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "414b30c5f6cfb5d4",
-          "event_signature": "a86466399821f607",
-          "family": "project_execution",
-          "title": "117 đoàn tàu cho metro Hà Nội sẽ được Vingroup lắp ráp tại Việt Nam",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/117-doan-tau-cho-metro-ha-noi-se-duoc-vingroup-lap-rap-tai-viet-nam-5129099.html",
-          "observed_at": "2026-10-06T09:30:34+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "59472a2618124b3b",
-          "event_signature": "c43d9761da4f8147",
-          "family": "capital",
-          "title": "Tin tức sáng 2-10: VinFast Việt Nam tăng vốn khủng sau khi con trai ông Phạm Nhật Vượng làm chủ tịch",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/tin-tuc-sang-2-10-vinfast-viet-nam-tang-von-khung-sau-khi-con-trai-ong-pham-nhat-vuong-lam-chu-tich-100261001224425651.htm",
-          "observed_at": "2026-10-02T22:14:49.239509+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "1d0c7f4d1d3cebf2",
-          "event_signature": "af4cdec6194f4a3d",
-          "family": "capital",
-          "title": "Đọc nhanh 1-10: Lợi suất trái phiếu Mỹ lên cao nhất từ 2002 khiến Dow Jones xuống thấp nhất gần 4 tháng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/doc-nhanh-1-10-loi-suat-trai-phieu-my-len-cao-nhat-tu-2002-khien-dow-jones-xuong-thap-nhat-gan-4-thang-100261001072201959.htm",
-          "observed_at": "2026-10-02T05:37:48.626242+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8f58232304601084",
-          "event_signature": "53ca3f4301855a92",
-          "family": "capital",
-          "title": "VinFast Việt Nam tăng vốn lên hơn 1,3 tỷ USD",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vinfast-viet-nam-tang-von-len-hon-1-3-ty-usd-5127136.html",
-          "observed_at": "2026-10-01T07:29:05+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ebe2a15b23a1d356",
-          "event_signature": "20d29b636f863b0a",
-          "family": "operating",
-          "title": "Leapmotor vượt Subaru và Mitsubishi Motors của Nhật Bản về doanh số toàn cầu",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/leapmotor-vuot-subaru-va-mitsubishi-motors-cua-nhat-ban-ve-doanh-so-toan-cau-post1137460.vnp",
-          "observed_at": "2026-09-21T14:57:45+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
     {
       "entity_id": "auto-vietjet-b0c33c77",
       "label": "Vietjet",
@@ -221,7 +50,7 @@
       "event_count": 8,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -392,7 +221,7 @@
       "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 7,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment"
@@ -566,11 +395,12 @@
         "EVN - Đầu tư xây dựng",
         "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 11,
+      "event_count": 12,
       "primary_evidence_count": 0,
-      "media_evidence_count": 5,
+      "media_evidence_count": 6,
       "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
@@ -587,6 +417,48 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "d58122f0b66f20a6",
+          "event_signature": "7f0ecaa27182081a",
+          "family": "project_execution",
+          "title": "Bộ Công Thương lên kịch bản ứng phó siêu El Nino, bảo đảm cung ứng điện cuối năm",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/bo-cong-thuong-len-kich-ban-ung-pho-sieu-el-nino-bao-dam-cung-ung-dien-cuoi-nam-post1140584.vnp",
+          "observed_at": "2026-10-07T17:43:23+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "7286b244866b4e88",
+          "event_signature": "ed0344bb11d1db47",
+          "family": "strategy",
+          "title": "Tách EVNNPT khỏi EVN, xóa độc quyền truyền tải điện",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/tach-evnnpt-khoi-evn-xoa-doc-quyen-truyen-tai-dien-18526100719591809.htm",
+          "observed_at": "2026-10-07T13:15:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e595d2a029f00cab",
+          "event_signature": "a3df6f5f5a0f92d6",
+          "family": "strategy",
+          "title": "Đề xuất tách Tổng công ty Truyền tải điện quốc gia khỏi EVN",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/de-xuat-tach-tong-cong-ty-truyen-tai-dien-quoc-gia-khoi-evn-5129635.html",
+          "observed_at": "2026-10-07T11:35:47+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "360a38f6be72a780",
           "event_signature": "fe2ca2a5e4754af3",
@@ -659,30 +531,79 @@
           "quality": "candidate",
           "origin": "official_headline_discovery",
           "evidence_grade": "official_headline_discovery"
-        },
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 2,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-phó-thủ-041fcc3a",
+      "label": "Phó Thủ",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 21,
+      "why_now": "Phó Thủ đang xuất hiện đồng thời trong 3 họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động.",
+      "evidence_families": [
+        "policy",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Báo Chính phủ",
+        "Chính sách pháp luật - Chính phủ",
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 8,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment",
+        "strategy_execution_alignment"
+      ],
+      "theme_context": [
         {
-          "id": "9a4c437b841ee70a",
-          "family": "operating",
-          "title": "Lãnh đạo EVN rà soát tình hình triển khai các dự án tại Trung tâm Điện lực Quảng Trạch",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Lanh-dao-EVN-ra-soat-tinh-hinh-trien-khai-cac-du-an-tai-Trung-tam-Dien-luc-Quang-Trach-60-13-509806",
-          "observed_at": "2026-09-30T22:15:22.540948+00:00",
-          "categories": [
-            "energy"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
+          "theme_id": "public_infrastructure",
+          "label": "public_infrastructure",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
         {
-          "id": "ef5a5aa3a8de1cd3",
-          "event_signature": "7948acf8981e590b",
+          "id": "67982bcee872cbb5",
+          "event_signature": "7e582e0c2144c9d6",
           "family": "project_execution",
-          "title": "Công ty con của EVN làm dự án chế tạo thiết bị siêu cao áp trên lưới 500kV thay thế hàng nhập",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/cong-ty-con-cua-evn-lam-du-an-che-tao-thiet-bi-sieu-cao-ap-tren-luoi-500kv-thay-the-hang-nhap-100260928131155758.htm",
-          "observed_at": "2026-09-29T05:44:31.197754+00:00",
+          "title": "Phó Thủ tướng yêu cầu xử lý nhà thầu chậm trễ thi công sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/pho-thu-tuong-yeu-cau-xu-ly-nha-thau-cham-tre-thi-cong-san-bay-long-thanh-185261007180539932.htm",
+          "observed_at": "2026-10-07T11:10:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -690,13 +611,101 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "4ec3611a12138662",
-          "event_signature": "881fa272a1950d4e",
+          "id": "40be11951d560825",
+          "event_signature": "b453e065f42e824c",
+          "family": "project_execution",
+          "title": "Phó Thủ tướng Hồ Quốc Dũng yêu cầu rà soát kỹ lưỡng dự án Luật Đất đai sửa đổi",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-yeu-cau-ra-soat-ky-luong-du-an-luat-dat-dai-sua-doi-post1138756.vnp",
+          "observed_at": "2026-09-28T14:34:55+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e07332b0f88325c3",
+          "family": "project_execution",
+          "title": "Phó Thủ tướng Thường trực Phạm Gia Túc đôn đốc tiến độ cao tốc Đồng Đăng - Trà Lĩnh, sớm đưa vào khai thác phục vụ nhân dân",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-don-doc-tien-do-cao-toc-dong-dang-tra-linh-som-dua-vao-khai-thac-phuc-vu-nhan-dan-102260927095340358.htm",
+          "observed_at": "2026-09-27T05:17:54.653796+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "91affa151a660edc",
+          "family": "policy",
+          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương, bảo hiểm xã hội",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
+          "observed_at": "2026-09-23T04:44:38.178455+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "9a56a73a47ad232f",
+          "family": "policy",
+          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và bảo hiểm xã hội",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
+          "observed_at": "2026-09-22T16:57:07.090843+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "083a633d764aa932",
+          "family": "policy",
+          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và BHXH",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bhxh-102260922162556052.htm",
+          "observed_at": "2026-09-22T11:37:30.564679+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "14077e0049cfb43a",
+          "event_signature": "19de64a97688d138",
           "family": "strategy",
-          "title": "Vì sao Bộ Công thương muốn đưa EVN về quản?",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vi-sao-bo-cong-thuong-muon-dua-evn-ve-quan-185260916161648519.htm",
-          "observed_at": "2026-09-17T01:55:00+00:00",
+          "title": "Phó Thủ tướng Nguyễn Văn Thắng tiếp lãnh đạo Công ty R3 Lithium",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-nguyen-van-thang-tiep-lanh-dao-cong-ty-r3-lithium-post1137470.vnp",
+          "observed_at": "2026-09-21T15:30:24+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "0984e96fe60b149c",
+          "event_signature": "6c3203545b5c720e",
+          "family": "strategy",
+          "title": "Phó Thủ tướng: Đánh giá kỹ các vấn đề quy định trong Luật Đất đai sửa đổi",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-danh-gia-ky-cac-van-de-quy-dinh-trong-luat-dat-dai-sua-doi-post1137452.vnp",
+          "observed_at": "2026-09-21T14:29:57+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -720,10 +729,180 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 3,
+      "official_headline_discovery_count": 4,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "labor",
+        "policy",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "vingroup_ecosystem",
+      "label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 11,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 8,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "51afd9c5da51952c",
+          "event_signature": "1c8b140e6f92f9b2",
+          "family": "operating",
+          "title": "Ngoài Vinhomes và VinFast, Vingroup có thêm 2 ‘quân bài’ tăng trưởng mới",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ngoai-vinhomes-va-vinfast-vingroup-co-them-2-quan-bai-tang-truong-moi-100261007144804691.htm",
+          "observed_at": "2026-10-07T13:23:28.529804+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "668625d3d897333b",
+          "event_signature": "75ce88f456ee884c",
+          "family": "project_execution",
+          "title": "Vingroup hợp tác Alstom cung cấp 200 đoàn tàu metro Hà Nội, sẽ chuyển giao công nghệ để sản xuất tại Việt Nam",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vingroup-hop-tac-alstom-cung-cap-200-doan-tau-metro-ha-noi-se-chuyen-giao-cong-nghe-de-san-xuat-tai-viet-nam-100261006150927425.htm",
+          "observed_at": "2026-10-07T06:00:05.355426+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "42aa8bc76c97cffe",
+          "event_signature": "0bd326a2309417ae",
+          "family": "strategy",
+          "title": "Bus điện VinFast đến Mỹ",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/bus-dien-vinfast-den-my-5129399.html",
+          "observed_at": "2026-10-07T04:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "09b705919428024d",
+          "event_signature": "9577947739b2d5bb",
+          "family": "project_execution",
+          "title": "Vingroup hợp tác với Alstom cung cấp 200 đoàn tàu metro Hà Nội",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vingroup-hop-tac-voi-alstom-cung-cap-200-doan-tau-metro-ha-noi-185261006205056622.htm",
+          "observed_at": "2026-10-06T23:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "414b30c5f6cfb5d4",
+          "event_signature": "a86466399821f607",
+          "family": "project_execution",
+          "title": "117 đoàn tàu cho metro Hà Nội sẽ được Vingroup lắp ráp tại Việt Nam",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/117-doan-tau-cho-metro-ha-noi-se-duoc-vingroup-lap-rap-tai-viet-nam-5129099.html",
+          "observed_at": "2026-10-06T09:30:34+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "59472a2618124b3b",
+          "event_signature": "c43d9761da4f8147",
+          "family": "capital",
+          "title": "Tin tức sáng 2-10: VinFast Việt Nam tăng vốn khủng sau khi con trai ông Phạm Nhật Vượng làm chủ tịch",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/tin-tuc-sang-2-10-vinfast-viet-nam-tang-von-khung-sau-khi-con-trai-ong-pham-nhat-vuong-lam-chu-tich-100261001224425651.htm",
+          "observed_at": "2026-10-02T22:14:49.239509+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "1d0c7f4d1d3cebf2",
+          "event_signature": "af4cdec6194f4a3d",
+          "family": "capital",
+          "title": "Đọc nhanh 1-10: Lợi suất trái phiếu Mỹ lên cao nhất từ 2002 khiến Dow Jones xuống thấp nhất gần 4 tháng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-1-10-loi-suat-trai-phieu-my-len-cao-nhat-tu-2002-khien-dow-jones-xuong-thap-nhat-gan-4-thang-100261001072201959.htm",
+          "observed_at": "2026-10-02T05:37:48.626242+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8f58232304601084",
+          "event_signature": "53ca3f4301855a92",
+          "family": "capital",
+          "title": "VinFast Việt Nam tăng vốn lên hơn 1,3 tỷ USD",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vinfast-viet-nam-tang-von-len-hon-1-3-ty-usd-5127136.html",
+          "observed_at": "2026-10-01T07:29:05+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
         "operating",
         "project_execution",
         "strategy"
@@ -1022,184 +1201,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-phó-thủ-041fcc3a",
-      "label": "Phó Thủ",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Phó Thủ đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
-      "evidence_families": [
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Báo Chính phủ",
-        "Chính sách pháp luật - Chính phủ",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 8,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 8,
-      "anomaly_flags": [
-        "policy_execution_alignment",
-        "strategy_execution_alignment"
-      ],
-      "theme_context": [
-        {
-          "theme_id": "public_infrastructure",
-          "label": "public_infrastructure",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "40be11951d560825",
-          "event_signature": "b453e065f42e824c",
-          "family": "project_execution",
-          "title": "Phó Thủ tướng Hồ Quốc Dũng yêu cầu rà soát kỹ lưỡng dự án Luật Đất đai sửa đổi",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-ho-quoc-dung-yeu-cau-ra-soat-ky-luong-du-an-luat-dat-dai-sua-doi-post1138756.vnp",
-          "observed_at": "2026-09-28T14:34:55+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e07332b0f88325c3",
-          "family": "project_execution",
-          "title": "Phó Thủ tướng Thường trực Phạm Gia Túc đôn đốc tiến độ cao tốc Đồng Đăng - Trà Lĩnh, sớm đưa vào khai thác phục vụ nhân dân",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-don-doc-tien-do-cao-toc-dong-dang-tra-linh-som-dua-vao-khai-thac-phuc-vu-nhan-dan-102260927095340358.htm",
-          "observed_at": "2026-09-27T05:17:54.653796+00:00",
-          "categories": [
-            "infrastructure"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "91affa151a660edc",
-          "family": "policy",
-          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương, bảo hiểm xã hội",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
-          "observed_at": "2026-09-23T04:44:38.178455+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "9a56a73a47ad232f",
-          "family": "policy",
-          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và bảo hiểm xã hội",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bao-hiem-xa-hoi-119260922205530271.htm",
-          "observed_at": "2026-09-22T16:57:07.090843+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "083a633d764aa932",
-          "family": "policy",
-          "title": "Phó Thủ tướng Phạm Thị Thanh Trà họp về xây dựng Đề án cải cách chính sách tiền lương và BHXH",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-hop-ve-xay-dung-de-an-cai-cach-chinh-sach-tien-luong-va-bhxh-102260922162556052.htm",
-          "observed_at": "2026-09-22T11:37:30.564679+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "14077e0049cfb43a",
-          "event_signature": "19de64a97688d138",
-          "family": "strategy",
-          "title": "Phó Thủ tướng Nguyễn Văn Thắng tiếp lãnh đạo Công ty R3 Lithium",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-nguyen-van-thang-tiep-lanh-dao-cong-ty-r3-lithium-post1137470.vnp",
-          "observed_at": "2026-09-21T15:30:24+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "0984e96fe60b149c",
-          "event_signature": "6c3203545b5c720e",
-          "family": "strategy",
-          "title": "Phó Thủ tướng: Đánh giá kỹ các vấn đề quy định trong Luật Đất đai sửa đổi",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-danh-gia-ky-cac-van-de-quy-dinh-trong-luat-dat-dai-sua-doi-post1137452.vnp",
-          "observed_at": "2026-09-21T14:29:57+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "6ca50c7ef8a7ecdc",
-          "event_signature": "be9d4c3739b33321",
-          "family": "project_execution",
-          "title": "Phó Thủ tướng Thường trực Phạm Gia Túc làm việc về các dự án điện tại Cần Thơ",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-lam-viec-ve-cac-du-an-dien-tai-can-tho-post1135817.vnp",
-          "observed_at": "2026-09-12T21:56:57+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 4,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "long_thanh_airport",
       "label": "Cảng hàng không quốc tế Long Thành",
       "entity_type": "strategic_project",
@@ -1220,7 +1221,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment"
       ],
@@ -1242,6 +1243,34 @@
       ],
       "evidence": [
         {
+          "id": "b9df38eec2d27ceb",
+          "event_signature": "e3057402f665ae4e",
+          "family": "project_execution",
+          "title": "Phó thủ tướng: Đưa giai đoạn 1 sân bay Long Thành vào khai thác năm 2026 là nhiệm vụ bắt buộc",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/pho-thu-tuong-dua-giai-doan-1-san-bay-long-thanh-vao-khai-thac-nam-2026-la-nhiem-vu-bat-buoc-100261007161117312.htm",
+          "observed_at": "2026-10-07T13:23:28.529804+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b7be5ce7690c1a86",
+          "event_signature": "976c78cdd10d9792",
+          "family": "project_execution",
+          "title": "Phó Thủ tướng yêu cầu xử lý nhà thầu chậm trễ thi công sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/pho-thu-tuong-yeu-cau-xu-ly-nha-thau-cham-tre-thi-cong-san-bay-long-thanh-185261007180539932.htm",
+          "observed_at": "2026-10-07T11:10:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
           "id": "9b55d7b47d2122ce",
           "event_signature": "a895ee29fdd905a6",
           "family": "project_execution",
@@ -1249,34 +1278,6 @@
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/pho-thu-tuong-pham-gia-tuc-kiem-tra-tien-do-san-bay-long-thanh-10026100411465558.htm",
           "observed_at": "2026-10-06T00:03:58.328430+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "1b09eda98c56166b",
-          "event_signature": "2c465dd8a6cdc44b",
-          "family": "project_execution",
-          "title": "Sân bay Long Thành: ‘Chưa đảm bảo chất lượng, an toàn thì dứt khoát không bay’",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/san-bay-long-thanh-chua-dam-bao-chat-luong-an-toan-thi-dut-khoat-khong-bay-100261004151206211.htm",
-          "observed_at": "2026-10-06T00:03:58.328430+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "72bb52b44ca6c2c7",
-          "event_signature": "afd4b079e7a07462",
-          "family": "project_execution",
-          "title": "Gấp rút 'tổng duyệt' kịch bản khai thác siêu sân bay Long Thành",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/gap-rut-tong-duyet-kich-ban-khai-thac-sieu-san-bay-long-thanh-185260930220441322.htm",
-          "observed_at": "2026-09-30T23:00:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1361,7 +1362,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 2,
-      "newest_evidence_age_days": 7,
+      "newest_evidence_age_days": 8,
       "anomaly_flags": [
         "policy_execution_alignment"
       ],
@@ -1465,7 +1466,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1893,6 +1894,84 @@
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-phó-thống-967962d6",
+      "label": "Phó Thống",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Phó Thống đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "independent_publishers": [
+        "Ngân hàng Nhà nước Việt Nam",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 1,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "a2691495a4019927",
+          "event_signature": "558feeea7b1668fd",
+          "family": "capital",
+          "title": "Phó Thống đốc: Lãi suất huy động tăng nhưng tốc độ đã chậm lại",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/pho-thong-doc-lai-suat-huy-dong-tang-nhung-toc-do-da-cham-lai-post1140594.vnp",
+          "observed_at": "2026-10-07T17:48:53+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "7104f04729ab5ac3",
+          "family": "operating",
+          "title": "Phó Thống đốc Nguyễn Ngọc Cảnh: Tăng cường tính chủ động, linh hoạt trong quản lý dự trữ ngoại hối Mới",
+          "publisher": "Ngân hàng Nhà nước Việt Nam",
+          "source_url": "https://sbv.gov.vn/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-nguy%E1%BB%85n-ng%E1%BB%8Dc-c%E1%BA%A3nh-t%C4%83ng-c%C6%B0%E1%BB%9Dng-t%C3%ADnh-ch%E1%BB%A7-%C4%91%E1%BB%99ng-linh-ho%E1%BA%A1t-trong-qu%E1%BA%A3n-l%C3%BD-d%E1%BB%B1-tr%E1%BB%AF-ngo%E1%BA%A1i-h%E1%BB%91i-1",
+          "observed_at": "2026-10-07T13:22:15.098026+00:00",
+          "categories": [
+            "monetary"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }
   ],
   "verified_watchlist": [],
@@ -1900,6 +1979,12 @@
     {
       "entity_id": "auto-hải-phòng-48a73a83",
       "label": "Hải Phòng",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-điện-biên-8a6161e5",
+      "label": "Điện Biên",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -1928,12 +2013,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-điện-biên-8a6161e5",
-      "label": "Điện Biên",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-quảng-ninh-3ed973db",
       "label": "Quảng Ninh",
       "entity_type": "location",
@@ -1952,12 +2031,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-gia-lai-f5d3ac1a",
-      "label": "Gia Lai",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-thái-nguyên-d5b0cb3a",
       "label": "Thái Nguyên",
       "entity_type": "location",
@@ -1966,6 +2039,12 @@
     {
       "entity_id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-gia-lai-f5d3ac1a",
+      "label": "Gia Lai",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -1988,8 +2067,8 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-quảng-ngãi-2c2a20e3",
-      "label": "Quảng Ngãi",
+      "entity_id": "auto-đà-nẵng-93ee49dd",
+      "label": "Đà Nẵng",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
