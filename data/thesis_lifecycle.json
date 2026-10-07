@@ -1,49 +1,22 @@
 {
   "meta": {
     "version": "2.4.0",
-    "generated_at": "2026-10-07T13:23:49.376458+00:00",
+    "generated_at": "2026-10-07T23:06:05.846718+00:00",
     "mode": "thesis_lifecycle_and_delta_intelligence",
     "status": "active",
     "principle": "do_not_call_directional_trend_before_three_distinct_observation_days"
   },
-  "thesis": "Lifecycle active — đang mạnh lên: không có; đang yếu đi/reversal watch: Hạ tầng dữ liệu & số hóa.",
+  "thesis": "Lifecycle active nhưng chưa có theme thay đổi vật chất so với baseline gần nhất.",
   "coverage": {
     "themes": 7,
     "history_snapshots": 44,
     "max_observation_days": 39,
     "directional_lifecycle_active": true,
     "strengthening": 0,
-    "weakening": 1,
+    "weakening": 0,
     "reversal_watch": 0
   },
   "themes": [
-    {
-      "theme_id": "data_infrastructure",
-      "theme_label": "Hạ tầng dữ liệu & số hóa",
-      "lifecycle_state": "weakening",
-      "provisional_direction": "weakening",
-      "history_confidence": "established",
-      "observation_days": 39,
-      "snapshot_count": 44,
-      "first_seen_at": "2026-08-30T19:23:59.805664+00:00",
-      "last_snapshot_at": "2026-10-07T13:23:49.376458+00:00",
-      "current_status": "insufficient",
-      "current_score": 18,
-      "current_adjusted_score": 18,
-      "delta_vs_previous": -6,
-      "family_delta_vs_previous": 0,
-      "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": -7,
-      "supply_gap_status": "unconfirmed_supply_gap",
-      "tension_level": "no_verified_counter_signal",
-      "reason": "Thesis đang mất độ tin cậy: điểm sau phản chứng -6.",
-      "upgrade_conditions": [
-        "thêm họ bằng chứng độc lập và publisher độc lập",
-        "demand phải chuyển thành buyer/economics quan sát được",
-        "supply-side phải cho thấy capacity pressure hoặc gap có thể kiểm chứng"
-      ],
-      "downgrade_conditions": []
-    },
     {
       "theme_id": "logistics_trade",
       "theme_label": "Gia tốc thương mại & logistics",
@@ -85,15 +58,15 @@
       "first_seen_at": "2026-08-30T19:23:59.805664+00:00",
       "last_snapshot_at": "2026-10-07T13:23:49.376458+00:00",
       "current_status": "early",
-      "current_score": 77,
-      "current_adjusted_score": 67,
-      "delta_vs_previous": 0,
+      "current_score": 75,
+      "current_adjusted_score": 65,
+      "delta_vs_previous": -2,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": 0,
+      "delta_vs_7d": -2,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "material",
-      "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
+      "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -2.",
       "upgrade_conditions": [
         "thêm họ bằng chứng độc lập và publisher độc lập",
         "demand phải chuyển thành buyer/economics quan sát được",
@@ -192,6 +165,33 @@
         "Nếu traffic, volume, ticket count và biên lợi nhuận thực không tăng, thesis tiêu dùng cần hạ cấp dù doanh thu tiền đồng tiếp tục tăng.",
         "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
       ]
+    },
+    {
+      "theme_id": "data_infrastructure",
+      "theme_label": "Hạ tầng dữ liệu & số hóa",
+      "lifecycle_state": "stable",
+      "provisional_direction": "stable",
+      "history_confidence": "established",
+      "observation_days": 39,
+      "snapshot_count": 44,
+      "first_seen_at": "2026-08-30T19:23:59.805664+00:00",
+      "last_snapshot_at": "2026-10-07T13:23:49.376458+00:00",
+      "current_status": "insufficient",
+      "current_score": 18,
+      "current_adjusted_score": 18,
+      "delta_vs_previous": 0,
+      "family_delta_vs_previous": 0,
+      "counter_signal_delta_vs_previous": 0,
+      "delta_vs_7d": -7,
+      "supply_gap_status": "unconfirmed_supply_gap",
+      "tension_level": "no_verified_counter_signal",
+      "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
+      "upgrade_conditions": [
+        "thêm họ bằng chứng độc lập và publisher độc lập",
+        "demand phải chuyển thành buyer/economics quan sát được",
+        "supply-side phải cho thấy capacity pressure hoặc gap có thể kiểm chứng"
+      ],
+      "downgrade_conditions": []
     },
     {
       "theme_id": "energy_grid",
