@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T06:03:04.579429+00:00",
+    "generated_at": "2026-10-08T13:28:05.244264+00:00",
     "status": "active",
-    "history_days": 39,
+    "history_days": 40,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,46 +10,24 @@
   },
   "category_changes": [
     {
-      "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": -21,
-      "trend": "stable",
-      "confidence": 100,
-      "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 4,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": -14,
-      "trend": "stable",
-      "confidence": 89,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "fdi_industrial",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
-      "delta_pct": 29,
+      "delta_pct": 71,
       "trend": "stable",
-      "confidence": 80,
+      "confidence": 82,
       "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "labor",
       "recent_7d": 3,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -10,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 0,
       "trend": "stable",
-      "confidence": 79,
+      "confidence": 77,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -77,14 +55,36 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 12,
       "baseline_expected_7d": 4.0,
-      "delta_pct": -25,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 3,
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": -57,
+      "trend": "cooling",
+      "confidence": 100,
+      "source_diversity_7d": 3,
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 7.0."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 3,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": -40,
+      "trend": "cooling",
+      "confidence": 89,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 5.0."
     },
     {
       "category": "policy",
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "2fcb9b75fb5a9bdf",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phê duyệt Đề án \"Xây dựng Cơ sở dữ liệu lớn về pháp luật\"",
+      "url": "https://baochinhphu.vn/phe-duyet-de-an-xay-dung-co-so-du-lieu-lon-ve-phap-luat-102261008170054624.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-08T13:28:05.244264+00:00"
+    },
+    {
+      "id": "5f695682534f71d6",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Công bố Quyết định kiểm tra việc thực hiện các quy định của pháp luật về công tác thi đua, khen thưởng tại Ngân hàng Nhà nước Việt Nam Mới",
+      "url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-ki%E1%BB%83m-tra-vi%E1%BB%87c-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-quy-%C4%91%E1%BB%8Bnh-c%E1%BB%A7a-ph%C3%A1p-lu%E1%BA%ADt-v%E1%BB%81-c%C3%B4ng-t%C3%A1c-thi-%C4%91ua-khen-th%C6%B0%E1%BB%9Fng-t%E1%BA%A1i-",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-08T13:28:05.244264+00:00"
+    },
+    {
+      "id": "bc45b5d9f47458b2",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Dòng vốn ngân hàng tiếp tục chảy vào sản xuất kinh doanh, hỗ trợ tăng trưởng bền vững 07/10/2026",
+      "url": "https://sbv.gov.vn/w/d%C3%B2ng-v%E1%BB%91n-ng%C3%A2n-h%C3%A0ng-ti%E1%BA%BFp-t%E1%BB%A5c-ch%E1%BA%A3y-v%C3%A0o-s%E1%BA%A3n-xu%E1%BA%A5t-kinh-doanh-h%E1%BB%97-tr%E1%BB%A3-t%C4%83ng-tr%C6%B0%E1%BB%9Fng-b%E1%BB%81n-v%E1%BB%AFng",
+      "categories": [
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-08T13:28:05.244264+00:00"
+    },
+    {
       "id": "729bd6182510967c",
       "source_id": "sbv",
       "publisher": "Ngân hàng Nhà nước Việt Nam",
@@ -172,7 +228,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-08T06:03:04.579429+00:00"
+      "first_seen_at": "2026-10-08T06:03:04.579429+00:00",
+      "collected_at": "2026-10-08T06:03:04.579429+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3bfd8eaebd011273",
@@ -257,99 +315,14 @@
       "first_seen_at": "2026-10-07T23:04:51.988057+00:00",
       "collected_at": "2026-10-07T23:04:51.988057+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "829a03d6eba5a13d",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Thành lập Hội đồng thẩm định Báo cáo nghiên cứu tiền khả thi cao tốc Mộc Châu - Sơn La - Điện Biên",
-      "url": "https://baochinhphu.vn/thanh-lap-hoi-dong-tham-dinh-bao-cao-nghien-cuu-tien-kha-thi-cao-toc-moc-chau-son-la-dien-bien-102261007185711116.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "Điện Biên",
-        "Sơn La"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-07T13:22:15.098026+00:00",
-      "collected_at": "2026-10-07T13:22:15.098026+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "c621579770f23d0d",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Những lưu ý khi người lao động đang hưởng trợ cấp thất nghiệp có việc làm mới",
-      "url": "https://xaydungchinhsach.chinhphu.vn/nhung-luu-y-khi-nguoi-lao-dong-dang-huong-tro-cap-that-nghiep-co-viec-lam-moi-119261007161836871.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-07T13:22:15.098026+00:00",
-      "collected_at": "2026-10-07T13:22:15.098026+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "7104f04729ab5ac3",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Phó Thống đốc Nguyễn Ngọc Cảnh: Tăng cường tính chủ động, linh hoạt trong quản lý dự trữ ngoại hối Mới",
-      "url": "https://sbv.gov.vn/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-nguy%E1%BB%85n-ng%E1%BB%8Dc-c%E1%BA%A3nh-t%C4%83ng-c%C6%B0%E1%BB%9Dng-t%C3%ADnh-ch%E1%BB%A7-%C4%91%E1%BB%99ng-linh-ho%E1%BA%A1t-trong-qu%E1%BA%A3n-l%C3%BD-d%E1%BB%B1-tr%E1%BB%AF-ngo%E1%BA%A1i-h%E1%BB%91i-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-07T13:22:15.098026+00:00",
-      "collected_at": "2026-10-07T13:22:15.098026+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "08a9f056a6af4dc0",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Thông cáo báo chí ban hành Thông tư quy định về an toàn, quản lý rủi ro và điều kiện triển khai đối với việc ứng dụng hệ thống trí tuệ nhân tạo trong ngành Ngân hàng (07/10/2026)",
-      "url": "https://sbv.gov.vn/w/th%C3%B4ng-c%C3%A1o-b%C3%A1o-ch%C3%AD-ban-h%C3%A0nh-th%C3%B4ng-t%C6%B0-quy-%C4%91%E1%BB%8Bnh-v%E1%BB%81-an-to%C3%A0n-qu%E1%BA%A3n-l%C3%BD-r%E1%BB%A7i-ro-v%C3%A0-%C4%91i%E1%BB%81u-ki%E1%BB%87n-tri%E1%BB%83n-khai-%C4%91%E1%BB%91i-v%E1%BB%9Bi-vi%E1%BB%87c-",
-      "categories": [
-        "data_ai"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-07T13:22:15.098026+00:00",
-      "collected_at": "2026-10-07T13:22:15.098026+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
     "policy_regulation": 10,
     "market_data": 9,
-    "capital_flow": 3,
     "hiring": 2,
+    "capital_flow": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {
@@ -357,9 +330,9 @@
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 637,
-    "candidate_events": 247,
-    "reference_events": 385,
+    "historical_events": 648,
+    "candidate_events": 250,
+    "reference_events": 393,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
