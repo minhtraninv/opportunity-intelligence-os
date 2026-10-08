@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-07T23:04:51.988057+00:00",
+    "generated_at": "2026-10-08T06:03:04.579429+00:00",
     "status": "active",
     "history_days": 39,
     "required_history_days": 14,
@@ -11,10 +11,10 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 6,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": 0,
+      "recent_7d": 5,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": -21,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -22,23 +22,34 @@
     },
     {
       "category": "infrastructure",
-      "recent_7d": 5,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 15,
+      "recent_7d": 4,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 89,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "fdi_industrial",
+      "recent_7d": 3,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 29,
+      "trend": "stable",
+      "confidence": 80,
+      "source_diversity_7d": 3,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "labor",
       "recent_7d": 3,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": -18,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -10,
       "trend": "stable",
-      "confidence": 81,
+      "confidence": 79,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -56,9 +67,20 @@
     {
       "category": "sme",
       "recent_7d": 14,
-      "baseline_21d": 48,
-      "baseline_expected_7d": 16.0,
-      "delta_pct": -12,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": -5,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 3,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -74,28 +96,6 @@
       "confidence": 66,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.3."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 2,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": -54,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.3."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 5,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 80,
-      "source_diversity_7d": 5,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "data_ai",
@@ -155,6 +155,26 @@
   ],
   "top_new_events": [
     {
+      "id": "729bd6182510967c",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Phó Thống đốc Nguyễn Ngọc Cảnh: Tăng cường tính chủ động, linh hoạt trong quản lý dự trữ ngoại hối 07/10/2026",
+      "url": "https://sbv.gov.vn/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-nguy%E1%BB%85n-ng%E1%BB%8Dc-c%E1%BA%A3nh-t%C4%83ng-c%C6%B0%E1%BB%9Dng-t%C3%ADnh-ch%E1%BB%A7-%C4%91%E1%BB%99ng-linh-ho%E1%BA%A1t-trong-qu%E1%BA%A3n-l%C3%BD-d%E1%BB%B1-tr%E1%BB%AF-ngo%E1%BA%A1i-h%E1%BB%91i-1",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-08T06:03:04.579429+00:00"
+    },
+    {
       "id": "3bfd8eaebd011273",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +192,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-07T23:04:51.988057+00:00"
+      "first_seen_at": "2026-10-07T23:04:51.988057+00:00",
+      "collected_at": "2026-10-07T23:04:51.988057+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5203568a4106548d",
@@ -190,7 +212,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-07T23:04:51.988057+00:00"
+      "first_seen_at": "2026-10-07T23:04:51.988057+00:00",
+      "collected_at": "2026-10-07T23:04:51.988057+00:00",
+      "last_seen_at": null
     },
     {
       "id": "70bac7e39e9422b1",
@@ -208,7 +232,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-07T23:04:51.988057+00:00"
+      "first_seen_at": "2026-10-07T23:04:51.988057+00:00",
+      "collected_at": "2026-10-07T23:04:51.988057+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8b2b50908f2e31ce",
@@ -228,7 +254,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-07T23:04:51.988057+00:00"
+      "first_seen_at": "2026-10-07T23:04:51.988057+00:00",
+      "collected_at": "2026-10-07T23:04:51.988057+00:00",
+      "last_seen_at": null
     },
     {
       "id": "829a03d6eba5a13d",
@@ -318,21 +346,20 @@
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 11,
-    "market_data": 10,
+    "policy_regulation": 10,
+    "market_data": 9,
     "capital_flow": 3,
     "hiring": 2,
-    "infrastructure_delivery": 2
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {
     "Điện Biên": 1,
-    "Sơn La": 1,
-    "Đồng Nai": 1
+    "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 629,
-    "candidate_events": 246,
-    "reference_events": 378,
+    "historical_events": 637,
+    "candidate_events": 247,
+    "reference_events": 385,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
