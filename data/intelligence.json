@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-09T06:07:58.110245+00:00",
+    "generated_at": "2026-10-09T13:16:05.540516+00:00",
     "status": "active",
-    "history_days": 40,
+    "history_days": 41,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -44,10 +44,10 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
-      "delta_pct": 20,
+      "delta_pct": 50,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -89,11 +89,11 @@
     {
       "category": "energy",
       "recent_7d": 3,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 67,
+      "confidence": 69,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -143,17 +143,71 @@
     },
     {
       "category": "trade_flow",
-      "recent_7d": 0,
+      "recent_7d": 1,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 40,
-      "source_diversity_7d": 0,
+      "confidence": 49,
+      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "4eb5c37a5f395ad2",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về kinh doanh xuất, nhập khẩu gạo",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-kinh-doanh-xuat-nhap-khau-gao-102261009172436695.htm",
+      "categories": [
+        "trade_flow"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-09T13:16:05.540516+00:00"
+    },
+    {
+      "id": "860c736d056f1117",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về lập, thực hiện kế hoạch sử dụng năng lượng tiết kiệm, hiệu quả",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-lap-thuc-hien-ke-hoach-su-dung-nang-luong-tiet-kiem-hieu-qua-102261009162749528.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-09T13:16:05.540516+00:00"
+    },
+    {
+      "id": "b21fb267800d7720",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Công bố Quyết định kiểm tra việc thực hiện các quy định của pháp luật về công tác thi đua, khen thưởng tại Ngân hàng Nhà nước Việt Nam",
+      "url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-ki%E1%BB%83m-tra-vi%E1%BB%87c-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-quy-%C4%91%E1%BB%8Bnh-c%E1%BB%A7a-ph%C3%A1p-lu%E1%BA%ADt-v%E1%BB%81-c%C3%B4ng-t%C3%A1c-thi-%C4%91ua-khen-th%C6%B0%E1%BB%9Fng-t%E1%BA%A1i-",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-09T13:16:05.540516+00:00"
+    },
     {
       "id": "9c1f3f294f81372c",
       "source_id": "gov",
@@ -170,7 +224,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-09T06:07:58.110245+00:00"
+      "first_seen_at": "2026-10-09T06:07:58.110245+00:00",
+      "collected_at": "2026-10-09T06:07:58.110245+00:00",
+      "last_seen_at": null
     },
     {
       "id": "82c5a54ed4709252",
@@ -188,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-09T06:07:58.110245+00:00"
+      "first_seen_at": "2026-10-09T06:07:58.110245+00:00",
+      "collected_at": "2026-10-09T06:07:58.110245+00:00",
+      "last_seen_at": null
     },
     {
       "id": "46f55ac0eb76b961",
@@ -296,9 +354,9 @@
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 14,
     "business_formation": 14,
-    "policy_regulation": 11,
-    "market_data": 10,
+    "market_data": 9,
     "hiring": 2,
     "capital_flow": 2,
     "infrastructure_delivery": 1
@@ -308,9 +366,9 @@
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 656,
-    "candidate_events": 254,
-    "reference_events": 397,
+    "historical_events": 662,
+    "candidate_events": 257,
+    "reference_events": 400,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
