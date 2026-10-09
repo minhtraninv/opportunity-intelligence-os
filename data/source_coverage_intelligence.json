@@ -1,27 +1,27 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-10-09T13:17:50.069664+00:00",
+    "generated_at": "2026-10-09T22:39:24.974444+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-09T13:17:50.148832+00:00"
+    "trust_hardened_at": "2026-10-09T22:39:25.047090+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
     "domains": 20,
-    "strong": 4,
+    "strong": 3,
     "partial": 8,
     "weak": 5,
-    "broken": 1,
+    "broken": 2,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 17,
-    "productive_sources": 4,
-    "source_errors": 1,
+    "healthy_sources": 16,
+    "productive_sources": 3,
+    "source_errors": 2,
     "planned_sources": 8,
-    "verified_productive_sources": 4,
+    "verified_productive_sources": 3,
     "discovery_productive_sources": 11
   },
   "critical_blind_spots": [
@@ -521,8 +521,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 39,
-      "evidence_items_this_run": 39,
+      "discovery_evidence_items_this_run": 35,
+      "evidence_items_this_run": 35,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -554,8 +554,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 39,
-      "evidence_items_this_run": 39,
+      "discovery_evidence_items_this_run": 35,
+      "evidence_items_this_run": 35,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -644,7 +644,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 2,
-      "discovery_evidence_items_this_run": 88,
+      "discovery_evidence_items_this_run": 90,
       "evidence_items_this_run": 2,
       "healthy_source_names": [
         "Cục Thống kê - Doanh nghiệp",
@@ -665,25 +665,23 @@
       "priority": 4,
       "target_healthy_sources": 1,
       "why": "Bằng chứng buyer rất rõ nhưng chỉ là một nhánh của nền kinh tế, không được thống trị radar.",
-      "status": "strong",
+      "status": "broken",
       "active_sources": 1,
-      "healthy_sources": 1,
-      "productive_sources": 1,
-      "verified_productive_sources": 1,
+      "healthy_sources": 0,
+      "productive_sources": 0,
+      "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
-      "verified_evidence_items_this_run": 150,
+      "broken_sources": 1,
+      "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 150,
-      "healthy_source_names": [
+      "evidence_items_this_run": 0,
+      "healthy_source_names": [],
+      "productive_source_names": [],
+      "broken_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
-      "productive_source_names": [
-        "Hệ thống mạng đấu thầu quốc gia"
-      ],
-      "broken_source_names": [],
       "planned_next_sources": [],
-      "coverage_note": "Đủ số nguồn đang tạo evidence đúng cấp cho mục đích của domain; vẫn phải kiểm tra freshness và độc lập.",
+      "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
       "evidence_standard": "verified_primary"
     }
   ],
@@ -702,7 +700,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 133,
+      "discovered_items_this_run": 134,
       "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 3,
@@ -777,11 +775,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 98,
+      "discovered_items_this_run": 100,
       "evidence_items_this_run": 1,
       "error": null,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 85
+      "discovery_evidence_items_this_run": 87
     },
     {
       "id": "fia-fdi",
@@ -797,7 +795,7 @@
       "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7f7016e04800>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
+      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7f8f04373fb0>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -848,7 +846,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 87,
+      "discovered_items_this_run": 90,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
@@ -903,11 +901,11 @@
       ],
       "authority": 0.78,
       "health": "ok",
-      "discovered_items_this_run": 8,
-      "evidence_items_this_run": 8,
+      "discovered_items_this_run": 9,
+      "evidence_items_this_run": 9,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 8
+      "discovery_evidence_items_this_run": 9
     },
     {
       "id": "tuoitre-business",
@@ -921,11 +919,11 @@
       ],
       "authority": 0.76,
       "health": "ok",
-      "discovered_items_this_run": 8,
-      "evidence_items_this_run": 8,
+      "discovered_items_this_run": 3,
+      "evidence_items_this_run": 3,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 8
+      "discovery_evidence_items_this_run": 3
     },
     {
       "id": "thanhnien-economy",
@@ -1008,10 +1006,10 @@
         "procurement_demand"
       ],
       "authority": 1.0,
-      "health": "ok",
+      "health": "error",
       "discovered_items_this_run": 150,
       "evidence_items_this_run": 150,
-      "error": null,
+      "error": "12 procurement source errors",
       "verified_evidence_items_this_run": 150,
       "discovery_evidence_items_this_run": 0
     },
