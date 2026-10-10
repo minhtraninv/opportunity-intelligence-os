@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-10T05:51:51.904590+00:00",
+    "generated_at": "2026-10-10T12:30:57.349507+00:00",
     "status": "active",
-    "history_days": 41,
+    "history_days": 42,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -19,6 +19,28 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 5,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": -32,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 3,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 77,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "labor",
@@ -41,28 +63,6 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 2,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "construction",
-      "recent_7d": 4,
-      "baseline_21d": 22,
-      "baseline_expected_7d": 7.3,
-      "delta_pct": -45,
-      "trend": "cooling",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.3."
     },
     {
       "category": "infrastructure",
@@ -109,10 +109,10 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "data_ai",
-      "recent_7d": 1,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
+      "category": "logistics",
+      "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -120,10 +120,10 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "logistics",
+      "category": "data_ai",
       "recent_7d": 1,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,6 +155,43 @@
   ],
   "top_new_events": [
     {
+      "id": "330d38ca2b914515",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Xây dựng lực lượng vũ trang Thủ đô 'tinh, gọn, mạnh' đáp ứng yêu cầu trong tình hình mới",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-xay-dung-luc-luong-vu-trang-thu-do-tinh-gon-manh-dap-ung-yeu-cau-trong-tinh-hinh-moi-10226101013265125.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-10T12:30:57.349507+00:00"
+    },
+    {
+      "id": "abf355f10bd990b7",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định xác định xuất xứ Việt Nam đối với hàng hóa sản xuất, lưu thông trong nước",
+      "url": "https://baochinhphu.vn/quy-dinh-xac-dinh-xuat-xu-viet-nam-doi-voi-hang-hoa-san-xuat-luu-thong-trong-nuoc-10226101016284845.htm",
+      "categories": [
+        "fdi_industrial",
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-10T12:30:57.349507+00:00"
+    },
+    {
       "id": "e0b7825c79b1d2d4",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +207,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-10T05:51:51.904590+00:00"
+      "first_seen_at": "2026-10-10T05:51:51.904590+00:00",
+      "collected_at": "2026-10-10T05:51:51.904590+00:00",
+      "last_seen_at": null
     },
     {
       "id": "bdfaee1768a0f5e5",
@@ -190,7 +229,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-10T05:51:51.904590+00:00"
+      "first_seen_at": "2026-10-10T05:51:51.904590+00:00",
+      "collected_at": "2026-10-10T05:51:51.904590+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7dab33fed4aed744",
@@ -293,52 +334,12 @@
       "first_seen_at": "2026-10-09T13:16:05.540516+00:00",
       "collected_at": "2026-10-09T13:16:05.540516+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "9c1f3f294f81372c",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Phó Thủ tướng Nguyễn Văn Thắng yêu cầu rà soát, không để giá hàng hóa tăng bất hợp lý",
-      "url": "https://baochinhphu.vn/pho-thu-tuong-nguyen-van-thang-yeu-cau-ra-soat-khong-de-gia-hang-hoa-tang-bat-hop-ly-102261009115552391.htm",
-      "categories": [
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-09T06:07:58.110245+00:00",
-      "collected_at": "2026-10-09T06:07:58.110245+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "82c5a54ed4709252",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Quy định hình thức, xây dựng kế hoạch tổ chức hoạt động giáo dục tăng cường, giáo dục theo nhu cầu người học",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-hinh-thuc-xay-dung-ke-hoach-to-chuc-hoat-dong-giao-duc-tang-cuong-giao-duc-theo-nhu-cau-nguoi-hoc-119261009092030468.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-09T06:07:58.110245+00:00",
-      "collected_at": "2026-10-09T06:07:58.110245+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 15,
+    "policy_regulation": 16,
     "business_formation": 14,
-    "market_data": 8,
+    "market_data": 9,
     "hiring": 2,
     "infrastructure_delivery": 1
   },
@@ -347,9 +348,9 @@
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 672,
-    "candidate_events": 261,
-    "reference_events": 406,
+    "historical_events": 677,
+    "candidate_events": 263,
+    "reference_events": 409,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
