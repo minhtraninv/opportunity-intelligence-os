@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-09T22:37:56.591138+00:00",
+    "generated_at": "2026-10-10T05:51:51.904590+00:00",
     "status": "active",
     "history_days": 41,
     "required_history_days": 14,
@@ -10,35 +10,24 @@
   },
   "category_changes": [
     {
-      "category": "infrastructure",
-      "recent_7d": 3,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": -36,
-      "trend": "stable",
-      "confidence": 87,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "fdi_industrial",
-      "recent_7d": 4,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 71,
-      "trend": "stable",
-      "confidence": 82,
-      "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "category": "monetary",
+      "recent_7d": 6,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 80,
+      "trend": "single_source_spike",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
     },
     {
       "category": "labor",
       "recent_7d": 3,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 0,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 12,
       "trend": "stable",
-      "confidence": 77,
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -54,11 +43,11 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
-      "recent_7d": 5,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 50,
+      "category": "fdi_industrial",
+      "recent_7d": 2,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -67,13 +56,24 @@
     {
       "category": "construction",
       "recent_7d": 4,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": -43,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": -45,
       "trend": "cooling",
-      "confidence": 100,
-      "source_diversity_7d": 3,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.0."
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.3."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 2,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": -60,
+      "trend": "cooling",
+      "confidence": 87,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 5.0."
     },
     {
       "category": "policy",
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "e0b7825c79b1d2d4",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng các nghị định, thông tư về tiền lương, mức lương tối thiểu, bảo hiểm xã hội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-cac-nghi-dinh-thong-tu-ve-tien-luong-muc-luong-toi-thieu-bao-hiem-xa-hoi-119261010062640108.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-10T05:51:51.904590+00:00"
+    },
+    {
+      "id": "bdfaee1768a0f5e5",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Công bố Quyết định kiểm tra việc thực hiện các quy định của pháp luật về công tác thi đua, khen thưởng tại Ngân hàng Nhà nước Việt Nam 08/10/2026",
+      "url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-ki%E1%BB%83m-tra-vi%E1%BB%87c-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-quy-%C4%91%E1%BB%8Bnh-c%E1%BB%A7a-ph%C3%A1p-lu%E1%BA%ADt-v%E1%BB%81-c%C3%B4ng-t%C3%A1c-thi-%C4%91ua-khen-th%C6%B0%E1%BB%9Fng-t%E1%BA%A1i-",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-10T05:51:51.904590+00:00"
+    },
+    {
       "id": "7dab33fed4aed744",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-09T22:37:56.591138+00:00"
+      "first_seen_at": "2026-10-09T22:37:56.591138+00:00",
+      "collected_at": "2026-10-09T22:37:56.591138+00:00",
+      "last_seen_at": null
     },
     {
       "id": "87238f2cf98f503b",
@@ -190,7 +230,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-09T22:37:56.591138+00:00"
+      "first_seen_at": "2026-10-09T22:37:56.591138+00:00",
+      "collected_at": "2026-10-09T22:37:56.591138+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4eb5c37a5f395ad2",
@@ -291,56 +333,13 @@
       "first_seen_at": "2026-10-09T06:07:58.110245+00:00",
       "collected_at": "2026-10-09T06:07:58.110245+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "46f55ac0eb76b961",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 9/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-08T23:20:23.935981+00:00",
-      "collected_at": "2026-10-08T23:20:23.935981+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "ca8261aab37e6e64",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 9/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-08T23:20:23.935981+00:00",
-      "collected_at": "2026-10-08T23:20:23.935981+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 15,
     "business_formation": 14,
-    "policy_regulation": 13,
-    "market_data": 9,
+    "market_data": 8,
     "hiring": 2,
-    "capital_flow": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {
@@ -348,9 +347,9 @@
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 668,
-    "candidate_events": 259,
-    "reference_events": 404,
+    "historical_events": 672,
+    "candidate_events": 261,
+    "reference_events": 406,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
