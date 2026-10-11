@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-10T21:44:08.170404+00:00",
+    "generated_at": "2026-10-11T05:47:20.005079+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,17 +9,17 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 574,
+    "recent_events": 573,
     "entities_seen_recently": 223,
     "auto_discovered_entities": 212,
-    "history_events": 741
+    "history_events": 745
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 10,
+      "items_this_run": 9,
       "error": null
     },
     {
@@ -33,14 +33,14 @@
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 7,
       "error": null
     }
   ],
@@ -58,12 +58,12 @@
       "recent_events": 17
     },
     {
-      "entity_id": "auto-quảng-trị-3b0b65db",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
       "recent_events": 14
     },
     {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
-      "recent_events": 13
+      "entity_id": "auto-quảng-trị-3b0b65db",
+      "recent_events": 14
     },
     {
       "entity_id": "auto-quảng-ninh-3ed973db",
@@ -126,11 +126,11 @@
       "recent_events": 7
     },
     {
-      "entity_id": "auto-lâm-đồng-2efb3e17",
+      "entity_id": "auto-tây-ninh-02d05047",
       "recent_events": 6
     },
     {
-      "entity_id": "auto-vĩnh-long-8b63f072",
+      "entity_id": "auto-lâm-đồng-2efb3e17",
       "recent_events": 6
     },
     {
@@ -154,11 +154,7 @@
       "recent_events": 5
     },
     {
-      "entity_id": "auto-tây-ninh-02d05047",
-      "recent_events": 5
-    },
-    {
-      "entity_id": "auto-vpbank-0ce5c450",
+      "entity_id": "auto-vĩnh-long-8b63f072",
       "recent_events": 5
     },
     {
@@ -174,11 +170,19 @@
       "recent_events": 5
     },
     {
+      "entity_id": "auto-đắk-lắk-3987b6e4",
+      "recent_events": 4
+    },
+    {
       "entity_id": "viettel_group",
       "recent_events": 4
     },
     {
       "entity_id": "auto-coteccons-1295b55e",
+      "recent_events": 4
+    },
+    {
+      "entity_id": "auto-vpbank-0ce5c450",
       "recent_events": 4
     },
     {
@@ -195,10 +199,6 @@
     },
     {
       "entity_id": "auto-vietinbank-52208e14",
-      "recent_events": 4
-    },
-    {
-      "entity_id": "auto-vietravel-airlines-422e5334",
       "recent_events": 4
     },
     {
@@ -219,10 +219,6 @@
     },
     {
       "entity_id": "auto-đồng-nai-5489d284",
-      "recent_events": 3
-    },
-    {
-      "entity_id": "auto-đắk-lắk-3987b6e4",
       "recent_events": 3
     },
     {
@@ -384,6 +380,14 @@
     {
       "entity_id": "auto-totalenergies-6802e366",
       "recent_events": 2
+    },
+    {
+      "entity_id": "auto-vietravel-airlines-422e5334",
+      "recent_events": 2
+    },
+    {
+      "entity_id": "auto-cùng-co-op-eda9e697",
+      "recent_events": 1
     },
     {
       "entity_id": "auto-s-p-d00e2fdb",
@@ -932,13 +936,31 @@
     {
       "entity_id": "auto-acb-6fee7406",
       "recent_events": 1
-    },
-    {
-      "entity_id": "auto-el-nino-1b0f9b10",
-      "recent_events": 1
     }
   ],
   "auto_entities": [
+    {
+      "id": "auto-bắc-ninh-a1c0d701",
+      "label": "Bắc Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Bắc Ninh"
+      ],
+      "recent_events": 14,
+      "families": [
+        "capital",
+        "labor",
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
     {
       "id": "auto-quảng-trị-3b0b65db",
       "label": "Quảng Trị",
@@ -954,28 +976,6 @@
       "publishers": [
         "Tuổi Trẻ Kinh doanh",
         "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-bắc-ninh-a1c0d701",
-      "label": "Bắc Ninh",
-      "entity_type": "location",
-      "aliases": [
-        "Bắc Ninh"
-      ],
-      "recent_events": 13,
-      "families": [
-        "capital",
-        "labor",
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": false,
@@ -1246,28 +1246,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-vĩnh-long-8b63f072",
-      "label": "Vĩnh Long",
-      "entity_type": "location",
-      "aliases": [
-        "Vĩnh Long"
-      ],
-      "recent_events": 6,
-      "families": [
-        "labor",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "auto-nghệ-an-c107b253",
       "label": "Nghệ An",
       "entity_type": "location",
@@ -1304,6 +1282,27 @@
       "publishers": [
         "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
+      "entity_type": "location",
+      "aliases": [
+        "Tây Ninh"
+      ],
+      "recent_events": 6,
+      "families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
         "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
@@ -1352,6 +1351,28 @@
       "suppression_reason": null
     },
     {
+      "id": "auto-vĩnh-long-8b63f072",
+      "label": "Vĩnh Long",
+      "entity_type": "location",
+      "aliases": [
+        "Vĩnh Long"
+      ],
+      "recent_events": 5,
+      "families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "id": "auto-phú-thọ-d66a434f",
       "label": "Phú Thọ",
       "entity_type": "location",
@@ -1366,27 +1387,6 @@
       ],
       "publishers": [
         "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "auto-tây-ninh-02d05047",
-      "label": "Tây Ninh",
-      "entity_type": "location",
-      "aliases": [
-        "Tây Ninh"
-      ],
-      "recent_events": 5,
-      "families": [
-        "operating",
-        "policy",
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
         "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
@@ -1457,26 +1457,6 @@
       "suppression_reason": null
     },
     {
-      "id": "auto-vpbank-0ce5c450",
-      "label": "VPBank",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "VPBank"
-      ],
-      "recent_events": 5,
-      "families": [
-        "capital",
-        "project_execution"
-      ],
-      "publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
       "id": "auto-coteccons-1295b55e",
       "label": "Coteccons",
       "entity_type": "organization_candidate",
@@ -1540,25 +1520,43 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-vietravel-airlines-422e5334",
-      "label": "Vietravel Airlines",
+      "id": "auto-vpbank-0ce5c450",
+      "label": "VPBank",
       "entity_type": "organization_candidate",
       "aliases": [
-        "Vietravel Airlines"
+        "VPBank"
       ],
       "recent_events": 4,
       "families": [
-        "operating",
-        "strategy"
+        "capital",
+        "project_execution"
       ],
       "publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
       ],
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "auto-đắk-lắk-3987b6e4",
+      "label": "Đắk Lắk",
+      "entity_type": "location",
+      "aliases": [
+        "Đắk Lắk"
+      ],
+      "recent_events": 4,
+      "families": [
+        "operating",
+        "project_execution"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "auto-tuyên-quang-6a8db616",
@@ -1798,25 +1796,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "auto-đắk-lắk-3987b6e4",
-      "label": "Đắk Lắk",
-      "entity_type": "location",
-      "aliases": [
-        "Đắk Lắk"
-      ],
-      "recent_events": 3,
-      "families": [
-        "operating",
-        "project_execution"
-      ],
-      "publishers": [
-        "VietnamPlus Kinh tế"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "auto-t-t-group-7e22ab56",
       "label": "T&T Group",
       "entity_type": "organization_candidate",
@@ -1965,6 +1944,26 @@
       "recent_events": 2,
       "families": [
         "capital",
+        "strategy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-vietravel-airlines-422e5334",
+      "label": "Vietravel Airlines",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Vietravel Airlines"
+      ],
+      "recent_events": 2,
+      "families": [
+        "operating",
         "strategy"
       ],
       "publishers": [
@@ -2482,6 +2481,24 @@
       "suppression_reason": null
     },
     {
+      "id": "auto-cùng-co-op-eda9e697",
+      "label": "Cùng Co.op",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Cùng Co.op"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-s-p-d00e2fdb",
       "label": "S&P",
       "entity_type": "organization_candidate",
@@ -2876,27 +2893,47 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
-    },
-    {
-      "id": "auto-fe-credit-ceb54b20",
-      "label": "FE CREDIT",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "FE CREDIT"
-      ],
-      "recent_events": 1,
-      "families": [
-        "capital"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     }
   ],
   "events": [
+    {
+      "id": "8591c34729b4c847",
+      "event_signature": "6972d82bb0331e3c",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "entity_label": "Bắc Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "capital",
+      "title": "Bắc Ninh nâng cao vị thế trong chuỗi giá trị điện tử, bán dẫn",
+      "summary": "Để nâng cao vị thế trong chuỗi cung ứng toàn cầu, Bắc Ninh đang tiếp tục hoàn thiện hạ tầng, phát triển nhân lực và tạo điều kiện để doanh nghiệp trong nước tham gia sâu hơn vào chuỗi giá trị. Việt Nam chuyển đổi nguồn lực FDI thành hệ sinh thái liên kết bền vững Dòng vốn FDI vào Việt Nam vượt 50 tỷ USD sau 9 tháng Đồng Nai hút mạnh dòng vốn đầu tư trong nướ",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/bac-ninh-nang-cao-vi-the-trong-chuoi-gia-tri-dien-tu-ban-dan-post1141318.vnp",
+      "published_at": "2026-10-11T11:47:12+00:00",
+      "first_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "57ca4580a36bc2fe",
+      "event_signature": "d74bad17587d3c02",
+      "entity_id": "auto-đắk-lắk-3987b6e4",
+      "entity_label": "Đắk Lắk",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Đắk Lắk đổi mới, nâng cao hiệu quả thu hút đầu tư giai đoạn 2026-2030",
+      "summary": "Trong giai đoạn 2026-2030, Đắk Lắk phấn đấu thu hút từ 350-400 dự án đầu tư, với tổng vốn đầu tư dự kiến khoảng 01 triệu tỷ đồng; thu hút vốn đầu tư trực tiếp nước ngoài đạt từ 12 tỷ USD trở lên. Bắc Ninh thu hút hơn 18,7 tỷ USD vốn đầu tư trong 9 tháng Hải Phòng thu hút hơn 3,6 tỷ USD vốn đầu tư nước ngoài trong 9 tháng Sơn La đẩy mạnh thu hút đầu tư chế bi",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/dak-lak-doi-moi-nang-cao-hieu-qua-thu-hut-dau-tu-giai-doan-2026-2030-post1140742.vnp",
+      "published_at": "2026-10-11T08:31:47+00:00",
+      "first_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
     {
       "id": "1e6a65d956aedead",
       "event_signature": "c4ff01f0433927f7",
@@ -2909,9 +2946,9 @@
       "summary": "Nhiều nội dung đề xuất của Bộ Tài chính khác với đề xuất của Bộ Công Thương đưa ra trước đó.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/de-xuat-moi-tai-co-cau-evn-giu-nguyen-nhieu-don-vi-truc-thuoc-de-vao-top-500-the-gioi-100261009165645667.htm",
-      "published_at": "2026-10-10T21:44:08.170404+00:00",
+      "published_at": "2026-10-11T05:47:20.005079+00:00",
       "first_seen_at": "2026-10-09T22:39:09.262097+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -2926,9 +2963,9 @@
       "summary": "Trước những thông tin xuất hiện trên thị trường, Ngân hàng TMCP Sài Gòn - Hà Nội (SHB) khẳng định hoạt động kinh doanh luôn được duy trì liên tục, an toàn, ổn định; các kế hoạch tài chính được triển khai theo đúng quy định.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/thi-gia-miet-mai-giam-ve-moc-10000-dong-shb-cua-bau-hien-len-tieng-truoc-tin-don-100261009205916649.htm",
-      "published_at": "2026-10-10T21:44:08.170404+00:00",
+      "published_at": "2026-10-11T05:47:20.005079+00:00",
       "first_seen_at": "2026-10-10T05:53:15.726574+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -2945,12 +2982,50 @@
       "summary": "Từ ngày 10-10 đến hết năm 2026, Saigon Co.op triển khai chương trình tặng túi môi trường, cộng điểm thưởng cho khách hàng không nhận túi nilon và mở rộng quầy tự đóng gói, nhằm thúc đẩy thói quen mua sắm xanh.",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "source_url": "https://tuoitre.vn/saigon-coop-chi-hang-chuc-ti-dong-khuyen-khich-khach-hang-bo-tui-nilon-100261010121759651.htm",
-      "published_at": "2026-10-10T21:44:08.170404+00:00",
+      "published_at": "2026-10-11T05:47:20.005079+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
+    },
+    {
+      "id": "15d3269714d1427c",
+      "event_signature": "aa271953a9375cde",
+      "entity_id": "auto-cùng-co-op-eda9e697",
+      "entity_label": "Cùng Co.op",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Cùng Co.op chọn túi xanh - Từ chối túi nilon",
+      "summary": "Tiếp nối chiến dịch '30 năm - Một cam kết xanh', từ ngày 10.10 - 31.12.2026, Liên hiệp Hợp tác xã Thương mại TP.HCM (Saigon Co.op) đầu tư nguồn lực triển khai chương trình 'Cùng Co.op chọn túi xanh - giảm túi nilon', để khuyến khích người tiêu dùng thay đổi thói quen sử dụng túi nilon trong mua sắm.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/cung-coop-chon-tui-xanh-tu-choi-tui-nilon-185261010154818717.htm",
+      "published_at": "2026-10-11T01:00:00+00:00",
+      "first_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "4f6cd7495db3f12f",
+      "event_signature": "804a407104e790b3",
+      "entity_id": "auto-tây-ninh-02d05047",
+      "entity_label": "Tây Ninh",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Tây Ninh phát triển nhà ở xã hội, nhà ở công nhân sát nhu cầu thực tế",
+      "summary": "Năm 2026, Tây Ninh được Chính phủ giao hoàn thành 13.500 căn nhà ở xã hội. Tỉnh không chỉ đang đẩy nhanh từng công trình mà đã rà soát kỹ nhu cầu thực tế, mạnh dạn chuyển hướng sang nhà ở cho thuê cho công nhân.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/tay-ninh-phat-trien-nha-o-xa-hoi-nha-o-cong-nhan-sat-nhu-cau-thuc-te-185261011065416724.htm",
+      "published_at": "2026-10-10T23:44:00+00:00",
+      "first_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
       "id": "c2d5953dba967f1e",
@@ -2966,7 +3041,7 @@
       "source_url": "https://www.vietnamplus.vn/da-nang-phat-trien-kinh-te-vuon-theo-huong-sinh-thai-tuan-hoan-da-gia-tri-post1139623.vnp",
       "published_at": "2026-10-10T16:28:01+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -2985,7 +3060,7 @@
       "source_url": "https://www.vietnamplus.vn/sp-giu-nguyen-xep-hang-tin-nhiem-cua-anh-post1141217.vnp",
       "published_at": "2026-10-10T15:55:18+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3004,7 +3079,7 @@
       "source_url": "https://www.vietnamplus.vn/bac-ninh-phat-trien-cong-nghiep-ho-tro-theo-huong-chuyen-sau-xanh-thong-minh-post1141206.vnp",
       "published_at": "2026-10-10T14:27:45+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3042,7 +3117,7 @@
       "source_url": "https://vnexpress.net/bac-ninh-co-5-nam-de-xay-dung-vi-the-trung-tam-cung-ung-cua-the-gioi-5130754.html",
       "published_at": "2026-10-10T09:21:44+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3061,7 +3136,7 @@
       "source_url": "https://vnexpress.net/vinfast-an-do-duoc-vinh-danh-nha-san-xuat-xe-dien-cua-nam-5130716.html",
       "published_at": "2026-10-10T08:00:00+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3078,7 +3153,7 @@
       "source_url": "https://thanhnien.vn/viettel-tai-lao-can-chuyen-tu-cung-cap-dich-vu-sang-kien-tao-he-sinh-thai-so-185261010131049905.htm",
       "published_at": "2026-10-10T07:00:00+00:00",
       "first_seen_at": "2026-10-10T12:32:05.910441+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3095,7 +3170,7 @@
       "source_url": "https://www.vietnamplus.vn/bo-tai-chinh-trinh-de-an-tai-cau-truc-evn-phu-hop-voi-thi-truong-dien-canh-tranh-post1141124.vnp",
       "published_at": "2026-10-10T06:02:40+00:00",
       "first_seen_at": "2026-10-10T05:53:15.726574+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3131,7 +3206,7 @@
       "source_url": "https://thanhnien.vn/tach-truyen-tai-gia-dien-anh-huong-the-nao-185261009205235424.htm",
       "published_at": "2026-10-09T23:00:00+00:00",
       "first_seen_at": "2026-10-10T05:53:15.726574+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3148,7 +3223,7 @@
       "source_url": "https://vnexpress.net/vi-sao-vinhomes-ban-lo-lon-cho-chu-dau-tu-khac-thay-vi-tu-ban-tung-can-5130302.html",
       "published_at": "2026-10-09T20:00:40+00:00",
       "first_seen_at": "2026-10-09T22:39:09.262097+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3165,7 +3240,7 @@
       "source_url": "https://www.vietnamplus.vn/son-la-tim-dong-luc-tang-truong-phan-dau-grdp-quy-4-tang-1385-post1141060.vnp",
       "published_at": "2026-10-09T18:01:41+00:00",
       "first_seen_at": "2026-10-09T13:17:30.176031+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3334,7 +3409,7 @@
       "source_url": "https://thanhnien.vn/vi-sao-bo-tai-chinh-de-xuat-chua-voi-tach-evnnpt-khoi-evn-18526100918451249.htm",
       "published_at": "2026-10-09T12:32:00+00:00",
       "first_seen_at": "2026-10-09T13:17:30.176031+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -3444,7 +3519,7 @@
       "source_url": "https://vnexpress.net/evnspc-chu-dong-ha-tang-dien-thu-hut-dau-tu-khu-cong-nghiep-5130487.html",
       "published_at": "2026-10-09T10:00:00+00:00",
       "first_seen_at": "2026-10-09T13:17:30.176031+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3501,7 +3576,7 @@
       "source_url": "https://thanhnien.vn/tay-ninh-don-suc-cho-cong-trinh-trong-diem-siet-trach-nhiem-chong-lang-phi-185261009151746466.htm",
       "published_at": "2026-10-09T08:07:00+00:00",
       "first_seen_at": "2026-10-09T13:17:30.176031+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3520,7 +3595,7 @@
       "source_url": "https://vnexpress.net/t-t-group-dau-tu-du-an-dien-gio-768-trieu-usd-tai-lao-5130381.html",
       "published_at": "2026-10-09T07:15:00+00:00",
       "first_seen_at": "2026-10-09T13:17:30.176031+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3577,7 +3652,7 @@
       "source_url": "https://vnexpress.net/dnse-chiem-26-62-thi-phan-moi-gioi-chung-khoan-phai-sinh-5130327.html",
       "published_at": "2026-10-09T05:00:00+00:00",
       "first_seen_at": "2026-10-09T06:09:06.293398+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3763,7 +3838,7 @@
       "source_url": "https://vnexpress.net/coteccons-dua-chien-luoc-esg-vao-chuoi-van-hanh-cung-ung-5129916.html",
       "published_at": "2026-10-08T12:00:00+00:00",
       "first_seen_at": "2026-10-08T23:21:33.722249+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3820,7 +3895,7 @@
       "source_url": "https://vnexpress.net/100-doanh-nghiep-duoc-nguoi-lao-dong-yeu-thich-nhat-nam-2026-5130024.html",
       "published_at": "2026-10-08T10:59:16+00:00",
       "first_seen_at": "2026-10-08T13:29:13.935509+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -4501,7 +4576,7 @@
       "source_url": "https://vnexpress.net/de-xuat-tach-tong-cong-ty-truyen-tai-dien-quoc-gia-khoi-evn-5129635.html",
       "published_at": "2026-10-07T11:35:47+00:00",
       "first_seen_at": "2026-10-07T13:23:28.529804+00:00",
-      "last_seen_at": "2026-10-10T21:44:08.170404+00:00",
+      "last_seen_at": "2026-10-11T05:47:20.005079+00:00",
       "evidence_grade": "media_discovery"
     },
     {
@@ -4676,7 +4751,7 @@
       "event_signature": "1d05afcbcf813fb2",
       "entity_id": "auto-fe-credit-ceb54b20",
       "entity_label": "FE CREDIT",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "capital",
       "title": "FE CREDIT thúc đẩy tín dụng tiêu dùng minh bạch, có trách nhiệm",
@@ -4686,9 +4761,7 @@
       "published_at": "2026-10-07T06:00:05.355426+00:00",
       "first_seen_at": "2026-10-06T18:22:25.232669+00:00",
       "last_seen_at": "2026-10-07T06:00:05.355426+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "8fe5f5f0a0964053",
@@ -11950,76 +12023,6 @@
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "7f22d0ebd1dceb9e",
-      "event_signature": "6769720ec707c8ff",
-      "entity_id": "auto-cục-đường-68b6468d",
-      "entity_label": "Cục Đường",
-      "entity_type": "auto_discovered_organization",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Cục Đường bộ: Chưa thu phí cao tốc Cần Thơ - Cà Mau",
-      "summary": "Cục Đường bộ Việt Nam cho hay chưa tổ chức thu phí sử dụng đường bộ cao tốc đối với 2 dự án thành phần đầu tư công từ Cần Thơ đến Cà Mau.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/cuc-duong-bo-chua-thu-phi-cao-toc-can-tho-ca-mau-100260915090031308.htm",
-      "published_at": "2026-09-16T04:49:09.491365+00:00",
-      "first_seen_at": "2026-09-15T11:44:53.321518+00:00",
-      "last_seen_at": "2026-09-16T04:49:09.491365+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "0e205a75ed7312c8",
-      "event_signature": "2b129de747db5dd9",
-      "entity_id": "viettel_group",
-      "entity_label": "Viettel",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Viettel Construction dự phòng 100% với 3 khoản nợ xấu liên quan FLC, Novaland",
-      "summary": "Viettel Construction ghi nhận gần 97,4 tỉ đồng các khoản phải thu được xếp vào nợ xấu từ FLC Faros và hai doanh nghiệp đứng tên chủ đầu tư các dự án thuộc hệ sinh thái Novaland.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/viettel-construction-du-phong-100-voi-3-khoan-no-xau-lien-quan-flc-novaland-100260914222613969.htm",
-      "published_at": "2026-09-15T21:22:37.059563+00:00",
-      "first_seen_at": "2026-09-14T21:51:03.952377+00:00",
-      "last_seen_at": "2026-09-15T21:22:37.059563+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "0f3f67dba7592a0b",
-      "event_signature": "6e6d3dd88d1a57d2",
-      "entity_id": "auto-wto-fcbd9c65",
-      "entity_label": "WTO",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "operating",
-      "title": "WTO cảnh báo thế giới thiệt hại 10% GDP nếu các quy tắc thương mại bị suy yếu",
-      "summary": "Tổng Giám đốc WTO nhấn mạnh hệ thống thương mại đa phương đã mang lại những lợi ích to lớn trong 80 năm qua, góp phần tạo ra một nền kinh tế toàn cầu gắn kết và có khả năng chống chịu tốt hơn. Thu hẹp khoảng cách năng lực số có thể mở ra hàng nghìn tỷ USD tăng trưởng GDP toàn cầu WIPO: Đầu tư vào tài sản vô hình đạt mức cao kỷ lục nhờ làn sóng AI Liên hợp qu",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/wto-canh-bao-the-gioi-thiet-hai-10-gdp-neu-cac-quy-tac-thuong-mai-bi-suy-yeu-post1136357.vnp",
-      "published_at": "2026-09-15T20:46:57+00:00",
-      "first_seen_at": "2026-09-15T16:59:29.248498+00:00",
-      "last_seen_at": "2026-09-16T21:18:31.784784+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "3629a05756132755",
-      "event_signature": "3fd2892c7ec8a4c0",
-      "entity_id": "evn_power_system",
-      "entity_label": "EVN / hệ thống điện quốc gia",
-      "entity_type": "strategic_operator",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Sản lượng điện tháng 9 tăng hơn 10%, EVN tập trung bảo đảm cung ứng trong mọi tình huống",
-      "summary": "Trước yêu cầu bảo đảm điện trong mọi tình huống, EVN yêu cầu các đơn vị triển khai đồng bộ các giải pháp về vận hành nguồn, lưới điện, phòng chống thiên tai và đẩy nhanh tiến độ các dự án trọng điểm. Việt Nam tham dự Diễn đàn Thanh niên quốc tế trong lĩnh vực năng lượng hạt nhân EVN làm rõ một số thông tin trong Báo cáo tài chính năm 2025 của công ty mẹ Dự á",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/san-luong-dien-thang-9-tang-hon-10-evn-tap-trung-bao-dam-cung-ung-trong-moi-tinh-huong-post1136380.vnp",
-      "published_at": "2026-09-15T20:31:56+00:00",
-      "first_seen_at": "2026-09-15T16:59:29.248498+00:00",
-      "last_seen_at": "2026-09-16T21:18:31.784784+00:00",
-      "evidence_grade": "media_discovery"
     }
   ],
   "warnings": [
@@ -12029,7 +12032,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-10-10T21:44:22.362012+00:00",
+    "prepared_at": "2026-10-11T05:47:31.566654+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 30,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
