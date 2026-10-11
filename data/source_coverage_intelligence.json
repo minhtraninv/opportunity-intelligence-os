@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-10-11T12:51:39.025421+00:00",
+    "generated_at": "2026-10-11T21:59:22.591610+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-11T12:51:39.112196+00:00"
+    "trust_hardened_at": "2026-10-11T21:59:22.673650+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
@@ -17,9 +17,9 @@
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 15,
+    "healthy_sources": 17,
     "productive_sources": 4,
-    "source_errors": 3,
+    "source_errors": 1,
     "planned_sources": 8,
     "verified_productive_sources": 4,
     "discovery_productive_sources": 11
@@ -123,22 +123,21 @@
       "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 1,
+      "healthy_sources": 3,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 2,
+      "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
-        "Ủy ban Chứng khoán Nhà nước"
-      ],
-      "productive_source_names": [],
-      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước",
         "HNX - công bố niêm yết",
         "HNX - công bố UPCoM"
       ],
+      "productive_source_names": [],
+      "broken_source_names": [],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
@@ -153,22 +152,21 @@
       "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 2,
+      "healthy_sources": 3,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 1,
+      "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
         "Bộ Tài chính - Tin tức tài chính",
-        "Ủy ban Chứng khoán Nhà nước"
-      ],
-      "productive_source_names": [],
-      "broken_source_names": [
+        "Ủy ban Chứng khoán Nhà nước",
         "HNX - công bố niêm yết"
       ],
+      "productive_source_names": [],
+      "broken_source_names": [],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp",
         "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
@@ -523,8 +521,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 26,
-      "evidence_items_this_run": 26,
+      "discovery_evidence_items_this_run": 25,
+      "evidence_items_this_run": 25,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -556,8 +554,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 26,
-      "evidence_items_this_run": 26,
+      "discovery_evidence_items_this_run": 25,
+      "evidence_items_this_run": 25,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -646,7 +644,7 @@
       "discovery_productive_sources": 2,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 2,
-      "discovery_evidence_items_this_run": 92,
+      "discovery_evidence_items_this_run": 94,
       "evidence_items_this_run": 2,
       "healthy_source_names": [
         "Cục Thống kê - Doanh nghiệp",
@@ -674,9 +672,9 @@
       "verified_productive_sources": 1,
       "discovery_productive_sources": 0,
       "broken_sources": 0,
-      "verified_evidence_items_this_run": 129,
+      "verified_evidence_items_this_run": 127,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 129,
+      "evidence_items_this_run": 127,
       "healthy_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
@@ -779,11 +777,11 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 102,
+      "discovered_items_this_run": 104,
       "evidence_items_this_run": 1,
       "error": null,
       "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 89
+      "discovery_evidence_items_this_run": 91
     },
     {
       "id": "fia-fdi",
@@ -799,7 +797,7 @@
       "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7f0f1342a7b0>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
+      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7fab7f4be6c0>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -905,11 +903,11 @@
       ],
       "authority": 0.78,
       "health": "ok",
-      "discovered_items_this_run": 9,
-      "evidence_items_this_run": 9,
+      "discovered_items_this_run": 8,
+      "evidence_items_this_run": 8,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 9
+      "discovery_evidence_items_this_run": 8
     },
     {
       "id": "tuoitre-business",
@@ -976,10 +974,10 @@
         "capital_markets_bonds"
       ],
       "authority": 1.0,
-      "health": "error",
+      "health": "ok",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "HNX - công bố niêm yết: ConnectTimeout: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='hnx.vn', port=443) at 0x7f5d040daae0>, 'Connection to hnx.vn timed out. (connect timeout=10)'))",
+      "error": null,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -993,10 +991,10 @@
         "corporate_disclosures"
       ],
       "authority": 1.0,
-      "health": "error",
+      "health": "ok",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "HNX - công bố UPCoM: ConnectTimeout: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='hnx.vn', port=443) at 0x7f5d040db0e0>, 'Connection to hnx.vn timed out. (connect timeout=10)'))",
+      "error": null,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -1011,10 +1009,10 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 129,
-      "evidence_items_this_run": 129,
+      "discovered_items_this_run": 127,
+      "evidence_items_this_run": 127,
       "error": null,
-      "verified_evidence_items_this_run": 129,
+      "verified_evidence_items_this_run": 127,
       "discovery_evidence_items_this_run": 0
     },
     {
