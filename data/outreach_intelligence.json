@@ -1,20 +1,120 @@
 {
   "meta": {
     "version": "1.6.1",
-    "generated_at": "2026-10-10T21:45:27.589708+00:00",
+    "generated_at": "2026-10-11T05:48:33.856873+00:00",
     "mode": "human_in_the_loop_deduplicated_counterparty_campaigns",
     "principle": "one_counterparty_category_campaign_can_absorb_multiple_market_signals_no_fake_lead_multiplication"
   },
   "coverage": {
     "candidate_target_instances": 171,
-    "campaigns_ready": 1,
-    "unique_counterparties_ready": 1,
-    "related_opportunity_signals_in_campaigns": 1,
-    "unique_verified_contact_paths": 1,
-    "unresolved_target_instances": 170,
-    "unique_unresolved_counterparties": 14
+    "campaigns_ready": 2,
+    "unique_counterparties_ready": 2,
+    "related_opportunity_signals_in_campaigns": 3,
+    "unique_verified_contact_paths": 5,
+    "unresolved_target_instances": 168,
+    "unique_unresolved_counterparties": 12
   },
   "packs": [
+    {
+      "id": "vn0100686209::office_goods",
+      "campaign_type": "counterparty_category",
+      "partner_id": "vn0100686209",
+      "contractor_name": "TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
+      "tax_code": "0100686209",
+      "category": "office_goods",
+      "category_label": "thiết bị / hàng văn phòng",
+      "priority_score": 100,
+      "counterparty_score": 72,
+      "verified_contact_paths": [
+        {
+          "type": "website",
+          "value": "https://solutions.mobifone.vn/lien-he",
+          "scope": "MobiFone Solutions / general inquiry",
+          "source_url": "https://solutions.mobifone.vn/lien-he",
+          "source_type": "official_company_website",
+          "verified_at": "2026-08-30T17:35:00+07:00"
+        },
+        {
+          "type": "email",
+          "value": "contact-itc@mobifone.vn",
+          "scope": "MobiFone Solutions / general inquiry",
+          "source_url": "https://solutions.mobifone.vn/lien-he",
+          "source_type": "official_company_website",
+          "verified_at": "2026-08-30T17:35:00+07:00"
+        },
+        {
+          "type": "phone",
+          "value": "18001290",
+          "scope": "MobiFone Solutions / general inquiry",
+          "source_url": "https://solutions.mobifone.vn/lien-he",
+          "source_type": "official_company_website",
+          "verified_at": "2026-08-30T17:35:00+07:00"
+        },
+        {
+          "type": "email",
+          "value": "togiupviecdauthau@mobifone.vn",
+          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
+          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600567060&notifyId=IB2600567060&inputResultId=23dee9e5-3934-484e-a3dc-ab33b79f4105&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600567060&planNo=PL2600321380&step=tbmt&isInternet=undefined&bidForm=MSTT",
+          "source_type": "official_msc_kqlcnt_contractor_object",
+          "verified_at": "2026-10-11T05:48:24.322395+00:00",
+          "identity_match": "exact_orgCode_or_taxCode",
+          "mailbox_class": "role_or_generic"
+        }
+      ],
+      "related_opportunity_count": 2,
+      "related_opportunities": [
+        {
+          "tender_code": "IB2600489530",
+          "buyer": "Trường Đại học Y khoa Phạm Ngọc Thạch",
+          "title": "Trang bị máy tính và phần mềm quản lý phòng máy tại Trụ sở Tân Nhựt",
+          "package_price_vnd": 13850214333,
+          "days_to_close": 9.0,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=b20e03bd-382b-458b-b2e1-d0c6f5543307&notifyId=b20e03bd-382b-458b-b2e1-d0c6f5543307&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600489530&planNo=PL2600118146&step=tbmt&isInternet=1&bidForm=DTRR"
+        },
+        {
+          "tender_code": "IB2600569302",
+          "buyer": "CÔNG TY TRUYỀN TẢI ĐIỆN 4 - CHI NHÁNH TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+          "title": "Thay máy tính HMI3 bị hư hỏng Trạm biến áp 220kV Châu Thành",
+          "package_price_vnd": 247500000,
+          "days_to_close": 7.8,
+          "recommended_path": "subcontract_or_sourcing",
+          "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=42f1f597-a46a-4371-b3ed-a4dbfe1a1a09&notifyId=42f1f597-a46a-4371-b3ed-a4dbfe1a1a09&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600569302&planNo=PL2600318717&step=tbmt&isInternet=1&bidForm=CHCT"
+        }
+      ],
+      "primary_tender_code": "IB2600489530",
+      "primary_buyer": "Trường Đại học Y khoa Phạm Ngọc Thạch",
+      "primary_tender_title": "Trang bị máy tính và phần mềm quản lý phòng máy tại Trụ sở Tân Nhựt",
+      "primary_package_price_vnd": 13850214333,
+      "primary_days_to_close": 9.0,
+      "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=b20e03bd-382b-458b-b2e1-d0c6f5543307&notifyId=b20e03bd-382b-458b-b2e1-d0c6f5543307&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600489530&planNo=PL2600118146&step=tbmt&isInternet=1&bidForm=DTRR",
+      "recommended_path": "subcontract_or_sourcing",
+      "historical_evidence": {
+        "latest_win_title": "Chỉnh lý, số hóa tài liệu lưu trữ Đảng bộ xã Châu Đức",
+        "latest_evidence_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=DC2600031228&notifyId=DC2600031228&inputResultId=d4d3c018-0bbc-47b2-b24c-2976529f26a0&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=DC2600031228&planNo=PL2600320739&step=tbmt&isInternet=undefined&bidForm=CDTRG",
+        "observed_wins_same_category": 2,
+        "same_buyer_same_category_awards": 0
+      },
+      "offer_to_validate": "sourcing đúng SKU/cấu hình",
+      "target_roles": [
+        "Sales dự án",
+        "Procurement / Sourcing",
+        "Kinh doanh kênh dự án"
+      ],
+      "outreach_subject_draft": "Đề xuất hỗ trợ phần việc thiết bị / hàng văn phòng — cần xác minh nhu cầu",
+      "outreach_body_draft": "Chào anh/chị,\n\nTôi đang tìm hiểu khả năng hợp tác với các đơn vị đã có kinh nghiệm triển khai thiết bị / hàng văn phòng cho khu vực công. Theo KQLCNT công khai, TỔNG CÔNG TY VIỄN THÔNG MOBIFONE từng được ghi nhận thắng gói “Chỉnh lý, số hóa tài liệu lưu trữ Đảng bộ xã Châu Đức”.\n\nTôi muốn kiểm tra xem đội dự án của anh/chị hiện có nhu cầu thuê ngoài / tìm đối tác cho phần việc: sourcing đúng SKU/cấu hình. Nếu phù hợp, tôi có thể gửi một phạm vi thử nhỏ và cách tính đơn giá để hai bên đánh giá trước khi cam kết lớn.\n\n[CHỈ GỬI SAU KHI BẠN ĐIỀN BẰNG CHỨNG NĂNG LỰC THẬT CỦA MÌNH Ở ĐÂY]\n\nNếu đây không phải đầu mối phù hợp, nhờ anh/chị chuyển giúp tới người phụ trách BD / dự án / sourcing. Cảm ơn anh/chị.",
+      "send_gates": [
+        "Bạn thực sự có năng lực cung cấp offer đã nêu hoặc có partner thật để thực hiện.",
+        "Có ít nhất một market signal liên quan còn đủ thời gian để kiểm chứng; không dùng tender đã hết hạn làm lý do tạo urgency giả.",
+        "Contact path có nguồn công khai và đúng pháp nhân.",
+        "Nội dung không được nói hoặc ám chỉ rằng counterparty đang tham gia bất kỳ gói hiện tại nào nếu không có bằng chứng.",
+        "Chỉ một outreach cho campaign này; không gửi email riêng cho từng tender signal cùng một counterparty."
+      ],
+      "success_signal": "Counterparty trả lời, chuyển đúng đầu mối, yêu cầu capability/rate card hoặc đồng ý trao đổi phạm vi thử.",
+      "follow_up_rule": "Nếu không phản hồi, tối đa 1 follow-up ngắn sau 48–72 giờ; sau đó chuyển trạng thái Dead/No response thay vì spam.",
+      "kill_criteria": "Loại khỏi outreach nếu không xác minh được pháp nhân/kênh chính thức, năng lực hiện tại không còn phù hợp, hoặc không tìm thấy phần việc có thể cung cấp mà không ôm vốn lớn.",
+      "default_stage": "ready_to_research"
+    },
     {
       "id": "vn0310934289::food_services",
       "campaign_type": "counterparty_category",
@@ -32,7 +132,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600574195&notifyId=IB2600574195&inputResultId=d2307c7d-367c-4295-957a-6c5c2c848d4b&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600574195&planNo=PL2600340144&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-10-10T21:45:14.692608+00:00",
+          "verified_at": "2026-10-11T05:48:24.322395+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -44,7 +144,7 @@
           "buyer": "Trung Tâm Huyết Học -Truyền Máu Nghệ An",
           "title": "Cung cấp quà tặng và suất ăn nhẹ cho người hiến máu năm 2026 - 2027 tại Trung tâm Huyết học - Truyền máu Nghệ An",
           "package_price_vnd": 11065055000,
-          "days_to_close": 11.2,
+          "days_to_close": 10.9,
           "recommended_path": "subcontract_or_sourcing",
           "official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=fdf0186d-20a7-40df-8114-30ac576509b0&notifyId=fdf0186d-20a7-40df-8114-30ac576509b0&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600551703&planNo=PL2600239386&step=tbmt&isInternet=1&bidForm=DTRR"
         }
@@ -53,7 +153,7 @@
       "primary_buyer": "Trung Tâm Huyết Học -Truyền Máu Nghệ An",
       "primary_tender_title": "Cung cấp quà tặng và suất ăn nhẹ cho người hiến máu năm 2026 - 2027 tại Trung tâm Huyết học - Truyền máu Nghệ An",
       "primary_package_price_vnd": 11065055000,
-      "primary_days_to_close": 11.2,
+      "primary_days_to_close": 10.9,
       "primary_official_tender_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=fdf0186d-20a7-40df-8114-30ac576509b0&notifyId=fdf0186d-20a7-40df-8114-30ac576509b0&inputResultId=undefined&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600551703&planNo=PL2600239386&step=tbmt&isInternet=1&bidForm=DTRR",
       "recommended_path": "subcontract_or_sourcing",
       "historical_evidence": {
@@ -85,353 +185,353 @@
   ],
   "unresolved": [
     {
-      "tender_code": "IB2600571720",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571720",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571720",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600573725",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600573725",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600573725",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600562777",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600562777",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600562777",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600561723",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600561723",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600561723",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570580",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570580",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570580",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571856",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571856",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571856",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572329",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572329",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572329",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570911",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570911",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600570911",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600558064",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600558064",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600558064",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571772",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571772",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600571772",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572158",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572158",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600572158",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569135",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569135",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569135",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569345",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569345",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569345",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569921",
-      "partner_id": "vn0100109106",
-      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569921",
-      "partner_id": "vn0106338254",
-      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600569921",
-      "partner_id": "vn1702233920",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ GIÁO DỤC GLOBAL EDUCATION",
-      "category": "digital_services",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600568082",
-      "partner_id": "vn1501100857",
-      "contractor_name": "Công ty TNHH Thực Phẩm Gia Khang",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600568082",
-      "partner_id": "vn5000817538",
-      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN XÂY DỰNG VÀ BẢO TRÌ ĐƯỜNG BỘ 232",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600568082",
-      "partner_id": "vnz000041191",
-      "contractor_name": "Hộ kinh doanh Mai Duyên",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600549703",
-      "partner_id": "vn1501100857",
-      "contractor_name": "Công ty TNHH Thực Phẩm Gia Khang",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600549703",
-      "partner_id": "vn5000817538",
-      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN XÂY DỰNG VÀ BẢO TRÌ ĐƯỜNG BỘ 232",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600549703",
-      "partner_id": "vnz000041191",
-      "contractor_name": "Hộ kinh doanh Mai Duyên",
-      "category": "maintenance",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600489530",
-      "partner_id": "vn4601498098",
-      "contractor_name": "CÔNG TY TNHH CÔNG NGHỆ HƯNG PHÁT THÁI NGUYÊN",
-      "category": "office_goods",
-      "reason": "no_verified_business_contact_path"
-    },
-    {
-      "tender_code": "IB2600489530",
+      "tender_code": "IB2600571430",
       "partner_id": "vn0100684378",
       "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
-      "category": "office_goods",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571430",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571430",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600574204",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600574204",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600574204",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571720",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571720",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571720",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600573725",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600573725",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600573725",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600562777",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600562777",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600562777",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600561723",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600561723",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600561723",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570580",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570580",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570580",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571856",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571856",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571856",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572329",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572329",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572329",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570911",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570911",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600570911",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600558064",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600558064",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600558064",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571772",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571772",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600571772",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572158",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572158",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600572158",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600569135",
+      "partner_id": "vn0100684378",
+      "contractor_name": "TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM (LOẠI HÌNH DOANH NGHIỆP: CÔNG TY TNHH)",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600569135",
+      "partner_id": "vn0100109106",
+      "contractor_name": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600569135",
+      "partner_id": "vn0106338254",
+      "contractor_name": "CÔNG TY CỔ PHẦN GIÁO DỤC NOVASTARS",
+      "category": "digital_services",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568518",
+      "partner_id": "vn1501100857",
+      "contractor_name": "Công ty TNHH Thực Phẩm Gia Khang",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568518",
+      "partner_id": "vn5000817538",
+      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN XÂY DỰNG VÀ BẢO TRÌ ĐƯỜNG BỘ 232",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568518",
+      "partner_id": "vnz000041191",
+      "contractor_name": "Hộ kinh doanh Mai Duyên",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568082",
+      "partner_id": "vn1501100857",
+      "contractor_name": "Công ty TNHH Thực Phẩm Gia Khang",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568082",
+      "partner_id": "vn5000817538",
+      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN XÂY DỰNG VÀ BẢO TRÌ ĐƯỜNG BỘ 232",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600568082",
+      "partner_id": "vnz000041191",
+      "contractor_name": "Hộ kinh doanh Mai Duyên",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600549703",
+      "partner_id": "vn1501100857",
+      "contractor_name": "Công ty TNHH Thực Phẩm Gia Khang",
+      "category": "maintenance",
+      "reason": "no_verified_business_contact_path"
+    },
+    {
+      "tender_code": "IB2600549703",
+      "partner_id": "vn5000817538",
+      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN XÂY DỰNG VÀ BẢO TRÌ ĐƯỜNG BỘ 232",
+      "category": "maintenance",
       "reason": "no_verified_business_contact_path"
     }
   ],
