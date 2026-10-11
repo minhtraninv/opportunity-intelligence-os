@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.8.1",
-    "generated_at": "2026-10-11T05:47:34.541411+00:00",
+    "generated_at": "2026-10-11T12:51:39.025421+00:00",
     "mode": "source_coverage_and_blind_spot_audit",
     "principle": "source_health_is_not_evidence_quality",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-11T05:47:34.609775+00:00"
+    "trust_hardened_at": "2026-10-11T12:51:39.112196+00:00"
   },
   "thesis": "Primary-domain coverage is now credited only for verified evidence. Headline/media discovery is measured separately. A lower coverage score is preferable to false confidence.",
   "coverage": {
     "domains": 20,
-    "strong": 3,
-    "partial": 9,
+    "strong": 4,
+    "partial": 8,
     "weak": 5,
     "broken": 1,
     "missing": 2,
     "registered_sources": 26,
     "active_primary_sources": 14,
-    "healthy_sources": 16,
-    "productive_sources": 3,
-    "source_errors": 2,
+    "healthy_sources": 15,
+    "productive_sources": 4,
+    "source_errors": 3,
     "planned_sources": 8,
-    "verified_productive_sources": 3,
-    "discovery_productive_sources": 10
+    "verified_productive_sources": 4,
+    "discovery_productive_sources": 11
   },
   "critical_blind_spots": [
     {
@@ -123,21 +123,22 @@
       "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 3,
+      "healthy_sources": 1,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
+      "broken_sources": 2,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
-        "Ủy ban Chứng khoán Nhà nước",
+        "Ủy ban Chứng khoán Nhà nước"
+      ],
+      "productive_source_names": [],
+      "broken_source_names": [
         "HNX - công bố niêm yết",
         "HNX - công bố UPCoM"
       ],
-      "productive_source_names": [],
-      "broken_source_names": [],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp"
       ],
@@ -152,21 +153,22 @@
       "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
       "status": "weak",
       "active_sources": 3,
-      "healthy_sources": 3,
+      "healthy_sources": 2,
       "productive_sources": 0,
       "verified_productive_sources": 0,
       "discovery_productive_sources": 0,
-      "broken_sources": 0,
+      "broken_sources": 1,
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0,
       "evidence_items_this_run": 0,
       "healthy_source_names": [
         "Bộ Tài chính - Tin tức tài chính",
-        "Ủy ban Chứng khoán Nhà nước",
-        "HNX - công bố niêm yết"
+        "Ủy ban Chứng khoán Nhà nước"
       ],
       "productive_source_names": [],
-      "broken_source_names": [],
+      "broken_source_names": [
+        "HNX - công bố niêm yết"
+      ],
       "planned_next_sources": [
         "HOSE - công bố thông tin doanh nghiệp",
         "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
@@ -521,8 +523,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 25,
-      "evidence_items_this_run": 25,
+      "discovery_evidence_items_this_run": 26,
+      "evidence_items_this_run": 26,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -554,8 +556,8 @@
       "discovery_productive_sources": 4,
       "broken_sources": 0,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 25,
-      "evidence_items_this_run": 25,
+      "discovery_evidence_items_this_run": 26,
+      "evidence_items_this_run": 26,
       "healthy_source_names": [
         "VnExpress Kinh doanh",
         "Tuổi Trẻ Kinh doanh",
@@ -603,35 +605,6 @@
       "evidence_standard": "verified_primary"
     },
     {
-      "id": "business_formation",
-      "label": "Thành lập & rút lui doanh nghiệp",
-      "priority": 3,
-      "target_healthy_sources": 2,
-      "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
-      "status": "partial",
-      "active_sources": 2,
-      "healthy_sources": 1,
-      "productive_sources": 1,
-      "verified_productive_sources": 1,
-      "discovery_productive_sources": 1,
-      "broken_sources": 1,
-      "verified_evidence_items_this_run": 1,
-      "discovery_evidence_items_this_run": 3,
-      "evidence_items_this_run": 1,
-      "healthy_source_names": [
-        "Cục Thống kê - Doanh nghiệp"
-      ],
-      "productive_source_names": [
-        "Cục Thống kê - Doanh nghiệp"
-      ],
-      "broken_source_names": [
-        "Cổng ĐKKD Quốc gia"
-      ],
-      "planned_next_sources": [],
-      "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-      "evidence_standard": "verified_primary"
-    },
-    {
       "id": "consumption_behavior",
       "label": "Tiêu dùng & hành vi",
       "priority": 3,
@@ -660,6 +633,35 @@
       "evidence_standard": "verified_primary"
     },
     {
+      "id": "business_formation",
+      "label": "Thành lập & rút lui doanh nghiệp",
+      "priority": 3,
+      "target_healthy_sources": 2,
+      "why": "Cho biết ngành nào đang thu hút người chơi mới hoặc chịu áp lực đào thải.",
+      "status": "strong",
+      "active_sources": 2,
+      "healthy_sources": 2,
+      "productive_sources": 2,
+      "verified_productive_sources": 2,
+      "discovery_productive_sources": 2,
+      "broken_sources": 0,
+      "verified_evidence_items_this_run": 2,
+      "discovery_evidence_items_this_run": 92,
+      "evidence_items_this_run": 2,
+      "healthy_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cổng ĐKKD Quốc gia"
+      ],
+      "productive_source_names": [
+        "Cục Thống kê - Doanh nghiệp",
+        "Cổng ĐKKD Quốc gia"
+      ],
+      "broken_source_names": [],
+      "planned_next_sources": [],
+      "coverage_note": "Đủ số nguồn đang tạo evidence đúng cấp cho mục đích của domain; vẫn phải kiểm tra freshness và độc lập.",
+      "evidence_standard": "verified_primary"
+    },
+    {
       "id": "procurement_demand",
       "label": "Nhu cầu mua sắm công",
       "priority": 4,
@@ -672,9 +674,9 @@
       "verified_productive_sources": 1,
       "discovery_productive_sources": 0,
       "broken_sources": 0,
-      "verified_evidence_items_this_run": 139,
+      "verified_evidence_items_this_run": 129,
       "discovery_evidence_items_this_run": 0,
-      "evidence_items_this_run": 139,
+      "evidence_items_this_run": 129,
       "healthy_source_names": [
         "Hệ thống mạng đấu thầu quốc gia"
       ],
@@ -719,7 +721,7 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 96,
+      "discovered_items_this_run": 98,
       "evidence_items_this_run": 0,
       "error": null,
       "verified_evidence_items_this_run": 0,
@@ -776,10 +778,10 @@
         "business_formation"
       ],
       "authority": 1.0,
-      "health": "error",
-      "discovered_items_this_run": 0,
+      "health": "ok",
+      "discovered_items_this_run": 102,
       "evidence_items_this_run": 1,
-      "error": "Cổng ĐKKD Quốc gia: ConnectionError: HTTPSConnectionPool(host='dangkykinhdoanh.gov.vn', port=443): Read timed out.",
+      "error": null,
       "verified_evidence_items_this_run": 1,
       "discovery_evidence_items_this_run": 89
     },
@@ -797,7 +799,7 @@
       "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7fed00a01670>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
+      "error": "Cục Đầu tư nước ngoài - Bộ Tài chính: ConnectTimeout: HTTPSConnectionPool(host='fia.mof.gov.vn', port=443): Max retries exceeded with url: /List/CatID/5102536e-ffed-4c97-83c9-24788f5e7d0c (Caused by ConnectTimeoutError(<HTTPSConnection(host='fia.mof.gov.vn', port=443) at 0x7f0f1342a7b0>, 'Connection to fia.mof.gov.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -957,11 +959,11 @@
       ],
       "authority": 0.82,
       "health": "ok",
-      "discovered_items_this_run": 7,
-      "evidence_items_this_run": 7,
+      "discovered_items_this_run": 8,
+      "evidence_items_this_run": 8,
       "error": null,
       "verified_evidence_items_this_run": 0,
-      "discovery_evidence_items_this_run": 7
+      "discovery_evidence_items_this_run": 8
     },
     {
       "id": "hnx-listed",
@@ -974,10 +976,10 @@
         "capital_markets_bonds"
       ],
       "authority": 1.0,
-      "health": "ok",
+      "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": null,
+      "error": "HNX - công bố niêm yết: ConnectTimeout: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-ny-hnx.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='hnx.vn', port=443) at 0x7f5d040daae0>, 'Connection to hnx.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -991,10 +993,10 @@
         "corporate_disclosures"
       ],
       "authority": 1.0,
-      "health": "ok",
+      "health": "error",
       "discovered_items_this_run": 0,
       "evidence_items_this_run": 0,
-      "error": null,
+      "error": "HNX - công bố UPCoM: ConnectTimeout: HTTPSConnectionPool(host='hnx.vn', port=443): Max retries exceeded with url: /vi-vn/thong-tin-cong-bo-up-hnx.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='hnx.vn', port=443) at 0x7f5d040db0e0>, 'Connection to hnx.vn timed out. (connect timeout=10)'))",
       "verified_evidence_items_this_run": 0,
       "discovery_evidence_items_this_run": 0
     },
@@ -1009,10 +1011,10 @@
       ],
       "authority": 1.0,
       "health": "ok",
-      "discovered_items_this_run": 139,
-      "evidence_items_this_run": 139,
+      "discovered_items_this_run": 129,
+      "evidence_items_this_run": 129,
       "error": null,
-      "verified_evidence_items_this_run": 139,
+      "verified_evidence_items_this_run": 129,
       "discovery_evidence_items_this_run": 0
     },
     {

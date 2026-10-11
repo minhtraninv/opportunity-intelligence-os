@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-11T05:45:44.471760+00:00",
+    "generated_at": "2026-10-11T12:48:56.342061+00:00",
     "status": "active",
-    "history_days": 42,
+    "history_days": 43,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -23,9 +23,9 @@
     {
       "category": "construction",
       "recent_7d": 5,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": -29,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -45,11 +45,11 @@
     {
       "category": "labor",
       "recent_7d": 3,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 12,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 29,
       "trend": "stable",
-      "confidence": 75,
+      "confidence": 73,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -65,17 +65,6 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "infrastructure",
-      "recent_7d": 2,
-      "baseline_21d": 15,
-      "baseline_expected_7d": 5.0,
-      "delta_pct": -60,
-      "trend": "cooling",
-      "confidence": 87,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 5.0."
-    },
-    {
       "category": "policy",
       "recent_7d": 0,
       "baseline_21d": 13,
@@ -85,6 +74,17 @@
       "confidence": 66,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.3."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 1,
+      "baseline_21d": 16,
+      "baseline_expected_7d": 5.3,
+      "delta_pct": -81,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 5.3."
     },
     {
       "category": "energy",
@@ -195,110 +195,26 @@
       "first_seen_at": "2026-10-10T21:43:03.905017+00:00",
       "collected_at": "2026-10-10T21:43:03.905017+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "330d38ca2b914515",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Xây dựng lực lượng vũ trang Thủ đô 'tinh, gọn, mạnh' đáp ứng yêu cầu trong tình hình mới",
-      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-xay-dung-luc-luong-vu-trang-thu-do-tinh-gon-manh-dap-ung-yeu-cau-trong-tinh-hinh-moi-10226101013265125.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-10T12:30:57.349507+00:00",
-      "collected_at": "2026-10-10T12:30:57.349507+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "abf355f10bd990b7",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định xác định xuất xứ Việt Nam đối với hàng hóa sản xuất, lưu thông trong nước",
-      "url": "https://baochinhphu.vn/quy-dinh-xac-dinh-xuat-xu-viet-nam-doi-voi-hang-hoa-san-xuat-luu-thong-trong-nuoc-10226101016284845.htm",
-      "categories": [
-        "fdi_industrial",
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-10T12:30:57.349507+00:00",
-      "collected_at": "2026-10-10T12:30:57.349507+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "e0b7825c79b1d2d4",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Xây dựng các nghị định, thông tư về tiền lương, mức lương tối thiểu, bảo hiểm xã hội",
-      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-cac-nghi-dinh-thong-tu-ve-tien-luong-muc-luong-toi-thieu-bao-hiem-xa-hoi-119261010062640108.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-10T05:51:51.904590+00:00",
-      "collected_at": "2026-10-10T05:51:51.904590+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "bdfaee1768a0f5e5",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Công bố Quyết định kiểm tra việc thực hiện các quy định của pháp luật về công tác thi đua, khen thưởng tại Ngân hàng Nhà nước Việt Nam 08/10/2026",
-      "url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-quy%E1%BA%BFt-%C4%91%E1%BB%8Bnh-ki%E1%BB%83m-tra-vi%E1%BB%87c-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A1c-quy-%C4%91%E1%BB%8Bnh-c%E1%BB%A7a-ph%C3%A1p-lu%E1%BA%ADt-v%E1%BB%81-c%C3%B4ng-t%C3%A1c-thi-%C4%91ua-khen-th%C6%B0%E1%BB%9Fng-t%E1%BA%A1i-",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-10T05:51:51.904590+00:00",
-      "collected_at": "2026-10-10T05:51:51.904590+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 16,
     "business_formation": 14,
     "market_data": 9,
-    "hiring": 2,
-    "infrastructure_delivery": 1
+    "hiring": 2
   },
   "geographies_7d": {
     "Điện Biên": 1,
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 689,
+    "historical_events": 691,
     "candidate_events": 265,
-    "reference_events": 419,
+    "reference_events": 421,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
