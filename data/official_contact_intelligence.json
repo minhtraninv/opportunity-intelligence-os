@@ -1,20 +1,20 @@
 {
   "meta": {
     "version": "1.5.3",
-    "generated_at": "2026-10-11T22:00:21.706996+00:00",
+    "generated_at": "2026-10-12T05:59:28.419355+00:00",
     "mode": "official_msc_role_contact_intelligence",
     "privacy_rule": "whitelist_recEmail_exact_entity_match_organization_only_role_or_generic_mailbox_no_personal_identifiers"
   },
   "coverage": {
-    "target_partner_ids": 16,
-    "targets_with_history": 16,
+    "target_partner_ids": 18,
+    "targets_with_history": 18,
     "targets_scanned": 16,
     "details_fetched": 30,
-    "email_candidates_seen": 10,
-    "verified_contact_entities": 2,
-    "verified_contact_paths": 2,
-    "filtered_non_organization": 2,
-    "filtered_personal_like_mailboxes": 6,
+    "email_candidates_seen": 9,
+    "verified_contact_entities": 1,
+    "verified_contact_paths": 1,
+    "filtered_non_organization": 0,
+    "filtered_personal_like_mailboxes": 8,
     "errors": 1
   },
   "contacts": [
@@ -31,7 +31,7 @@
           "scope": "role/generic business email công khai trong contractor object của KQLCNT",
           "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600567060&notifyId=IB2600567060&inputResultId=23dee9e5-3934-484e-a3dc-ab33b79f4105&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600567060&planNo=PL2600321380&step=tbmt&isInternet=undefined&bidForm=MSTT",
           "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-10-11T22:00:21.706996+00:00",
+          "verified_at": "2026-10-12T05:59:28.419355+00:00",
           "identity_match": "exact_orgCode_or_taxCode",
           "mailbox_class": "role_or_generic"
         }
@@ -39,32 +39,10 @@
       "award_tender_code": "IB2600567060",
       "award_public_at": "2026-10-05T02:44:01+00:00",
       "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
-    },
-    {
-      "partner_id": "vn0310934289",
-      "contractor_name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DỊCH VỤ NHỰT HẢI ANH",
-      "contractor_code": "vn0310934289",
-      "tax_code": "0310934289",
-      "contact_status": "verified_official_msc_role_mailbox",
-      "contact_paths": [
-        {
-          "type": "email",
-          "value": "sale.nhuthaianh@gmail.com",
-          "scope": "role/generic business email công khai trong contractor object của KQLCNT",
-          "source_url": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600574195&notifyId=IB2600574195&inputResultId=d2307c7d-367c-4295-957a-6c5c2c848d4b&bidOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600574195&planNo=PL2600340144&step=tbmt&isInternet=undefined&bidForm=LCNT_DB",
-          "source_type": "official_msc_kqlcnt_contractor_object",
-          "verified_at": "2026-10-11T22:00:21.706996+00:00",
-          "identity_match": "exact_orgCode_or_taxCode",
-          "mailbox_class": "role_or_generic"
-        }
-      ],
-      "award_tender_code": "IB2600574195",
-      "award_public_at": "2026-10-10T11:28:30+00:00",
-      "caveat": "Email role/generic được công khai trong KQLCNT lịch sử của đúng pháp nhân; không chứng minh người nhận phụ trách gói hiện tại."
     }
   ],
   "errors": [
-    "vn0100109106 2be8ad79-a69d-4675-9ade-23cfeffcde8c: ValueError: non-JSON response"
+    "vn0100684378 e6b52c7b-725d-44fe-8b69-06b0ef5c3a2d: ValueError: non-JSON response"
   ],
   "warnings": [
     "recEmail là contact công khai trong KQLCNT lịch sử, không phải bằng chứng bidder hiện tại.",
