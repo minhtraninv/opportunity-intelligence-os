@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T05:56:54.748623+00:00",
+    "generated_at": "2026-10-12T15:23:43.698324+00:00",
     "status": "active",
-    "history_days": 43,
+    "history_days": 44,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -44,21 +44,10 @@
     },
     {
       "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 71,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 3,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
+      "recent_7d": 2,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 71,
       "source_diversity_7d": 2,
@@ -67,9 +56,20 @@
     {
       "category": "sme",
       "recent_7d": 14,
-      "baseline_21d": 43,
-      "baseline_expected_7d": 14.3,
-      "delta_pct": -2,
+      "baseline_21d": 42,
+      "baseline_expected_7d": 14.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 1,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -62,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -78,13 +78,13 @@
     {
       "category": "policy",
       "recent_7d": 0,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 66,
+      "confidence": 64,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.3."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "infrastructure",
@@ -109,25 +109,14 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
-      "recent_7d": 3,
-      "baseline_21d": 1,
-      "baseline_expected_7d": 0.3,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "data_ai",
-      "recent_7d": 1,
+      "recent_7d": 2,
       "baseline_21d": 4,
       "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
+      "confidence": 65,
+      "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -151,9 +140,38 @@
       "confidence": 49,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 0,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 48,
+      "source_diversity_7d": 0,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "d5a6f1d7a8dc4094",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Bài 2: Phim ngắn AI: Chính sách quản lý từ các nước",
+      "url": "https://baochinhphu.vn/bai-2-phim-ngan-ai-chinh-sach-quan-ly-tu-cac-nuoc-102261011013932089.htm",
+      "categories": [
+        "data_ai"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-12T15:23:43.698324+00:00"
+    },
     {
       "id": "d74d68fc887232a7",
       "source_id": "gov-policy",
@@ -171,7 +189,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-12T05:56:54.748623+00:00"
+      "first_seen_at": "2026-10-12T05:56:54.748623+00:00",
+      "collected_at": "2026-10-12T05:56:54.748623+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9eb8531fbb8bb5bf",
@@ -189,7 +209,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-12T05:56:54.748623+00:00"
+      "first_seen_at": "2026-10-12T05:56:54.748623+00:00",
+      "collected_at": "2026-10-12T05:56:54.748623+00:00",
+      "last_seen_at": null
     },
     {
       "id": "caf8a48a09e976f2",
@@ -235,19 +257,19 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 17,
+    "policy_regulation": 14,
     "business_formation": 14,
     "market_data": 9,
-    "hiring": 2
+    "hiring": 1
   },
   "geographies_7d": {
     "Điện Biên": 1,
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 699,
-    "candidate_events": 269,
-    "reference_events": 425,
+    "historical_events": 702,
+    "candidate_events": 270,
+    "reference_events": 427,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
