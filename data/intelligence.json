@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-13T22:44:08.346758+00:00",
+    "generated_at": "2026-10-14T04:52:43.105237+00:00",
     "status": "active",
     "history_days": 45,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "fdi_industrial",
-      "recent_7d": 5,
+      "recent_7d": 6,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 67,
+      "delta_pct": 100,
       "trend": "accelerating",
-      "confidence": 88,
+      "confidence": 90,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "monetary",
@@ -43,6 +43,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "sme",
+      "recent_7d": 16,
+      "baseline_21d": 42,
+      "baseline_expected_7d": 14.0,
+      "delta_pct": 14,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "energy",
       "recent_7d": 2,
       "baseline_21d": 6,
@@ -51,17 +62,6 @@
       "trend": "stable",
       "confidence": 69,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "sme",
-      "recent_7d": 14,
-      "baseline_21d": 42,
-      "baseline_expected_7d": 14.0,
-      "delta_pct": 0,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -77,14 +77,14 @@
     },
     {
       "category": "policy",
-      "recent_7d": 0,
+      "recent_7d": 1,
       "baseline_21d": 12,
       "baseline_expected_7d": 4.0,
-      "delta_pct": -100,
+      "delta_pct": -75,
       "trend": "cooling",
-      "confidence": 64,
-      "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.0."
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "infrastructure",
@@ -155,6 +155,61 @@
   ],
   "top_new_events": [
     {
+      "id": "78dac398b0ed3fc7",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Đề xuất 51 chỉ tiêu thống kê về đóng góp của các ngành công nghiệp văn hóa đối với phát triển kinh tế",
+      "url": "https://xaydungchinhsach.chinhphu.vn/de-xuat-51-chi-tieu-thong-ke-ve-dong-gop-cua-cac-nganh-cong-nghiep-van-hoa-doi-voi-phat-trien-kinh-te-119261014110406612.htm",
+      "categories": [
+        "fdi_industrial",
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-14T04:52:43.105237+00:00"
+    },
+    {
+      "id": "440da1bc4d889b87",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nhận diện hành vi chậm nộp/không nộp thông báo doanh thu thực tế phát sinh với hộ kinh doanh có doanh thu 1 tỷ đồng trở xuống",
+      "url": "https://xaydungchinhsach.chinhphu.vn/nhan-dien-hanh-vi-cham-nop-khong-nop-thong-bao-doanh-thu-thuc-te-phat-sinh-voi-ho-kinh-doanh-co-doanh-thu-1-ty-dong-tro-xuong-119261014100626873.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-14T04:52:43.105237+00:00"
+    },
+    {
+      "id": "9d3e34805c011c2b",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Nội dung, quy định mới cần biết với đại lý thuế, hộ kinh doanh, cá nhân kinh doanh dịch vụ làm thủ tục về thuế",
+      "url": "https://xaydungchinhsach.chinhphu.vn/noi-dung-quy-dinh-moi-can-biet-voi-dai-ly-thue-ho-kinh-doanh-ca-nhan-kinh-doanh-dich-vu-lam-thu-tuc-ve-thue-119261014094900839.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-14T04:52:43.105237+00:00"
+    },
+    {
       "id": "476b028bb6351e87",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +227,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-13T22:44:08.346758+00:00"
+      "first_seen_at": "2026-10-13T22:44:08.346758+00:00",
+      "collected_at": "2026-10-13T22:44:08.346758+00:00",
+      "last_seen_at": null
     },
     {
       "id": "681b6a54d0c45ec2",
@@ -190,7 +247,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-13T22:44:08.346758+00:00"
+      "first_seen_at": "2026-10-13T22:44:08.346758+00:00",
+      "collected_at": "2026-10-13T22:44:08.346758+00:00",
+      "last_seen_at": null
     },
     {
       "id": "e7396ba5dea637a7",
@@ -353,54 +412,12 @@
       "first_seen_at": "2026-10-13T14:10:57.202379+00:00",
       "collected_at": "2026-10-13T14:10:57.202379+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "6faae86fb63c69c0",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 13/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-13T00:39:07.330657+00:00",
-      "collected_at": "2026-10-13T00:39:07.330657+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "0779ceab6398459c",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 13/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-13T00:39:07.330657+00:00",
-      "collected_at": "2026-10-13T00:39:07.330657+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 18,
-    "business_formation": 14,
-    "market_data": 9,
+    "policy_regulation": 19,
+    "business_formation": 15,
+    "market_data": 10,
     "hiring": 3
   },
   "geographies_7d": {
@@ -409,9 +426,9 @@
     "Sơn La": 1
   },
   "coverage": {
-    "historical_events": 729,
-    "candidate_events": 282,
-    "reference_events": 442,
+    "historical_events": 735,
+    "candidate_events": 285,
+    "reference_events": 445,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },

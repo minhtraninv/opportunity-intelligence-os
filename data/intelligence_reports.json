@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-10-13T22:46:02.075482+00:00",
+    "generated_at": "2026-10-14T04:54:33.627994+00:00",
     "local_date": "2026-10-14",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "falsification_evidence_readable",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-13T22:46:02.245453+00:00"
+    "trust_hardened_at": "2026-10-14T04:54:33.765633+00:00"
   },
   "reports": {
     "daily": {
@@ -15,39 +15,24 @@
       "period_key": "2026-10-14",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-10-13T22:46:02.074629+00:00",
-      "local_generated_at": "2026-10-14T05:46:02.063823+07:00",
+      "generated_at": "2026-10-14T04:54:33.627278+00:00",
+      "local_generated_at": "2026-10-14T11:54:33.617435+07:00",
       "history_status": "ready",
       "history_readiness": {
-        "observation_days": 45,
+        "observation_days": 46,
         "recommended_days": 2,
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở SME/hộ kinh doanh chính quy hóa & số hóa: -20.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất -1. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -1."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
           "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "assessment": "yếu đi 20 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -126,15 +111,6 @@
           "reading": "Nếu traffic, volume, ticket count và biên lợi nhuận thực không tăng, thesis tiêu dùng cần hạ cấp dù doanh thu tiền đồng tiếp tục tăng."
         },
         {
-          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "tension": "watch",
-          "adjusted_score": 35,
-          "counter_signals": [
-            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
-          ],
-          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
-        },
-        {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
           "adjusted_score": 35,
@@ -142,6 +118,15 @@
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
           "reading": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+        },
+        {
+          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "tension": "watch",
+          "adjusted_score": 15,
+          "counter_signals": [
+            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
+          ],
+          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
         }
       ],
       "blind_spots": [
@@ -233,13 +218,13 @@
         },
         {
           "priority": "theme",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "subject": "Đầu tư công & hạ tầng vật lý",
           "question": "thêm họ bằng chứng độc lập và publisher độc lập"
         },
         {
           "priority": "falsification",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "question": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
+          "subject": "Đầu tư công & hạ tầng vật lý",
+          "question": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
         },
         {
           "priority": "coverage",
@@ -249,7 +234,14 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "sme_formalization",
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "delta": -20.0,
+            "change": "weakened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -259,54 +251,54 @@
       },
       "snapshot": {
         "themes": {
+          "sme_formalization": {
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "score": 15,
+            "state": "reversal_watch",
+            "direction": "reversal_watch",
+            "observation_days": 46
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 77,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 65,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
-          },
-          "sme_formalization": {
-            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-            "score": 35,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
             "score": 35,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           }
         },
         "entities": {},
@@ -409,39 +401,24 @@
       "period_key": "2026-W42",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-10-13T22:46:02.074974+00:00",
-      "local_generated_at": "2026-10-14T05:46:02.063823+07:00",
+      "generated_at": "2026-10-14T04:54:33.627577+00:00",
+      "local_generated_at": "2026-10-14T11:54:33.617435+07:00",
       "history_status": "ready",
       "history_readiness": {
-        "observation_days": 45,
+        "observation_days": 46,
         "recommended_days": 7,
         "history_ready": true
       },
       "executive_summary": [
-        "Các theme có điểm sau phản chứng cao nhất hiện là Gia tốc thương mại & logistics, Mở rộng năng lực sản xuất.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở SME/hộ kinh doanh chính quy hóa & số hóa: -20.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
           "type": "theme",
-          "title": "Gia tốc thương mại & logistics",
-          "assessment": "Delta snapshot gần nhất -1. Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -1."
-        },
-        {
-          "type": "theme",
-          "title": "Mở rộng năng lực sản xuất",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
           "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
-        },
-        {
-          "type": "theme",
-          "title": "Đầu tư công & hạ tầng vật lý",
-          "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+          "assessment": "yếu đi 20 điểm so với kỳ trước."
         }
       ],
       "entity_watch": [],
@@ -520,15 +497,6 @@
           "reading": "Nếu traffic, volume, ticket count và biên lợi nhuận thực không tăng, thesis tiêu dùng cần hạ cấp dù doanh thu tiền đồng tiếp tục tăng."
         },
         {
-          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "tension": "watch",
-          "adjusted_score": 35,
-          "counter_signals": [
-            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
-          ],
-          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
-        },
-        {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
           "adjusted_score": 35,
@@ -536,6 +504,15 @@
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
           "reading": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+        },
+        {
+          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "tension": "watch",
+          "adjusted_score": 15,
+          "counter_signals": [
+            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
+          ],
+          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
         }
       ],
       "blind_spots": [
@@ -627,13 +604,13 @@
         },
         {
           "priority": "theme",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "subject": "Đầu tư công & hạ tầng vật lý",
           "question": "thêm họ bằng chứng độc lập và publisher độc lập"
         },
         {
           "priority": "falsification",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "question": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
+          "subject": "Đầu tư công & hạ tầng vật lý",
+          "question": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
         },
         {
           "priority": "coverage",
@@ -643,7 +620,14 @@
       ],
       "period_delta": {
         "available": true,
-        "theme_changes": [],
+        "theme_changes": [
+          {
+            "theme_id": "sme_formalization",
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "delta": -20.0,
+            "change": "weakened"
+          }
+        ],
         "new_entities": [],
         "coverage_change": {
           "strong": 0.0,
@@ -653,54 +637,54 @@
       },
       "snapshot": {
         "themes": {
+          "sme_formalization": {
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "score": 15,
+            "state": "reversal_watch",
+            "direction": "reversal_watch",
+            "observation_days": 46
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 77,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 65,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
-          },
-          "sme_formalization": {
-            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-            "score": 35,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
             "score": 35,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           }
         },
         "entities": {},
@@ -803,20 +787,25 @@
       "period_key": "2026-10",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-10-13T22:46:02.075244+00:00",
-      "local_generated_at": "2026-10-14T05:46:02.063823+07:00",
+      "generated_at": "2026-10-14T04:54:33.627814+00:00",
+      "local_generated_at": "2026-10-14T11:54:33.617435+07:00",
       "history_status": "ready",
       "history_readiness": {
-        "observation_days": 45,
+        "observation_days": 46,
         "recommended_days": 21,
         "history_ready": true
       },
       "executive_summary": [
-        "Thay đổi lớn nhất so với kỳ trước nằm ở Hạ tầng dữ liệu & số hóa: -7.0 điểm.",
+        "Thay đổi lớn nhất so với kỳ trước nằm ở SME/hộ kinh doanh chính quy hóa & số hóa: -20.0 điểm.",
         "Regional divergence đang đáng chú ý tại Nghệ An, nơi vốn mới và sản xuất cùng tăng theo dữ liệu quan sát.",
         "Độ phủ nguồn hiện có 4 domain STRONG, 5 WEAK, 1 BROKEN và 2 MISSING."
       ],
       "what_changed": [
+        {
+          "type": "theme",
+          "title": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "assessment": "yếu đi 20 điểm so với kỳ trước."
+        },
         {
           "type": "theme",
           "title": "Hạ tầng dữ liệu & số hóa",
@@ -899,15 +888,6 @@
           "reading": "Nếu traffic, volume, ticket count và biên lợi nhuận thực không tăng, thesis tiêu dùng cần hạ cấp dù doanh thu tiền đồng tiếp tục tăng."
         },
         {
-          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "tension": "watch",
-          "adjusted_score": 35,
-          "counter_signals": [
-            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
-          ],
-          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
-        },
-        {
           "theme": "Đầu tư công & hạ tầng vật lý",
           "tension": "watch",
           "adjusted_score": 35,
@@ -915,6 +895,15 @@
             "Đầu tư ngân sách tăng 18,4% nhưng mới đạt 39,0% kế hoạch năm; hơn 60% còn lại dồn vào 5 tháng cuối — Dòng vốn công đang tăng nhưng áp lực giải ngân còn lớn. Đây vừa có thể tạo gia tốc công trình, vừa là rủi ro chậm tiến độ; cơ hội địa phương phải bám vào dự án thực sự triển khai chứ không dựa vào kế hoạch vốn."
           ],
           "reading": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+        },
+        {
+          "theme": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "tension": "watch",
+          "adjusted_score": 15,
+          "counter_signals": [
+            "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6% — Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra."
+          ],
+          "reading": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
         }
       ],
       "blind_spots": [
@@ -1006,13 +995,13 @@
         },
         {
           "priority": "theme",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "subject": "Đầu tư công & hạ tầng vật lý",
           "question": "thêm họ bằng chứng độc lập và publisher độc lập"
         },
         {
           "priority": "falsification",
-          "subject": "SME/hộ kinh doanh chính quy hóa & số hóa",
-          "question": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
+          "subject": "Đầu tư công & hạ tầng vật lý",
+          "question": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
         },
         {
           "priority": "coverage",
@@ -1023,6 +1012,12 @@
       "period_delta": {
         "available": true,
         "theme_changes": [
+          {
+            "theme_id": "sme_formalization",
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "delta": -20.0,
+            "change": "weakened"
+          },
           {
             "theme_id": "data_infrastructure",
             "label": "Hạ tầng dữ liệu & số hóa",
@@ -1039,54 +1034,54 @@
       },
       "snapshot": {
         "themes": {
+          "sme_formalization": {
+            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+            "score": 15,
+            "state": "reversal_watch",
+            "direction": "reversal_watch",
+            "observation_days": 46
+          },
           "logistics_trade": {
             "label": "Gia tốc thương mại & logistics",
             "score": 77,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "manufacturing_expansion": {
             "label": "Mở rộng năng lực sản xuất",
             "score": 65,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
-          },
-          "sme_formalization": {
-            "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-            "score": 35,
-            "state": "stable",
-            "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "public_infrastructure": {
             "label": "Đầu tư công & hạ tầng vật lý",
             "score": 35,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "consumer_services": {
             "label": "Tiêu dùng & dịch vụ",
             "score": 27,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "data_infrastructure": {
             "label": "Hạ tầng dữ liệu & số hóa",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           },
           "energy_grid": {
             "label": "Mở rộng điện & lưới điện",
             "score": 18,
             "state": "stable",
             "direction": "stable",
-            "observation_days": 45
+            "observation_days": 46
           }
         },
         "entities": {},

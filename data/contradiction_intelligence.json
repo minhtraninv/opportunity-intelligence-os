@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.3.0",
-    "generated_at": "2026-10-13T22:46:01.403323+00:00",
+    "generated_at": "2026-10-14T04:54:33.089906+00:00",
     "mode": "counter_signal_and_falsification_intelligence",
     "principle": "strong_theses_must_survive_counter_evidence",
     "freshness_status": "fresh",
-    "trust_checked_at": "2026-10-13T22:46:01.460396+00:00"
+    "trust_checked_at": "2026-10-14T04:54:33.131206+00:00"
   },
   "coverage": {
     "verified_counter_signals": 6,
@@ -198,41 +198,6 @@
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
     },
     {
-      "theme_id": "sme_formalization",
-      "theme_label": "SME/hộ kinh doanh chính quy hóa & số hóa",
-      "original_score": 38,
-      "tension_level": "watch",
-      "counter_signal_count": 1,
-      "confidence_haircut": 3,
-      "tension_adjusted_score": 35,
-      "counter_signals": [
-        {
-          "id": "business-entry-exit-7m-2026",
-          "themes": [
-            "sme_formalization",
-            "consumer_services"
-          ],
-          "kind": "business_churn_tension",
-          "severity": "medium",
-          "title": "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6%",
-          "facts": {
-            "business_entry_count_k": 187.2,
-            "business_entry_yoy_pct": 7.5,
-            "business_exit_count_k": 155.3,
-            "business_exit_yoy_pct": 7.6
-          },
-          "interpretation": "Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra.",
-          "falsifies_if": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng.",
-          "publisher": "Cục Thống kê",
-          "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/"
-        }
-      ],
-      "falsification_conditions": [
-        "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
-      ],
-      "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
-    },
-    {
       "theme_id": "public_infrastructure",
       "theme_label": "Đầu tư công & hạ tầng vật lý",
       "original_score": 38,
@@ -261,6 +226,41 @@
       ],
       "falsification_conditions": [
         "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+      ],
+      "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
+    },
+    {
+      "theme_id": "sme_formalization",
+      "theme_label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+      "original_score": 18,
+      "tension_level": "watch",
+      "counter_signal_count": 1,
+      "confidence_haircut": 3,
+      "tension_adjusted_score": 15,
+      "counter_signals": [
+        {
+          "id": "business-entry-exit-7m-2026",
+          "themes": [
+            "sme_formalization",
+            "consumer_services"
+          ],
+          "kind": "business_churn_tension",
+          "severity": "medium",
+          "title": "Doanh nghiệp gia nhập thị trường tăng 7,5%, nhưng doanh nghiệp rút lui cũng tăng 7,6%",
+          "facts": {
+            "business_entry_count_k": 187.2,
+            "business_entry_yoy_pct": 7.5,
+            "business_exit_count_k": 155.3,
+            "business_exit_yoy_pct": 7.6
+          },
+          "interpretation": "Khởi nghiệp/khôi phục hoạt động tích cực nhưng churn cũng tăng gần cùng tốc độ. Nhu cầu dịch vụ SME có thể lớn, song willingness-to-pay và khả năng sống sót của khách hàng phải được kiểm tra.",
+          "falsifies_if": "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng.",
+          "publisher": "Cục Thống kê",
+          "source_url": "https://www.nso.gov.vn/bai-top/2026/08/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-bay-va-7-thang-nam-2026/"
+        }
+      ],
+      "falsification_conditions": [
+        "Nếu churn tăng nhanh hơn entry hoặc nợ/giá dịch vụ gây rời bỏ cao, các mô hình subscription cho SME cần thận trọng."
       ],
       "rule": "Điểm sau phản chứng chỉ giảm độ tự tin vào narrative; không phải xác suất lợi nhuận hay tín hiệu bán/mua."
     },
