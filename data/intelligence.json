@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T21:40:32.451555+00:00",
+    "generated_at": "2026-10-15T04:37:36.243236+00:00",
     "status": "active",
     "history_days": 46,
     "required_history_days": 14,
@@ -10,33 +10,11 @@
   },
   "category_changes": [
     {
-      "category": "fdi_industrial",
-      "recent_7d": 6,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 100,
-      "trend": "accelerating",
-      "confidence": 90,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 5,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 88,
-      "trend": "single_source_spike",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
-    },
-    {
       "category": "construction",
-      "recent_7d": 7,
+      "recent_7d": 8,
       "baseline_21d": 20,
       "baseline_expected_7d": 6.7,
-      "delta_pct": 5,
+      "delta_pct": 20,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -44,13 +22,24 @@
     },
     {
       "category": "sme",
-      "recent_7d": 18,
-      "baseline_21d": 40,
-      "baseline_expected_7d": 13.3,
-      "delta_pct": 35,
+      "recent_7d": 16,
+      "baseline_21d": 42,
+      "baseline_expected_7d": 14.0,
+      "delta_pct": 14,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "fdi_industrial",
+      "recent_7d": 5,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 90,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -65,11 +54,22 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "labor",
-      "recent_7d": 2,
+      "category": "monetary",
+      "recent_7d": 4,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "delta_pct": 33,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 3,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -154,6 +154,25 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "38527efba6476f3d",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Rà soát, hoàn thiện vị trí việc làm và xây dựng phương án biên chế trong hệ thống chính trị",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-trong-he-thong-chinh-tri-11926101508470521.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-15T04:37:36.243236+00:00"
+    },
     {
       "id": "1318db64f61d6b9e",
       "source_id": "business-registry",
@@ -298,63 +317,21 @@
       "first_seen_at": "2026-10-14T04:52:43.105237+00:00",
       "collected_at": "2026-10-14T04:52:43.105237+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "476b028bb6351e87",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 14/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-13T22:44:08.346758+00:00",
-      "collected_at": "2026-10-13T22:44:08.346758+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "681b6a54d0c45ec2",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 14/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-13T22:44:08.346758+00:00",
-      "collected_at": "2026-10-13T22:44:08.346758+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 20,
-    "business_formation": 17,
-    "market_data": 8,
-    "hiring": 2
+    "business_formation": 15,
+    "market_data": 6,
+    "hiring": 3
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 743,
-    "candidate_events": 289,
-    "reference_events": 449,
+    "historical_events": 747,
+    "candidate_events": 290,
+    "reference_events": 452,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
