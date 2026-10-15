@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-15T04:37:36.243236+00:00",
+    "generated_at": "2026-10-15T11:28:04.084099+00:00",
     "status": "active",
-    "history_days": 46,
+    "history_days": 47,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,10 +11,10 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 8,
+      "recent_7d": 9,
       "baseline_21d": 20,
       "baseline_expected_7d": 6.7,
-      "delta_pct": 20,
+      "delta_pct": 35,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -55,10 +55,10 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 4,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 33,
+      "recent_7d": 3,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -10,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -99,12 +99,12 @@
     },
     {
       "category": "logistics",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 65,
+      "confidence": 67,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "9a5da6933dffe451",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kiểm tra, giám sát, không để giá hàng hóa tăng bất hợp lý",
+      "url": "https://baochinhphu.vn/kiem-tra-giam-sat-khong-de-gia-hang-hoa-tang-bat-hop-ly-102261015154306509.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-15T11:28:04.084099+00:00"
+    },
+    {
+      "id": "9c1809fa2861dbe5",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Bộ Quốc phòng hướng dẫn một số cơ chế, chính sách đặc biệt trong xây dựng, tổ chức thi hành pháp luật",
+      "url": "https://baochinhphu.vn/bo-quoc-phong-huong-dan-mot-so-co-che-chinh-sach-dac-biet-trong-xay-dung-to-chuc-thi-hanh-phap-luat-102261015145927315.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-15T11:28:04.084099+00:00"
+    },
+    {
       "id": "38527efba6476f3d",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -171,7 +207,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-15T04:37:36.243236+00:00"
+      "first_seen_at": "2026-10-15T04:37:36.243236+00:00",
+      "collected_at": "2026-10-15T04:37:36.243236+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1318db64f61d6b9e",
@@ -256,71 +294,10 @@
       "first_seen_at": "2026-10-14T11:50:56.087546+00:00",
       "collected_at": "2026-10-14T11:50:56.087546+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "78dac398b0ed3fc7",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Đề xuất 51 chỉ tiêu thống kê về đóng góp của các ngành công nghiệp văn hóa đối với phát triển kinh tế",
-      "url": "https://xaydungchinhsach.chinhphu.vn/de-xuat-51-chi-tieu-thong-ke-ve-dong-gop-cua-cac-nganh-cong-nghiep-van-hoa-doi-voi-phat-trien-kinh-te-119261014110406612.htm",
-      "categories": [
-        "fdi_industrial",
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-14T04:52:43.105237+00:00",
-      "collected_at": "2026-10-14T04:52:43.105237+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "440da1bc4d889b87",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Nhận diện hành vi chậm nộp/không nộp thông báo doanh thu thực tế phát sinh với hộ kinh doanh có doanh thu 1 tỷ đồng trở xuống",
-      "url": "https://xaydungchinhsach.chinhphu.vn/nhan-dien-hanh-vi-cham-nop-khong-nop-thong-bao-doanh-thu-thuc-te-phat-sinh-voi-ho-kinh-doanh-co-doanh-thu-1-ty-dong-tro-xuong-119261014100626873.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-14T04:52:43.105237+00:00",
-      "collected_at": "2026-10-14T04:52:43.105237+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "9d3e34805c011c2b",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Nội dung, quy định mới cần biết với đại lý thuế, hộ kinh doanh, cá nhân kinh doanh dịch vụ làm thủ tục về thuế",
-      "url": "https://xaydungchinhsach.chinhphu.vn/noi-dung-quy-dinh-moi-can-biet-voi-dai-ly-thue-ho-kinh-doanh-ca-nhan-kinh-doanh-dich-vu-lam-thu-tuc-ve-thue-119261014094900839.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-14T04:52:43.105237+00:00",
-      "collected_at": "2026-10-14T04:52:43.105237+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 20,
+    "policy_regulation": 21,
     "business_formation": 15,
     "market_data": 6,
     "hiring": 3
@@ -329,9 +306,9 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 747,
-    "candidate_events": 290,
-    "reference_events": 452,
+    "historical_events": 753,
+    "candidate_events": 292,
+    "reference_events": 456,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
