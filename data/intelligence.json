@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-15T21:22:12.195754+00:00",
+    "generated_at": "2026-10-16T04:31:09.727098+00:00",
     "status": "active",
     "history_days": 47,
     "required_history_days": 14,
@@ -11,21 +11,21 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 8,
+      "recent_7d": 10,
       "baseline_21d": 20,
       "baseline_expected_7d": 6.7,
-      "delta_pct": 20,
-      "trend": "stable",
+      "delta_pct": 50,
+      "trend": "accelerating",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "explanation": "7 ngày gần nhất có 10 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 6.7."
     },
     {
       "category": "sme",
-      "recent_7d": 18,
-      "baseline_21d": 40,
-      "baseline_expected_7d": 13.3,
-      "delta_pct": 35,
+      "recent_7d": 16,
+      "baseline_21d": 42,
+      "baseline_expected_7d": 14.0,
+      "delta_pct": 14,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "a7a75005fb43dd9d",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Ba nghị quyết về xây dựng Đảng: Đổi mới phương thức lãnh đạo, tạo chuyển biến thực chất trong công tác cán bộ",
+      "url": "https://baochinhphu.vn/ba-nghi-quyet-ve-xay-dung-dang-doi-moi-phuong-thuc-lanh-dao-tao-chuyen-bien-thuc-chat-trong-cong-tac-can-bo-102261016092935434.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T04:31:09.727098+00:00"
+    },
+    {
+      "id": "f3f5201d5b8ffa6e",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "TOÀN VĂN: Nghị quyết số 30-NQ/TW về tiếp tục xây dựng đội ngũ cán bộ các cấp và đổi mới căn bản, toàn diện công tác cán bộ đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-30-nq-tw-ve-tiep-tuc-xay-dung-doi-ngu-can-bo-cac-cap-va-doi-moi-can-ban-toan-dien-cong-tac-can-bo-dap-ung-yeu-cau-phat-trien-dat-nuoc-trong-ky-nguyen-moi-119261016060339237.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T04:31:09.727098+00:00"
+    },
+    {
       "id": "7004a8d0c21085cb",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +208,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-15T21:22:12.195754+00:00"
+      "first_seen_at": "2026-10-15T21:22:12.195754+00:00",
+      "collected_at": "2026-10-15T21:22:12.195754+00:00",
+      "last_seen_at": null
     },
     {
       "id": "26152bd87bc1e630",
@@ -190,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-15T21:22:12.195754+00:00"
+      "first_seen_at": "2026-10-15T21:22:12.195754+00:00",
+      "collected_at": "2026-10-15T21:22:12.195754+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9a5da6933dffe451",
@@ -255,8 +295,8 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 19,
-    "business_formation": 17,
+    "policy_regulation": 21,
+    "business_formation": 15,
     "market_data": 5,
     "hiring": 3
   },
@@ -264,13 +304,13 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 756,
-    "candidate_events": 294,
-    "reference_events": 457,
+    "historical_events": 761,
+    "candidate_events": 296,
+    "reference_events": 460,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
