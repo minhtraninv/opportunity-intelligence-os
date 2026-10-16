@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-16T11:23:22.917789+00:00",
+    "generated_at": "2026-10-16T16:38:54.759377+00:00",
     "status": "active",
     "history_days": 48,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 10,
+      "recent_7d": 11,
       "baseline_21d": 21,
       "baseline_expected_7d": 7.0,
-      "delta_pct": 43,
-      "trend": "stable",
+      "delta_pct": 57,
+      "trend": "accelerating",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "explanation": "7 ngày gần nhất có 11 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 7.0."
     },
     {
       "category": "sme",
@@ -33,23 +33,23 @@
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
-      "delta_pct": 20,
+      "delta_pct": 50,
       "trend": "stable",
-      "confidence": 81,
+      "confidence": 83,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
+      "category": "monetary",
+      "recent_7d": 2,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": -33,
       "trend": "stable",
-      "confidence": 71,
+      "confidence": 75,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -65,11 +65,11 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
+      "category": "energy",
       "recent_7d": 2,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -25,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -78,13 +78,13 @@
     {
       "category": "infrastructure",
       "recent_7d": 0,
-      "baseline_21d": 15,
-      "baseline_expected_7d": 5.0,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 70,
+      "confidence": 68,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 5.0."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
     },
     {
       "category": "policy",
@@ -105,17 +105,6 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 67,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "trade_flow",
-      "recent_7d": 3,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 59,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -142,6 +131,17 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
+      "category": "trade_flow",
+      "recent_7d": 2,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 53,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "capital_market",
       "recent_7d": 0,
       "baseline_21d": 4,
@@ -154,6 +154,43 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "4bee5864051b4082",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Yêu cầu giảm lãi suất cho vay từ 1,5-2% đối với sản xuất, kinh doanh và lĩnh vực ưu tiên",
+      "url": "https://baochinhphu.vn/yeu-cau-giam-lai-suat-cho-vay-tu-15-2-doi-voi-san-xuat-kinh-doanh-va-linh-vuc-uu-tien-102261016223519865.htm",
+      "categories": [
+        "fdi_industrial",
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T16:38:54.759377+00:00"
+    },
+    {
+      "id": "ab4b9261a1901011",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Nghị quyết số 31-NQ/TW về tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện",
+      "url": "https://baochinhphu.vn/nghi-quyet-so-31-nq-tw-ve-tang-cuong-xay-dung-chinh-don-dang-va-he-thong-chinh-tri-trong-sach-vung-manh-toan-dien-102261016182834819.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T16:38:54.759377+00:00"
+    },
     {
       "id": "27d7776edbee0e6b",
       "source_id": "gov",
@@ -170,7 +207,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-16T11:23:22.917789+00:00"
+      "first_seen_at": "2026-10-16T11:23:22.917789+00:00",
+      "collected_at": "2026-10-16T11:23:22.917789+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a87206e913cc5ec9",
@@ -188,7 +227,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-16T11:23:22.917789+00:00"
+      "first_seen_at": "2026-10-16T11:23:22.917789+00:00",
+      "collected_at": "2026-10-16T11:23:22.917789+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a7a75005fb43dd9d",
@@ -271,61 +312,21 @@
       "first_seen_at": "2026-10-15T21:22:12.195754+00:00",
       "collected_at": "2026-10-15T21:22:12.195754+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "9a5da6933dffe451",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Kiểm tra, giám sát, không để giá hàng hóa tăng bất hợp lý",
-      "url": "https://baochinhphu.vn/kiem-tra-giam-sat-khong-de-gia-hang-hoa-tang-bat-hop-ly-102261015154306509.htm",
-      "categories": [
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-15T11:28:04.084099+00:00",
-      "collected_at": "2026-10-15T11:28:04.084099+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "9c1809fa2861dbe5",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Bộ Quốc phòng hướng dẫn một số cơ chế, chính sách đặc biệt trong xây dựng, tổ chức thi hành pháp luật",
-      "url": "https://baochinhphu.vn/bo-quoc-phong-huong-dan-mot-so-co-che-chinh-sach-dac-biet-trong-xay-dung-to-chuc-thi-hanh-phap-luat-102261015145927315.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-15T11:28:04.084099+00:00",
-      "collected_at": "2026-10-15T11:28:04.084099+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 22,
+    "policy_regulation": 20,
     "business_formation": 15,
-    "market_data": 4,
+    "market_data": 5,
     "hiring": 3
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 766,
-    "candidate_events": 298,
-    "reference_events": 463,
+    "historical_events": 769,
+    "candidate_events": 300,
+    "reference_events": 464,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
