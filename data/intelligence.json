@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-16T04:31:09.727098+00:00",
+    "generated_at": "2026-10-16T11:23:22.917789+00:00",
     "status": "active",
-    "history_days": 47,
+    "history_days": 48,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,13 +12,13 @@
     {
       "category": "construction",
       "recent_7d": 10,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": 50,
-      "trend": "accelerating",
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": 43,
+      "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 10 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 6.7."
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "sme",
@@ -44,12 +44,12 @@
     },
     {
       "category": "energy",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 0,
+      "delta_pct": 50,
       "trend": "stable",
-      "confidence": 69,
+      "confidence": 71,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -99,9 +99,9 @@
     },
     {
       "category": "logistics",
-      "recent_7d": 4,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "recent_7d": 3,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 67,
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "27d7776edbee0e6b",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Nghị quyết số 30-NQ/TW về tiếp tục xây dựng đội ngũ cán bộ các cấp và đổi mới căn bản, toàn diện công tác cán bộ",
+      "url": "https://baochinhphu.vn/nghi-quyet-so-30-nq-tw-ve-tiep-tuc-xay-dung-doi-ngu-can-bo-cac-cap-va-doi-moi-can-ban-toan-dien-cong-tac-can-bo-102261016175904679.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T11:23:22.917789+00:00"
+    },
+    {
+      "id": "a87206e913cc5ec9",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Hơn 5500 đảng viên EVN tham gia Hội nghị toàn quốc nghiên cứu, học tập, quán triệt và triển khai thực hiện Nghị quyết Hội nghị Trung ương 4",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-Hoi-nghi-toan-quoc-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-thuc-hien-Nghi-quyet-Hoi-nghi-Trung-uong-4-60-183-509978",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-16T11:23:22.917789+00:00"
+    },
+    {
       "id": "a7a75005fb43dd9d",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +206,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-16T04:31:09.727098+00:00"
+      "first_seen_at": "2026-10-16T04:31:09.727098+00:00",
+      "collected_at": "2026-10-16T04:31:09.727098+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f3f5201d5b8ffa6e",
@@ -188,7 +226,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-16T04:31:09.727098+00:00"
+      "first_seen_at": "2026-10-16T04:31:09.727098+00:00",
+      "collected_at": "2026-10-16T04:31:09.727098+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7004a8d0c21085cb",
@@ -271,46 +311,25 @@
       "first_seen_at": "2026-10-15T11:28:04.084099+00:00",
       "collected_at": "2026-10-15T11:28:04.084099+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "38527efba6476f3d",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm và xây dựng phương án biên chế trong hệ thống chính trị",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-trong-he-thong-chinh-tri-11926101508470521.htm",
-      "categories": [
-        "construction",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-15T04:37:36.243236+00:00",
-      "collected_at": "2026-10-15T04:37:36.243236+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 21,
+    "policy_regulation": 22,
     "business_formation": 15,
-    "market_data": 5,
+    "market_data": 4,
     "hiring": 3
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 761,
-    "candidate_events": 296,
-    "reference_events": 460,
+    "historical_events": 766,
+    "candidate_events": 298,
+    "reference_events": 463,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
