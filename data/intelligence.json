@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T04:24:44.600311+00:00",
+    "generated_at": "2026-10-17T10:43:08.154436+00:00",
     "status": "active",
-    "history_days": 48,
+    "history_days": 49,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,21 +11,21 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 11,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": 57,
-      "trend": "accelerating",
+      "recent_7d": 10,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": 36,
+      "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 11 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 7.0."
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "sme",
-      "recent_7d": 16,
+      "recent_7d": 17,
       "baseline_21d": 42,
       "baseline_expected_7d": 14.0,
-      "delta_pct": 14,
+      "delta_pct": 21,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -43,14 +43,25 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
-      "recent_7d": 2,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": -33,
+      "category": "energy",
+      "recent_7d": 3,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 29,
       "trend": "stable",
-      "confidence": 75,
+      "confidence": 73,
       "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 3,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -59,17 +70,6 @@
       "baseline_21d": 8,
       "baseline_expected_7d": 2.7,
       "delta_pct": 12,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 2,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": -14,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -87,15 +87,15 @@
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
     },
     {
-      "category": "policy",
-      "recent_7d": 2,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": -50,
+      "category": "monetary",
+      "recent_7d": 1,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -70,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.0."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
     },
     {
       "category": "logistics",
@@ -155,6 +155,63 @@
   ],
   "top_new_events": [
     {
+      "id": "1bd1c839fb4ba1c1",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Đề xuất 5 nhóm chính sách phát triển doanh nghiệp nhỏ và vừa",
+      "url": "https://xaydungchinhsach.chinhphu.vn/de-xuat-5-nhom-chinh-sach-phat-trien-doanh-nghiep-nho-va-vua-119261017153555253.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-17T10:43:08.154436+00:00"
+    },
+    {
+      "id": "8521115dbceba407",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Khẩn trương sửa đổi, bổ sung quy định về định mức giáo viên, phụ cấp; mức hỗ trợ; biểu giá điện sinh hoạt...",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-sua-doi-bo-sung-quy-dinh-ve-dinh-muc-giao-vien-phu-cap-muc-ho-tro-bieu-gia-dien-sinh-hoat-119261017124813628.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-17T10:43:08.154436+00:00"
+    },
+    {
+      "id": "479fe1aab3fc2100",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "TOÀN VĂN BÁO CÁO KINH TẾ - XÃ HỘI 2026; DỰ KIẾN KẾ HOẠCH PHÁT TRIỂN KINH TẾ - XÃ HỘI 2027",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-bao-cao-kinh-te-xa-hoi-2026-du-kien-ke-hoach-phat-trien-kinh-te-xa-hoi-2027-119261017111713426.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026,
+        2027
+      ],
+      "first_seen_at": "2026-10-17T10:43:08.154436+00:00"
+    },
+    {
       "id": "47f5f913405d4ef9",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -173,7 +230,9 @@
         2026,
         2027
       ],
-      "first_seen_at": "2026-10-17T04:24:44.600311+00:00"
+      "first_seen_at": "2026-10-17T04:24:44.600311+00:00",
+      "collected_at": "2026-10-17T04:24:44.600311+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2759fb7322109461",
@@ -297,61 +356,21 @@
       "first_seen_at": "2026-10-16T11:23:22.917789+00:00",
       "collected_at": "2026-10-16T11:23:22.917789+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "a7a75005fb43dd9d",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Ba nghị quyết về xây dựng Đảng: Đổi mới phương thức lãnh đạo, tạo chuyển biến thực chất trong công tác cán bộ",
-      "url": "https://baochinhphu.vn/ba-nghi-quyet-ve-xay-dung-dang-doi-moi-phuong-thuc-lanh-dao-tao-chuyen-bien-thuc-chat-trong-cong-tac-can-bo-102261016092935434.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-16T04:31:09.727098+00:00",
-      "collected_at": "2026-10-16T04:31:09.727098+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f3f5201d5b8ffa6e",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "TOÀN VĂN: Nghị quyết số 30-NQ/TW về tiếp tục xây dựng đội ngũ cán bộ các cấp và đổi mới căn bản, toàn diện công tác cán bộ đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới",
-      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-30-nq-tw-ve-tiep-tuc-xay-dung-doi-ngu-can-bo-cac-cap-va-doi-moi-can-ban-toan-dien-cong-tac-can-bo-dap-ung-yeu-cau-phat-trien-dat-nuoc-trong-ky-nguyen-moi-119261016060339237.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-16T04:31:09.727098+00:00",
-      "collected_at": "2026-10-16T04:31:09.727098+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 20,
     "business_formation": 15,
-    "market_data": 6,
+    "market_data": 7,
     "hiring": 3
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 777,
-    "candidate_events": 303,
-    "reference_events": 469,
+    "historical_events": 781,
+    "candidate_events": 306,
+    "reference_events": 470,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
