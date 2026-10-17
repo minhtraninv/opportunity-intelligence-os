@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-17T15:35:36.794557+00:00",
+    "generated_at": "2026-10-17T20:37:10.191070+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-17T15:35:37.061197+00:00"
+    "trust_hardened_at": "2026-10-17T20:37:10.537228+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -20,9 +20,9 @@
     "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 13,
+    "discovery_candidates": 14,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 16
+    "suppressed_non_organizations": 15
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -231,7 +231,7 @@
       "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment"
@@ -576,6 +576,129 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-msb-19acf4ef",
+      "label": "MSB",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 18,
+      "why_now": "MSB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 4,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "9cf0d1334c77b3ce",
+          "event_signature": "2123ada2c18bcfe5",
+          "family": "capital",
+          "title": "MSB xin ý kiến cổ đông phát hành 936 triệu cổ phiếu nhằm tăng vốn điều lệ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/msb-xin-y-kien-co-dong-phat-hanh-936-trieu-co-phieu-nham-tang-von-dieu-le-post1141714.vnp",
+          "observed_at": "2026-10-13T15:23:31+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "052bfe5403c685a7",
+          "event_signature": "dd2ff6d51cf62c7b",
+          "family": "operating",
+          "title": "MSB khẳng định vị thế tiên phong trên hành trình kiến tạo tương lai số",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/msb-khang-dinh-vi-the-tien-phong-tren-hanh-trinh-kien-tao-tuong-lai-so-185261012161942245.htm",
+          "observed_at": "2026-10-12T09:12:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a6493b81bf9aee50",
+          "event_signature": "118a8c8165cfb02d",
+          "family": "capital",
+          "title": "MSB muốn lập ngân hàng con 100% vốn tại Trung tâm Tài chính quốc tế",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/msb-muon-lap-ngan-hang-con-100-von-tai-trung-tam-tai-chinh-quoc-te-100260929164732685.htm",
+          "observed_at": "2026-09-30T12:35:18.816138+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "fcc30f5b6a2fabb8",
+          "event_signature": "a876db96ad9f613b",
+          "family": "capital",
+          "title": "MSB đề xuất mở rộng hệ sinh thái tài chính",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/msb-de-xuat-mo-rong-he-sinh-thai-tai-chinh-5126285.html",
+          "observed_at": "2026-09-29T09:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "89fbe778dfc74da7",
+          "event_signature": "11b45b05c6f0db8b",
+          "family": "operating",
+          "title": "MSB ghi dấu với hệ sinh thái ngân hàng số toàn diện",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/msb-ghi-dau-voi-he-sinh-thai-ngan-hang-so-toan-dien-5125861.html",
+          "observed_at": "2026-09-28T10:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "vingroup_ecosystem",
       "label": "Hệ sinh thái Vingroup",
       "entity_type": "business_group",
@@ -766,7 +889,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 14,
+      "newest_evidence_age_days": 15,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1157,7 +1280,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1379,7 +1502,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -1862,12 +1985,6 @@
     {
       "entity_id": "auto-quảng-ngãi-2c2a20e3",
       "label": "Quảng Ngãi",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-sơn-la-26d08f83",
-      "label": "Sơn La",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }

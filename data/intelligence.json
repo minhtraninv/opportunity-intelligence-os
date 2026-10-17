@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T15:34:02.535699+00:00",
+    "generated_at": "2026-10-17T20:35:56.027294+00:00",
     "status": "active",
     "history_days": 49,
     "required_history_days": 14,
@@ -22,10 +22,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 17,
+      "recent_7d": 19,
       "baseline_21d": 42,
       "baseline_expected_7d": 14.0,
-      "delta_pct": 21,
+      "delta_pct": 36,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "5591129afd5ba96a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 18/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00"
+    },
+    {
+      "id": "aa2f2eddd290daa4",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 18/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00"
+    },
+    {
       "id": "1bd1c839fb4ba1c1",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -281,52 +319,11 @@
       "first_seen_at": "2026-10-16T21:07:03.064389+00:00",
       "collected_at": "2026-10-16T21:07:03.064389+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "4bee5864051b4082",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Yêu cầu giảm lãi suất cho vay từ 1,5-2% đối với sản xuất, kinh doanh và lĩnh vực ưu tiên",
-      "url": "https://baochinhphu.vn/yeu-cau-giam-lai-suat-cho-vay-tu-15-2-doi-voi-san-xuat-kinh-doanh-va-linh-vuc-uu-tien-102261016223519865.htm",
-      "categories": [
-        "fdi_industrial",
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-16T16:38:54.759377+00:00",
-      "collected_at": "2026-10-16T16:38:54.759377+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "ab4b9261a1901011",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Nghị quyết số 31-NQ/TW về tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện",
-      "url": "https://baochinhphu.vn/nghi-quyet-so-31-nq-tw-ve-tang-cuong-xay-dung-chinh-don-dang-va-he-thong-chinh-tri-trong-sach-vung-manh-toan-dien-102261016182834819.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-16T16:38:54.759377+00:00",
-      "collected_at": "2026-10-16T16:38:54.759377+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 19,
-    "business_formation": 15,
+    "business_formation": 17,
     "market_data": 6,
     "hiring": 3
   },
@@ -334,9 +331,9 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 782,
-    "candidate_events": 306,
-    "reference_events": 471,
+    "historical_events": 785,
+    "candidate_events": 308,
+    "reference_events": 472,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },

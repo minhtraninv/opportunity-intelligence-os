@@ -1,7 +1,66 @@
 {
   "version": 2,
-  "updated_at": "2026-10-17T15:34:02.535699+00:00",
+  "updated_at": "2026-10-17T20:35:56.027294+00:00",
   "events": [
+    {
+      "id": "c8482208ab03ef30",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quốc hội thảo luận kinh tế - xã hội, ngân sách nhà nước, đầu tư công...",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quoc-hoi-thao-luan-kinh-te-xa-hoi-ngan-sach-nha-nuoc-dau-tu-cong-119261017230839932.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "5591129afd5ba96a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 18/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "aa2f2eddd290daa4",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 18/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "c38d79d28e2303dd",
       "source_id": "gov-policy",
@@ -19,6 +78,8 @@
       "geography": [],
       "mentioned_years": [],
       "first_seen_at": "2026-10-17T15:34:02.535699+00:00",
+      "collected_at": "2026-10-17T15:34:02.535699+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -20584,15 +20645,32 @@
       },
       "total_events": 782,
       "source_errors": 1
+    },
+    {
+      "captured_at": "2026-10-17T20:35:56.027294+00:00",
+      "new_items": 3,
+      "new_candidates": 2,
+      "new_by_category": {
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "gov-policy": 1
+      },
+      "total_events": 785,
+      "source_errors": 1
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-10-17T15:35:34.003799+00:00",
+    "updated_at": "2026-10-17T20:37:06.405065+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "reference_only": 471,
-      "official_headline_discovery": 306,
+      "reference_only": 472,
+      "official_headline_discovery": 308,
       "primary_verified": 5
     }
   }
