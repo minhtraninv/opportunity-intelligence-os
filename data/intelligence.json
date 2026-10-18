@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T20:35:56.027294+00:00",
+    "generated_at": "2026-10-18T04:32:51.884936+00:00",
     "status": "active",
     "history_days": 49,
     "required_history_days": 14,
@@ -22,10 +22,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 19,
+      "recent_7d": 17,
       "baseline_21d": 42,
       "baseline_expected_7d": 14.0,
-      "delta_pct": 36,
+      "delta_pct": 21,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -76,6 +76,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "monetary",
+      "recent_7d": 2,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -40,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 0,
       "baseline_21d": 14,
@@ -85,17 +96,6 @@
       "confidence": 68,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 1,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -70,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
     },
     {
       "category": "logistics",
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "657129896a518304",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Một số ngân hàng bắt đầu triển khai việc giảm lãi suất cho vay",
+      "url": "https://baochinhphu.vn/mot-so-ngan-hang-trien-khai-viec-giam-lai-suat-cho-vay-102261018093230831.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-18T04:32:51.884936+00:00"
+    },
+    {
       "id": "5591129afd5ba96a",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-17T20:35:56.027294+00:00"
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
+      "collected_at": "2026-10-17T20:35:56.027294+00:00",
+      "last_seen_at": null
     },
     {
       "id": "aa2f2eddd290daa4",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-17T20:35:56.027294+00:00"
+      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
+      "collected_at": "2026-10-17T20:35:56.027294+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1bd1c839fb4ba1c1",
@@ -254,86 +276,21 @@
       "first_seen_at": "2026-10-17T10:43:08.154436+00:00",
       "collected_at": "2026-10-17T10:43:08.154436+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "47f5f913405d4ef9",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Kết luận số 106-KL/TW Hội nghị Trung ương 4 về tình hình phát triển kinh tế-xã hội, thực hiện ngân sách nhà nước năm 2026, kế hoạch năm 2027",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ket-luan-so-106-kl-tw-hoi-nghi-trung-uong-4-ve-tinh-hinh-phat-trien-kinh-te-xa-hoi-thuc-hien-ngan-sach-nha-nuoc-nam-2026-ke-hoach-nam-2027-119261017091613904.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026,
-        2027
-      ],
-      "first_seen_at": "2026-10-17T04:24:44.600311+00:00",
-      "collected_at": "2026-10-17T04:24:44.600311+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "2759fb7322109461",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 17/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-16T21:07:03.064389+00:00",
-      "collected_at": "2026-10-16T21:07:03.064389+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "4dc881a527d5f455",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 17/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-16T21:07:03.064389+00:00",
-      "collected_at": "2026-10-16T21:07:03.064389+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 19,
-    "business_formation": 17,
-    "market_data": 6,
+    "business_formation": 15,
+    "market_data": 7,
     "hiring": 3
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 785,
-    "candidate_events": 308,
-    "reference_events": 472,
+    "historical_events": 790,
+    "candidate_events": 309,
+    "reference_events": 476,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
