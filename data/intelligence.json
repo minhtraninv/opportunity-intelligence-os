@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T11:03:40.339202+00:00",
+    "generated_at": "2026-10-18T15:51:51.316813+00:00",
     "status": "active",
     "history_days": 50,
     "required_history_days": 14,
@@ -43,6 +43,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "labor",
+      "recent_7d": 4,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 77,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "energy",
       "recent_7d": 3,
       "baseline_21d": 7,
@@ -59,17 +70,6 @@
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
       "delta_pct": -10,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 3,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 12,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "c50deeedf4491b60",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kế hoạch triển khai thi hành Luật sửa đổi, bổ sung Luật Người lao động Việt Nam đi làm việc ở nước ngoài",
+      "url": "https://baochinhphu.vn/ke-hoach-trien-khai-thi-hanh-luat-sua-doi-bo-sung-luat-nguoi-lao-dong-viet-nam-di-lam-viec-o-nuoc-ngoai-102261018181651252.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-18T15:51:51.316813+00:00"
+    },
+    {
       "id": "657129896a518304",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -218,7 +236,7 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 19,
+    "policy_regulation": 20,
     "business_formation": 15,
     "market_data": 7,
     "hiring": 3
@@ -227,9 +245,9 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 794,
-    "candidate_events": 309,
-    "reference_events": 480,
+    "historical_events": 797,
+    "candidate_events": 310,
+    "reference_events": 482,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
