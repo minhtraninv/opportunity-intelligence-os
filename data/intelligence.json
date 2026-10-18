@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T15:51:51.316813+00:00",
+    "generated_at": "2026-10-18T20:42:17.102473+00:00",
     "status": "active",
     "history_days": 50,
     "required_history_days": 14,
@@ -22,10 +22,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 17,
+      "recent_7d": 19,
       "baseline_21d": 42,
       "baseline_expected_7d": 14.0,
-      "delta_pct": 21,
+      "delta_pct": 36,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "fdd5a19dcf5da227",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 19/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-18T20:42:17.102473+00:00"
+    },
+    {
+      "id": "a673783e1c9cbdf8",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 19/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-18T20:42:17.102473+00:00"
+    },
+    {
       "id": "c50deeedf4491b60",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +208,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-18T15:51:51.316813+00:00"
+      "first_seen_at": "2026-10-18T15:51:51.316813+00:00",
+      "collected_at": "2026-10-18T15:51:51.316813+00:00",
+      "last_seen_at": null
     },
     {
       "id": "657129896a518304",
@@ -191,53 +231,11 @@
       "first_seen_at": "2026-10-18T04:32:51.884936+00:00",
       "collected_at": "2026-10-18T04:32:51.884936+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "5591129afd5ba96a",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 18/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
-      "collected_at": "2026-10-17T20:35:56.027294+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "aa2f2eddd290daa4",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 18/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-17T20:35:56.027294+00:00",
-      "collected_at": "2026-10-17T20:35:56.027294+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 20,
-    "business_formation": 15,
+    "business_formation": 17,
     "market_data": 7,
     "hiring": 3
   },
@@ -245,8 +243,8 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 797,
-    "candidate_events": 310,
+    "historical_events": 799,
+    "candidate_events": 312,
     "reference_events": 482,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
