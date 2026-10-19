@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T04:39:37.749725+00:00",
+    "generated_at": "2026-10-19T13:13:40.026061+00:00",
     "status": "active",
-    "history_days": 50,
+    "history_days": 51,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,26 +10,26 @@
   },
   "category_changes": [
     {
-      "category": "labor",
-      "recent_7d": 5,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 88,
-      "trend": "accelerating",
-      "confidence": 79,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
-    },
-    {
       "category": "construction",
-      "recent_7d": 9,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": 29,
-      "trend": "stable",
+      "recent_7d": 10,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": 58,
+      "trend": "accelerating",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "explanation": "7 ngày gần nhất có 10 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 6.3."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 6,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 125,
+      "trend": "accelerating",
+      "confidence": 81,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
     },
     {
       "category": "sme",
@@ -44,10 +44,10 @@
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 4,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 9,
+      "recent_7d": 3,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 83,
       "source_diversity_7d": 2,
@@ -55,21 +55,21 @@
     },
     {
       "category": "energy",
-      "recent_7d": 3,
+      "recent_7d": 2,
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
-      "delta_pct": 29,
+      "delta_pct": -14,
       "trend": "stable",
-      "confidence": 73,
+      "confidence": 71,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "policy",
       "recent_7d": 3,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -10,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -87,6 +87,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "logistics",
+      "recent_7d": 1,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": -50,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 0,
       "baseline_21d": 14,
@@ -96,17 +107,6 @@
       "confidence": 68,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
-    },
-    {
-      "category": "logistics",
-      "recent_7d": 2,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 67,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "consumer_services",
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "b15aec7cb190f490",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Thủ tướng: Nhà nước điều tiết để giá nhà ở xã hội không tăng vô lý; còn bất động sản cao cấp theo nhu cầu và yêu cầu",
+      "url": "https://baochinhphu.vn/thu-tuong-khong-de-tang-gia-vo-ly-voi-nha-o-cho-nguoi-thu-nhap-thap-102261019111805738.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-19T13:13:40.026061+00:00"
+    },
+    {
+      "id": "4f83389f9c7e9add",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Phạm Thị Thanh Trà làm Trưởng Ban Chỉ đạo hoàn thiện hệ thống vị trí việc làm",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-lam-truong-ban-chi-dao-hoan-thien-he-thong-vi-tri-viec-lam-102261019145855763.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-19T13:13:40.026061+00:00"
+    },
+    {
       "id": "638b62e63efd5bea",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +206,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-19T04:39:37.749725+00:00"
+      "first_seen_at": "2026-10-19T04:39:37.749725+00:00",
+      "collected_at": "2026-10-19T04:39:37.749725+00:00",
+      "last_seen_at": null
     },
     {
       "id": "fdd5a19dcf5da227",
@@ -236,22 +274,22 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 20,
+    "policy_regulation": 19,
     "business_formation": 15,
     "market_data": 7,
-    "hiring": 4
+    "hiring": 5
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 802,
-    "candidate_events": 313,
-    "reference_events": 484,
+    "historical_events": 810,
+    "candidate_events": 315,
+    "reference_events": 490,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
