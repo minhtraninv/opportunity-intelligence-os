@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T20:42:17.102473+00:00",
+    "generated_at": "2026-10-19T04:39:37.749725+00:00",
     "status": "active",
     "history_days": 50,
     "required_history_days": 14,
@@ -9,6 +9,17 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
+    {
+      "category": "labor",
+      "recent_7d": 5,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 88,
+      "trend": "accelerating",
+      "confidence": 79,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 5 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
+    },
     {
       "category": "construction",
       "recent_7d": 9,
@@ -22,10 +33,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 19,
+      "recent_7d": 17,
       "baseline_21d": 42,
       "baseline_expected_7d": 14.0,
-      "delta_pct": 36,
+      "delta_pct": 21,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -39,17 +50,6 @@
       "delta_pct": 9,
       "trend": "stable",
       "confidence": 83,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 4,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 77,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "638b62e63efd5bea",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Kiến nghị khẩn trương sửa đổi quy định về phụ cấp, biên chế cán bộ cấp xã; điều chỉnh vị trí việc làm nhân sự y tế trường học...",
+      "url": "https://xaydungchinhsach.chinhphu.vn/kien-nghi-khan-truong-sua-doi-quy-dinh-ve-phu-cap-bien-che-can-bo-cap-xa-dieu-chinh-vi-tri-viec-lam-nhan-su-y-te-truong-hoc-119261019102140643.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-19T04:39:37.749725+00:00"
+    },
+    {
       "id": "fdd5a19dcf5da227",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-18T20:42:17.102473+00:00"
+      "first_seen_at": "2026-10-18T20:42:17.102473+00:00",
+      "collected_at": "2026-10-18T20:42:17.102473+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a673783e1c9cbdf8",
@@ -190,7 +210,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-18T20:42:17.102473+00:00"
+      "first_seen_at": "2026-10-18T20:42:17.102473+00:00",
+      "collected_at": "2026-10-18T20:42:17.102473+00:00",
+      "last_seen_at": null
     },
     {
       "id": "c50deeedf4491b60",
@@ -211,45 +233,25 @@
       "first_seen_at": "2026-10-18T15:51:51.316813+00:00",
       "collected_at": "2026-10-18T15:51:51.316813+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "657129896a518304",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Một số ngân hàng bắt đầu triển khai việc giảm lãi suất cho vay",
-      "url": "https://baochinhphu.vn/mot-so-ngan-hang-trien-khai-viec-giam-lai-suat-cho-vay-102261018093230831.htm",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-18T04:32:51.884936+00:00",
-      "collected_at": "2026-10-18T04:32:51.884936+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 20,
-    "business_formation": 17,
+    "business_formation": 15,
     "market_data": 7,
-    "hiring": 3
+    "hiring": 4
   },
   "geographies_7d": {
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 799,
-    "candidate_events": 312,
-    "reference_events": 482,
+    "historical_events": 802,
+    "candidate_events": 313,
+    "reference_events": 484,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
