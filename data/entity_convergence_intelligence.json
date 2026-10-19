@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-19T13:15:17.351081+00:00",
+    "generated_at": "2026-10-19T22:22:11.915336+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-19T13:15:17.723737+00:00"
+    "trust_hardened_at": "2026-10-19T22:22:12.203068+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -412,7 +412,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -523,7 +523,6 @@
       "convergence_score": 17,
       "why_now": "Hệ sinh thái Vingroup đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
       "evidence_families": [
-        "capital",
         "operating",
         "project_execution",
         "strategy"
@@ -533,7 +532,7 @@
         "Tuổi Trẻ Kinh doanh",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 10,
+      "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
       "newest_evidence_age_days": 0,
@@ -545,6 +544,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "c737bd33a36c6087",
+          "event_signature": "e331b82bdebd0ddc",
+          "family": "operating",
+          "title": "VinFast thu hơn 2 tỷ USD trong nửa đầu năm",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vinfast-thu-hon-2-ty-usd-trong-nua-dau-nam-5134379.html",
+          "observed_at": "2026-10-19T20:21:20+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "892aa7f69c391544",
           "event_signature": "43af60d939af13b0",
@@ -642,20 +655,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "59472a2618124b3b",
-          "event_signature": "c43d9761da4f8147",
-          "family": "capital",
-          "title": "Tin tức sáng 2-10: VinFast Việt Nam tăng vốn khủng sau khi con trai ông Phạm Nhật Vượng làm chủ tịch",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/tin-tuc-sang-2-10-vinfast-viet-nam-tang-von-khung-sau-khi-con-trai-ong-pham-nhat-vuong-lam-chu-tich-100261001224425651.htm",
-          "observed_at": "2026-10-02T22:14:49.239509+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -677,7 +676,6 @@
       "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "capital",
         "operating",
         "project_execution",
         "strategy"
@@ -1018,7 +1016,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1254,7 +1252,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -1585,7 +1583,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1916,6 +1914,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-quảng-trị-3b0b65db",
+      "label": "Quảng Trị",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-quảng-ninh-3ed973db",
       "label": "Quảng Ninh",
       "entity_type": "location",
@@ -1930,12 +1934,6 @@
     {
       "entity_id": "auto-gia-lai-f5d3ac1a",
       "label": "Gia Lai",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-quảng-trị-3b0b65db",
-      "label": "Quảng Trị",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
