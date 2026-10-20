@@ -1,7 +1,68 @@
 {
   "version": 2,
-  "updated_at": "2026-10-20T17:08:57.565521+00:00",
+  "updated_at": "2026-10-20T21:36:42.441914+00:00",
   "events": [
+    {
+      "id": "19a3d5bfb987b95a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 21/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-20T21:36:42.441914+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "8c93b9fce8205def",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 21/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-20T21:36:42.441914+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
+    {
+      "id": "581fc67e5ead97b7",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Phó Thống đốc Phạm Quang Dũng tiếp Đại sứ Thụy Sỹ, Giám đốc Hợp tác và Phát triển kinh tế SECO 19/10/2026",
+      "url": "https://sbv.gov.vn/w/ph%C3%B3-th%E1%BB%91ng-%C4%91%E1%BB%91c-ph%E1%BA%A1m-quang-d%C5%A9ng-ti%E1%BA%BFp-%C4%91%E1%BA%A1i-s%E1%BB%A9-th%E1%BB%A5y-s%E1%BB%B9-gi%C3%A1m-%C4%91%E1%BB%91c-h%E1%BB%A3p-t%C3%A1c-v%C3%A0-ph%C3%A1t-tri%E1%BB%83n-kinh-t%E1%BA%BF-seco-1",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-20T21:36:42.441914+00:00",
+      "evidence_grade": "reference_only"
+    },
     {
       "id": "b1d70026a3f9fdcc",
       "source_id": "sbv",
@@ -22,6 +83,8 @@
         2030
       ],
       "first_seen_at": "2026-10-20T17:08:57.565521+00:00",
+      "collected_at": "2026-10-20T17:08:57.565521+00:00",
+      "last_seen_at": null,
       "evidence_grade": "reference_only"
     },
     {
@@ -21894,15 +21957,32 @@
       },
       "total_events": 833,
       "source_errors": 1
+    },
+    {
+      "captured_at": "2026-10-20T21:36:42.441914+00:00",
+      "new_items": 3,
+      "new_candidates": 2,
+      "new_by_category": {
+        "sme": 2
+      },
+      "new_by_event_type": {
+        "business_formation": 2
+      },
+      "new_by_source": {
+        "business-registry": 2,
+        "sbv": 1
+      },
+      "total_events": 836,
+      "source_errors": 1
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-10-20T17:10:12.810879+00:00",
+    "updated_at": "2026-10-20T21:37:54.990869+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "reference_only": 503,
-      "official_headline_discovery": 325,
+      "official_headline_discovery": 327,
+      "reference_only": 504,
       "primary_verified": 5
     }
   }
