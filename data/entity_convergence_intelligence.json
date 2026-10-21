@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-20T21:37:58.022814+00:00",
+    "generated_at": "2026-10-21T04:46:56.005408+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-20T21:37:58.358744+00:00"
+    "trust_hardened_at": "2026-10-21T04:46:56.436752+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -16,17 +16,157 @@
     "observed_auto_entities": 47,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 23,
-    "watch": 27,
+    "discovery_convergence": 22,
+    "watch": 28,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 12,
+    "discovery_candidates": 13,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 17
+    "suppressed_non_organizations": 16
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
   "discovery_candidates": [
+    {
+      "entity_id": "sun_group",
+      "label": "Sun Group",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 21,
+      "why_now": "Sun Group đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 6,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "108ee82119d1127d",
+          "event_signature": "7330bac6a6772547",
+          "family": "strategy",
+          "title": "WBG đề xuất đưa nội dung tài chính cho MSMEs vào chủ đề ưu tiên Năm APEC 2027",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/wbg-de-xuat-dua-noi-dung-tai-chinh-cho-msmes-vao-chu-de-uu-tien-nam-apec-2027-post1143326.vnp",
+          "observed_at": "2026-10-21T11:27:09+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "d11df664db3410e0",
+          "event_signature": "79b882eb0921d9df",
+          "family": "strategy",
+          "title": "Sun Group quảng bá du lịch MICE Phú Quốc tại ITB Asia 2026",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/sun-group-quang-ba-du-lich-mice-phu-quoc-tai-itb-asia-2026-5134568.html",
+          "observed_at": "2026-10-20T07:10:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "00a7fb54c39ad103",
+          "event_signature": "64b7c3e8a74314b5",
+          "family": "project_execution",
+          "title": "Sun Group, Masterise, Đại Quang Minh nói về tiến độ dự án tại TP.HCM, góp sức tăng trưởng 2 con số",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/sun-group-masterise-dai-quang-minh-noi-ve-tien-do-du-an-tai-tphcm-gop-suc-tang-truong-2-con-so-100261017194229291.htm",
+          "observed_at": "2026-10-19T04:41:17.511478+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8d77b02b09a41916",
+          "event_signature": "0addf43983a671fb",
+          "family": "operating",
+          "title": "Tập đoàn Mặt Trời lãi gần 4 tỷ đồng mỗi ngày",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/tap-doan-mat-troi-lai-gan-4-ty-dong-moi-ngay-5131366.html",
+          "observed_at": "2026-10-12T08:47:12+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b8a7c674b8d67a41",
+          "event_signature": "8e93553388a5119f",
+          "family": "project_execution",
+          "title": "Cận cảnh trục đại lộ 10 làn xe tích hợp tuyến tàu điện nhẹ tại Phú Quốc",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/can-canh-truc-dai-lo-10-lan-xe-tich-hop-tuyen-tau-dien-nhe-tai-phu-quoc-185261008153124197.htm",
+          "observed_at": "2026-10-08T08:40:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8fc77d173dfb6c47",
+          "event_signature": "7b9c2d44f4b4d756",
+          "family": "project_execution",
+          "title": "Hà Nội rà soát quy mô dự án safari Ba Vì của Sun Group",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/ha-noi-ra-soat-quy-mo-du-an-safari-ba-vi-cua-sun-group-185261005174810414.htm",
+          "observed_at": "2026-10-05T11:10:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
     {
       "entity_id": "auto-msb-19acf4ef",
       "label": "MSB",
@@ -57,6 +197,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "19850e0c9e04a40a",
+          "event_signature": "1df87153d8601d77",
+          "family": "operating",
+          "title": "MSB giảm lãi suất cho khách hàng cá nhân và doanh nghiệp",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/msb-giam-lai-suat-cho-khach-hang-ca-nhan-va-doanh-nghiep-5134976.html",
+          "observed_at": "2026-10-21T03:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "85120258d8742004",
           "event_signature": "689563dcfcec80cb",
@@ -112,20 +266,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "fcc30f5b6a2fabb8",
-          "event_signature": "a876db96ad9f613b",
-          "family": "capital",
-          "title": "MSB đề xuất mở rộng hệ sinh thái tài chính",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/msb-de-xuat-mo-rong-he-sinh-thai-tai-chinh-5126285.html",
-          "observed_at": "2026-09-29T09:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -154,52 +294,42 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-tổng-bí-012dc539",
-      "label": "Tổng Bí",
+      "entity_id": "auto-techcombank-8fecbacf",
+      "label": "Techcombank",
       "entity_type": "organization_candidate",
       "entity_origin": "auto_discovered",
       "status": "discovery_convergence",
       "convergence_score": 21,
-      "why_now": "Tổng Bí đang xuất hiện đồng thời trong 4 họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động.",
+      "why_now": "Techcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
       "evidence_families": [
-        "operating",
-        "policy",
-        "project_execution",
+        "capital",
+        "labor",
         "strategy"
       ],
       "independent_publishers": [
-        "Báo Chính phủ",
-        "Chính sách pháp luật - Chính phủ",
         "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
       ],
-      "event_count": 10,
+      "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
       "newest_evidence_age_days": 0,
       "anomaly_flags": [
-        "policy_execution_alignment",
-        "strategy_execution_alignment",
-        "persistent_multi_period_attention"
+        "media_only_needs_primary_verification"
       ],
-      "theme_context": [
-        {
-          "theme_id": "public_infrastructure",
-          "label": "public_infrastructure",
-          "score": null,
-          "status": null
-        }
-      ],
+      "theme_context": [],
       "regional_context": [],
       "evidence": [
         {
-          "id": "e4758d9361922f69",
-          "event_signature": "e0a525dd275a1c8d",
-          "family": "strategy",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm chứng kiến Lễ trao các văn kiện hợp tác Việt Nam-Đan Mạch",
+          "id": "09ab8850a0898d93",
+          "event_signature": "09a50ac3c77f8bf2",
+          "family": "capital",
+          "title": "Techcombank sắp chia cổ tức bằng cổ phiếu tỷ lệ 50%, tăng vốn điều lệ",
           "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chung-kien-le-trao-cac-van-kien-hop-tac-viet-nam-dan-mach-post1143214.vnp",
-          "observed_at": "2026-10-20T19:46:11+00:00",
+          "source_url": "https://www.vietnamplus.vn/techcombank-sap-chia-co-tuc-bang-co-phieu-ty-le-50-tang-von-dieu-le-post1143302.vnp",
+          "observed_at": "2026-10-21T10:12:37+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -207,13 +337,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "038ab5ef3a08644b",
-          "event_signature": "6121d62ec3a7b15f",
-          "family": "strategy",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Diễn đàn Doanh nghiệp Việt Nam-Đan Mạch",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-dien-dan-doanh-nghiep-viet-nam-dan-mach-post1143210.vnp",
-          "observed_at": "2026-10-20T19:13:02+00:00",
+          "id": "6f910d9acd0ebc69",
+          "event_signature": "71b2d9faf551156a",
+          "family": "labor",
+          "title": "Techcombank được chấp thuận tăng vốn điều lệ lên hơn 106.000 tỷ đồng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/techcombank-duoc-chap-thuan-tang-von-dieu-le-len-hon-106-000-ty-dong-5132236.html",
+          "observed_at": "2026-10-14T07:00:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -221,57 +351,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "8be3503457e394ee",
-          "event_signature": "35447fb0e3bde7a9",
-          "family": "strategy",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp lãnh đạo một số doanh nghiệp tiêu biểu của Đan Mạch",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-lanh-dao-mot-so-doanh-nghiep-tieu-bieu-cua-dan-mach-post1143147.vnp",
-          "observed_at": "2026-10-20T15:30:04+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "330d38ca2b914515",
-          "family": "operating",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Xây dựng lực lượng vũ trang Thủ đô 'tinh, gọn, mạnh' đáp ứng yêu cầu trong tình hình mới",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-xay-dung-luc-luong-vu-trang-thu-do-tinh-gon-manh-dap-ung-yeu-cau-trong-tinh-hinh-moi-10226101013265125.htm",
-          "observed_at": "2026-10-10T12:30:57.349507+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "ca78de49b49928bd",
-          "family": "project_execution",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-khoi-cong-du-an-dau-tu-bao-quan-tu-bo-phuc-hoi-dien-kinh-thien-102260929140334018.htm",
-          "observed_at": "2026-09-29T12:51:54.496115+00:00",
-          "categories": [
-            "infrastructure"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "33d4dbc47e3b4e6e",
-          "event_signature": "c7cb2a430cb58af2",
-          "family": "project_execution",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự khởi công dự án đầu tư tu bổ Điện Kính Thiên",
+          "id": "da5c73912d93961d",
+          "event_signature": "9af9cabdff7f62f9",
+          "family": "labor",
+          "title": "Techcombank được phê duyệt tăng vốn điều lệ lên trên 106 nghìn tỉ đồng",
           "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-khoi-cong-du-an-dau-tu-tu-bo-dien-kinh-thien-185260929145041971.htm",
-          "observed_at": "2026-09-29T07:56:00+00:00",
+          "source_url": "https://thanhnien.vn/techcombank-duoc-phe-duyet-tang-von-dieu-le-len-tren-106-nghin-ti-dong-185261013170130853.htm",
+          "observed_at": "2026-10-13T09:55:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -279,34 +365,18 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "63b7006ece23ec86",
-          "family": "policy",
-          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Hoàn thiện quy định về đảng viên làm kinh tế tư nhân, phát huy nguồn lực cho phát triển",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoan-thien-quy-dinh-ve-dang-vien-lam-kinh-te-tu-nhan-phat-huy-nguon-luc-cho-phat-trien-102260914190726927.htm",
-          "observed_at": "2026-09-14T12:45:56.371650+00:00",
-          "categories": [
-            "policy"
-          ],
+          "id": "104f125b89d98ebe",
+          "event_signature": "4cb1a18a17915126",
+          "family": "strategy",
+          "title": "Techcombank - Masterise Group - One Mount kể hành trình 33 năm qua nghệ thuật",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/techcombank-masterise-group-one-mount-ke-hanh-trinh-33-nam-qua-nghe-thuat-100260930164755812.htm",
+          "observed_at": "2026-10-01T13:14:32.693924+00:00",
+          "categories": [],
           "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "44559a5757856cf7",
-          "family": "policy",
-          "title": "Thông báo số 166-TB/VPTW: Kết luận của Tổng Bí thư, Chủ tịch nước Tô Lâm về xây dựng Nghị quyết mới về cán bộ, công tác cán bộ",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/thong-bao-so-166-tb-vptw-ket-luan-cua-tong-bi-thu-chu-tich-nuoc-to-lam-ve-xay-dung-nghi-quyet-moi-ve-can-bo-cong-tac-can-bo-119260908104037889.htm",
-          "observed_at": "2026-09-08T04:35:06.506869+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -325,12 +395,11 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 4,
+      "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "operating",
-        "policy",
-        "project_execution",
+        "capital",
+        "labor",
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
@@ -372,7 +441,7 @@
           "title": "Tập đoàn Pháp nhận đơn hàng 897 triệu USD cung cấp tàu cho hệ thống metro Hà Nội",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/tap-doan-phap-nhan-don-hang-897-trieu-usd-cung-cap-tau-cho-he-thong-metro-ha-noi-100261020145943622.htm",
-          "observed_at": "2026-10-20T21:37:43.176839+00:00",
+          "observed_at": "2026-10-21T04:46:36.563562+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -386,7 +455,7 @@
           "title": "VinFast tăng tốc ở nước ngoài, doanh thu quý 2 vượt 1,2 tỉ USD",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vinfast-tang-toc-o-nuoc-ngoai-doanh-thu-quy-2-vuot-12-ti-usd-100261020164452162.htm",
-          "observed_at": "2026-10-20T21:37:43.176839+00:00",
+          "observed_at": "2026-10-21T04:46:36.563562+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -884,6 +953,145 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-shb-9a3f1ca9",
+      "label": "SHB",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "SHB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 6,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "ec78a292721b1144",
+          "event_signature": "4268748b72eb835d",
+          "family": "strategy",
+          "title": "SHB bắt tay Đại học Huế đào tạo nhân lực, ứng dụng AI",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/shb-bat-tay-dai-hoc-hue-dao-tao-nhan-luc-ung-dung-ai-100261021084005169.htm",
+          "observed_at": "2026-10-21T04:46:36.563562+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ca219d1a177aa051",
+          "event_signature": "7af90e2e0ed054aa",
+          "family": "strategy",
+          "title": "SHB đã nhận toàn bộ giá trị chuyển nhượng SHBFinance từ Krungsri",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-da-nhan-toan-bo-gia-tri-chuyen-nhuong-shbfinance-tu-krungsri-post1142370.vnp",
+          "observed_at": "2026-10-16T14:54:35+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "51bb4824bfe6d060",
+          "event_signature": "c315c76f0927aea4",
+          "family": "project_execution",
+          "title": "SHB vay hợp vốn 340 triệu USD từ các tổ chức tài chính quốc tế",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-vay-hop-von-340-trieu-usd-tu-cac-to-chuc-tai-chinh-quoc-te-post1142189.vnp",
+          "observed_at": "2026-10-16T08:34:50+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "fff035266e48cd20",
+          "event_signature": "5f0b9eaecb98159b",
+          "family": "project_execution",
+          "title": "SHB của bầu Hiển lên tiếng trước tin đồn",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/thi-gia-miet-mai-giam-ve-moc-10000-dong-shb-cua-bau-hien-len-tieng-truoc-tin-don-100261009205916649.htm",
+          "observed_at": "2026-10-11T21:59:02.268556+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "cab34867fbe944db",
+          "event_signature": "230ec3ed0d3a963d",
+          "family": "strategy",
+          "title": "SHB đưa AI vào vận hành: Ứng dụng thông minh, không chạy đua “làm ra AI”",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-dua-ai-vao-van-hanh-ung-dung-thong-minh-khong-chay-dua-lam-ra-ai-post1140522.vnp",
+          "observed_at": "2026-10-07T14:36:29+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9ba119525850c69b",
+          "event_signature": "9440c6308bc7ba96",
+          "family": "operating",
+          "title": "SHB hoàn đến 200.000 đồng khi khách hàng thanh toán hóa đơn tự động",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/shb-hoan-den-200-000-dong-khi-khach-hang-thanh-toan-hoa-don-tu-dong-5129101.html",
+          "observed_at": "2026-10-06T08:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "masan_group",
       "label": "Masan",
       "entity_type": "business_group",
@@ -1012,167 +1220,51 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "sun_group",
-      "label": "Sun Group",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Sun Group đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 5,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "d11df664db3410e0",
-          "event_signature": "79b882eb0921d9df",
-          "family": "strategy",
-          "title": "Sun Group quảng bá du lịch MICE Phú Quốc tại ITB Asia 2026",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/sun-group-quang-ba-du-lich-mice-phu-quoc-tai-itb-asia-2026-5134568.html",
-          "observed_at": "2026-10-20T07:10:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "00a7fb54c39ad103",
-          "event_signature": "64b7c3e8a74314b5",
-          "family": "project_execution",
-          "title": "Sun Group, Masterise, Đại Quang Minh nói về tiến độ dự án tại TP.HCM, góp sức tăng trưởng 2 con số",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/sun-group-masterise-dai-quang-minh-noi-ve-tien-do-du-an-tai-tphcm-gop-suc-tang-truong-2-con-so-100261017194229291.htm",
-          "observed_at": "2026-10-19T04:41:17.511478+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8d77b02b09a41916",
-          "event_signature": "0addf43983a671fb",
-          "family": "operating",
-          "title": "Tập đoàn Mặt Trời lãi gần 4 tỷ đồng mỗi ngày",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/tap-doan-mat-troi-lai-gan-4-ty-dong-moi-ngay-5131366.html",
-          "observed_at": "2026-10-12T08:47:12+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "b8a7c674b8d67a41",
-          "event_signature": "8e93553388a5119f",
-          "family": "project_execution",
-          "title": "Cận cảnh trục đại lộ 10 làn xe tích hợp tuyến tàu điện nhẹ tại Phú Quốc",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/can-canh-truc-dai-lo-10-lan-xe-tich-hop-tuyen-tau-dien-nhe-tai-phu-quoc-185261008153124197.htm",
-          "observed_at": "2026-10-08T08:40:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8fc77d173dfb6c47",
-          "event_signature": "7b9c2d44f4b4d756",
-          "family": "project_execution",
-          "title": "Hà Nội rà soát quy mô dự án safari Ba Vì của Sun Group",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/ha-noi-ra-soat-quy-mo-du-an-safari-ba-vi-cua-sun-group-185261005174810414.htm",
-          "observed_at": "2026-10-05T11:10:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-shb-9a3f1ca9",
-      "label": "SHB",
+      "entity_id": "auto-tổng-bí-012dc539",
+      "label": "Tổng Bí",
       "entity_type": "organization_candidate",
       "entity_origin": "auto_discovered",
       "status": "discovery_convergence",
       "convergence_score": 17,
-      "why_now": "SHB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "why_now": "Tổng Bí đang xuất hiện đồng thời trong 4 họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động.",
       "evidence_families": [
         "operating",
+        "policy",
         "project_execution",
         "strategy"
       ],
       "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
+        "Báo Chính phủ",
+        "Chính sách pháp luật - Chính phủ",
+        "VietnamPlus Kinh tế"
       ],
-      "event_count": 5,
+      "event_count": 9,
       "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 4,
+      "media_evidence_count": 3,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
+        "policy_execution_alignment",
         "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
+        "persistent_multi_period_attention"
       ],
-      "theme_context": [],
+      "theme_context": [
+        {
+          "theme_id": "public_infrastructure",
+          "label": "public_infrastructure",
+          "score": null,
+          "status": null
+        }
+      ],
       "regional_context": [],
       "evidence": [
         {
-          "id": "ca219d1a177aa051",
-          "event_signature": "7af90e2e0ed054aa",
+          "id": "e4758d9361922f69",
+          "event_signature": "e0a525dd275a1c8d",
           "family": "strategy",
-          "title": "SHB đã nhận toàn bộ giá trị chuyển nhượng SHBFinance từ Krungsri",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm chứng kiến Lễ trao các văn kiện hợp tác Việt Nam-Đan Mạch",
           "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-da-nhan-toan-bo-gia-tri-chuyen-nhuong-shbfinance-tu-krungsri-post1142370.vnp",
-          "observed_at": "2026-10-16T14:54:35+00:00",
+          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-chung-kien-le-trao-cac-van-kien-hop-tac-viet-nam-dan-mach-post1143214.vnp",
+          "observed_at": "2026-10-20T19:46:11+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1180,41 +1272,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "51bb4824bfe6d060",
-          "event_signature": "c315c76f0927aea4",
-          "family": "project_execution",
-          "title": "SHB vay hợp vốn 340 triệu USD từ các tổ chức tài chính quốc tế",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-vay-hop-von-340-trieu-usd-tu-cac-to-chuc-tai-chinh-quoc-te-post1142189.vnp",
-          "observed_at": "2026-10-16T08:34:50+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "fff035266e48cd20",
-          "event_signature": "5f0b9eaecb98159b",
-          "family": "project_execution",
-          "title": "SHB của bầu Hiển lên tiếng trước tin đồn",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/thi-gia-miet-mai-giam-ve-moc-10000-dong-shb-cua-bau-hien-len-tieng-truoc-tin-don-100261009205916649.htm",
-          "observed_at": "2026-10-11T21:59:02.268556+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "cab34867fbe944db",
-          "event_signature": "230ec3ed0d3a963d",
+          "id": "038ab5ef3a08644b",
+          "event_signature": "6121d62ec3a7b15f",
           "family": "strategy",
-          "title": "SHB đưa AI vào vận hành: Ứng dụng thông minh, không chạy đua “làm ra AI”",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Diễn đàn Doanh nghiệp Việt Nam-Đan Mạch",
           "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-dua-ai-vao-van-hanh-ung-dung-thong-minh-khong-chay-dua-lam-ra-ai-post1140522.vnp",
-          "observed_at": "2026-10-07T14:36:29+00:00",
+          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-dien-dan-doanh-nghiep-viet-nam-dan-mach-post1143210.vnp",
+          "observed_at": "2026-10-20T19:13:02+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1222,18 +1286,93 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "9ba119525850c69b",
-          "event_signature": "9440c6308bc7ba96",
+          "id": "8be3503457e394ee",
+          "event_signature": "35447fb0e3bde7a9",
+          "family": "strategy",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp lãnh đạo một số doanh nghiệp tiêu biểu của Đan Mạch",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/tong-bi-thu-chu-tich-nuoc-to-lam-gap-lanh-dao-mot-so-doanh-nghiep-tieu-bieu-cua-dan-mach-post1143147.vnp",
+          "observed_at": "2026-10-20T15:30:04+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "330d38ca2b914515",
           "family": "operating",
-          "title": "SHB hoàn đến 200.000 đồng khi khách hàng thanh toán hóa đơn tự động",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/shb-hoan-den-200-000-dong-khi-khach-hang-thanh-toan-hoa-don-tu-dong-5129101.html",
-          "observed_at": "2026-10-06T08:30:00+00:00",
-          "categories": [],
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Xây dựng lực lượng vũ trang Thủ đô 'tinh, gọn, mạnh' đáp ứng yêu cầu trong tình hình mới",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-xay-dung-luc-luong-vu-trang-thu-do-tinh-gon-manh-dap-ung-yeu-cau-trong-tinh-hinh-moi-10226101013265125.htm",
+          "observed_at": "2026-10-10T12:30:57.349507+00:00",
+          "categories": [
+            "construction"
+          ],
           "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "ca78de49b49928bd",
+          "family": "project_execution",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm dự Lễ khởi công Dự án đầu tư bảo quản, tu bổ, phục hồi Điện Kính Thiên",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-du-le-khoi-cong-du-an-dau-tu-bao-quan-tu-bo-phuc-hoi-dien-kinh-thien-102260929140334018.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "63b7006ece23ec86",
+          "family": "policy",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Hoàn thiện quy định về đảng viên làm kinh tế tư nhân, phát huy nguồn lực cho phát triển",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-hoan-thien-quy-dinh-ve-dang-vien-lam-kinh-te-tu-nhan-phat-huy-nguon-luc-cho-phat-trien-102260914190726927.htm",
+          "observed_at": "2026-09-14T12:45:56.371650+00:00",
+          "categories": [
+            "policy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "44559a5757856cf7",
+          "family": "policy",
+          "title": "Thông báo số 166-TB/VPTW: Kết luận của Tổng Bí thư, Chủ tịch nước Tô Lâm về xây dựng Nghị quyết mới về cán bộ, công tác cán bộ",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/thong-bao-so-166-tb-vptw-ket-luan-cua-tong-bi-thu-chu-tich-nuoc-to-lam-ve-xay-dung-nghi-quyet-moi-ve-can-bo-cong-tac-can-bo-119260908104037889.htm",
+          "observed_at": "2026-09-08T04:35:06.506869+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "f3955b7557cacf37",
+          "family": "policy",
+          "title": "Thông báo kết luận của Tổng Bí thư, Chủ tịch nước Tô Lâm về xây dựng Nghị quyết mới về cán bộ, công tác cán bộ",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/thong-bao-ket-luan-cua-tong-bi-thu-chu-tich-nuoc-to-lam-ve-xay-dung-nghi-quyet-moi-ve-can-bo-cong-tac-can-bo-102260907172932958.htm",
+          "observed_at": "2026-09-07T12:31:41.529078+00:00",
+          "categories": [
+            "construction"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
         }
       ],
       "investigation_questions": [
@@ -1252,10 +1391,11 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 0,
+      "official_headline_discovery_count": 5,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "operating",
+        "policy",
         "project_execution",
         "strategy"
       ],
@@ -1485,130 +1625,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-hdbank-851e1d3d",
-      "label": "HDBank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 13,
-      "why_now": "HDBank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 5,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "784522b0efbdee7a",
-          "event_signature": "7fe57ba550be9f6f",
-          "family": "project_execution",
-          "title": "HDBank dành 10.000 tỷ đồng giảm lãi suất 1,5% hỗ trợ doanh nghiệp",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/hdbank-danh-10000-ty-dong-giam-lai-suat-15-ho-tro-doanh-nghiep-post1143117.vnp",
-          "observed_at": "2026-10-20T15:15:27+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "73b2eca442ed272f",
-          "event_signature": "bf8344984751a40e",
-          "family": "project_execution",
-          "title": "HDBank triển khai gói tín dụng 10.000 tỉ đồng, giảm lãi suất 1,5%/năm hỗ trợ doanh nghiệp",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/hdbank-trien-khai-goi-tin-dung-10000-ti-dong-giam-lai-suat-15-nam-ho-tro-doanh-nghiep-185261020143719596.htm",
-          "observed_at": "2026-10-20T07:30:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e021eaf98640b353",
-          "event_signature": "44a43c349959bf8b",
-          "family": "project_execution",
-          "title": "HDBank dành 2.000 tỷ đồng cho doanh nghiệp do phụ nữ làm chủ",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/hdbank-danh-2000-ty-dong-cho-doanh-nghiep-do-phu-nu-lam-chu-post1141970.vnp",
-          "observed_at": "2026-10-14T18:16:42+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "b210d5b0c110bdf7",
-          "event_signature": "50fed6cbe70b47e2",
-          "family": "operating",
-          "title": "HDBank và ĐHQG TP.HCM hợp tác toàn diện, kết nối giáo dục, tài chính và công nghệ",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/hdbank-va-dhqg-tphcm-hop-tac-toan-dien-ket-noi-giao-duc-tai-chinh-va-cong-nghe-185261008145806478.htm",
-          "observed_at": "2026-10-08T07:48:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f38e66bcb609e4a7",
-          "event_signature": "f2f007c222c33f24",
-          "family": "capital",
-          "title": "HDBank mở rộng hợp tác quốc tế với Citi và Standard Chartered",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/hdbank-mo-rong-hop-tac-quoc-te-voi-citi-va-standard-chartered-post1138933.vnp",
-          "observed_at": "2026-09-29T11:23:13+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-imf-beae787a",
       "label": "IMF",
       "entity_type": "organization_candidate",
@@ -1702,6 +1718,114 @@
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-vietinbank-52208e14",
+      "label": "VietinBank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "VietinBank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 1,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "ceaad14d8d2bbbac",
+          "event_signature": "2f327edaff4ea635",
+          "family": "project_execution",
+          "title": "VietinBank giảm lãi suất cho vay tới 2%/năm, tiếp sức tăng trưởng kinh tế",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietinbank-giam-lai-suat-cho-vay-toi-2nam-tiep-suc-tang-truong-kinh-te-post1142904.vnp",
+          "observed_at": "2026-10-19T16:22:14+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "83420def64f038f2",
+          "event_signature": "6103985989f66df9",
+          "family": "project_execution",
+          "title": "VietinBank triển khai giải pháp giảm lãi suất vay tới 2%/năm, tiếp sức tăng trưởng kinh tế",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vietinbank-trien-khai-giai-phap-giam-lai-suat-vay-toi-2-nam-tiep-suc-tang-truong-kinh-te-185261019164211599.htm",
+          "observed_at": "2026-10-19T09:37:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "092d6444d227a461",
+          "event_signature": "7a3d7976ecf8bf01",
+          "family": "project_execution",
+          "title": "VietinBank khẳng định năng lực chuyển đổi số sau 3 năm triển khai X01",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietinbank-khang-dinh-nang-luc-chuyen-doi-so-sau-3-nam-trien-khai-x01-post1142087.vnp",
+          "observed_at": "2026-10-15T10:55:17+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "3fbf57ba9c6f2703",
+          "event_signature": "2d5e2e024244778b",
+          "family": "capital",
+          "title": "VietinBank huy động 12.000 tỷ đồng từ trái phiếu đợt 1 để cho vay nền kinh tế",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietinbank-huy-dong-12000-ty-dong-tu-trai-phieu-dot-1-de-cho-vay-nen-kinh-te-post1141710.vnp",
+          "observed_at": "2026-10-13T15:12:44+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }
   ],
   "verified_watchlist": [],
@@ -1743,12 +1867,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-cà-mau-5be786d4",
-      "label": "Cà Mau",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-cao-bằng-a71fb73c",
       "label": "Cao Bằng",
       "entity_type": "location",
@@ -1767,6 +1885,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-quảng-trị-3b0b65db",
+      "label": "Quảng Trị",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-tây-ninh-02d05047",
       "label": "Tây Ninh",
       "entity_type": "location",
@@ -1775,12 +1899,6 @@
     {
       "entity_id": "auto-lâm-đồng-2efb3e17",
       "label": "Lâm Đồng",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-quảng-trị-3b0b65db",
-      "label": "Quảng Trị",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -1797,14 +1915,14 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-quảng-ngãi-2c2a20e3",
-      "label": "Quảng Ngãi",
+      "entity_id": "auto-cà-mau-5be786d4",
+      "label": "Cà Mau",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-sơn-la-26d08f83",
-      "label": "Sơn La",
+      "entity_id": "auto-quảng-ngãi-2c2a20e3",
+      "label": "Quảng Ngãi",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
