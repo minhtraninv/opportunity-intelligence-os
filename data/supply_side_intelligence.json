@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": "2.1.0",
-    "generated_at": "2026-10-21T21:46:34.173876+00:00",
+    "generated_at": "2026-10-22T04:47:39.208644+00:00",
     "mode": "observed_public_procurement_supply_depth",
     "principle": "thin_history_is_unknown_not_scarcity"
   },
   "coverage": {
     "categories": 9,
     "award_observations": 3000,
-    "open_tenders": 48,
+    "open_tenders": 37,
     "categories_with_moderate_or_better_confidence": 8,
     "capacity_pressure_candidates": 0
   },
@@ -17,10 +17,10 @@
       "category": "digital_services",
       "theme_id": "data_infrastructure",
       "current_demand": {
-        "open_tenders": 22,
-        "unique_buyers": 19,
-        "package_value_sum_vnd": 392811649766.0,
-        "median_package_value_vnd": 10390425000.0
+        "open_tenders": 14,
+        "unique_buyers": 11,
+        "package_value_sum_vnd": 260400700497.0,
+        "median_package_value_vnd": 14586374920.0
       },
       "observed_supply_history": {
         "award_observations": 448,
@@ -39,10 +39,10 @@
       "category": "maintenance",
       "theme_id": null,
       "current_demand": {
-        "open_tenders": 10,
-        "unique_buyers": 10,
-        "package_value_sum_vnd": 84269540245.0,
-        "median_package_value_vnd": 5475266650.0
+        "open_tenders": 8,
+        "unique_buyers": 8,
+        "package_value_sum_vnd": 73319006946.0,
+        "median_package_value_vnd": 8822657200.0
       },
       "observed_supply_history": {
         "award_observations": 411,
@@ -124,28 +124,6 @@
       "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
     },
     {
-      "category": "printing_media",
-      "theme_id": null,
-      "current_demand": {
-        "open_tenders": 1,
-        "unique_buyers": 1,
-        "package_value_sum_vnd": 3949097328.0,
-        "median_package_value_vnd": 3949097328.0
-      },
-      "observed_supply_history": {
-        "award_observations": 69,
-        "unique_vendors": 59,
-        "unique_buyers": 62,
-        "top_vendor_win_share": 0.058,
-        "winner_hhi": 0.02,
-        "current_buyers_seen_in_history": 0
-      },
-      "sample_confidence": "moderate",
-      "confidence_score": 70,
-      "pressure_status": "observed_supply_depth_present",
-      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
-    },
-    {
       "category": "food_services",
       "theme_id": null,
       "current_demand": {
@@ -182,6 +160,28 @@
         "unique_buyers": 41,
         "top_vendor_win_share": 0.067,
         "winner_hhi": 0.0291,
+        "current_buyers_seen_in_history": 0
+      },
+      "sample_confidence": "moderate",
+      "confidence_score": 70,
+      "pressure_status": "no_current_demand_observed",
+      "interpretation": "Chỉ là độ sâu vendor quan sát được trong mẫu KQLCNT hiện đã backfill; không đại diện toàn bộ nguồn cung thị trường."
+    },
+    {
+      "category": "printing_media",
+      "theme_id": null,
+      "current_demand": {
+        "open_tenders": 0,
+        "unique_buyers": 0,
+        "package_value_sum_vnd": null,
+        "median_package_value_vnd": null
+      },
+      "observed_supply_history": {
+        "award_observations": 69,
+        "unique_vendors": 59,
+        "unique_buyers": 62,
+        "top_vendor_win_share": 0.058,
+        "winner_hhi": 0.02,
         "current_buyers_seen_in_history": 0
       },
       "sample_confidence": "moderate",
