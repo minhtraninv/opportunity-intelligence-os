@@ -1,23 +1,23 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-22T11:52:58.848701+00:00",
+    "generated_at": "2026-10-22T17:11:26.693281+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-22T11:52:59.123932+00:00"
+    "trust_hardened_at": "2026-10-22T17:11:26.979228+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 55,
-    "observed_auto_entities": 44,
+    "observed_entities": 57,
+    "observed_auto_entities": 46,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 22,
-    "watch": 25,
+    "watch": 27,
     "window_days": 120,
     "public_verified_entities": 0,
     "discovery_candidates": 15,
@@ -79,6 +79,20 @@
       "regional_context": [],
       "evidence": [
         {
+          "id": "421f6667b680bc61",
+          "event_signature": "f7c68e2a168f36ee",
+          "family": "project_execution",
+          "title": "Thủ tướng yêu cầu triển khai ngay giải pháp bảo đảm cung ứng điện giai đoạn 2027-2030",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/thu-tuong-yeu-cau-trien-khai-ngay-giai-phap-bao-dam-cung-ung-dien-giai-doan-2027-2030-post1143718.vnp",
+          "observed_at": "2026-10-22T23:03:48+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
           "id": "3c6a022a3df08196",
           "event_signature": "b80b33b8a1b23721",
           "family": "operating",
@@ -117,20 +131,6 @@
           "publisher": "Thanh Niên Kinh tế",
           "source_url": "https://thanhnien.vn/nhiet-dien-quang-trach-2-ung-dung-cong-nghe-my-moi-nam-cung-ung-10-ti-kwh-185261020170339178.htm",
           "observed_at": "2026-10-20T11:06:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "30424c6a46c296e9",
-          "event_signature": "7f96059daf321c2b",
-          "family": "project_execution",
-          "title": "Khởi công Nhà máy nhiệt điện LNG Quảng Trạch 2, tổng đầu tư 40.123 tỉ đồng",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/khoi-cong-nha-may-nhiet-dien-lng-quang-trach-2-tong-dau-tu-40123-ti-dong-185261020145404893.htm",
-          "observed_at": "2026-10-20T09:28:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -243,7 +243,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -251,6 +251,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "3344d766a650d577",
+          "event_signature": "d20779e8f2d956f4",
+          "family": "project_execution",
+          "title": "Sun Group giới thiệu hệ sinh thái hàng không tại Routes World 2026",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/sun-group-gioi-thieu-he-sinh-thai-hang-khong-tai-routes-world-2026-5135768.html",
+          "observed_at": "2026-10-22T13:45:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "108ee82119d1127d",
           "event_signature": "7330bac6a6772547",
@@ -320,15 +334,127 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-techcombank-8fecbacf",
+      "label": "Techcombank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 21,
+      "why_now": "Techcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "labor",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "c9445c4f3cc03742",
+          "event_signature": "6d419d33099c12bc",
+          "family": "project_execution",
+          "title": "Techcombank nhập cuộc giảm lãi suất cho vay đến 2% theo chủ trương của Chính phủ",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/techcombank-nhap-cuoc-giam-lai-suat-cho-vay-den-2-theo-chu-truong-cua-chinh-phu-100261022164158917.htm",
+          "observed_at": "2026-10-22T17:11:01.887463+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         },
         {
-          "id": "8fc77d173dfb6c47",
-          "event_signature": "7b9c2d44f4b4d756",
+          "id": "8b52cd643b3ba93d",
+          "event_signature": "772bfa8a3b885280",
           "family": "project_execution",
-          "title": "Hà Nội rà soát quy mô dự án safari Ba Vì của Sun Group",
+          "title": "Techcombank giảm lãi suất theo đúng chủ trương của Chính phủ và NHNN",
           "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/ha-noi-ra-soat-quy-mo-du-an-safari-ba-vi-cua-sun-group-185261005174810414.htm",
-          "observed_at": "2026-10-05T11:10:00+00:00",
+          "source_url": "https://thanhnien.vn/techcombank-giam-lai-suat-theo-dung-chu-truong-cua-chinh-phu-va-nhnn-185261022145049714.htm",
+          "observed_at": "2026-10-22T07:37:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "09ab8850a0898d93",
+          "event_signature": "09a50ac3c77f8bf2",
+          "family": "capital",
+          "title": "Techcombank sắp chia cổ tức bằng cổ phiếu tỷ lệ 50%, tăng vốn điều lệ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/techcombank-sap-chia-co-tuc-bang-co-phieu-ty-le-50-tang-von-dieu-le-post1143302.vnp",
+          "observed_at": "2026-10-21T10:12:37+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6f910d9acd0ebc69",
+          "event_signature": "71b2d9faf551156a",
+          "family": "labor",
+          "title": "Techcombank được chấp thuận tăng vốn điều lệ lên hơn 106.000 tỷ đồng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/techcombank-duoc-chap-thuan-tang-von-dieu-le-len-hon-106-000-ty-dong-5132236.html",
+          "observed_at": "2026-10-14T07:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "da5c73912d93961d",
+          "event_signature": "9af9cabdff7f62f9",
+          "family": "labor",
+          "title": "Techcombank được phê duyệt tăng vốn điều lệ lên trên 106 nghìn tỉ đồng",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/techcombank-duoc-phe-duyet-tang-von-dieu-le-len-tren-106-nghin-ti-dong-185261013170130853.htm",
+          "observed_at": "2026-10-13T09:55:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -355,9 +481,9 @@
       "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "operating",
-        "project_execution",
-        "strategy"
+        "capital",
+        "labor",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -906,7 +1032,7 @@
           "title": "Đọc nhanh 22-10: Nasdaq tăng hơn 1% nhờ SpaceX, BIDV muốn phát hành 8.000 tỉ đồng trái phiếu",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/doc-nhanh-22-10-nasdaq-tang-hon-1-nho-spacex-bidv-muon-phat-hanh-8000-ti-dong-trai-phieu-100261022071022554.htm",
-          "observed_at": "2026-10-22T11:52:38.068305+00:00",
+          "observed_at": "2026-10-22T17:11:01.887463+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1046,7 +1172,7 @@
           "title": "FPT báo lãi trước thuế hơn 8.700 tỉ đồng",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/fpt-bao-lai-truoc-thue-hon-8700-ti-dong-100261021173054867.htm",
-          "observed_at": "2026-10-22T11:52:38.068305+00:00",
+          "observed_at": "2026-10-22T17:11:01.887463+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1256,117 +1382,6 @@
       "discovery_evidence_families": [
         "capital",
         "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-techcombank-8fecbacf",
-      "label": "Techcombank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Techcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "labor",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "8b52cd643b3ba93d",
-          "event_signature": "772bfa8a3b885280",
-          "family": "project_execution",
-          "title": "Techcombank giảm lãi suất theo đúng chủ trương của Chính phủ và NHNN",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/techcombank-giam-lai-suat-theo-dung-chu-truong-cua-chinh-phu-va-nhnn-185261022145049714.htm",
-          "observed_at": "2026-10-22T07:37:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "09ab8850a0898d93",
-          "event_signature": "09a50ac3c77f8bf2",
-          "family": "capital",
-          "title": "Techcombank sắp chia cổ tức bằng cổ phiếu tỷ lệ 50%, tăng vốn điều lệ",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/techcombank-sap-chia-co-tuc-bang-co-phieu-ty-le-50-tang-von-dieu-le-post1143302.vnp",
-          "observed_at": "2026-10-21T10:12:37+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "6f910d9acd0ebc69",
-          "event_signature": "71b2d9faf551156a",
-          "family": "labor",
-          "title": "Techcombank được chấp thuận tăng vốn điều lệ lên hơn 106.000 tỷ đồng",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/techcombank-duoc-chap-thuan-tang-von-dieu-le-len-hon-106-000-ty-dong-5132236.html",
-          "observed_at": "2026-10-14T07:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "da5c73912d93961d",
-          "event_signature": "9af9cabdff7f62f9",
-          "family": "labor",
-          "title": "Techcombank được phê duyệt tăng vốn điều lệ lên trên 106 nghìn tỉ đồng",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/techcombank-duoc-phe-duyet-tang-von-dieu-le-len-tren-106-nghin-ti-dong-185261013170130853.htm",
-          "observed_at": "2026-10-13T09:55:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "labor",
         "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
@@ -1648,114 +1663,6 @@
         "capital",
         "project_execution",
         "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-vib-9f41a724",
-      "label": "VIB",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "VIB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "cf458ca94a41a426",
-          "event_signature": "0846a177545f9b80",
-          "family": "project_execution",
-          "title": "VIB giảm lãi suất, hỗ trợ nhu cầu vay vốn của khách hàng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vib-giam-lai-suat-ho-tro-nhu-cau-vay-von-cua-khach-hang-100261021132228656.htm",
-          "observed_at": "2026-10-22T11:52:38.068305+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "eedbec38b8456606",
-          "event_signature": "8a04a3eaf7228832",
-          "family": "operating",
-          "title": "VIB huy động 285 triệu USD, hướng tới 1 tỷ USD vốn quốc tế",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vib-huy-dong-285-trieu-usd-huong-toi-1-ty-usd-von-quoc-te-post1140325.vnp",
-          "observed_at": "2026-10-06T14:49:28+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "fbaee30bc5dfc741",
-          "event_signature": "219745e59321b01f",
-          "family": "project_execution",
-          "title": "VIB huy động 285 triệu USD, hướng tới 1 tỉ USD vốn quốc tế",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vib-huy-dong-285-trieu-usd-huong-toi-1-ti-usd-von-quoc-te-185261006115948023.htm",
-          "observed_at": "2026-10-06T07:38:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "53bda7735a7a7bea",
-          "event_signature": "d349991cb962d175",
-          "family": "operating",
-          "title": "VIB được vinh danh Ngân hàng bán lẻ tiêu biểu, dẫn đầu xu thế cá nhân hóa",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vib-duoc-vinh-danh-ngan-hang-ban-le-tieu-bieu-dan-dau-xu-the-ca-nhan-hoa-post1140155.vnp",
-          "observed_at": "2026-10-05T16:53:33+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -2078,6 +1985,93 @@
       "discovery_evidence_families": [
         "policy",
         "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-apec-c4ad10a0",
+      "label": "APEC",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "APEC đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ. Bối cảnh ngành/địa bàn liên quan cũng đang có chuyển động, nhưng bằng chứng trực tiếp về entity vẫn còn mỏng.",
+      "evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Báo Chính phủ",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 2,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 1,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "public_infrastructure",
+          "label": "public_infrastructure",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "521ca6c6aad9eae3",
+          "family": "project_execution",
+          "title": "Tập trung cao độ hoàn thành các công trình phục vụ Hội nghị cấp cao APEC 2027 đúng cam kết",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tap-trung-cao-do-hoan-thanh-cac-cong-trinh-phuc-vu-hoi-nghi-cap-cao-apec-2027-dung-cam-ket-102261022212630305.htm",
+          "observed_at": "2026-10-22T17:09:52.430211+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "7e1de783153f305a",
+          "event_signature": "12ff27725acb09ad",
+          "family": "strategy",
+          "title": "APEC cam kết tăng cường hợp tác trước những rủi ro kinh tế toàn cầu",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/apec-cam-ket-tang-cuong-hop-tac-truoc-nhung-rui-ro-kinh-te-toan-cau-post1143473.vnp",
+          "observed_at": "2026-10-21T20:46:16+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "project_execution",
+        "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }
