@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-21T21:42:09.673025+00:00",
+    "generated_at": "2026-10-22T04:43:35.252051+00:00",
     "status": "active",
     "history_days": 53,
     "required_history_days": 14,
@@ -11,25 +11,25 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 12,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": 89,
+      "recent_7d": 13,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": 95,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.3."
+      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.7."
     },
     {
       "category": "labor",
-      "recent_7d": 10,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 200,
+      "recent_7d": 9,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 145,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
       "category": "energy",
@@ -54,6 +54,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "monetary",
+      "recent_7d": 5,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 90,
+      "source_diversity_7d": 3,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 3,
       "baseline_21d": 11,
@@ -62,17 +73,6 @@
       "trend": "stable",
       "confidence": 88,
       "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 3,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -10,
-      "trend": "stable",
-      "confidence": 79,
-      "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -154,6 +154,78 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "60dc6c04782f0438",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Dự án Luật Kinh doanh bất động sản (sửa đổi): Đề nghị mở rộng các loại hợp đồng được chuyển nhượng",
+      "url": "https://xaydungchinhsach.chinhphu.vn/du-an-luat-kinh-doanh-bat-dong-san-sua-doi-de-nghi-mo-rong-cac-loai-hop-dong-duoc-chuyen-nhuong-119261022093700874.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+    },
+    {
+      "id": "de714ff4c7b7735b",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Thẩm tra 3 dự án luật quan trọng về đất đai và nhà ở",
+      "url": "https://xaydungchinhsach.chinhphu.vn/tham-tra-3-du-an-luat-quan-trong-ve-dat-dai-va-nha-o-119261022090940153.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+    },
+    {
+      "id": "45c52674fb4ba263",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Công văn 9736/NHNN-CSTT về giảm mặt bằng lãi suất",
+      "url": "https://xaydungchinhsach.chinhphu.vn/cong-van-9736-nhnn-cstt-ve-giam-mat-bang-lai-suat-119261022085552481.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+    },
+    {
+      "id": "64bd86b4673d423f",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "NHNN chỉ đạo về việc giảm mặt bằng lãi suất",
+      "url": "https://sbv.gov.vn/w/nhnn-ch%E1%BB%89-%C4%91%E1%BA%A1o-v%E1%BB%81-vi%E1%BB%87c-gi%E1%BA%A3m-m%E1%BA%B7t-b%E1%BA%B1ng-l%C3%A3i-su%E1%BA%A5t",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+    },
     {
       "id": "1a451723b38c40b7",
       "source_id": "gov",
@@ -301,10 +373,10 @@
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 14,
     "business_formation": 14,
-    "policy_regulation": 12,
-    "market_data": 10,
-    "hiring": 8,
+    "market_data": 12,
+    "hiring": 7,
     "capex_expansion": 1
   },
   "geographies_7d": {
@@ -312,9 +384,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 852,
-    "candidate_events": 334,
-    "reference_events": 513,
+    "historical_events": 860,
+    "candidate_events": 338,
+    "reference_events": 517,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
