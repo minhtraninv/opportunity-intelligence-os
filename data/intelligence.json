@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T04:43:35.252051+00:00",
+    "generated_at": "2026-10-22T11:51:19.361167+00:00",
     "status": "active",
-    "history_days": 53,
+    "history_days": 54,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 13,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": 95,
+      "recent_7d": 14,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": 121,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.7."
+      "explanation": "7 ngày gần nhất có 14 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.3."
     },
     {
       "category": "labor",
@@ -30,6 +30,17 @@
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 6,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 80,
+      "trend": "accelerating",
+      "confidence": 92,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
       "category": "energy",
@@ -54,24 +65,13 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
-      "recent_7d": 5,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 90,
-      "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "infrastructure",
       "recent_7d": 3,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": -18,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": -10,
       "trend": "stable",
-      "confidence": 88,
+      "confidence": 86,
       "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -109,18 +109,18 @@
       "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.3."
     },
     {
-      "category": "data_ai",
+      "category": "capital_market",
       "recent_7d": 0,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 50,
+      "confidence": 48,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
+      "category": "data_ai",
       "recent_7d": 0,
       "baseline_21d": 4,
       "baseline_expected_7d": 1.3,
@@ -155,6 +155,80 @@
   ],
   "top_new_events": [
     {
+      "id": "1487f56367ee5dbc",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về thủ tục hải quan với hàng hóa mua gom của cư dân biên giới",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-thu-tuc-hai-quan-voi-hang-hoa-mua-gom-cua-cu-dan-bien-gioi-102261022170637592.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T11:51:19.361167+00:00"
+    },
+    {
+      "id": "a63b62a05a402ad6",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Nhà ở: Đề nghị tập trung vào chính sách đặc thù hoặc một số chính sách phát triển nhà ở của người dân",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-nha-o-de-nghi-tap-trung-vao-chinh-sach-dac-thu-hoac-mot-so-chinh-sach-phat-trien-nha-o-cua-nguoi-dan-11926102214483559.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T11:51:19.361167+00:00"
+    },
+    {
+      "id": "52a63ab3e07fbabf",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Nhà ở: Phát triển nhà ở cho thuê; miễn tiền thuê nhà ở công vụ;...",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-nha-o-phat-trien-nha-o-cho-thue-mien-tien-thue-nha-o-cong-vu-119261022111112855.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-22T11:51:19.361167+00:00"
+    },
+    {
+      "id": "2c8ebdcf83d6f206",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "NHNN chỉ đạo về việc giảm mặt bằng lãi suất 21/10/2026",
+      "url": "https://sbv.gov.vn/w/nhnn-ch%E1%BB%89-%C4%91%E1%BA%A1o-v%E1%BB%81-vi%E1%BB%87c-gi%E1%BA%A3m-m%E1%BA%B7t-b%E1%BA%B1ng-l%C3%A3i-su%E1%BA%A5t",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-22T11:51:19.361167+00:00"
+    },
+    {
       "id": "60dc6c04782f0438",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00",
+      "collected_at": "2026-10-22T04:43:35.252051+00:00",
+      "last_seen_at": null
     },
     {
       "id": "de714ff4c7b7735b",
@@ -188,7 +264,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00",
+      "collected_at": "2026-10-22T04:43:35.252051+00:00",
+      "last_seen_at": null
     },
     {
       "id": "45c52674fb4ba263",
@@ -206,7 +284,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00",
+      "collected_at": "2026-10-22T04:43:35.252051+00:00",
+      "last_seen_at": null
     },
     {
       "id": "64bd86b4673d423f",
@@ -224,7 +304,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-22T04:43:35.252051+00:00"
+      "first_seen_at": "2026-10-22T04:43:35.252051+00:00",
+      "collected_at": "2026-10-22T04:43:35.252051+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1a451723b38c40b7",
@@ -308,72 +390,10 @@
       "first_seen_at": "2026-10-21T17:11:18.441193+00:00",
       "collected_at": "2026-10-21T17:11:18.441193+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "f7098d84c9668923",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Trước 25/10, báo cáo Thủ tướng việc điều phối vật liệu xây dựng giữa các tỉnh, thành phố phục vụ các công trình trọng điểm quốc gia",
-      "url": "https://baochinhphu.vn/truoc-25-10-bao-cao-thu-tuong-viec-dieu-phoi-vat-lieu-xay-dung-giua-cac-tinh-thanh-pho-phuc-vu-cac-cong-trinh-trong-diem-quoc-gia-102261021165210907.htm",
-      "categories": [
-        "construction",
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-21T11:47:44.607411+00:00",
-      "collected_at": "2026-10-21T11:47:44.607411+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "a38a0ddcf05c6589",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "NHNN chỉ đạo về việc giảm mặt bằng lãi suất Mới",
-      "url": "https://sbv.gov.vn/w/nhnn-ch%E1%BB%89-%C4%91%E1%BA%A1o-v%E1%BB%81-vi%E1%BB%87c-gi%E1%BA%A3m-m%E1%BA%B7t-b%E1%BA%B1ng-l%C3%A3i-su%E1%BA%A5t",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-21T11:47:44.607411+00:00",
-      "collected_at": "2026-10-21T11:47:44.607411+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "2702deafdcf15eec",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Triển khai ngay nhiệm vụ thực hiện “điểm” về xây dựng vị trí việc làm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/trien-khai-ngay-nhiem-vu-thuc-hien-diem-ve-xay-dung-vi-tri-viec-119261021085613647.htm",
-      "categories": [
-        "construction",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-21T04:45:14.106614+00:00",
-      "collected_at": "2026-10-21T04:45:14.106614+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 14,
+    "policy_regulation": 16,
     "business_formation": 14,
     "market_data": 12,
     "hiring": 7,
@@ -384,9 +404,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 860,
-    "candidate_events": 338,
-    "reference_events": 517,
+    "historical_events": 871,
+    "candidate_events": 342,
+    "reference_events": 524,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
