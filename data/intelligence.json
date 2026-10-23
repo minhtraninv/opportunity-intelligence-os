@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T11:37:48.535250+00:00",
+    "generated_at": "2026-10-23T17:06:00.892164+00:00",
     "status": "active",
     "history_days": 55,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 12,
-      "baseline_21d": 22,
-      "baseline_expected_7d": 7.3,
-      "delta_pct": 64,
+      "recent_7d": 11,
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": 57,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.3."
+      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.0."
     },
     {
       "category": "labor",
@@ -32,17 +32,6 @@
       "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
     },
     {
-      "category": "monetary",
-      "recent_7d": 6,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 100,
-      "trend": "accelerating",
-      "confidence": 90,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
-    },
-    {
       "category": "sme",
       "recent_7d": 16,
       "baseline_21d": 44,
@@ -51,6 +40,17 @@
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 5,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 90,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -76,17 +76,6 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "policy",
-      "recent_7d": 3,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
-      "trend": "stable",
-      "confidence": 71,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 6,
@@ -99,28 +88,28 @@
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 2,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": -54,
+      "recent_7d": 1,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
+      "delta_pct": -79,
       "trend": "cooling",
-      "confidence": 83,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.3."
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.7."
     },
     {
-      "category": "capital_market",
-      "recent_7d": 0,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
+      "category": "policy",
+      "recent_7d": 3,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 48,
-      "source_diversity_7d": 0,
+      "confidence": 69,
+      "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "data_ai",
+      "category": "capital_market",
       "recent_7d": 0,
       "baseline_21d": 4,
       "baseline_expected_7d": 1.3,
@@ -138,6 +127,17 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 48,
+      "source_diversity_7d": 0,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 0,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 46,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -238,94 +238,12 @@
       "first_seen_at": "2026-10-22T17:09:52.430211+00:00",
       "collected_at": "2026-10-22T17:09:52.430211+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "1487f56367ee5dbc",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy định mới về thủ tục hải quan với hàng hóa mua gom của cư dân biên giới",
-      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-thu-tuc-hai-quan-voi-hang-hoa-mua-gom-cua-cu-dan-bien-gioi-102261022170637592.htm",
-      "categories": [
-        "logistics"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-22T11:51:19.361167+00:00",
-      "collected_at": "2026-10-22T11:51:19.361167+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "a63b62a05a402ad6",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Sửa Luật Nhà ở: Đề nghị tập trung vào chính sách đặc thù hoặc một số chính sách phát triển nhà ở của người dân",
-      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-nha-o-de-nghi-tap-trung-vao-chinh-sach-dac-thu-hoac-mot-so-chinh-sach-phat-trien-nha-o-cua-nguoi-dan-11926102214483559.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-22T11:51:19.361167+00:00",
-      "collected_at": "2026-10-22T11:51:19.361167+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "52a63ab3e07fbabf",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Sửa Luật Nhà ở: Phát triển nhà ở cho thuê; miễn tiền thuê nhà ở công vụ;...",
-      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-nha-o-phat-trien-nha-o-cho-thue-mien-tien-thue-nha-o-cong-vu-119261022111112855.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-22T11:51:19.361167+00:00",
-      "collected_at": "2026-10-22T11:51:19.361167+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "2c8ebdcf83d6f206",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "NHNN chỉ đạo về việc giảm mặt bằng lãi suất 21/10/2026",
-      "url": "https://sbv.gov.vn/w/nhnn-ch%E1%BB%89-%C4%91%E1%BA%A1o-v%E1%BB%81-vi%E1%BB%87c-gi%E1%BA%A3m-m%E1%BA%B7t-b%E1%BA%B1ng-l%C3%A3i-su%E1%BA%A5t",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-22T11:51:19.361167+00:00",
-      "collected_at": "2026-10-22T11:51:19.361167+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 12,
-    "market_data": 12,
+    "policy_regulation": 11,
+    "market_data": 11,
     "hiring": 8,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
