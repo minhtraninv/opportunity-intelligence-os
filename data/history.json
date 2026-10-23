@@ -1,7 +1,65 @@
 {
   "version": 2,
-  "updated_at": "2026-10-22T21:35:05.353154+00:00",
+  "updated_at": "2026-10-23T04:48:19.215067+00:00",
   "events": [
+    {
+      "id": "3fa5181870d5c87e",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm thăm Cảng Antwerp-Bruges (Vương quốc Bỉ)",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-tham-cang-antwerp-bruges-vuong-quoc-bi-102261023071818325.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-23T04:48:19.215067+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "84f4af821fc16523",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Danh mục ngành khoa học và công nghệ xét chức danh chuyên gia, nhà khoa học, tổng công trình sư",
+      "url": "https://xaydungchinhsach.chinhphu.vn/danh-muc-nganh-khoa-hoc-va-cong-nghe-xet-chuc-danh-chuyen-gia-nha-khoa-hoc-tong-cong-trinh-su-119261023094306661.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "other",
+      "signal_quality": "reference",
+      "quality_reason": "Có từ khóa ngành nhưng chưa có trigger đủ cụ thể để tính vào baseline.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-23T04:48:19.215067+00:00",
+      "evidence_grade": "reference_only"
+    },
+    {
+      "id": "8cce1f8e5341ea24",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Rà soát, hoàn thiện vị trí việc làm và xây dựng phương án biên chế của Bộ Nội vụ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-cua-bo-noi-vu-1192610230835102.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-23T04:48:19.215067+00:00",
+      "evidence_grade": "official_headline_discovery"
+    },
     {
       "id": "521ca6c6aad9eae3",
       "source_id": "gov",
@@ -436,8 +494,8 @@
     },
     {
       "id": "90694f417c98c000",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
+      "source_id": "evn-invest",
+      "publisher": "EVN - Đầu tư xây dựng",
       "title": "Phó Tổng giám đốc EVN Phạm Hồng Phương kiểm tra tiến độ một số dự án truyền tải điện tại Tây Bắc",
       "url": "https://www.evn.com.vn/d/vi-VN/news/Pho-Tong-giam-doc-EVN-Pham-Hong-Phuong-kiem-tra-tien-do-mot-so-du-an-truyen-tai-dien-tai-Tay-Bac-60-13-510056",
       "categories": [
@@ -22969,15 +23027,33 @@
       "new_by_source": {},
       "total_events": 875,
       "source_errors": 1
+    },
+    {
+      "captured_at": "2026-10-23T04:48:19.215067+00:00",
+      "new_items": 3,
+      "new_candidates": 1,
+      "new_by_category": {
+        "construction": 1,
+        "labor": 1
+      },
+      "new_by_event_type": {
+        "hiring": 1
+      },
+      "new_by_source": {
+        "gov": 1,
+        "gov-policy": 2
+      },
+      "total_events": 878,
+      "source_errors": 2
     }
   ],
   "trust_semantics": {
     "version": "3.0.1",
-    "updated_at": "2026-10-22T21:36:30.282860+00:00",
+    "updated_at": "2026-10-23T04:50:14.686720+00:00",
     "rule": "official_landing_page_headline_is_discovery_not_primary_evidence",
     "evidence_grade_counts": {
-      "official_headline_discovery": 345,
-      "reference_only": 525,
+      "reference_only": 527,
+      "official_headline_discovery": 346,
       "primary_verified": 5
     }
   }
