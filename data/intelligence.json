@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T04:48:19.215067+00:00",
+    "generated_at": "2026-10-23T11:37:48.535250+00:00",
     "status": "active",
-    "history_days": 54,
+    "history_days": 55,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 13,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": 86,
+      "recent_7d": 12,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": 64,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.0."
+      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.3."
     },
     {
       "category": "labor",
@@ -43,17 +43,6 @@
       "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
-      "category": "energy",
-      "recent_7d": 5,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": 114,
-      "trend": "accelerating",
-      "confidence": 84,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.3."
-    },
-    {
       "category": "sme",
       "recent_7d": 16,
       "baseline_21d": 44,
@@ -72,6 +61,17 @@
       "delta_pct": 20,
       "trend": "stable",
       "confidence": 88,
+      "source_diversity_7d": 3,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 4,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 50,
+      "trend": "stable",
+      "confidence": 84,
       "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -171,7 +171,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-23T04:48:19.215067+00:00"
+      "first_seen_at": "2026-10-23T04:48:19.215067+00:00",
+      "collected_at": "2026-10-23T04:48:19.215067+00:00",
+      "last_seen_at": null
     },
     {
       "id": "521ca6c6aad9eae3",
@@ -322,7 +324,7 @@
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 14,
+    "policy_regulation": 12,
     "market_data": 12,
     "hiring": 8,
     "infrastructure_delivery": 1,
@@ -333,13 +335,13 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 878,
+    "historical_events": 887,
     "candidate_events": 346,
-    "reference_events": 527,
+    "reference_events": 536,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
