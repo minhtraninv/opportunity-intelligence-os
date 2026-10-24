@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-24T10:58:54.359011+00:00",
+    "generated_at": "2026-10-24T15:56:27.607205+00:00",
     "status": "active",
     "history_days": 56,
     "required_history_days": 14,
@@ -10,26 +10,26 @@
   },
   "category_changes": [
     {
-      "category": "construction",
+      "category": "labor",
       "recent_7d": 11,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": 57,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 230,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 7.0."
+      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
-      "category": "labor",
-      "recent_7d": 10,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 173,
+      "category": "construction",
+      "recent_7d": 11,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": 65,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.7."
     },
     {
       "category": "monetary",
@@ -78,9 +78,9 @@
     {
       "category": "policy",
       "recent_7d": 1,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": -57,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": -50,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "5da80d6e7fb5b4f3",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kế hoạch thực hiện Kết luận số 107-KL/TW về hoàn thiện hệ thống vị trí việc làm",
+      "url": "https://baochinhphu.vn/ke-hoach-thuc-hien-ket-luan-so-107-kl-tw-ve-hoan-thien-he-thong-vi-tri-viec-lam-102261024200836361.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-24T15:56:27.607205+00:00"
+    },
+    {
       "id": "dce3fe3dfd3e9329",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -199,9 +217,9 @@
   ],
   "event_types_7d": {
     "business_formation": 14,
+    "hiring": 9,
     "policy_regulation": 9,
     "market_data": 9,
-    "hiring": 8,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
   },
@@ -210,9 +228,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 891,
-    "candidate_events": 348,
-    "reference_events": 538,
+    "historical_events": 893,
+    "candidate_events": 349,
+    "reference_events": 539,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
