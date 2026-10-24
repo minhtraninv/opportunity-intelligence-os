@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-24T04:35:31.123030+00:00",
+    "generated_at": "2026-10-24T10:58:54.359011+00:00",
     "status": "active",
-    "history_days": 55,
+    "history_days": 56,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -43,17 +43,6 @@
       "explanation": "7 ngày gần nhất có 5 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
-      "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 44,
-      "baseline_expected_7d": 14.7,
-      "delta_pct": 9,
-      "trend": "stable",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "infrastructure",
       "recent_7d": 4,
       "baseline_21d": 10,
@@ -66,24 +55,35 @@
     },
     {
       "category": "energy",
-      "recent_7d": 4,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 50,
+      "recent_7d": 3,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 0,
       "trend": "stable",
-      "confidence": 84,
-      "source_diversity_7d": 3,
+      "confidence": 77,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "sme",
+      "recent_7d": 15,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "policy",
-      "recent_7d": 2,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 0,
+      "recent_7d": 1,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -57,
       "trend": "stable",
-      "confidence": 69,
-      "source_diversity_7d": 2,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -195,33 +195,12 @@
       "first_seen_at": "2026-10-23T21:24:04.813980+00:00",
       "collected_at": "2026-10-23T21:24:04.813980+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "8cce1f8e5341ea24",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm và xây dựng phương án biên chế của Bộ Nội vụ",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-va-xay-dung-phuong-an-bien-che-cua-bo-noi-vu-1192610230835102.htm",
-      "categories": [
-        "construction",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-23T04:48:19.215067+00:00",
-      "collected_at": "2026-10-23T04:48:19.215067+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 11,
-    "market_data": 10,
+    "policy_regulation": 9,
+    "market_data": 9,
     "hiring": 8,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
@@ -231,9 +210,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 890,
+    "historical_events": 891,
     "candidate_events": 348,
-    "reference_events": 537,
+    "reference_events": 538,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
