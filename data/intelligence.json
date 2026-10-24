@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T21:24:04.813980+00:00",
+    "generated_at": "2026-10-24T04:35:31.123030+00:00",
     "status": "active",
     "history_days": 55,
     "required_history_days": 14,
@@ -76,6 +76,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "policy",
+      "recent_7d": 2,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 69,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 6,
@@ -96,17 +107,6 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.7."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 3,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 69,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "capital_market",
@@ -172,7 +172,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-23T21:24:04.813980+00:00"
+      "first_seen_at": "2026-10-23T21:24:04.813980+00:00",
+      "collected_at": "2026-10-23T21:24:04.813980+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f89761271d44dd4f",
@@ -190,7 +192,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-23T21:24:04.813980+00:00"
+      "first_seen_at": "2026-10-23T21:24:04.813980+00:00",
+      "collected_at": "2026-10-23T21:24:04.813980+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8cce1f8e5341ea24",
@@ -217,7 +221,7 @@
   "event_types_7d": {
     "business_formation": 14,
     "policy_regulation": 11,
-    "market_data": 11,
+    "market_data": 10,
     "hiring": 8,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
@@ -227,9 +231,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 889,
+    "historical_events": 890,
     "candidate_events": 348,
-    "reference_events": 536,
+    "reference_events": 537,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
