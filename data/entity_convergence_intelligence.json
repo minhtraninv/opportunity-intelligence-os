@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-24T20:50:32.708240+00:00",
+    "generated_at": "2026-10-25T04:41:19.390015+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-24T20:50:33.189600+00:00"
+    "trust_hardened_at": "2026-10-25T04:41:19.739584+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -50,7 +50,7 @@
       "event_count": 13,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -343,6 +343,132 @@
       "discovery_evidence_families": [
         "capital",
         "labor",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "long_thanh_airport",
+      "label": "Cảng hàng không quốc tế Long Thành",
+      "entity_type": "strategic_project",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 18,
+      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
+      "evidence_families": [
+        "policy",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Chính sách pháp luật - Chính phủ",
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 3,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "logistics_trade",
+          "label": "logistics_trade",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [
+        {
+          "region": "Đồng Nai",
+          "state": "capital_cooling_production_unconfirmed",
+          "iip_7m_yoy_pct": null,
+          "fdi_yoy_pct": -58.9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "97cc9fd55ed8377f",
+          "event_signature": "4b730be2b7369a87",
+          "family": "project_execution",
+          "title": "1.832 tỉ đồng bồi thường giải phóng mặt bằng metro số 2 Bến Thành - Thủ Thiêm",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/1832-ti-dong-boi-thuong-giai-phong-mat-bang-metro-so-2-ben-thanh-thu-thiem-100261024175505815.htm",
+          "observed_at": "2026-10-25T04:41:03.393451+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "009cae7fcf8131a0",
+          "event_signature": "0ea336af8c1bd57b",
+          "family": "project_execution",
+          "title": "Lo sân bay Long Thành 'hụt hơi' giai đoạn nước rút",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/lo-san-bay-long-thanh-hut-hoi-giai-doan-nuoc-rut-185261023225253493.htm",
+          "observed_at": "2026-10-23T23:03:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "dd9647797aa12585",
+          "event_signature": "de39c044d708d66d",
+          "family": "project_execution",
+          "title": "Bảo đảm hạ tầng, giúp người dân sớm an cư tại khu tái định cư sân bay Gia Bình",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/bao-dam-ha-tang-giup-nguoi-dan-som-an-cu-tai-khu-tai-dinh-cu-san-bay-gia-binh-post1143628.vnp",
+          "observed_at": "2026-10-22T16:41:26+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e6dcd3748a139401",
+          "family": "policy",
+          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "logistics"
+          ],
+          "geography": [
+            "Đồng Nai"
+          ],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "policy",
         "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
@@ -849,7 +975,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1127,7 +1253,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1420,7 +1546,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1703,131 +1829,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "long_thanh_airport",
-      "label": "Cảng hàng không quốc tế Long Thành",
-      "entity_type": "strategic_project",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
-      "evidence_families": [
-        "policy",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Chính sách pháp luật - Chính phủ",
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 3,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "policy_execution_alignment"
-      ],
-      "theme_context": [
-        {
-          "theme_id": "logistics_trade",
-          "label": "logistics_trade",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [
-        {
-          "region": "Đồng Nai",
-          "state": "capital_cooling_production_unconfirmed",
-          "iip_7m_yoy_pct": null,
-          "fdi_yoy_pct": -58.9
-        }
-      ],
-      "evidence": [
-        {
-          "id": "009cae7fcf8131a0",
-          "event_signature": "0ea336af8c1bd57b",
-          "family": "project_execution",
-          "title": "Lo sân bay Long Thành 'hụt hơi' giai đoạn nước rút",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/lo-san-bay-long-thanh-hut-hoi-giai-doan-nuoc-rut-185261023225253493.htm",
-          "observed_at": "2026-10-23T23:03:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "dd9647797aa12585",
-          "event_signature": "de39c044d708d66d",
-          "family": "project_execution",
-          "title": "Bảo đảm hạ tầng, giúp người dân sớm an cư tại khu tái định cư sân bay Gia Bình",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/bao-dam-ha-tang-giup-nguoi-dan-som-an-cu-tai-khu-tai-dinh-cu-san-bay-gia-binh-post1143628.vnp",
-          "observed_at": "2026-10-22T16:41:26+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ae1ad0117a1fcd9e",
-          "event_signature": "686926c1ed5a07e2",
-          "family": "project_execution",
-          "title": "Siêu sân bay Long Thành còn 4 hạng mục khó về đích tháng 12",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/sieu-san-bay-long-thanh-con-4-hang-muc-kho-ve-dich-thang-12-185261022181546818.htm",
-          "observed_at": "2026-10-22T11:20:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e6dcd3748a139401",
-          "family": "policy",
-          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
-          "observed_at": "2026-09-29T12:51:54.496115+00:00",
-          "categories": [
-            "logistics"
-          ],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 1,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "policy",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "vingroup_ecosystem",
       "label": "Hệ sinh thái Vingroup",
       "entity_type": "business_group",
@@ -2013,7 +2014,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
