@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T11:27:09.909417+00:00",
+    "generated_at": "2026-10-25T16:17:50.385120+00:00",
     "status": "active",
     "history_days": 57,
     "required_history_days": 14,
@@ -11,25 +11,25 @@
   "category_changes": [
     {
       "category": "construction",
-      "recent_7d": 12,
+      "recent_7d": 13,
       "baseline_21d": 20,
       "baseline_expected_7d": 6.7,
-      "delta_pct": 80,
+      "delta_pct": 95,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.7."
+      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.7."
     },
     {
       "category": "labor",
-      "recent_7d": 11,
+      "recent_7d": 10,
       "baseline_21d": 10,
       "baseline_expected_7d": 3.3,
-      "delta_pct": 230,
+      "delta_pct": 200,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
       "category": "infrastructure",
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "4e4ec238f092238a",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Dự thảo Luật Nhà ở (sửa đổi): ‘Siết’ điều kiện chuyển nhượng nhà ở xã hội",
+      "url": "https://baochinhphu.vn/du-thao-luat-nha-o-sua-doi-siet-dieu-kien-chuyen-nhuong-nha-o-xa-hoi-102261025183110874.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-25T16:17:50.385120+00:00"
+    },
+    {
       "id": "5d9ec157a6e3bfb7",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -215,26 +233,6 @@
       "first_seen_at": "2026-10-25T04:40:06.957060+00:00",
       "collected_at": "2026-10-25T04:40:06.957060+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "5da80d6e7fb5b4f3",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Kế hoạch thực hiện Kết luận số 107-KL/TW về hoàn thiện hệ thống vị trí việc làm",
-      "url": "https://baochinhphu.vn/ke-hoach-thuc-hien-ket-luan-so-107-kl-tw-ve-hoan-thien-he-thong-vi-tri-viec-lam-102261024200836361.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-24T15:56:27.607205+00:00",
-      "collected_at": "2026-10-24T15:56:27.607205+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
@@ -250,9 +248,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 900,
-    "candidate_events": 352,
-    "reference_events": 543,
+    "historical_events": 902,
+    "candidate_events": 353,
+    "reference_events": 544,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
