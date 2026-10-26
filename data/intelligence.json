@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T20:50:04.401345+00:00",
+    "generated_at": "2026-10-26T04:45:46.727701+00:00",
     "status": "active",
     "history_days": 57,
     "required_history_days": 14,
@@ -22,14 +22,25 @@
     },
     {
       "category": "labor",
-      "recent_7d": 10,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 200,
+      "recent_7d": 9,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 145,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 6,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 80,
+      "trend": "accelerating",
+      "confidence": 85,
+      "source_diversity_7d": 2,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
       "category": "infrastructure",
@@ -40,17 +51,6 @@
       "trend": "stable",
       "confidence": 86,
       "source_diversity_7d": 3,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 4,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 20,
-      "trend": "stable",
-      "confidence": 81,
-      "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -67,9 +67,9 @@
     {
       "category": "sme",
       "recent_7d": 15,
-      "baseline_21d": 47,
-      "baseline_expected_7d": 15.7,
-      "delta_pct": -4,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "de15e32d09c157e5",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Ngân hàng Nhà nước đề xuất cơ chế tiền lương, thu nhập của cán bộ công chức",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ngan-hang-nha-nuoc-de-xuat-co-che-tien-luong-thu-nhap-cua-can-bo-cong-chuc-119261026102758847.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T04:45:46.727701+00:00"
+    },
+    {
+      "id": "f4e405c270d74184",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Dự thảo Nghị định về chế độ tài chính của Ngân hàng Nhà nước Việt Nam",
+      "url": "https://xaydungchinhsach.chinhphu.vn/du-thao-nghi-dinh-ve-che-do-tai-chinh-cua-ngan-hang-nha-nuoc-viet-nam-119261026101551482.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T04:45:46.727701+00:00"
+    },
+    {
       "id": "97f441df49193567",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +208,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-25T20:50:04.401345+00:00"
+      "first_seen_at": "2026-10-25T20:50:04.401345+00:00",
+      "collected_at": "2026-10-25T20:50:04.401345+00:00",
+      "last_seen_at": null
     },
     {
       "id": "566679978ca54847",
@@ -190,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-25T20:50:04.401345+00:00"
+      "first_seen_at": "2026-10-25T20:50:04.401345+00:00",
+      "collected_at": "2026-10-25T20:50:04.401345+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4e4ec238f092238a",
@@ -211,74 +251,12 @@
       "first_seen_at": "2026-10-25T16:17:50.385120+00:00",
       "collected_at": "2026-10-25T16:17:50.385120+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "5d9ec157a6e3bfb7",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Tuần của 35 dự án luật và tốc độ “chưa từng có” trong xây dựng thể chế",
-      "url": "https://baochinhphu.vn/tuan-cua-35-du-an-luat-va-toc-do-chua-tung-co-trong-xay-dung-the-che-102261025090022747.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-25T04:40:06.957060+00:00",
-      "collected_at": "2026-10-25T04:40:06.957060+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "32d2d3067cc88a0a",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 25/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-25T04:40:06.957060+00:00",
-      "collected_at": "2026-10-25T04:40:06.957060+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "32fb5d9728c1ab66",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 25/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-25T04:40:06.957060+00:00",
-      "collected_at": "2026-10-25T04:40:06.957060+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 10,
-    "hiring": 9,
+    "policy_regulation": 12,
+    "hiring": 8,
     "market_data": 8,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
@@ -288,9 +266,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 904,
-    "candidate_events": 355,
-    "reference_events": 544,
+    "historical_events": 910,
+    "candidate_events": 357,
+    "reference_events": 548,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
