@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-26T04:47:03.279417+00:00",
+    "generated_at": "2026-10-26T13:02:36.527321+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-26T04:47:03.746034+00:00"
+    "trust_hardened_at": "2026-10-26T13:02:36.996468+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 60,
-    "observed_auto_entities": 49,
+    "observed_entities": 58,
+    "observed_auto_entities": 48,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 20,
-    "watch": 32,
+    "discovery_convergence": 19,
+    "watch": 31,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 18,
+    "discovery_candidates": 19,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 11
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -43,14 +43,15 @@
       ],
       "independent_publishers": [
         "EVN - Vận hành hệ thống điện",
+        "EVN - Đầu tư xây dựng",
         "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
         "VietnamPlus Kinh tế"
       ],
-      "event_count": 13,
+      "event_count": 14,
       "primary_evidence_count": 0,
-      "media_evidence_count": 6,
-      "newest_evidence_age_days": 3,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -78,6 +79,36 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "0aaa567fbc5119dc",
+          "event_signature": "dffb4127372905b5",
+          "family": "project_execution",
+          "title": "Ký hợp đồng hơn 4.462 tỉ đồng cho thủy điện tích năng lớn nhất Đông Nam Á",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ky-hop-dong-hon-4462-ti-dong-cho-thuy-dien-tich-nang-lon-nhat-dong-nam-a-100261026172133785.htm",
+          "observed_at": "2026-10-26T13:02:13.908942+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8d35ba6d0424bec3",
+          "family": "procurement",
+          "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
+          "publisher": "EVN - Đầu tư xây dựng",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-12-510114",
+          "observed_at": "2026-10-26T13:01:06.079794+00:00",
+          "categories": [
+            "energy",
+            "fdi_industrial"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
         {
           "id": "421f6667b680bc61",
           "event_signature": "f7c68e2a168f36ee",
@@ -124,20 +155,6 @@
           "evidence_grade": "official_headline_discovery"
         },
         {
-          "id": "bf1310fcf2e340fe",
-          "event_signature": "23a9be98992e405f",
-          "family": "project_execution",
-          "title": "Nhiệt điện Quảng Trạch 2 ứng dụng công nghệ Mỹ, mỗi năm cung ứng 10 tỉ kWh",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/nhiet-dien-quang-trach-2-ung-dung-cong-nghe-my-moi-nam-cung-ung-10-ti-kwh-185261020170339178.htm",
-          "observed_at": "2026-10-20T11:06:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
           "id": "b82d7b9585694808",
           "event_signature": "330edb7430772718",
           "family": "operating",
@@ -179,20 +196,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "5792757ce80f21c4",
-          "event_signature": "2941f69aeb0844f1",
-          "family": "strategy",
-          "title": "Cải tổ EVN trong hệ thống điện: Tiếp tục là trụ cột năng lượng hay xóa độc quyền?",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/cai-to-evn-trong-he-thong-dien-tiep-tuc-la-tru-cot-nang-luong-hay-xoa-doc-quyen-100261013133907176.htm",
-          "observed_at": "2026-10-14T04:54:15.872188+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -211,7 +214,7 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 2,
+      "official_headline_discovery_count": 3,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "operating",
@@ -243,7 +246,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -494,7 +497,7 @@
       "event_count": 7,
       "primary_evidence_count": 0,
       "media_evidence_count": 7,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -834,7 +837,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -843,6 +846,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "16c73c872e7d0952",
+          "event_signature": "2e6ee1c6dd335a68",
+          "family": "operating",
+          "title": "Lãi lớn sau 9 tháng, động lực nào cho Masan tăng trưởng tiếp?",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/lai-lon-sau-9-thang-dong-luc-nao-cho-masan-tang-truong-tiep-100261026161511425.htm",
+          "observed_at": "2026-10-26T13:02:13.908942+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "14a5619d2cc9ca85",
           "event_signature": "5c6b7034c8699a06",
@@ -879,20 +896,6 @@
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/doc-nhanh-22-10-nasdaq-tang-hon-1-nho-spacex-bidv-muon-phat-hanh-8000-ti-dong-trai-phieu-100261022071022554.htm",
           "observed_at": "2026-10-23T04:49:57.797389+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "61d52a37d5d9500b",
-          "event_signature": "2907f4c8b276aad7",
-          "family": "operating",
-          "title": "MSR lãi 4.350 tỉ đồng sau 9 tháng, mở rộng chuỗi cung ứng vonfram toàn cầu",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/msr-lai-4350-ti-dong-sau-9-thang-mo-rong-chuoi-cung-ung-vonfram-toan-cau-185261023082705771.htm",
-          "observed_at": "2026-10-23T01:19:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1114,7 +1117,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1362,10 +1365,10 @@
         "Chính sách pháp luật - Chính phủ",
         "VietnamPlus Kinh tế"
       ],
-      "event_count": 9,
+      "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1381,6 +1384,21 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "76f6a33805703bb0",
+          "family": "operating",
+          "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Cắt giảm thủ tục phải đi đôi với kiểm soát an toàn",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cat-giam-thu-tuc-phai-di-doi-voi-kiem-soat-an-toan-10226102614053028.htm",
+          "observed_at": "2026-10-26T13:01:06.079794+00:00",
+          "categories": [
+            "policy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
         {
           "id": "aa798ef49b72579a",
           "event_signature": "8e3a3c7e4de9d1bf",
@@ -1475,21 +1493,6 @@
           "publisher": "Chính sách pháp luật - Chính phủ",
           "source_url": "https://xaydungchinhsach.chinhphu.vn/thong-bao-so-166-tb-vptw-ket-luan-cua-tong-bi-thu-chu-tich-nuoc-to-lam-ve-xay-dung-nghi-quyet-moi-ve-can-bo-cong-tac-can-bo-119260908104037889.htm",
           "observed_at": "2026-09-08T04:35:06.506869+00:00",
-          "categories": [
-            "construction"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "f3955b7557cacf37",
-          "family": "policy",
-          "title": "Thông báo kết luận của Tổng Bí thư, Chủ tịch nước Tô Lâm về xây dựng Nghị quyết mới về cán bộ, công tác cán bộ",
-          "publisher": "Báo Chính phủ",
-          "source_url": "https://baochinhphu.vn/thong-bao-ket-luan-cua-tong-bi-thu-chu-tich-nuoc-to-lam-ve-xay-dung-nghi-quyet-moi-ve-can-bo-cong-tac-can-bo-102260907172932958.htm",
-          "observed_at": "2026-09-07T12:31:41.529078+00:00",
           "categories": [
             "construction"
           ],
@@ -1740,7 +1743,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1865,7 +1868,7 @@
           "title": "Đọc nhanh 26-10: Giá dầu kéo Dow Jones giảm 653 điểm",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/doc-nhanh-26-10-gia-dau-keo-dow-jones-giam-653-diem-techcombank-muon-lap-ngan-hang-con-10026102607493285.htm",
-          "observed_at": "2026-10-26T04:46:45.592210+00:00",
+          "observed_at": "2026-10-26T13:02:13.908942+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -2142,7 +2145,7 @@
       "event_count": 3,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 10,
+      "newest_evidence_age_days": 11,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -2326,40 +2329,39 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-luật-ngân-55d6b307",
-      "label": "Luật Ngân",
+      "entity_id": "auto-hdbank-851e1d3d",
+      "label": "HDBank",
       "entity_type": "organization_candidate",
       "entity_origin": "auto_discovered",
       "status": "discovery_convergence",
       "convergence_score": 10,
-      "why_now": "Luật Ngân đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
+      "why_now": "HDBank đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
       "evidence_families": [
-        "policy",
+        "operating",
         "project_execution"
       ],
       "independent_publishers": [
-        "Ngân hàng Nhà nước Việt Nam",
+        "Thanh Niên Kinh tế",
         "VietnamPlus Kinh tế"
       ],
       "event_count": 4,
       "primary_evidence_count": 0,
-      "media_evidence_count": 1,
-      "newest_evidence_age_days": 2,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
-        "policy_execution_alignment",
-        "persistent_multi_period_attention"
+        "media_only_needs_primary_verification"
       ],
       "theme_context": [],
       "regional_context": [],
       "evidence": [
         {
-          "id": "4bbbb49b110bc1e9",
-          "event_signature": "dc058bea99402cde",
+          "id": "784522b0efbdee7a",
+          "event_signature": "7fe57ba550be9f6f",
           "family": "project_execution",
-          "title": "Luật Ngân sách Nhà nước (hợp nhất): Đồng bộ hóa khung pháp lý tài chính-ngân sách",
+          "title": "HDBank dành 10.000 tỷ đồng giảm lãi suất 1,5% hỗ trợ doanh nghiệp",
           "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/luat-ngan-sach-nha-nuoc-hop-nhat-dong-bo-hoa-khung-phap-ly-tai-chinh-ngan-sach-post1143763.vnp",
-          "observed_at": "2026-10-23T09:57:24+00:00",
+          "source_url": "https://www.vietnamplus.vn/hdbank-danh-10000-ty-dong-giam-lai-suat-15-ho-tro-doanh-nghiep-post1143117.vnp",
+          "observed_at": "2026-10-20T15:15:27+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -2367,49 +2369,46 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "f412909242bc0521",
-          "family": "policy",
-          "title": "Công bố Lệnh của Chủ tịch nước về Luật sửa đổi, bổ sung một số điều của Luật Ngân hàng Nhà nước Việt Nam, Luật Phòng, chống rửa tiền và Luật Các tổ chức tín dụng 10/09/2026",
-          "publisher": "Ngân hàng Nhà nước Việt Nam",
-          "source_url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-l%E1%BB%87nh-c%E1%BB%A7a-ch%E1%BB%A7-t%E1%BB%8Bch-n%C6%B0%E1%BB%9Bc-v%E1%BB%81-lu%E1%BA%ADt-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-lu%E1%BA%ADt-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-1",
-          "observed_at": "2026-09-15T11:43:26.883940+00:00",
-          "categories": [
-            "monetary"
-          ],
+          "id": "73b2eca442ed272f",
+          "event_signature": "bf8344984751a40e",
+          "family": "project_execution",
+          "title": "HDBank triển khai gói tín dụng 10.000 tỉ đồng, giảm lãi suất 1,5%/năm hỗ trợ doanh nghiệp",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/hdbank-trien-khai-goi-tin-dung-10000-ti-dong-giam-lai-suat-15-nam-ho-tro-doanh-nghiep-185261020143719596.htm",
+          "observed_at": "2026-10-20T07:30:00+00:00",
+          "categories": [],
           "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         },
         {
-          "id": "0749154cc051f046",
-          "family": "policy",
-          "title": "Công bố Lệnh của Chủ tịch nước về Luật sửa đổi, bổ sung một số điều của Luật Ngân hàng Nhà nước Việt Nam, Luật Phòng, chống rửa tiền và Luật Các tổ chức tín dụng",
-          "publisher": "Ngân hàng Nhà nước Việt Nam",
-          "source_url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-l%E1%BB%87nh-c%E1%BB%A7a-ch%E1%BB%A7-t%E1%BB%8Bch-n%C6%B0%E1%BB%9Bc-v%E1%BB%81-lu%E1%BA%ADt-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-lu%E1%BA%ADt-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-1",
-          "observed_at": "2026-09-11T04:39:45.885034+00:00",
-          "categories": [
-            "monetary"
-          ],
+          "id": "e021eaf98640b353",
+          "event_signature": "44a43c349959bf8b",
+          "family": "project_execution",
+          "title": "HDBank dành 2.000 tỷ đồng cho doanh nghiệp do phụ nữ làm chủ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/hdbank-danh-2000-ty-dong-cho-doanh-nghiep-do-phu-nu-lam-chu-post1141970.vnp",
+          "observed_at": "2026-10-14T18:16:42+00:00",
+          "categories": [],
           "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         },
         {
-          "id": "938b2f09720773b0",
-          "family": "policy",
-          "title": "Công bố Lệnh của Chủ tịch nước về Luật sửa đổi, bổ sung một số điều của Luật Ngân hàng Nhà nước Việt Nam, Luật Phòng, chống rửa tiền và Luật Các tổ chức tín dụng Mới",
-          "publisher": "Ngân hàng Nhà nước Việt Nam",
-          "source_url": "https://sbv.gov.vn/w/c%C3%B4ng-b%E1%BB%91-l%E1%BB%87nh-c%E1%BB%A7a-ch%E1%BB%A7-t%E1%BB%8Bch-n%C6%B0%E1%BB%9Bc-v%E1%BB%81-lu%E1%BA%ADt-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-lu%E1%BA%ADt-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-1",
-          "observed_at": "2026-09-10T04:41:58.434379+00:00",
-          "categories": [
-            "monetary"
-          ],
+          "id": "b210d5b0c110bdf7",
+          "event_signature": "50fed6cbe70b47e2",
+          "family": "operating",
+          "title": "HDBank và ĐHQG TP.HCM hợp tác toàn diện, kết nối giáo dục, tài chính và công nghệ",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/hdbank-va-dhqg-tphcm-hop-tac-toan-dien-ket-noi-giao-duc-tai-chinh-va-cong-nghe-185261008145806478.htm",
+          "observed_at": "2026-10-08T07:48:00+00:00",
+          "categories": [],
           "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -2428,11 +2427,112 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 3,
+      "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "policy",
+        "operating",
         "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-apec-c4ad10a0",
+      "label": "APEC",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "APEC đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Báo Chính phủ",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 3,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 2,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "public_infrastructure",
+          "label": "public_infrastructure",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "2283bca2f7ef39a0",
+          "event_signature": "14d47a91cef1c41c",
+          "family": "project_execution",
+          "title": "APEC 2027: Kết nối công nghệ, thúc đẩy nông nghiệp xanh",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/apec-2027-ket-noi-cong-nghe-thuc-day-nong-nghiep-xanh-post1144343.vnp",
+          "observed_at": "2026-10-26T17:10:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "521ca6c6aad9eae3",
+          "family": "project_execution",
+          "title": "Tập trung cao độ hoàn thành các công trình phục vụ Hội nghị cấp cao APEC 2027 đúng cam kết",
+          "publisher": "Báo Chính phủ",
+          "source_url": "https://baochinhphu.vn/tap-trung-cao-do-hoan-thanh-cac-cong-trinh-phuc-vu-hoi-nghi-cap-cao-apec-2027-dung-cam-ket-102261022212630305.htm",
+          "observed_at": "2026-10-22T17:09:52.430211+00:00",
+          "categories": [
+            "infrastructure"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "7e1de783153f305a",
+          "event_signature": "12ff27725acb09ad",
+          "family": "strategy",
+          "title": "APEC cam kết tăng cường hợp tác trước những rủi ro kinh tế toàn cầu",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/apec-cam-ket-tang-cuong-hop-tac-truoc-nhung-rui-ro-kinh-te-toan-cau-post1143473.vnp",
+          "observed_at": "2026-10-21T20:46:16+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "project_execution",
+        "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     }
@@ -2488,18 +2588,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-vĩnh-long-8b63f072",
-      "label": "Vĩnh Long",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-gia-lai-f5d3ac1a",
-      "label": "Gia Lai",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-cà-mau-5be786d4",
       "label": "Cà Mau",
       "entity_type": "location",
@@ -2508,6 +2596,12 @@
     {
       "entity_id": "auto-quảng-ngãi-2c2a20e3",
       "label": "Quảng Ngãi",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-tây-ninh-02d05047",
+      "label": "Tây Ninh",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T04:45:46.727701+00:00",
+    "generated_at": "2026-10-26T13:01:06.079794+00:00",
     "status": "active",
-    "history_days": 57,
+    "history_days": 58,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -22,25 +22,25 @@
     },
     {
       "category": "labor",
-      "recent_7d": 9,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 145,
+      "recent_7d": 11,
+      "baseline_21d": 10,
+      "baseline_expected_7d": 3.3,
+      "delta_pct": 230,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.7."
+      "explanation": "7 ngày gần nhất có 11 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
     },
     {
       "category": "monetary",
-      "recent_7d": 6,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 80,
+      "recent_7d": 7,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 133,
       "trend": "accelerating",
       "confidence": 85,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.3."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "infrastructure",
@@ -55,13 +55,13 @@
     },
     {
       "category": "energy",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 0,
+      "delta_pct": 33,
       "trend": "stable",
-      "confidence": 77,
-      "source_diversity_7d": 2,
+      "confidence": 86,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -77,10 +77,10 @@
     },
     {
       "category": "policy",
-      "recent_7d": 1,
+      "recent_7d": 2,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": -50,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -99,14 +99,14 @@
     },
     {
       "category": "fdi_industrial",
-      "recent_7d": 1,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": -79,
+      "recent_7d": 2,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": -54,
       "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 4.7."
+      "confidence": 83,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.3."
     },
     {
       "category": "capital_market",
@@ -155,6 +155,97 @@
   ],
   "top_new_events": [
     {
+      "id": "76f6a33805703bb0",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Cắt giảm thủ tục phải đi đôi với kiểm soát an toàn",
+      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cat-giam-thu-tuc-phai-di-doi-voi-kiem-soat-an-toan-10226102614053028.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T13:01:06.079794+00:00"
+    },
+    {
+      "id": "7a72b12fbe045ae6",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy chế và Kế hoạch hoạt động của Ban Chỉ đạo rà soát, hoàn thiện hệ thống vị trí việc làm",
+      "url": "https://baochinhphu.vn/quy-che-va-ke-hoach-hoat-dong-cua-ban-chi-dao-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-102261026165021339.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T13:01:06.079794+00:00"
+    },
+    {
+      "id": "67cb99e2da2dd514",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Triển khai hoàn thiện vị trí việc làm gắn với công tác cán bộ và cải cách chính sách tiền lương",
+      "url": "https://xaydungchinhsach.chinhphu.vn/trien-khai-hoan-thien-vi-tri-viec-lam-gan-voi-cong-tac-can-bo-va-cai-cach-chinh-sach-tien-luong-119261026164327694.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T13:01:06.079794+00:00"
+    },
+    {
+      "id": "8d35ba6d0424bec3",
+      "source_id": "evn-invest",
+      "publisher": "EVN - Đầu tư xây dựng",
+      "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-12-510114",
+      "categories": [
+        "energy",
+        "fdi_industrial"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "procurement",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T13:01:06.079794+00:00"
+    },
+    {
+      "id": "8b90e8157d1bbd7a",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Học tập, quán triệt Nghị quyết phải chuyển thành đổi mới cụ thể trong hoạt động của Đảng bộ và thực hiện nhiệm vụ của Ngân hàng Nhà nước Mới",
+      "url": "https://sbv.gov.vn/w/h%E1%BB%8Dc-t%E1%BA%ADp-qu%C3%A1n-tri%E1%BB%87t-ngh%E1%BB%8B-quy%E1%BA%BFt-ph%E1%BA%A3i-chuy%E1%BB%83n-th%C3%A0nh-%C4%91%E1%BB%95i-m%E1%BB%9Bi-c%E1%BB%A5-th%E1%BB%83-trong-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-%C4%91%E1%BA%A3ng-b%E1%BB%99-v%C3%A0-th",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-26T13:01:06.079794+00:00"
+    },
+    {
       "id": "de15e32d09c157e5",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +261,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-26T04:45:46.727701+00:00"
+      "first_seen_at": "2026-10-26T04:45:46.727701+00:00",
+      "collected_at": "2026-10-26T04:45:46.727701+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f4e405c270d74184",
@@ -188,7 +281,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-26T04:45:46.727701+00:00"
+      "first_seen_at": "2026-10-26T04:45:46.727701+00:00",
+      "collected_at": "2026-10-26T04:45:46.727701+00:00",
+      "last_seen_at": null
     },
     {
       "id": "97f441df49193567",
@@ -255,9 +350,10 @@
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 12,
-    "hiring": 8,
-    "market_data": 8,
+    "policy_regulation": 13,
+    "hiring": 10,
+    "market_data": 9,
+    "procurement": 1,
     "infrastructure_delivery": 1,
     "capex_expansion": 1
   },
@@ -266,9 +362,9 @@
     "Quảng Ninh": 1
   },
   "coverage": {
-    "historical_events": 910,
-    "candidate_events": 357,
-    "reference_events": 548,
+    "historical_events": 919,
+    "candidate_events": 362,
+    "reference_events": 552,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
