@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-26T22:40:38.687379+00:00",
+    "generated_at": "2026-10-27T05:04:41.945532+00:00",
     "mode": "open_world_economic_entity_discovery",
     "principle": "known_registry_normalizes_aliases_but_unknown_entities_can_enter_as_conservative_candidates",
     "trust_patch": "3.0.1"
@@ -9,45 +9,45 @@
   "coverage": {
     "sources": 4,
     "healthy_sources": 4,
-    "recent_events": 661,
-    "entities_seen_recently": 255,
-    "auto_discovered_entities": 244,
-    "history_events": 1100
+    "recent_events": 666,
+    "entities_seen_recently": 258,
+    "auto_discovered_entities": 247,
+    "history_events": 1107
   },
   "source_health": [
     {
       "source_id": "vnexpress-business",
       "publisher": "VnExpress Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 6,
       "error": null
     },
     {
       "source_id": "tuoitre-business",
       "publisher": "Tuổi Trẻ Kinh doanh",
       "status": "ok",
-      "items_this_run": 5,
+      "items_this_run": 7,
       "error": null
     },
     {
       "source_id": "thanhnien-economy",
       "publisher": "Thanh Niên Kinh tế",
       "status": "ok",
-      "items_this_run": 6,
+      "items_this_run": 5,
       "error": null
     },
     {
       "source_id": "vietnamplus-economy",
       "publisher": "VietnamPlus Kinh tế",
       "status": "ok",
-      "items_this_run": 9,
+      "items_this_run": 10,
       "error": null
     }
   ],
   "entity_counts": [
     {
       "entity_id": "vingroup_ecosystem",
-      "recent_events": 27
+      "recent_events": 26
     },
     {
       "entity_id": "evn_power_system",
@@ -118,11 +118,15 @@
       "recent_events": 8
     },
     {
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
+      "entity_id": "auto-đắk-lắk-3987b6e4",
       "recent_events": 7
     },
     {
-      "entity_id": "auto-đắk-lắk-3987b6e4",
+      "entity_id": "fpt_group",
+      "recent_events": 7
+    },
+    {
+      "entity_id": "auto-khánh-hòa-b1f03cd2",
       "recent_events": 7
     },
     {
@@ -140,10 +144,6 @@
     {
       "entity_id": "auto-msb-19acf4ef",
       "recent_events": 7
-    },
-    {
-      "entity_id": "fpt_group",
-      "recent_events": 6
     },
     {
       "entity_id": "auto-pnj-4d3f27cb",
@@ -222,6 +222,10 @@
       "recent_events": 4
     },
     {
+      "entity_id": "viettel_group",
+      "recent_events": 3
+    },
+    {
       "entity_id": "auto-hà-tĩnh-370488e7",
       "recent_events": 3
     },
@@ -288,6 +292,10 @@
     {
       "entity_id": "auto-vpbank-0ce5c450",
       "recent_events": 3
+    },
+    {
+      "entity_id": "auto-microsoft-64814a3b",
+      "recent_events": 2
     },
     {
       "entity_id": "auto-điện-biên-8a6161e5",
@@ -390,10 +398,6 @@
       "recent_events": 2
     },
     {
-      "entity_id": "viettel_group",
-      "recent_events": 2
-    },
-    {
       "entity_id": "auto-sơn-la-26d08f83",
       "recent_events": 2
     },
@@ -432,6 +436,22 @@
     {
       "entity_id": "auto-ông-trần-quí-thanh-714fc536",
       "recent_events": 2
+    },
+    {
+      "entity_id": "auto-ngành-công-thương-fc47d1be",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-mozambique-52760f1c",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-an-garden-a147e281",
+      "recent_events": 1
+    },
+    {
+      "entity_id": "auto-vicostone-7f2c755e",
+      "recent_events": 1
     },
     {
       "entity_id": "auto-ceo500-65815999",
@@ -719,10 +739,6 @@
     },
     {
       "entity_id": "auto-netflix-e42776aa",
-      "recent_events": 1
-    },
-    {
-      "entity_id": "auto-microsoft-64814a3b",
       "recent_events": 1
     },
     {
@@ -1059,10 +1075,6 @@
     },
     {
       "entity_id": "auto-vạn-xuân-group-c41220bb",
-      "recent_events": 1
-    },
-    {
-      "entity_id": "auto-vikki-digital-bank-b6d7aec2",
       "recent_events": 1
     }
   ],
@@ -2161,6 +2173,26 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
+      "id": "auto-microsoft-64814a3b",
+      "label": "Microsoft",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Microsoft"
+      ],
+      "recent_events": 2,
+      "families": [
+        "labor",
+        "strategy"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-seabank-edc6f710",
       "label": "SeABank",
       "entity_type": "organization_candidate",
@@ -2829,6 +2861,78 @@
       "suppression_reason": null
     },
     {
+      "id": "auto-ngành-công-thương-fc47d1be",
+      "label": "Ngành Công Thương",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Ngành Công Thương"
+      ],
+      "recent_events": 1,
+      "families": [
+        "labor"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-mozambique-52760f1c",
+      "label": "Mozambique",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "Mozambique"
+      ],
+      "recent_events": 1,
+      "families": [
+        "strategy"
+      ],
+      "publishers": [
+        "VietnamPlus Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-an-garden-a147e281",
+      "label": "AN Garden",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "AN Garden"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "auto-vicostone-7f2c755e",
+      "label": "VICOSTONE",
+      "entity_type": "organization_candidate",
+      "aliases": [
+        "VICOSTONE"
+      ],
+      "recent_events": 1,
+      "families": [
+        "project_execution"
+      ],
+      "publishers": [
+        "Thanh Niên Kinh tế"
+      ],
+      "candidate_status": "needs_repeat_or_primary_verification",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
       "id": "auto-ceo500-65815999",
       "label": "CEO500",
       "entity_type": "organization_candidate",
@@ -2953,99 +3057,208 @@
       "candidate_status": "needs_repeat_or_primary_verification",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
-    },
-    {
-      "id": "auto-cái-mép-922e62fa",
-      "label": "Cái Mép",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Cái Mép"
-      ],
-      "recent_events": 1,
-      "families": [
-        "project_execution"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-saigonbank-4ed2a660",
-      "label": "Saigonbank",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Saigonbank"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-kẹo-halloween-0e80fee7",
-      "label": "Kẹo Halloween",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "Kẹo Halloween"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-bigbang-910706c9",
-      "label": "BigBang",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "BigBang"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "VnExpress Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "auto-iphone-duo-58daf8de",
-      "label": "iPhone Duo",
-      "entity_type": "organization_candidate",
-      "aliases": [
-        "iPhone Duo"
-      ],
-      "recent_events": 1,
-      "families": [
-        "operating"
-      ],
-      "publishers": [
-        "Tuổi Trẻ Kinh doanh"
-      ],
-      "candidate_status": "needs_repeat_or_primary_verification",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
     }
   ],
   "events": [
+    {
+      "id": "8dac16932d1232a8",
+      "event_signature": "019976fbcdde7da4",
+      "entity_id": "auto-ngành-công-thương-fc47d1be",
+      "entity_label": "Ngành Công Thương",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "labor",
+      "title": "Ngành Công Thương phát động phong trào thi đua “Sáng kiến mỗi ngày” năm 2026",
+      "summary": "Phong trào “Sáng kiến mỗi ngày” hướng tới đưa đổi mới sáng tạo thành hoạt động thường xuyên, khơi dậy sức sáng tạo của người lao động, nâng cao năng suất và sức cạnh tranh của ngành Công Thương. Bộ Công Thương trao giải cuộc thi chính luận bảo vệ nền tảng tư tưởng của Đảng Ngành Công Thương đẩy mạnh phân cấp, phân quyền sát thực tế, gần dân hơn Rà soát, đánh",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/nganh-cong-thuong-phat-dong-phong-trao-thi-dua-sang-kien-moi-ngay-nam-2026-post1144477.vnp",
+      "published_at": "2026-10-27T11:27:06+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "e15ab76cfc28516f",
+      "event_signature": "344c2c13a2b4e6f5",
+      "entity_id": "auto-mozambique-52760f1c",
+      "entity_label": "Mozambique",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Mozambique coi Việt Nam là đối tác chiến lược hàng đầu trong hợp tác nông nghiệp",
+      "summary": "Đại sứ Việt Nam tại Mozambique đã có buổi làm việc với Bộ trưởng Nông nghiệp, Môi trường và Thủy sản Mozambique Roberto Mito Albino nhằm thúc đẩy các chương trình hợp tác trọng tâm giữa hai nước. Thúc đẩy hợp tác nông nghiệp, thương mại Việt Nam-Mozambique Thúc đẩy hợp tác giáo dục, đào tạo nguồn nhân lực Việt Nam-Mozambique Việt Nam chia sẻ kinh nghiệm kiểm",
+      "publisher": "VietnamPlus Kinh tế",
+      "source_url": "https://www.vietnamplus.vn/mozambique-coi-viet-nam-la-doi-tac-chien-luoc-hang-dau-trong-hop-tac-nong-nghiep-post1144420.vnp",
+      "published_at": "2026-10-27T05:49:23+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "ff8aad84c541ba57",
+      "event_signature": "e070405a96aaa4f6",
+      "entity_id": "vingroup_ecosystem",
+      "entity_label": "Hệ sinh thái Vingroup",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "capital",
+      "title": "Đọc nhanh 26-10: Giá dầu kéo Dow Jones giảm 653 điểm",
+      "summary": "Giá dầu tăng khiến Dow Jones giảm 653 điểm so với phiên thứ năm. Trong nước, Techcombank xin ý kiến cổ đông lập ngân hàng con, Vinhomes được huy động vốn làm nhà ở.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/doc-nhanh-26-10-gia-dau-keo-dow-jones-giam-653-diem-techcombank-muon-lap-ngan-hang-con-10026102607493285.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-26T04:46:45.592210+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "0aaa567fbc5119dc",
+      "event_signature": "dffb4127372905b5",
+      "entity_id": "evn_power_system",
+      "entity_label": "EVN / hệ thống điện quốc gia",
+      "entity_type": "strategic_operator",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Ký hợp đồng hơn 4.462 tỉ đồng cho thủy điện tích năng lớn nhất Đông Nam Á",
+      "summary": "EVN ký hợp đồng cung cấp thiết bị cơ điện trị giá hơn 4.462 tỉ đồng cho dự án thủy điện tích năng Bác Ái, dự kiến vận hành từ cuối năm 2029.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/ky-hop-dong-hon-4462-ti-dong-cho-thuy-dien-tich-nang-lon-nhat-dong-nam-a-100261026172133785.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "16c73c872e7d0952",
+      "event_signature": "2e6ee1c6dd335a68",
+      "entity_id": "masan_group",
+      "entity_label": "Masan",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "operating",
+      "title": "Lãi lớn sau 9 tháng, động lực nào cho Masan tăng trưởng tiếp?",
+      "summary": "Sau 9 tháng đầu năm 2026, Masan (HOSE: MSN) đã vượt kế hoạch lợi nhuận cơ sở cả năm. Tăng trưởng từ mảng tiêu dùng - bán lẻ và vật liệu chiến lược góp phần cải thiện dòng tiền, tạo thêm nguồn lực để tập đoàn giảm nợ vay.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/lai-lon-sau-9-thang-dong-luc-nao-cho-masan-tang-truong-tiep-100261026161511425.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "00115973e8308832",
+      "event_signature": "5550cefc5235d879",
+      "entity_id": "auto-đắk-lắk-3987b6e4",
+      "entity_label": "Đắk Lắk",
+      "entity_type": "location",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "Đắk Lắk chấn chỉnh tình trạng rao bán đất nền trên mạng xã hội",
+      "summary": "Sở Xây dựng Đắk Lắk yêu cầu rà soát, gỡ bỏ thông tin quảng cáo bất động sản sai lệch, đồng thời cảnh báo việc rao bán đất dự án chưa đủ điều kiện pháp lý, nhận đặt cọc hoặc thu tiền trái quy định.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/dak-lak-chan-chinh-tinh-trang-rao-ban-dat-nen-tren-mang-xa-hoi-100261026103926226.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": false,
+      "suppression_reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "id": "03ce8acda3b11854",
+      "event_signature": "1fd7048b8b7cf7c1",
+      "entity_id": "auto-an-garden-a147e281",
+      "entity_label": "AN Garden",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "AN Garden kết hợp kiến trúc thông tầng kép và không gian xanh tại ANmaison",
+      "summary": "AN Garden thuộc quần thể ANmaison tại Hải Phòng, kết hợp kiến trúc thông tầng kép, sân vườn riêng và hệ thống công viên. Với định hướng “Một tư gia, ba lớp thiên nhiên”, dự án đưa yếu tố nghỉ dưỡng vào không gian sống thường nhật.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/an-garden-ket-hop-kien-truc-thong-tang-kep-va-khong-gian-xanh-tai-anmaison-100261026161129088.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "8eed4407ba3a493b",
+      "event_signature": "221900c14e327482",
+      "entity_id": "fpt_group",
+      "entity_label": "FPT",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
+      "summary": "Anthropic nộp hồ sơ IPO giúp Nasdaq tăng 0,82% so với phiên thứ Sáu. Trong nước, FPT Telecom lãi 1.022 tỉ đồng quý 3, Viettel Post đầu tư dự án cửa khẩu thông minh.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "305e3276d8cbc44f",
+      "event_signature": "83970a117a465076",
+      "entity_id": "viettel_group",
+      "entity_label": "Viettel",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "family": "project_execution",
+      "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
+      "summary": "Anthropic nộp hồ sơ IPO giúp Nasdaq tăng 0,82% so với phiên thứ Sáu. Trong nước, FPT Telecom lãi 1.022 tỉ đồng quý 3, Viettel Post đầu tư dự án cửa khẩu thông minh.",
+      "publisher": "Tuổi Trẻ Kinh doanh",
+      "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
+      "published_at": "2026-10-27T05:04:41.945532+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
+    },
+    {
+      "id": "6fbbaa0586cef691",
+      "event_signature": "4cf2b7f3c84e92ae",
+      "entity_id": "auto-microsoft-64814a3b",
+      "entity_label": "Microsoft",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "strategy",
+      "title": "Microsoft đề xuất 60.000 nhân viên tự nguyện nghỉ việc",
+      "summary": "Khoảng 25% nhân lực có thể nghỉ việc kèm trợ cấp của Microsoft, trong bối cảnh công ty muốn giảm chi phí và dồn đầu tư cho AI.",
+      "publisher": "VnExpress Kinh doanh",
+      "source_url": "https://vnexpress.net/microsoft-de-xuat-60-000-nhan-vien-tu-nguyen-nghi-viec-5137242.html",
+      "published_at": "2026-10-27T03:30:00+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
+    {
+      "id": "43d4290421714f57",
+      "event_signature": "54983a8c9fa04af6",
+      "entity_id": "auto-vicostone-7f2c755e",
+      "entity_label": "VICOSTONE",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "family": "project_execution",
+      "title": "VICOSTONE triển khai chương trình ‘Tân trang nhà - Ngàn ưu đãi’ lên tới 20%",
+      "summary": "Nhân dịp ra mắt Bộ sưu tập mới DÒNG SÔNG BĂNG (Ice in Motion), VICOSTONE® triển khai chương trình khuyến mại 'Tân trang nhà - Ngàn ưu đãi' từ ngày 22.10 đến hết ngày 20.12.2026, với mức giảm giá lên tới 20% cho nhiều dòng sản phẩm đá nhân tạo cao cấp.",
+      "publisher": "Thanh Niên Kinh tế",
+      "source_url": "https://thanhnien.vn/vicostone-trien-khai-chuong-trinh-tan-trang-nha-ngan-uu-dai-len-toi-20-185261026174739443.htm",
+      "published_at": "2026-10-27T01:00:00+00:00",
+      "first_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
+    },
     {
       "id": "3d421a440e52a8a4",
       "event_signature": "9864e855ec38a709",
@@ -3060,27 +3273,10 @@
       "source_url": "https://www.vietnamplus.vn/da-nang-chuyen-huong-thu-hut-fdi-uu-tien-dong-von-chat-luong-cao-post1141648.vnp",
       "published_at": "2026-10-26T23:19:34+00:00",
       "first_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "ff8aad84c541ba57",
-      "event_signature": "e070405a96aaa4f6",
-      "entity_id": "vingroup_ecosystem",
-      "entity_label": "Hệ sinh thái Vingroup",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "capital",
-      "title": "Đọc nhanh 26-10: Giá dầu kéo Dow Jones giảm 653 điểm",
-      "summary": "Giá dầu tăng khiến Dow Jones giảm 653 điểm so với phiên thứ năm. Trong nước, Techcombank xin ý kiến cổ đông lập ngân hàng con, Vinhomes được huy động vốn làm nhà ở.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/doc-nhanh-26-10-gia-dau-keo-dow-jones-giam-653-diem-techcombank-muon-lap-ngan-hang-con-10026102607493285.htm",
-      "published_at": "2026-10-26T22:40:38.687379+00:00",
-      "first_seen_at": "2026-10-26T04:46:45.592210+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery"
     },
     {
       "id": "001d684c1be8f0cd",
@@ -3102,59 +3298,6 @@
       "suppression_reason": "geography_belongs_in_regional_radar"
     },
     {
-      "id": "0aaa567fbc5119dc",
-      "event_signature": "dffb4127372905b5",
-      "entity_id": "evn_power_system",
-      "entity_label": "EVN / hệ thống điện quốc gia",
-      "entity_type": "strategic_operator",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Ký hợp đồng hơn 4.462 tỉ đồng cho thủy điện tích năng lớn nhất Đông Nam Á",
-      "summary": "EVN ký hợp đồng cung cấp thiết bị cơ điện trị giá hơn 4.462 tỉ đồng cho dự án thủy điện tích năng Bác Ái, dự kiến vận hành từ cuối năm 2029.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/ky-hop-dong-hon-4462-ti-dong-cho-thuy-dien-tich-nang-lon-nhat-dong-nam-a-100261026172133785.htm",
-      "published_at": "2026-10-26T22:40:38.687379+00:00",
-      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "16c73c872e7d0952",
-      "event_signature": "2e6ee1c6dd335a68",
-      "entity_id": "masan_group",
-      "entity_label": "Masan",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "operating",
-      "title": "Lãi lớn sau 9 tháng, động lực nào cho Masan tăng trưởng tiếp?",
-      "summary": "Sau 9 tháng đầu năm 2026, Masan (HOSE: MSN) đã vượt kế hoạch lợi nhuận cơ sở cả năm. Tăng trưởng từ mảng tiêu dùng - bán lẻ và vật liệu chiến lược góp phần cải thiện dòng tiền, tạo thêm nguồn lực để tập đoàn giảm nợ vay.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/lai-lon-sau-9-thang-dong-luc-nao-cho-masan-tang-truong-tiep-100261026161511425.htm",
-      "published_at": "2026-10-26T22:40:38.687379+00:00",
-      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "00115973e8308832",
-      "event_signature": "5550cefc5235d879",
-      "entity_id": "auto-đắk-lắk-3987b6e4",
-      "entity_label": "Đắk Lắk",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Đắk Lắk chấn chỉnh tình trạng rao bán đất nền trên mạng xã hội",
-      "summary": "Sở Xây dựng Đắk Lắk yêu cầu rà soát, gỡ bỏ thông tin quảng cáo bất động sản sai lệch, đồng thời cảnh báo việc rao bán đất dự án chưa đủ điều kiện pháp lý, nhận đặt cọc hoặc thu tiền trái quy định.",
-      "publisher": "Tuổi Trẻ Kinh doanh",
-      "source_url": "https://tuoitre.vn/dak-lak-chan-chinh-tinh-trang-rao-ban-dat-nen-tren-mang-xa-hoi-100261026103926226.htm",
-      "published_at": "2026-10-26T22:40:38.687379+00:00",
-      "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "id": "43363978b8544eda",
       "event_signature": "3717a77bc7b91128",
       "entity_id": "auto-điện-biên-8a6161e5",
@@ -3168,7 +3311,7 @@
       "source_url": "https://www.vietnamplus.vn/dien-bien-mo-rong-hop-tac-xuyen-bien-gioi-tao-dong-luc-tang-truong-post1144379.vnp",
       "published_at": "2026-10-26T20:21:29+00:00",
       "first_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3187,7 +3330,7 @@
       "source_url": "https://www.vietnamplus.vn/viet-nam-lao-mo-rong-hop-tac-dau-tu-phat-trien-nong-nghiep-post1144353.vnp",
       "published_at": "2026-10-26T18:18:54+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3206,7 +3349,7 @@
       "source_url": "https://www.vietnamplus.vn/ceo500-va-bai-toan-hut-von-dau-tu-truc-tiep-nuoc-ngoai-the-he-moi-cho-tp-ho-chi-minh-post1144351.vnp",
       "published_at": "2026-10-26T18:03:32+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3225,7 +3368,7 @@
       "source_url": "https://www.vietnamplus.vn/concert-mo-them-dong-luc-cho-bat-dong-san-du-lich-nghi-duong-post1144346.vnp",
       "published_at": "2026-10-26T17:43:43+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3244,7 +3387,7 @@
       "source_url": "https://www.vietnamplus.vn/apec-2027-ket-noi-cong-nghe-thuc-day-nong-nghiep-xanh-post1144343.vnp",
       "published_at": "2026-10-26T17:10:00+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3263,7 +3406,7 @@
       "source_url": "https://www.vietnamplus.vn/tay-ninh-thu-hut-3-trung-tam-logistics-gan-voi-khu-kinh-te-cua-khau-va-cang-post1144304.vnp",
       "published_at": "2026-10-26T15:56:41+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3301,7 +3444,7 @@
       "source_url": "https://thanhnien.vn/agribank-trien-khai-giam-lai-suat-cho-vay-toi-20-nam-ho-tro-nguoi-dan-va-doanh-nghiep-185261026140230582.htm",
       "published_at": "2026-10-26T13:00:00+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3320,7 +3463,7 @@
       "source_url": "https://www.vietnamplus.vn/dak-lak-yeu-cau-xu-ly-dut-diem-cac-co-so-nha-dat-doi-du-post1144274.vnp",
       "published_at": "2026-10-26T12:28:13+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3339,7 +3482,7 @@
       "source_url": "https://thanhnien.vn/sp-global-ratings-danh-gia-doc-lap-khung-tai-chinh-ben-vung-cua-shb-185261026153721808.htm",
       "published_at": "2026-10-26T09:30:00+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3358,7 +3501,7 @@
       "source_url": "https://vnexpress.net/kienlongbank-giam-lai-do-uu-dai-tin-dung-5136942.html",
       "published_at": "2026-10-26T07:49:47+00:00",
       "first_seen_at": "2026-10-26T13:02:13.908942+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3432,7 +3575,7 @@
       "source_url": "https://thanhnien.vn/vietjet-khai-truong-duong-bay-thang-ha-noi-dai-nam-dai-loan-trung-quoc-185261026104347801.htm",
       "published_at": "2026-10-26T03:32:00+00:00",
       "first_seen_at": "2026-10-26T04:46:45.592210+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -3480,7 +3623,7 @@
       "event_signature": "f6d33919fc6194a4",
       "entity_id": "auto-cái-mép-922e62fa",
       "entity_label": "Cái Mép",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "project_execution",
       "title": "Cái Mép hút tàu container thế hệ mới, sức chở 15.500 TEU",
@@ -3490,16 +3633,14 @@
       "published_at": "2026-10-25T11:28:08.283735+00:00",
       "first_seen_at": "2026-10-23T17:07:16.827032+00:00",
       "last_seen_at": "2026-10-25T11:28:08.283735+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "7a4432f32e06fa10",
       "event_signature": "4df2a63ada4c1979",
       "entity_id": "auto-saigonbank-4ed2a660",
       "entity_label": "Saigonbank",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "Saigonbank giảm cả cho vay và huy động",
@@ -3508,17 +3649,15 @@
       "source_url": "https://vnexpress.net/saigonbank-giam-ca-cho-vay-va-huy-dong-5136587.html",
       "published_at": "2026-10-25T08:36:55+00:00",
       "first_seen_at": "2026-10-25T11:28:08.283735+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "637efd6df0f13849",
       "event_signature": "f0bbe6203576a16d",
       "entity_id": "auto-kẹo-halloween-0e80fee7",
       "entity_label": "Kẹo Halloween",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "Kẹo Halloween ế ẩm tại Mỹ",
@@ -3527,10 +3666,8 @@
       "source_url": "https://vnexpress.net/keo-halloween-e-am-tai-my-5136515.html",
       "published_at": "2026-10-25T01:00:00+00:00",
       "first_seen_at": "2026-10-25T04:41:03.393451+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "22c85bb382690db4",
@@ -3556,7 +3693,7 @@
       "event_signature": "075ef91996d4cfdc",
       "entity_id": "auto-bigbang-910706c9",
       "entity_label": "BigBang",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "BigBang có thể mang về hàng chục triệu USD lợi nhuận cho công ty chủ quản",
@@ -3565,10 +3702,8 @@
       "source_url": "https://vnexpress.net/bigbang-co-the-mang-ve-hang-chuc-trieu-usd-loi-nhuan-cho-cong-ty-chu-quan-5136490.html",
       "published_at": "2026-10-24T17:05:00+00:00",
       "first_seen_at": "2026-10-24T20:50:11.586186+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "87057e7815ac06f1",
@@ -3620,7 +3755,7 @@
       "source_url": "https://thanhnien.vn/can-tho-day-manh-phat-trien-nha-o-xa-hoi-185261024204100709.htm",
       "published_at": "2026-10-24T14:09:00+00:00",
       "first_seen_at": "2026-10-24T15:57:40.504601+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
@@ -3704,7 +3839,7 @@
       "event_signature": "2b8ee349118804b6",
       "entity_id": "auto-iphone-duo-58daf8de",
       "entity_label": "iPhone Duo",
-      "entity_type": "organization_candidate",
+      "entity_type": "auto_discovered_organization",
       "entity_origin": "auto_discovered",
       "family": "operating",
       "title": "iPhone Duo chính thức lên kệ tại Việt Nam, nguồn cung hạn chế",
@@ -3714,9 +3849,7 @@
       "published_at": "2026-10-24T10:59:57.637420+00:00",
       "first_seen_at": "2026-10-23T11:39:04.746006+00:00",
       "last_seen_at": "2026-10-24T10:59:57.637420+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
+      "evidence_grade": "media_discovery"
     },
     {
       "id": "07490196a635e4c5",
@@ -3819,7 +3952,7 @@
       "source_url": "https://vnexpress.net/agribank-giam-lai-suat-cho-vay-ho-tro-phat-trien-san-xuat-kinh-doanh-5136224.html",
       "published_at": "2026-10-24T01:00:00+00:00",
       "first_seen_at": "2026-10-24T04:36:52.458328+00:00",
-      "last_seen_at": "2026-10-26T22:40:38.687379+00:00",
+      "last_seen_at": "2026-10-27T05:04:41.945532+00:00",
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": true,
       "suppression_reason": null
@@ -7707,7 +7840,7 @@
       "event_signature": "e193114de082cff3",
       "entity_id": "auto-microsoft-64814a3b",
       "entity_label": "Microsoft",
-      "entity_type": "auto_discovered_organization",
+      "entity_type": "organization_candidate",
       "entity_origin": "auto_discovered",
       "family": "labor",
       "title": "Microsoft sa thải hàng loạt nhân sự ở Việt Nam?",
@@ -7717,7 +7850,9 @@
       "published_at": "2026-10-15T04:38:58.949742+00:00",
       "first_seen_at": "2026-10-14T11:52:16.677635+00:00",
       "last_seen_at": "2026-10-15T04:38:58.949742+00:00",
-      "evidence_grade": "media_discovery"
+      "evidence_grade": "media_discovery",
+      "eligible_for_entity_convergence": true,
+      "suppression_reason": null
     },
     {
       "id": "65c4121f96ce4133",
@@ -11992,133 +12127,6 @@
       "evidence_grade": "media_discovery",
       "eligible_for_entity_convergence": false,
       "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "91ad00d605850b52",
-      "event_signature": "963a2af7bfa5ad8d",
-      "entity_id": "hoa_phat_group",
-      "entity_label": "Hòa Phát",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Khánh Hòa phát triển kinh tế biển theo hướng hiện đại, xanh, thông minh",
-      "summary": "Khánh Hòa hình thành, phát triển các trung tâm kinh tế biển gồm Khu kinh tế Vân Phong ở phía Bắc tỉnh, là trung tâm kinh tế biển hiện đại, tập trung phát triển cảng biển, logistics và đô thị biển. Khánh Hòa: Thúc đẩy ứng dụng khoa học và công nghệ vào phát triển kinh tế biển Phát triển Vũng Áng theo mô hình khu kinh tế ven biển tổng hợp, đa ngành Nâng cao nă",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/khanh-hoa-phat-trien-kinh-te-bien-theo-huong-hien-dai-xanh-thong-minh-post1140088.vnp",
-      "published_at": "2026-10-05T11:56:52+00:00",
-      "first_seen_at": "2026-10-05T05:40:14.950969+00:00",
-      "last_seen_at": "2026-10-06T06:20:51.070039+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "5b7accb6f0faa5db",
-      "event_signature": "75330ce48a512979",
-      "entity_id": "auto-khánh-hòa-b1f03cd2",
-      "entity_label": "Khánh Hòa",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Khánh Hòa phát triển kinh tế biển theo hướng hiện đại, xanh, thông minh",
-      "summary": "Khánh Hòa hình thành, phát triển các trung tâm kinh tế biển gồm Khu kinh tế Vân Phong ở phía Bắc tỉnh, là trung tâm kinh tế biển hiện đại, tập trung phát triển cảng biển, logistics và đô thị biển. Khánh Hòa: Thúc đẩy ứng dụng khoa học và công nghệ vào phát triển kinh tế biển Phát triển Vũng Áng theo mô hình khu kinh tế ven biển tổng hợp, đa ngành Nâng cao nă",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/khanh-hoa-phat-trien-kinh-te-bien-theo-huong-hien-dai-xanh-thong-minh-post1140088.vnp",
-      "published_at": "2026-10-05T11:56:52+00:00",
-      "first_seen_at": "2026-10-05T05:40:14.950969+00:00",
-      "last_seen_at": "2026-10-06T06:20:51.070039+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "8fc77d173dfb6c47",
-      "event_signature": "7b9c2d44f4b4d756",
-      "entity_id": "sun_group",
-      "entity_label": "Sun Group",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "Hà Nội rà soát quy mô dự án safari Ba Vì của Sun Group",
-      "summary": "Phó giám đốc Sở Tài chính Hà Nội Đỗ Thị Thu Hằng cho biết, thành phố đang thẩm định hồ sơ đề xuất chủ trương đầu tư dự án safari Ba Vì. Qua rà soát hiện trạng sử dụng đất và tác động đến người dân, quy mô dự án được xác định sơ bộ khoảng 300 ha.",
-      "publisher": "Thanh Niên Kinh tế",
-      "source_url": "https://thanhnien.vn/ha-noi-ra-soat-quy-mo-du-an-safari-ba-vi-cua-sun-group-185261005174810414.htm",
-      "published_at": "2026-10-05T11:10:00+00:00",
-      "first_seen_at": "2026-10-05T14:38:41.457477+00:00",
-      "last_seen_at": "2026-10-07T13:23:28.529804+00:00",
-      "evidence_grade": "media_discovery"
-    },
-    {
-      "id": "706adfead4beded0",
-      "event_signature": "c1a80a3dc653f5cc",
-      "entity_id": "auto-vinalpha-4b535f5e",
-      "entity_label": "VinAlpha",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "family": "labor",
-      "title": "VinAlpha tuyển 15.000 nhân sự trên toàn quốc",
-      "summary": "VinAlpha tuyển các vị trí lái xe, lái máy cho loạt dự án trên cả nước, đi kèm chính sách lương thưởng, đào tạo và phúc lợi đa dạng.",
-      "publisher": "VnExpress Kinh doanh",
-      "source_url": "https://vnexpress.net/vinalpha-tuyen-15-000-nhan-su-tren-toan-quoc-5128579.html",
-      "published_at": "2026-10-05T08:35:00+00:00",
-      "first_seen_at": "2026-10-05T14:38:41.457477+00:00",
-      "last_seen_at": "2026-10-08T06:04:36.727986+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": true,
-      "suppression_reason": null
-    },
-    {
-      "id": "72bf00786f5317e4",
-      "event_signature": "4aa92ad6532e4e96",
-      "entity_id": "auto-tuyên-quang-6a8db616",
-      "entity_label": "Tuyên Quang",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "project_execution",
-      "title": "Tuyên Quang ban hành danh mục 181 dự án thu hút đầu tư ngoài ngân sách",
-      "summary": "Trong danh mục dự án thu hút đầu tư ngoài ngân sách trên địa bàn tỉnh Tuyên Quang giai đoạn 2026-2030, lĩnh vực công nghiệp có số lượng lớn nhất với 51 dự án. Điểm sáng công nghiệp chế biến, chế tạo tiếp sức cho kinh tế Tuyên Quang Lào Cai-Tuyên Quang: Nối những miền di sản thành một hành trình Tuyên Quang khai thác dư địa dịch vụ, tạo động lực tăng trưởng q",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/tuyen-quang-ban-hanh-danh-muc-181-du-an-thu-hut-dau-tu-ngoai-ngan-sach-post1140037.vnp",
-      "published_at": "2026-10-05T08:05:14+00:00",
-      "first_seen_at": "2026-10-05T05:40:14.950969+00:00",
-      "last_seen_at": "2026-10-06T00:03:58.328430+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "dc03816025c45c22",
-      "event_signature": "567a128cf7c1a545",
-      "entity_id": "auto-đà-nẵng-93ee49dd",
-      "entity_label": "Đà Nẵng",
-      "entity_type": "location",
-      "entity_origin": "auto_discovered",
-      "family": "capital",
-      "title": "Đà Nẵng đặt mục tiêu tỷ trọng giá trị tăng thêm của kinh tế số đạt 40% GRDP",
-      "summary": "Cùng với mục tiêu đến năm 2030, tỷ trọng giá trị tăng thêm của kinh tế số đạt 35-40% GRDP, Đà Nẵng phấn đấu tối thiểu 70% doanh nghiệp nhỏ và vừa được tiếp cận chương trình hỗ trợ chuyển đổi số. Nghị quyết 57 đột phá chuyển đổi: Nâng cấp toàn diện quản trị số và kinh tế số Đà Nẵng nước rút giải ngân vốn đầu tư công những tháng cuối năm Trung tâm tài chính qu",
-      "publisher": "VietnamPlus Kinh tế",
-      "source_url": "https://www.vietnamplus.vn/da-nang-dat-muc-tieu-ty-trong-gia-tri-tang-them-cua-kinh-te-so-dat-40-grdp-post1140034.vnp",
-      "published_at": "2026-10-05T07:44:29+00:00",
-      "first_seen_at": "2026-10-05T05:40:14.950969+00:00",
-      "last_seen_at": "2026-10-06T00:03:58.328430+00:00",
-      "evidence_grade": "media_discovery",
-      "eligible_for_entity_convergence": false,
-      "suppression_reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "id": "ef21a1c727c8929b",
-      "event_signature": "c738bbca20dafef2",
-      "entity_id": "evn_power_system",
-      "entity_label": "EVN / hệ thống điện quốc gia",
-      "entity_type": "strategic_operator",
-      "entity_origin": "curated_registry",
-      "family": "project_execution",
-      "title": "EVN đề nghị đàm phán lại giá mua điện loạt dự án tái tạo vướng nghiệm thu",
-      "summary": "Công ty Mua bán điện thuộc EVN đề nghị chủ đầu tư năng lượng tái tạo đàm phán giảm giá cho thời gian đã vận hành thương mại, nhưng chưa được chấp thuận nghiệm thu.",
-      "publisher": "VnExpress Kinh doanh",
-      "source_url": "https://vnexpress.net/evn-de-nghi-dam-phan-lai-gia-mua-dien-loat-du-an-tai-tao-vuong-nghiem-thu-5128495.html",
-      "published_at": "2026-10-05T05:49:51+00:00",
-      "first_seen_at": "2026-10-05T14:38:41.457477+00:00",
-      "last_seen_at": "2026-10-08T06:04:36.727986+00:00",
-      "evidence_grade": "media_discovery"
     }
   ],
   "warnings": [
@@ -12128,7 +12136,7 @@
     "Không suy ra cơ hội đầu tư/kinh doanh chỉ vì một entity xuất hiện nhiều trên báo."
   ],
   "trust_semantics": {
-    "prepared_at": "2026-10-26T22:40:54.765619+00:00",
+    "prepared_at": "2026-10-27T05:04:58.071515+00:00",
     "auto_entities_typed": 100,
     "auto_entities_suppressed_from_entity_convergence": 32,
     "rule": "locations_and_public_bodies_remain_discovery_context_but_cannot_pose_as_open_world_companies"
