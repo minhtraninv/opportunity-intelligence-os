@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-27T12:11:31.274925+00:00",
+    "generated_at": "2026-10-27T18:03:02.325430+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-27T12:11:31.556063+00:00"
+    "trust_hardened_at": "2026-10-27T18:03:02.614222+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -16,17 +16,202 @@
     "observed_auto_entities": 50,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 18,
-    "watch": 32,
+    "discovery_convergence": 19,
+    "watch": 31,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 18,
+    "discovery_candidates": 19,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 11
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
   "discovery_candidates": [
+    {
+      "entity_id": "evn_power_system",
+      "label": "EVN / hệ thống điện quốc gia",
+      "entity_type": "strategic_operator",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 21,
+      "why_now": "EVN / hệ thống điện quốc gia đang xuất hiện đồng thời trong 5 họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động.",
+      "evidence_families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "EVN - Vận hành hệ thống điện",
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 14,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment",
+        "strategy_execution_alignment",
+        "persistent_multi_period_attention"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "energy_grid",
+          "label": "energy_grid",
+          "score": null,
+          "status": null
+        },
+        {
+          "theme_id": "manufacturing_expansion",
+          "label": "manufacturing_expansion",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "f30842d7c07ba109",
+          "event_signature": "63e393cebc7dbc13",
+          "family": "project_execution",
+          "title": "Nóng: Phó thủ tướng yêu cầu tính toán giảm giá điện từ ngày 1.11 tới",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/nong-pho-thu-tuong-yeu-cau-tinh-toan-giam-gia-dien-tu-ngay-111-toi-18526102721443017.htm",
+          "observed_at": "2026-10-27T14:46:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "294cb19cd2a6a39d",
+          "event_signature": "43bc27f65dae1e53",
+          "family": "operating",
+          "title": "Xem xét giảm giá điện từ 1.11, đưa thuế tiêu thụ đặc biệt xăng về 0%",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/xem-xet-giam-gia-dien-tu-111-dua-thue-tieu-thu-dac-biet-xang-ve-0-185261027204734905.htm",
+          "observed_at": "2026-10-27T14:18:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "0aaa567fbc5119dc",
+          "event_signature": "dffb4127372905b5",
+          "family": "project_execution",
+          "title": "Ký hợp đồng hơn 4.462 tỉ đồng cho thủy điện tích năng lớn nhất Đông Nam Á",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ky-hop-dong-hon-4462-ti-dong-cho-thuy-dien-tich-nang-lon-nhat-dong-nam-a-100261026172133785.htm",
+          "observed_at": "2026-10-27T12:11:14.804576+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "3a8a89bc297e6911",
+          "family": "procurement",
+          "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-13-510114",
+          "observed_at": "2026-10-26T22:39:32.604589+00:00",
+          "categories": [
+            "energy",
+            "fdi_industrial"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        },
+        {
+          "id": "421f6667b680bc61",
+          "event_signature": "f7c68e2a168f36ee",
+          "family": "project_execution",
+          "title": "Thủ tướng yêu cầu triển khai ngay giải pháp bảo đảm cung ứng điện giai đoạn 2027-2030",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/thu-tuong-yeu-cau-trien-khai-ngay-giai-phap-bao-dam-cung-ung-dien-giai-doan-2027-2030-post1143718.vnp",
+          "observed_at": "2026-10-22T23:03:48+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "3c6a022a3df08196",
+          "event_signature": "b80b33b8a1b23721",
+          "family": "operating",
+          "title": "Bộ Công Thương đề xuất điều chỉnh quy định về giá bán lẻ điện sinh hoạt 5 bậc",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/bo-cong-thuong-de-xuat-dieu-chinh-quy-dinh-ve-gia-ban-le-dien-sinh-hoat-5-bac-post1143371.vnp",
+          "observed_at": "2026-10-21T14:48:58+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b82d7b9585694808",
+          "event_signature": "330edb7430772718",
+          "family": "operating",
+          "title": "Cải tổ EVN trong hệ thống điện: Xóa vai trò người mua duy nhất để khách hàng được chọn nhà cung cấp điện",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/cai-to-evn-trong-he-thong-dien-xoa-vai-tro-nguoi-mua-duy-nhat-de-dan-duoc-chon-nha-cung-cap-dien-10026101513484622.htm",
+          "observed_at": "2026-10-17T10:44:10.162089+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a87206e913cc5ec9",
+          "family": "policy",
+          "title": "Hơn 5500 đảng viên EVN tham gia Hội nghị toàn quốc nghiên cứu, học tập, quán triệt và triển khai thực hiện Nghị quyết Hội nghị Trung ương 4",
+          "publisher": "EVN - Vận hành hệ thống điện",
+          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-Hoi-nghi-toan-quoc-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-thuc-hien-Nghi-quyet-Hoi-nghi-Trung-uong-4-60-183-509978",
+          "observed_at": "2026-10-16T11:23:22.917789+00:00",
+          "categories": [
+            "energy"
+          ],
+          "geography": [],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 2,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "policy",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
     {
       "entity_id": "auto-techcombank-8fecbacf",
       "label": "Techcombank",
@@ -176,7 +361,7 @@
       "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -621,202 +806,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "evn_power_system",
-      "label": "EVN / hệ thống điện quốc gia",
-      "entity_type": "strategic_operator",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "EVN / hệ thống điện quốc gia đang xuất hiện đồng thời trong 5 họ bằng chứng độc lập và đã có bằng chứng primary. Đây là điểm hội tụ cần điều tra sâu, không phải khuyến nghị hành động.",
-      "evidence_families": [
-        "operating",
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "EVN - Vận hành hệ thống điện",
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 14,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "policy_execution_alignment",
-        "strategy_execution_alignment",
-        "persistent_multi_period_attention"
-      ],
-      "theme_context": [
-        {
-          "theme_id": "energy_grid",
-          "label": "energy_grid",
-          "score": null,
-          "status": null
-        },
-        {
-          "theme_id": "manufacturing_expansion",
-          "label": "manufacturing_expansion",
-          "score": null,
-          "status": null
-        },
-        {
-          "theme_id": "public_infrastructure",
-          "label": "public_infrastructure",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "0aaa567fbc5119dc",
-          "event_signature": "dffb4127372905b5",
-          "family": "project_execution",
-          "title": "Ký hợp đồng hơn 4.462 tỉ đồng cho thủy điện tích năng lớn nhất Đông Nam Á",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/ky-hop-dong-hon-4462-ti-dong-cho-thuy-dien-tich-nang-lon-nhat-dong-nam-a-100261026172133785.htm",
-          "observed_at": "2026-10-27T12:11:14.804576+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "3a8a89bc297e6911",
-          "family": "procurement",
-          "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-13-510114",
-          "observed_at": "2026-10-26T22:39:32.604589+00:00",
-          "categories": [
-            "energy",
-            "fdi_industrial"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "421f6667b680bc61",
-          "event_signature": "f7c68e2a168f36ee",
-          "family": "project_execution",
-          "title": "Thủ tướng yêu cầu triển khai ngay giải pháp bảo đảm cung ứng điện giai đoạn 2027-2030",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/thu-tuong-yeu-cau-trien-khai-ngay-giai-phap-bao-dam-cung-ung-dien-giai-doan-2027-2030-post1143718.vnp",
-          "observed_at": "2026-10-22T23:03:48+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "3c6a022a3df08196",
-          "event_signature": "b80b33b8a1b23721",
-          "family": "operating",
-          "title": "Bộ Công Thương đề xuất điều chỉnh quy định về giá bán lẻ điện sinh hoạt 5 bậc",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/bo-cong-thuong-de-xuat-dieu-chinh-quy-dinh-ve-gia-ban-le-dien-sinh-hoat-5-bac-post1143371.vnp",
-          "observed_at": "2026-10-21T14:48:58+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "d219edeb24be638a",
-          "family": "project_execution",
-          "title": "EVN khởi công Nhà máy Nhiệt điện LNG Quảng Trạch II, công bố phát điện Quảng Trạch I lên lưới điện quốc gia",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/EVN-khoi-cong-Nha-may-Nhiet-dien-LNG-Quang-Trach-II-cong-bo-phat-dien-Quang-Trach-I-len-luoi-dien-quoc-gia-60-12-510036",
-          "observed_at": "2026-10-20T11:35:12.657326+00:00",
-          "categories": [
-            "energy",
-            "fdi_industrial",
-            "infrastructure"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "b82d7b9585694808",
-          "event_signature": "330edb7430772718",
-          "family": "operating",
-          "title": "Cải tổ EVN trong hệ thống điện: Xóa vai trò người mua duy nhất để khách hàng được chọn nhà cung cấp điện",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/cai-to-evn-trong-he-thong-dien-xoa-vai-tro-nguoi-mua-duy-nhat-de-dan-duoc-chon-nha-cung-cap-dien-10026101513484622.htm",
-          "observed_at": "2026-10-17T10:44:10.162089+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a87206e913cc5ec9",
-          "family": "policy",
-          "title": "Hơn 5500 đảng viên EVN tham gia Hội nghị toàn quốc nghiên cứu, học tập, quán triệt và triển khai thực hiện Nghị quyết Hội nghị Trung ương 4",
-          "publisher": "EVN - Vận hành hệ thống điện",
-          "source_url": "https://www.evn.com.vn/d/vi-VN/news/Hon-5500-dang-vien-EVN-tham-gia-Hoi-nghi-toan-quoc-nghien-cuu-hoc-tap-quan-triet-va-trien-khai-thuc-hien-Nghi-quyet-Hoi-nghi-Trung-uong-4-60-183-509978",
-          "observed_at": "2026-10-16T11:23:22.917789+00:00",
-          "categories": [
-            "energy"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "0e5a36c9315d3a2f",
-          "event_signature": "070f5222f478edf5",
-          "family": "strategy",
-          "title": "Ôm nguồn lực khủng, định vị EVN ở đâu để không thiếu điện?",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/om-nguon-luc-khung-dinh-vi-evn-o-dau-de-khong-thieu-dien-100261014131640345.htm",
-          "observed_at": "2026-10-15T04:38:58.949742+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 3,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "operating",
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-msb-19acf4ef",
       "label": "MSB",
       "entity_type": "organization_candidate",
@@ -928,6 +917,117 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "viettel_group",
+      "label": "Viettel",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "Viettel đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "labor",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "305e3276d8cbc44f",
+          "event_signature": "83970a117a465076",
+          "family": "project_execution",
+          "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
+          "observed_at": "2026-10-27T18:02:44.458796+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6b4a44da2977917c",
+          "event_signature": "934a64af2fdea3ad",
+          "family": "project_execution",
+          "title": "Ra mắt 3 tháng, một ứng dụng Việt cán mốc 20 triệu người dùng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ra-mat-3-thang-mot-ung-dung-viet-can-moc-20-trieu-nguoi-dung-100261027154239178.htm",
+          "observed_at": "2026-10-27T18:02:44.458796+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "31d65712fc61e673",
+          "event_signature": "16c19c018a90a008",
+          "family": "strategy",
+          "title": "Viettel tại Lào cần chuyển từ cung cấp dịch vụ sang kiến tạo hệ sinh thái số",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/viettel-tai-lao-can-chuyen-tu-cung-cap-dich-vu-sang-kien-tao-he-sinh-thai-so-185261010131049905.htm",
+          "observed_at": "2026-10-10T07:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8ca1ee453f67d0bb",
+          "event_signature": "f89abfe1aa1754bd",
+          "family": "labor",
+          "title": "100 doanh nghiệp được người lao động yêu thích nhất năm 2026",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/100-doanh-nghiep-duoc-nguoi-lao-dong-yeu-thich-nhat-nam-2026-5130024.html",
+          "observed_at": "2026-10-08T10:59:16+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "labor",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-tổng-bí-012dc539",
       "label": "Tổng Bí",
       "entity_type": "organization_candidate",
@@ -949,7 +1049,7 @@
       "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1305,103 +1405,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "viettel_group",
-      "label": "Viettel",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Viettel đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "labor",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 3,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 3,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "305e3276d8cbc44f",
-          "event_signature": "83970a117a465076",
-          "family": "project_execution",
-          "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
-          "observed_at": "2026-10-27T12:11:14.804576+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "31d65712fc61e673",
-          "event_signature": "16c19c018a90a008",
-          "family": "strategy",
-          "title": "Viettel tại Lào cần chuyển từ cung cấp dịch vụ sang kiến tạo hệ sinh thái số",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/viettel-tai-lao-can-chuyen-tu-cung-cap-dich-vu-sang-kien-tao-he-sinh-thai-so-185261010131049905.htm",
-          "observed_at": "2026-10-10T07:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8ca1ee453f67d0bb",
-          "event_signature": "f89abfe1aa1754bd",
-          "family": "labor",
-          "title": "100 doanh nghiệp được người lao động yêu thích nhất năm 2026",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/100-doanh-nghiep-duoc-nguoi-lao-dong-yeu-thich-nhat-nam-2026-5130024.html",
-          "observed_at": "2026-10-08T10:59:16+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "labor",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-shb-9a3f1ca9",
       "label": "SHB",
       "entity_type": "organization_candidate",
@@ -1580,6 +1583,20 @@
       ],
       "evidence": [
         {
+          "id": "68a26a988f6e4629",
+          "event_signature": "3ba671797864adcb",
+          "family": "project_execution",
+          "title": "Nghiên cứu xe trung chuyển chạy thẳng giữa sân bay Long Thành và Tân Sơn Nhất",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/nghien-cuu-xe-trung-chuyen-chay-thang-giua-san-bay-long-thanh-va-tan-son-nhat-100261027204015122.htm",
+          "observed_at": "2026-10-27T18:02:44.458796+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
           "id": "74c0de60975ba058",
           "event_signature": "0b6e5205dc5f587a",
           "family": "project_execution",
@@ -1601,20 +1618,6 @@
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/1832-ti-dong-boi-thuong-giai-phong-mat-bang-metro-so-2-ben-thanh-thu-thiem-100261024175505815.htm",
           "observed_at": "2026-10-26T04:46:45.592210+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "009cae7fcf8131a0",
-          "event_signature": "0ea336af8c1bd57b",
-          "family": "project_execution",
-          "title": "Lo sân bay Long Thành 'hụt hơi' giai đoạn nước rút",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/lo-san-bay-long-thanh-hut-hoi-giai-doan-nuoc-rut-185261023225253493.htm",
-          "observed_at": "2026-10-23T23:03:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1700,7 +1703,7 @@
           "title": "Công ty bất động sản, nông sản rót hàng trăm tỉ vào cổ phiếu, trái phiếu họ Vingroup",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/cong-ty-bat-dong-san-nong-san-rot-hang-tram-ti-vao-co-phieu-trai-phieu-ho-vingroup-100261027123654095.htm",
-          "observed_at": "2026-10-27T12:11:14.804576+00:00",
+          "observed_at": "2026-10-27T18:02:44.458796+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1867,7 +1870,7 @@
           "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
-          "observed_at": "2026-10-27T12:11:14.804576+00:00",
+          "observed_at": "2026-10-27T18:02:44.458796+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -2191,6 +2194,114 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-agribank-190a6f70",
+      "label": "Agribank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 10,
+      "why_now": "Agribank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "b60c9e22b5f02a1c",
+          "event_signature": "c1e436206c89f3a6",
+          "family": "project_execution",
+          "title": "Agribank điều chỉnh giảm lãi suất cho vay hỗ trợ phát triển sản xuất kinh doanh",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/agribank-dieu-chinh-giam-lai-suat-cho-vay-ho-tro-phat-trien-san-xuat-kinh-doanh-185261026140609203.htm",
+          "observed_at": "2026-10-27T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "f551297f7f4999c3",
+          "event_signature": "721cce42ac690d5f",
+          "family": "project_execution",
+          "title": "Agribank triển khai giảm lãi suất cho vay tới 2,0%/năm, hỗ trợ người dân và doanh nghiệp",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/agribank-trien-khai-giam-lai-suat-cho-vay-toi-20-nam-ho-tro-nguoi-dan-va-doanh-nghiep-185261026140230582.htm",
+          "observed_at": "2026-10-26T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6d30993345cd8ce2",
+          "event_signature": "0043c8f9bb36ce64",
+          "family": "capital",
+          "title": "Agribank giảm lãi suất cho vay hỗ trợ phát triển sản xuất kinh doanh",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/agribank-giam-lai-suat-cho-vay-ho-tro-phat-trien-san-xuat-kinh-doanh-5136224.html",
+          "observed_at": "2026-10-24T01:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8a643d29ad547dfd",
+          "event_signature": "be9a8556c71f3f83",
+          "family": "project_execution",
+          "title": "Agribank cùng sinh viên ‘Gom điểm mỗi ngày - Đổi quà mê say’ trên Agribank Plus",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/agribank-cung-sinh-vien-gom-diem-moi-ngay-doi-qua-me-say-tren-agribank-plus-185261020144729177.htm",
+          "observed_at": "2026-10-20T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "hoa_phat_group",
       "label": "Hòa Phát",
       "entity_type": "business_group",
@@ -2209,7 +2320,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "policy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2417,12 +2528,6 @@
   "verified_watchlist": [],
   "suppressed_non_organizations": [
     {
-      "entity_id": "auto-hải-phòng-48a73a83",
-      "label": "Hải Phòng",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-cần-thơ-4ffa3dff",
       "label": "Cần Thơ",
       "entity_type": "location",
@@ -2441,8 +2546,8 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-quảng-trị-3b0b65db",
-      "label": "Quảng Trị",
+      "entity_id": "auto-hải-phòng-48a73a83",
+      "label": "Hải Phòng",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -2465,8 +2570,8 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-vĩnh-long-8b63f072",
-      "label": "Vĩnh Long",
+      "entity_id": "auto-quảng-trị-3b0b65db",
+      "label": "Quảng Trị",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
@@ -2483,8 +2588,8 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-tây-ninh-02d05047",
-      "label": "Tây Ninh",
+      "entity_id": "auto-vĩnh-long-8b63f072",
+      "label": "Vĩnh Long",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }

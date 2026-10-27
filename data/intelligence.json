@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T12:10:10.451375+00:00",
+    "generated_at": "2026-10-27T18:00:08.717003+00:00",
     "status": "active",
     "history_days": 59,
     "required_history_days": 14,
@@ -44,21 +44,21 @@
     },
     {
       "category": "energy",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 11,
       "baseline_expected_7d": 3.7,
-      "delta_pct": 9,
+      "delta_pct": 36,
       "trend": "stable",
-      "confidence": 90,
-      "source_diversity_7d": 3,
+      "confidence": 92,
+      "source_diversity_7d": 4,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "sme",
-      "recent_7d": 14,
+      "recent_7d": 16,
       "baseline_21d": 46,
       "baseline_expected_7d": 15.3,
-      "delta_pct": -9,
+      "delta_pct": 4,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -67,20 +67,9 @@
     {
       "category": "infrastructure",
       "recent_7d": 2,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": -40,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "logistics",
-      "recent_7d": 1,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": -50,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -102,6 +91,17 @@
       "recent_7d": 2,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "logistics",
+      "recent_7d": 1,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "3b9f4ffac1c418ea",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Khẩn trương xem xét phương án giảm giá điện và giảm thuế tiêu thụ đặc biệt với xăng",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-xem-xet-phuong-an-giam-gia-dien-va-giam-thue-tieu-thu-dac-biet-voi-xang-119261027191144365.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-27T18:00:08.717003+00:00"
+    },
+    {
+      "id": "f5abda7526f62e71",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 28/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-27T18:00:08.717003+00:00"
+    },
+    {
+      "id": "301461243b5d94fa",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 28/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-27T18:00:08.717003+00:00"
+    },
+    {
       "id": "35c9d249a7c1e1ea",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +226,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-27T12:10:10.451375+00:00"
+      "first_seen_at": "2026-10-27T12:10:10.451375+00:00",
+      "collected_at": "2026-10-27T12:10:10.451375+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6eabd49b7b5b175e",
@@ -188,7 +246,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-27T12:10:10.451375+00:00"
+      "first_seen_at": "2026-10-27T12:10:10.451375+00:00",
+      "collected_at": "2026-10-27T12:10:10.451375+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8bf9c76aef2c53dd",
@@ -276,126 +336,25 @@
       "first_seen_at": "2026-10-26T22:39:32.604589+00:00",
       "collected_at": "2026-10-26T22:39:32.604589+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "76f6a33805703bb0",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm: Cắt giảm thủ tục phải đi đôi với kiểm soát an toàn",
-      "url": "https://baochinhphu.vn/tong-bi-thu-chu-tich-nuoc-to-lam-cat-giam-thu-tuc-phai-di-doi-voi-kiem-soat-an-toan-10226102614053028.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T13:01:06.079794+00:00",
-      "collected_at": "2026-10-26T13:01:06.079794+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "7a72b12fbe045ae6",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Quy chế và Kế hoạch hoạt động của Ban Chỉ đạo rà soát, hoàn thiện hệ thống vị trí việc làm",
-      "url": "https://baochinhphu.vn/quy-che-va-ke-hoach-hoat-dong-cua-ban-chi-dao-ra-soat-hoan-thien-he-thong-vi-tri-viec-lam-102261026165021339.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T13:01:06.079794+00:00",
-      "collected_at": "2026-10-26T13:01:06.079794+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "67cb99e2da2dd514",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Triển khai hoàn thiện vị trí việc làm gắn với công tác cán bộ và cải cách chính sách tiền lương",
-      "url": "https://xaydungchinhsach.chinhphu.vn/trien-khai-hoan-thien-vi-tri-viec-lam-gan-voi-cong-tac-can-bo-va-cai-cach-chinh-sach-tien-luong-119261026164327694.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T13:01:06.079794+00:00",
-      "collected_at": "2026-10-26T13:01:06.079794+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8d35ba6d0424bec3",
-      "source_id": "evn-invest",
-      "publisher": "EVN - Đầu tư xây dựng",
-      "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-12-510114",
-      "categories": [
-        "energy",
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "procurement",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T13:01:06.079794+00:00",
-      "collected_at": "2026-10-26T13:01:06.079794+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8b90e8157d1bbd7a",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Học tập, quán triệt Nghị quyết phải chuyển thành đổi mới cụ thể trong hoạt động của Đảng bộ và thực hiện nhiệm vụ của Ngân hàng Nhà nước Mới",
-      "url": "https://sbv.gov.vn/w/h%E1%BB%8Dc-t%E1%BA%ADp-qu%C3%A1n-tri%E1%BB%87t-ngh%E1%BB%8B-quy%E1%BA%BFt-ph%E1%BA%A3i-chuy%E1%BB%83n-th%C3%A0nh-%C4%91%E1%BB%95i-m%E1%BB%9Bi-c%E1%BB%A5-th%E1%BB%83-trong-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-%C4%91%E1%BA%A3ng-b%E1%BB%99-v%C3%A0-th",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T13:01:06.079794+00:00",
-      "collected_at": "2026-10-26T13:01:06.079794+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 14,
+    "business_formation": 16,
     "policy_regulation": 11,
-    "market_data": 9,
+    "market_data": 10,
     "hiring": 6,
     "procurement": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 933,
-    "candidate_events": 368,
+    "historical_events": 936,
+    "candidate_events": 371,
     "reference_events": 560,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
