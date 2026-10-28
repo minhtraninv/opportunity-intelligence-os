@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T05:40:51.395960+00:00",
+    "generated_at": "2026-10-28T12:53:40.251755+00:00",
     "status": "active",
-    "history_days": 59,
+    "history_days": 60,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -22,32 +22,32 @@
     },
     {
       "category": "labor",
-      "recent_7d": 7,
+      "recent_7d": 10,
       "baseline_21d": 14,
       "baseline_expected_7d": 4.7,
-      "delta_pct": 50,
+      "delta_pct": 114,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.7."
+      "explanation": "7 ngày gần nhất có 10 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.7."
     },
     {
       "category": "monetary",
-      "recent_7d": 8,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": 200,
+      "recent_7d": 7,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 133,
       "trend": "accelerating",
       "confidence": 85,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 2.7."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
     },
     {
       "category": "construction",
-      "recent_7d": 9,
+      "recent_7d": 8,
       "baseline_21d": 25,
       "baseline_expected_7d": 8.3,
-      "delta_pct": 8,
+      "delta_pct": -4,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -66,10 +66,10 @@
     },
     {
       "category": "infrastructure",
-      "recent_7d": 2,
-      "baseline_21d": 7,
-      "baseline_expected_7d": 2.3,
-      "delta_pct": -14,
+      "recent_7d": 1,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": -62,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "a26edd99ff4a692f",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Phạm Thị Thanh Trà: Kiên định mục tiêu tăng trưởng hai con số, khẩn trương hoàn thiện vị trí việc làm",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-kien-dinh-muc-tieu-tang-truong-hai-con-so-khan-truong-hoan-thien-vi-tri-viec-lam-102261028135007927.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T12:53:40.251755+00:00"
+    },
+    {
+      "id": "1ce44e038821593c",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "KHẨN TRƯƠNG HOÀN THIỆN VỊ TRÍ VIỆC LÀM",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-hoan-thien-vi-tri-viec-lam-119261028145338749.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T12:53:40.251755+00:00"
+    },
+    {
+      "id": "621422422e777bcb",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quy định quản lý tổ chức bộ máy, vị trí việc làm, viên chức đơn vị sự nghiệp công lập của UBND TP Hà Nội",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ha-noi-ban-hanh-quy-dinh-quan-ly-to-chuc-bo-may-vi-tri-viec-lam-trong-don-vi-su-nghiep-cong-lap-119261028151455763.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Hà Nội"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T12:53:40.251755+00:00"
+    },
+    {
       "id": "0555697cc4d336a9",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -171,7 +227,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
+      "collected_at": "2026-10-28T05:40:51.395960+00:00",
+      "last_seen_at": null
     },
     {
       "id": "c26f905a013a6e91",
@@ -191,7 +249,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
+      "collected_at": "2026-10-28T05:40:51.395960+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8aba01ebd3233b87",
@@ -209,7 +269,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
+      "collected_at": "2026-10-28T05:40:51.395960+00:00",
+      "last_seen_at": null
     },
     {
       "id": "d9f2fdc1cc0a2b20",
@@ -227,7 +289,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
+      "collected_at": "2026-10-28T05:40:51.395960+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3b9f4ffac1c418ea",
@@ -290,61 +354,23 @@
       "first_seen_at": "2026-10-27T18:00:08.717003+00:00",
       "collected_at": "2026-10-27T18:00:08.717003+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "35c9d249a7c1e1ea",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Khẩn trương xem xét phương án giảm thuế tiêu thụ đặc biệt với xăng về 0% và giảm giá điện",
-      "url": "https://baochinhphu.vn/khan-truong-xem-xet-phuong-an-giam-thue-tieu-thu-dac-biet-voi-xang-ve-0-va-giam-gia-dien-102261027183811931.htm",
-      "categories": [
-        "energy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-27T12:10:10.451375+00:00",
-      "collected_at": "2026-10-27T12:10:10.451375+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "6eabd49b7b5b175e",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Học tập, quán triệt Nghị quyết phải chuyển thành đổi mới cụ thể trong hoạt động của Đảng bộ và thực hiện nhiệm vụ của Ngân hàng Nhà nước",
-      "url": "https://sbv.gov.vn/w/h%E1%BB%8Dc-t%E1%BA%ADp-qu%C3%A1n-tri%E1%BB%87t-ngh%E1%BB%8B-quy%E1%BA%BFt-ph%E1%BA%A3i-chuy%E1%BB%83n-th%C3%A0nh-%C4%91%E1%BB%95i-m%E1%BB%9Bi-c%E1%BB%A5-th%E1%BB%83-trong-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-%C4%91%E1%BA%A3ng-b%E1%BB%99-v%C3%A0-th",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-27T12:10:10.451375+00:00",
-      "collected_at": "2026-10-27T12:10:10.451375+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
     "policy_regulation": 13,
-    "market_data": 11,
-    "hiring": 6,
+    "hiring": 9,
+    "market_data": 9,
     "procurement": 2,
     "infrastructure_delivery": 1
   },
-  "geographies_7d": {},
+  "geographies_7d": {
+    "Hà Nội": 1
+  },
   "coverage": {
-    "historical_events": 941,
-    "candidate_events": 375,
-    "reference_events": 561,
+    "historical_events": 946,
+    "candidate_events": 378,
+    "reference_events": 563,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
