@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T22:13:38.061232+00:00",
+    "generated_at": "2026-10-28T05:40:51.395960+00:00",
     "status": "active",
     "history_days": 59,
     "required_history_days": 14,
@@ -10,15 +10,26 @@
   },
   "category_changes": [
     {
+      "category": "energy",
+      "recent_7d": 6,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 64,
+      "trend": "accelerating",
+      "confidence": 94,
+      "source_diversity_7d": 4,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.7."
+    },
+    {
       "category": "labor",
       "recent_7d": 7,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 62,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
+      "delta_pct": 50,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.3."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 4.7."
     },
     {
       "category": "monetary",
@@ -33,32 +44,21 @@
     },
     {
       "category": "construction",
-      "recent_7d": 10,
-      "baseline_21d": 24,
-      "baseline_expected_7d": 8.0,
-      "delta_pct": 25,
+      "recent_7d": 9,
+      "baseline_21d": 25,
+      "baseline_expected_7d": 8.3,
+      "delta_pct": 8,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "energy",
-      "recent_7d": 5,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 36,
-      "trend": "stable",
-      "confidence": 92,
-      "source_diversity_7d": 4,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "sme",
       "recent_7d": 14,
-      "baseline_21d": 48,
-      "baseline_expected_7d": 16.0,
-      "delta_pct": -12,
+      "baseline_21d": 46,
+      "baseline_expected_7d": 15.3,
+      "delta_pct": -9,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -67,9 +67,9 @@
     {
       "category": "infrastructure",
       "recent_7d": 2,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -25,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -14,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -78,17 +78,39 @@
     {
       "category": "fdi_industrial",
       "recent_7d": 2,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": -54,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": -50,
       "trend": "cooling",
-      "confidence": 83,
+      "confidence": 81,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.3."
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 4.0."
     },
     {
       "category": "policy",
       "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 1,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
       "delta_pct": null,
@@ -106,28 +128,6 @@
       "trend": "insufficient_sample",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "capital_market",
-      "recent_7d": 0,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 46,
-      "source_diversity_7d": 0,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "data_ai",
-      "recent_7d": 0,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 46,
-      "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -154,6 +154,81 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "0555697cc4d336a9",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Vị trí việc làm và điều kiện để công chức cấp xã được hưởng hỗ trợ chuyển đổi số",
+      "url": "https://xaydungchinhsach.chinhphu.vn/vi-tri-viec-lam-va-dieu-kien-de-cong-chuc-cap-xa-duoc-huong-ho-tro-chuyen-doi-so-119261028062616029.htm",
+      "categories": [
+        "data_ai",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+    },
+    {
+      "id": "c26f905a013a6e91",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xem xét giảm giá điện và giảm thuế tiêu thụ đặc biệt với xăng từ 01/11/2026",
+      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-xem-xet-phuong-an-giam-gia-dien-va-giam-thue-tieu-thu-dac-biet-voi-xang-119261027191144365.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+    },
+    {
+      "id": "8aba01ebd3233b87",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Chứng khoán: Cải cách thủ tục hành chính, bảo vệ quyền lợi chính đáng của nhà đầu tư",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-cai-cach-thu-tuc-hanh-chinh-bao-ve-quyen-loi-chinh-dang-cua-nha-dau-tu-119261028112115695.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+    },
+    {
+      "id": "d9f2fdc1cc0a2b20",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Chứng khoán: Làm rõ tiêu chuẩn người đại diện công ty chứng khoán, công ty quản lý quỹ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-lam-ro-tieu-chuan-nguoi-dai-dien-cong-ty-chung-khoan-cong-ty-quan-ly-quy-119261028104821088.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-28T05:40:51.395960+00:00"
+    },
     {
       "id": "3b9f4ffac1c418ea",
       "source_id": "gov-policy",
@@ -255,112 +330,25 @@
       "first_seen_at": "2026-10-27T12:10:10.451375+00:00",
       "collected_at": "2026-10-27T12:10:10.451375+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "8bf9c76aef2c53dd",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Kế hoạch xây dựng cơ sở dữ liệu vị trí việc làm gắn với phương án giao biên chế giai đoạn 2027-2031",
-      "url": "https://baochinhphu.vn/ke-hoach-xay-dung-co-so-du-lieu-vi-tri-viec-lam-gan-voi-phuong-an-giao-bien-che-giai-doan-2027-2031-102261026212222931.htm",
-      "categories": [
-        "construction",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2027,
-        2031
-      ],
-      "first_seen_at": "2026-10-26T22:39:32.604589+00:00",
-      "collected_at": "2026-10-26T22:39:32.604589+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "894bcec1b95882bf",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 27/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-26T22:39:32.604589+00:00",
-      "collected_at": "2026-10-26T22:39:32.604589+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "0db01237774cd45e",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 27/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T22:39:32.604589+00:00",
-      "collected_at": "2026-10-26T22:39:32.604589+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3a8a89bc297e6911",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
-      "title": "EVN ký kết gói thầu cung cấp thiết bị cơ điện cho Dự án Nhà máy thủy điện tích năng Bác Ái",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/EVN-ky-ket-goi-thau-cung-cap-thiet-bi-co-dien-cho-Du-an-Nha-may-thuy-dien-tich-nang-Bac-Ai-60-13-510114",
-      "categories": [
-        "energy",
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "procurement",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-26T22:39:32.604589+00:00",
-      "collected_at": "2026-10-26T22:39:32.604589+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 11,
-    "market_data": 10,
+    "policy_regulation": 13,
+    "market_data": 11,
     "hiring": 6,
     "procurement": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 936,
-    "candidate_events": 371,
-    "reference_events": 560,
+    "historical_events": 941,
+    "candidate_events": 375,
+    "reference_events": 561,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
