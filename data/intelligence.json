@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T22:34:23.526161+00:00",
+    "generated_at": "2026-10-29T05:46:55.140750+00:00",
     "status": "active",
     "history_days": 60,
     "required_history_days": 14,
@@ -9,6 +9,17 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
+    {
+      "category": "monetary",
+      "recent_7d": 7,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 91,
+      "trend": "accelerating",
+      "confidence": 96,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.7."
+    },
     {
       "category": "labor",
       "recent_7d": 9,
@@ -21,22 +32,11 @@
       "explanation": "7 ngày gần nhất có 9 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.0."
     },
     {
-      "category": "monetary",
-      "recent_7d": 7,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 133,
-      "trend": "accelerating",
-      "confidence": 85,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 3.0."
-    },
-    {
       "category": "construction",
-      "recent_7d": 8,
-      "baseline_21d": 25,
-      "baseline_expected_7d": 8.3,
-      "delta_pct": -4,
+      "recent_7d": 6,
+      "baseline_21d": 27,
+      "baseline_expected_7d": 9.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -66,10 +66,10 @@
     },
     {
       "category": "infrastructure",
-      "recent_7d": 1,
+      "recent_7d": 2,
       "baseline_21d": 8,
       "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -98,6 +98,17 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
+      "category": "logistics",
+      "recent_7d": 2,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "policy",
       "recent_7d": 1,
       "baseline_21d": 4,
@@ -113,17 +124,6 @@
       "recent_7d": 1,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "logistics",
-      "recent_7d": 1,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,6 +155,63 @@
   ],
   "top_new_events": [
     {
+      "id": "e8432e33f1ed3a6b",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Thường trực Phạm Gia Túc dự lễ khởi công cảng Yên Bình (Thái Nguyên)",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-du-le-khoi-cong-cang-yen-binh-thai-nguyen-102261029112305951.htm",
+      "categories": [
+        "infrastructure",
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "infrastructure_delivery",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Thái Nguyên"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-29T05:46:55.140750+00:00"
+    },
+    {
+      "id": "29951f1f22e4cc86",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Fed giữ nguyên lãi suất và định hướng chính sách những tháng cuối năm",
+      "url": "https://baochinhphu.vn/fed-giu-nguyen-lai-suat-va-dinh-huong-chinh-sach-nhung-thang-cuoi-nam-10226102908345325.htm",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-29T05:46:55.140750+00:00"
+    },
+    {
+      "id": "eeffd945ed6d32dd",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Fed giữ nguyên lãi suất, chính sách tiền tệ toàn cầu tiếp tục phân hóa trước áp lực lạm phát",
+      "url": "https://sbv.gov.vn/w/fed-gi%E1%BB%AF-nguy%C3%AAn-l%C3%A3i-su%E1%BA%A5t-ch%C3%ADnh-s%C3%A1ch-ti%E1%BB%81n-t%E1%BB%87-to%C3%A0n-c%E1%BA%A7u-ti%E1%BA%BFp-t%E1%BB%A5c-ph%C3%A2n-h%C3%B3a-tr%C6%B0%E1%BB%9Bc-%C3%A1p-l%E1%BB%B1c-l%E1%BA%A1m-ph%C3%A1t",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-29T05:46:55.140750+00:00"
+    },
+    {
       "id": "035609589b84a612",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +229,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-28T22:34:23.526161+00:00"
+      "first_seen_at": "2026-10-28T22:34:23.526161+00:00",
+      "collected_at": "2026-10-28T22:34:23.526161+00:00",
+      "last_seen_at": null
     },
     {
       "id": "46981d6c5f35366c",
@@ -190,7 +249,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-28T22:34:23.526161+00:00"
+      "first_seen_at": "2026-10-28T22:34:23.526161+00:00",
+      "collected_at": "2026-10-28T22:34:23.526161+00:00",
+      "last_seen_at": null
     },
     {
       "id": "a26edd99ff4a692f",
@@ -253,106 +314,24 @@
       "first_seen_at": "2026-10-28T12:53:40.251755+00:00",
       "collected_at": "2026-10-28T12:53:40.251755+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "0555697cc4d336a9",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Vị trí việc làm và điều kiện để công chức cấp xã được hưởng hỗ trợ chuyển đổi số",
-      "url": "https://xaydungchinhsach.chinhphu.vn/vi-tri-viec-lam-va-dieu-kien-de-cong-chuc-cap-xa-duoc-huong-ho-tro-chuyen-doi-so-119261028062616029.htm",
-      "categories": [
-        "data_ai",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
-      "collected_at": "2026-10-28T05:40:51.395960+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "c26f905a013a6e91",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Xem xét giảm giá điện và giảm thuế tiêu thụ đặc biệt với xăng từ 01/11/2026",
-      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-xem-xet-phuong-an-giam-gia-dien-va-giam-thue-tieu-thu-dac-biet-voi-xang-119261027191144365.htm",
-      "categories": [
-        "energy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
-      "collected_at": "2026-10-28T05:40:51.395960+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8aba01ebd3233b87",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Sửa Luật Chứng khoán: Cải cách thủ tục hành chính, bảo vệ quyền lợi chính đáng của nhà đầu tư",
-      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-cai-cach-thu-tuc-hanh-chinh-bao-ve-quyen-loi-chinh-dang-cua-nha-dau-tu-119261028112115695.htm",
-      "categories": [
-        "capital_market"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
-      "collected_at": "2026-10-28T05:40:51.395960+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "d9f2fdc1cc0a2b20",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Sửa Luật Chứng khoán: Làm rõ tiêu chuẩn người đại diện công ty chứng khoán, công ty quản lý quỹ",
-      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-lam-ro-tieu-chuan-nguoi-dai-dien-cong-ty-chung-khoan-cong-ty-quan-ly-quy-119261028104821088.htm",
-      "categories": [
-        "capital_market"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-28T05:40:51.395960+00:00",
-      "collected_at": "2026-10-28T05:40:51.395960+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
     "policy_regulation": 13,
     "hiring": 9,
-    "market_data": 7,
-    "procurement": 2,
-    "infrastructure_delivery": 1
+    "market_data": 5,
+    "infrastructure_delivery": 2,
+    "procurement": 2
   },
   "geographies_7d": {
+    "Thái Nguyên": 1,
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 951,
-    "candidate_events": 380,
-    "reference_events": 566,
+    "historical_events": 957,
+    "candidate_events": 383,
+    "reference_events": 569,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
