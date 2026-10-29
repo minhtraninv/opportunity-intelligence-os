@@ -1,23 +1,23 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-29T13:00:41.711050+00:00",
+    "generated_at": "2026-10-29T22:45:49.462817+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-29T13:00:41.972070+00:00"
+    "trust_hardened_at": "2026-10-29T22:45:49.920350+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 59,
-    "observed_auto_entities": 50,
+    "observed_entities": 57,
+    "observed_auto_entities": 48,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 20,
-    "watch": 28,
+    "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
     "discovery_candidates": 17,
@@ -49,7 +49,7 @@
       "event_count": 14,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1253,7 +1253,7 @@
       "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1511,6 +1511,143 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-shb-9a3f1ca9",
+      "label": "SHB",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 14,
+      "why_now": "SHB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 6,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 6,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "c4cefa363dce9b9b",
+          "event_signature": "1af2a50d75a18777",
+          "family": "strategy",
+          "title": "SHB nhận giải thưởng Chất lượng thanh toán quốc tế xuất sắc từ Citibank",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-nhan-giai-thuong-chat-luong-thanh-toan-quoc-te-xuat-sac-tu-citibank-post1143652.vnp",
+          "observed_at": "2026-10-23T10:43:27+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ec78a292721b1144",
+          "event_signature": "4268748b72eb835d",
+          "family": "strategy",
+          "title": "SHB bắt tay Đại học Huế đào tạo nhân lực, ứng dụng AI",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/shb-bat-tay-dai-hoc-hue-dao-tao-nhan-luc-ung-dung-ai-100261021084005169.htm",
+          "observed_at": "2026-10-22T04:44:52.804325+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6a8894e16a751d30",
+          "event_signature": "f4af4a7291351536",
+          "family": "project_execution",
+          "title": "SHB lần đầu công bố khung tài chính bền vững",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/shb-lan-dau-cong-bo-khung-tai-chinh-ben-vung-5135111.html",
+          "observed_at": "2026-10-21T08:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ca219d1a177aa051",
+          "event_signature": "7af90e2e0ed054aa",
+          "family": "strategy",
+          "title": "SHB đã nhận toàn bộ giá trị chuyển nhượng SHBFinance từ Krungsri",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-da-nhan-toan-bo-gia-tri-chuyen-nhuong-shbfinance-tu-krungsri-post1142370.vnp",
+          "observed_at": "2026-10-16T14:54:35+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "51bb4824bfe6d060",
+          "event_signature": "c315c76f0927aea4",
+          "family": "project_execution",
+          "title": "SHB vay hợp vốn 340 triệu USD từ các tổ chức tài chính quốc tế",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-vay-hop-von-340-trieu-usd-tu-cac-to-chuc-tai-chinh-quoc-te-post1142189.vnp",
+          "observed_at": "2026-10-16T08:34:50+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "fff035266e48cd20",
+          "event_signature": "5f0b9eaecb98159b",
+          "family": "project_execution",
+          "title": "SHB của bầu Hiển lên tiếng trước tin đồn",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/thi-gia-miet-mai-giam-ve-moc-10000-dong-shb-cua-bau-hien-len-tieng-truoc-tin-don-100261009205916649.htm",
+          "observed_at": "2026-10-11T21:59:02.268556+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "long_thanh_airport",
       "label": "Cảng hàng không quốc tế Long Thành",
       "entity_type": "strategic_project",
@@ -1656,7 +1793,7 @@
       "event_count": 9,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -2236,99 +2373,6 @@
       "verified_evidence_families": [],
       "discovery_evidence_families": [
         "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-sửa-luật-chứng-f14a8354",
-      "label": "Sửa Luật Chứng",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 10,
-      "why_now": "Sửa Luật Chứng đã xuất hiện trong radar nhưng chưa đủ họ bằng chứng để gọi là hội tụ.",
-      "evidence_families": [
-        "policy",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Chính sách pháp luật - Chính phủ",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 3,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 1,
-      "newest_evidence_age_days": 1,
-      "anomaly_flags": [],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "c3c99d376e0f5a90",
-          "event_signature": "7f7164a3c211769c",
-          "family": "strategy",
-          "title": "Sửa Luật Chứng khoán: Mở cửa đón nhà quản trị toàn cầu, giữ kỷ cương thị trường",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/sua-luat-chung-khoan-mo-cua-don-nha-quan-tri-toan-cau-giu-ky-cuong-thi-truong-post1144714.vnp",
-          "observed_at": "2026-10-28T10:52:01+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8aba01ebd3233b87",
-          "family": "policy",
-          "title": "Sửa Luật Chứng khoán: Cải cách thủ tục hành chính, bảo vệ quyền lợi chính đáng của nhà đầu tư",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-cai-cach-thu-tuc-hanh-chinh-bao-ve-quyen-loi-chinh-dang-cua-nha-dau-tu-119261028112115695.htm",
-          "observed_at": "2026-10-28T05:40:51.395960+00:00",
-          "categories": [
-            "capital_market"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        },
-        {
-          "id": "d9f2fdc1cc0a2b20",
-          "family": "policy",
-          "title": "Sửa Luật Chứng khoán: Làm rõ tiêu chuẩn người đại diện công ty chứng khoán, công ty quản lý quỹ",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-chung-khoan-lam-ro-tieu-chuan-nguoi-dai-dien-cong-ty-chung-khoan-cong-ty-quan-ly-quy-119261028104821088.htm",
-          "observed_at": "2026-10-28T05:40:51.395960+00:00",
-          "categories": [
-            "capital_market"
-          ],
-          "geography": [],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 2,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "policy",
         "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."

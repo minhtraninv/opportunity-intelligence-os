@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-29T12:59:30.035764+00:00",
+    "generated_at": "2026-10-29T22:44:23.207049+00:00",
     "status": "active",
     "history_days": 61,
     "required_history_days": 14,
@@ -66,10 +66,10 @@
     },
     {
       "category": "infrastructure",
-      "recent_7d": 2,
+      "recent_7d": 1,
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
-      "delta_pct": -14,
+      "delta_pct": -57,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -78,13 +78,13 @@
     {
       "category": "construction",
       "recent_7d": 4,
-      "baseline_21d": 28,
-      "baseline_expected_7d": 9.3,
-      "delta_pct": -57,
+      "baseline_21d": 25,
+      "baseline_expected_7d": 8.3,
+      "delta_pct": -52,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 9.3."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 8.3."
     },
     {
       "category": "capital_market",
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "1451ee07fe4be1ce",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 30/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-29T22:44:23.207049+00:00"
+    },
+    {
+      "id": "3e00ccf600366298",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 30/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-29T22:44:23.207049+00:00"
+    },
+    {
       "id": "e8432e33f1ed3a6b",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -216,48 +254,6 @@
       "first_seen_at": "2026-10-29T05:46:55.140750+00:00",
       "collected_at": "2026-10-29T05:46:55.140750+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "035609589b84a612",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 29/10/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-28T22:34:23.526161+00:00",
-      "collected_at": "2026-10-28T22:34:23.526161+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "46981d6c5f35366c",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 29/10 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-28T22:34:23.526161+00:00",
-      "collected_at": "2026-10-28T22:34:23.526161+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
@@ -265,17 +261,17 @@
     "policy_regulation": 10,
     "hiring": 9,
     "market_data": 4,
-    "infrastructure_delivery": 2,
-    "procurement": 2
+    "procurement": 2,
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {
     "Thái Nguyên": 1,
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 963,
-    "candidate_events": 383,
-    "reference_events": 575,
+    "historical_events": 966,
+    "candidate_events": 385,
+    "reference_events": 576,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
