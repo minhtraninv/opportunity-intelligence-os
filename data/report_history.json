@@ -12864,10 +12864,10 @@
   {
     "kind": "monthly",
     "period_key": "2026-10",
-    "period_state": "month_to_date",
+    "period_state": "final",
     "title": "Monthly Regime Review",
-    "generated_at": "2026-10-30T12:55:54.448577+00:00",
-    "local_generated_at": "2026-10-30T19:55:54.433662+07:00",
+    "generated_at": "2026-10-30T22:20:00.652235+00:00",
+    "local_generated_at": "2026-10-31T05:20:00.643237+07:00",
     "history_status": "ready",
     "history_readiness": {
       "observation_days": 62,
@@ -24798,6 +24798,230 @@
     "trust_notice": "Kỳ báo cáo đã vượt ngưỡng lịch sử tối thiểu; vẫn phải đọc cùng blind spots và phản chứng."
   },
   {
+    "kind": "daily",
+    "period_key": "2026-10-31",
+    "period_state": "live_today",
+    "title": "Daily Intelligence Brief",
+    "generated_at": "2026-10-30T22:20:00.651839+00:00",
+    "local_generated_at": "2026-10-31T05:20:00.643237+07:00",
+    "history_status": "ready",
+    "history_readiness": {
+      "observation_days": 62,
+      "recommended_days": 2,
+      "history_ready": true
+    },
+    "executive_summary": [
+      "Các theme có điểm sau phản chứng cao nhất hiện là Mở rộng năng lực sản xuất, Đầu tư công & hạ tầng vật lý.",
+      "Độ phủ nguồn hiện có 3 domain STRONG, 5 WEAK, 2 BROKEN và 2 MISSING."
+    ],
+    "what_changed": [
+      {
+        "type": "theme",
+        "title": "Mở rộng năng lực sản xuất",
+        "assessment": "Delta snapshot gần nhất -49. Thesis giảm mạnh và cần theo dõi khả năng đảo trạng thái: điểm sau phản chứng -49, họ bằng chứng -4, counter-signal -3."
+      },
+      {
+        "type": "theme",
+        "title": "Đầu tư công & hạ tầng vật lý",
+        "assessment": "Delta snapshot gần nhất -17. Thesis giảm mạnh và cần theo dõi khả năng đảo trạng thái: điểm sau phản chứng -17, họ bằng chứng -1, counter-signal -1."
+      },
+      {
+        "type": "theme",
+        "title": "Hạ tầng dữ liệu & số hóa",
+        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+      },
+      {
+        "type": "theme",
+        "title": "Mở rộng điện & lưới điện",
+        "assessment": "Delta snapshot gần nhất +0. Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước."
+      }
+    ],
+    "entity_watch": [],
+    "regional_watch": [],
+    "contradictions": [],
+    "blind_spots": [
+      {
+        "domain": "Công bố doanh nghiệp",
+        "status": "weak",
+        "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": [
+          "HOSE - công bố thông tin doanh nghiệp"
+        ]
+      },
+      {
+        "domain": "Thị trường vốn & trái phiếu",
+        "status": "weak",
+        "why": "Cho biết doanh nghiệp/chính phủ đang huy động vốn thế nào và thị trường đang định giá regime ra sao.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": [
+          "HOSE - công bố thông tin doanh nghiệp",
+          "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
+        ]
+      },
+      {
+        "domain": "Tiền tệ · tín dụng · tỷ giá",
+        "status": "weak",
+        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Chính sách & luật chơi",
+        "status": "partial",
+        "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "FDI & vốn đầu tư",
+        "status": "partial",
+        "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Ngân sách & đầu tư công",
+        "status": "partial",
+        "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Vĩ mô kinh tế thực",
+        "status": "partial",
+        "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
+        "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+        "planned_next_sources": []
+      },
+      {
+        "domain": "Kinh tế thực theo địa bàn",
+        "status": "missing",
+        "why": "Cơ hội thường xuất hiện cục bộ trước khi thể hiện rõ ở số liệu toàn quốc.",
+        "coverage_note": "Chưa có collector active; đây là blind spot thực sự.",
+        "planned_next_sources": [
+          "KCN/BQL KKT và dự án công nghiệp địa phương",
+          "Cảng/vận tải hàng hóa/logistics throughput"
+        ]
+      }
+    ],
+    "investigation_queue": [
+      {
+        "priority": "theme",
+        "subject": "Mở rộng năng lực sản xuất",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "falsification",
+        "subject": "Mở rộng năng lực sản xuất",
+        "question": "Nếu vốn thực hiện, tuyển dụng, điện công nghiệp và công suất KCN không tăng theo trong các kỳ tới, thesis mở rộng sản xuất cần hạ độ tin cậy."
+      },
+      {
+        "priority": "theme",
+        "subject": "Đầu tư công & hạ tầng vật lý",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "falsification",
+        "subject": "Đầu tư công & hạ tầng vật lý",
+        "question": "Nếu khối lượng thi công/giải ngân tháng không tăng rõ trong các kỳ tới, thesis nhu cầu hậu cần công trường cần hạ điểm."
+      },
+      {
+        "priority": "theme",
+        "subject": "Hạ tầng dữ liệu & số hóa",
+        "question": "thêm họ bằng chứng độc lập và publisher độc lập"
+      },
+      {
+        "priority": "coverage",
+        "subject": "Công bố doanh nghiệp",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+      },
+      {
+        "priority": "coverage",
+        "subject": "Thị trường vốn & trái phiếu",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+      }
+    ],
+    "period_delta": {
+      "available": true,
+      "theme_changes": [],
+      "new_entities": [],
+      "coverage_change": {
+        "strong": 0.0,
+        "productive_sources": 0.0,
+        "source_errors": 0.0
+      }
+    },
+    "snapshot": {
+      "themes": {
+        "manufacturing_expansion": {
+          "label": "Mở rộng năng lực sản xuất",
+          "score": 18,
+          "state": "reversal_watch",
+          "direction": "reversal_watch",
+          "observation_days": 62
+        },
+        "public_infrastructure": {
+          "label": "Đầu tư công & hạ tầng vật lý",
+          "score": 18,
+          "state": "reversal_watch",
+          "direction": "reversal_watch",
+          "observation_days": 62
+        },
+        "logistics_trade": {
+          "label": "Gia tốc thương mại & logistics",
+          "score": 17,
+          "state": "reversal_watch",
+          "direction": "reversal_watch",
+          "observation_days": 62
+        },
+        "consumer_services": {
+          "label": "Tiêu dùng & dịch vụ",
+          "score": 13,
+          "state": "reversal_watch",
+          "direction": "reversal_watch",
+          "observation_days": 62
+        },
+        "data_infrastructure": {
+          "label": "Hạ tầng dữ liệu & số hóa",
+          "score": 18,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 62
+        },
+        "energy_grid": {
+          "label": "Mở rộng điện & lưới điện",
+          "score": 18,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 62
+        },
+        "sme_formalization": {
+          "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
+          "score": 18,
+          "state": "stable",
+          "direction": "stable",
+          "observation_days": 62
+        }
+      },
+      "entities": {},
+      "regions": {},
+      "coverage": {
+        "strong": 3,
+        "partial": 8,
+        "weak": 5,
+        "broken": 2,
+        "missing": 2,
+        "productive_sources": 3,
+        "source_errors": 2
+      }
+    },
+    "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
+    "counter_signal_notice": "Counter-signal snapshot đã stale và được chủ động loại khỏi current report.",
+    "analysis_status": "history_ready",
+    "trust_notice": "Kỳ báo cáo đã vượt ngưỡng lịch sử tối thiểu; vẫn phải đọc cùng blind spots và phản chứng."
+  },
+  {
     "kind": "weekly",
     "period_key": "2026-W36",
     "period_state": "final",
@@ -27937,8 +28161,8 @@
     "period_key": "2026-W44",
     "period_state": "week_to_date",
     "title": "Weekly Intelligence Report",
-    "generated_at": "2026-10-30T12:55:54.448364+00:00",
-    "local_generated_at": "2026-10-30T19:55:54.433662+07:00",
+    "generated_at": "2026-10-30T22:20:00.652091+00:00",
+    "local_generated_at": "2026-10-31T05:20:00.643237+07:00",
     "history_status": "ready",
     "history_readiness": {
       "observation_days": 62,

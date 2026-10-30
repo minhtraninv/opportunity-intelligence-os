@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T12:54:29.414341+00:00",
+    "generated_at": "2026-10-30T22:18:32.653230+00:00",
     "status": "active",
     "history_days": 62,
     "required_history_days": 14,
@@ -109,17 +109,6 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "data_ai",
-      "recent_7d": 1,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 5,
@@ -127,6 +116,17 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 1,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 53,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "b6559da878607ba8",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 31/10/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-30T22:18:32.653230+00:00"
+    },
+    {
+      "id": "494db420b7b4fde8",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 31/10 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-30T22:18:32.653230+00:00"
+    },
+    {
       "id": "90c070f899b98f95",
       "source_id": "sbv",
       "publisher": "Ngân hàng Nhà nước Việt Nam",
@@ -172,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-10-30T12:54:29.414341+00:00"
+      "first_seen_at": "2026-10-30T12:54:29.414341+00:00",
+      "collected_at": "2026-10-30T12:54:29.414341+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ab5ecd007b0c7fc4",
@@ -250,9 +290,9 @@
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 977,
-    "candidate_events": 387,
-    "reference_events": 585,
+    "historical_events": 983,
+    "candidate_events": 389,
+    "reference_events": 589,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
