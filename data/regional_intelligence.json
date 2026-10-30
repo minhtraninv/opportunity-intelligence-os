@@ -1,20 +1,32 @@
 {
   "meta": {
     "version": "2.2.0",
-    "generated_at": "2026-10-30T05:48:57.185151+00:00",
+    "generated_at": "2026-10-30T12:55:53.731432+00:00",
     "mode": "regional_capital_production_divergence",
     "principle": "separate_new_capital_from_existing_capacity_ramp_up",
-    "freshness_status": "aging",
-    "trust_checked_at": "2026-10-30T05:48:57.264956+00:00"
+    "freshness_status": "stale",
+    "trust_checked_at": "2026-10-30T12:55:53.812063+00:00"
   },
-  "thesis": "Gia tốc kép production + FDI đang thấy rõ nhất ở Nghệ An, Thái Nguyên. Ngược lại, Ninh Bình, Bắc Ninh, Hưng Yên có sản xuất mạnh nhưng FDI mới giảm — dấu hiệu của installed-base/ramp-up hơn là câu chuyện vốn mới đơn giản.",
+  "thesis": "Regional snapshot đã stale; giữ dữ liệu cũ làm historical context nhưng không dùng để mô tả trạng thái hiện tại.",
   "coverage": {
     "regions": 13,
     "dual_acceleration": 2,
     "production_strong_capital_cooling": 3,
-    "regions_with_both_iip_and_fdi": 5
+    "regions_with_both_iip_and_fdi": 5,
+    "regions_current": 0,
+    "stale_snapshot_suppressed": true
   },
-  "regions": [
+  "regions": [],
+  "guardrails": [
+    "FDI figures are total registered FDI by locality, not manufacturing-only FDI.",
+    "High IIP can come from existing capacity ramp-up and does not prove new capital inflow.",
+    "A locality missing from the FIA top list is unknown here, not zero FDI.",
+    "Regional ranking is an investigation priority, not an investment recommendation.",
+    "Priority score ranks investigation value, not expected return.",
+    "Total FDI by locality cannot be assumed to be manufacturing FDI.",
+    "Regional opportunity requires local supply/demand validation before action."
+  ],
+  "stale_regions": [
     {
       "region": "Nghệ An",
       "priority_score": 94,
@@ -275,14 +287,5 @@
         "điện công nghiệp và vận tải hàng hóa địa phương"
       ]
     }
-  ],
-  "guardrails": [
-    "FDI figures are total registered FDI by locality, not manufacturing-only FDI.",
-    "High IIP can come from existing capacity ramp-up and does not prove new capital inflow.",
-    "A locality missing from the FIA top list is unknown here, not zero FDI.",
-    "Regional ranking is an investigation priority, not an investment recommendation.",
-    "Priority score ranks investigation value, not expected return.",
-    "Total FDI by locality cannot be assumed to be manufacturing FDI.",
-    "Regional opportunity requires local supply/demand validation before action."
   ]
 }
