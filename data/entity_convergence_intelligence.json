@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-31T05:40:48.673684+00:00",
+    "generated_at": "2026-10-31T12:30:19.760720+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-31T05:40:48.932922+00:00"
+    "trust_hardened_at": "2026-10-31T12:30:20.223168+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 53,
-    "observed_auto_entities": 44,
+    "observed_entities": 55,
+    "observed_auto_entities": 46,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 19,
-    "watch": 23,
+    "discovery_convergence": 20,
+    "watch": 24,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 17,
+    "discovery_candidates": 18,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 11
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -234,7 +234,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 7,
+      "newest_evidence_age_days": 8,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -339,6 +339,126 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "long_thanh_airport",
+      "label": "Cảng hàng không quốc tế Long Thành",
+      "entity_type": "strategic_project",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 18,
+      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
+      "evidence_families": [
+        "policy",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Chính sách pháp luật - Chính phủ",
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 3,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "policy_execution_alignment",
+        "persistent_multi_period_attention"
+      ],
+      "theme_context": [
+        {
+          "theme_id": "logistics_trade",
+          "label": "logistics_trade",
+          "score": null,
+          "status": null
+        }
+      ],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "77418d5c9d0393a4",
+          "event_signature": "808621320f6177ee",
+          "family": "project_execution",
+          "title": "Nhiều khu đất quy mô lớn tại Đồng Nai sắp được đưa ra đấu giá",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/nhieu-khu-dat-quy-mo-lon-tai-dong-nai-sap-duoc-dua-ra-dau-gia-post1145381.vnp",
+          "observed_at": "2026-10-31T17:13:51+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9f06fa6f2e107dfe",
+          "event_signature": "329e6a5f429c6c3d",
+          "family": "project_execution",
+          "title": "Sân bay Long Thành tiến gần thời khắc vận hành ngày 24-12",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/san-bay-long-thanh-tien-gan-thoi-khac-van-hanh-ngay-24-12-100261030163237735.htm",
+          "observed_at": "2026-10-31T12:30:04.153290+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "84e56f0c70771413",
+          "event_signature": "9867857eac333a2f",
+          "family": "project_execution",
+          "title": "Sân bay Long Thành trước ngày khai thác",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/san-bay-long-thanh-truoc-ngay-khai-thac-185261029224823348.htm",
+          "observed_at": "2026-10-29T23:05:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e6dcd3748a139401",
+          "family": "policy",
+          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "logistics"
+          ],
+          "geography": [
+            "Đồng Nai"
+          ],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 1,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "policy",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "vingroup_ecosystem",
       "label": "Hệ sinh thái Vingroup",
       "entity_type": "business_group",
@@ -349,8 +469,7 @@
       "evidence_families": [
         "capital",
         "operating",
-        "project_execution",
-        "strategy"
+        "project_execution"
       ],
       "independent_publishers": [
         "Thanh Niên Kinh tế",
@@ -369,6 +488,34 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "34567af6ee22a3f4",
+          "event_signature": "9365c3bb2c61b870",
+          "family": "operating",
+          "title": "Vingroup báo lãi kỷ lục hơn 43.700 tỉ đồng sau 9 tháng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vingroup-bao-lai-ky-luc-hon-43700-ti-dong-sau-9-thang-100261031120813523.htm",
+          "observed_at": "2026-10-31T12:30:04.153290+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a3c8a2e3678b5791",
+          "event_signature": "f77ab51fe65e90ff",
+          "family": "project_execution",
+          "title": "'Bom tấn' Cần Giờ chính thức vào vòng bình chọn '7 kỳ quan đô thị tương lai'",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/bom-tan-can-gio-chinh-thuc-vao-vong-binh-chon-7-ky-quan-do-thi-tuong-lai-18526103114265465.htm",
+          "observed_at": "2026-10-31T07:29:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "e7529b1f6877be87",
           "event_signature": "4d312841409eab9a",
@@ -426,20 +573,6 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "11ec8729b6e11656",
-          "event_signature": "39baf4aacf534864",
-          "family": "project_execution",
-          "title": "VinSpeed thông báo khởi công đường sắt Bến Thành - Cần Giờ ngày 30-10",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vinspeed-thong-bao-khoi-cong-duong-sat-ben-thanh-can-gio-ngay-30-10-100261024160139434.htm",
-          "observed_at": "2026-10-24T10:59:57.637420+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
           "id": "a49e830c546e2244",
           "event_signature": "1242f7dc0030de2b",
           "family": "operating",
@@ -461,20 +594,6 @@
           "publisher": "VnExpress Kinh doanh",
           "source_url": "https://vnexpress.net/vinfast-thu-hon-2-ty-usd-trong-nua-dau-nam-5134379.html",
           "observed_at": "2026-10-19T20:21:20+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "0d83b1631f4e75ce",
-          "event_signature": "5432546b6ab304ec",
-          "family": "strategy",
-          "title": "Vingroup 'chơi lớn' tung loạt chính sách hỗ trợ, thu mua linh kiện nhà cung ứng trong nước",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vingroup-choi-lon-tung-loat-chinh-sach-ho-tro-thu-mua-linh-kien-nha-cung-ung-trong-nuoc-10026101615030204.htm",
-          "observed_at": "2026-10-17T10:44:10.162089+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -503,8 +622,7 @@
       "discovery_evidence_families": [
         "capital",
         "operating",
-        "project_execution",
-        "strategy"
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -685,7 +803,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -968,7 +1086,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1232,7 +1350,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1356,7 +1474,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1759,7 +1877,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 7,
+      "newest_evidence_age_days": 8,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1877,48 +1995,40 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "long_thanh_airport",
-      "label": "Cảng hàng không quốc tế Long Thành",
-      "entity_type": "strategic_project",
-      "entity_origin": "curated_registry",
+      "entity_id": "auto-hdbank-851e1d3d",
+      "label": "HDBank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
       "status": "discovery_convergence",
       "convergence_score": 14,
-      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
+      "why_now": "HDBank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
       "evidence_families": [
-        "policy",
+        "operating",
         "project_execution"
       ],
       "independent_publishers": [
-        "Chính sách pháp luật - Chính phủ",
         "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh"
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
       ],
-      "event_count": 4,
+      "event_count": 5,
       "primary_evidence_count": 0,
-      "media_evidence_count": 3,
+      "media_evidence_count": 5,
       "newest_evidence_age_days": 0,
       "anomaly_flags": [
-        "policy_execution_alignment",
-        "persistent_multi_period_attention"
+        "media_only_needs_primary_verification"
       ],
-      "theme_context": [
-        {
-          "theme_id": "logistics_trade",
-          "label": "logistics_trade",
-          "score": null,
-          "status": null
-        }
-      ],
+      "theme_context": [],
       "regional_context": [],
       "evidence": [
         {
-          "id": "9f06fa6f2e107dfe",
-          "event_signature": "329e6a5f429c6c3d",
-          "family": "project_execution",
-          "title": "Sân bay Long Thành tiến gần thời khắc vận hành ngày 24-12",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/san-bay-long-thanh-tien-gan-thoi-khac-van-hanh-ngay-24-12-100261030163237735.htm",
-          "observed_at": "2026-10-31T05:40:27.305975+00:00",
+          "id": "868885a724a90c3f",
+          "event_signature": "cd23238acb673b3f",
+          "family": "operating",
+          "title": "HDBank lãi trước thuế hơn 18.300 tỷ đồng sau 9 tháng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/hdbank-lai-truoc-thue-hon-18-300-ty-dong-sau-9-thang-5139142.html",
+          "observed_at": "2026-10-31T07:00:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1926,13 +2036,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "84e56f0c70771413",
-          "event_signature": "9867857eac333a2f",
-          "family": "project_execution",
-          "title": "Sân bay Long Thành trước ngày khai thác",
+          "id": "d584824e50863424",
+          "event_signature": "01d54775e07dbc0e",
+          "family": "operating",
+          "title": "HDBank đạt 18.379 tỉ đồng lợi nhuận 9 tháng, tổng tài sản vượt 1,14 triệu tỉ đồng",
           "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/san-bay-long-thanh-truoc-ngay-khai-thac-185261029224823348.htm",
-          "observed_at": "2026-10-29T23:05:00+00:00",
+          "source_url": "https://thanhnien.vn/hdbank-dat-18379-ti-dong-loi-nhuan-9-thang-tong-tai-san-vuot-114-trieu-ti-dong-185261031100705188.htm",
+          "observed_at": "2026-10-31T02:53:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1940,13 +2050,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "68a26a988f6e4629",
-          "event_signature": "3ba671797864adcb",
+          "id": "784522b0efbdee7a",
+          "event_signature": "7fe57ba550be9f6f",
           "family": "project_execution",
-          "title": "Nghiên cứu xe trung chuyển chạy thẳng giữa sân bay Long Thành và Tân Sơn Nhất",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/nghien-cuu-xe-trung-chuyen-chay-thang-giua-san-bay-long-thanh-va-tan-son-nhat-100261027204015122.htm",
-          "observed_at": "2026-10-28T05:41:54.188379+00:00",
+          "title": "HDBank dành 10.000 tỷ đồng giảm lãi suất 1,5% hỗ trợ doanh nghiệp",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/hdbank-danh-10000-ty-dong-giam-lai-suat-15-ho-tro-doanh-nghiep-post1143117.vnp",
+          "observed_at": "2026-10-20T15:15:27+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -1954,21 +2064,32 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "e6dcd3748a139401",
-          "family": "policy",
-          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
-          "observed_at": "2026-09-29T12:51:54.496115+00:00",
-          "categories": [
-            "logistics"
-          ],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
+          "id": "73b2eca442ed272f",
+          "event_signature": "bf8344984751a40e",
+          "family": "project_execution",
+          "title": "HDBank triển khai gói tín dụng 10.000 tỉ đồng, giảm lãi suất 1,5%/năm hỗ trợ doanh nghiệp",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/hdbank-trien-khai-goi-tin-dung-10000-ti-dong-giam-lai-suat-15-nam-ho-tro-doanh-nghiep-185261020143719596.htm",
+          "observed_at": "2026-10-20T07:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e021eaf98640b353",
+          "event_signature": "44a43c349959bf8b",
+          "family": "project_execution",
+          "title": "HDBank dành 2.000 tỷ đồng cho doanh nghiệp do phụ nữ làm chủ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/hdbank-danh-2000-ty-dong-cho-doanh-nghiep-do-phu-nu-lam-chu-post1141970.vnp",
+          "observed_at": "2026-10-14T18:16:42+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -1987,10 +2108,10 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 1,
+      "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "policy",
+        "operating",
         "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
@@ -2017,7 +2138,7 @@
       "event_count": 12,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2311,7 +2432,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "strategy_execution_alignment"
       ],
@@ -2417,6 +2538,12 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
+      "entity_id": "auto-thái-nguyên-d5b0cb3a",
+      "label": "Thái Nguyên",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
       "entity_id": "auto-quảng-ninh-3ed973db",
       "label": "Quảng Ninh",
       "entity_type": "location",
@@ -2447,12 +2574,6 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
-      "label": "Bắc Ninh",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-cần-thơ-4ffa3dff",
       "label": "Cần Thơ",
       "entity_type": "location",
@@ -2465,20 +2586,14 @@
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-thái-nguyên-d5b0cb3a",
-      "label": "Thái Nguyên",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
       "entity_id": "auto-quảng-trị-3b0b65db",
       "label": "Quảng Trị",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
     {
-      "entity_id": "auto-an-giang-95ec7d95",
-      "label": "An Giang",
+      "entity_id": "auto-bắc-ninh-a1c0d701",
+      "label": "Bắc Ninh",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
