@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-31T12:27:31.062131+00:00",
+    "generated_at": "2026-10-31T21:32:55.376545+00:00",
     "status": "active",
     "history_days": 63,
     "required_history_days": 14,
@@ -21,26 +21,26 @@
       "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
     },
     {
-      "category": "labor",
-      "recent_7d": 8,
-      "baseline_21d": 16,
-      "baseline_expected_7d": 5.3,
-      "delta_pct": 50,
-      "trend": "accelerating",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.3."
-    },
-    {
       "category": "energy",
-      "recent_7d": 6,
+      "recent_7d": 7,
       "baseline_21d": 9,
       "baseline_expected_7d": 3.0,
-      "delta_pct": 100,
+      "delta_pct": 133,
       "trend": "accelerating",
-      "confidence": 90,
+      "confidence": 92,
       "source_diversity_7d": 4,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 7 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.0."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 7,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
+      "delta_pct": 24,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "fdi_industrial",
@@ -55,10 +55,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 14,
-      "baseline_21d": 46,
-      "baseline_expected_7d": 15.3,
-      "delta_pct": -9,
+      "recent_7d": 16,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": 9,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "2095680d19a412c7",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Giá điện giảm 2%, còn 2.159,9 đồng/kWh",
+      "url": "https://baochinhphu.vn/gia-dien-giam-2-con-21599-dong-kwh-102261031200940825.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-31T21:32:55.376545+00:00"
+    },
+    {
+      "id": "e84b65340736383a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 1/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-10-31T21:32:55.376545+00:00"
+    },
+    {
+      "id": "9fcf55cb5ac2222d",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 1/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-10-31T21:32:55.376545+00:00"
+    },
+    {
       "id": "c77c0683e49c3724",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -171,7 +227,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-10-31T12:27:31.062131+00:00"
+      "first_seen_at": "2026-10-31T12:27:31.062131+00:00",
+      "collected_at": "2026-10-31T12:27:31.062131+00:00",
+      "last_seen_at": null
     },
     {
       "id": "b6559da878607ba8",
@@ -214,35 +272,13 @@
       "first_seen_at": "2026-10-30T22:18:32.653230+00:00",
       "collected_at": "2026-10-30T22:18:32.653230+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "90c070f899b98f95",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Học tập, quán triệt Nghị quyết phải chuyển thành đổi mới cụ thể trong hoạt động của Đảng bộ và thực hiện nhiệm vụ của Ngân hàng Nhà nước 26/10/2026",
-      "url": "https://sbv.gov.vn/w/h%E1%BB%8Dc-t%E1%BA%ADp-qu%C3%A1n-tri%E1%BB%87t-ngh%E1%BB%8B-quy%E1%BA%BFt-ph%E1%BA%A3i-chuy%E1%BB%83n-th%C3%A0nh-%C4%91%E1%BB%95i-m%E1%BB%9Bi-c%E1%BB%A5-th%E1%BB%83-trong-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-%C4%91%E1%BA%A3ng-b%E1%BB%99-v%C3%A0-th",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-10-30T12:54:29.414341+00:00",
-      "collected_at": "2026-10-30T12:54:29.414341+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 14,
+    "business_formation": 16,
     "policy_regulation": 12,
-    "hiring": 8,
-    "market_data": 4,
+    "hiring": 7,
+    "market_data": 5,
     "procurement": 2,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
@@ -252,9 +288,9 @@
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 990,
-    "candidate_events": 390,
-    "reference_events": 595,
+    "historical_events": 996,
+    "candidate_events": 393,
+    "reference_events": 598,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 2
   },
