@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-01T06:02:11.813468+00:00",
+    "generated_at": "2026-11-01T13:23:02.809441+00:00",
     "status": "active",
-    "history_days": 63,
+    "history_days": 64,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -21,33 +21,33 @@
       "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
     },
     {
+      "category": "energy",
+      "recent_7d": 9,
+      "baseline_21d": 9,
+      "baseline_expected_7d": 3.0,
+      "delta_pct": 200,
+      "trend": "accelerating",
+      "confidence": 96,
+      "source_diversity_7d": 4,
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.0."
+    },
+    {
       "category": "labor",
-      "recent_7d": 15,
+      "recent_7d": 21,
       "baseline_21d": 17,
       "baseline_expected_7d": 5.7,
-      "delta_pct": 165,
+      "delta_pct": 271,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 15 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.7."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 7,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 133,
-      "trend": "accelerating",
-      "confidence": 92,
-      "source_diversity_7d": 4,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 21 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.7."
     },
     {
       "category": "construction",
-      "recent_7d": 6,
+      "recent_7d": 11,
       "baseline_21d": 26,
       "baseline_expected_7d": 8.7,
-      "delta_pct": -31,
+      "delta_pct": 27,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -155,6 +155,155 @@
   ],
   "top_new_events": [
     {
+      "id": "01ad1ed27472738c",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Giảm giá điện, giảm thuế xăng góp phần kiềm chế áp lực lạm phát cuối năm",
+      "url": "https://baochinhphu.vn/giam-gia-dien-giam-thue-xang-dau-gop-phan-kiem-che-ap-luc-lam-phat-cuoi-nam-102261101123406951.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "17362901918c6040",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Lãnh đạo EVN: Giảm giá điện để bảo đảm an sinh xã hội cho người dân và doanh nghiệp",
+      "url": "https://baochinhphu.vn/lanh-dao-evn-giam-gia-dien-de-bao-dam-an-sinh-xa-hoi-cho-nguoi-dan-va-doanh-nghiep-102261101112521415.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "a0922443c9e89c79",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Cẩm nang HƯỚNG DẪN XÁC ĐỊNH VỊ TRÍ VIỆC LÀM",
+      "url": "https://xaydungchinhsach.chinhphu.vn/cam-nang-huong-dan-xac-dinh-vi-tri-viec-lam-119261101152736473.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "fc5afd908a068de7",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng vị trí việc làm: Chế độ làm việc và kiểm tra dữ liệu tại biểu C1",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-vi-tri-viec-lam-che-do-lam-viec-va-kiem-tra-du-lieu-tai-bieu-c1-11926110116223989.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "74806f7014bb4453",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Hướng dẫn rà soát, xây dựng vị trí việc làm đối với người làm việc trong các Hội quần chúng",
+      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-ra-soat-xay-dung-vi-tri-viec-lam-doi-voi-nguoi-lam-viec-trong-cac-hoi-quan-chung-11926110116162894.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "5631e0fc9c378a0f",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng vị trí việc làm: Hướng dẫn cách thống kê mục nhiệm vụ, công việc chi tiết đối với khối Đảng",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-vi-tri-viec-lam-huong-dan-cach-thong-ke-muc-nhiem-vu-cong-viec-chi-tiet-doi-voi-khoi-dang-119261101161123741.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "5781ca0aaadc0c31",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng vị trí việc làm: Phương pháp tính toán thời gian hao phí trong thực hiện nhiệm vụ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xac-dinh-vi-tri-viec-lam-phuong-phap-tinh-toan-thoi-gian-hao-phi-trong-thuc-hien-nhiem-vu-119261101160331757.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
+      "id": "8bef96aba74b4a66",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng vị trí việc làm: Hướng dẫn cách phản ánh công việc cao điểm và nhiệm vụ nhiệm kỳ",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-vi-tri-viec-lam-huong-dan-cach-phan-anh-cong-viec-cao-diem-va-nhiem-vu-nhiem-ky-119261101160006472.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-01T13:23:02.809441+00:00"
+    },
+    {
       "id": "f642a41e312d6776",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -172,7 +321,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9ce347aa3c946bff",
@@ -191,7 +342,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "226fa4b183ed65f9",
@@ -209,7 +362,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "59994dc3a188d369",
@@ -227,7 +382,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "71bc254604cd8e5f",
@@ -245,7 +402,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "31b887168216f362",
@@ -264,7 +423,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6e06fe66b75f8c28",
@@ -286,7 +447,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ce8c95869f53d492",
@@ -304,7 +467,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "117091b639c774de",
@@ -323,7 +488,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00"
+      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
+      "collected_at": "2026-11-01T06:02:11.813468+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2095680d19a412c7",
@@ -386,34 +553,13 @@
       "first_seen_at": "2026-10-31T21:32:55.376545+00:00",
       "collected_at": "2026-10-31T21:32:55.376545+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "c77c0683e49c3724",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Xây dựng Trung tâm dữ liệu giao thông: Không để đầu tư manh mún, trùng lặp",
-      "url": "https://baochinhphu.vn/xay-dung-trung-tam-du-lieu-giao-thong-khong-de-dau-tu-manh-mun-trung-lap-102261031173401492.htm",
-      "categories": [
-        "construction",
-        "data_ai"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "capex_expansion",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-10-31T12:27:31.062131+00:00",
-      "collected_at": "2026-10-31T12:27:31.062131+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "hiring": 14,
+    "hiring": 20,
     "business_formation": 14,
     "policy_regulation": 11,
-    "market_data": 7,
+    "market_data": 9,
     "procurement": 2,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
@@ -423,9 +569,9 @@
     "Thái Nguyên": 1
   },
   "coverage": {
-    "historical_events": 1007,
-    "candidate_events": 402,
-    "reference_events": 600,
+    "historical_events": 1017,
+    "candidate_events": 410,
+    "reference_events": 602,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
