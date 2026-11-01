@@ -1,28 +1,28 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-10-31T21:35:48.731874+00:00",
+    "generated_at": "2026-11-01T06:03:25.908950+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-10-31T21:35:49.169130+00:00"
+    "trust_hardened_at": "2026-11-01T06:03:26.214077+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
     "registry_entities": 11,
     "auto_discovered_entities": 100,
     "candidate_entities_total": 111,
-    "observed_entities": 55,
-    "observed_auto_entities": 46,
+    "observed_entities": 56,
+    "observed_auto_entities": 47,
     "high_convergence": 0,
     "converging": 0,
     "discovery_convergence": 20,
-    "watch": 24,
+    "watch": 25,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 17,
+    "discovery_candidates": 18,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 12
+    "suppressed_non_organizations": 11
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -344,9 +344,10 @@
       "entity_type": "strategic_project",
       "entity_origin": "curated_registry",
       "status": "discovery_convergence",
-      "convergence_score": 18,
+      "convergence_score": 21,
       "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
       "evidence_families": [
+        "labor",
         "policy",
         "project_execution"
       ],
@@ -354,11 +355,12 @@
         "Chính sách pháp luật - Chính phủ",
         "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
       ],
-      "event_count": 4,
+      "event_count": 5,
       "primary_evidence_count": 0,
-      "media_evidence_count": 3,
+      "media_evidence_count": 4,
       "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
@@ -381,7 +383,35 @@
           "title": "Sân bay Long Thành tiến gần thời khắc vận hành ngày 24-12",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/san-bay-long-thanh-tien-gan-thoi-khac-van-hanh-ngay-24-12-100261030163237735.htm",
-          "observed_at": "2026-10-31T21:35:31.917441+00:00",
+          "observed_at": "2026-11-01T06:03:13.080930+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "911565b1d849c4be",
+          "event_signature": "2fb633f5e078be92",
+          "family": "project_execution",
+          "title": "'Chạy đua' đưa sân bay Long Thành khai thác đúng 0 giờ 24.12",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/chay-dua-dua-san-bay-long-thanh-khai-thac-dung-0-gio-2412-185261101115757661.htm",
+          "observed_at": "2026-11-01T05:46:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6085f2772117f9db",
+          "event_signature": "a185c5ff6a1eac65",
+          "family": "labor",
+          "title": "Chủ đầu tư sân bay Long Thành giảm gần 1.400 nhân sự trong ba tháng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-gan-1-400-nhan-su-trong-ba-thang-5139256.html",
+          "observed_at": "2026-11-01T02:30:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -396,20 +426,6 @@
           "publisher": "VietnamPlus Kinh tế",
           "source_url": "https://www.vietnamplus.vn/nhieu-khu-dat-quy-mo-lon-tai-dong-nai-sap-duoc-dua-ra-dau-gia-post1145381.vnp",
           "observed_at": "2026-10-31T17:13:51+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "84e56f0c70771413",
-          "event_signature": "9867857eac333a2f",
-          "family": "project_execution",
-          "title": "Sân bay Long Thành trước ngày khai thác",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/san-bay-long-thanh-truoc-ngay-khai-thac-185261029224823348.htm",
-          "observed_at": "2026-10-29T23:05:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -453,6 +469,7 @@
       "official_headline_discovery_count": 1,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
+        "labor",
         "policy",
         "project_execution"
       ],
@@ -495,7 +512,21 @@
           "title": "Vingroup báo lãi kỷ lục hơn 43.700 tỉ đồng sau 9 tháng",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/vingroup-bao-lai-ky-luc-hon-43700-ti-dong-sau-9-thang-100261031120813523.htm",
-          "observed_at": "2026-10-31T21:35:31.917441+00:00",
+          "observed_at": "2026-11-01T06:03:13.080930+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9c058fe74c04b347",
+          "event_signature": "b8749a080d7871e9",
+          "family": "project_execution",
+          "title": "Vinhomes Green Paradise chính thức vào vòng bình chọn '7 kỳ quan đô thị tương lai'",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vinhomes-green-paradise-chinh-thuc-vao-vong-binh-chon-7-ky-quan-do-thi-tuong-lai-185261031220745384.htm",
+          "observed_at": "2026-10-31T23:00:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -524,20 +555,6 @@
           "publisher": "Thanh Niên Kinh tế",
           "source_url": "https://thanhnien.vn/duong-sat-ti-usd-ben-thanh-can-gio-but-toc-185261030230048382.htm",
           "observed_at": "2026-10-30T23:25:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "023edee839c9c106",
-          "event_signature": "9b90d83a9b9e11b2",
-          "family": "project_execution",
-          "title": "Metro Bến Thành - Cần Giờ mục tiêu chạy thử cuối 2028, kỷ lục chưa từng có",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/metro-ben-thanh-can-gio-muc-tieu-chay-thu-cuoi-2028-ky-luc-chua-tung-co-185261030072137556.htm",
-          "observed_at": "2026-10-30T03:35:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -945,7 +962,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -1474,7 +1491,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1585,7 +1602,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 10,
+      "newest_evidence_age_days": 11,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1858,143 +1875,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-shb-9a3f1ca9",
-      "label": "SHB",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "SHB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 6,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 6,
-      "newest_evidence_age_days": 8,
-      "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "c4cefa363dce9b9b",
-          "event_signature": "1af2a50d75a18777",
-          "family": "strategy",
-          "title": "SHB nhận giải thưởng Chất lượng thanh toán quốc tế xuất sắc từ Citibank",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-nhan-giai-thuong-chat-luong-thanh-toan-quoc-te-xuat-sac-tu-citibank-post1143652.vnp",
-          "observed_at": "2026-10-23T10:43:27+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ec78a292721b1144",
-          "event_signature": "4268748b72eb835d",
-          "family": "strategy",
-          "title": "SHB bắt tay Đại học Huế đào tạo nhân lực, ứng dụng AI",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/shb-bat-tay-dai-hoc-hue-dao-tao-nhan-luc-ung-dung-ai-100261021084005169.htm",
-          "observed_at": "2026-10-22T04:44:52.804325+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "6a8894e16a751d30",
-          "event_signature": "f4af4a7291351536",
-          "family": "project_execution",
-          "title": "SHB lần đầu công bố khung tài chính bền vững",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/shb-lan-dau-cong-bo-khung-tai-chinh-ben-vung-5135111.html",
-          "observed_at": "2026-10-21T08:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "ca219d1a177aa051",
-          "event_signature": "7af90e2e0ed054aa",
-          "family": "strategy",
-          "title": "SHB đã nhận toàn bộ giá trị chuyển nhượng SHBFinance từ Krungsri",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-da-nhan-toan-bo-gia-tri-chuyen-nhuong-shbfinance-tu-krungsri-post1142370.vnp",
-          "observed_at": "2026-10-16T14:54:35+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "51bb4824bfe6d060",
-          "event_signature": "c315c76f0927aea4",
-          "family": "project_execution",
-          "title": "SHB vay hợp vốn 340 triệu USD từ các tổ chức tài chính quốc tế",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/shb-vay-hop-von-340-trieu-usd-tu-cac-to-chuc-tai-chinh-quoc-te-post1142189.vnp",
-          "observed_at": "2026-10-16T08:34:50+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "fff035266e48cd20",
-          "event_signature": "5f0b9eaecb98159b",
-          "family": "project_execution",
-          "title": "SHB của bầu Hiển lên tiếng trước tin đồn",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/thi-gia-miet-mai-giam-ve-moc-10000-dong-shb-cua-bau-hien-len-tieng-truoc-tin-don-100261009205916649.htm",
-          "observed_at": "2026-10-11T21:59:02.268556+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-hdbank-851e1d3d",
       "label": "HDBank",
       "entity_type": "organization_candidate",
@@ -2117,6 +1997,238 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-shb-9a3f1ca9",
+      "label": "SHB",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 14,
+      "why_now": "SHB đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 8,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "c4cefa363dce9b9b",
+          "event_signature": "1af2a50d75a18777",
+          "family": "strategy",
+          "title": "SHB nhận giải thưởng Chất lượng thanh toán quốc tế xuất sắc từ Citibank",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-nhan-giai-thuong-chat-luong-thanh-toan-quoc-te-xuat-sac-tu-citibank-post1143652.vnp",
+          "observed_at": "2026-10-23T10:43:27+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ec78a292721b1144",
+          "event_signature": "4268748b72eb835d",
+          "family": "strategy",
+          "title": "SHB bắt tay Đại học Huế đào tạo nhân lực, ứng dụng AI",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/shb-bat-tay-dai-hoc-hue-dao-tao-nhan-luc-ung-dung-ai-100261021084005169.htm",
+          "observed_at": "2026-10-22T04:44:52.804325+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6a8894e16a751d30",
+          "event_signature": "f4af4a7291351536",
+          "family": "project_execution",
+          "title": "SHB lần đầu công bố khung tài chính bền vững",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/shb-lan-dau-cong-bo-khung-tai-chinh-ben-vung-5135111.html",
+          "observed_at": "2026-10-21T08:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ca219d1a177aa051",
+          "event_signature": "7af90e2e0ed054aa",
+          "family": "strategy",
+          "title": "SHB đã nhận toàn bộ giá trị chuyển nhượng SHBFinance từ Krungsri",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-da-nhan-toan-bo-gia-tri-chuyen-nhuong-shbfinance-tu-krungsri-post1142370.vnp",
+          "observed_at": "2026-10-16T14:54:35+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "51bb4824bfe6d060",
+          "event_signature": "c315c76f0927aea4",
+          "family": "project_execution",
+          "title": "SHB vay hợp vốn 340 triệu USD từ các tổ chức tài chính quốc tế",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/shb-vay-hop-von-340-trieu-usd-tu-cac-to-chuc-tai-chinh-quoc-te-post1142189.vnp",
+          "observed_at": "2026-10-16T08:34:50+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-agribank-190a6f70",
+      "label": "Agribank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 14,
+      "why_now": "Agribank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "ad4f8af728e8f8ab",
+          "event_signature": "47cea4e8df665695",
+          "family": "project_execution",
+          "title": "Agribank vào tốp 20 doanh nghiệp văn hóa uy tín có xếp hạng cao nhất 2026",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/agribank-vao-top-20-doanh-nghiep-van-hoa-uy-tin-co-xep-hang-cao-nhat-2026-post1145440.vnp",
+          "observed_at": "2026-11-01T08:04:23+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b60c9e22b5f02a1c",
+          "event_signature": "c1e436206c89f3a6",
+          "family": "project_execution",
+          "title": "Agribank điều chỉnh giảm lãi suất cho vay hỗ trợ phát triển sản xuất kinh doanh",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/agribank-dieu-chinh-giam-lai-suat-cho-vay-ho-tro-phat-trien-san-xuat-kinh-doanh-185261026140609203.htm",
+          "observed_at": "2026-10-27T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "f551297f7f4999c3",
+          "event_signature": "721cce42ac690d5f",
+          "family": "project_execution",
+          "title": "Agribank triển khai giảm lãi suất cho vay tới 2,0%/năm, hỗ trợ người dân và doanh nghiệp",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/agribank-trien-khai-giam-lai-suat-cho-vay-toi-20-nam-ho-tro-nguoi-dan-va-doanh-nghiep-185261026140230582.htm",
+          "observed_at": "2026-10-26T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6d30993345cd8ce2",
+          "event_signature": "0043c8f9bb36ce64",
+          "family": "capital",
+          "title": "Agribank giảm lãi suất cho vay hỗ trợ phát triển sản xuất kinh doanh",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/agribank-giam-lai-suat-cho-vay-ho-tro-phat-trien-san-xuat-kinh-doanh-5136224.html",
+          "observed_at": "2026-10-24T01:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-phó-thủ-041fcc3a",
       "label": "Phó Thủ",
       "entity_type": "organization_candidate",
@@ -2138,7 +2250,7 @@
       "event_count": 12,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2486,12 +2598,6 @@
     {
       "entity_id": "auto-bắc-ninh-a1c0d701",
       "label": "Bắc Ninh",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-an-giang-95ec7d95",
-      "label": "An Giang",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
