@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-01T22:01:13.095240+00:00",
+    "generated_at": "2026-11-02T06:00:19.013946+00:00",
     "status": "active",
     "history_days": 64,
     "required_history_days": 14,
@@ -10,46 +10,46 @@
   },
   "category_changes": [
     {
-      "category": "monetary",
-      "recent_7d": 7,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": 75,
-      "trend": "accelerating",
-      "confidence": 98,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
-    },
-    {
       "category": "energy",
       "recent_7d": 9,
-      "baseline_21d": 9,
-      "baseline_expected_7d": 3.0,
-      "delta_pct": 200,
+      "baseline_21d": 8,
+      "baseline_expected_7d": 2.7,
+      "delta_pct": 238,
       "trend": "accelerating",
-      "confidence": 96,
+      "confidence": 94,
       "source_diversity_7d": 4,
-      "explanation": "7 ngày gần nhất có 9 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 3.0."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 4 nguồn; baseline quy đổi 7 ngày là 2.7."
     },
     {
       "category": "labor",
-      "recent_7d": 21,
+      "recent_7d": 23,
       "baseline_21d": 17,
       "baseline_expected_7d": 5.7,
-      "delta_pct": 271,
+      "delta_pct": 306,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 21 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.7."
+      "explanation": "7 ngày gần nhất có 23 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 5.7."
     },
     {
       "category": "construction",
-      "recent_7d": 10,
+      "recent_7d": 12,
       "baseline_21d": 27,
       "baseline_expected_7d": 9.0,
-      "delta_pct": 11,
+      "delta_pct": 33,
       "trend": "stable",
       "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 5,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
+      "delta_pct": 7,
+      "trend": "stable",
+      "confidence": 91,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -76,6 +76,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "policy",
+      "recent_7d": 2,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 65,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "data_ai",
       "recent_7d": 2,
       "baseline_21d": 2,
@@ -91,17 +102,6 @@
       "recent_7d": 2,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 1,
-      "baseline_21d": 4,
-      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "d1ef4421758aaa97",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Sửa Luật Đầu tư: Quy định cơ chế chấm dứt, thu hồi ưu đãi với nhà đầu tư không thực hiện đúng cam kết",
+      "url": "https://xaydungchinhsach.chinhphu.vn/sua-luat-dau-tu-quy-dinh-co-che-cham-dut-thu-hoi-uu-dai-voi-nha-dau-tu-khong-thuc-hien-dung-cam-ket-119261102110350933.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-02T06:00:19.013946+00:00"
+    },
+    {
+      "id": "be052a5c30de7ce2",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Hướng dẫn rà soát, xây dựng vị trí việc làm trong các Hội quần chúng",
+      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-ra-soat-xay-dung-vi-tri-viec-lam-doi-voi-nguoi-lam-viec-trong-cac-hoi-quan-chung-11926110116162894.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-02T06:00:19.013946+00:00"
+    },
+    {
+      "id": "18fc8d1660b3122e",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Xây dựng vị trí việc làm: Hướng dẫn chế độ làm việc và kiểm tra dữ liệu tại biểu C1",
+      "url": "https://xaydungchinhsach.chinhphu.vn/xay-dung-vi-tri-viec-lam-che-do-lam-viec-va-kiem-tra-du-lieu-tai-bieu-c1-11926110116223989.htm",
+      "categories": [
+        "construction",
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-02T06:00:19.013946+00:00"
+    },
+    {
       "id": "cc1cfb5a50124cf2",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +228,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-01T22:01:13.095240+00:00"
+      "first_seen_at": "2026-11-01T22:01:13.095240+00:00",
+      "collected_at": "2026-11-01T22:01:13.095240+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3f6e4d73b6482a97",
@@ -190,7 +248,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-01T22:01:13.095240+00:00"
+      "first_seen_at": "2026-11-01T22:01:13.095240+00:00",
+      "collected_at": "2026-11-01T22:01:13.095240+00:00",
+      "last_seen_at": null
     },
     {
       "id": "01ad1ed27472738c",
@@ -504,53 +564,12 @@
       "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
       "collected_at": "2026-11-01T06:02:11.813468+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "ce8c95869f53d492",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Hướng dẫn xác định nhu cầu nhân lực, thống kê và tổng hợp biên chế của khối HĐND cấp xã",
-      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-xac-dinh-nhu-cau-nhan-luc-thong-ke-va-tong-hop-bien-che-cua-khoi-hdnd-cap-xa-119261101105334846.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
-      "collected_at": "2026-11-01T06:02:11.813468+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "117091b639c774de",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Khẩn trương tuyển dụng; xây dựng phương án bố trí, sử dụng giáo viên; triển khai chính sách hỗ trợ người học...",
-      "url": "https://xaydungchinhsach.chinhphu.vn/khan-truong-tuyen-dung-xay-dung-phuong-an-bo-tri-su-dung-giao-vien-trien-khai-chinh-sach-ho-tro-nguoi-hoc-119261028150818311.htm",
-      "categories": [
-        "construction",
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-01T06:02:11.813468+00:00",
-      "collected_at": "2026-11-01T06:02:11.813468+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "hiring": 20,
+    "hiring": 22,
     "business_formation": 14,
-    "policy_regulation": 10,
+    "policy_regulation": 9,
     "market_data": 9,
     "procurement": 2,
     "capex_expansion": 1,
@@ -561,9 +580,9 @@
     "Thái Nguyên": 1
   },
   "coverage": {
-    "historical_events": 1021,
-    "candidate_events": 412,
-    "reference_events": 604,
+    "historical_events": 1025,
+    "candidate_events": 415,
+    "reference_events": 605,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
