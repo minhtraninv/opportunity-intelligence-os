@@ -2,12 +2,12 @@
   "meta": {
     "version": "3.0.0",
     "mode": "periodic_intelligence_reporting_output_layer",
-    "generated_at": "2026-11-03T00:58:27.761995+00:00",
+    "generated_at": "2026-11-03T14:14:07.577484+00:00",
     "local_date": "2026-11-03",
     "principle": "current_state_is_not_period_trend_and_insufficient_history_must_lock_period_analysis",
     "quality_gate": "stale_falsification_snapshot_suppressed",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-11-03T00:58:27.935755+00:00"
+    "trust_hardened_at": "2026-11-03T14:14:07.698768+00:00"
   },
   "reports": {
     "daily": {
@@ -15,8 +15,8 @@
       "period_key": "2026-11-03",
       "period_state": "live_today",
       "title": "Daily Intelligence Brief",
-      "generated_at": "2026-11-03T00:58:27.761257+00:00",
-      "local_generated_at": "2026-11-03T07:58:27.747017+07:00",
+      "generated_at": "2026-11-03T14:14:07.577020+00:00",
+      "local_generated_at": "2026-11-03T21:14:07.568189+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 66,
@@ -25,7 +25,7 @@
       },
       "executive_summary": [
         "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-        "Độ phủ nguồn hiện có 3 domain STRONG, 5 WEAK, 2 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
@@ -54,6 +54,13 @@
       "contradictions": [],
       "blind_spots": [
         {
+          "domain": "Chính sách & luật chơi",
+          "status": "weak",
+          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Công bố doanh nghiệp",
           "status": "weak",
           "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
@@ -61,6 +68,20 @@
           "planned_next_sources": [
             "HOSE - công bố thông tin doanh nghiệp"
           ]
+        },
+        {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Ngân sách & đầu tư công",
+          "status": "weak",
+          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
         },
         {
           "domain": "Thị trường vốn & trái phiếu",
@@ -80,31 +101,10 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Chính sách & luật chơi",
-          "status": "partial",
-          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Ngân sách & đầu tư công",
-          "status": "partial",
-          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
+          "status": "weak",
           "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
           "planned_next_sources": []
         },
         {
@@ -141,12 +141,12 @@
         },
         {
           "priority": "coverage",
-          "subject": "Công bố doanh nghiệp",
+          "subject": "Chính sách & luật chơi",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         },
         {
           "priority": "coverage",
-          "subject": "Thị trường vốn & trái phiếu",
+          "subject": "Công bố doanh nghiệp",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         }
       ],
@@ -155,8 +155,8 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 0.0,
-          "productive_sources": 0.0,
+          "strong": -1.0,
+          "productive_sources": -3.0,
           "source_errors": 0.0
         }
       },
@@ -215,12 +215,12 @@
         "entities": {},
         "regions": {},
         "coverage": {
-          "strong": 3,
-          "partial": 8,
-          "weak": 5,
+          "strong": 2,
+          "partial": 0,
+          "weak": 14,
           "broken": 2,
           "missing": 2,
-          "productive_sources": 3,
+          "productive_sources": 0,
           "source_errors": 2
         }
       },
@@ -234,8 +234,8 @@
       "period_key": "2026-W45",
       "period_state": "week_to_date",
       "title": "Weekly Intelligence Report",
-      "generated_at": "2026-11-03T00:58:27.761580+00:00",
-      "local_generated_at": "2026-11-03T07:58:27.747017+07:00",
+      "generated_at": "2026-11-03T14:14:07.577274+00:00",
+      "local_generated_at": "2026-11-03T21:14:07.568189+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 66,
@@ -244,7 +244,7 @@
       },
       "executive_summary": [
         "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-        "Độ phủ nguồn hiện có 3 domain STRONG, 5 WEAK, 2 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
@@ -273,6 +273,13 @@
       "contradictions": [],
       "blind_spots": [
         {
+          "domain": "Chính sách & luật chơi",
+          "status": "weak",
+          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Công bố doanh nghiệp",
           "status": "weak",
           "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
@@ -280,6 +287,20 @@
           "planned_next_sources": [
             "HOSE - công bố thông tin doanh nghiệp"
           ]
+        },
+        {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Ngân sách & đầu tư công",
+          "status": "weak",
+          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
         },
         {
           "domain": "Thị trường vốn & trái phiếu",
@@ -299,31 +320,10 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Chính sách & luật chơi",
-          "status": "partial",
-          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Ngân sách & đầu tư công",
-          "status": "partial",
-          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
+          "status": "weak",
           "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
           "planned_next_sources": []
         },
         {
@@ -360,12 +360,12 @@
         },
         {
           "priority": "coverage",
-          "subject": "Công bố doanh nghiệp",
+          "subject": "Chính sách & luật chơi",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         },
         {
           "priority": "coverage",
-          "subject": "Thị trường vốn & trái phiếu",
+          "subject": "Công bố doanh nghiệp",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         }
       ],
@@ -374,8 +374,8 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 0.0,
-          "productive_sources": 0.0,
+          "strong": -1.0,
+          "productive_sources": -3.0,
           "source_errors": 0.0
         }
       },
@@ -434,12 +434,12 @@
         "entities": {},
         "regions": {},
         "coverage": {
-          "strong": 3,
-          "partial": 8,
-          "weak": 5,
+          "strong": 2,
+          "partial": 0,
+          "weak": 14,
           "broken": 2,
           "missing": 2,
-          "productive_sources": 3,
+          "productive_sources": 0,
           "source_errors": 2
         }
       },
@@ -453,8 +453,8 @@
       "period_key": "2026-11",
       "period_state": "month_to_date",
       "title": "Monthly Regime Review",
-      "generated_at": "2026-11-03T00:58:27.761824+00:00",
-      "local_generated_at": "2026-11-03T07:58:27.747017+07:00",
+      "generated_at": "2026-11-03T14:14:07.577399+00:00",
+      "local_generated_at": "2026-11-03T21:14:07.568189+07:00",
       "history_status": "ready",
       "history_readiness": {
         "observation_days": 66,
@@ -463,7 +463,7 @@
       },
       "executive_summary": [
         "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-        "Độ phủ nguồn hiện có 3 domain STRONG, 5 WEAK, 2 BROKEN và 2 MISSING."
+        "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
       ],
       "what_changed": [
         {
@@ -492,6 +492,13 @@
       "contradictions": [],
       "blind_spots": [
         {
+          "domain": "Chính sách & luật chơi",
+          "status": "weak",
+          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
           "domain": "Công bố doanh nghiệp",
           "status": "weak",
           "why": "Thiếu lớp này thì hệ thống có thể thấy theme nhưng không biết doanh nghiệp nào đang thực thi.",
@@ -499,6 +506,20 @@
           "planned_next_sources": [
             "HOSE - công bố thông tin doanh nghiệp"
           ]
+        },
+        {
+          "domain": "FDI & vốn đầu tư",
+          "status": "weak",
+          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
+        },
+        {
+          "domain": "Ngân sách & đầu tư công",
+          "status": "weak",
+          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
+          "planned_next_sources": []
         },
         {
           "domain": "Thị trường vốn & trái phiếu",
@@ -518,31 +539,10 @@
           "planned_next_sources": []
         },
         {
-          "domain": "Chính sách & luật chơi",
-          "status": "partial",
-          "why": "Policy thường đi trước thay đổi vốn, hành vi và quyền tiếp cận thị trường.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "FDI & vốn đầu tư",
-          "status": "partial",
-          "why": "Phân biệt vốn đăng ký, vốn thực hiện và nơi vốn thật sự đi vào nhà máy/dự án.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
-          "domain": "Ngân sách & đầu tư công",
-          "status": "partial",
-          "why": "Đây là một trong các kênh dòng tiền cấu trúc lớn nhất và có tác động vòng hai rộng.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
-          "planned_next_sources": []
-        },
-        {
           "domain": "Vĩ mô kinh tế thực",
-          "status": "partial",
+          "status": "weak",
           "why": "Sản xuất, việc làm, tiêu dùng và điện giúp kiểm tra câu chuyện có đi vào hoạt động thật hay không.",
-          "coverage_note": "Đã có evidence đúng cấp nhưng chưa đủ số nguồn độc lập theo target.",
+          "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
           "planned_next_sources": []
         },
         {
@@ -579,12 +579,12 @@
         },
         {
           "priority": "coverage",
-          "subject": "Công bố doanh nghiệp",
+          "subject": "Chính sách & luật chơi",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         },
         {
           "priority": "coverage",
-          "subject": "Thị trường vốn & trái phiếu",
+          "subject": "Công bố doanh nghiệp",
           "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
         }
       ],
@@ -593,8 +593,8 @@
         "theme_changes": [],
         "new_entities": [],
         "coverage_change": {
-          "strong": 0.0,
-          "productive_sources": 0.0,
+          "strong": -1.0,
+          "productive_sources": -3.0,
           "source_errors": -1.0
         }
       },
@@ -653,12 +653,12 @@
         "entities": {},
         "regions": {},
         "coverage": {
-          "strong": 3,
-          "partial": 8,
-          "weak": 5,
+          "strong": 2,
+          "partial": 0,
+          "weak": 14,
           "broken": 2,
           "missing": 2,
-          "productive_sources": 3,
+          "productive_sources": 0,
           "source_errors": 2
         }
       },
