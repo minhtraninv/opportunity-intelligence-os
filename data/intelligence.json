@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T14:12:41.666542+00:00",
+    "generated_at": "2026-11-03T23:22:34.858166+00:00",
     "status": "active",
     "history_days": 66,
     "required_history_days": 14,
@@ -21,22 +21,11 @@
       "explanation": "7 ngày gần nhất có 29 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.0."
     },
     {
-      "category": "energy",
-      "recent_7d": 6,
-      "baseline_21d": 10,
-      "baseline_expected_7d": 3.3,
-      "delta_pct": 80,
-      "trend": "accelerating",
-      "confidence": 92,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 3.3."
-    },
-    {
       "category": "construction",
       "recent_7d": 11,
-      "baseline_21d": 28,
-      "baseline_expected_7d": 9.3,
-      "delta_pct": 18,
+      "baseline_21d": 27,
+      "baseline_expected_7d": 9.0,
+      "delta_pct": 22,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -51,6 +40,17 @@
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 5,
+      "baseline_21d": 11,
+      "baseline_expected_7d": 3.7,
+      "delta_pct": 36,
+      "trend": "stable",
+      "confidence": 92,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -87,8 +87,8 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "policy",
-      "recent_7d": 1,
+      "category": "infrastructure",
+      "recent_7d": 2,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
@@ -98,7 +98,7 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "infrastructure",
+      "category": "policy",
       "recent_7d": 1,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
@@ -155,6 +155,64 @@
   ],
   "top_new_events": [
     {
+      "id": "d5fa90c1559868ab",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Kết quả chấm điểm giải ngân vốn đầu tư công 10 tháng năm 2026",
+      "url": "https://baochinhphu.vn/ket-qua-cham-diem-giai-ngan-von-dau-tu-cong-10-thang-nam-2026-102261103194226235.htm",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+    },
+    {
+      "id": "646a925871b0cb8f",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 4/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+    },
+    {
+      "id": "751f87488dc02b2d",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 4/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+    },
+    {
       "id": "afe71e21e8730228",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00"
+      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
+      "collected_at": "2026-11-03T14:12:41.666542+00:00",
+      "last_seen_at": null
     },
     {
       "id": "ddadfe02831a50a3",
@@ -188,7 +248,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00"
+      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
+      "collected_at": "2026-11-03T14:12:41.666542+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4ce44c286d1390a6",
@@ -208,7 +270,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00"
+      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
+      "collected_at": "2026-11-03T14:12:41.666542+00:00",
+      "last_seen_at": null
     },
     {
       "id": "504d7d884633ef1b",
@@ -251,195 +315,14 @@
       "first_seen_at": "2026-11-03T00:57:11.118894+00:00",
       "collected_at": "2026-11-03T00:57:11.118894+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "f8f2fe9fe27fbda9",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Hướng dẫn điền bộ biểu Excel",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-huong-dan-dien-bo-bieu-excel-119261102154219343.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "485a9b494faa2f15",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Theo dõi tiến độ và báo cáo kết quả thực hiện",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-theo-doi-tien-do-va-bao-cao-ket-qua-thuc-hien-119261102142458696.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "65bd35a5d69ca372",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Hướng dẫn kế thừa, bổ sung và tổng hợp số liệu",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-huong-dan-ke-thua-bo-sung-va-tong-hop-so-lieu-119261102125212249.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "0fef2cf998ab2e23",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Kiểm tra, xác nhận dữ liệu",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-kiem-tra-xac-nhan-du-lieu-119261102125554405.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "7d4ab58c0a793bf3",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Hướng dẫn thực hành đối chiếu dữ liệu tại địa phương",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-huong-dan-thuc-hanh-doi-chieu-du-lieu-tai-dia-phuong-119261102124747095.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "3224cdf515148315",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Phương pháp xác định nhu cầu nhân lực theo vị trí việc làm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-phuong-phap-xac-dinh-nhu-cau-nhan-luc-theo-vi-tri-viec-lam-119261102124029656.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "b3244436c7bad538",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Nhận diện sản phẩm và phân loại vị trí việc làm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-nhan-dien-san-pham-va-phan-loai-vi-tri-viec-lam-119261102123628004.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "43b7d48aafac50c8",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Rà soát, hoàn thiện vị trí việc làm: Cách kiểm đếm và phân rã nhiệm vụ",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ra-soat-hoan-thien-vi-tri-viec-lam-cach-kiem-dem-va-phan-ra-nhiem-vu-119261102123132842.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "89d8911549acda26",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Tăng cường đối thoại, hợp tác giữa Ngân hàng Nhà nước và cộng đồng ngân hàng nước ngoài tại Việt Nam Mới 02/11/2026",
-      "url": "https://sbv.gov.vn/w/t%C4%83ng-c%C6%B0%E1%BB%9Dng-%C4%91%E1%BB%91i-tho%E1%BA%A1i-h%E1%BB%A3p-t%C3%A1c-gi%E1%BB%AFa-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-v%C3%A0-c%E1%BB%99ng-%C4%91%E1%BB%93ng-ng%C3%A2n-h%C3%A0ng-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i-t%E1%BA%A1i-vi%E1%BB%87t-n",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-02T15:50:30.821254+00:00",
-      "collected_at": "2026-11-02T15:50:30.821254+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "hiring": 28,
     "business_formation": 14,
-    "market_data": 9,
     "policy_regulation": 8,
+    "market_data": 8,
+    "capital_flow": 1,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
   },
@@ -448,9 +331,9 @@
     "Thái Nguyên": 1
   },
   "coverage": {
-    "historical_events": 1051,
-    "candidate_events": 429,
-    "reference_events": 617,
+    "historical_events": 1055,
+    "candidate_events": 432,
+    "reference_events": 618,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
