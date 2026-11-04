@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T06:20:15.568919+00:00",
+    "generated_at": "2026-11-04T19:44:19.355770+00:00",
     "status": "active",
-    "history_days": 66,
+    "history_days": 67,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,22 +10,33 @@
   },
   "category_changes": [
     {
-      "category": "labor",
-      "recent_7d": 28,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": 342,
+      "category": "energy",
+      "recent_7d": 6,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": 50,
       "trend": "accelerating",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 28 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.3."
+      "confidence": 96,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 6 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 25,
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": 257,
+      "trend": "single_source_spike",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
     },
     {
       "category": "construction",
-      "recent_7d": 11,
+      "recent_7d": 12,
       "baseline_21d": 27,
       "baseline_expected_7d": 9.0,
-      "delta_pct": 22,
+      "delta_pct": 33,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -34,31 +45,20 @@
     {
       "category": "monetary",
       "recent_7d": 6,
-      "baseline_21d": 16,
-      "baseline_expected_7d": 5.3,
-      "delta_pct": 12,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": 20,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "energy",
-      "recent_7d": 4,
-      "baseline_21d": 12,
-      "baseline_expected_7d": 4.0,
-      "delta_pct": 0,
-      "trend": "stable",
-      "confidence": 85,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "sme",
-      "recent_7d": 14,
+      "recent_7d": 16,
       "baseline_21d": 46,
       "baseline_expected_7d": 15.3,
-      "delta_pct": -9,
+      "delta_pct": 4,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -78,8 +78,8 @@
     {
       "category": "infrastructure",
       "recent_7d": 2,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -98,17 +98,6 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "data_ai",
-      "recent_7d": 1,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 5,
@@ -116,6 +105,17 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 1,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 53,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,100 @@
   ],
   "top_new_events": [
     {
+      "id": "ec612d1d7c547d65",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Chủ tịch Quốc hội Trần Thanh Mẫn: Nâng cao chất lượng phối hợp xây dựng, hoàn thiện chính sách dân tộc",
+      "url": "https://baochinhphu.vn/chu-tich-quoc-hoi-tran-thanh-man-nang-cao-chat-luong-phoi-hop-xay-dung-hoan-thien-chinh-sach-dan-toc-102261104202755407.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-04T19:44:19.355770+00:00"
+    },
+    {
+      "id": "d3823e44882ed93d",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Tác động của việc áp dụng biểu giá điện sinh hoạt mới và giảm 2% giá điện",
+      "url": "https://xaydungchinhsach.chinhphu.vn/tac-dong-cua-viec-ap-dung-bieu-gia-dien-sinh-hoat-moi-va-giam-2-gia-dien-119261104162138786.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-04T19:44:19.355770+00:00"
+    },
+    {
+      "id": "2a225c7b205dda2d",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 5/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-04T19:44:19.355770+00:00"
+    },
+    {
+      "id": "60cb58912b9509ad",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 5/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-04T19:44:19.355770+00:00"
+    },
+    {
+      "id": "c2f1dc238cbf25da",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "EVN thông tin về việc thực hiện chính sách giá điện từ ngày 1/11/2026",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/EVN-thong-tin-ve-viec-thuc-hien-chinh-sach-gia-dien-tu-ngay-1112026-60-3557-510202",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-04T19:44:19.355770+00:00"
+    },
+    {
       "id": "9eb81dd099352098",
       "source_id": "sbv",
       "publisher": "Ngân hàng Nhà nước Việt Nam",
@@ -170,7 +264,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-04T06:20:15.568919+00:00"
+      "first_seen_at": "2026-11-04T06:20:15.568919+00:00",
+      "collected_at": "2026-11-04T06:20:15.568919+00:00",
+      "last_seen_at": null
     },
     {
       "id": "d5fa90c1559868ab",
@@ -235,87 +331,25 @@
       "first_seen_at": "2026-11-03T23:22:34.858166+00:00",
       "collected_at": "2026-11-03T23:22:34.858166+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "afe71e21e8730228",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "TOÀN VĂN: CẨM NANG VỊ TRÍ VIỆC LÀM",
-      "url": "https://xaydungchinhsach.chinhphu.vn/cam-nang-vi-tri-viec-lam-119261102160051896.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
-      "collected_at": "2026-11-03T14:12:41.666542+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "ddadfe02831a50a3",
-      "source_id": "evn-system",
-      "publisher": "EVN - Vận hành hệ thống điện",
-      "title": "Bộ Công Thương phê duyệt khung giá phát điện loại hình nhà máy nhiệt điện than công suất dưới 200MW",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/Bo-Cong-Thuong-phe-duyet-khung-gia-phat-dien-loai-hinh-nha-may-nhiet-dien-than-cong-suat-duoi-200MW-60-2025-510189",
-      "categories": [
-        "fdi_industrial"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
-      "collected_at": "2026-11-03T14:12:41.666542+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "4ce44c286d1390a6",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Tăng cường đối thoại, hợp tác giữa Ngân hàng Nhà nước và cộng đồng ngân hàng nước ngoài tại Việt Nam 02/11/2026",
-      "url": "https://sbv.gov.vn/w/t%C4%83ng-c%C6%B0%E1%BB%9Dng-%C4%91%E1%BB%91i-tho%E1%BA%A1i-h%E1%BB%A3p-t%C3%A1c-gi%E1%BB%AFa-ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-v%C3%A0-c%E1%BB%99ng-%C4%91%E1%BB%93ng-ng%C3%A2n-h%C3%A0ng-n%C6%B0%E1%BB%9Bc-ngo%C3%A0i-t%E1%BA%A1i-vi%E1%BB%87t-n",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
-      "collected_at": "2026-11-03T14:12:41.666542+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "hiring": 27,
-    "business_formation": 14,
-    "market_data": 8,
-    "policy_regulation": 6,
+    "hiring": 24,
+    "business_formation": 16,
+    "market_data": 9,
+    "policy_regulation": 8,
     "capital_flow": 1,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {
-    "Hà Nội": 2,
+    "Hà Nội": 1,
     "Thái Nguyên": 1
   },
   "coverage": {
-    "historical_events": 1064,
-    "candidate_events": 433,
-    "reference_events": 626,
+    "historical_events": 1075,
+    "candidate_events": 438,
+    "reference_events": 632,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
