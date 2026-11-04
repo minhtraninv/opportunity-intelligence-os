@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T23:22:34.858166+00:00",
+    "generated_at": "2026-11-04T06:20:15.568919+00:00",
     "status": "active",
     "history_days": 66,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "labor",
-      "recent_7d": 29,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": 383,
+      "recent_7d": 28,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": 342,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 29 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.0."
+      "explanation": "7 ngày gần nhất có 28 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 6.3."
     },
     {
       "category": "construction",
@@ -33,10 +33,10 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 5,
+      "recent_7d": 6,
       "baseline_21d": 16,
       "baseline_expected_7d": 5.3,
-      "delta_pct": -6,
+      "delta_pct": 12,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -44,13 +44,13 @@
     },
     {
       "category": "energy",
-      "recent_7d": 5,
-      "baseline_21d": 11,
-      "baseline_expected_7d": 3.7,
-      "delta_pct": 36,
+      "recent_7d": 4,
+      "baseline_21d": 12,
+      "baseline_expected_7d": 4.0,
+      "delta_pct": 0,
       "trend": "stable",
-      "confidence": 92,
-      "source_diversity_7d": 3,
+      "confidence": 85,
+      "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -76,17 +76,6 @@
       "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 3.3."
     },
     {
-      "category": "data_ai",
-      "recent_7d": 2,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 61,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "infrastructure",
       "recent_7d": 2,
       "baseline_21d": 5,
@@ -102,6 +91,17 @@
       "recent_7d": 1,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 1,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -131,17 +131,6 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
-      "recent_7d": 2,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 51,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "trade_flow",
       "recent_7d": 0,
       "baseline_21d": 3,
@@ -151,9 +140,38 @@
       "confidence": 46,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 0,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 44,
+      "source_diversity_7d": 0,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "9eb81dd099352098",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Ngân hàng giảm lãi suất hỗ trợ người dân, doanh nghiệp Mới",
+      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-gi%E1%BA%A3m-l%C3%A3i-su%E1%BA%A5t-h%E1%BB%97-tr%E1%BB%A3-ng%C6%B0%E1%BB%9Di-d%C3%A2n-doanh-nghi%E1%BB%87p-1",
+      "categories": [
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-04T06:20:15.568919+00:00"
+    },
     {
       "id": "d5fa90c1559868ab",
       "source_id": "gov",
@@ -172,7 +190,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00",
+      "collected_at": "2026-11-03T23:22:34.858166+00:00",
+      "last_seen_at": null
     },
     {
       "id": "646a925871b0cb8f",
@@ -192,7 +212,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00",
+      "collected_at": "2026-11-03T23:22:34.858166+00:00",
+      "last_seen_at": null
     },
     {
       "id": "751f87488dc02b2d",
@@ -210,7 +232,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-03T23:22:34.858166+00:00"
+      "first_seen_at": "2026-11-03T23:22:34.858166+00:00",
+      "collected_at": "2026-11-03T23:22:34.858166+00:00",
+      "last_seen_at": null
     },
     {
       "id": "afe71e21e8730228",
@@ -273,55 +297,13 @@
       "first_seen_at": "2026-11-03T14:12:41.666542+00:00",
       "collected_at": "2026-11-03T14:12:41.666542+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "504d7d884633ef1b",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 3/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-03T00:57:11.118894+00:00",
-      "collected_at": "2026-11-03T00:57:11.118894+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "f514b5b1fae3339d",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 3/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-03T00:57:11.118894+00:00",
-      "collected_at": "2026-11-03T00:57:11.118894+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "hiring": 28,
+    "hiring": 27,
     "business_formation": 14,
-    "policy_regulation": 8,
     "market_data": 8,
+    "policy_regulation": 6,
     "capital_flow": 1,
     "capex_expansion": 1,
     "infrastructure_delivery": 1
@@ -331,9 +313,9 @@
     "Thái Nguyên": 1
   },
   "coverage": {
-    "historical_events": 1055,
-    "candidate_events": 432,
-    "reference_events": 618,
+    "historical_events": 1064,
+    "candidate_events": 433,
+    "reference_events": 626,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
