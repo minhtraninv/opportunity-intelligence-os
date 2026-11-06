@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "2.4.0",
-    "generated_at": "2026-11-06T06:43:59.708644+00:00",
+    "generated_at": "2026-11-06T19:25:21.450598+00:00",
     "mode": "thesis_lifecycle_and_delta_intelligence",
     "status": "active",
     "principle": "do_not_call_directional_trend_before_three_distinct_observation_days"
@@ -60,7 +60,7 @@
       "delta_vs_previous": 0,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": -49,
+      "delta_vs_7d": 0,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "stale_counter_evidence_not_applied",
       "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
@@ -74,33 +74,6 @@
         "Nếu tăng nhập khẩu không chuyển thành tăng sản lượng/xuất khẩu hoặc tồn kho/chi phí vốn tăng mạnh, không nên coi nhập khẩu cao là demand tốt thuần túy.",
         "Nếu supplier nội địa, đơn hàng phụ trợ và tỷ lệ nội địa hóa không cải thiện, các góc B2B vòng 2 cần bị hạ điểm."
       ]
-    },
-    {
-      "theme_id": "energy_grid",
-      "theme_label": "Mở rộng điện & lưới điện",
-      "lifecycle_state": "stable",
-      "provisional_direction": "stable",
-      "history_confidence": "established",
-      "observation_days": 69,
-      "snapshot_count": 75,
-      "first_seen_at": "2026-08-30T19:23:59.805664+00:00",
-      "last_snapshot_at": "2026-11-06T06:43:59.708644+00:00",
-      "current_status": "insufficient",
-      "current_score": 18,
-      "current_adjusted_score": 18,
-      "delta_vs_previous": 0,
-      "family_delta_vs_previous": 0,
-      "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": 0,
-      "supply_gap_status": "unconfirmed_supply_gap",
-      "tension_level": "stale_counter_evidence_not_applied",
-      "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
-      "upgrade_conditions": [
-        "thêm họ bằng chứng độc lập và publisher độc lập",
-        "demand phải chuyển thành buyer/economics quan sát được",
-        "supply-side phải cho thấy capacity pressure hoặc gap có thể kiểm chứng"
-      ],
-      "downgrade_conditions": []
     },
     {
       "theme_id": "sme_formalization",
@@ -118,7 +91,7 @@
       "delta_vs_previous": 0,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": 3,
+      "delta_vs_7d": 0,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "stale_counter_evidence_not_applied",
       "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
@@ -147,7 +120,7 @@
       "delta_vs_previous": 0,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": -17,
+      "delta_vs_7d": 0,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "stale_counter_evidence_not_applied",
       "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
@@ -176,7 +149,7 @@
       "delta_vs_previous": 0,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": -60,
+      "delta_vs_7d": 0,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "stale_counter_evidence_not_applied",
       "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
@@ -189,6 +162,33 @@
         "Nếu tăng nhập khẩu không chuyển thành tăng sản lượng/xuất khẩu hoặc tồn kho/chi phí vốn tăng mạnh, không nên coi nhập khẩu cao là demand tốt thuần túy.",
         "Nếu supplier nội địa, đơn hàng phụ trợ và tỷ lệ nội địa hóa không cải thiện, các góc B2B vòng 2 cần bị hạ điểm."
       ]
+    },
+    {
+      "theme_id": "energy_grid",
+      "theme_label": "Mở rộng điện & lưới điện",
+      "lifecycle_state": "stable",
+      "provisional_direction": "stable",
+      "history_confidence": "established",
+      "observation_days": 69,
+      "snapshot_count": 75,
+      "first_seen_at": "2026-08-30T19:23:59.805664+00:00",
+      "last_snapshot_at": "2026-11-06T06:43:59.708644+00:00",
+      "current_status": "insufficient",
+      "current_score": 16,
+      "current_adjusted_score": 16,
+      "delta_vs_previous": -2,
+      "family_delta_vs_previous": 0,
+      "counter_signal_delta_vs_previous": 0,
+      "delta_vs_7d": -2,
+      "supply_gap_status": "unconfirmed_supply_gap",
+      "tension_level": "stale_counter_evidence_not_applied",
+      "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: điểm sau phản chứng -2.",
+      "upgrade_conditions": [
+        "thêm họ bằng chứng độc lập và publisher độc lập",
+        "demand phải chuyển thành buyer/economics quan sát được",
+        "supply-side phải cho thấy capacity pressure hoặc gap có thể kiểm chứng"
+      ],
+      "downgrade_conditions": []
     },
     {
       "theme_id": "consumer_services",
@@ -206,7 +206,7 @@
       "delta_vs_previous": 0,
       "family_delta_vs_previous": 0,
       "counter_signal_delta_vs_previous": 0,
-      "delta_vs_7d": -12,
+      "delta_vs_7d": 2,
       "supply_gap_status": "unconfirmed_supply_gap",
       "tension_level": "stale_counter_evidence_not_applied",
       "reason": "Thesis chưa thay đổi đủ lớn để đổi trạng thái: chưa có thay đổi vật chất so với snapshot trước.",
