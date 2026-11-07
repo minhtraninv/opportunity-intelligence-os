@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T05:57:14.098612+00:00",
+    "generated_at": "2026-11-07T12:59:10.803851+00:00",
     "status": "active",
-    "history_days": 69,
+    "history_days": 70,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -22,14 +22,14 @@
     },
     {
       "category": "construction",
-      "recent_7d": 13,
+      "recent_7d": 12,
       "baseline_21d": 24,
       "baseline_expected_7d": 8.0,
-      "delta_pct": 62,
+      "delta_pct": 50,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.0."
+      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.0."
     },
     {
       "category": "labor",
@@ -44,10 +44,10 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 8,
+      "recent_7d": 9,
       "baseline_21d": 13,
       "baseline_expected_7d": 4.3,
-      "delta_pct": 85,
+      "delta_pct": 108,
       "trend": "single_source_spike",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -67,9 +67,9 @@
     {
       "category": "fdi_industrial",
       "recent_7d": 1,
-      "baseline_21d": 8,
-      "baseline_expected_7d": 2.7,
-      "delta_pct": -62,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -57,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -77,17 +77,17 @@
     },
     {
       "category": "policy",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 67,
+      "confidence": 69,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "data_ai",
+      "category": "consumer_services",
       "recent_7d": 2,
       "baseline_21d": 2,
       "baseline_expected_7d": 0.7,
@@ -95,6 +95,17 @@
       "trend": "insufficient_sample",
       "confidence": 61,
       "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -109,24 +120,13 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "consumer_services",
-      "recent_7d": 1,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 53,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "logistics",
       "recent_7d": 0,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 50,
+      "confidence": 48,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,63 @@
   ],
   "top_new_events": [
     {
+      "id": "949996a6ee878960",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Phạm Thị Thanh Trà: Chính sách đặc thù cho du lịch hướng tới tạo giá trị, tránh ưu đãi dàn trải",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-102261107171101556.htm",
+      "categories": [
+        "consumer_services"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-07T12:59:10.803851+00:00"
+    },
+    {
+      "id": "b330c7ae9198d634",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quốc hội thông qua Nghị quyết về kế hoạch phát triển kinh tế - xã hội năm 2027",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-119261107162921754.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027
+      ],
+      "first_seen_at": "2026-11-07T12:59:10.803851+00:00"
+    },
+    {
+      "id": "c85b4c35baf73e85",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Ngân hàng Nhà nước chi nhánh Khu vực đẩy mạnh chuyển đổi số nâng cao hiệu quả quản lý trong tình hình mới",
+      "url": "https://sbv.gov.vn/w/day-manh-chuyen-doi-so-nhnn-khu-vuc",
+      "categories": [
+        "data_ai",
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-07T12:59:10.803851+00:00"
+    },
+    {
       "id": "597345e5ef869bd5",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -172,7 +229,9 @@
       "mentioned_years": [
         2027
       ],
-      "first_seen_at": "2026-11-07T05:57:14.098612+00:00"
+      "first_seen_at": "2026-11-07T05:57:14.098612+00:00",
+      "collected_at": "2026-11-07T05:57:14.098612+00:00",
+      "last_seen_at": null
     },
     {
       "id": "d82a8d18feac3064",
@@ -190,7 +249,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-07T05:57:14.098612+00:00"
+      "first_seen_at": "2026-11-07T05:57:14.098612+00:00",
+      "collected_at": "2026-11-07T05:57:14.098612+00:00",
+      "last_seen_at": null
     },
     {
       "id": "16f5edf1a1a8184a",
@@ -274,45 +335,22 @@
       "first_seen_at": "2026-11-06T19:23:55.655606+00:00",
       "collected_at": "2026-11-06T19:23:55.655606+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "84e854194dc8331c",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam và Ngân hàng CHDCND Lào tăng cường hợp tác trong lĩnh vực tiền tệ, ngân hàng 04/11/2026",
-      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-v%C3%A0-ng%C3%A2n-h%C3%A0ng-chdcnd-l%C3%A0o-t%C4%83ng-c%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-t%C3%A1c-trong-l%C4%A9nh-v%E1%BB%B1c-ti%E1%BB%81n-t%E1%BB%87-ng%C3%A2n-h%C3%A0ng-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-06T06:42:32.554444+00:00",
-      "collected_at": "2026-11-06T06:42:32.554444+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "hiring": 24,
+    "market_data": 15,
     "business_formation": 14,
-    "market_data": 14,
-    "policy_regulation": 8,
-    "capital_flow": 1,
-    "capex_expansion": 1
+    "policy_regulation": 10,
+    "capital_flow": 1
   },
   "geographies_7d": {
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 1113,
-    "candidate_events": 451,
-    "reference_events": 657,
+    "historical_events": 1119,
+    "candidate_events": 454,
+    "reference_events": 660,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
