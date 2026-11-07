@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T19:23:55.655606+00:00",
+    "generated_at": "2026-11-07T05:57:14.098612+00:00",
     "status": "active",
     "history_days": 69,
     "required_history_days": 14,
@@ -11,25 +11,25 @@
   "category_changes": [
     {
       "category": "energy",
-      "recent_7d": 7,
+      "recent_7d": 8,
       "baseline_21d": 12,
       "baseline_expected_7d": 4.0,
-      "delta_pct": 75,
+      "delta_pct": 100,
       "trend": "accelerating",
-      "confidence": 98,
+      "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
+      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.0."
     },
     {
       "category": "construction",
       "recent_7d": 13,
-      "baseline_21d": 25,
-      "baseline_expected_7d": 8.3,
-      "delta_pct": 56,
+      "baseline_21d": 24,
+      "baseline_expected_7d": 8.0,
+      "delta_pct": 62,
       "trend": "accelerating",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.3."
+      "explanation": "7 ngày gần nhất có 13 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.0."
     },
     {
       "category": "labor",
@@ -45,9 +45,9 @@
     {
       "category": "monetary",
       "recent_7d": 8,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": 71,
+      "baseline_21d": 13,
+      "baseline_expected_7d": 4.3,
+      "delta_pct": 85,
       "trend": "single_source_spike",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -55,10 +55,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 16,
+      "recent_7d": 14,
       "baseline_21d": 46,
       "baseline_expected_7d": 15.3,
-      "delta_pct": 4,
+      "delta_pct": -9,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -76,6 +76,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "policy",
+      "recent_7d": 2,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 67,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "data_ai",
       "recent_7d": 2,
       "baseline_21d": 2,
@@ -84,17 +95,6 @@
       "trend": "insufficient_sample",
       "confidence": 61,
       "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 1,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "597345e5ef869bd5",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quốc hội biểu quyết thông qua Nghị quyết về kế hoạch phát triển kinh tế - xã hội năm 2027",
+      "url": "https://baochinhphu.vn/quoc-hoi-bieu-quyet-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-102261107083754544.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027
+      ],
+      "first_seen_at": "2026-11-07T05:57:14.098612+00:00"
+    },
+    {
+      "id": "d82a8d18feac3064",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "EVN tổ chức Hội nghị triển khai Đề án hoàn thiện cơ chế hoạt động, các chỉ tiêu chuyên sâu, chuyên nghiệp hoá công tác pháp chế",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/EVN-to-chuc-Hoi-nghi-trien-khai-De-an-hoan-thien-co-che-hoat-dong-cac-chi-tieu-chuyen-sau-chuyen-nghiep-hoa-cong-tac-phap-che-60-12-510229",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-07T05:57:14.098612+00:00"
+    },
+    {
       "id": "16f5edf1a1a8184a",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-06T19:23:55.655606+00:00"
+      "first_seen_at": "2026-11-06T19:23:55.655606+00:00",
+      "collected_at": "2026-11-06T19:23:55.655606+00:00",
+      "last_seen_at": null
     },
     {
       "id": "3bb23d3096fd6e38",
@@ -190,7 +230,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-06T19:23:55.655606+00:00"
+      "first_seen_at": "2026-11-06T19:23:55.655606+00:00",
+      "collected_at": "2026-11-06T19:23:55.655606+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f0999fddbe4512ed",
@@ -208,7 +250,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-06T19:23:55.655606+00:00"
+      "first_seen_at": "2026-11-06T19:23:55.655606+00:00",
+      "collected_at": "2026-11-06T19:23:55.655606+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7254ceb2a08e7162",
@@ -227,7 +271,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-06T19:23:55.655606+00:00"
+      "first_seen_at": "2026-11-06T19:23:55.655606+00:00",
+      "collected_at": "2026-11-06T19:23:55.655606+00:00",
+      "last_seen_at": null
     },
     {
       "id": "84e854194dc8331c",
@@ -250,98 +296,13 @@
       "first_seen_at": "2026-11-06T06:42:32.554444+00:00",
       "collected_at": "2026-11-06T06:42:32.554444+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "f0fc0d78840e18c6",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "TOÀN VĂN: Thông tư 81/2026/TT-BXD quy định việc dán nhãn năng lượng đối với vật liệu xây dựng",
-      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-thong-tu-81-2026-tt-bxd-quy-dinh-viec-dan-nhan-nang-luong-doi-voi-vat-lieu-xay-dung-119261105160419528.htm",
-      "categories": [
-        "construction",
-        "energy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-05T19:56:16.772573+00:00",
-      "collected_at": "2026-11-05T19:56:16.772573+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "553898eea449e960",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 6/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-05T19:56:16.772573+00:00",
-      "collected_at": "2026-11-05T19:56:16.772573+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "a067b957c1cc707a",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 6/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-05T19:56:16.772573+00:00",
-      "collected_at": "2026-11-05T19:56:16.772573+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "71a1a1abb422a57e",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam và Ngân hàng CHDCND Lào tăng cường hợp tác trong lĩnh vực tiền tệ, ngân hàng",
-      "url": "https://sbv.gov.vn/w/ng%C3%A2n-h%C3%A0ng-nh%C3%A0-n%C6%B0%E1%BB%9Bc-vi%E1%BB%87t-nam-v%C3%A0-ng%C3%A2n-h%C3%A0ng-chdcnd-l%C3%A0o-t%C4%83ng-c%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-t%C3%A1c-trong-l%C4%A9nh-v%E1%BB%B1c-ti%E1%BB%81n-t%E1%BB%87-ng%C3%A2n-h%C3%A0ng-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-05T19:56:16.772573+00:00",
-      "collected_at": "2026-11-05T19:56:16.772573+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "hiring": 24,
-    "business_formation": 16,
+    "business_formation": 14,
     "market_data": 14,
-    "policy_regulation": 6,
+    "policy_regulation": 8,
     "capital_flow": 1,
     "capex_expansion": 1
   },
@@ -349,9 +310,9 @@
     "Hà Nội": 1
   },
   "coverage": {
-    "historical_events": 1110,
-    "candidate_events": 449,
-    "reference_events": 656,
+    "historical_events": 1113,
+    "candidate_events": 451,
+    "reference_events": 657,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
