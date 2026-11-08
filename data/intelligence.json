@@ -1,47 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T05:59:09.908060+00:00",
+    "generated_at": "2026-11-08T13:23:23.154004+00:00",
     "status": "active",
-    "history_days": 70,
+    "history_days": 71,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "energy",
-      "recent_7d": 7,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 62,
-      "trend": "accelerating",
-      "confidence": 100,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 7 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 4.3."
-    },
-    {
-      "category": "construction",
-      "recent_7d": 12,
-      "baseline_21d": 24,
-      "baseline_expected_7d": 8.0,
-      "delta_pct": 50,
-      "trend": "accelerating",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "7 ngày gần nhất có 12 candidate events từ 2 nguồn; baseline quy đổi 7 ngày là 8.0."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 25,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": 257,
-      "trend": "single_source_spike",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
-    },
     {
       "category": "monetary",
       "recent_7d": 9,
@@ -54,11 +21,33 @@
       "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
     },
     {
+      "category": "energy",
+      "recent_7d": 5,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "sme",
       "recent_7d": 14,
       "baseline_21d": 46,
       "baseline_expected_7d": 15.3,
       "delta_pct": -9,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 11,
+      "baseline_21d": 35,
+      "baseline_expected_7d": 11.7,
+      "delta_pct": -6,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -76,6 +65,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "construction",
+      "recent_7d": 4,
+      "baseline_21d": 32,
+      "baseline_expected_7d": 10.7,
+      "delta_pct": -62,
+      "trend": "cooling",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 10.7."
+    },
+    {
       "category": "policy",
       "recent_7d": 3,
       "baseline_21d": 5,
@@ -83,17 +83,6 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 69,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "consumer_services",
-      "recent_7d": 2,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 61,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -111,6 +100,17 @@
     {
       "category": "data_ai",
       "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "consumer_services",
+      "recent_7d": 1,
       "baseline_21d": 3,
       "baseline_expected_7d": 1.0,
       "delta_pct": null,
@@ -170,7 +170,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-08T05:59:09.908060+00:00"
+      "first_seen_at": "2026-11-08T05:59:09.908060+00:00",
+      "collected_at": "2026-11-08T05:59:09.908060+00:00",
+      "last_seen_at": null
     },
     {
       "id": "551995451baae0d9",
@@ -213,86 +215,21 @@
       "first_seen_at": "2026-11-07T21:49:12.907407+00:00",
       "collected_at": "2026-11-07T21:49:12.907407+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "949996a6ee878960",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Phó Thủ tướng Phạm Thị Thanh Trà: Chính sách đặc thù cho du lịch hướng tới tạo giá trị, tránh ưu đãi dàn trải",
-      "url": "https://baochinhphu.vn/pho-thu-tuong-pham-thi-thanh-tra-chinh-sach-dac-thu-cho-du-lich-huong-toi-tao-gia-tri-tranh-uu-dai-dan-trai-102261107171101556.htm",
-      "categories": [
-        "consumer_services"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-07T12:59:10.803851+00:00",
-      "collected_at": "2026-11-07T12:59:10.803851+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "b330c7ae9198d634",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Quốc hội thông qua Nghị quyết về kế hoạch phát triển kinh tế - xã hội năm 2027",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quoc-hoi-thong-qua-nghi-quyet-ve-ke-hoach-phat-trien-kinh-te-xa-hoi-nam-2027-119261107162921754.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2027
-      ],
-      "first_seen_at": "2026-11-07T12:59:10.803851+00:00",
-      "collected_at": "2026-11-07T12:59:10.803851+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "c85b4c35baf73e85",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước chi nhánh Khu vực đẩy mạnh chuyển đổi số nâng cao hiệu quả quản lý trong tình hình mới",
-      "url": "https://sbv.gov.vn/w/day-manh-chuyen-doi-so-nhnn-khu-vuc",
-      "categories": [
-        "data_ai",
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-07T12:59:10.803851+00:00",
-      "collected_at": "2026-11-07T12:59:10.803851+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "hiring": 24,
     "business_formation": 14,
-    "market_data": 14,
+    "hiring": 11,
     "policy_regulation": 10,
+    "market_data": 10,
     "infrastructure_delivery": 1,
     "capital_flow": 1
   },
-  "geographies_7d": {
-    "Hà Nội": 1
-  },
+  "geographies_7d": {},
   "coverage": {
-    "historical_events": 1123,
+    "historical_events": 1125,
     "candidate_events": 457,
-    "reference_events": 661,
+    "reference_events": 663,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
