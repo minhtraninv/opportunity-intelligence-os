@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T06:25:32.754735+00:00",
+    "generated_at": "2026-11-09T22:20:16.896838+00:00",
     "status": "active",
-    "history_days": 71,
+    "history_days": 72,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -11,10 +11,10 @@
   "category_changes": [
     {
       "category": "monetary",
-      "recent_7d": 9,
-      "baseline_21d": 13,
-      "baseline_expected_7d": 4.3,
-      "delta_pct": 108,
+      "recent_7d": 8,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
+      "delta_pct": 71,
       "trend": "single_source_spike",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -44,21 +44,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 14,
+      "recent_7d": 16,
       "baseline_21d": 46,
       "baseline_expected_7d": 15.3,
-      "delta_pct": -9,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 9,
-      "baseline_21d": 37,
-      "baseline_expected_7d": 12.3,
-      "delta_pct": -27,
+      "delta_pct": 4,
       "trend": "stable",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -87,6 +76,17 @@
       "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 11.3."
     },
     {
+      "category": "labor",
+      "recent_7d": 1,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": -93,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 15.0."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 2,
       "baseline_21d": 5,
@@ -100,8 +100,8 @@
     {
       "category": "data_ai",
       "recent_7d": 2,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,10 +155,10 @@
   ],
   "top_new_events": [
     {
-      "id": "7cade9efd7d1d8fa",
+      "id": "860f3c71ec6f50e7",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 9/11/2026 về Đăng ký doanh nghiệp",
+      "title": "Thống kê ngày 10/11/2026 về Đăng ký doanh nghiệp",
       "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
       "categories": [
         "sme"
@@ -172,15 +172,13 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-08T22:03:37.931813+00:00",
-      "collected_at": "2026-11-08T22:03:37.931813+00:00",
-      "last_seen_at": null
+      "first_seen_at": "2026-11-09T22:20:16.896838+00:00"
     },
     {
-      "id": "2f56781e0e53b992",
+      "id": "3ea48bcb438b78ef",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 9/11 về Đăng ký doanh nghiệp",
+      "title": "Top 4 ngành nghề kinh doanh ngày 10/11 về Đăng ký doanh nghiệp",
       "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
       "categories": [
         "sme"
@@ -192,24 +190,22 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-08T22:03:37.931813+00:00",
-      "collected_at": "2026-11-08T22:03:37.931813+00:00",
-      "last_seen_at": null
+      "first_seen_at": "2026-11-09T22:20:16.896838+00:00"
     }
   ],
   "event_types_7d": {
-    "business_formation": 14,
-    "market_data": 10,
+    "business_formation": 16,
     "policy_regulation": 9,
-    "hiring": 9,
+    "market_data": 9,
     "infrastructure_delivery": 1,
-    "capital_flow": 1
+    "capital_flow": 1,
+    "hiring": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1128,
-    "candidate_events": 459,
-    "reference_events": 664,
+    "historical_events": 1132,
+    "candidate_events": 461,
+    "reference_events": 666,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
