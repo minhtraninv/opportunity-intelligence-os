@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T07:17:01.663530+00:00",
+    "generated_at": "2026-11-10T19:43:02.564807+00:00",
     "status": "active",
-    "history_days": 72,
+    "history_days": 73,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -23,9 +23,9 @@
     {
       "category": "monetary",
       "recent_7d": 8,
-      "baseline_21d": 14,
-      "baseline_expected_7d": 4.7,
-      "delta_pct": 71,
+      "baseline_21d": 15,
+      "baseline_expected_7d": 5.0,
+      "delta_pct": 60,
       "trend": "single_source_spike",
       "confidence": 55,
       "source_diversity_7d": 1,
@@ -43,6 +43,17 @@
       "explanation": "Tần suất tăng nhưng mới tập trung ở 1 nguồn. Đây là cảnh báo điều tra, chưa phải trend đa nguồn."
     },
     {
+      "category": "sme",
+      "recent_7d": 17,
+      "baseline_21d": 46,
+      "baseline_expected_7d": 15.3,
+      "delta_pct": 11,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "policy",
       "recent_7d": 3,
       "baseline_21d": 6,
@@ -54,65 +65,54 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "sme",
-      "recent_7d": 14,
-      "baseline_21d": 46,
-      "baseline_expected_7d": 15.3,
-      "delta_pct": -9,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "construction",
       "recent_7d": 3,
-      "baseline_21d": 34,
-      "baseline_expected_7d": 11.3,
-      "delta_pct": -74,
+      "baseline_21d": 32,
+      "baseline_expected_7d": 10.7,
+      "delta_pct": -72,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 11.3."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 10.7."
     },
     {
       "category": "labor",
-      "recent_7d": 2,
-      "baseline_21d": 45,
-      "baseline_expected_7d": 15.0,
-      "delta_pct": -87,
+      "recent_7d": 1,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": -93,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 15.0."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 14.7."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "data_ai",
-      "recent_7d": 2,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 55,
-      "source_diversity_7d": 1,
+      "confidence": 69,
+      "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "consumer_services",
-      "recent_7d": 1,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "recent_7d": 2,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 59,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "data_ai",
+      "recent_7d": 3,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -144,16 +144,130 @@
     {
       "category": "trade_flow",
       "recent_7d": 0,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 44,
+      "confidence": 42,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     }
   ],
   "top_new_events": [
+    {
+      "id": "56782594221cb83b",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Ban hành Sổ tay nghiệp vụ hướng dẫn quản lý thuế hộ kinh doanh, cá nhân kinh doanh",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ban-hanh-so-tay-nghiep-vu-huong-dan-quan-ly-thue-ho-kinh-doanh-ca-nhan-kinh-doanh-119261110152140643.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
+    {
+      "id": "c864da534eef581a",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Văn bản hợp nhất Thông tư quy định chi tiết một số điều của Luật Du lịch",
+      "url": "https://xaydungchinhsach.chinhphu.vn/van-ban-hop-nhat-thong-tu-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-du-lich-119261110150619535.htm",
+      "categories": [
+        "consumer_services"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
+    {
+      "id": "0a1b0787b1719882",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 11/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
+    {
+      "id": "012d52c2b79d7fae",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 11/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
+    {
+      "id": "4814779950a001d6",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Thúc đẩy tiến độ giải ngân vốn cho Dự án Nhà máy Thủy điện tích năng Bác Ái",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Thuc-day-tien-do-giai-ngan-von-cho-Du-an-Nha-may-Thuy-dien-tich-nang-Bac-Ai-60-13-510265",
+      "categories": [
+        "fdi_industrial",
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
+    {
+      "id": "ed98589526578e76",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Ngân hàng Nhà nước chi nhánh Khu vực đẩy mạnh chuyển đổi số nâng cao hiệu quả quản lý trong tình hình mới 06/11/2026",
+      "url": "https://sbv.gov.vn/w/day-manh-chuyen-doi-so-nhnn-khu-vuc",
+      "categories": [
+        "data_ai",
+        "monetary"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-10T19:43:02.564807+00:00"
+    },
     {
       "id": "af2f0bd2d39f41c3",
       "source_id": "gov",
@@ -170,7 +284,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4c939421538bd295",
@@ -190,7 +306,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9f0de873f15a5226",
@@ -208,7 +326,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "370e2c499bab6727",
@@ -226,7 +346,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "bcfa2e591eb8a527",
@@ -247,7 +369,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "80b65f25b7cf4bec",
@@ -268,7 +392,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "72db6640291cafad",
@@ -289,7 +415,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5e62d4ddf2d7bde4",
@@ -309,7 +437,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-10T07:17:01.663530+00:00"
+      "first_seen_at": "2026-11-10T07:17:01.663530+00:00",
+      "collected_at": "2026-11-10T07:17:01.663530+00:00",
+      "last_seen_at": null
     },
     {
       "id": "860f3c71ec6f50e7",
@@ -355,18 +485,18 @@
     }
   ],
   "event_types_7d": {
+    "business_formation": 17,
     "policy_regulation": 14,
-    "business_formation": 14,
     "market_data": 11,
-    "hiring": 2,
-    "infrastructure_delivery": 1,
-    "capital_flow": 1
+    "capital_flow": 2,
+    "hiring": 1,
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1145,
-    "candidate_events": 469,
-    "reference_events": 671,
+    "historical_events": 1157,
+    "candidate_events": 475,
+    "reference_events": 677,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },

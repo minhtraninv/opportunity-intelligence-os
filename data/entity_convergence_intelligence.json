@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-11-10T07:18:27.063588+00:00",
+    "generated_at": "2026-11-10T19:44:27.515706+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-11-10T07:18:27.585249+00:00"
+    "trust_hardened_at": "2026-11-10T19:44:27.984624+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -16,13 +16,13 @@
     "observed_auto_entities": 47,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 21,
-    "watch": 27,
+    "discovery_convergence": 22,
+    "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 19,
+    "discovery_candidates": 20,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 10
+    "suppressed_non_organizations": 9
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -374,6 +374,130 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-techcombank-8fecbacf",
+      "label": "Techcombank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 18,
+      "why_now": "Techcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "94aff379aa25d7ba",
+          "event_signature": "11c2606e133081eb",
+          "family": "capital",
+          "title": "Techcombank trở thành ngân hàng có vốn điều lệ lớn nhất",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/techcombank-tro-thanh-ngan-hang-co-von-dieu-le-lon-nhat-5143111.html",
+          "observed_at": "2026-11-10T15:45:20+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6ecb2d37e1d7b73d",
+          "event_signature": "db131af0979ae6e2",
+          "family": "capital",
+          "title": "Techcombank thông báo nâng cấp hệ thống phục vụ trải nghiệm khách hàng",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/techcombank-thong-bao-nang-cap-he-thong-phuc-vu-trai-nghiem-khach-hang-post1145789.vnp",
+          "observed_at": "2026-11-03T09:52:08+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "c9445c4f3cc03742",
+          "event_signature": "6d419d33099c12bc",
+          "family": "project_execution",
+          "title": "Techcombank nhập cuộc giảm lãi suất cho vay đến 2% theo chủ trương của Chính phủ",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/techcombank-nhap-cuoc-giam-lai-suat-cho-vay-den-2-theo-chu-truong-cua-chinh-phu-100261022164158917.htm",
+          "observed_at": "2026-10-23T11:39:04.746006+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8b52cd643b3ba93d",
+          "event_signature": "772bfa8a3b885280",
+          "family": "project_execution",
+          "title": "Techcombank giảm lãi suất theo đúng chủ trương của Chính phủ và NHNN",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/techcombank-giam-lai-suat-theo-dung-chu-truong-cua-chinh-phu-va-nhnn-185261022145049714.htm",
+          "observed_at": "2026-10-22T07:37:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "09ab8850a0898d93",
+          "event_signature": "09a50ac3c77f8bf2",
+          "family": "capital",
+          "title": "Techcombank sắp chia cổ tức bằng cổ phiếu tỷ lệ 50%, tăng vốn điều lệ",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/techcombank-sap-chia-co-tuc-bang-co-phieu-ty-le-50-tang-von-dieu-le-post1143302.vnp",
+          "observed_at": "2026-10-21T10:12:37+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-shb-9a3f1ca9",
       "label": "SHB",
       "entity_type": "organization_candidate",
@@ -394,7 +518,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -484,6 +608,425 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-vinamilk-4fadd564",
+      "label": "Vinamilk",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 18,
+      "why_now": "Vinamilk đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "operating",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "470e5dc8b731800c",
+          "event_signature": "139401e8db2ee6f7",
+          "family": "operating",
+          "title": "Vinamilk tăng trưởng doanh thu, tiếp tục được vinh danh trong và ngoài nước",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vinamilk-tang-truong-doanh-thu-tiep-tuc-duoc-vinh-danh-trong-va-ngoai-nuoc-100261110140704914.htm",
+          "observed_at": "2026-11-10T19:44:07.932001+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a3f60a61eba43c09",
+          "event_signature": "370b18cc0819b3dc",
+          "family": "operating",
+          "title": "Vinamilk đạt doanh thu hơn 53.000 tỷ đồng trong 9 tháng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vinamilk-dat-doanh-thu-hon-53-000-ty-dong-trong-9-thang-5142590.html",
+          "observed_at": "2026-11-09T11:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "7d0d83c6aa0d812e",
+          "event_signature": "e652984c14c3f85f",
+          "family": "operating",
+          "title": "Vinamilk đạt doanh thu 18.465 tỉ đồng Quý 3 cùng các vinh danh trong và ngoài nước",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vinamilk-dat-doanh-thu-18465-ti-dong-quy-3-cung-cac-vinh-danh-trong-va-ngoai-nuoc-185261109115759351.htm",
+          "observed_at": "2026-11-09T06:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "79559a3e8120b92f",
+          "event_signature": "613bbf759343d67d",
+          "family": "project_execution",
+          "title": "Vinamilk chung tay xây dựng \"sức đề kháng số\" cho thế hệ tương lai",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-post1145210.vnp",
+          "observed_at": "2026-10-30T15:31:41+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "fpt_group",
+      "label": "FPT",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "FPT đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 7,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 7,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "4af1f1527af7b8fd",
+          "event_signature": "141a792222fa9edf",
+          "family": "operating",
+          "title": "FPT giới thiệu chiến lược “Bonsai AI” phát triển chip chuyên dụng tại Nhật Bản",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/fpt-gioi-thieu-chien-luoc-bonsai-ai-phat-trien-chip-chuyen-dung-tai-nhat-ban-post1147404.vnp",
+          "observed_at": "2026-11-10T14:27:24+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "89c517386d5db463",
+          "event_signature": "3e7b4df2e62a4ee6",
+          "family": "project_execution",
+          "title": "Tập đoàn FPT khai trương Văn phòng FPT Poland tại Ba Lan",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/tap-doan-fpt-khai-truong-van-phong-fpt-poland-tai-ba-lan-post1145976.vnp",
+          "observed_at": "2026-11-03T22:40:44+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a8b7f35d6fb59240",
+          "event_signature": "e6eca9ac1c98037c",
+          "family": "labor",
+          "title": "FPT dự chi gần 1.900 tỷ đồng tạm ứng cổ tức, lợi nhuận 9 tháng tăng 17%",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/fpt-du-chi-gan-1900-ty-dong-tam-ung-co-tuc-loi-nhuan-9-thang-tang-17-post1145045.vnp",
+          "observed_at": "2026-10-29T17:01:10+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "8eed4407ba3a493b",
+          "event_signature": "221900c14e327482",
+          "family": "project_execution",
+          "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
+          "observed_at": "2026-10-27T22:16:17.009720+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "1c5c6fb3af3b27e7",
+          "event_signature": "5f56e57808805ada",
+          "family": "operating",
+          "title": "FPT báo lãi trước thuế hơn 8.700 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/fpt-bao-lai-truoc-thue-hon-8700-ti-dong-100261021173054867.htm",
+          "observed_at": "2026-10-22T21:36:15.458089+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "d9300155ed01cf86",
+          "event_signature": "cb7f1c538878e2dd",
+          "family": "project_execution",
+          "title": "FPT Shop phối hợp với Điện Biên thí điểm ứng dụng UAV trong nông nghiệp",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/fpt-shop-phoi-hop-voi-dien-bien-thi-diem-ung-dung-uav-trong-nong-nghiep-18526102208521904.htm",
+          "observed_at": "2026-10-22T02:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9f3730694f2b3d5f",
+          "event_signature": "ffb1786242416277",
+          "family": "strategy",
+          "title": "FPT thúc đẩy hợp tác công nghệ, đầu tư giữa Việt Nam và Đan Mạch",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/fpt-thuc-day-hop-tac-cong-nghe-dau-tu-giua-viet-nam-va-dan-mach-185261021143356091.htm",
+          "observed_at": "2026-10-21T07:39:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "auto-vietnam-airlines-932bd5ef",
+      "label": "Vietnam Airlines",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "Vietnam Airlines đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 7,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 7,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "655255cc345e13bb",
+          "event_signature": "32014a80b94e49c2",
+          "family": "labor",
+          "title": "Vietnam Airlines tuyển nhân sự làm việc tại sân bay Long Thành",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vietnam-airlines-tuyen-nhan-su-lam-viec-tai-san-bay-long-thanh-5143035.html",
+          "observed_at": "2026-11-10T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "63d1ad847e8790e2",
+          "event_signature": "3104d7505843aec5",
+          "family": "strategy",
+          "title": "Vietnam Airlines tiến tới liên doanh với ông lớn hàng không Nhật Bản",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vietnam-airlines-tien-toi-lien-doanh-voi-ong-lon-hang-khong-nhat-ban-5142605.html",
+          "observed_at": "2026-11-09T13:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b795dc72700acc81",
+          "event_signature": "7aaa543926958904",
+          "family": "operating",
+          "title": "Vietnam Airlines báo lãi gần 4.200 tỷ đồng dù giá nhiên liệu \"neo cao\"",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietnam-airlines-bao-lai-gan-4200-ty-dong-du-gia-nhien-lieu-neo-cao-post1145297.vnp",
+          "observed_at": "2026-10-31T07:21:27+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "eeb87b1ce7e85b2e",
+          "event_signature": "6e5c1688092b04b0",
+          "family": "operating",
+          "title": "Vietnam Airlines 'đội' thêm 4.360 tỷ đồng chi phí nhiên liệu",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vietnam-airlines-doi-them-4-360-ty-dong-chi-phi-nhien-lieu-5139067.html",
+          "observed_at": "2026-10-31T04:33:46+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "93e6da6d4adce1d5",
+          "event_signature": "8d2e128780c2e347",
+          "family": "strategy",
+          "title": "Vietnam Airlines đẩy mạnh khai thác thị trường Bỉ",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/vietnam-airlines-day-manh-khai-thac-thi-truong-bi-5135890.html",
+          "observed_at": "2026-10-23T03:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "7774f77b294974aa",
+          "event_signature": "3a4ab17ee221d82b",
+          "family": "project_execution",
+          "title": "Vietnam Airlines bắt tay với các đối tác Bắc Âu, mở rộng kết nối hàng không",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietnam-airlines-bat-tay-voi-cac-doi-tac-bac-au-mo-rong-ket-noi-hang-khong-post1143216.vnp",
+          "observed_at": "2026-10-20T19:50:13+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "035da93021697152",
+          "event_signature": "d9a037cb8ca34ed5",
+          "family": "operating",
+          "title": "Vietnam Airlines mở rộng không gian tăng trưởng tại Bắc Âu",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vietnam-airlines-mo-rong-khong-gian-tang-truong-tai-bac-au-185261018150959656.htm",
+          "observed_at": "2026-10-18T08:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "labor",
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-sacombank-5192412f",
       "label": "Sacombank",
       "entity_type": "organization_candidate",
@@ -504,7 +1047,7 @@
       "event_count": 7,
       "primary_evidence_count": 0,
       "media_evidence_count": 7,
-      "newest_evidence_age_days": 6,
+      "newest_evidence_age_days": 7,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -636,183 +1179,49 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "fpt_group",
-      "label": "FPT",
-      "entity_type": "business_group",
+      "entity_id": "long_thanh_airport",
+      "label": "Cảng hàng không quốc tế Long Thành",
+      "entity_type": "strategic_project",
       "entity_origin": "curated_registry",
       "status": "discovery_convergence",
       "convergence_score": 17,
-      "why_now": "FPT đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
       "evidence_families": [
         "labor",
-        "operating",
-        "project_execution",
-        "strategy"
+        "policy",
+        "project_execution"
       ],
       "independent_publishers": [
+        "Chính sách pháp luật - Chính phủ",
         "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 6,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 6,
-      "newest_evidence_age_days": 6,
-      "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "89c517386d5db463",
-          "event_signature": "3e7b4df2e62a4ee6",
-          "family": "project_execution",
-          "title": "Tập đoàn FPT khai trương Văn phòng FPT Poland tại Ba Lan",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tap-doan-fpt-khai-truong-van-phong-fpt-poland-tai-ba-lan-post1145976.vnp",
-          "observed_at": "2026-11-03T22:40:44+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a8b7f35d6fb59240",
-          "event_signature": "e6eca9ac1c98037c",
-          "family": "labor",
-          "title": "FPT dự chi gần 1.900 tỷ đồng tạm ứng cổ tức, lợi nhuận 9 tháng tăng 17%",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/fpt-du-chi-gan-1900-ty-dong-tam-ung-co-tuc-loi-nhuan-9-thang-tang-17-post1145045.vnp",
-          "observed_at": "2026-10-29T17:01:10+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8eed4407ba3a493b",
-          "event_signature": "221900c14e327482",
-          "family": "project_execution",
-          "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
-          "observed_at": "2026-10-27T22:16:17.009720+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "1c5c6fb3af3b27e7",
-          "event_signature": "5f56e57808805ada",
-          "family": "operating",
-          "title": "FPT báo lãi trước thuế hơn 8.700 tỉ đồng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/fpt-bao-lai-truoc-thue-hon-8700-ti-dong-100261021173054867.htm",
-          "observed_at": "2026-10-22T21:36:15.458089+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "d9300155ed01cf86",
-          "event_signature": "cb7f1c538878e2dd",
-          "family": "project_execution",
-          "title": "FPT Shop phối hợp với Điện Biên thí điểm ứng dụng UAV trong nông nghiệp",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/fpt-shop-phoi-hop-voi-dien-bien-thi-diem-ung-dung-uav-trong-nong-nghiep-18526102208521904.htm",
-          "observed_at": "2026-10-22T02:30:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "9f3730694f2b3d5f",
-          "event_signature": "ffb1786242416277",
-          "family": "strategy",
-          "title": "FPT thúc đẩy hợp tác công nghệ, đầu tư giữa Việt Nam và Đan Mạch",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/fpt-thuc-day-hop-tac-cong-nghe-dau-tu-giua-viet-nam-va-dan-mach-185261021143356091.htm",
-          "observed_at": "2026-10-21T07:39:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "labor",
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-vietnam-airlines-932bd5ef",
-      "label": "Vietnam Airlines",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Vietnam Airlines đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "operating",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
       "event_count": 6,
       "primary_evidence_count": 0,
-      "media_evidence_count": 6,
+      "media_evidence_count": 5,
       "newest_evidence_age_days": 0,
       "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
+        "policy_execution_alignment",
+        "persistent_multi_period_attention"
       ],
-      "theme_context": [],
+      "theme_context": [
+        {
+          "theme_id": "logistics_trade",
+          "label": "logistics_trade",
+          "score": null,
+          "status": null
+        }
+      ],
       "regional_context": [],
       "evidence": [
         {
-          "id": "63d1ad847e8790e2",
-          "event_signature": "3104d7505843aec5",
-          "family": "strategy",
-          "title": "Vietnam Airlines tiến tới liên doanh với ông lớn hàng không Nhật Bản",
+          "id": "a3a984c9485e4386",
+          "event_signature": "b3486bf1299a2fdd",
+          "family": "labor",
+          "title": "Vietnam Airlines tuyển nhân sự làm việc tại sân bay Long Thành",
           "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vietnam-airlines-tien-toi-lien-doanh-voi-ong-lon-hang-khong-nhat-ban-5142605.html",
-          "observed_at": "2026-11-09T13:00:00+00:00",
+          "source_url": "https://vnexpress.net/vietnam-airlines-tuyen-nhan-su-lam-viec-tai-san-bay-long-thanh-5143035.html",
+          "observed_at": "2026-11-10T13:00:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -820,55 +1229,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "b795dc72700acc81",
-          "event_signature": "7aaa543926958904",
-          "family": "operating",
-          "title": "Vietnam Airlines báo lãi gần 4.200 tỷ đồng dù giá nhiên liệu \"neo cao\"",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vietnam-airlines-bao-lai-gan-4200-ty-dong-du-gia-nhien-lieu-neo-cao-post1145297.vnp",
-          "observed_at": "2026-10-31T07:21:27+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "eeb87b1ce7e85b2e",
-          "event_signature": "6e5c1688092b04b0",
-          "family": "operating",
-          "title": "Vietnam Airlines 'đội' thêm 4.360 tỷ đồng chi phí nhiên liệu",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vietnam-airlines-doi-them-4-360-ty-dong-chi-phi-nhien-lieu-5139067.html",
-          "observed_at": "2026-10-31T04:33:46+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "93e6da6d4adce1d5",
-          "event_signature": "8d2e128780c2e347",
-          "family": "strategy",
-          "title": "Vietnam Airlines đẩy mạnh khai thác thị trường Bỉ",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vietnam-airlines-day-manh-khai-thac-thi-truong-bi-5135890.html",
-          "observed_at": "2026-10-23T03:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "7774f77b294974aa",
-          "event_signature": "3a4ab17ee221d82b",
+          "id": "d0875e0a08cce223",
+          "event_signature": "d1c1f7a9952935e1",
           "family": "project_execution",
-          "title": "Vietnam Airlines bắt tay với các đối tác Bắc Âu, mở rộng kết nối hàng không",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vietnam-airlines-bat-tay-voi-cac-doi-tac-bac-au-mo-rong-ket-noi-hang-khong-post1143216.vnp",
-          "observed_at": "2026-10-20T19:50:13+00:00",
+          "title": "Bộ Xây dựng ra 'deadline' báo cáo đầu việc chuẩn bị khai thác sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/bo-xay-dung-ra-deadline-bao-cao-dau-viec-chuan-bi-khai-thac-san-bay-longthanh-185261110154349636.htm",
+          "observed_at": "2026-11-10T08:46:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -876,18 +1243,63 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "035da93021697152",
-          "event_signature": "d9a037cb8ca34ed5",
-          "family": "operating",
-          "title": "Vietnam Airlines mở rộng không gian tăng trưởng tại Bắc Âu",
+          "id": "aaba30013c2b5d2f",
+          "event_signature": "028fc29dc9fa7a50",
+          "family": "project_execution",
+          "title": "Cục Hàng không bác đề xuất kéo một số gói thầu sân bay Long Thành sang 2027",
           "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vietnam-airlines-mo-rong-khong-gian-tang-truong-tai-bac-au-185261018150959656.htm",
-          "observed_at": "2026-10-18T08:30:00+00:00",
+          "source_url": "https://thanhnien.vn/cuc-hang-khong-bac-de-xuat-keo-mot-so-goi-thau-san-bay-long-thanh-sang-2027-185261106094123213.htm",
+          "observed_at": "2026-11-06T02:47:00+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "a699d9fd5c8a23bd",
+          "event_signature": "adea5f0a25a13e6f",
+          "family": "project_execution",
+          "title": "Phó thủ tướng chỉ đạo 'nóng' tiến độ siêu sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/pho-thu-tuong-chi-dao-nong-tien-do-sieu-san-bay-long-thanh-185261106091825306.htm",
+          "observed_at": "2026-11-06T02:27:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6085f2772117f9db",
+          "event_signature": "a185c5ff6a1eac65",
+          "family": "labor",
+          "title": "Chủ đầu tư sân bay Long Thành giảm gần 1.400 nhân sự trong ba tháng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-gan-1-400-nhan-su-trong-ba-thang-5139256.html",
+          "observed_at": "2026-11-01T02:30:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e6dcd3748a139401",
+          "family": "policy",
+          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
+          "publisher": "Chính sách pháp luật - Chính phủ",
+          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
+          "observed_at": "2026-09-29T12:51:54.496115+00:00",
+          "categories": [
+            "logistics"
+          ],
+          "geography": [
+            "Đồng Nai"
+          ],
+          "quality": "candidate",
+          "origin": "official_headline_discovery",
+          "evidence_grade": "official_headline_discovery"
         }
       ],
       "investigation_questions": [
@@ -906,12 +1318,12 @@
         "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
         "procurement được giới hạn trọng số và không thể tự tạo high convergence"
       ],
-      "official_headline_discovery_count": 0,
+      "official_headline_discovery_count": 1,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
-        "operating",
-        "project_execution",
-        "strategy"
+        "labor",
+        "policy",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -936,7 +1348,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1036,141 +1448,6 @@
       "discovery_evidence_families": [
         "capital",
         "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "long_thanh_airport",
-      "label": "Cảng hàng không quốc tế Long Thành",
-      "entity_type": "strategic_project",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Cảng hàng không quốc tế Long Thành đã có ít nhất hai loại bằng chứng khác nhau cùng chỉ tới, trong đó có evidence primary. Cần kiểm tra đây là thay đổi cấu trúc hay chỉ là nhiều biểu hiện của cùng một sự kiện.",
-      "evidence_families": [
-        "labor",
-        "policy",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Chính sách pháp luật - Chính phủ",
-        "Thanh Niên Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 5,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 4,
-      "anomaly_flags": [
-        "policy_execution_alignment",
-        "persistent_multi_period_attention"
-      ],
-      "theme_context": [
-        {
-          "theme_id": "logistics_trade",
-          "label": "logistics_trade",
-          "score": null,
-          "status": null
-        }
-      ],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "aaba30013c2b5d2f",
-          "event_signature": "028fc29dc9fa7a50",
-          "family": "project_execution",
-          "title": "Cục Hàng không bác đề xuất kéo một số gói thầu sân bay Long Thành sang 2027",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/cuc-hang-khong-bac-de-xuat-keo-mot-so-goi-thau-san-bay-long-thanh-sang-2027-185261106094123213.htm",
-          "observed_at": "2026-11-06T02:47:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a699d9fd5c8a23bd",
-          "event_signature": "adea5f0a25a13e6f",
-          "family": "project_execution",
-          "title": "Phó thủ tướng chỉ đạo 'nóng' tiến độ siêu sân bay Long Thành",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/pho-thu-tuong-chi-dao-nong-tien-do-sieu-san-bay-long-thanh-185261106091825306.htm",
-          "observed_at": "2026-11-06T02:27:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "39814bb76b1c8664",
-          "event_signature": "5b3d3a5b6b16f3ab",
-          "family": "project_execution",
-          "title": "Đề nghị Airbus nghiên cứu lập trung tâm bảo dưỡng tàu bay tại Long Thành, Gia Bình",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/de-nghi-airbus-nghien-cuu-lap-trung-tam-bao-duong-tau-bay-tai-long-thanh-gia-binh-5140888.html",
-          "observed_at": "2026-11-04T17:12:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "6085f2772117f9db",
-          "event_signature": "a185c5ff6a1eac65",
-          "family": "labor",
-          "title": "Chủ đầu tư sân bay Long Thành giảm gần 1.400 nhân sự trong ba tháng",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-giam-gan-1-400-nhan-su-trong-ba-thang-5139256.html",
-          "observed_at": "2026-11-01T02:30:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e6dcd3748a139401",
-          "family": "policy",
-          "title": "Quy định mức giá dịch vụ phục vụ hành khách tại Cảng hàng không quốc tế Long Thành",
-          "publisher": "Chính sách pháp luật - Chính phủ",
-          "source_url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-gia-dich-vu-phuc-vu-hanh-khach-tai-cang-hang-khong-quoc-te-long-thanh-119260929171329073.htm",
-          "observed_at": "2026-09-29T12:51:54.496115+00:00",
-          "categories": [
-            "logistics"
-          ],
-          "geography": [
-            "Đồng Nai"
-          ],
-          "quality": "candidate",
-          "origin": "official_headline_discovery",
-          "evidence_grade": "official_headline_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 1,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "labor",
-        "policy",
         "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
@@ -1411,7 +1688,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 8,
+      "newest_evidence_age_days": 9,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1515,224 +1792,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-techcombank-8fecbacf",
-      "label": "Techcombank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "Techcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 6,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "6ecb2d37e1d7b73d",
-          "event_signature": "db131af0979ae6e2",
-          "family": "capital",
-          "title": "Techcombank thông báo nâng cấp hệ thống phục vụ trải nghiệm khách hàng",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/techcombank-thong-bao-nang-cap-he-thong-phuc-vu-trai-nghiem-khach-hang-post1145789.vnp",
-          "observed_at": "2026-11-03T09:52:08+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "c9445c4f3cc03742",
-          "event_signature": "6d419d33099c12bc",
-          "family": "project_execution",
-          "title": "Techcombank nhập cuộc giảm lãi suất cho vay đến 2% theo chủ trương của Chính phủ",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/techcombank-nhap-cuoc-giam-lai-suat-cho-vay-den-2-theo-chu-truong-cua-chinh-phu-100261022164158917.htm",
-          "observed_at": "2026-10-23T11:39:04.746006+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8b52cd643b3ba93d",
-          "event_signature": "772bfa8a3b885280",
-          "family": "project_execution",
-          "title": "Techcombank giảm lãi suất theo đúng chủ trương của Chính phủ và NHNN",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/techcombank-giam-lai-suat-theo-dung-chu-truong-cua-chinh-phu-va-nhnn-185261022145049714.htm",
-          "observed_at": "2026-10-22T07:37:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "09ab8850a0898d93",
-          "event_signature": "09a50ac3c77f8bf2",
-          "family": "capital",
-          "title": "Techcombank sắp chia cổ tức bằng cổ phiếu tỷ lệ 50%, tăng vốn điều lệ",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/techcombank-sap-chia-co-tuc-bang-co-phieu-ty-le-50-tang-von-dieu-le-post1143302.vnp",
-          "observed_at": "2026-10-21T10:12:37+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-green-sm-4279615a",
-      "label": "Green SM",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 14,
-      "why_now": "Green SM đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 4,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 1,
-      "anomaly_flags": [
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "96074f405ab2664a",
-          "event_signature": "bf4e8fe4d3bb5b98",
-          "family": "project_execution",
-          "title": "Green SM giảm 25% giá cước gần 4 tháng, miễn phí nền tảng cho tài xế",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/green-sm-giam-25-gia-cuoc-gan-4-thang-mien-phi-nen-tang-cho-tai-xe-100261107104749673.htm",
-          "observed_at": "2026-11-09T06:26:33.202102+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "3a5fda50f0d5ed7b",
-          "event_signature": "4692bce7a87016ea",
-          "family": "project_execution",
-          "title": "Green SM giảm cước, tăng thu nhập cho tài xế",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/green-sm-giam-cuoc-tang-thu-nhap-cho-tai-xe-5141907.html",
-          "observed_at": "2026-11-07T08:30:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "c603f6b5b4ba88b9",
-          "event_signature": "b8f1488dd6a30ef9",
-          "family": "project_execution",
-          "title": "Green SM tung loạt khuyến mãi chưa từng có",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/green-sm-tung-loat-khuyen-mai-chua-tung-co-185261106214423162.htm",
-          "observed_at": "2026-11-06T23:12:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f6cf0ce14188bcee",
-          "event_signature": "83c7ced1915be2fc",
-          "family": "strategy",
-          "title": "Green SM hợp tác Elife đưa dịch vụ gọi xe điện lên mạng lưới toàn cầu",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/green-sm-hop-tac-elife-dua-dich-vu-goi-xe-dien-len-mang-luoi-toan-cau-5133677.html",
-          "observed_at": "2026-10-17T13:30:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-petrovietnam-43148745",
       "label": "PETROVIETNAM",
       "entity_type": "organization_candidate",
@@ -1752,7 +1811,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2032,7 +2091,7 @@
       "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -2330,6 +2389,116 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "viettel_group",
+      "label": "Viettel",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 13,
+      "why_now": "Viettel đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "7baa1949489ca7c4",
+          "event_signature": "da184eba8d4e06e5",
+          "family": "operating",
+          "title": "Viettel ra mắt trung tâm logistics tại Đà Nẵng có robot tự hành",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/viettel-ra-mat-trung-tam-logistics-tai-da-nang-co-robot-tu-hanh-100261110200721223.htm",
+          "observed_at": "2026-11-10T19:44:07.932001+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ff2122d9db68b5bf",
+          "event_signature": "76b2f637a0ab3132",
+          "family": "strategy",
+          "title": "‘Việt Nam đã sẵn sàng’: Viettel và con đường vào chuỗi cung ứng hàng không toàn cầu",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/viet-nam-da-san-sang-viettel-va-con-duong-vao-chuoi-cung-ung-hang-khong-toan-cau-185261105141830422.htm",
+          "observed_at": "2026-11-05T06:57:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "6b4a44da2977917c",
+          "event_signature": "934a64af2fdea3ad",
+          "family": "project_execution",
+          "title": "Ra mắt 3 tháng, một ứng dụng Việt cán mốc 20 triệu người dùng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ra-mat-3-thang-mot-ung-dung-viet-can-moc-20-trieu-nguoi-dung-100261027154239178.htm",
+          "observed_at": "2026-10-28T05:41:54.188379+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "305e3276d8cbc44f",
+          "event_signature": "83970a117a465076",
+          "family": "project_execution",
+          "title": "Đọc nhanh 27-10: Nasdaq tăng 0,82% nhờ hồ sơ IPO của Anthropic, FPT Telecom lãi hơn 1.000 tỉ đồng",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-27-10-nasdaq-tang-082-nho-ho-so-ipo-cua-anthropic-fpt-telecom-lai-hon-1000-ti-dong-100261027071126687.htm",
+          "observed_at": "2026-10-27T22:16:17.009720+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "operating",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-phó-thủ-041fcc3a",
       "label": "Phó Thủ",
       "entity_type": "organization_candidate",
@@ -2352,7 +2521,7 @@
       "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2547,7 +2716,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 13,
+      "newest_evidence_age_days": 14,
       "anomaly_flags": [
         "strategy_execution_alignment"
       ],
@@ -2697,12 +2866,6 @@
     {
       "entity_id": "auto-bắc-ninh-a1c0d701",
       "label": "Bắc Ninh",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-an-giang-95ec7d95",
-      "label": "An Giang",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
