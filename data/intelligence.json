@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T07:08:41.770043+00:00",
+    "generated_at": "2026-11-12T19:53:04.888293+00:00",
     "status": "active",
-    "history_days": 74,
+    "history_days": 75,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -21,24 +21,24 @@
       "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 5.3."
     },
     {
-      "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 44,
-      "baseline_expected_7d": 14.7,
-      "delta_pct": 9,
-      "trend": "stable",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
       "category": "infrastructure",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 50,
+      "delta_pct": 100,
+      "trend": "accelerating",
+      "confidence": 80,
+      "source_diversity_7d": 3,
+      "explanation": "7 ngày gần nhất có 4 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.0."
+    },
+    {
+      "category": "sme",
+      "recent_7d": 19,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": 30,
       "trend": "stable",
-      "confidence": 71,
+      "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -67,13 +67,13 @@
     {
       "category": "construction",
       "recent_7d": 2,
-      "baseline_21d": 31,
-      "baseline_expected_7d": 10.3,
-      "delta_pct": -81,
+      "baseline_21d": 30,
+      "baseline_expected_7d": 10.0,
+      "delta_pct": -80,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 10.3."
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 10.0."
     },
     {
       "category": "fdi_industrial",
@@ -120,18 +120,18 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "logistics",
+      "category": "capital_market",
       "recent_7d": 0,
-      "baseline_21d": 3,
-      "baseline_expected_7d": 1.0,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 46,
+      "confidence": 44,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "capital_market",
+      "category": "logistics",
       "recent_7d": 0,
       "baseline_21d": 2,
       "baseline_expected_7d": 0.7,
@@ -155,6 +155,80 @@
   ],
   "top_new_events": [
     {
+      "id": "690b0fd923731ce3",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Dự kiến kinh doanh phòng trọ doanh thu dưới 500 triệu/năm, có bắt buộc phải mở hộ kinh doanh không?",
+      "url": "https://xaydungchinhsach.chinhphu.vn/du-kien-kinh-doanh-phong-tro-doanh-thu-duoi-500-trieu-nam-co-bat-buoc-phai-mo-ho-kinh-doanh-khong-119261112121931927.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+    },
+    {
+      "id": "31a7d43ab7e986ef",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 13/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+    },
+    {
+      "id": "9dd33c252f97fe39",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 13/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+    },
+    {
+      "id": "8fc3da2cacccce8f",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Thống nhất nhiều nội dung đẩy nhanh tiến độ giải ngân khoản vay đầu tiên cho Thủy điện tích năng Bác Ái",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Thong-nhat-nhieu-noi-dung-day-nhanh-tien-do-giai-ngan-khoan-vay-dau-tien-cho-Thuy-dien-tich-nang-Bac-Ai-60-12-510294",
+      "categories": [
+        "infrastructure"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "capital_flow",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+    },
+    {
       "id": "4393475a994c577b",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-12T07:08:41.770043+00:00"
+      "first_seen_at": "2026-11-12T07:08:41.770043+00:00",
+      "collected_at": "2026-11-12T07:08:41.770043+00:00",
+      "last_seen_at": null
     },
     {
       "id": "e76c0554dc2011e6",
@@ -188,64 +264,24 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-12T07:08:41.770043+00:00"
-    },
-    {
-      "id": "4cefaedf10874085",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 12/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-11T19:34:49.887143+00:00",
-      "collected_at": "2026-11-11T19:34:49.887143+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "0263f91c8fc3f3fe",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 12/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-11T19:34:49.887143+00:00",
-      "collected_at": "2026-11-11T19:34:49.887143+00:00",
+      "first_seen_at": "2026-11-12T07:08:41.770043+00:00",
+      "collected_at": "2026-11-12T07:08:41.770043+00:00",
       "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 16,
+    "business_formation": 19,
     "policy_regulation": 13,
     "market_data": 8,
-    "capital_flow": 2,
+    "capital_flow": 3,
     "hiring": 1,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1177,
-    "candidate_events": 481,
-    "reference_events": 691,
+    "historical_events": 1188,
+    "candidate_events": 485,
+    "reference_events": 698,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
