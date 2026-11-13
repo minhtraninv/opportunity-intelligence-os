@@ -25016,17 +25016,17 @@
     "period_key": "2026-11",
     "period_state": "month_to_date",
     "title": "Monthly Regime Review",
-    "generated_at": "2026-11-12T19:54:27.714921+00:00",
-    "local_generated_at": "2026-11-13T02:54:27.699889+07:00",
+    "generated_at": "2026-11-13T06:46:36.704832+00:00",
+    "local_generated_at": "2026-11-13T13:46:36.690697+07:00",
     "history_status": "ready",
     "history_readiness": {
-      "observation_days": 75,
+      "observation_days": 76,
       "recommended_days": 21,
       "history_ready": true
     },
     "executive_summary": [
       "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-      "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
+      "Độ phủ nguồn hiện có 2 domain STRONG, 13 WEAK, 3 BROKEN và 2 MISSING."
     ],
     "what_changed": [
       {
@@ -25054,6 +25054,13 @@
     "regional_watch": [],
     "contradictions": [],
     "blind_spots": [
+      {
+        "domain": "Tiền tệ · tín dụng · tỷ giá",
+        "status": "broken",
+        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+        "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
+        "planned_next_sources": []
+      },
       {
         "domain": "Chính sách & luật chơi",
         "status": "weak",
@@ -25093,13 +25100,6 @@
           "HOSE - công bố thông tin doanh nghiệp",
           "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
         ]
-      },
-      {
-        "domain": "Tiền tệ · tín dụng · tỷ giá",
-        "status": "weak",
-        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
-        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-        "planned_next_sources": []
       },
       {
         "domain": "Vĩ mô kinh tế thực",
@@ -25147,12 +25147,12 @@
       },
       {
         "priority": "coverage",
-        "subject": "Chính sách & luật chơi",
-        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+        "subject": "Tiền tệ · tín dụng · tỷ giá",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng."
       },
       {
         "priority": "coverage",
-        "subject": "Công bố doanh nghiệp",
+        "subject": "Chính sách & luật chơi",
         "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
       }
     ],
@@ -25163,7 +25163,7 @@
       "coverage_change": {
         "strong": -1.0,
         "productive_sources": -3.0,
-        "source_errors": -1.0
+        "source_errors": 0.0
       }
     },
     "snapshot": {
@@ -25173,49 +25173,49 @@
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 17,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         }
       },
       "entities": {},
@@ -25223,11 +25223,11 @@
       "coverage": {
         "strong": 2,
         "partial": 0,
-        "weak": 14,
-        "broken": 2,
+        "weak": 13,
+        "broken": 3,
         "missing": 2,
         "productive_sources": 0,
-        "source_errors": 2
+        "source_errors": 3
       }
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -27898,17 +27898,17 @@
     "period_key": "2026-11-13",
     "period_state": "live_today",
     "title": "Daily Intelligence Brief",
-    "generated_at": "2026-11-12T19:54:27.714402+00:00",
-    "local_generated_at": "2026-11-13T02:54:27.699889+07:00",
+    "generated_at": "2026-11-13T06:46:36.704345+00:00",
+    "local_generated_at": "2026-11-13T13:46:36.690697+07:00",
     "history_status": "ready",
     "history_readiness": {
-      "observation_days": 75,
+      "observation_days": 76,
       "recommended_days": 2,
       "history_ready": true
     },
     "executive_summary": [
       "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-      "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
+      "Độ phủ nguồn hiện có 2 domain STRONG, 13 WEAK, 3 BROKEN và 2 MISSING."
     ],
     "what_changed": [
       {
@@ -27936,6 +27936,13 @@
     "regional_watch": [],
     "contradictions": [],
     "blind_spots": [
+      {
+        "domain": "Tiền tệ · tín dụng · tỷ giá",
+        "status": "broken",
+        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+        "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
+        "planned_next_sources": []
+      },
       {
         "domain": "Chính sách & luật chơi",
         "status": "weak",
@@ -27975,13 +27982,6 @@
           "HOSE - công bố thông tin doanh nghiệp",
           "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
         ]
-      },
-      {
-        "domain": "Tiền tệ · tín dụng · tỷ giá",
-        "status": "weak",
-        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
-        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-        "planned_next_sources": []
       },
       {
         "domain": "Vĩ mô kinh tế thực",
@@ -28029,12 +28029,12 @@
       },
       {
         "priority": "coverage",
-        "subject": "Chính sách & luật chơi",
-        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+        "subject": "Tiền tệ · tín dụng · tỷ giá",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng."
       },
       {
         "priority": "coverage",
-        "subject": "Công bố doanh nghiệp",
+        "subject": "Chính sách & luật chơi",
         "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
       }
     ],
@@ -28045,7 +28045,7 @@
       "coverage_change": {
         "strong": 0.0,
         "productive_sources": 0.0,
-        "source_errors": 0.0
+        "source_errors": 1.0
       }
     },
     "snapshot": {
@@ -28055,49 +28055,49 @@
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 17,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         }
       },
       "entities": {},
@@ -28105,11 +28105,11 @@
       "coverage": {
         "strong": 2,
         "partial": 0,
-        "weak": 14,
-        "broken": 2,
+        "weak": 13,
+        "broken": 3,
         "missing": 2,
         "productive_sources": 0,
-        "source_errors": 2
+        "source_errors": 3
       }
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",
@@ -31736,17 +31736,17 @@
     "period_key": "2026-W46",
     "period_state": "week_to_date",
     "title": "Weekly Intelligence Report",
-    "generated_at": "2026-11-12T19:54:27.714694+00:00",
-    "local_generated_at": "2026-11-13T02:54:27.699889+07:00",
+    "generated_at": "2026-11-13T06:46:36.704637+00:00",
+    "local_generated_at": "2026-11-13T13:46:36.690697+07:00",
     "history_status": "ready",
     "history_readiness": {
-      "observation_days": 75,
+      "observation_days": 76,
       "recommended_days": 7,
       "history_ready": true
     },
     "executive_summary": [
       "Các theme có điểm sau phản chứng cao nhất hiện là Hạ tầng dữ liệu & số hóa, Mở rộng năng lực sản xuất.",
-      "Độ phủ nguồn hiện có 2 domain STRONG, 14 WEAK, 2 BROKEN và 2 MISSING."
+      "Độ phủ nguồn hiện có 2 domain STRONG, 13 WEAK, 3 BROKEN và 2 MISSING."
     ],
     "what_changed": [
       {
@@ -31774,6 +31774,13 @@
     "regional_watch": [],
     "contradictions": [],
     "blind_spots": [
+      {
+        "domain": "Tiền tệ · tín dụng · tỷ giá",
+        "status": "broken",
+        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
+        "coverage_note": "Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng.",
+        "planned_next_sources": []
+      },
       {
         "domain": "Chính sách & luật chơi",
         "status": "weak",
@@ -31813,13 +31820,6 @@
           "HOSE - công bố thông tin doanh nghiệp",
           "Nguồn chính thức trái phiếu doanh nghiệp/chính phủ"
         ]
-      },
-      {
-        "domain": "Tiền tệ · tín dụng · tỷ giá",
-        "status": "weak",
-        "why": "Lãi suất, tín dụng, tỷ giá và thanh khoản quyết định regime tài chính của nền kinh tế.",
-        "coverage_note": "Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy.",
-        "planned_next_sources": []
       },
       {
         "domain": "Vĩ mô kinh tế thực",
@@ -31867,12 +31867,12 @@
       },
       {
         "priority": "coverage",
-        "subject": "Chính sách & luật chơi",
-        "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
+        "subject": "Tiền tệ · tín dụng · tỷ giá",
+        "question": "Bổ sung bằng chứng nào để giảm blind spot: Nguồn active đang lỗi và chưa có coverage thay thế đủ dùng."
       },
       {
         "priority": "coverage",
-        "subject": "Công bố doanh nghiệp",
+        "subject": "Chính sách & luật chơi",
         "question": "Bổ sung bằng chứng nào để giảm blind spot: Có nguồn/collector nhưng chưa tạo evidence đủ cấp để nâng độ tin cậy."
       }
     ],
@@ -31883,7 +31883,7 @@
       "coverage_change": {
         "strong": 0.0,
         "productive_sources": 0.0,
-        "source_errors": 0.0
+        "source_errors": 1.0
       }
     },
     "snapshot": {
@@ -31893,49 +31893,49 @@
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "manufacturing_expansion": {
           "label": "Mở rộng năng lực sản xuất",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "public_infrastructure": {
           "label": "Đầu tư công & hạ tầng vật lý",
           "score": 18,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "logistics_trade": {
           "label": "Gia tốc thương mại & logistics",
           "score": 17,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "energy_grid": {
           "label": "Mở rộng điện & lưới điện",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "sme_formalization": {
           "label": "SME/hộ kinh doanh chính quy hóa & số hóa",
           "score": 16,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         },
         "consumer_services": {
           "label": "Tiêu dùng & dịch vụ",
           "score": 15,
           "state": "stable",
           "direction": "stable",
-          "observation_days": 75
+          "observation_days": 76
         }
       },
       "entities": {},
@@ -31943,11 +31943,11 @@
       "coverage": {
         "strong": 2,
         "partial": 0,
-        "weak": 14,
-        "broken": 2,
+        "weak": 13,
+        "broken": 3,
         "missing": 2,
         "productive_sources": 0,
-        "source_errors": 2
+        "source_errors": 3
       }
     },
     "reading_rule": "Report chỉ tổng hợp intelligence đã chuẩn hóa. Nó không biến inference thành fact, không tạo BUY/SELL và không được tăng confidence khi history/source coverage chưa đủ.",

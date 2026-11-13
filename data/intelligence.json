@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T19:53:04.888293+00:00",
+    "generated_at": "2026-11-13T06:44:17.885384+00:00",
     "status": "active",
     "history_days": 75,
     "required_history_days": 14,
@@ -11,14 +11,14 @@
   "category_changes": [
     {
       "category": "energy",
-      "recent_7d": 8,
-      "baseline_21d": 16,
-      "baseline_expected_7d": 5.3,
-      "delta_pct": 50,
+      "recent_7d": 9,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
+      "delta_pct": 59,
       "trend": "accelerating",
       "confidence": 100,
       "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 8 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 5.3."
+      "explanation": "7 ngày gần nhất có 9 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 5.7."
     },
     {
       "category": "infrastructure",
@@ -33,10 +33,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 19,
+      "recent_7d": 17,
       "baseline_21d": 44,
       "baseline_expected_7d": 14.7,
-      "delta_pct": 30,
+      "delta_pct": 16,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -44,14 +44,14 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 6,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": 0,
-      "trend": "stable",
+      "recent_7d": 4,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -40,
+      "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 6.7."
     },
     {
       "category": "labor",
@@ -66,14 +66,14 @@
     },
     {
       "category": "construction",
-      "recent_7d": 2,
-      "baseline_21d": 30,
-      "baseline_expected_7d": 10.0,
-      "delta_pct": -80,
+      "recent_7d": 1,
+      "baseline_21d": 29,
+      "baseline_expected_7d": 9.7,
+      "delta_pct": -90,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 10.0."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 9.7."
     },
     {
       "category": "fdi_industrial",
@@ -98,6 +98,17 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
+      "category": "capital_market",
+      "recent_7d": 2,
+      "baseline_21d": 2,
+      "baseline_expected_7d": 0.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 61,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "consumer_services",
       "recent_7d": 2,
       "baseline_21d": 1,
@@ -117,17 +128,6 @@
       "trend": "insufficient_sample",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "capital_market",
-      "recent_7d": 0,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 44,
-      "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -155,6 +155,78 @@
   ],
   "top_new_events": [
     {
+      "id": "97f555baec263524",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quốc hội thông qua Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán",
+      "url": "https://baochinhphu.vn/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-chung-khoan-102261113092536513.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+    },
+    {
+      "id": "8c9e66c7865783e2",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Cơ chế hoạt động, quản lý tài chính đặc thù đối với Tập đoàn Điện lực Việt Nam",
+      "url": "https://baochinhphu.vn/co-che-hoat-dong-quan-ly-tai-chinh-dac-thu-doi-voi-tap-doan-dien-luc-viet-nam-102261113103811886.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+    },
+    {
+      "id": "186d13a1278e57d2",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Cơ chế hoạt động, quản lý tài chính đặc thù của Tập đoàn Điện lực Việt Nam (EVN)",
+      "url": "https://xaydungchinhsach.chinhphu.vn/co-che-hoat-dong-quan-ly-tai-chinh-dac-thu-cua-tap-doan-dien-luc-viet-nam-evn-119261113094525682.htm",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+    },
+    {
+      "id": "1a3032e78cf47615",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Quốc hội thông qua Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quoc-hoi-thong-qua-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-chung-khoan-119261113094839658.htm",
+      "categories": [
+        "capital_market"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+    },
+    {
       "id": "690b0fd923731ce3",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -170,7 +242,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00",
+      "collected_at": "2026-11-12T19:53:04.888293+00:00",
+      "last_seen_at": null
     },
     {
       "id": "31a7d43ab7e986ef",
@@ -190,7 +264,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00",
+      "collected_at": "2026-11-12T19:53:04.888293+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9dd33c252f97fe39",
@@ -208,7 +284,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00",
+      "collected_at": "2026-11-12T19:53:04.888293+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8fc3da2cacccce8f",
@@ -226,7 +304,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-12T19:53:04.888293+00:00"
+      "first_seen_at": "2026-11-12T19:53:04.888293+00:00",
+      "collected_at": "2026-11-12T19:53:04.888293+00:00",
+      "last_seen_at": null
     },
     {
       "id": "4393475a994c577b",
@@ -270,22 +350,22 @@
     }
   ],
   "event_types_7d": {
-    "business_formation": 19,
-    "policy_regulation": 13,
-    "market_data": 8,
+    "business_formation": 17,
+    "policy_regulation": 16,
+    "market_data": 6,
     "capital_flow": 3,
     "hiring": 1,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1188,
-    "candidate_events": 485,
-    "reference_events": 698,
+    "historical_events": 1196,
+    "candidate_events": 489,
+    "reference_events": 702,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
