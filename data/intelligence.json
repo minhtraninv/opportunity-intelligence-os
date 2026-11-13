@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T06:44:17.885384+00:00",
+    "generated_at": "2026-11-13T19:40:41.932203+00:00",
     "status": "active",
-    "history_days": 75,
+    "history_days": 76,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -34,55 +34,55 @@
     {
       "category": "sme",
       "recent_7d": 17,
-      "baseline_21d": 44,
-      "baseline_expected_7d": 14.7,
-      "delta_pct": 16,
+      "baseline_21d": 46,
+      "baseline_expected_7d": 15.3,
+      "delta_pct": 11,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "monetary",
-      "recent_7d": 4,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": -40,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 6.7."
-    },
-    {
       "category": "labor",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 43,
       "baseline_expected_7d": 14.3,
-      "delta_pct": -86,
+      "delta_pct": -79,
       "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 14.3."
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 14.3."
     },
     {
       "category": "construction",
-      "recent_7d": 1,
-      "baseline_21d": 29,
-      "baseline_expected_7d": 9.7,
-      "delta_pct": -90,
+      "recent_7d": 2,
+      "baseline_21d": 27,
+      "baseline_expected_7d": 9.0,
+      "delta_pct": -78,
+      "trend": "cooling",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 9.0."
+    },
+    {
+      "category": "monetary",
+      "recent_7d": 3,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -55,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 9.7."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.7."
     },
     {
       "category": "fdi_industrial",
       "recent_7d": 4,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 71,
+      "confidence": 69,
       "source_diversity_7d": 2,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -121,9 +121,9 @@
     },
     {
       "category": "data_ai",
-      "recent_7d": 3,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
+      "recent_7d": 2,
+      "baseline_21d": 3,
+      "baseline_expected_7d": 1.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 55,
@@ -155,6 +155,98 @@
   ],
   "top_new_events": [
     {
+      "id": "c76266404ebdb798",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phát triển thị trường lao động, tạo việc làm cho thanh niên",
+      "url": "https://baochinhphu.vn/phat-trien-thi-truong-lao-dong-tao-viec-lam-cho-thanh-nien-102261113164937268.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T19:40:41.932203+00:00"
+    },
+    {
+      "id": "ec265a65bc7aa1a5",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định chế độ báo cáo định kỳ thuộc phạm vi quản lý nhà nước của Bộ Xây dựng",
+      "url": "https://baochinhphu.vn/quy-dinh-che-do-bao-cao-dinh-ky-thuoc-pham-vi-quan-ly-nha-nuoc-cua-bo-xay-dung-102261113171126526.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T19:40:41.932203+00:00"
+    },
+    {
+      "id": "ad97f6b199ef7fdb",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 14/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-13T19:40:41.932203+00:00"
+    },
+    {
+      "id": "49a4aa0aa97eae21",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 14/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T19:40:41.932203+00:00"
+    },
+    {
+      "id": "97f466b8d9bf5fad",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Chính phủ ban hành cơ chế hoạt động, quản lý tài chính đặc thù đối với EVN",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Chinh-phu-ban-hanh-co-che-hoat-dong-quan-ly-tai-chinh-dac-thu-doi-voi-EVN-60-12-510305",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-13T19:40:41.932203+00:00"
+    },
+    {
       "id": "97f555baec263524",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +262,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00",
+      "collected_at": "2026-11-13T06:44:17.885384+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8c9e66c7865783e2",
@@ -188,7 +282,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00",
+      "collected_at": "2026-11-13T06:44:17.885384+00:00",
+      "last_seen_at": null
     },
     {
       "id": "186d13a1278e57d2",
@@ -206,7 +302,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00",
+      "collected_at": "2026-11-13T06:44:17.885384+00:00",
+      "last_seen_at": null
     },
     {
       "id": "1a3032e78cf47615",
@@ -224,7 +322,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-13T06:44:17.885384+00:00"
+      "first_seen_at": "2026-11-13T06:44:17.885384+00:00",
+      "collected_at": "2026-11-13T06:44:17.885384+00:00",
+      "last_seen_at": null
     },
     {
       "id": "690b0fd923731ce3",
@@ -307,65 +407,25 @@
       "first_seen_at": "2026-11-12T19:53:04.888293+00:00",
       "collected_at": "2026-11-12T19:53:04.888293+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "4393475a994c577b",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Phó Thủ tướng Nguyễn Văn Thắng: Phấn đấu giải ngân 100% vốn đầu tư công, đóng góp thêm 1,7% tăng trưởng kinh tế",
-      "url": "https://baochinhphu.vn/pho-thu-tuong-nguyen-van-thang-phan-dau-giai-ngan-100-von-dau-tu-cong-dong-gop-them-17-tang-truong-kinh-te-102261112110929883.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "capital_flow",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-12T07:08:41.770043+00:00",
-      "collected_at": "2026-11-12T07:08:41.770043+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "e76c0554dc2011e6",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Đang dùng Ví điện tử trùng tên tên Giấy phép kinh doanh để giao dịch thì có phải tạo thêm tài khoản hộ kinh doanh không?",
-      "url": "https://xaydungchinhsach.chinhphu.vn/dang-dung-vi-dien-tu-trung-ten-ten-giay-phep-kinh-doanh-de-giao-dich-thi-co-phai-tao-them-tai-khoan-ho-kinh-doanh-khong-119261112123753994.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-12T07:08:41.770043+00:00",
-      "collected_at": "2026-11-12T07:08:41.770043+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 17,
     "business_formation": 17,
-    "policy_regulation": 16,
-    "market_data": 6,
+    "market_data": 5,
     "capital_flow": 3,
-    "hiring": 1,
+    "hiring": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1196,
-    "candidate_events": 489,
-    "reference_events": 702,
+    "historical_events": 1206,
+    "candidate_events": 494,
+    "reference_events": 707,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
