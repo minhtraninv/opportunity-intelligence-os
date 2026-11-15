@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T06:29:48.918434+00:00",
+    "generated_at": "2026-11-15T18:50:26.727376+00:00",
     "status": "active",
-    "history_days": 77,
+    "history_days": 78,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -22,10 +22,10 @@
     },
     {
       "category": "sme",
-      "recent_7d": 17,
+      "recent_7d": 19,
       "baseline_21d": 43,
       "baseline_expected_7d": 14.3,
-      "delta_pct": 19,
+      "delta_pct": 33,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -43,37 +43,37 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "monetary",
+      "recent_7d": 5,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "labor",
       "recent_7d": 3,
-      "baseline_21d": 43,
-      "baseline_expected_7d": 14.3,
+      "baseline_21d": 42,
+      "baseline_expected_7d": 14.0,
       "delta_pct": -79,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 14.3."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 14.0."
     },
     {
       "category": "construction",
-      "recent_7d": 2,
+      "recent_7d": 3,
       "baseline_21d": 27,
       "baseline_expected_7d": 9.0,
-      "delta_pct": -78,
+      "delta_pct": -67,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 9.0."
-    },
-    {
-      "category": "monetary",
-      "recent_7d": 4,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": -40,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 6.7."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 9.0."
     },
     {
       "category": "fdi_industrial",
@@ -155,10 +155,28 @@
   ],
   "top_new_events": [
     {
-      "id": "755343c849b6ecb4",
+      "id": "05200e3b7a780a2c",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Khẩn trương hoàn thiện việc tiếp thu, giải trình các dự án luật về nhà ở, kinh doanh bất động sản, đất đai",
+      "url": "https://baochinhphu.vn/khan-truong-hoan-thien-viec-tiep-thu-giai-trinh-cac-du-an-luat-ve-nha-o-kinh-doanh-bat-dong-san-dat-dai-102261115193924628.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-15T18:50:26.727376+00:00"
+    },
+    {
+      "id": "22dad209439cbfb7",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 15/11/2026 về Đăng ký doanh nghiệp",
+      "title": "Thống kê ngày 16/11/2026 về Đăng ký doanh nghiệp",
       "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
       "categories": [
         "sme"
@@ -172,15 +190,13 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-14T17:59:57.985215+00:00",
-      "collected_at": "2026-11-14T17:59:57.985215+00:00",
-      "last_seen_at": null
+      "first_seen_at": "2026-11-15T18:50:26.727376+00:00"
     },
     {
-      "id": "e0a5228577251143",
+      "id": "1ce43f06bf12b9a4",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 15/11 về Đăng ký doanh nghiệp",
+      "title": "Top 4 ngành nghề kinh doanh ngày 16/11 về Đăng ký doanh nghiệp",
       "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
       "categories": [
         "sme"
@@ -192,15 +208,13 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-14T17:59:57.985215+00:00",
-      "collected_at": "2026-11-14T17:59:57.985215+00:00",
-      "last_seen_at": null
+      "first_seen_at": "2026-11-15T18:50:26.727376+00:00"
     },
     {
-      "id": "e15dd8055d4ad6f2",
+      "id": "25e908eea53c053c",
       "source_id": "sbv",
       "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam ưu tiên kiểm soát lạm phát, giữ vững ổn định kinh tế vĩ mô, hỗ trợ tăng trưởng kinh tế bền vững",
+      "title": "Ngân hàng Nhà nước Việt Nam ưu tiên kiểm soát lạm phát, giữ vững ổn định kinh tế vĩ mô, hỗ trợ tăng trưởng kinh tế bền vững 13/11/2026",
       "url": "https://sbv.gov.vn/w/ng-c3-a2n-h-c3-a0ng-nh-c3-a0-n-c6-b0-e1-bb-9bc-vi-e1-bb-87t-nam-c6-b0u-ti-c3-aan-ki-e1-bb-83m-so-c3-a1t-l-e1-ba-a1m-ph-c3-a1t-gi-e1-bb-af-v-e1-bb-afng-e1-bb-95n-c4-91-e1-bb-8bnh-kinh-t-e1-ba-bf-v-c4-a9-m-c3-b4-h-e1-bb-97-tr-e1-bb-a3-t-c4-83ng-tr-c6-b-1",
       "categories": [
         "monetary"
@@ -211,25 +225,25 @@
       "signal_quality": "candidate",
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-14T17:59:57.985215+00:00",
-      "collected_at": "2026-11-14T17:59:57.985215+00:00",
-      "last_seen_at": null
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-15T18:50:26.727376+00:00"
     }
   ],
   "event_types_7d": {
-    "business_formation": 17,
-    "policy_regulation": 13,
-    "market_data": 6,
+    "business_formation": 19,
+    "policy_regulation": 14,
+    "market_data": 7,
     "capital_flow": 3,
     "hiring": 2,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1217,
-    "candidate_events": 499,
-    "reference_events": 713,
+    "historical_events": 1223,
+    "candidate_events": 503,
+    "reference_events": 715,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 2
   },
