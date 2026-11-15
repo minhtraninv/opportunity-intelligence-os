@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T22:23:06.237776+00:00",
+    "generated_at": "2026-11-15T06:29:48.918434+00:00",
     "status": "active",
     "history_days": 77,
     "required_history_days": 14,
@@ -9,17 +9,6 @@
     "method": "normalized_candidate_frequency_change_v2"
   },
   "category_changes": [
-    {
-      "category": "infrastructure",
-      "recent_7d": 5,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": 150,
-      "trend": "accelerating",
-      "confidence": 82,
-      "source_diversity_7d": 3,
-      "explanation": "7 ngày gần nhất có 5 candidate events từ 3 nguồn; baseline quy đổi 7 ngày là 2.0."
-    },
     {
       "category": "energy",
       "recent_7d": 8,
@@ -40,6 +29,17 @@
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 4,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 71,
+      "trend": "stable",
+      "confidence": 82,
+      "source_diversity_7d": 3,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -67,13 +67,13 @@
     {
       "category": "monetary",
       "recent_7d": 4,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": -43,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -40,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.0."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 6.7."
     },
     {
       "category": "fdi_industrial",
@@ -215,46 +215,6 @@
       "first_seen_at": "2026-11-14T17:59:57.985215+00:00",
       "collected_at": "2026-11-14T17:59:57.985215+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "b434191a4d788f9a",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Phó Thủ tướng Thường trực Phạm Gia Túc dự Lễ khởi công dự án Thủy điện tích năng Đông Phù Yên",
-      "url": "https://baochinhphu.vn/pho-thu-tuong-thuong-truc-pham-gia-tuc-du-le-khoi-cong-du-an-thuy-dien-tich-nang-dong-phu-yen-102261114100000346.htm",
-      "categories": [
-        "infrastructure"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "infrastructure_delivery",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-14T06:21:18.932821+00:00",
-      "collected_at": "2026-11-14T06:21:18.932821+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "7710b2700d6dd3c0",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Ngân hàng Nhà nước Việt Nam ưu tiên kiểm soát lạm phát, giữ vững ổn định kinh tế vĩ mô, hỗ trợ tăng trưởng kinh tế bền vững Mới",
-      "url": "https://sbv.gov.vn/w/ng-c3-a2n-h-c3-a0ng-nh-c3-a0-n-c6-b0-e1-bb-9bc-vi-e1-bb-87t-nam-c6-b0u-ti-c3-aan-ki-e1-bb-83m-so-c3-a1t-l-e1-ba-a1m-ph-c3-a1t-gi-e1-bb-af-v-e1-bb-afng-e1-bb-95n-c4-91-e1-bb-8bnh-kinh-t-e1-ba-bf-v-c4-a9-m-c3-b4-h-e1-bb-97-tr-e1-bb-a3-t-c4-83ng-tr-c6-b-1",
-      "categories": [
-        "monetary"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-14T06:21:18.932821+00:00",
-      "collected_at": "2026-11-14T06:21:18.932821+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
@@ -262,18 +222,18 @@
     "policy_regulation": 13,
     "market_data": 6,
     "capital_flow": 3,
-    "infrastructure_delivery": 2,
-    "hiring": 2
+    "hiring": 2,
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1216,
+    "historical_events": 1217,
     "candidate_events": 499,
-    "reference_events": 712,
+    "reference_events": 713,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
