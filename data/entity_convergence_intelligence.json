@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-11-15T18:53:22.658290+00:00",
+    "generated_at": "2026-11-16T06:28:14.631712+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-11-15T18:53:23.134624+00:00"
+    "trust_hardened_at": "2026-11-16T06:28:15.095193+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -20,9 +20,9 @@
     "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 20,
+    "discovery_candidates": 19,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 9
+    "suppressed_non_organizations": 10
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -743,10 +743,10 @@
         "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 5,
+      "event_count": 4,
       "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 4,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -809,20 +809,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "8b52cd643b3ba93d",
-          "event_signature": "772bfa8a3b885280",
-          "family": "project_execution",
-          "title": "Techcombank giảm lãi suất theo đúng chủ trương của Chính phủ và NHNN",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/techcombank-giam-lai-suat-theo-dung-chu-truong-cua-chinh-phu-va-nhnn-185261022145049714.htm",
-          "observed_at": "2026-10-22T07:37:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -850,41 +836,46 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-vinamilk-4fadd564",
-      "label": "Vinamilk",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
+      "entity_id": "hoa_phat_group",
+      "label": "Hòa Phát",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
       "status": "discovery_convergence",
-      "convergence_score": 18,
-      "why_now": "Vinamilk đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "convergence_score": 17,
+      "why_now": "Hòa Phát đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
       "evidence_families": [
+        "capital",
+        "labor",
         "operating",
-        "project_execution"
+        "project_execution",
+        "strategy"
       ],
       "independent_publishers": [
-        "Thanh Niên Kinh tế",
         "Tuổi Trẻ Kinh doanh",
         "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 4,
+      "event_count": 9,
       "primary_evidence_count": 0,
-      "media_evidence_count": 4,
-      "newest_evidence_age_days": 4,
+      "media_evidence_count": 8,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
+        "policy_execution_alignment",
+        "capital_execution_alignment",
+        "strategy_execution_alignment",
         "media_only_needs_primary_verification"
       ],
       "theme_context": [],
       "regional_context": [],
       "evidence": [
         {
-          "id": "470e5dc8b731800c",
-          "event_signature": "139401e8db2ee6f7",
-          "family": "operating",
-          "title": "Vinamilk tăng trưởng doanh thu, tiếp tục được vinh danh trong và ngoài nước",
+          "id": "e9004358cacc32ec",
+          "event_signature": "9cfb594e41735782",
+          "family": "capital",
+          "title": "Hòa Phát bỏ 650 tỉ đồng lập công ty năng lượng tái tạo",
           "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vinamilk-tang-truong-doanh-thu-tiep-tuc-duoc-vinh-danh-trong-va-ngoai-nuoc-100261110140704914.htm",
-          "observed_at": "2026-11-11T06:17:52.741040+00:00",
+          "source_url": "https://tuoitre.vn/hoa-phat-bo-650-ti-dong-lap-cong-ty-nang-luong-tai-tao-100261116092432824.htm",
+          "observed_at": "2026-11-16T06:27:57.390847+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -892,13 +883,13 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "a3f60a61eba43c09",
-          "event_signature": "370b18cc0819b3dc",
-          "family": "operating",
-          "title": "Vinamilk đạt doanh thu hơn 53.000 tỷ đồng trong 9 tháng",
+          "id": "53ab0479013c2d1c",
+          "event_signature": "0fe9c023314b4e58",
+          "family": "strategy",
+          "title": "Hòa Phát thành lập công ty năng lượng tái tạo",
           "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/vinamilk-dat-doanh-thu-hon-53-000-ty-dong-trong-9-thang-5142590.html",
-          "observed_at": "2026-11-09T11:00:00+00:00",
+          "source_url": "https://vnexpress.net/hoa-phat-thanh-lap-cong-ty-nang-luong-tai-tao-5144728.html",
+          "observed_at": "2026-11-14T13:20:21+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -906,27 +897,83 @@
           "evidence_grade": "media_discovery"
         },
         {
-          "id": "7d0d83c6aa0d812e",
-          "event_signature": "e652984c14c3f85f",
-          "family": "operating",
-          "title": "Vinamilk đạt doanh thu 18.465 tỉ đồng Quý 3 cùng các vinh danh trong và ngoài nước",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vinamilk-dat-doanh-thu-18465-ti-dong-quy-3-cung-cac-vinh-danh-trong-va-ngoai-nuoc-185261109115759351.htm",
-          "observed_at": "2026-11-09T06:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "79559a3e8120b92f",
-          "event_signature": "613bbf759343d67d",
-          "family": "project_execution",
-          "title": "Vinamilk chung tay xây dựng \"sức đề kháng số\" cho thế hệ tương lai",
+          "id": "430f33f772171df1",
+          "event_signature": "a02bb43c1cc10787",
+          "family": "labor",
+          "title": "Kinh tế xanh tại Lâm Đồng: Trồng dâu nuôi tằm gắn với cải thiện sinh kế",
           "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vinamilk-chung-tay-xay-dung-suc-de-khang-so-cho-the-he-tuong-lai-post1145210.vnp",
-          "observed_at": "2026-10-30T15:31:41+00:00",
+          "source_url": "https://www.vietnamplus.vn/kinh-te-xanh-tai-lam-dong-trong-dau-nuoi-tam-gan-voi-cai-thien-sinh-ke-post1146273.vnp",
+          "observed_at": "2026-11-13T11:32:57+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "dfde0214d4615386",
+          "event_signature": "33d78f866895ec78",
+          "family": "labor",
+          "title": "30 tập đoàn lớn gồm Vingroup, Hòa Phát, Sovico... tạo ra hơn nửa triệu việc làm",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/30-tap-doan-lon-gom-vingroup-hoa-phat-sovico-tao-ra-hon-nua-trieu-viec-lam-100261103151342675.htm",
+          "observed_at": "2026-11-04T06:21:28.200693+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "0812fa92545769a4",
+          "event_signature": "42b6cd6b397b3e2c",
+          "family": "operating",
+          "title": "Volkswagen đối mặt khoản lỗ lên tới hơn 6 tỷ USD chỉ trong 1 quý",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/volkswagen-doi-mat-khoan-lo-len-toi-hon-6-ty-usd-chi-trong-1-quy-post1145084.vnp",
+          "observed_at": "2026-10-29T21:04:45+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e9ed91ac4aef623b",
+          "event_signature": "e19cec5c036b4af5",
+          "family": "project_execution",
+          "title": "Hòa Phát đạt 23.746 tỷ đồng lợi nhuận sau thuế, nộp ngân sách tại 20 tỉnh, thành",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/hoa-phat-dat-23746-ty-dong-loi-nhuan-sau-thue-nop-ngan-sach-tai-20-tinh-thanh-post1145044.vnp",
+          "observed_at": "2026-10-29T17:05:11+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "e0eed4605dfebf29",
+          "event_signature": "97c607b43c8da20c",
+          "family": "project_execution",
+          "title": "Thành phố Hồ Chí Minh đề xuất ưu đãi 8 nhóm ngành kinh tế biển",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/thanh-pho-ho-chi-minh-de-xuat-uu-dai-8-nhom-nganh-kinh-te-bien-post1145022.vnp",
+          "observed_at": "2026-10-29T16:12:13+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "29fa56d79482e31a",
+          "event_signature": "23768d943ec188cf",
+          "family": "labor",
+          "title": "Gỡ \"nút thắt\" nguyên liệu và vốn để hồi sinh Tổ hợp mỏ-luyện kim Cao Bằng",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/go-nut-that-nguyen-lieu-va-von-de-hoi-sinh-to-hop-mo-luyen-kim-cao-bang-post1144998.vnp",
+          "observed_at": "2026-10-29T14:36:46+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -953,8 +1000,11 @@
       "official_headline_discovery_count": 0,
       "verified_evidence_families": [],
       "discovery_evidence_families": [
+        "capital",
+        "labor",
         "operating",
-        "project_execution"
+        "project_execution",
+        "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -1135,178 +1185,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "hoa_phat_group",
-      "label": "Hòa Phát",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Hòa Phát đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "labor",
-        "operating",
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 8,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 8,
-      "newest_evidence_age_days": 1,
-      "anomaly_flags": [
-        "policy_execution_alignment",
-        "strategy_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "53ab0479013c2d1c",
-          "event_signature": "0fe9c023314b4e58",
-          "family": "strategy",
-          "title": "Hòa Phát thành lập công ty năng lượng tái tạo",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/hoa-phat-thanh-lap-cong-ty-nang-luong-tai-tao-5144728.html",
-          "observed_at": "2026-11-14T13:20:21+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "430f33f772171df1",
-          "event_signature": "a02bb43c1cc10787",
-          "family": "labor",
-          "title": "Kinh tế xanh tại Lâm Đồng: Trồng dâu nuôi tằm gắn với cải thiện sinh kế",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/kinh-te-xanh-tai-lam-dong-trong-dau-nuoi-tam-gan-voi-cai-thien-sinh-ke-post1146273.vnp",
-          "observed_at": "2026-11-13T11:32:57+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "dfde0214d4615386",
-          "event_signature": "33d78f866895ec78",
-          "family": "labor",
-          "title": "30 tập đoàn lớn gồm Vingroup, Hòa Phát, Sovico... tạo ra hơn nửa triệu việc làm",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/30-tap-doan-lon-gom-vingroup-hoa-phat-sovico-tao-ra-hon-nua-trieu-viec-lam-100261103151342675.htm",
-          "observed_at": "2026-11-04T06:21:28.200693+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "0812fa92545769a4",
-          "event_signature": "42b6cd6b397b3e2c",
-          "family": "operating",
-          "title": "Volkswagen đối mặt khoản lỗ lên tới hơn 6 tỷ USD chỉ trong 1 quý",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/volkswagen-doi-mat-khoan-lo-len-toi-hon-6-ty-usd-chi-trong-1-quy-post1145084.vnp",
-          "observed_at": "2026-10-29T21:04:45+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e9ed91ac4aef623b",
-          "event_signature": "e19cec5c036b4af5",
-          "family": "project_execution",
-          "title": "Hòa Phát đạt 23.746 tỷ đồng lợi nhuận sau thuế, nộp ngân sách tại 20 tỉnh, thành",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/hoa-phat-dat-23746-ty-dong-loi-nhuan-sau-thue-nop-ngan-sach-tai-20-tinh-thanh-post1145044.vnp",
-          "observed_at": "2026-10-29T17:05:11+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e0eed4605dfebf29",
-          "event_signature": "97c607b43c8da20c",
-          "family": "project_execution",
-          "title": "Thành phố Hồ Chí Minh đề xuất ưu đãi 8 nhóm ngành kinh tế biển",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/thanh-pho-ho-chi-minh-de-xuat-uu-dai-8-nhom-nganh-kinh-te-bien-post1145022.vnp",
-          "observed_at": "2026-10-29T16:12:13+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "29fa56d79482e31a",
-          "event_signature": "23768d943ec188cf",
-          "family": "labor",
-          "title": "Gỡ \"nút thắt\" nguyên liệu và vốn để hồi sinh Tổ hợp mỏ-luyện kim Cao Bằng",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/go-nut-that-nguyen-lieu-va-von-de-hoi-sinh-to-hop-mo-luyen-kim-cao-bang-post1144998.vnp",
-          "observed_at": "2026-10-29T14:36:46+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "87057e7815ac06f1",
-          "event_signature": "9f9c1c3ffd2d0a30",
-          "family": "policy",
-          "title": "Tạo động lực phát triển kinh tế biển, bảo vệ chủ quyền, lợi ích quốc gia",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tao-dong-luc-phat-trien-kinh-te-bien-bao-ve-chu-quyen-loi-ich-quoc-gia-post1144005.vnp",
-          "observed_at": "2026-10-24T15:11:54+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "labor",
-        "operating",
-        "policy",
-        "project_execution",
-        "strategy"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-sacombank-5192412f",
       "label": "Sacombank",
       "entity_type": "organization_candidate",
@@ -1479,7 +1357,7 @@
       "event_count": 6,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -1722,6 +1600,118 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-vietcombank-23e586d9",
+      "label": "Vietcombank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "Vietcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "labor",
+        "operating",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "561d47aa9b19cd45",
+          "event_signature": "733eb7947772554b",
+          "family": "strategy",
+          "title": "Vietcombank đồng hành cùng TP.HCM trong giai đoạn phát triển mới",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vietcombank-dong-hanh-cung-tphcm-trong-giai-doan-phat-trien-moi-100261115215711419.htm",
+          "observed_at": "2026-11-16T06:27:57.390847+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "da6ff22e4e9fc611",
+          "event_signature": "222e4df16509b893",
+          "family": "labor",
+          "title": "Vietcombank chi nhánh TP.HCM nhận Huân chương Lao động hạng Nhất",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vietcombank-chi-nhanh-tphcm-nhan-huan-chuong-lao-dong-hang-nhat-100261116102638293.htm",
+          "observed_at": "2026-11-16T06:27:57.390847+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "2f717f39df9d6f34",
+          "event_signature": "4cd24319ed8a32c8",
+          "family": "capital",
+          "title": "Vietcombank hạ lãi vay cuối năm, gần 25.000 khách hàng hưởng lợi",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/vietcombank-ha-lai-vay-cuoi-nam-gan-25000-khach-hang-huong-loi-post1148117.vnp",
+          "observed_at": "2026-11-13T14:53:48+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "2a212326666fe016",
+          "event_signature": "c84895cb395b6d8b",
+          "family": "operating",
+          "title": "Vietcombank cảnh báo mã độc khai thác bảo mật trên thiết bị điều hành iOS",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/vietcombank-canh-bao-ma-doc-khai-thac-bao-mat-tren-thiet-bi-dieu-hanh-ios-185261029090720162.htm",
+          "observed_at": "2026-10-29T02:17:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "labor",
+        "operating",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-vib-9f41a724",
       "label": "VIB",
       "entity_type": "organization_candidate",
@@ -1742,7 +1732,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 17,
+      "newest_evidence_age_days": 18,
       "anomaly_flags": [
         "capital_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1829,102 +1819,6 @@
         "capital",
         "operating",
         "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
-      "entity_id": "auto-vietcombank-23e586d9",
-      "label": "Vietcombank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Vietcombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "operating",
-        "strategy"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 3,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 3,
-      "newest_evidence_age_days": 0,
-      "anomaly_flags": [
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "561d47aa9b19cd45",
-          "event_signature": "733eb7947772554b",
-          "family": "strategy",
-          "title": "Vietcombank đồng hành cùng TP.HCM trong giai đoạn phát triển mới",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vietcombank-dong-hanh-cung-tphcm-trong-giai-doan-phat-trien-moi-100261115215711419.htm",
-          "observed_at": "2026-11-15T18:53:05.493775+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "2f717f39df9d6f34",
-          "event_signature": "4cd24319ed8a32c8",
-          "family": "capital",
-          "title": "Vietcombank hạ lãi vay cuối năm, gần 25.000 khách hàng hưởng lợi",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/vietcombank-ha-lai-vay-cuoi-nam-gan-25000-khach-hang-huong-loi-post1148117.vnp",
-          "observed_at": "2026-11-13T14:53:48+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "2a212326666fe016",
-          "event_signature": "c84895cb395b6d8b",
-          "family": "operating",
-          "title": "Vietcombank cảnh báo mã độc khai thác bảo mật trên thiết bị điều hành iOS",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/vietcombank-canh-bao-ma-doc-khai-thac-bao-mat-tren-thiet-bi-dieu-hanh-ios-185261029090720162.htm",
-          "observed_at": "2026-10-29T02:17:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "operating",
-        "strategy"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -2204,7 +2098,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2328,7 +2222,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 3,
       "anomaly_flags": [
         "media_only_needs_primary_verification"
       ],
@@ -2451,7 +2345,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2564,7 +2458,7 @@
       "event_count": 12,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2909,6 +2803,12 @@
     {
       "entity_id": "auto-thái-nguyên-d5b0cb3a",
       "label": "Thái Nguyên",
+      "entity_type": "location",
+      "reason": "geography_belongs_in_regional_radar"
+    },
+    {
+      "entity_id": "auto-quảng-ngãi-2c2a20e3",
+      "label": "Quảng Ngãi",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
