@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T20:30:00.860224+00:00",
+    "generated_at": "2026-11-19T07:23:54.455497+00:00",
     "status": "active",
     "history_days": 81,
     "required_history_days": 14,
@@ -11,12 +11,34 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 16,
-      "baseline_21d": 43,
-      "baseline_expected_7d": 14.3,
-      "delta_pct": 12,
+      "recent_7d": 15,
+      "baseline_21d": 44,
+      "baseline_expected_7d": 14.7,
+      "delta_pct": 2,
       "trend": "stable",
       "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "construction",
+      "recent_7d": 5,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "infrastructure",
+      "recent_7d": 2,
+      "baseline_21d": 6,
+      "baseline_expected_7d": 2.0,
+      "delta_pct": 0,
+      "trend": "stable",
+      "confidence": 69,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
@@ -33,36 +55,25 @@
     },
     {
       "category": "labor",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 36,
       "baseline_expected_7d": 12.0,
-      "delta_pct": -75,
+      "delta_pct": -67,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 12.0."
-    },
-    {
-      "category": "construction",
-      "recent_7d": 4,
-      "baseline_21d": 22,
-      "baseline_expected_7d": 7.3,
-      "delta_pct": -45,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.3."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 12.0."
     },
     {
       "category": "monetary",
       "recent_7d": 3,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": -57,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": -53,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 7.0."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.3."
     },
     {
       "category": "fdi_industrial",
@@ -74,17 +85,6 @@
       "confidence": 54,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.3."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 3,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 69,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "capital_market",
@@ -155,6 +155,42 @@
   ],
   "top_new_events": [
     {
+      "id": "b6b060d80e842e06",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Người thầy đặt tương lai việc làm của sinh viên vào lời cam kết",
+      "url": "https://baochinhphu.vn/nguoi-thay-dat-tuong-lai-viec-lam-cua-sinh-vien-vao-loi-cam-ket-102261117161943222.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-19T07:23:54.455497+00:00"
+    },
+    {
+      "id": "7e5a03e512f4f019",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "TOÀN VĂN: Nghị quyết số 31-NQ/TW về tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện, đáp ứng yêu cầu phát triển của đất nước trong kỷ nguyên mới",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-31-nq-tw-ve-tang-cuong-xay-dung-chinh-don-dang-va-he-thong-chinh-tri-trong-sach-vung-manh-toan-dien-dap-ung-yeu-cau-phat-trien-cua-dat-nuoc-trong-ky-nguyen-moi-119261016055452113.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-19T07:23:54.455497+00:00"
+    },
+    {
       "id": "5e9d52b41fbbe2e1",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +208,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-18T20:30:00.860224+00:00"
+      "first_seen_at": "2026-11-18T20:30:00.860224+00:00",
+      "collected_at": "2026-11-18T20:30:00.860224+00:00",
+      "last_seen_at": null
     },
     {
       "id": "2f55b8eacbebd003",
@@ -190,7 +228,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-18T20:30:00.860224+00:00"
+      "first_seen_at": "2026-11-18T20:30:00.860224+00:00",
+      "collected_at": "2026-11-18T20:30:00.860224+00:00",
+      "last_seen_at": null
     },
     {
       "id": "54ddf6ac1497ac6f",
@@ -214,87 +254,25 @@
       "first_seen_at": "2026-11-18T07:27:21.705911+00:00",
       "collected_at": "2026-11-18T07:27:21.705911+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "505f2b21b2ea519d",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Hoàn thiện hồ sơ dự án Luật Nhà ở (sửa đổi) với chất lượng cao nhất",
-      "url": "https://baochinhphu.vn/hoan-thien-ho-so-du-an-luat-nha-o-sua-doi-voi-chat-luong-cao-nhat-102261117163719494.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-17T20:54:34.337192+00:00",
-      "collected_at": "2026-11-17T20:54:34.337192+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "6c1ff7949a34cb36",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 18/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-17T20:54:34.337192+00:00",
-      "collected_at": "2026-11-17T20:54:34.337192+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8df151f65d610562",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 18/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-17T20:54:34.337192+00:00",
-      "collected_at": "2026-11-17T20:54:34.337192+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 16,
-    "policy_regulation": 9,
-    "hiring": 3,
+    "business_formation": 15,
+    "policy_regulation": 10,
+    "hiring": 4,
     "market_data": 3,
-    "capital_flow": 2,
-    "infrastructure_delivery": 1
+    "infrastructure_delivery": 1,
+    "capital_flow": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1263,
-    "candidate_events": 513,
-    "reference_events": 745,
+    "historical_events": 1269,
+    "candidate_events": 515,
+    "reference_events": 749,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
