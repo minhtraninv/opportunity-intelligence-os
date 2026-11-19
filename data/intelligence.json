@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T07:23:54.455497+00:00",
+    "generated_at": "2026-11-19T20:36:01.276236+00:00",
     "status": "active",
-    "history_days": 81,
+    "history_days": 82,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -10,36 +10,36 @@
   },
   "category_changes": [
     {
-      "category": "sme",
-      "recent_7d": 15,
-      "baseline_21d": 44,
-      "baseline_expected_7d": 14.7,
-      "delta_pct": 2,
+      "category": "construction",
+      "recent_7d": 5,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -17,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": -25,
+      "category": "sme",
+      "recent_7d": 14,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": -7,
       "trend": "stable",
-      "confidence": 93,
-      "source_diversity_7d": 2,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "infrastructure",
-      "recent_7d": 2,
+      "recent_7d": 1,
       "baseline_21d": 6,
       "baseline_expected_7d": 2.0,
-      "delta_pct": 0,
+      "delta_pct": -50,
       "trend": "stable",
-      "confidence": 69,
-      "source_diversity_7d": 2,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -67,13 +67,13 @@
     {
       "category": "monetary",
       "recent_7d": 3,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": -53,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -50,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.3."
+      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.0."
     },
     {
       "category": "fdi_industrial",
@@ -133,11 +133,11 @@
     {
       "category": "logistics",
       "recent_7d": 0,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 44,
+      "confidence": 42,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "727a777210f2f470",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 20/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-19T20:36:01.276236+00:00"
+    },
+    {
+      "id": "00b6fbd2013ba059",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 20/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-19T20:36:01.276236+00:00"
+    },
+    {
       "id": "b6b060d80e842e06",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +208,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-19T07:23:54.455497+00:00"
+      "first_seen_at": "2026-11-19T07:23:54.455497+00:00",
+      "collected_at": "2026-11-19T07:23:54.455497+00:00",
+      "last_seen_at": null
     },
     {
       "id": "7e5a03e512f4f019",
@@ -188,91 +228,27 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-19T07:23:54.455497+00:00"
-    },
-    {
-      "id": "5e9d52b41fbbe2e1",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 19/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-18T20:30:00.860224+00:00",
-      "collected_at": "2026-11-18T20:30:00.860224+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "2f55b8eacbebd003",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 19/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-18T20:30:00.860224+00:00",
-      "collected_at": "2026-11-18T20:30:00.860224+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "54ddf6ac1497ac6f",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Kết luận số 123-KL/TW về thực hiện Kết luận số 107-KL/TW; tiến độ hoàn thiện cơ sở dữ liệu vị trí việc làm và phương án biên chế giai đoạn 2027-2031",
-      "url": "https://xaydungchinhsach.chinhphu.vn/ket-luan-so-123-kl-tw-ve-thuc-hien-ket-luan-so-107-kl-tw-tien-do-hoan-thien-co-so-du-lieu-vi-tri-viec-lam-va-phuong-an-bien-che-giai-doan-2027-2031-119261118080844388.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2027,
-        2031
-      ],
-      "first_seen_at": "2026-11-18T07:27:21.705911+00:00",
-      "collected_at": "2026-11-18T07:27:21.705911+00:00",
+      "first_seen_at": "2026-11-19T07:23:54.455497+00:00",
+      "collected_at": "2026-11-19T07:23:54.455497+00:00",
       "last_seen_at": null
     }
   ],
   "event_types_7d": {
-    "business_formation": 15,
+    "business_formation": 14,
     "policy_regulation": 10,
     "hiring": 4,
     "market_data": 3,
-    "infrastructure_delivery": 1,
-    "capital_flow": 1
+    "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1269,
-    "candidate_events": 515,
-    "reference_events": 749,
+    "historical_events": 1274,
+    "candidate_events": 517,
+    "reference_events": 752,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
