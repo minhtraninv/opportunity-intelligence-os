@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T07:14:24.791223+00:00",
+    "generated_at": "2026-11-20T20:17:39.684028+00:00",
     "status": "active",
-    "history_days": 82,
+    "history_days": 83,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 15,
-      "baseline_21d": 45,
-      "baseline_expected_7d": 15.0,
-      "delta_pct": 0,
+      "baseline_21d": 47,
+      "baseline_expected_7d": 15.7,
+      "delta_pct": -4,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -22,10 +22,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 17,
-      "baseline_expected_7d": 5.7,
-      "delta_pct": -12,
+      "recent_7d": 4,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -45,13 +45,24 @@
     {
       "category": "labor",
       "recent_7d": 4,
-      "baseline_21d": 35,
-      "baseline_expected_7d": 11.7,
-      "delta_pct": -66,
+      "baseline_21d": 36,
+      "baseline_expected_7d": 12.0,
+      "delta_pct": -67,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 11.7."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 12.0."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 0,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": -100,
+      "trend": "cooling",
+      "confidence": 80,
+      "source_diversity_7d": 0,
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 7.3."
     },
     {
       "category": "monetary",
@@ -63,17 +74,6 @@
       "confidence": 55,
       "source_diversity_7d": 1,
       "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.0."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 1,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
-      "delta_pct": -86,
-      "trend": "cooling",
-      "confidence": 55,
-      "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 7.0."
     },
     {
       "category": "fdi_industrial",
@@ -88,12 +88,23 @@
     },
     {
       "category": "policy",
-      "recent_7d": 1,
+      "recent_7d": 3,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 55,
+      "confidence": 69,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "logistics",
+      "recent_7d": 1,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 51,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -131,17 +142,6 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "logistics",
-      "recent_7d": 0,
-      "baseline_21d": 1,
-      "baseline_expected_7d": 0.3,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 42,
-      "source_diversity_7d": 0,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "trade_flow",
       "recent_7d": 0,
       "baseline_21d": 0,
@@ -154,6 +154,118 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "b36c6853d4043374",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Phó Thủ tướng Lê Tiến Châu: Thiết lập cơ chế phòng ngừa rủi ro giá, phát triển thị trường hàng hóa phái sinh",
+      "url": "https://baochinhphu.vn/pho-thu-tuong-le-tien-chau-thiet-lap-co-che-phong-ngua-rui-ro-gia-phat-trien-thi-truong-hang-hoa-phai-sinh-102261120155953386.htm",
+      "categories": [
+        "logistics"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
+    {
+      "id": "0e83f000dc80537c",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Đề xuất sửa Luật Doanh nghiệp với 5 nhóm chính sách trọng tâm",
+      "url": "https://baochinhphu.vn/de-xuat-sua-luat-doanh-nghiep-voi-5-nhom-chinh-sach-trong-tam-102261120170113797.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
+    {
+      "id": "072f50628f8c1519",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Bảo hiểm thất nghiệp - đồng hành cùng lao động nữ khi mất việc làm",
+      "url": "https://xaydungchinhsach.chinhphu.vn/bao-hiem-that-nghiep-dong-hanh-cung-lao-dong-nu-khi-mat-viec-lam-119261120163259933.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
+    {
+      "id": "d4539bb2dc5a7318",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 21/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
+    {
+      "id": "03aeb6d22f51611d",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 21/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
+    {
+      "id": "8878a2b333614fa7",
+      "source_id": "sbv",
+      "publisher": "Ngân hàng Nhà nước Việt Nam",
+      "title": "Thông cáo báo chí về Nghị định số 416/2026/NĐ-CP ngày 19/11/2026 của Chính phủ quy định về chính sách tín dụng ưu đãi hỗ trợ phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi (20/11/2026)",
+      "url": "https://sbv.gov.vn/w/th%C3%B4ng-c%C3%A1o-b%C3%A1o-ch%C3%AD-v%E1%BB%81-ngh%E1%BB%8B-%C4%91%E1%BB%8Bnh-s%E1%BB%91-416/2026/n%C4%91-cp-ng%C3%A0y-19/11/2026-c%E1%BB%A7a-ch%C3%ADnh-ph%E1%BB%A7-quy-%C4%91%E1%BB%8Bnh-v%E1%BB%81-ch%C3%ADnh-s%C3%A1ch-t%C3%ADn-d%E1%BB%A5ng-%C6%B0u-",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+    },
     {
       "id": "e48bd6911b03ead8",
       "source_id": "gov",
@@ -170,7 +282,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-20T07:14:24.791223+00:00"
+      "first_seen_at": "2026-11-20T07:14:24.791223+00:00",
+      "collected_at": "2026-11-20T07:14:24.791223+00:00",
+      "last_seen_at": null
     },
     {
       "id": "cf37ac82b7fb974a",
@@ -190,7 +304,9 @@
       "mentioned_years": [
         2027
       ],
-      "first_seen_at": "2026-11-20T07:14:24.791223+00:00"
+      "first_seen_at": "2026-11-20T07:14:24.791223+00:00",
+      "collected_at": "2026-11-20T07:14:24.791223+00:00",
+      "last_seen_at": null
     },
     {
       "id": "727a777210f2f470",
@@ -233,60 +349,20 @@
       "first_seen_at": "2026-11-19T20:36:01.276236+00:00",
       "collected_at": "2026-11-19T20:36:01.276236+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "b6b060d80e842e06",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Người thầy đặt tương lai việc làm của sinh viên vào lời cam kết",
-      "url": "https://baochinhphu.vn/nguoi-thay-dat-tuong-lai-viec-lam-cua-sinh-vien-vao-loi-cam-ket-102261117161943222.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-19T07:23:54.455497+00:00",
-      "collected_at": "2026-11-19T07:23:54.455497+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "7e5a03e512f4f019",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "TOÀN VĂN: Nghị quyết số 31-NQ/TW về tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện, đáp ứng yêu cầu phát triển của đất nước trong kỷ nguyên mới",
-      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-31-nq-tw-ve-tang-cuong-xay-dung-chinh-don-dang-va-he-thong-chinh-tri-trong-sach-vung-manh-toan-dien-dap-ung-yeu-cau-phat-trien-cua-dat-nuoc-trong-ky-nguyen-moi-119261016055452113.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-19T07:23:54.455497+00:00",
-      "collected_at": "2026-11-19T07:23:54.455497+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 8,
+    "policy_regulation": 9,
     "hiring": 4,
     "market_data": 3,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1278,
-    "candidate_events": 519,
-    "reference_events": 754,
+    "historical_events": 1289,
+    "candidate_events": 525,
+    "reference_events": 759,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
