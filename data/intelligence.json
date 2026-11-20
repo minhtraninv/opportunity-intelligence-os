@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T20:36:01.276236+00:00",
+    "generated_at": "2026-11-20T07:14:24.791223+00:00",
     "status": "active",
     "history_days": 82,
     "required_history_days": 14,
@@ -10,25 +10,25 @@
   },
   "category_changes": [
     {
-      "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": -17,
+      "category": "sme",
+      "recent_7d": 15,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "sme",
-      "recent_7d": 14,
-      "baseline_21d": 45,
-      "baseline_expected_7d": 15.0,
-      "delta_pct": -7,
+      "category": "construction",
+      "recent_7d": 5,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
+      "delta_pct": -12,
       "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
+      "confidence": 93,
+      "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -43,26 +43,15 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": -53,
-      "trend": "cooling",
-      "confidence": 100,
-      "source_diversity_7d": 3,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.3."
-    },
-    {
       "category": "labor",
       "recent_7d": 4,
-      "baseline_21d": 36,
-      "baseline_expected_7d": 12.0,
-      "delta_pct": -67,
+      "baseline_21d": 35,
+      "baseline_expected_7d": 11.7,
+      "delta_pct": -66,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 12.0."
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 11.7."
     },
     {
       "category": "monetary",
@@ -76,6 +65,17 @@
       "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.0."
     },
     {
+      "category": "energy",
+      "recent_7d": 1,
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": -86,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 7.0."
+    },
+    {
       "category": "fdi_industrial",
       "recent_7d": 0,
       "baseline_21d": 7,
@@ -87,25 +87,14 @@
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.3."
     },
     {
-      "category": "capital_market",
-      "recent_7d": 2,
-      "baseline_21d": 2,
-      "baseline_expected_7d": 0.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 61,
-      "source_diversity_7d": 2,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "policy",
-      "recent_7d": 0,
+      "recent_7d": 1,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 50,
-      "source_diversity_7d": 0,
+      "confidence": 55,
+      "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -116,6 +105,17 @@
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 50,
+      "source_diversity_7d": 0,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
+      "category": "capital_market",
+      "recent_7d": 0,
+      "baseline_21d": 4,
+      "baseline_expected_7d": 1.3,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 48,
       "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -155,6 +155,44 @@
   ],
   "top_new_events": [
     {
+      "id": "e48bd6911b03ead8",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Chính sách tín dụng ưu đãi hỗ trợ phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi",
+      "url": "https://baochinhphu.vn/chinh-sach-tin-dung-uu-dai-ho-tro-phat-trien-kinh-te-xa-hoi-vung-dong-bao-dan-toc-thieu-so-va-mien-nui-102261120093457123.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-20T07:14:24.791223+00:00"
+    },
+    {
+      "id": "cf37ac82b7fb974a",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Luật Phát triển doanh nghiệp nhỏ và vừa có hiệu lực từ 1/7/2027",
+      "url": "https://xaydungchinhsach.chinhphu.vn/luat-phat-trien-doanh-nghiep-nho-va-vua-co-hieu-luc-tu-1-7-2027-119261120091123117.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027
+      ],
+      "first_seen_at": "2026-11-20T07:14:24.791223+00:00"
+    },
+    {
       "id": "727a777210f2f470",
       "source_id": "business-registry",
       "publisher": "Cổng ĐKKD Quốc gia",
@@ -172,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-19T20:36:01.276236+00:00"
+      "first_seen_at": "2026-11-19T20:36:01.276236+00:00",
+      "collected_at": "2026-11-19T20:36:01.276236+00:00",
+      "last_seen_at": null
     },
     {
       "id": "00b6fbd2013ba059",
@@ -190,7 +230,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-19T20:36:01.276236+00:00"
+      "first_seen_at": "2026-11-19T20:36:01.276236+00:00",
+      "collected_at": "2026-11-19T20:36:01.276236+00:00",
+      "last_seen_at": null
     },
     {
       "id": "b6b060d80e842e06",
@@ -235,16 +277,16 @@
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 10,
+    "policy_regulation": 8,
     "hiring": 4,
     "market_data": 3,
     "infrastructure_delivery": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1274,
-    "candidate_events": 517,
-    "reference_events": 752,
+    "historical_events": 1278,
+    "candidate_events": 519,
+    "reference_events": 754,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
