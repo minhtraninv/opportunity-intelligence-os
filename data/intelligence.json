@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T20:17:39.684028+00:00",
+    "generated_at": "2026-11-21T07:05:34.328168+00:00",
     "status": "active",
     "history_days": 83,
     "required_history_days": 14,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 15,
-      "baseline_21d": 47,
-      "baseline_expected_7d": 15.7,
-      "delta_pct": -4,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -22,36 +22,25 @@
     },
     {
       "category": "construction",
-      "recent_7d": 4,
+      "recent_7d": 6,
       "baseline_21d": 18,
       "baseline_expected_7d": 6.0,
-      "delta_pct": -33,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "infrastructure",
-      "recent_7d": 1,
-      "baseline_21d": 6,
-      "baseline_expected_7d": 2.0,
-      "delta_pct": -50,
-      "trend": "stable",
-      "confidence": 55,
-      "source_diversity_7d": 1,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
       "category": "labor",
-      "recent_7d": 4,
+      "recent_7d": 5,
       "baseline_21d": 36,
       "baseline_expected_7d": 12.0,
-      "delta_pct": -67,
+      "delta_pct": -58,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 12.0."
+      "explanation": "Tần suất candidate events giảm: 5 trong 7 ngày so với baseline 12.0."
     },
     {
       "category": "energy",
@@ -66,17 +55,28 @@
     },
     {
       "category": "monetary",
-      "recent_7d": 3,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
-      "delta_pct": -50,
+      "recent_7d": 2,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
+      "delta_pct": -68,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 6.0."
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 6.3."
     },
     {
       "category": "fdi_industrial",
+      "recent_7d": 0,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": -100,
+      "trend": "cooling",
+      "confidence": 54,
+      "source_diversity_7d": 0,
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 2.3."
+    },
+    {
+      "category": "infrastructure",
       "recent_7d": 0,
       "baseline_21d": 7,
       "baseline_expected_7d": 2.3,
@@ -155,6 +155,60 @@
   ],
   "top_new_events": [
     {
+      "id": "03c403a30c78688a",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Luật Kinh doanh bất động sản (sửa đổi): Siết đặt cọc, thanh toán, tăng bảo vệ người mua nhà",
+      "url": "https://baochinhphu.vn/luat-kinh-doanh-bat-dong-san-sua-doi-siet-dat-coc-thanh-toan-tang-bao-ve-nguoi-mua-nha-102261121104739579.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+    },
+    {
+      "id": "5a1f85961e472561",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Thông qua Luật Nhà ở (sửa đổi): Nhà ở xã hội chỉ được bán lại sau 5 năm cho đúng đối tượng",
+      "url": "https://baochinhphu.vn/thong-qua-luat-nha-o-sua-doi-nha-o-xa-hoi-chi-duoc-ban-lai-sau-5-nam-cho-dung-doi-tuong-102261121101523227.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+    },
+    {
+      "id": "cdb24e74919158ff",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Từ men lá bản Giáy đến bài toán việc làm vùng cao",
+      "url": "https://baochinhphu.vn/tu-men-la-ban-giay-den-bai-toan-viec-lam-vung-cao-102261120123436255.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+    },
+    {
       "id": "b36c6853d4043374",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +224,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "0e83f000dc80537c",
@@ -188,7 +244,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "072f50628f8c1519",
@@ -206,7 +264,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "d4539bb2dc5a7318",
@@ -226,7 +286,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "03aeb6d22f51611d",
@@ -244,7 +306,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "8878a2b333614fa7",
@@ -264,7 +328,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-20T20:17:39.684028+00:00"
+      "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
+      "collected_at": "2026-11-20T20:17:39.684028+00:00",
+      "last_seen_at": null
     },
     {
       "id": "e48bd6911b03ead8",
@@ -307,62 +373,19 @@
       "first_seen_at": "2026-11-20T07:14:24.791223+00:00",
       "collected_at": "2026-11-20T07:14:24.791223+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "727a777210f2f470",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 20/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-19T20:36:01.276236+00:00",
-      "collected_at": "2026-11-19T20:36:01.276236+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "00b6fbd2013ba059",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 20/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-19T20:36:01.276236+00:00",
-      "collected_at": "2026-11-19T20:36:01.276236+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 14,
-    "policy_regulation": 9,
-    "hiring": 4,
-    "market_data": 3,
-    "infrastructure_delivery": 1
+    "policy_regulation": 11,
+    "hiring": 5,
+    "market_data": 2
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1289,
-    "candidate_events": 525,
-    "reference_events": 759,
+    "historical_events": 1293,
+    "candidate_events": 528,
+    "reference_events": 760,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
