@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-21T07:05:34.328168+00:00",
+    "generated_at": "2026-11-21T19:14:38.473959+00:00",
     "status": "active",
-    "history_days": 83,
+    "history_days": 84,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 15,
-      "baseline_21d": 45,
-      "baseline_expected_7d": 15.0,
-      "delta_pct": 0,
+      "baseline_21d": 47,
+      "baseline_expected_7d": 15.7,
+      "delta_pct": -4,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -22,10 +22,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 6,
+      "recent_7d": 7,
       "baseline_21d": 18,
       "baseline_expected_7d": 6.0,
-      "delta_pct": 0,
+      "delta_pct": 17,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -34,35 +34,35 @@
     {
       "category": "labor",
       "recent_7d": 5,
-      "baseline_21d": 36,
-      "baseline_expected_7d": 12.0,
-      "delta_pct": -58,
+      "baseline_21d": 35,
+      "baseline_expected_7d": 11.7,
+      "delta_pct": -57,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 5 trong 7 ngày so với baseline 12.0."
-    },
-    {
-      "category": "energy",
-      "recent_7d": 0,
-      "baseline_21d": 22,
-      "baseline_expected_7d": 7.3,
-      "delta_pct": -100,
-      "trend": "cooling",
-      "confidence": 80,
-      "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 7.3."
+      "explanation": "Tần suất candidate events giảm: 5 trong 7 ngày so với baseline 11.7."
     },
     {
       "category": "monetary",
-      "recent_7d": 2,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": -68,
+      "recent_7d": 1,
+      "baseline_21d": 20,
+      "baseline_expected_7d": 6.7,
+      "delta_pct": -85,
       "trend": "cooling",
       "confidence": 55,
       "source_diversity_7d": 1,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 6.3."
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 6.7."
+    },
+    {
+      "category": "energy",
+      "recent_7d": 1,
+      "baseline_21d": 22,
+      "baseline_expected_7d": 7.3,
+      "delta_pct": -86,
+      "trend": "cooling",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Tần suất candidate events giảm: 1 trong 7 ngày so với baseline 7.3."
     },
     {
       "category": "fdi_industrial",
@@ -88,13 +88,13 @@
     },
     {
       "category": "policy",
-      "recent_7d": 3,
+      "recent_7d": 4,
       "baseline_21d": 5,
       "baseline_expected_7d": 1.7,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 69,
-      "source_diversity_7d": 2,
+      "confidence": 78,
+      "source_diversity_7d": 3,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -155,6 +155,98 @@
   ],
   "top_new_events": [
     {
+      "id": "bbfa198f54bbc0cc",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Thông qua Luật Nhà ở (sửa đổi)",
+      "url": "https://xaydungchinhsach.chinhphu.vn/thong-qua-luat-nha-o-sua-doi-119261121150950284.htm",
+      "categories": [
+        "construction"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T19:14:38.473959+00:00"
+    },
+    {
+      "id": "50bfeb0ba13bfaa0",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Thông qua Luật Đất đai (sửa đổi)",
+      "url": "https://xaydungchinhsach.chinhphu.vn/thong-qua-luat-dat-dai-sua-doi-119261121142923917.htm",
+      "categories": [
+        "policy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T19:14:38.473959+00:00"
+    },
+    {
+      "id": "c1fde0a6520a4b27",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 22/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-21T19:14:38.473959+00:00"
+    },
+    {
+      "id": "8d1f0e5ab8a3fe1a",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 22/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T19:14:38.473959+00:00"
+    },
+    {
+      "id": "46b57e3dd26633ed",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Luật Điện lực sửa đổi: Bảy nhóm thay đổi lớn từ quy hoạch tới giá điện",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Luat-Dien-luc-sua-doi-Bay-nhom-thay-doi-lon-tu-quy-hoach-toi-gia-dien-60-12-510392",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-21T19:14:38.473959+00:00"
+    },
+    {
       "id": "03c403a30c78688a",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +262,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00",
+      "collected_at": "2026-11-21T07:05:34.328168+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5a1f85961e472561",
@@ -188,7 +282,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00",
+      "collected_at": "2026-11-21T07:05:34.328168+00:00",
+      "last_seen_at": null
     },
     {
       "id": "cdb24e74919158ff",
@@ -206,7 +302,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-21T07:05:34.328168+00:00"
+      "first_seen_at": "2026-11-21T07:05:34.328168+00:00",
+      "collected_at": "2026-11-21T07:05:34.328168+00:00",
+      "last_seen_at": null
     },
     {
       "id": "b36c6853d4043374",
@@ -331,61 +429,19 @@
       "first_seen_at": "2026-11-20T20:17:39.684028+00:00",
       "collected_at": "2026-11-20T20:17:39.684028+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "e48bd6911b03ead8",
-      "source_id": "gov",
-      "publisher": "Báo Chính phủ",
-      "title": "Chính sách tín dụng ưu đãi hỗ trợ phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi",
-      "url": "https://baochinhphu.vn/chinh-sach-tin-dung-uu-dai-ho-tro-phat-trien-kinh-te-xa-hoi-vung-dong-bao-dan-toc-thieu-so-va-mien-nui-102261120093457123.htm",
-      "categories": [
-        "policy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-20T07:14:24.791223+00:00",
-      "collected_at": "2026-11-20T07:14:24.791223+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "cf37ac82b7fb974a",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Luật Phát triển doanh nghiệp nhỏ và vừa có hiệu lực từ 1/7/2027",
-      "url": "https://xaydungchinhsach.chinhphu.vn/luat-phat-trien-doanh-nghiep-nho-va-vua-co-hieu-luc-tu-1-7-2027-119261120091123117.htm",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2027
-      ],
-      "first_seen_at": "2026-11-20T07:14:24.791223+00:00",
-      "collected_at": "2026-11-20T07:14:24.791223+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 14,
     "business_formation": 14,
-    "policy_regulation": 11,
     "hiring": 5,
-    "market_data": 2
+    "market_data": 1
   },
   "geographies_7d": {},
   "coverage": {
-    "historical_events": 1293,
-    "candidate_events": 528,
-    "reference_events": 760,
+    "historical_events": 1299,
+    "candidate_events": 533,
+    "reference_events": 761,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
