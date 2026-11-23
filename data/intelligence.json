@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T19:38:43.871240+00:00",
+    "generated_at": "2026-11-23T07:36:12.970468+00:00",
     "status": "active",
     "history_days": 85,
     "required_history_days": 14,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 15,
-      "baseline_21d": 47,
-      "baseline_expected_7d": 15.7,
-      "delta_pct": -4,
+      "baseline_21d": 45,
+      "baseline_expected_7d": 15.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -56,13 +56,13 @@
     {
       "category": "monetary",
       "recent_7d": 0,
-      "baseline_21d": 21,
-      "baseline_expected_7d": 7.0,
+      "baseline_21d": 19,
+      "baseline_expected_7d": 6.3,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 80,
+      "confidence": 78,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 7.0."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 6.3."
     },
     {
       "category": "fdi_industrial",
@@ -98,6 +98,17 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
+      "category": "data_ai",
+      "recent_7d": 1,
+      "baseline_21d": 5,
+      "baseline_expected_7d": 1.7,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 55,
+      "source_diversity_7d": 1,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+    },
+    {
       "category": "logistics",
       "recent_7d": 1,
       "baseline_21d": 1,
@@ -106,17 +117,6 @@
       "trend": "insufficient_sample",
       "confidence": 51,
       "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
-      "category": "data_ai",
-      "recent_7d": 0,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 50,
-      "source_diversity_7d": 0,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
@@ -155,6 +155,24 @@
   ],
   "top_new_events": [
     {
+      "id": "535b7e6a2a61551d",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Chủ tịch Quốc hội: Tổ chức thực hiện Quy hoạch TPHCM phải rõ ai làm, khi nào xong, người dân được thụ hưởng gì",
+      "url": "https://baochinhphu.vn/chu-tich-quoc-hoi-to-chuc-thuc-hien-la-yeu-to-quyet-dinh-thanh-cong-cua-quy-hoach-tphcm-102261123101905425.htm",
+      "categories": [
+        "data_ai"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-23T07:36:12.970468+00:00"
+    },
+    {
       "id": "993c5c16a816b57f",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -170,7 +188,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-22T19:38:43.871240+00:00"
+      "first_seen_at": "2026-11-22T19:38:43.871240+00:00",
+      "collected_at": "2026-11-22T19:38:43.871240+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5ebf2bd36c237ed1",
@@ -190,7 +210,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-22T19:38:43.871240+00:00"
+      "first_seen_at": "2026-11-22T19:38:43.871240+00:00",
+      "collected_at": "2026-11-22T19:38:43.871240+00:00",
+      "last_seen_at": null
     },
     {
       "id": "813975ffc0179ed0",
@@ -208,34 +230,14 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-22T19:38:43.871240+00:00"
-    },
-    {
-      "id": "612cbbece01faa90",
-      "source_id": "evn-invest",
-      "publisher": "EVN - Đầu tư xây dựng",
-      "title": "Đóng điện Trạm biến áp 220kV Lai Uyên và đấu nối, tăng cường đảm bảo điện cho Thành phố Hồ Chí Minh",
-      "url": "https://www.evn.com.vn/d/vi-VN/news/Dong-dien-Tram-bien-ap-220kV-Lai-Uyen-va-dau-noi-tang-cuong-dam-bao-dien-cho-Thanh-pho-Ho-Chi-Minh-60-13-510402",
-      "categories": [
-        "energy"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "market_data",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [
-        "TP.HCM"
-      ],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-22T06:46:09.121388+00:00",
-      "collected_at": "2026-11-22T06:46:09.121388+00:00",
+      "first_seen_at": "2026-11-22T19:38:43.871240+00:00",
+      "collected_at": "2026-11-22T19:38:43.871240+00:00",
       "last_seen_at": null
     }
   ],
   "event_types_7d": {
+    "policy_regulation": 14,
     "business_formation": 14,
-    "policy_regulation": 13,
     "hiring": 6,
     "market_data": 1
   },
@@ -243,13 +245,13 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 1311,
-    "candidate_events": 537,
-    "reference_events": 769,
+    "historical_events": 1319,
+    "candidate_events": 538,
+    "reference_events": 776,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 2
+    "source_errors_last_run": 1
   },
   "warnings": [
-    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
