@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-11-23T07:37:38.898940+00:00",
+    "generated_at": "2026-11-23T23:53:49.974058+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-11-23T07:37:39.342770+00:00"
+    "trust_hardened_at": "2026-11-23T23:53:50.509620+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -16,13 +16,13 @@
     "observed_auto_entities": 52,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 23,
-    "watch": 28,
+    "discovery_convergence": 25,
+    "watch": 26,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 19,
+    "discovery_candidates": 20,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 11
+    "suppressed_non_organizations": 10
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -47,10 +47,10 @@
         "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 9,
+      "event_count": 10,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 2,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -58,6 +58,20 @@
       "theme_context": [],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "3df3abd5407e719a",
+          "event_signature": "18ca2a0e679d2c36",
+          "family": "operating",
+          "title": "DSC: Mức tăng trưởng lợi nhuận năm 2027 có thể thấp hơn đáng kể năm nay",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/dsc-muc-tang-truong-loi-nhuan-nam-2027-co-the-thap-hon-dang-ke-nam-nay-5148205.html",
+          "observed_at": "2026-11-23T22:54:23+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "32cd9a280b6f37e6",
           "event_signature": "7dab58623d2699f1",
@@ -150,20 +164,6 @@
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/30-tap-doan-lon-gom-vingroup-hoa-phat-sovico-tao-ra-hon-nua-trieu-viec-lam-100261103151342675.htm",
           "observed_at": "2026-11-04T06:21:28.200693+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "34567af6ee22a3f4",
-          "event_signature": "9365c3bb2c61b870",
-          "family": "operating",
-          "title": "Vingroup báo lãi kỷ lục hơn 43.700 tỉ đồng sau 9 tháng",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/vingroup-bao-lai-ky-luc-hon-43700-ti-dong-sau-9-thang-100261031120813523.htm",
-          "observed_at": "2026-11-02T06:01:18.160018+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -531,7 +531,7 @@
       "event_count": 12,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 8,
+      "newest_evidence_age_days": 9,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -717,7 +717,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -962,7 +962,7 @@
       "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1139,7 +1139,7 @@
       "event_count": 9,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "capital_execution_alignment",
         "strategy_execution_alignment",
@@ -1566,6 +1566,131 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-lpbank-687bda9d",
+      "label": "LPBank",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "LPBank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "operating",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "df03e7f35cf14b7c",
+          "event_signature": "51abba44b5edf50c",
+          "family": "operating",
+          "title": "LPBank bổ nhiệm bà Vũ Nam Hương giữ chức quyền Tổng giám đốc",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/lpbank-bo-nhiem-ba-vu-nam-huong-giu-chuc-quyen-tong-giam-doc-100261123134833774.htm",
+          "observed_at": "2026-11-23T23:53:33.448475+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9dff9786cb38324a",
+          "event_signature": "59b3b32b753a531d",
+          "family": "project_execution",
+          "title": "LPBank bổ nhiệm bà Vũ Nam Hương giữ chức quyền Tổng Giám đốc",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/lpbank-bo-nhiem-ba-vu-nam-huong-giu-chuc-quyen-tong-giam-doc-post1150117.vnp",
+          "observed_at": "2026-11-23T14:52:38+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "c1d44f741573c6e3",
+          "event_signature": "14492f8e4a32aa13",
+          "family": "operating",
+          "title": "LPBank giành Á quân Ngân hàng niêm yết kinh doanh hiệu quả nhất Việt Nam 2026",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/lpbank-gianh-a-quan-top-50-cong-ty-niem-yet-kinh-doanh-hieu-qua-nhat-viet-nam-2026-100261111170756571.htm",
+          "observed_at": "2026-11-12T07:09:46.895401+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "d37ebfd13c7e0d83",
+          "event_signature": "61ead63d73f6c65c",
+          "family": "operating",
+          "title": "LPBank vào top 2 ngân hàng niêm yết hiệu quả 2026",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/lpbank-vao-top-2-ngan-hang-niem-yet-hieu-qua-2026-5143845.html",
+          "observed_at": "2026-11-12T07:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "bdb6473f44bf3751",
+          "event_signature": "f2b455e9a3d12ba3",
+          "family": "capital",
+          "title": "LPBank ba năm liền được Visa vinh danh về tăng trưởng thẻ tín dụng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/lpbank-ba-nam-lien-duoc-visa-vinh-danh-ve-tang-truong-the-tin-dung-5143798.html",
+          "observed_at": "2026-11-12T05:00:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-vietjet-b0c33c77",
       "label": "Vietjet",
       "entity_type": "organization_candidate",
@@ -1586,7 +1711,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1691,130 +1816,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "auto-sacombank-5192412f",
-      "label": "Sacombank",
-      "entity_type": "organization_candidate",
-      "entity_origin": "auto_discovered",
-      "status": "discovery_convergence",
-      "convergence_score": 17,
-      "why_now": "Sacombank đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "labor",
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Thanh Niên Kinh tế",
-        "VietnamPlus Kinh tế",
-        "VnExpress Kinh doanh"
-      ],
-      "event_count": 5,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 5,
-      "newest_evidence_age_days": 19,
-      "anomaly_flags": [
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "3b4c877f032408ab",
-          "event_signature": "42f33e6292e12359",
-          "family": "operating",
-          "title": "Sacombank cho vay 7,9% một năm với nhóm xuất nhập khẩu, FDI",
-          "publisher": "VnExpress Kinh doanh",
-          "source_url": "https://vnexpress.net/sacombank-cho-vay-7-9-mot-nam-voi-nhom-xuat-nhap-khau-fdi-5140282.html",
-          "observed_at": "2026-11-03T09:00:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "fd7a1378b4f21726",
-          "event_signature": "c9edadefcc1d8dc3",
-          "family": "project_execution",
-          "title": "SACOMBANK tiếp tục tung gói lãi suất cho vay 7,9%/năm, góp sức cùng mục tiêu tăng trưởng GDP 2 con số",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/sacombank-tiep-tuc-tung-goi-lai-suat-cho-vay-79-nam-gop-suc-cung-muc-tieu-tang-truong-gdp-2-con-so-185261103091827934.htm",
-          "observed_at": "2026-11-03T02:06:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "061738e6123c4cdd",
-          "event_signature": "501ff7a9b0f5f16c",
-          "family": "project_execution",
-          "title": "SACOMBANK tiếp tục triển khai gói tín dụng 10.000 tỷ ưu đãi doanh nghiệp mới",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/sacombank-tiep-tuc-trien-khai-goi-tin-dung-10000-ty-uu-dai-doanh-nghiep-moi-post1145710.vnp",
-          "observed_at": "2026-11-02T18:43:23+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "562994914d5d0b58",
-          "event_signature": "92c0bea05af1ab9c",
-          "family": "operating",
-          "title": "SACOMBANK bổ nhiệm bà Nguyễn Thị Kiều Anh giữ chức quyền Tổng Giám đốc",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/sacombank-bo-nhiem-ba-nguyen-thi-kieu-anh-giu-chuc-quyen-tong-giam-doc-post1145666.vnp",
-          "observed_at": "2026-11-02T14:21:07+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f3dbaf5685715ea1",
-          "event_signature": "296786ab8c1cd49c",
-          "family": "labor",
-          "title": "Sacombank có quyền tổng giám đốc mới",
-          "publisher": "Thanh Niên Kinh tế",
-          "source_url": "https://thanhnien.vn/sacombank-co-quyen-tong-giam-doc-moi-185261102093635535.htm",
-          "observed_at": "2026-11-02T02:47:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "labor",
-        "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "viettel_group",
       "label": "Viettel",
       "entity_type": "business_group",
@@ -1835,7 +1836,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2051,7 +2052,7 @@
       "event_count": 9,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "persistent_multi_period_attention"
@@ -2345,6 +2346,117 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "auto-novaland-eaa8c17a",
+      "label": "Novaland",
+      "entity_type": "organization_candidate",
+      "entity_origin": "auto_discovered",
+      "status": "discovery_convergence",
+      "convergence_score": 13,
+      "why_now": "Novaland đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "project_execution",
+        "strategy"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 4,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 4,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "strategy_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "05c8068777754814",
+          "event_signature": "14c6135d55dbb262",
+          "family": "strategy",
+          "title": "Novaland muốn rút vốn tại hai công ty con khi cổ phiếu 'thủng' mệnh giá",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/novaland-muon-rut-von-tai-hai-cong-ty-con-khi-co-phieu-thung-menh-gia-5148096.html",
+          "observed_at": "2026-11-23T09:19:19+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "2c2eccc362137906",
+          "event_signature": "b83b042f7a0b9f3b",
+          "family": "capital",
+          "title": "Novaland chuyển đổi 16 trái phiếu thành 2,8 triệu cổ phiếu cho nhà đầu tư nước ngoài",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/novaland-chuyen-doi-16-trai-phieu-thanh-28-trieu-co-phieu-cho-nha-dau-tu-nuoc-ngoai-100261116100920006.htm",
+          "observed_at": "2026-11-17T07:54:45.473230+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "b8b090e1072a6c05",
+          "event_signature": "f07891678a435978",
+          "family": "capital",
+          "title": "Novaland xóa gần 4 triệu USD nợ bằng cổ phiếu",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/novaland-xoa-gan-4-trieu-usd-no-bang-co-phieu-5145264.html",
+          "observed_at": "2026-11-16T08:05:29+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "1a82d942a5626081",
+          "event_signature": "3103e6c69344407d",
+          "family": "project_execution",
+          "title": "Novaland đặt mục tiêu doanh thu hơn 20 tỷ USD, gấp 8 lần dư nợ",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/novaland-dat-muc-tieu-doanh-thu-hon-20-ty-usd-gap-8-lan-du-no-5142014.html",
+          "observed_at": "2026-11-07T17:23:58+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "project_execution",
+        "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "auto-phó-thủ-041fcc3a",
       "label": "Phó Thủ",
       "entity_type": "organization_candidate",
@@ -2367,7 +2479,7 @@
       "event_count": 13,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 0,
+      "newest_evidence_age_days": 1,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2560,7 +2672,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 3,
+      "newest_evidence_age_days": 4,
       "anomaly_flags": [
         "persistent_multi_period_attention"
       ],
@@ -2814,12 +2926,6 @@
     {
       "entity_id": "auto-phú-thọ-d66a434f",
       "label": "Phú Thọ",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-quảng-ngãi-2c2a20e3",
-      "label": "Quảng Ngãi",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     }
