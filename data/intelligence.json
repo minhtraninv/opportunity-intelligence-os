@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-24T09:53:22.747894+00:00",
+    "generated_at": "2026-11-24T22:25:27.257940+00:00",
     "status": "active",
     "history_days": 87,
     "required_history_days": 14,
@@ -11,10 +11,10 @@
   "category_changes": [
     {
       "category": "sme",
-      "recent_7d": 15,
+      "recent_7d": 16,
       "baseline_21d": 45,
       "baseline_expected_7d": 15.0,
-      "delta_pct": 0,
+      "delta_pct": 7,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -22,10 +22,10 @@
     },
     {
       "category": "construction",
-      "recent_7d": 5,
-      "baseline_21d": 17,
-      "baseline_expected_7d": 5.7,
-      "delta_pct": -12,
+      "recent_7d": 4,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -33,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -56,24 +56,24 @@
     {
       "category": "energy",
       "recent_7d": 2,
-      "baseline_21d": 20,
-      "baseline_expected_7d": 6.7,
-      "delta_pct": -70,
+      "baseline_21d": 18,
+      "baseline_expected_7d": 6.0,
+      "delta_pct": -67,
       "trend": "cooling",
       "confidence": 93,
       "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 6.7."
+      "explanation": "Tần suất candidate events giảm: 2 trong 7 ngày so với baseline 6.0."
     },
     {
       "category": "monetary",
       "recent_7d": 0,
-      "baseline_21d": 18,
-      "baseline_expected_7d": 6.0,
+      "baseline_21d": 17,
+      "baseline_expected_7d": 5.7,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 76,
+      "confidence": 74,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 6.0."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 5.7."
     },
     {
       "category": "policy",
@@ -154,6 +154,62 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "6dfd235aea3af8ac",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Đang dùng Ví điện tử trùng tên Giấy phép kinh doanh để giao dịch thì có phải tạo thêm tài khoản hộ kinh doanh không?",
+      "url": "https://xaydungchinhsach.chinhphu.vn/dang-dung-vi-dien-tu-trung-ten-ten-giay-phep-kinh-doanh-de-giao-dich-thi-co-phai-tao-them-tai-khoan-ho-kinh-doanh-khong-119261112123753994.htm",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-24T22:25:27.257940+00:00"
+    },
+    {
+      "id": "8e760a6b51aec506",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 25/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-24T22:25:27.257940+00:00"
+    },
+    {
+      "id": "ecf75a516333f065",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 25/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-24T22:25:27.257940+00:00"
+    },
     {
       "id": "d95e6589f97085d3",
       "source_id": "gov",
@@ -264,8 +320,8 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 15,
-    "business_formation": 14,
+    "business_formation": 15,
+    "policy_regulation": 14,
     "hiring": 5,
     "infrastructure_delivery": 1,
     "market_data": 1
@@ -274,8 +330,8 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 1328,
-    "candidate_events": 543,
+    "historical_events": 1331,
+    "candidate_events": 546,
     "reference_events": 780,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1

@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "2.7.0",
-    "generated_at": "2026-11-24T09:54:42.707380+00:00",
+    "generated_at": "2026-11-24T22:26:55.245800+00:00",
     "mode": "open_world_cross_domain_entity_convergence",
     "principle": "unknown_entities_may_enter_but_importance_requires_independent_evidence",
     "trust_patch": "3.0.1",
-    "trust_hardened_at": "2026-11-24T09:54:43.240160+00:00"
+    "trust_hardened_at": "2026-11-24T22:26:55.683896+00:00"
   },
   "thesis": "Entity Convergence không còn bị giới hạn bởi danh sách biết trước: candidate mới có thể tự xuất hiện từ dòng tin. Media giúp giảm blind spot; high convergence vẫn cần primary evidence. Mục tiêu là 'đừng bỏ qua', không phải 'hãy mua/làm'.",
   "coverage": {
@@ -16,13 +16,13 @@
     "observed_auto_entities": 54,
     "high_convergence": 0,
     "converging": 0,
-    "discovery_convergence": 25,
-    "watch": 29,
+    "discovery_convergence": 24,
+    "watch": 30,
     "window_days": 120,
     "public_verified_entities": 0,
-    "discovery_candidates": 21,
+    "discovery_candidates": 22,
     "verified_watchlist": 0,
-    "suppressed_non_organizations": 9
+    "suppressed_non_organizations": 8
   },
   "entities": [],
   "reading_rule": "Public Entity Convergence contains only rows with true primary evidence and cross-family confirmation. Media/headline-only candidates remain available separately for discovery and cannot pose as verified convergence.",
@@ -365,7 +365,7 @@
       "event_count": 7,
       "primary_evidence_count": 0,
       "media_evidence_count": 6,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 0,
       "anomaly_flags": [
         "policy_execution_alignment",
         "persistent_multi_period_attention"
@@ -380,6 +380,20 @@
       ],
       "regional_context": [],
       "evidence": [
+        {
+          "id": "1ec84274cda0ee6c",
+          "event_signature": "7367105532974fb1",
+          "family": "project_execution",
+          "title": "Chốt phương án kết nối giao thông từ TP.HCM, vùng ĐBSCL tới sân bay Long Thành",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/chot-phuong-an-ket-noi-giao-thong-tu-tphcm-vung-dbscl-toi-san-bay-long-thanh-18526112417423491.htm",
+          "observed_at": "2026-11-24T10:51:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
         {
           "id": "8720105f56b7cb4d",
           "event_signature": "5888383eb1d22859",
@@ -402,20 +416,6 @@
           "publisher": "Thanh Niên Kinh tế",
           "source_url": "https://thanhnien.vn/duong-bay-ra-ha-noi-se-mo-hang-sieu-san-bay-long-thanh-ngay-khai-truong-185261121153105188.htm",
           "observed_at": "2026-11-21T08:39:00+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "4e01b0beb4aea475",
-          "event_signature": "7d696c85776e8255",
-          "family": "project_execution",
-          "title": "Sân bay Long Thành hoạt động từ ngày 24-12, với 20-30 chuyến bay mỗi ngày",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/san-bay-long-thanh-hoat-dong-tu-ngay-24-12-voi-20-30-chuyen-bay-moi-ngay-100261119173245108.htm",
-          "observed_at": "2026-11-20T07:15:46.851818+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -543,7 +543,7 @@
           "title": "Sacombank kết hợp giải pháp bảo hiểm và đặc quyền tài chính",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/sacombank-ket-hop-giai-phap-bao-hiem-va-dac-quyen-tai-chinh-100261124112344516.htm",
-          "observed_at": "2026-11-24T09:54:26.892019+00:00",
+          "observed_at": "2026-11-24T22:26:36.717638+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -670,7 +670,7 @@
       "event_count": 12,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 9,
+      "newest_evidence_age_days": 10,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -856,7 +856,7 @@
       "event_count": 5,
       "primary_evidence_count": 0,
       "media_evidence_count": 5,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -1101,7 +1101,7 @@
       "event_count": 11,
       "primary_evidence_count": 0,
       "media_evidence_count": 8,
-      "newest_evidence_age_days": 5,
+      "newest_evidence_age_days": 6,
       "anomaly_flags": [
         "policy_execution_alignment",
         "strategy_execution_alignment",
@@ -1256,6 +1256,145 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
+      "entity_id": "sun_group",
+      "label": "Sun Group",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 17,
+      "why_now": "Sun Group đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "labor",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Thanh Niên Kinh tế",
+        "Tuổi Trẻ Kinh doanh",
+        "VnExpress Kinh doanh"
+      ],
+      "event_count": 6,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 6,
+      "newest_evidence_age_days": 0,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "c67807c7d0a99b60",
+          "event_signature": "421e9a47aaf97d8c",
+          "family": "capital",
+          "title": "Một công ty vận hành khách sạn, khu nghỉ dưỡng thuộc Sun Group tăng vốn gấp 1.800 lần",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/mot-cong-ty-van-hanh-khach-san-khu-nghi-duong-thuoc-sun-group-tang-von-gap-1800-lan-100261124200428735.htm",
+          "observed_at": "2026-11-24T22:26:36.717638+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "9c96d482dd4a019a",
+          "event_signature": "ee1ea3ecc7af1493",
+          "family": "capital",
+          "title": "Công ty vận hành chuỗi nghỉ dưỡng của Sun Group tăng vốn 18.000 tỷ đồng",
+          "publisher": "VnExpress Kinh doanh",
+          "source_url": "https://vnexpress.net/cong-ty-van-hanh-chuoi-nghi-duong-cua-sun-group-tang-von-18-000-ty-dong-5148404.html",
+          "observed_at": "2026-11-24T10:07:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "7d16830fa47e3a45",
+          "event_signature": "3cacc41fabd91df1",
+          "family": "project_execution",
+          "title": "Sun Group khởi công khu đô thị gần 6.700 tỉ đồng tại Măng Đen",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/sun-group-khoi-cong-khu-do-thi-gan-6700-ti-dong-tai-mang-den-100261123134755375.htm",
+          "observed_at": "2026-11-24T09:54:26.892019+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ab946a6fc678d959",
+          "event_signature": "d736caacaab79cac",
+          "family": "project_execution",
+          "title": "Sun Group muốn tham gia đường sắt đô thị, đại lộ ven sông Sài Gòn",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/sun-group-muon-tham-gia-duong-sat-do-thi-dai-lo-ven-song-sai-gon-100261123101858289.htm",
+          "observed_at": "2026-11-23T23:53:33.448475+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "ce70af238578b095",
+          "event_signature": "18bbf9b4bcee4736",
+          "family": "project_execution",
+          "title": "VietinBank Tower 68 tầng tại Ciputra đổi chủ sau hơn một thập kỷ để dở dang, Sun Group lộ diện",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/vietinbank-tower-68-tang-tai-ciputra-doi-chu-sau-hon-mot-thap-ky-de-do-dang-sun-group-lo-dien-100261119103402422.htm",
+          "observed_at": "2026-11-19T20:36:55.811978+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "4c1d5acf1ebe3ea1",
+          "event_signature": "f4b9c2f66302355f",
+          "family": "labor",
+          "title": "Phú Quốc cần hơn 14.000 nhân sự năm 2027 cho sự kiện lớn bậc nhất hành tinh",
+          "publisher": "Thanh Niên Kinh tế",
+          "source_url": "https://thanhnien.vn/phu-quoc-can-hon-14000-nhan-su-nam-2027-cho-su-kien-lon-bac-nhat-hanh-tinh-1852611192030044.htm",
+          "observed_at": "2026-11-19T14:04:00+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "labor",
+        "project_execution"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
       "entity_id": "hoa_phat_group",
       "label": "Hòa Phát",
       "entity_type": "business_group",
@@ -1266,7 +1405,6 @@
       "evidence_families": [
         "capital",
         "labor",
-        "operating",
         "project_execution",
         "strategy"
       ],
@@ -1275,9 +1413,9 @@
         "VietnamPlus Kinh tế",
         "VnExpress Kinh doanh"
       ],
-      "event_count": 7,
+      "event_count": 5,
       "primary_evidence_count": 0,
-      "media_evidence_count": 7,
+      "media_evidence_count": 5,
       "newest_evidence_age_days": 7,
       "anomaly_flags": [
         "capital_execution_alignment",
@@ -1356,34 +1494,6 @@
           "quality": "media_discovery",
           "origin": "media_discovery",
           "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "0812fa92545769a4",
-          "event_signature": "42b6cd6b397b3e2c",
-          "family": "operating",
-          "title": "Volkswagen đối mặt khoản lỗ lên tới hơn 6 tỷ USD chỉ trong 1 quý",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/volkswagen-doi-mat-khoan-lo-len-toi-hon-6-ty-usd-chi-trong-1-quy-post1145084.vnp",
-          "observed_at": "2026-10-29T21:04:45+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "e9ed91ac4aef623b",
-          "event_signature": "e19cec5c036b4af5",
-          "family": "project_execution",
-          "title": "Hòa Phát đạt 23.746 tỷ đồng lợi nhuận sau thuế, nộp ngân sách tại 20 tỉnh, thành",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/hoa-phat-dat-23746-ty-dong-loi-nhuan-sau-thue-nop-ngan-sach-tai-20-tinh-thanh-post1145044.vnp",
-          "observed_at": "2026-10-29T17:05:11+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
         }
       ],
       "investigation_questions": [
@@ -1407,7 +1517,6 @@
       "discovery_evidence_families": [
         "capital",
         "labor",
-        "operating",
         "project_execution",
         "strategy"
       ],
@@ -1809,7 +1918,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 4,
-      "newest_evidence_age_days": 6,
+      "newest_evidence_age_days": 7,
       "anomaly_flags": [
         "strategy_execution_alignment",
         "media_only_needs_primary_verification"
@@ -2179,146 +2288,6 @@
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
     {
-      "entity_id": "fpt_group",
-      "label": "FPT",
-      "entity_type": "business_group",
-      "entity_origin": "curated_registry",
-      "status": "discovery_convergence",
-      "convergence_score": 13,
-      "why_now": "FPT đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
-      "evidence_families": [
-        "capital",
-        "labor",
-        "operating",
-        "project_execution"
-      ],
-      "independent_publishers": [
-        "Tuổi Trẻ Kinh doanh",
-        "VietnamPlus Kinh tế"
-      ],
-      "event_count": 6,
-      "primary_evidence_count": 0,
-      "media_evidence_count": 6,
-      "newest_evidence_age_days": 6,
-      "anomaly_flags": [
-        "capital_execution_alignment",
-        "media_only_needs_primary_verification"
-      ],
-      "theme_context": [],
-      "regional_context": [],
-      "evidence": [
-        {
-          "id": "8a3291ef882a023d",
-          "event_signature": "3102c1811174e99f",
-          "family": "capital",
-          "title": "Đọc nhanh 18-11: Jensen Huang sẵn sàng trở lại Nvidia, khối ngoại bán ròng gần 18.000 tỉ đồng mã FPT",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/doc-nhanh-18-11-jensen-huang-san-sang-tro-lai-nvidia-khoi-ngoai-ban-rong-gan-18000-ti-dong-ma-fpt-100261118065029122.htm",
-          "observed_at": "2026-11-18T07:28:25.838245+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "f6e624841ce05477",
-          "event_signature": "81dd1a460cc78cbc",
-          "family": "operating",
-          "title": "FPT ghi dấu 15 năm liên tiếp trong TOP 50 doanh nghiệp kinh doanh hiệu quả",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/fpt-ghi-dau-15-nam-lien-tiep-trong-top-50-doanh-nghiep-kinh-doanh-hieu-qua-post1147777.vnp",
-          "observed_at": "2026-11-12T08:03:51+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "bd05d04985f2828a",
-          "event_signature": "ea61acb7c7a788b2",
-          "family": "project_execution",
-          "title": "Hà Nội sắp có nhà máy đóng gói và kiểm thử chip nhớ",
-          "publisher": "Tuổi Trẻ Kinh doanh",
-          "source_url": "https://tuoitre.vn/ha-noi-sap-co-nha-may-dong-goi-va-kiem-thu-chip-nho-100261111153135019.htm",
-          "observed_at": "2026-11-12T07:09:46.895401+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "4af1f1527af7b8fd",
-          "event_signature": "141a792222fa9edf",
-          "family": "operating",
-          "title": "FPT giới thiệu chiến lược “Bonsai AI” phát triển chip chuyên dụng tại Nhật Bản",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/fpt-gioi-thieu-chien-luoc-bonsai-ai-phat-trien-chip-chuyen-dung-tai-nhat-ban-post1147404.vnp",
-          "observed_at": "2026-11-10T14:27:24+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "89c517386d5db463",
-          "event_signature": "3e7b4df2e62a4ee6",
-          "family": "project_execution",
-          "title": "Tập đoàn FPT khai trương Văn phòng FPT Poland tại Ba Lan",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/tap-doan-fpt-khai-truong-van-phong-fpt-poland-tai-ba-lan-post1145976.vnp",
-          "observed_at": "2026-11-03T22:40:44+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        },
-        {
-          "id": "a8b7f35d6fb59240",
-          "event_signature": "e6eca9ac1c98037c",
-          "family": "labor",
-          "title": "FPT dự chi gần 1.900 tỷ đồng tạm ứng cổ tức, lợi nhuận 9 tháng tăng 17%",
-          "publisher": "VietnamPlus Kinh tế",
-          "source_url": "https://www.vietnamplus.vn/fpt-du-chi-gan-1900-ty-dong-tam-ung-co-tuc-loi-nhuan-9-thang-tang-17-post1145045.vnp",
-          "observed_at": "2026-10-29T17:01:10+00:00",
-          "categories": [],
-          "geography": [],
-          "quality": "media_discovery",
-          "origin": "media_discovery",
-          "evidence_grade": "media_discovery"
-        }
-      ],
-      "investigation_questions": [
-        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
-        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
-        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
-        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
-        "Điều gì phải xảy ra để thesis bị hạ cấp?",
-        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
-      ],
-      "do_not_infer": [
-        "convergence không đồng nghĩa cơ hội đầu tư",
-        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
-        "media discovery không phải bằng chứng primary",
-        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
-        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
-        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
-      ],
-      "official_headline_discovery_count": 0,
-      "verified_evidence_families": [],
-      "discovery_evidence_families": [
-        "capital",
-        "labor",
-        "operating",
-        "project_execution"
-      ],
-      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
-    },
-    {
       "entity_id": "auto-novaland-eaa8c17a",
       "label": "Novaland",
       "entity_type": "organization_candidate",
@@ -2354,7 +2323,7 @@
           "title": "Novaland rút hết vốn khỏi công ty địa ốc của cựu diễn viên Chi Bảo, thu về 51 triệu đồng",
           "publisher": "Tuổi Trẻ Kinh doanh",
           "source_url": "https://tuoitre.vn/novaland-rut-het-von-khoi-cong-ty-dia-oc-cua-cuu-dien-vien-chi-bao-thu-ve-51-trieu-dong-100261124150805149.htm",
-          "observed_at": "2026-11-24T09:54:26.892019+00:00",
+          "observed_at": "2026-11-24T22:26:36.717638+00:00",
           "categories": [],
           "geography": [],
           "quality": "media_discovery",
@@ -2440,6 +2409,130 @@
         "capital",
         "project_execution",
         "strategy"
+      ],
+      "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
+    },
+    {
+      "entity_id": "fpt_group",
+      "label": "FPT",
+      "entity_type": "business_group",
+      "entity_origin": "curated_registry",
+      "status": "discovery_convergence",
+      "convergence_score": 13,
+      "why_now": "FPT đang xuất hiện trong nhiều loại câu chuyện kinh tế từ media discovery. Đây là tín hiệu 'đừng bỏ qua', nhưng chưa được nâng cấp cho tới khi có nguồn primary/official xác nhận.",
+      "evidence_families": [
+        "capital",
+        "operating",
+        "project_execution"
+      ],
+      "independent_publishers": [
+        "Tuổi Trẻ Kinh doanh",
+        "VietnamPlus Kinh tế"
+      ],
+      "event_count": 5,
+      "primary_evidence_count": 0,
+      "media_evidence_count": 5,
+      "newest_evidence_age_days": 6,
+      "anomaly_flags": [
+        "capital_execution_alignment",
+        "media_only_needs_primary_verification"
+      ],
+      "theme_context": [],
+      "regional_context": [],
+      "evidence": [
+        {
+          "id": "8a3291ef882a023d",
+          "event_signature": "3102c1811174e99f",
+          "family": "capital",
+          "title": "Đọc nhanh 18-11: Jensen Huang sẵn sàng trở lại Nvidia, khối ngoại bán ròng gần 18.000 tỉ đồng mã FPT",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/doc-nhanh-18-11-jensen-huang-san-sang-tro-lai-nvidia-khoi-ngoai-ban-rong-gan-18000-ti-dong-ma-fpt-100261118065029122.htm",
+          "observed_at": "2026-11-18T07:28:25.838245+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "f6e624841ce05477",
+          "event_signature": "81dd1a460cc78cbc",
+          "family": "operating",
+          "title": "FPT ghi dấu 15 năm liên tiếp trong TOP 50 doanh nghiệp kinh doanh hiệu quả",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/fpt-ghi-dau-15-nam-lien-tiep-trong-top-50-doanh-nghiep-kinh-doanh-hieu-qua-post1147777.vnp",
+          "observed_at": "2026-11-12T08:03:51+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "bd05d04985f2828a",
+          "event_signature": "ea61acb7c7a788b2",
+          "family": "project_execution",
+          "title": "Hà Nội sắp có nhà máy đóng gói và kiểm thử chip nhớ",
+          "publisher": "Tuổi Trẻ Kinh doanh",
+          "source_url": "https://tuoitre.vn/ha-noi-sap-co-nha-may-dong-goi-va-kiem-thu-chip-nho-100261111153135019.htm",
+          "observed_at": "2026-11-12T07:09:46.895401+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "4af1f1527af7b8fd",
+          "event_signature": "141a792222fa9edf",
+          "family": "operating",
+          "title": "FPT giới thiệu chiến lược “Bonsai AI” phát triển chip chuyên dụng tại Nhật Bản",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/fpt-gioi-thieu-chien-luoc-bonsai-ai-phat-trien-chip-chuyen-dung-tai-nhat-ban-post1147404.vnp",
+          "observed_at": "2026-11-10T14:27:24+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        },
+        {
+          "id": "89c517386d5db463",
+          "event_signature": "3e7b4df2e62a4ee6",
+          "family": "project_execution",
+          "title": "Tập đoàn FPT khai trương Văn phòng FPT Poland tại Ba Lan",
+          "publisher": "VietnamPlus Kinh tế",
+          "source_url": "https://www.vietnamplus.vn/tap-doan-fpt-khai-truong-van-phong-fpt-poland-tai-ba-lan-post1145976.vnp",
+          "observed_at": "2026-11-03T22:40:44+00:00",
+          "categories": [],
+          "geography": [],
+          "quality": "media_discovery",
+          "origin": "media_discovery",
+          "evidence_grade": "media_discovery"
+        }
+      ],
+      "investigation_questions": [
+        "Các bằng chứng này có thật sự độc lập hay chỉ là nhiều bài viết về cùng một sự kiện?",
+        "Entity này đang nhận lợi ích trực tiếp, chịu chi phí, hay chỉ xuất hiện cạnh dòng tiền lớn?",
+        "Có bằng chứng vận hành/CAPEX/khách hàng/doanh thu nào xác nhận câu chuyện không?",
+        "Nếu hiện chỉ là media discovery, nguồn primary nào cần mở để xác minh?",
+        "Điều gì phải xảy ra để thesis bị hạ cấp?",
+        "Người nhìn từ tài chính, kinh doanh, nghề nghiệp hoặc công nghệ có thể rút ra câu hỏi nghiên cứu nào khác nhau?"
+      ],
+      "do_not_infer": [
+        "convergence không đồng nghĩa cơ hội đầu tư",
+        "xuất hiện nhiều không đồng nghĩa được ưu ái hoặc chắc chắn hưởng lợi",
+        "media discovery không phải bằng chứng primary",
+        "auto-discovered entity chỉ là candidate tên tổ chức, không phải xác nhận pháp nhân",
+        "bối cảnh ngành/địa bàn không phải bằng chứng doanh thu của entity",
+        "procurement được giới hạn trọng số và không thể tự tạo high convergence"
+      ],
+      "official_headline_discovery_count": 0,
+      "verified_evidence_families": [],
+      "discovery_evidence_families": [
+        "capital",
+        "operating",
+        "project_execution"
       ],
       "trust_reading": "Only converging/high_convergence rows cross the public primary-evidence gate."
     },
@@ -2575,7 +2668,7 @@
       "event_count": 13,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 1,
+      "newest_evidence_age_days": 2,
       "anomaly_flags": [
         "policy_execution_alignment",
         "capital_execution_alignment",
@@ -2768,7 +2861,7 @@
       "event_count": 4,
       "primary_evidence_count": 0,
       "media_evidence_count": 3,
-      "newest_evidence_age_days": 4,
+      "newest_evidence_age_days": 5,
       "anomaly_flags": [
         "persistent_multi_period_attention"
       ],
@@ -3004,12 +3097,6 @@
     {
       "entity_id": "auto-an-giang-95ec7d95",
       "label": "An Giang",
-      "entity_type": "location",
-      "reason": "geography_belongs_in_regional_radar"
-    },
-    {
-      "entity_id": "auto-bắc-ninh-a1c0d701",
-      "label": "Bắc Ninh",
       "entity_type": "location",
       "reason": "geography_belongs_in_regional_radar"
     },
