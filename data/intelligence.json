@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T08:15:55.860408+00:00",
+    "generated_at": "2026-11-26T21:30:06.761935+00:00",
     "status": "active",
-    "history_days": 88,
+    "history_days": 89,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,12 +12,23 @@
     {
       "category": "sme",
       "recent_7d": 17,
-      "baseline_21d": 45,
-      "baseline_expected_7d": 15.0,
-      "delta_pct": 13,
+      "baseline_21d": 47,
+      "baseline_expected_7d": 15.7,
+      "delta_pct": 9,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "labor",
+      "recent_7d": 7,
+      "baseline_21d": 31,
+      "baseline_expected_7d": 10.3,
+      "delta_pct": -32,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
@@ -41,17 +52,6 @@
       "confidence": 71,
       "source_diversity_7d": 2,
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "labor",
-      "recent_7d": 6,
-      "baseline_21d": 31,
-      "baseline_expected_7d": 10.3,
-      "delta_pct": -42,
-      "trend": "cooling",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 6 trong 7 ngày so với baseline 10.3."
     },
     {
       "category": "energy",
@@ -155,6 +155,62 @@
   ],
   "top_new_events": [
     {
+      "id": "ecb067aed12a839b",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Phân cấp quản lý nhà nước về tổ chức bộ máy, vị trí việc làm",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quyet-dinh-so-106-2026-qd-ubnd-phan-cap-quan-ly-nha-nuoc-ve-to-chuc-bo-may-vi-tri-viec-lam-119261126150552742.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-26T21:30:06.761935+00:00"
+    },
+    {
+      "id": "b5044c6bff3eaf3b",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 27/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-26T21:30:06.761935+00:00"
+    },
+    {
+      "id": "8fd23df3d74a5bde",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 27/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-26T21:30:06.761935+00:00"
+    },
+    {
       "id": "c733aff579c65f4f",
       "source_id": "gov-policy",
       "publisher": "Chính sách pháp luật - Chính phủ",
@@ -172,7 +228,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-26T08:15:55.860408+00:00"
+      "first_seen_at": "2026-11-26T08:15:55.860408+00:00",
+      "collected_at": "2026-11-26T08:15:55.860408+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6756f166e8d1b66f",
@@ -193,7 +251,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-26T08:15:55.860408+00:00"
+      "first_seen_at": "2026-11-26T08:15:55.860408+00:00",
+      "collected_at": "2026-11-26T08:15:55.860408+00:00",
+      "last_seen_at": null
     },
     {
       "id": "86f74d0121a9cf23",
@@ -211,7 +271,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-26T08:15:55.860408+00:00"
+      "first_seen_at": "2026-11-26T08:15:55.860408+00:00",
+      "collected_at": "2026-11-26T08:15:55.860408+00:00",
+      "last_seen_at": null
     },
     {
       "id": "9074950f12b3df4a",
@@ -231,7 +293,9 @@
         "Thanh Hóa"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-26T08:15:55.860408+00:00"
+      "first_seen_at": "2026-11-26T08:15:55.860408+00:00",
+      "collected_at": "2026-11-26T08:15:55.860408+00:00",
+      "last_seen_at": null
     },
     {
       "id": "85c48225c4ba68ab",
@@ -338,56 +402,12 @@
       "first_seen_at": "2026-11-25T21:40:42.813007+00:00",
       "collected_at": "2026-11-25T21:40:42.813007+00:00",
       "last_seen_at": null
-    },
-    {
-      "id": "a3952bb045cd4707",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Nghị định số 420/2026/NĐ-CP sửa đổi, bổ sung một số quy định về xây dựng và thực hiện hương ước, quy ước của cộng đồng dân cư",
-      "url": "https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-420-2026-nd-cp-sua-doi-bo-sung-mot-so-quy-dinh-ve-xay-dung-va-thuc-hien-huong-uoc-quy-uoc-cua-cong-dong-dan-cu-119261125085425965.htm",
-      "categories": [
-        "construction"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-25T08:32:18.336703+00:00",
-      "collected_at": "2026-11-25T08:32:18.336703+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "ee9e11a8e945e9a2",
-      "source_id": "sbv",
-      "publisher": "Ngân hàng Nhà nước Việt Nam",
-      "title": "Bản tổng hợp ý kiến, tiếp thu, giải trình ý kiến góp ý đối với dự thảo Thông tư quy định hạch toán kế toán tài sản cố định, công cụ, dụng cụ và vật liệu của NHNN (25/11/2026)",
-      "url": "https://sbv.gov.vn/w/b%E1%BA%A3n-t%E1%BB%95ng-h%E1%BB%A3p-%C3%BD-ki%E1%BA%BFn-ti%E1%BA%BFp-thu-gi%E1%BA%A3i-tr%C3%ACnh-%C3%BD-ki%E1%BA%BFn-g%C3%B3p-%C3%BD-%C4%91%E1%BB%91i-v%E1%BB%9Bi-d%E1%BB%B1-th%E1%BA%A3o-th%C3%B4ng-t%C6%B0-quy-%C4%91%E1%BB%8Bnh-h%E1%BA%A1ch-to%C3%A1n-k",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "policy_regulation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-25T08:32:18.336703+00:00",
-      "collected_at": "2026-11-25T08:32:18.336703+00:00",
-      "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "policy_regulation": 18,
     "business_formation": 15,
-    "hiring": 5,
+    "hiring": 6,
     "market_data": 2,
     "infrastructure_delivery": 2
   },
@@ -397,9 +417,9 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 1354,
-    "candidate_events": 557,
-    "reference_events": 792,
+    "historical_events": 1363,
+    "candidate_events": 560,
+    "reference_events": 798,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
