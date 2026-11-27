@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T08:30:07.696943+00:00",
+    "generated_at": "2026-11-27T21:15:55.016409+00:00",
     "status": "active",
-    "history_days": 89,
+    "history_days": 90,
     "required_history_days": 14,
     "recent_window_days": 7,
     "baseline_window_days": 21,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 16,
-      "baseline_21d": 46,
-      "baseline_expected_7d": 15.3,
-      "delta_pct": 4,
+      "baseline_21d": 48,
+      "baseline_expected_7d": 16.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -22,10 +22,10 @@
     },
     {
       "category": "labor",
-      "recent_7d": 7,
-      "baseline_21d": 31,
-      "baseline_expected_7d": 10.3,
-      "delta_pct": -32,
+      "recent_7d": 8,
+      "baseline_21d": 32,
+      "baseline_expected_7d": 10.7,
+      "delta_pct": -25,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -43,6 +43,28 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "energy",
+      "recent_7d": 4,
+      "baseline_21d": 16,
+      "baseline_expected_7d": 5.3,
+      "delta_pct": -25,
+      "trend": "stable",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
+      "category": "policy",
+      "recent_7d": 3,
+      "baseline_21d": 7,
+      "baseline_expected_7d": 2.3,
+      "delta_pct": 29,
+      "trend": "stable",
+      "confidence": 73,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
+    },
+    {
       "category": "infrastructure",
       "recent_7d": 3,
       "baseline_21d": 6,
@@ -54,37 +76,15 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
-      "category": "energy",
-      "recent_7d": 3,
-      "baseline_21d": 16,
-      "baseline_expected_7d": 5.3,
-      "delta_pct": -44,
-      "trend": "cooling",
-      "confidence": 91,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất candidate events giảm: 3 trong 7 ngày so với baseline 5.3."
-    },
-    {
       "category": "monetary",
       "recent_7d": 0,
-      "baseline_21d": 15,
-      "baseline_expected_7d": 5.0,
+      "baseline_21d": 14,
+      "baseline_expected_7d": 4.7,
       "delta_pct": -100,
       "trend": "cooling",
-      "confidence": 70,
+      "confidence": 68,
       "source_diversity_7d": 0,
-      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 5.0."
-    },
-    {
-      "category": "policy",
-      "recent_7d": 5,
-      "baseline_21d": 5,
-      "baseline_expected_7d": 1.7,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 80,
-      "source_diversity_7d": 3,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
+      "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
     },
     {
       "category": "fdi_industrial",
@@ -110,9 +110,9 @@
     },
     {
       "category": "logistics",
-      "recent_7d": 3,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
+      "recent_7d": 2,
+      "baseline_21d": 1,
+      "baseline_expected_7d": 0.3,
       "delta_pct": null,
       "trend": "insufficient_sample",
       "confidence": 53,
@@ -121,12 +121,12 @@
     },
     {
       "category": "trade_flow",
-      "recent_7d": 1,
+      "recent_7d": 2,
       "baseline_21d": 0,
       "baseline_expected_7d": 0.0,
       "delta_pct": null,
       "trend": "insufficient_sample",
-      "confidence": 49,
+      "confidence": 51,
       "source_diversity_7d": 1,
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
@@ -154,6 +154,124 @@
     }
   ],
   "top_new_events": [
+    {
+      "id": "0ffed06fef332926",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Bộ Chính trị yêu cầu khẩn trương hoàn thiện cơ sở dữ liệu vị trí việc làm và phương án biên chế giai đoạn 2027-2031",
+      "url": "https://baochinhphu.vn/bo-chinh-tri-yeu-cau-khan-truong-hoan-thien-co-so-du-lieu-vi-tri-viec-lam-va-phuong-an-bien-che-giai-doan-2027-2031-102261127192533692.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027,
+        2031
+      ],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
+    {
+      "id": "5eba36c4342d1465",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Quy định mới về thuế giá trị gia tăng đối với một số sản phẩm xuất khẩu là tài nguyên, khoáng sản khai thác đã chế biến",
+      "url": "https://baochinhphu.vn/quy-dinh-moi-ve-thue-gia-tri-gia-tang-doi-voi-mot-so-san-pham-xuat-khau-la-tai-nguyen-khoang-san-khai-thac-da-che-bien-10226112717411675.htm",
+      "categories": [
+        "trade_flow"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "policy_regulation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
+    {
+      "id": "28a9930775c7e8d1",
+      "source_id": "gov",
+      "publisher": "Báo Chính phủ",
+      "title": "Khẩn trương hoàn thiện vị trí việc làm và phương án biên chế giai đoạn 2027 - 2031",
+      "url": "https://baochinhphu.vn/khan-truong-hoan-thien-vi-tri-viec-lam-va-phuong-an-bien-che-giai-doan-2027-2031-102261127155422977.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027,
+        2031
+      ],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
+    {
+      "id": "6227391577015020",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Thống kê ngày 28/11/2026 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
+    {
+      "id": "6aa743121d386f8b",
+      "source_id": "business-registry",
+      "publisher": "Cổng ĐKKD Quốc gia",
+      "title": "Top 4 ngành nghề kinh doanh ngày 28/11 về Đăng ký doanh nghiệp",
+      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
+      "categories": [
+        "sme"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "business_formation",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
+    {
+      "id": "f509bad541755e54",
+      "source_id": "evn-system",
+      "publisher": "EVN - Vận hành hệ thống điện",
+      "title": "Tập trung đầu tư lưới điện phục vụ tăng trưởng kinh tế tại Bắc Ninh",
+      "url": "https://www.evn.com.vn/d/vi-VN/news/Tap-trung-dau-tu-luoi-dien-phuc-vu-tang-truong-kinh-te-tai-Bac-Ninh-60-12-510462",
+      "categories": [
+        "energy"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [
+        "Bắc Ninh"
+      ],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+    },
     {
       "id": "ecb067aed12a839b",
       "source_id": "gov-policy",
@@ -218,21 +336,22 @@
     }
   ],
   "event_types_7d": {
-    "policy_regulation": 16,
     "business_formation": 15,
-    "hiring": 6,
-    "market_data": 2,
+    "policy_regulation": 14,
+    "hiring": 7,
+    "market_data": 3,
     "infrastructure_delivery": 2
   },
   "geographies_7d": {
+    "Bắc Ninh": 1,
     "Thanh Hóa": 1,
     "Đồng Nai": 1,
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 1370,
-    "candidate_events": 560,
-    "reference_events": 805,
+    "historical_events": 1381,
+    "candidate_events": 566,
+    "reference_events": 810,
     "unique_candidate_sources": 7,
     "source_errors_last_run": 1
   },
