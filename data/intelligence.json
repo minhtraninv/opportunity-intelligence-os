@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T21:15:55.016409+00:00",
+    "generated_at": "2026-11-28T07:46:46.813519+00:00",
     "status": "active",
     "history_days": 90,
     "required_history_days": 14,
@@ -12,9 +12,9 @@
     {
       "category": "sme",
       "recent_7d": 16,
-      "baseline_21d": 48,
-      "baseline_expected_7d": 16.0,
-      "delta_pct": 0,
+      "baseline_21d": 46,
+      "baseline_expected_7d": 15.3,
+      "delta_pct": 4,
       "trend": "stable",
       "confidence": 100,
       "source_diversity_7d": 3,
@@ -22,21 +22,10 @@
     },
     {
       "category": "labor",
-      "recent_7d": 8,
-      "baseline_21d": 32,
-      "baseline_expected_7d": 10.7,
-      "delta_pct": -25,
-      "trend": "stable",
-      "confidence": 93,
-      "source_diversity_7d": 2,
-      "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
-    },
-    {
-      "category": "construction",
-      "recent_7d": 6,
-      "baseline_21d": 19,
-      "baseline_expected_7d": 6.3,
-      "delta_pct": -5,
+      "recent_7d": 11,
+      "baseline_21d": 33,
+      "baseline_expected_7d": 11.0,
+      "delta_pct": 0,
       "trend": "stable",
       "confidence": 93,
       "source_diversity_7d": 2,
@@ -76,6 +65,17 @@
       "explanation": "Tần suất hiện tại chưa lệch đủ xa khỏi baseline để coi là bất thường."
     },
     {
+      "category": "construction",
+      "recent_7d": 4,
+      "baseline_21d": 21,
+      "baseline_expected_7d": 7.0,
+      "delta_pct": -43,
+      "trend": "cooling",
+      "confidence": 93,
+      "source_diversity_7d": 2,
+      "explanation": "Tần suất candidate events giảm: 4 trong 7 ngày so với baseline 7.0."
+    },
+    {
       "category": "monetary",
       "recent_7d": 0,
       "baseline_21d": 14,
@@ -85,6 +85,17 @@
       "confidence": 68,
       "source_diversity_7d": 0,
       "explanation": "Tần suất candidate events giảm: 0 trong 7 ngày so với baseline 4.7."
+    },
+    {
+      "category": "trade_flow",
+      "recent_7d": 3,
+      "baseline_21d": 0,
+      "baseline_expected_7d": 0.0,
+      "delta_pct": null,
+      "trend": "insufficient_sample",
+      "confidence": 59,
+      "source_diversity_7d": 2,
+      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
       "category": "fdi_industrial",
@@ -120,17 +131,6 @@
       "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
     },
     {
-      "category": "trade_flow",
-      "recent_7d": 2,
-      "baseline_21d": 0,
-      "baseline_expected_7d": 0.0,
-      "delta_pct": null,
-      "trend": "insufficient_sample",
-      "confidence": 51,
-      "source_diversity_7d": 1,
-      "explanation": "Mẫu còn quá nhỏ để phân biệt thay đổi thật với nhiễu."
-    },
-    {
       "category": "consumer_services",
       "recent_7d": 0,
       "baseline_21d": 3,
@@ -155,6 +155,101 @@
   ],
   "top_new_events": [
     {
+      "id": "bc01f73240ec0232",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "TOÀN VĂN: Thông tư 32/2026/TT-BNV hướng dẫn xếp lương với người được tuyển dụng, tiếp nhận vào công chức và khi thay đổi vị trí việc làm",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-thong-tu-32-2026-tt-bnv-huong-dan-xep-luong-voi-nguoi-duoc-tuyen-dung-tiep-nhan-vao-cong-chuc-va-khi-thay-doi-vi-tri-viec-lam-119261128101921174.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2026
+      ],
+      "first_seen_at": "2026-11-28T07:46:46.813519+00:00"
+    },
+    {
+      "id": "07a882235cd86712",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Kết luận 131-KL/TW về việc thực hiện Kết luận số 107-KL/TW, tiến độ hoàn thiện cơ sở dữ liệu vị trí việc làm và phương án biên chế giai đoạn 2027 – 2031",
+      "url": "https://xaydungchinhsach.chinhphu.vn/ket-luan-131-kl-tw-ve-viec-thuc-hien-ket-luan-so-107-kl-tw-tien-do-hoan-thien-co-so-du-lieu-vi-tri-viec-lam-va-phuong-an-bien-che-giai-doan-2027-2031-119261128131955995.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [
+        2027,
+        2031
+      ],
+      "first_seen_at": "2026-11-28T07:46:46.813519+00:00"
+    },
+    {
+      "id": "46bc808114e9c169",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Hướng dẫn xếp lương với người được tuyển dụng, tiếp nhận vào làm công chức từ lực lượng vũ trang, cơ yếu",
+      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-xep-luong-voi-nguoi-duoc-tuyen-dung-tiep-nhan-vao-lam-cong-chuc-tu-luc-luong-vu-trang-co-yeu-119261128115900623.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-28T07:46:46.813519+00:00"
+    },
+    {
+      "id": "79b68aeb8e44728a",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Hướng dẫn xếp lương với người trước thời điểm được tuyển dụng, tiếp nhận vào làm công chức đang xếp lương theo các bảng lương",
+      "url": "https://xaydungchinhsach.chinhphu.vn/huong-dan-xep-luong-voi-nguoi-truoc-thoi-diem-duoc-tuyen-dung-tiep-nhan-vao-lam-cong-chuc-dang-xep-luong-theo-cac-bang-luong-119261128112819568.htm",
+      "categories": [
+        "labor"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "hiring",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-28T07:46:46.813519+00:00"
+    },
+    {
+      "id": "0988da4ecbbe0e95",
+      "source_id": "gov-policy",
+      "publisher": "Chính sách pháp luật - Chính phủ",
+      "title": "Thuế giá trị gia tăng với một số sản phẩm xuất khẩu là tài nguyên, khoáng sản khai thác đã chế biến",
+      "url": "https://xaydungchinhsach.chinhphu.vn/thue-gia-tri-gia-tang-voi-mot-so-san-pham-xuat-khau-la-tai-nguyen-khoang-san-khai-thac-da-che-bien-119261128104622811.htm",
+      "categories": [
+        "trade_flow"
+      ],
+      "authority": 1.0,
+      "status": "unverified-headline",
+      "event_type": "market_data",
+      "signal_quality": "candidate",
+      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
+      "geography": [],
+      "mentioned_years": [],
+      "first_seen_at": "2026-11-28T07:46:46.813519+00:00"
+    },
+    {
       "id": "0ffed06fef332926",
       "source_id": "gov",
       "publisher": "Báo Chính phủ",
@@ -173,7 +268,9 @@
         2027,
         2031
       ],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
+      "last_seen_at": null
     },
     {
       "id": "5eba36c4342d1465",
@@ -191,7 +288,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
+      "last_seen_at": null
     },
     {
       "id": "28a9930775c7e8d1",
@@ -212,7 +311,9 @@
         2027,
         2031
       ],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6227391577015020",
@@ -232,7 +333,9 @@
       "mentioned_years": [
         2026
       ],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
+      "last_seen_at": null
     },
     {
       "id": "6aa743121d386f8b",
@@ -250,7 +353,9 @@
       "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
       "geography": [],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
+      "last_seen_at": null
     },
     {
       "id": "f509bad541755e54",
@@ -270,76 +375,16 @@
         "Bắc Ninh"
       ],
       "mentioned_years": [],
-      "first_seen_at": "2026-11-27T21:15:55.016409+00:00"
-    },
-    {
-      "id": "ecb067aed12a839b",
-      "source_id": "gov-policy",
-      "publisher": "Chính sách pháp luật - Chính phủ",
-      "title": "Phân cấp quản lý nhà nước về tổ chức bộ máy, vị trí việc làm",
-      "url": "https://xaydungchinhsach.chinhphu.vn/quyet-dinh-so-106-2026-qd-ubnd-phan-cap-quan-ly-nha-nuoc-ve-to-chuc-bo-may-vi-tri-viec-lam-119261126150552742.htm",
-      "categories": [
-        "labor"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "hiring",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-26T21:30:06.761935+00:00",
-      "collected_at": "2026-11-26T21:30:06.761935+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "b5044c6bff3eaf3b",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Thống kê ngày 27/11/2026 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [
-        2026
-      ],
-      "first_seen_at": "2026-11-26T21:30:06.761935+00:00",
-      "collected_at": "2026-11-26T21:30:06.761935+00:00",
-      "last_seen_at": null
-    },
-    {
-      "id": "8fd23df3d74a5bde",
-      "source_id": "business-registry",
-      "publisher": "Cổng ĐKKD Quốc gia",
-      "title": "Top 4 ngành nghề kinh doanh ngày 27/11 về Đăng ký doanh nghiệp",
-      "url": "https://dangkykinhdoanh.gov.vn/vn/Pages/ThongKeDangKy.aspx",
-      "categories": [
-        "sme"
-      ],
-      "authority": 1.0,
-      "status": "unverified-headline",
-      "event_type": "business_formation",
-      "signal_quality": "candidate",
-      "quality_reason": "Có trigger kinh tế/xã hội cụ thể phù hợp taxonomy hiện tại.",
-      "geography": [],
-      "mentioned_years": [],
-      "first_seen_at": "2026-11-26T21:30:06.761935+00:00",
-      "collected_at": "2026-11-26T21:30:06.761935+00:00",
+      "first_seen_at": "2026-11-27T21:15:55.016409+00:00",
+      "collected_at": "2026-11-27T21:15:55.016409+00:00",
       "last_seen_at": null
     }
   ],
   "event_types_7d": {
     "business_formation": 15,
-    "policy_regulation": 14,
-    "hiring": 7,
-    "market_data": 3,
+    "policy_regulation": 12,
+    "hiring": 10,
+    "market_data": 4,
     "infrastructure_delivery": 2
   },
   "geographies_7d": {
@@ -349,13 +394,13 @@
     "TP.HCM": 1
   },
   "coverage": {
-    "historical_events": 1381,
-    "candidate_events": 566,
-    "reference_events": 810,
+    "historical_events": 1390,
+    "candidate_events": 571,
+    "reference_events": 814,
     "unique_candidate_sources": 7,
-    "source_errors_last_run": 1
+    "source_errors_last_run": 2
   },
   "warnings": [
-    "Có 1 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
+    "Có 2 nguồn lỗi ở lần thu thập gần nhất; độ phủ dữ liệu bị giảm."
   ]
 }
